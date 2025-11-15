@@ -1,0 +1,2323 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 !important;
+    }
+
+    .main-div {
+        width: 100%;
+        /* font-family: "helvetica"; */
+        /* font-family: 'ToyotaTypeBook' !important; */
+        /* font-family: Toyota_Type !important; */
+        /* background: #EEEDE7; */
+        font-family: 'Avenir Next' !important;
+    }
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .main-div sup {
+        /* line-height: 0; */
+        font-size: inherit;
+        /* position: relative; */
+        top: -0.1em;
+    }
+
+    :root {
+        --sns-black: #000;
+        --sns-white: #fff;
+        --sns-gray: #EEEDE7;
+    }
+
+    @font-face {
+        font-family: 'Avenir Next';
+        src: url('https://assets.dealerinspire.com/public/fonts/avenir-next-regular.woff2') format('woff2');
+        font-style: Regular;
+        /* font-weight: 600; */
+    }
+
+    /* @font-face {
+            font-family: 'Avenir Next';
+            src: url('https://assets.dealerinspire.com/public/fonts/avenir-next-thin.woff2') format('woff2');
+            font-weight: 400;
+        } */
+
+    .sns-star {
+        color: #E00C1D;
+    }
+
+    .sns-f-55 {
+        font-size: 3.13vw !important;
+        letter-spacing: 0.03em;
+        font-weight: 400 !important;
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Avenir Next' !important;
+    }
+
+    .sns-f-36 {
+        font-size: 1.67vw !important;
+        font-weight: 400 !important;
+        line-height: 1.4em !important;
+        letter-spacing: 0.05em;
+        color: #000;
+        text-transform: capitalize;
+        font-family: 'Avenir Next' !important;
+    }
+
+    .sns-f-30 {
+        font-size: 1.67vw !important;
+        font-weight: 400 !important;
+        line-height: 1.4em !important;
+        letter-spacing: 0.05em;
+        color: #000;
+        text-transform: capitalize;
+        font-family: 'Avenir Next' !important;
+    }
+
+    .sns-f-22 {
+        font-size: 1.146vw !important;
+        line-height: 1.4em !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.05em;
+        color: #000;
+    }
+
+    .sns-f-20 {
+        font-size: 1.042vw !important;
+        line-height: 1.4em !important;
+        font-weight: 400 !important;
+        color: rgba(52, 58, 64, 1);
+    }
+
+    .sns-f-18 {
+        font-size: 0.938vw !important;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-weight: 400 !important;
+        color: #000;
+    }
+
+    /* .sns-dis-size {
+            font-size: 1vw !important;
+            font-weight: 400 !important;
+            color: #000;
+        } */
+
+    .sns-offer {
+        font-size: 0.45vw;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-f-55 {
+            font-size: clamp(36px, 2.865vw, 55px) !important;
+        }
+
+        .sns-f-36 {
+            font-size: clamp(24px, 1.875vw, 36px) !important;
+        }
+
+        .sns-f-30 {
+            font-size: clamp(24px, 1.563vw, 30px) !important;
+        }
+
+        .sns-f-22 {
+            font-size: clamp(20px, 1.146vw, 22px) !important;
+        }
+
+        .sns-f-20 {
+            font-size: clamp(18px, 1.042vw, 20px) !important;
+        }
+
+        .sns-f-18 {
+            font-size: clamp(16px, 0.938vw, 18px) !important;
+            letter-spacing: 0.4em !important;
+        }
+
+        /* .sns-dis-size {
+                font-size: clamp(16px, 1vw, 18px) !important;
+            } */
+
+        .sns-offer {
+            font-size: 0.39em;
+        }
+    }
+
+    .sns-mt-6 {
+        margin-top: 6%;
+    }
+
+    .sns-mt-5 {
+        margin-top: 5%;
+    }
+
+    .sns-mt-4 {
+        margin-top: 4%;
+    }
+
+    .sns-mt-3 {
+        margin-top: 3%;
+    }
+
+    .sns-mt-2 {
+        margin-top: 2%;
+    }
+
+    .sns-mt-1 {
+        margin-top: 1%;
+    }
+
+    .sns-mb-6 {
+        margin-bottom: 6%;
+    }
+
+    .sns-mb-5 {
+        margin-bottom: 5%;
+    }
+
+    .sns-mb-4 {
+        margin-bottom: 4%;
+    }
+
+    .sns-mb-3 {
+        margin-bottom: 3%;
+    }
+
+    .sns-mb-2 {
+        margin-bottom: 2%;
+    }
+
+    .sns-mb-1 {
+        margin-bottom: 1%;
+    }
+
+    .sns-pt-6 {
+        padding-top: 6%;
+    }
+
+    .sns-pt-5 {
+        padding-top: 5%;
+    }
+
+    .sns-pt-4 {
+        padding-top: 4%;
+    }
+
+    .sns-pt-3 {
+        padding-top: 3%;
+    }
+
+    .sns-pt-2 {
+        padding-top: 2%;
+    }
+
+    .sns-pt-1 {
+        padding-top: 1%;
+    }
+
+    .sns-pb-6 {
+        padding-bottom: 6%;
+    }
+
+    .sns-pb-5 {
+        padding-bottom: 5%;
+    }
+
+    .sns-pb-4 {
+        padding-bottom: 4%;
+    }
+
+    .sns-pb-3 {
+        padding-bottom: 3%;
+    }
+
+    .sns-pb-2 {
+        padding-bottom: 2%;
+    }
+
+    .sns-pb-1 {
+        padding-bottom: 1%;
+    }
+
+    .sns-nic-mt-1 {
+        margin-top: 12%;
+    }
+
+    .sns-nic-mt-2 {
+        margin-top: 7%;
+    }
+
+    .sns-nic-mt-3 {
+        margin-top: 12%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-nic-mt-1 {
+            margin-top: 14%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-nic-mt-1 {
+            margin-top: 0%;
+        }
+
+        .sns-nic-mt-2 {
+            margin-top: 0%;
+        }
+
+        .sns-nic-mt-3 {
+            margin-top: 0%;
+        }
+
+        .sns-pt-3 {
+            padding-top: 10%;
+        }
+
+
+    }
+
+    /* Custom css */
+    /* The sns-d-flex becomes flexible by setting the display property to flex */
+    .sns-d-flex {
+        display: flex;
+    }
+
+    /* justify-content to align the item on the main axis ,center */
+    .sns-justify-content-center {
+        justify-content: center;
+    }
+
+    .sns-justify-center {
+        justify-content: center;
+    }
+
+    /* Distribute items evenly Start, in-between, and end gaps have equal sizes */
+    .sns-justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    /*Items will have space between them */
+    .sns-justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    /*tems will have space before, between, and after them */
+    .sns-justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    /* the align-items property to align our item on the cross axis, center*/
+    .sns-align-center {
+        align-items: center;
+    }
+
+    .sns-align-end {
+        align-items: end;
+    }
+
+    .sns-align-unset {
+        align-items: unset !important;
+    }
+
+    /* sets the items in row */
+    .sns-f-row {
+        flex-direction: row;
+    }
+
+    /* sets the items in column */
+    .sns-f-column {
+        flex-direction: column;
+    }
+
+    /* sns-flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines.  */
+    .sns-flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    /* The flexbox items are aligned at the baseline of the cross axis. */
+    .sns-basline {
+        align-items: baseline;
+    }
+
+    .sns-wor {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    /* ====================== Width ==========================*/
+    .sns-w-25 {
+        width: 25%;
+    }
+
+    .sns-w-50 {
+        width: 50%;
+    }
+
+    .sns-w-75 {
+        width: 75%;
+    }
+
+    .sns-w-100 {
+        width: 100%;
+    }
+
+    /* start */
+    .sns-desk-none {
+        display: none !important;
+    }
+
+    .sns-mob-none {
+        display: block !important;
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-desk-none {
+            display: block !important;
+        }
+
+        .sns-mob-none {
+            display: none !important;
+        }
+    }
+
+    /* End */
+    /* None classes */
+    .sns-desk-view-c {
+        display: block;
+    }
+
+    .sns-tab-view-c {
+        display: none;
+    }
+
+    .sns-mob-view-c {
+        display: none;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-c {
+            display: none;
+        }
+
+        .sns-tab-view-c {
+            display: block;
+        }
+
+        .sns-mob-view-c {
+            display: none;
+        }
+
+        .sns-wor {
+            padding-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-desk-view-c {
+            display: none;
+        }
+
+        .sns-tab-view-c {
+            display: none;
+        }
+
+        .sns-mob-view-c {
+            display: block;
+        }
+    }
+
+    .sns-desk-view-A {
+        display: block;
+    }
+
+    .sns-tab-view-A {
+        display: none;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-A {
+            display: none;
+        }
+
+        .sns-tab-view-A {
+            display: block;
+        }
+    }
+
+    /* padding left and right in rem */
+    /* .sns-x-0 { padding-right: 0; padding-left: 0; } .sns-x-1 { padding-right: 0.25rem; padding-left: 0.25rem; } .sns-x-2 { padding-right: 0.5rem; padding-left: 0.5rem; } */
+    /* .sns-x-3 { padding-right: 1rem; padding-left: 1rem; } .sns-x-4 { padding-right: 1.5rem; padding-left: 1.5rem; } .sns-px-5 { padding-right: 3rem; padding-left: 3rem; } */
+    /* padding left and right in rem */
+    /* padding -top and bottom in rem */
+    /* .sns-py-0 { padding-top: 0; padding-bottom: 0; } .sns-py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; } .sns-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; } .sns-py-3 { padding-top: 1rem; padding-bottom: 1rem; } .sns-py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; } .sns-py-5 { padding-top: 3rem; padding-bottom: 3rem; } */
+    /* padding -top and bottom in rem */
+    .sns-fw-100 {
+        font-weight: 100;
+    }
+
+    .sns-fw-200 {
+        font-weight: 200;
+    }
+
+    .sns-fw-300 {
+        font-weight: 300;
+    }
+
+    .sns-fw-400 {
+        font-weight: 400;
+    }
+
+    .sns-fw-500 {
+        font-weight: 500;
+    }
+
+    .sns-fw-600 {
+        font-weight: 600;
+    }
+
+    .sns-fw-700 {
+        font-weight: 700;
+    }
+
+    .sns-fw-800 {
+        font-weight: 800;
+    }
+
+    /* font-weight normal italic bold */
+    .sns-text-start {
+        text-align: left;
+    }
+
+    .sns-text-end {
+        text-align: right;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-text-decoration-none {
+        text-decoration: none;
+    }
+
+    .sns-text-decoration-underline {
+        text-decoration: underline;
+    }
+
+    .sns-text-decoration-line-through {
+        text-decoration: line-through;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-text-lowercase {
+        text-transform: lowercase;
+    }
+
+    .sns-text-uppercase {
+        text-transform: uppercase;
+    }
+
+    .sns-text-capitalize {
+        text-transform: capitalize;
+    }
+
+    .sns-text-wrap {
+        white-space: normal;
+    }
+
+    .sns-text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-col-4 {
+        width: calc(85%/4);
+    }
+
+    .sns-col-3 {
+        width: calc(88%/3);
+    }
+
+    .sns-col-1 {
+        width: calc(94%/1);
+    }
+
+    .sns-two-img {
+        display: flex;
+        justify-content: center;
+        gap: 1.5%;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .sns-two-img .w-1 {
+        width: 65%;
+    }
+
+    .sns-two-img .w-2 {
+        width: 27.5%;
+    }
+
+    .sns-two-img img {
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-two-img .w-1 {
+            width: 65%;
+        }
+
+        .sns-two-img .w-2 {
+            width: 27.25%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-two-img .w-1 {
+            width: 94%;
+            margin-bottom: 3%;
+        }
+
+        .sns-two-img .w-2 {
+            width: 94%;
+            margin-bottom: 3%;
+        }
+    }
+
+
+
+    .sns-acura_banner_sec {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sns-acura_banner_sec_imgs .sns-main_img {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+    }
+
+    .sns-acura_banner_sec_imgs .sns-main_img img {
+        width: 100%;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .sns-acura_banner_sec_lft {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        color: #fff;
+
+
+        top: 7%;
+    }
+
+    .sns-acura_banner_sec_lft h1 {
+        font-weight: 500;
+        font-size: 3.23vw;
+        text-transform: initial;
+        padding-left: 3%;
+        width: 39%;
+        margin-block: 0% 1.5%;
+        line-height: 1.3em;
+        font-family: 'Avenir Next' !important;
+    }
+
+    .sns-acura_banner_sec_lft p {
+        padding-top: 1.5%;
+        font-size: 2.083vw;
+        font-weight: 400;
+        padding-left: 3%;
+    }
+
+    @media (min-width:481px) and (max-width:640px) {
+        .sns-acura_banner_sec_lft {
+            padding-block: 4%;
+        }
+    }
+
+
+    @media screen and (max-width: 640px) {
+        .sns-acura_banner_sec_lft {
+            position: initial;
+            text-align: center;
+            padding-block: 4%;
+            /* background-color: var(--sns-gray); */
+            order: 0;
+            color: #000;
+            padding-inline: 1vw;
+        }
+
+        .sns-acura_banner_sec_lft h1 {
+            font-size: clamp(34px, 2.865vw, 64px);
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .sns-acura_banner_sec_lft p {
+            font-size: clamp(20px, 2.083vw, 30px);
+            padding-bottom: 0;
+            padding-top: 2%;
+            padding-left: 0;
+        }
+
+        .sns-acura_banner_sec_imgs {
+            order: 1;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-acura_banner_sec_lft {
+            padding-block: 8% 9%;
+        }
+
+    }
+
+
+    .sns-button>.sns-BN {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5% 0;
+        /* background: #EEEDE7; */
+        justify-content: center;
+        /* margin-top: -1px; */
+        background-color: rgba(245, 245, 245, 1) !important;
+        gap: 1.2%;
+    }
+
+    .sns-BN>a {
+        color: #000;
+        text-decoration: none !important;
+        padding: 2%;
+    }
+
+    .sns-BN>p {
+        display: none !important;
+    }
+
+    .sns-BN>.sns-btn {
+        width: calc(91.4%/4);
+        padding: 1.2% 0;
+        box-sizing: border-box;
+    }
+
+    .sns-BN .sns-butn {
+        background-color: rgba(255, 63, 65, 1);
+        color: #FFF;
+        font-size: 1.35vw;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.5s;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        border-radius: 50px;
+        text-transform: uppercase;
+    }
+
+    .sns-BN .sns-butn:hover {
+        background-color: #ff0d0d;
+        color: var(--sns-white);
+    }
+
+    @media screen and (max-width: 1200px) {}
+
+    @media screen and (max-width: 890px) {
+        .sns-button>.sns-BN {
+            padding: 3% 0;
+        }
+
+        .sns-BN>.sns-btn {
+            width: calc(91%/2);
+        }
+
+        .sns-BN .sns-butn {
+            font-size: clamp(20px, 1.042vw, 20px);
+        }
+
+        .sns-f-b {
+            margin-bottom: 3%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-BN>.sns-btn {
+            width: calc(78%/1) !important;
+            margin: 3%;
+            padding-block: 6%;
+        }
+
+        .sns-button>.sns-BN {
+            padding: 4% 0% 3.5%;
+        }
+
+        .sns-button>.sns-btnn {
+            padding: 20% 0% 15% !important;
+        }
+
+        .sns-pdrht5 {
+            padding-right: 5% !important;
+        }
+
+    }
+
+
+    .sns-head {
+        text-align: center;
+    }
+
+    .sns-head-inline-22 {
+        margin-inline: 15vw;
+    }
+
+    .sns-p-inline-5-5 {
+        padding-inline: 5.3vw;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-head-inline-22 {
+            margin-inline: 4%;
+        }
+
+        .sns-p-inline-5-5 {
+            padding-inline: 7vw;
+        }
+    }
+
+    .sns_con_img {
+        gap: 1.5%;
+        align-items: center;
+        margin-bottom: 1.5%;
+        margin-inline: 2.5%;
+        border: 1px solid rgba(33, 152, 221, 0.4);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 1%;
+    }
+
+    .sns_con_img:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .sns_con_img img {
+        border-radius: 0px;
+    }
+
+    .sns_con_img .sns_con_box {
+        width: calc(98.5%/2);
+        text-align: center;
+    }
+
+    .sns_con_box .div_1 {
+        padding-inline: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sns_con_box .div_1 {
+            padding-inline: 1%;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            text-align: left;
+        }
+    }
+
+
+
+
+    @media only screen and (max-width: 890px) {
+        .sns_con_img .sns_con_box {
+            width: calc(97%/1);
+            padding-top: 1.5%;
+        }
+    }
+
+    .conta {
+        position: relative;
+        width: 100%;
+    }
+
+    .conta img {
+        width: 100%;
+    }
+
+    .conta .btnn {
+        position: absolute;
+        top: 78%;
+        /* Adjusted position for the button */
+        left: 2.5%;
+        width: 14%;
+        /* padding: 0.8% 3%; */
+        padding-block: 1%;
+        background: #E00C1D;
+        color: #fff;
+        font-size: 1.042vw;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 50px;
+        border: none;
+        text-transform: capitalize;
+    }
+
+
+    .conta .butnn {
+
+        top: 83% !important;
+        left: 2.5% !important;
+
+    }
+
+
+    .conta1 .btnn {
+        top: 13%;
+        /* Adjusted position for the button */
+        left: 83%;
+    }
+
+    .conta .btnn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    /* .navn-btn { background-color: black; padding: 2%; } */
+    /* Media query for tablet screens */
+    @media (max-width: 890px) {
+        .conta .btnn {
+            font-size: 2vw;
+            /* Adjust font size for tablet */
+            position: absolute;
+            /* Reset position for tablet */
+            /* width: 50%; */
+            width: calc(91%/2);
+            /* Full width for tablet */
+            top: 85%;
+            left: 25%;
+            transform: none;
+            /* margin-top: 2%; Space between image and button */
+            margin-inline: auto;
+            display: block;
+        }
+
+        .conta .btnn:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navn-btn {
+            padding: 2%;
+        }
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 480px) {
+        .conta .btnn {
+            position: absolute;
+            /* Reset position for mobile */
+            margin: -10% 0% 0% 11%;
+            padding: 4% 2% 4%;
+            /* width: 89%; */
+            width: calc(76%/1);
+            /* Full width for mobile */
+            top: auto;
+            left: auto;
+            transform: none;
+            font-size: 20px;
+            /* font-family: toyota type; */
+            /* Adjust font size for mobile */
+            /* margin-top: 10px; Space between image and button */
+        }
+
+
+
+
+        .conta .butn {
+            position: absolute;
+            /* Reset position for mobile */
+            margin: 4% 0% 0% 10.5%;
+            padding: 4% 2% 3%;
+            /* width: 89%; */
+            width: calc(77%/1);
+            /* Full width for mobile */
+            top: auto;
+            left: auto;
+            transform: none;
+            font-size: 20px;
+            /* font-family: Helvetica; */
+            /* Adjust font size for mobile */
+            /* margin-top: 10px; Space between image and button */
+        }
+
+
+
+    }
+
+    .sns-3x3 {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+        flex-wrap: wrap;
+    }
+
+    .sns-3x3 img {
+        border-radius: 0px;
+    }
+
+    .sns-3x3>p {
+        display: none;
+    }
+
+    .sns-3x3 .sns-inner-2 {
+        width: calc(91.5%/3);
+        text-align: center;
+        margin-bottom: 0.5%;
+    }
+
+    .sns-3x3 .sns-inner-3 {
+        width: calc(94%/1);
+        text-align: center;
+    }
+
+    .sns-inner-3 .sns-padd-3 {
+        margin-inline: 24.5vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .sns-inner-2 .sns-padd-2 {
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .sns-3x3 .sns-inner-2 {
+            width: calc(92.5%/2);
+        }
+
+        .sns-inner-3 .sns-padd-3 {
+            margin-inline: 3vw;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sns-3x3 .sns-inner-2 {
+            width: calc(93%/1);
+            text-align: left;
+        }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        .sns-inner-3 .sns-padd-3 {
+            margin-inline: 3vw;
+            padding-top: 5%;
+            padding-bottom: 6%;
+        }
+    }
+
+    /* .sns-3x3 { display: flex; justify-content: center; gap: 3%; flex-wrap: wrap; } */
+    .sns-3x3 img {
+        border-radius: 0px;
+    }
+
+    .sns-3x3 .sns-inner-4 {
+        width: calc(94%/2);
+        border: 1px solid rgba(33, 152, 221, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 1%;
+        text-align: center;
+        margin-bottom: 1.5%;
+        padding-bottom: 2%;
+    }
+
+    .sns-inner-4 .sns-padd-4 {
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .sns-3x3 .sns-inner-4 {
+            width: calc(92.5%/2);
+        }
+
+        .sns-inner-4 .sns-padd-4 {
+            padding-top: 4%;
+            padding-bottom: 6%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sns-3x3 .sns-inner-4 {
+            width: calc(93%/1);
+            padding: 3% 3% 0%;
+            text-align: left;
+            margin-bottom: 5%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+
+        .sns-inner-4 .sns-padd-4 {
+            padding-top: 5%;
+            padding-bottom: 6%;
+        }
+    }
+
+
+
+    /* extra classes started */
+
+    .sns-pad-in-10 {
+        /* padding-inline: 0% 10% !important; */
+    }
+
+
+    .sns-single-pad-inl-16 {
+        padding-inline: 16%;
+    }
+
+
+    .sns-pad-in-15 {
+        /* padding-inline: 0% 15% !important; */
+    }
+
+    .sns-pad-in-20 {
+        /* padding-inline: 0% 20% !important; */
+    }
+
+
+    .sns-head-pt-2 {
+        padding-top: 6%;
+        padding-bottom: 3%;
+    }
+
+    .sns-head-cont {
+        padding-bottom: 2%;
+        padding-top: 1.5%;
+    }
+
+    .sns-lh-1 {
+        letter-spacing: 0.05em;
+    }
+
+    .sns-head-pt-1 {
+        padding-top: 2%;
+        padding-inline: 5%;
+    }
+
+    .sns-3-3-head {
+        padding-inline: 4%;
+        padding-bottom: 0.5%;
+        padding-top: 2.5%;
+    }
+
+    .sns-cont-pb {
+        padding-bottom: 4.5%;
+        padding-inline: 15%;
+    }
+
+
+    .sns-pad-bkl-2 {
+        padding-block: 2% 2%;
+    }
+
+    .sns-pb-0-5 {
+        padding-bottom: 0.5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .sns-bg-clr-seo-disc {
+        background-color: #fff;
+    }
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 640px) {
+        .sns-single-pad-inl-16 {
+            padding-inline: 0%;
+        }
+
+
+        .sns-bg-clr-seo-disc {
+            /* background-color: #eeede7 !important; */
+        }
+
+
+
+        .sns-head-pt-2 {
+            padding-top: 15% !important;
+            padding-inline: 0% 0%;
+            padding-bottom: 7%;
+        }
+
+
+        .sns-pad-bkl-2 {
+            padding-block: 2% 2%;
+        }
+
+
+        .sns-pad-in-mob {
+            padding-inline: 0% 0% !important;
+        }
+
+        .sns-pad-in-15-mob {
+            padding-inline: 0% 0% !important;
+        }
+
+
+        .sns-pad-in-10 {
+            padding-inline: 0%;
+        }
+
+
+
+
+        .sns-cont-pb {
+            padding-bottom: 4.5%;
+            padding-inline: 0%;
+        }
+
+
+        .sns-pi-lh-mh {
+            padding-inline: 10%;
+            line-height: 1.5em;
+        }
+
+
+        .sns-pad-in-15 {
+            padding-inline: 0% 0% !important;
+        }
+
+
+        .sns-3-3-head {
+            padding-inline: 0% 1% !important;
+            padding-bottom: 2%;
+            padding-top: 3%;
+        }
+
+        /* .sns-head-pt-2 {
+                padding-top: 2%;
+            } */
+
+        .sns-head-cont {
+            padding-bottom: 5%;
+            padding-top: 5%;
+        }
+
+
+        .sns-lh-1 {
+            letter-spacing: 0em;
+        }
+
+        .sns-head-pt-1 {
+            padding-top: 1%;
+            padding-inline: 0% !important;
+        }
+
+        .sns-pb-head {
+            padding-block: 18% 4% !important;
+        }
+
+
+        .sns-pb-4-1 {
+            padding-block: 4% 1% !important;
+        }
+
+        .sns-pad-top-3 {
+            padding-top: 3%;
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .single-button {
+            padding: 0 0 7% 0 !important;
+            margin-top: -12%;
+        }
+
+        .sns-head-pt-2 {
+            padding-top: 2%;
+        }
+
+
+        .sns-pad-in-lh-mob {
+            padding-inline: 0%;
+            line-height: 1.4em;
+        }
+
+
+        .sns-cont-mb-10 {
+            margin-bottom: 10%;
+        }
+
+
+        .sns-head-cont {
+            padding-bottom: 5%;
+            padding-top: 5%;
+        }
+
+
+
+        .sns-head-pblk-2 {
+            padding-block: 2% 1%;
+        }
+
+
+        .sns-head-pt-1 {
+            padding-top: 2%;
+            padding-inline: 0%;
+        }
+
+
+        .sns-head-mt {
+            margin-top: 38% !important;
+        }
+
+        .sns-mt-20 {
+            margin-top: 20% !important;
+        }
+
+
+        .sns-mt-30 {
+            margin-top: 30% !important;
+        }
+
+        .sns-head-mt-35 {
+            margin-top: 35% !important;
+        }
+
+        .conta .butnn {
+
+            top: 97% !important;
+            left: 2% !important;
+
+        }
+    }
+
+    @media (min-width:481px) and (max-width:890px) {
+        .conta .butnn {
+
+            top: 85% !important;
+            left: 25% !important;
+
+        }
+    }
+
+
+    .sns-pb-main {
+        padding-block: 2.5% 0.5% !important;
+    }
+
+
+
+
+    @media screen and (max-width: 480px) {
+        .sns-BN>.sns-btn {
+            width: calc(89%/1);
+            margin: 3%;
+            padding-block: 4%;
+        }
+
+        .sns-pad-blk-head {
+            padding-block: 17% 3%;
+        }
+    }
+
+
+
+
+    @media screen and (max-width: 890px) {
+
+
+        .sns-BN>.sns-btn {
+            width: calc(91%/2);
+        }
+    }
+
+
+
+
+
+    @media only screen and (max-width: 480px) {
+
+
+        /* This Secton was duplicated from Section 6. */
+        .main-gallery img {
+            border-radius: 0px !important;
+        }
+
+
+        .sns-pad-in-0-5 {
+            padding-inline: 0% 5% !important;
+            padding-top: 4%;
+        }
+
+        .sns-pi-mob-5 {
+            padding-inline: 5%;
+        }
+
+
+    }
+
+
+
+    @media only screen and (max-width: 640px) {
+        .sns-lst-cont {
+            padding-bottom: 15%;
+        }
+
+    }
+
+
+
+    @media only screen and (max-width: 890px) {}
+
+
+    /* extra classes ended */
+
+
+
+
+    /* This Secton was duplicated from Section 6. */
+    .main-gallery img {
+        border-radius: 0px;
+    }
+
+    .sns-a-img {}
+
+    .sns-a-img img {
+        border-radius: 20px;
+    }
+
+    .sns-gap {
+        gap: 0.95vw;
+    }
+
+    .sns-gapc {
+        gap: 1%;
+    }
+
+    .sec6-top {
+        margin-top: 2vw;
+    }
+
+    .gallery-bg {
+        width: 75%;
+    }
+
+    .gallery-sm {
+        width: 18%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.5%;
+    }
+
+    .main-gallery {
+        /* width: 94vw; */
+        margin-inline: 2% 1%;
+    }
+
+    .sml-gallery div {
+        overflow: hidden;
+    }
+
+    .big-gallery div {
+        overflow: hidden;
+    }
+
+    .main-gallery img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .main-gallery img:hover {
+        transform: scale(1.2);
+    }
+
+    .sml-gallery {
+        /* flex-direction: column; */
+        width: 31.75%;
+    }
+
+    .big-gallery {
+        width: 66.25%;
+    }
+
+    .gal1 {
+        width: 100%;
+    }
+
+    .gal12 {
+        width: 48.19217%;
+    }
+
+    .gal1_o {
+        width: 48.38434%;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sml-gallery {
+            width: 95%;
+            margin-bottom: 3%;
+        }
+
+        .sns-gap {
+            gap: 0vw;
+        }
+
+        .big-gallery {
+            width: 95%;
+        }
+
+        .gal1 {
+            width: 100%;
+        }
+
+        .gal12 {
+            width: 100%;
+            margin-bottom: 3%;
+        }
+
+        .gal1_o {
+            width: 100%;
+            margin-bottom: 3%;
+        }
+
+        .gallery-bg {
+            width: 94%;
+        }
+
+        .gallery-sm {
+            width: 94%;
+        }
+
+        .mg-top-sec-6 {
+            margin-top: 2%;
+        }
+    }
+
+    .sns-mrp_cards {
+        gap: 1%;
+    }
+
+    .sns-Card_2 {
+        width: calc(73%/3);
+        background-color: #ffffff;
+        margin-bottom: 1.5%;
+        border: 2px solid rgba(33, 152, 221, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 14px;
+        padding: 1%;
+        /* padding-bottom: 3%; */
+    }
+
+    .sns-mb-img {
+        width: 93% !important;
+        padding-block: 1% 5%;
+        margin-inline: auto;
+    }
+
+    .sns-right-bor {
+        border-right: 0px solid #E0E0E0 !important;
+        padding-top: 11%;
+    }
+
+    .sns-mrp {
+        background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-Card_2 {
+            width: calc(91%/2);
+            margin-block: 1.5%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-Card_2 {
+            width: calc(92%/1);
+            margin-block: 0%;
+        }
+
+        .sns-right-bor {
+            border: 0;
+            padding-top: 0 !important;
+        }
+    }
+
+    .seo-per {
+        padding: 3.5% 3% 2% 3%;
+        background-color: #fff;
+        color: var(--sns-black);
+    }
+
+    .seo-per p {
+        margin-bottom: 1.5% !important;
+        line-height: 1.4em !important;
+        font-size: 1.04vw !important;
+        font-weight: 400 !important;
+        color: rgba(52, 58, 64, 1);
+
+    }
+
+    .seo-per p a {
+        text-decoration-color: var(--sns-black);
+    }
+
+    .seo-per p a:hover {
+        color: #000;
+    }
+
+    .disc {
+        padding: 0% 3% 2% 3%;
+        background-color: var(--sns-white);
+        font-weight: 400;
+        line-height: 1.3em !important;
+        color: var(--sns-black);
+    }
+
+    .disc p {
+        margin-bottom: 1.5% !important;
+        line-height: 1.4em !important;
+        font-size: 1.04vw !important;
+        font-weight: 400 !important;
+        color: rgba(52, 58, 64, 1);
+
+
+    }
+
+    .disc p a:hover {
+        color: #000;
+    }
+
+    @media screen and (max-width: 890px) {
+        .seo-per {
+            padding: 5% 3% 3% 3%;
+        }
+
+        .seo-per p {
+            font-size: clamp(16px, 1vw, 18px) !important;
+        }
+
+        .disc p {
+            font-size: clamp(16px, 1vw, 18px) !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .seo-per {
+            padding: 15% 4% 0 4%;
+        }
+
+        .seo-per p {
+            margin-bottom: 5% !important;
+        }
+
+        .disc {
+            padding: 8% 4% 3%;
+        }
+
+        .disc p {
+            margin-bottom: 6% !important;
+            padding-inline: 0 3%;
+        }
+    }
+
+    .disc a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-pb-7-mob {
+            padding-bottom: 7%;
+        }
+
+    }
+
+    .sbannflex {
+        display: flex;
+        padding-left: 3%;
+        gap: 1.5%;
+    }
+
+    .sbannflexinn {
+        border-right: 2px solid rgba(255, 255, 255, 1);
+        padding-right: 1.5%;
+    }
+
+    .sbannflexinn h5 {
+        font: 400 1.04vw/1.4em "Avenir Next" !important;
+        /* padding-bottom: 1.5%; */
+    }
+
+    .sbannflexinn p {
+        font: 600 1.77vw/1.4em "Avenir Next" !important;
+    }
+
+    .sbannflexinn:nth-of-type(2) {
+        border: none;
+    }
+
+    .sns_con_img .sns_con_box h5 {
+        font-size: 1.15vw;
+        font-weight: 600;
+        color: rgba(33, 152, 221, 1);
+        letter-spacing: 0.03em;
+        padding-bottom: 1.8%;
+        line-height: 1.3em;
+    }
+
+    .s1x1 .sns-mt-2 {
+        margin-top: 1.5%;
+
+    }
+
+    .sns-3x3 .sns-inner-4 h5 {
+        font-size: 1.15vw;
+        font-weight: 600;
+        color: rgba(33, 152, 221, 1);
+        letter-spacing: 0.03em;
+        padding-bottom: 1.5%;
+        line-height: 1.3em;
+    }
+
+    .sngap {
+        gap: 1.5%;
+    }
+
+    .sns-right-bor .sns-f-30 {
+        font-size: 2.08vw !important;
+    }
+
+    .sns-right-bor .sns-f-20 {
+        font-size: 1.25vw !important;
+        padding-top: 3%;
+    }
+
+    .sns-right-bor .sns-f-20 span {
+        font-weight: 600;
+    }
+
+    @media screen and (max-width:890px) {
+        .sns_con_img .sns_con_box h5 {
+            font-size: clamp(20px, 1.15vw, 22px) !important;
+        }
+
+        .sns-3x3 .sns-inner-4 h5 {
+            font-size: clamp(20px, 1.15vw, 22px) !important;
+            padding-bottom: 0;
+        }
+
+        .sns-right-bor .sns-f-30 {
+            font-size: 24px !important;
+        }
+
+        .sns-right-bor .sns-f-20 {
+            font-size: 18px !important;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sbannflex {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 7%;
+        }
+
+        .sbannflexinn h5 {
+            font-size: 18px !important;
+        }
+
+        .sbannflexinn p {
+            font-size: 28px !important;
+        }
+
+        .sbannflexinn:nth-of-type(2) {
+            padding-top: 7%;
+        }
+
+        .sns-f-55 {
+            text-align: left;
+        }
+
+        .sns_con_img {
+
+            margin-inline: 4%;
+            padding: 2% 1.5% 4.5%;
+            margin-bottom: 5%;
+        }
+
+        .sngap .sns-f-30 {
+            font-size: clamp(24px, 1.563vw, 30px) !important;
+        }
+
+        .sns-inner-2 .sns-padd-2 {
+            padding-bottom: 10%;
+        }
+
+        .sns-Card_2 {
+            padding: 3%;
+            padding-bottom: 6%;
+            margin-bottom: 8%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .sns-right-bor .sns-pt-3 {
+            padding-top: 7%;
+        }
+
+        .sns-mrp {
+            padding-bottom: 10%;
+
+        }
+
+        .sbannflexinn {
+            width: 100%;
+            border: none;
+        }
+
+        .snspb33 {
+            padding-bottom: 4% !important;
+        }
+    }
+    .s4x4 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5%;
+    }
+    .s4x4inner {
+            width: calc(88%/4);
+    text-align: center;
+    box-shadow: 5px 4px 4px #0000000D, -2px -1px 5px #0000000D;
+    border-radius: 10px;
+    padding-bottom: 0.5%;
+    }
+    .s4x4innerpadd {
+        padding: 5%;
+    }
+    .s4x4inner img {
+        width: 80%;
+        margin-inline: auto;
+    }
+    .s4x4 h4 {
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.3em;
+        color: #000;
+        padding-inline: 2%;
+        text-transform: capitalize;
+    }
+    .s4x4.secbg .s4x4inner {
+        background-color: #00446B;
+    }
+    .s4x4.secbg .s4x4inner h4 {
+        color: #fff;
+    }
+</style>
+
+
+
+
+<div class="main-div">
+    <div class="sns-acura_banner_sec">
+        <div class="sns-acura_banner_sec_imgs">
+            <figure class="sns-main_img"><img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Banner-Honda-CPO-Desktop.jpg"
+                    alt="Honda Certified Pre-Owned Florence, AL" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Banner-Honda-CPO-Mobile.jpg"
+                    alt="Honda Certified Pre-Owned Florence, AL" /></figure>
+        </div>
+        <div class="sns-acura_banner_sec_lft">
+            <h1>Honda Certified Pre-Owned
+Florence, AL</h1>
+
+
+        </div>
+    </div>
+    <section class="sns-button">
+        <div class="sns-BN justify-content-evenly " style="background-color: #eeede7;"><a
+                class="sns-btn sns-butn sns-f-b" href="https://www.singingriverhonda.com/new-vehicles/ridgeline/"> <span
+                    class="" style="color: #fff;"> View Inventory</span> </a> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.singingriverhonda.com/contact-us/"> <span class="" style="color: #fff;">get a
+                    quote</span> </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.singingriverhonda.com/value-your-trade/"> <span class="" style="color: #fff;">value
+                    your trade</span> </a> <a class="sns-btn sns-butn "
+                href="https://www.singingriverhonda.com/get-pre-qualified-with-capital-one/"> <span class=""
+                    style="color: #fff;">get
+                    pre-approved</span> </a></div>
+    </section>
+    <div class="sns-head sns-mt-3 sns-head-inline-22 sns-pb-3">
+
+        <h2 class="sns-f-55 sns-head-pt-2">HondaTrue Certified Benefits</h2>
+
+        <p class="sns-f-20">Peace of mind, with incredible benefits.</p>
+
+    </div>
+
+    <div class="s4x4">
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/7-Years-Powertrain-Coverage-Honda-CPO-Desktop.png"
+                    alt="7-Years* /100,000-Miles* Powertrain Coverage" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/7-years-powertrain-coverage-Honda-CPO-Mobile.png"
+                    alt="7-Years* /100,000-Miles* Powertrain Coverage" />
+
+                <div class="s4x4innerpadd">
+                    <h4>7-Years* /100,000-Miles* Powertrain Coverage</h4>
+                </div>
+        </div>
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Two-Free-oil-changes-in-first-year-Honda-CPO-Desktop.png"
+                    alt="Two Free Oil Changes in First Year*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/one-complimentary-oil-change-within-first-year-of-ownership-Honda-CPO-Mobile.png"
+                    alt="Two Free Oil Changes in First Year*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>Two Free Oil Changes <br/> in First Year*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-Roadside-Assistance-Honda-CPO-Desktop.png"
+                    alt="24/7 Roadside Assistance*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-roadside-assistance-3-Honda-CPO-Mobile.png"
+                    alt="24/7 Roadside Assistance*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>24/7 Roadside <br/> Assistance*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-Honda-CPO-Desktop.png"
+                    alt="Downloadable Vehicle Inspection Reports" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-Honda-CPO-Mobile.png"
+                    alt="Downloadable Vehicle Inspection Reports" />
+
+                <div class="s4x4innerpadd">
+                    <h4>Downloadable Vehicle Inspection Reports</h4>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="sns-button sns-mt-6 sns-mt-20">
+        <div class="sns-BN justify-content-evenly snspb33" style="background-color: #eeede7;"><a
+                class="sns-btn sns-butn" href="https://www.singingriverhonda.com/new-vehicles/ridgeline/"> <span
+                    class="" style="color: #fff;"> View Inventory</span> </a></div>
+    </section>
+
+
+    <div class="sns-head sns-mt-3 sns-head-inline-22 sns-pb-3">
+
+        <h2 class="sns-f-55 sns-head-pt-2">HondaTrue Certified EV Benefits</h2>
+
+        <p class="sns-f-20">Drive electric with HondaTrue.</p>
+
+    </div>
+
+    <div class="s4x4 secbg">
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/High-Voltage-Batteru-Coverage-Honda-CPO-Desktop.png"
+                    alt="High Voltage Battery Coverage*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/High-Voltage-Battery-coverage-Honda-CPO-Mobile.png"
+                    alt="High Voltage Battery Coverage*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>High Voltage Battery <br/> Coverage*</h4>
+                </div>
+        </div>
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Four-Complimentary-Tire-Rotations-Honda-CPO-Desktop.png"
+                    alt="Four Complimentary Tire Rotations*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Four-Complimentary-Tire-rotations-Honda-CPO-Mobile.png"
+                    alt="Four Complimentary Tire Rotations*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>Four Complimentary <br/> Tire Rotations*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-Roadside-Assistance-2-Honda-CPO-Desktop.png"
+                    alt="24/7 Roadside Assistance*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-Radside-Assistance-2-Honda-CPO-Mobile.png"
+                    alt="24/7 Roadside Assistance*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>24/7 Roadside <br/> Assistance*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-2-Honda-CPO-Desktop.png"
+                    alt="Downloadable Vehicle Inspection Reports" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-2-Honda-CPO-Mobile.png"
+                    alt="Downloadable Vehicle Inspection Reports" />
+
+                <div class="s4x4innerpadd">
+                    <h4>Downloadable Vehicle Inspection Reports</h4>
+                </div>
+        </div>
+    </div>
+
+
+
+    <section class="sns-button sns-mt-6 sns-mt-20">
+        <div class="sns-BN justify-content-evenly snspb33" style="background-color: #eeede7;"><a
+                class="sns-btn sns-butn" href="https://www.singingriverhonda.com/contact-us/"> <span class=""
+                    style="color: #fff;"> get A Quote</span> </a></div>
+    </section>
+
+
+    <div class="sns-head sns-mt-3 sns-head-inline-22 sns-pb-3">
+
+        <h2 class="sns-f-55 sns-head-pt-2">HondaTrue Certified EV Benefits</h2>
+
+        <p class="sns-f-20">Drive electric with HondaTrue.</p>
+
+    </div>
+
+    <div class="s4x4">
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/100-days-5000-miles-powertrain-coverage-Honda-CPO-Desktop.png"
+                    alt="100-Days/5,000-Miles Powertrain Coverage*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/7-years-powertrain-coverage-Honda-CPO-Mobile.png"
+                    alt="100-Days/5,000-Miles Powertrain Coverage*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>100-Days/5,000-Miles Powertrain Coverage*</h4>
+                </div>
+        </div>
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/One-complimentary-oil-change-within-first-year-of-ownership-Honda-CPO-Desktop.png"
+                    alt="One Complimentary  Oil Change Within First  Year of Ownership*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/one-complimentary-oil-change-within-first-year-of-ownership-Honda-CPO-Mobile.png  "
+                    alt="One Complimentary  Oil Change Within First  Year of Ownership*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>One Complimentary <br/> Oil Change Within First <br/> Year of Ownership*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-Roadside-assistance-3-Honda-CPO-Desktop.png"
+                    alt="24/7 Roadside Assistance*" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/24-7-roadside-assistance-3-Honda-CPO-Mobile.png"
+                    alt="24/7 Roadside Assistance*" />
+
+                <div class="s4x4innerpadd">
+                    <h4>24/7 Roadside <br/> Assistance*</h4>
+                </div>
+        </div>
+
+
+
+        <div class="s4x4inner">
+            <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-3-Honda-CPO-Desktop.png"
+                    alt="Downloadable Vehicle Inspection Reports" /> <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/singingriverhonda/uploads/2025/11/Downdable-vehicle-inspection-reports-3-Honda-CPO-Mobile.png"
+                    alt="Downloadable Vehicle Inspection Reports" />
+
+                <div class="s4x4innerpadd">
+                    <h4>Downloadable Vehicle Inspection Reports</h4>
+                </div>
+        </div>
+    </div>
+
+
+    <section class="sns-button sns-mt-6">
+        <div class="sns-BN justify-content-evenly " style="background-color: #eeede7;"><a
+                class="sns-btn sns-butn sns-f-b" href="https://www.singingriverhonda.com/new-vehicles/ridgeline/"> <span
+                    class="" style="color: #fff;">
+                    View Inventory</span> </a> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.singingriverhonda.com/contact-us/"> <span class="" style="color: #fff;">get a
+                    quote</span> </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.singingriverhonda.com/value-your-trade/"> <span class="" style="color: #fff;">value
+                    your
+                    trade</span> </a> <a class="sns-btn sns-butn "
+                href="https://www.singingriverhonda.com/get-pre-qualified-with-capital-one/"> <span class=""
+                    style="color: #fff;">get
+                    pre-approved</span> </a></div>
+    </section>
+    <div class="seo">
+        <div class="seo-per sns-dis-size sns-bg-clr-seo-disc">
+
+            <p><b>Introducing the 2025 Honda Accord in Florence, AL
+                </b></p>
+            <p>The 2025 Honda Accord in Florence, AL is finally here! This latest model captures attention with its
+                refined design, improved efficiency, and advanced technology that makes every drive more rewarding.
+                Inside, comfort meets innovation with intuitive features designed to keep you connected and confident.
+                The Accord’s updated powertrain delivers smooth acceleration and impressive fuel economy, perfect for
+                both city commutes and weekend adventures.
+            </p>
+
+            <p><b>Where to Buy a 2025 Honda Accord for Sale in Florence, AL?
+                </b></p>
+
+            <p>You can buy a 2025 Honda Accord for sale in Florence, AL at Singing River Honda dealership!
+            </p>
+
+            <p>The 2025 Honda Accord in Florence, AL offers drivers a choice between two highly capable powertrains. LX
+                and SE trims feature a responsive 1.5-liter turbocharged engine that generates 192 horsepower and 192
+                pound-feet of torque. This engine is paired with a smooth-shifting Continuously Variable Transmission
+                (CVT) designed to optimize speed in all driving conditions, providing adequate power without sacrificing
+                fuel economy. Alternatively, an available 204-horsepower hybrid powertrain is standard on Sport Hybrid
+                trims and higher. This system delivers a smooth, direct rush of instant torque courtesy of a powerful
+                electric motor. The Accord Hybrid achieves a 46 city/41 highway MPG rating, though the Sport-L Hybrid
+                trim receives a 51 city/44 highway MPG rating. The hybrid powertrain can operate in electric-only EV
+                mode under certain conditions, utilizing its powerful traction motor and high-voltage battery.
+            </p>
+
+            <p>The exterior design of the 2025 Honda Accord in Florence, AL is defined its sleek look and available
+                sport styling. The car casts a bold, graceful profile achieved with smooth contours and a
+                fastback-inspired roofline. The distinctive front end includes an active shutter grille shielded a
+                gloss-black mesh panel. Lighting features include all-LED headlights with a dual low-beam design and
+                blacked-out housing, plus linear, tapered LED taillights that emphasize the car's width. Inside the
+                cabin, the refined design presents a clean, cohesive look, with center and passenger-side vents
+                elegantly integrated behind a mesh panel. Comfort amenities include body-stabilizing front seats that
+                provide added lumbar and pelvis support, along with enhanced bolstering. The cabin easily accommodates
+                up to five adults with ample rear legroom and headroom.
+            </p>
+
+            <p>The 2025 Honda Accord in Florence, AL establishes a new standard for connectivity. Hybrid trims come
+                standard with an extra-wide 12.3-inch touch-screen that features swipe functionality. Every Accord
+                includes Apple CarPlay® compatibility, with wireless compatibility standard on hybrid trims. Available
+                Google built-in, standard on the Touring Hybrid, provides Google Assistant, Google Maps, and access to
+                Google Play apps. Alexa Built-in is standard on hybrid trims, enabling control of smart home devices,
+                music playback, and remote engine start commands. The Touring Hybrid also features a 12-speaker Bose
+                Premium Sound System with Centerpoint surround-sound technology.
+            </p>
+
+            <p><b>Where to Test Drive a 2025 Honda Accord in Florence, AL?
+                </b>
+            </p>
+            <p>You can test drive a 2025 Honda Accord in Florence, AL at Singing River Honda! A test drive is the best
+                way to discover how seamlessly performance meets comfort in this remarkable sedan. The friendly team at
+                Singing River Honda is ready to help you explore trims, features, and financing options that fit your
+                lifestyle. Schedule your test drive today and see why the new Accord continues to impress drivers who
+                expect more from every mile.
+
+            </p>
+        </div>
+        <div class="disc sns-dis-size sns-bg-clr-seo-disc">
+            <p>*MSRP<br />
+                MSRP excluding tax, license, registration, $1,195 destination charge, and accessories. Dealer prices may
+                vary. MSRP does not include $455 charge for premium colors.</p>
+
+            <p>*Fuel-Economy Ratings<br />
+                29 city/37 highway/32 combined mpg rating for LX and SE. 51 city/44 highway/48 combined mpg rating for
+                EX-L Hybrid. 46 city/41 highway/44 combined mpg rating for Sport Hybrid, Sport-L Hybrid and Touring
+                Hybrid. Based on 2025 EPA mileage ratings. Use for comparison purposes only. Your mileage will vary
+                depending on how you drive and maintain your vehicle, driving conditions, battery-package/condition
+                (hybrid trims) and other factors.</p>
+
+            <p>*Accord Horsepower<br />
+                192 hp @ 6000 rpm (SAE net) for petrol models; 204 hp. Total system horsepower (ISO net) as measured by
+                the peak, concurrent output of the two electric motors and gasoline engine for FHEV models.</p>
+
+            <p>*Accord Torque<br />
+                192 lb-ft @ 1700-5000 rpm (SAE net); 134 lb-ft @ 4500 rpm for FHEV.</p>
+
+            <p>*Accord 1.5T Horsepower<br />
+                192 hp @ 6000 rpm (SAE net)</p>
+
+            <p>*Accord 1.5T Torque<br />
+                192 lb-ft @ 1700-5000 rpm (SAE net)</p>
+
+            <p>*Fuel-Economy Ratings<br />
+                29 city/37 highway/32 combined mpg rating for Petrol trims. 46 city/41 highway/44 combined mpg rating
+                for Sport, Sport-L, and Touring trims. 51 city/44 highway/48 combined for EX-L trim. Based on 2025 EPA
+                mileage ratings. Use for comparison purposes only. Your mileage will vary depending on how you drive and
+                maintain your vehicle, driving conditions, battery-pack age/condition (hybrid trims) and other factors.
+            </p>
+
+            <p>*Bose<br />
+                Bose and Centerpoint are registered trademarks of Bose Corporation.</p>
+
+            <p>*Bose Premium Sound System<br />
+                Bose and Centerpoint are registered trademarks of Bose Corporation.</p>
+
+            <p>*Cargo<br />
+                Honda reminds you to properly secure cargo items and follow all applicable load limits and loading
+                guidelines.</p>
+
+            <p>*All-Season Floor Mats<br />
+                Not intended for use with other floor mats. Always secure floor mats with your vehicle's floor mat
+                anchors.</p>
+
+            <p>*Google built-in<br />
+                Data speeds may temporarily be slowed if the network is busy. Google, Google Play, Google Maps, and
+                other related marks and logos are trademarks of Google LLC.</p>
+
+            <p>*HondaLink® Subscription Services<br />
+                HondaLink Subscription Services comes with a three-month trial. Some features require geolocation data.
+                At the end of the trial period, purchase of a subscription is required to continue the service.</p>
+
+            <p>*HondaLink®<br />
+                Depending on use, HondaLink® can transmit to Honda and its providers a vehicle's location, speed and
+                other operating conditions, information that may be tied to the vehicle identification number (VIN), and
+                can be combined to create a track of a vehicle. For a full explanation of HondaLink® functionality and
+                Honda's data use and privacy policy, see https://mygarage.honda.com/s/hondalink-marketing</p>
+
+            <p>*Alexa Built-in<br />
+                Amazon, Alexa and all related marks are trademarks of Amazon.com, Inc. or its affiliates. Certain Alexa
+                functionality is dependent on smart home technology.</p>
+
+            <p>*Apple CarPlay® compatibility<br />
+                Depending on use, Apple CarPlay can share certain user and vehicle information (e.g., vehicle location,
+                speed, and other operating conditions) with the connected iPhone. See Apple's privacy policy for details
+                regarding Apple's use and handling of data uploaded by CarPlay. Use of CarPlay is at user's own risk,
+                and is subject to agreement to the CarPlay terms of use, which are included as part of the Apple iOS
+                terms of use. CarPlay vehicle compatibility is provided "as is", and Honda cannot guarantee CarPlay
+                operability or functionality now or in the future due to, among other conditions, changes in CarPlay
+                software/Apple iOS, service interruptions, or incompatibility or obsolescence of vehicle-integrated
+                hardware or software. See dealer for details. Only use CarPlay when conditions allow you to do so
+                safely. Apple CarPlay is a registered trademark of Apple Inc.</p>
+
+            <p>*Wireless phone charger - Qi only<br />
+                Wireless phone charger is compatible with Qi wireless charging standards. Check with your device's
+                manufacturer for wireless capability.</p>
+
+            <p>*Blind spot information (BSI)<br />
+                The system is not a substitute for your own visual assessment before changing lanes. BSI may not detect
+                all objects behind or to the side of a vehicle and may not detect a given object; system accuracy will
+                vary based on weather, size of object, and speed. Driver remains responsible for safely operating
+                vehicle and avoiding collisions.</p>
+
+            <p>*Rearview camera<br />
+                Always visually confirm that it is safe to drive before backing up; the rearview camera display does not
+                provide complete information about all conditions and objects at the rear of your vehicle.</p>
+
+            <p>*Low-Speed Braking Control<br />
+                Low-Speed Braking Control may not detect all objects in front of or behind the vehicle. Accuracy will
+                vary based on weather, speed, and other factors. Driver remains responsible for safely operating vehicle
+                and avoiding collisions.</p>
+
+            <p>*Collision Mitigation Braking System™ (CMBS™)<br />
+                Depending on the circumstances, CMBS may not go through all the alert stages before initiating the last
+                stage (of collision mitigation). CMBS cannot detect all objects ahead and may not detect a given object;
+                accuracy will vary based on weather, speed, and other factors. System operation affected by extreme
+                interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.
+            </p>
+
+            <p>*Road Departure Mitigation (RDM)<br />
+                Road Departure Mitigation only alerts the driver when lane drift is detected without a turn signal in
+                use and can apply mild steering torque to assist driver in maintaining proper lane position or to slow
+                the vehicle's departure from a detected lane. RDM may not detect all lane markings or lane departures;
+                accuracy will vary based on weather, speed, and road condition. System operation affected by extreme
+                interior heat. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+            <p>*Adaptive Cruise Control (ACC) with Low-Speed Follow (LSF)<br />
+                ACC with Low-Speed Follow cannot detect all objects ahead and may not detect a given object; accuracy
+                will vary based on weather, speed, and other factors. ACC should not be used in heavy traffic, poor
+                weather, or on winding roads. Driver remains responsible for safely operating vehicle and avoiding
+                collisions.
+            </p>
+            <p>*Lane Keeping Assist System (LKAS) with Traffic Jam Assist (TJA)<br />LKAS with TJA only assists driver
+                in maintaining proper lane position when lane markings are identified without a turn signal in use and
+                can only apply mild steering torque to assist. The system may not detect all lane markings; accuracy
+                will vary based on weather, speed, and road condition. System operation affected by extreme interior
+                heat. Driver remains responsible for safely operating vehicle and avoiding collisions.</p>
+            <p>*Traffic Sign Recognition (TSR)<br>TSR cannot detect all traffic signs, may misidentify certain signs and
+                does not include any braking or speed control functions. Accuracy will vary based on weather and other
+                factors. System operation affected by extreme interior heat. Driver remains responsible for complying
+                with all traffic regulations.</p>
+        </div>
+    </div>
+
+
+
+
+
+</div>
