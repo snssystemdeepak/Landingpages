@@ -1,0 +1,4518 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+
+
+    .container-max-md {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .px-xl-8 {
+        padding: 0 !important;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .main-div {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        margin: 0;
+        font-family: 'DM Sans';
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        letter-spacing: -0.03em;
+    }
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+
+    .main-div sup {
+        top: -0.1em !important;
+        font-size: 95%;
+
+    }
+
+    :root {
+        --sns-black: #000;
+        --sns-white: #fff;
+        --sns-gray: #F6F6F6;
+    }
+
+    .sns-f-72 {
+        font-size: 3.75vw !important;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .sns-f-57 {
+        font-size: 2.969vw !important;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .sns-f-50 {
+        font-size: 1.67vw !important;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .sns-f-43 {
+        font-size: 2.24vw !important;
+        font-weight: 700;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .sns-f-42 {
+        font-size: 2.4vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.2em;
+
+    }
+
+    .sns-f-44 {
+        font-size: 2.292vw !important;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+    }
+
+    .sns-f-36 {
+        font-size: 1.875vw !important;
+        font-weight: 400 !important;
+        color: #000;
+        line-height: 1.25em;
+    }
+
+    .sns-f-35 {
+        font-size: 1.88vw !important;
+        font-weight: 400;
+        color: #333333;
+        line-height: 1.3em;
+    }
+
+    .sns-f-32 {
+        font-size: 1.666vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-30 {
+        font-size: 1.563vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-28 {
+        font-size: 1.458vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-26 {
+        font-size: 1.35vw !important;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: 2px;
+    }
+
+    .sns-f-25 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(199, 24, 6, 1) !important;
+        text-transform: uppercase;
+    }
+
+
+    .sns-f-24 {
+        font-size: 1.36vw !important;
+        font-weight: 700;
+        line-height: 1.3em;
+        color: #003057;
+        letter-spacing: 2px;
+    }
+
+    .sns-f-24-b {
+        font-size: 1.25vw !important;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: #000;
+    }
+
+    .sns-f-24-p {
+        font-size: 1.25vw !important;
+        font-weight: 400;
+        line-height: 1.3em;
+        color: #333333 !important;
+    }
+
+    .sns-f-23 {
+        font-size: 0.94vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1) !important;
+    }
+
+    .sns-f-20R {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 150%;
+    }
+
+    .sns-f-20 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+        line-height: 1.3em;
+    }
+
+    .sns-f-20-a {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 150%;
+    }
+
+    .sns-f-19 {
+        font-size: 0.94vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.55em;
+
+    }
+
+    .sns-f-18 {
+        font-size: 0.938vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.55em;
+
+    }
+
+    .sns-f-18-a {
+        font-size: 0.938vw !important;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.55em;
+        text-align: center;
+        padding-inline: 5%;
+
+    }
+
+    .sns-f-16 {
+        font-size: 0.833vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+
+    }
+
+    .sns-f-14 {
+        font-size: 14px !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.3em;
+    }
+
+    .sns-mar-in-30 {
+        margin-inline: 30%;
+    }
+
+    .sns-mar-in-28 {
+        margin-inline: 28%;
+    }
+
+    .sns-mar-in-27 {
+        margin-inline: 26.7%;
+    }
+
+    .sns-mar-in-21 {
+        margin-inline: 21.5%;
+    }
+
+    .sns-mar-in-26 {
+        margin-inline: 26%;
+    }
+
+    .sns-mar-in-18 {
+        margin-inline: 18%;
+    }
+
+    .sns-mar-in-35 {
+        margin-inline: 35%;
+    }
+
+    .sns-mar-in-15 {
+        margin-inline: 15%;
+    }
+
+    .sns-mar-in-25 {
+        margin-inline: 25%;
+    }
+
+    .sns-mar-in-24 {
+        margin-inline: 23.8%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-f-72 {
+            font-size: clamp(40px, 3.75vw, 50px) !important;
+        }
+
+        .sns-f-26 {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+
+        .sns-mar-in-21 {
+            margin-inline: 5%;
+        }
+
+
+
+        .sns-f-57 {
+            font-size: clamp(38px, 2.969vw, 50px) !important;
+        }
+
+        .sns-f-50 {
+            font-size: clamp(22px, 2.604vw, 50px) !important;
+        }
+
+        .sns-f-43 {
+            font-size: clamp(34px, 2.188vw, 43px) !important;
+        }
+
+        .sns-f-44 {
+            font-size: clamp(34px, 2.292vw, 44px) !important;
+            padding-inline: 6.3%;
+        }
+
+        .sns-f-42 {
+            font-size: clamp(32px, 2.188vw, 42px) !important;
+            padding-inline: 6.3%;
+        }
+
+        .sns-f-36 {
+            font-size: clamp(24px, 1.875vw, 36px) !important;
+        }
+
+        .sns-f-35 {
+            font-size: clamp(24px, 1.823vw, 35px) !important;
+        }
+
+        .sns-f-32 {
+            font-size: clamp(22px, 1.823vw, 32px) !important;
+        }
+
+        .sns-f-30 {
+            font-size: clamp(26px, 1.563vw, 30px) !important;
+        }
+
+        .sns-f-28 {
+            font-size: clamp(24px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-25 {
+            font-size: clamp(16px, 1.302vw, 25px) !important;
+        }
+
+        .sns-f-24 {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-24-b {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-24-p {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-23 {
+            font-size: clamp(18px, 1.198vw, 23px) !important;
+        }
+
+        .sns-f-20R {
+            font-size: clamp(14px, 1.042vw, 20px) !important;
+            line-height: 146%;
+        }
+
+        .sns-f-20 {
+            font-size: clamp(14px, 1.042vw, 20px) !important;
+        }
+
+        .sns-f-20-a {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+            line-height: 1.25em;
+        }
+
+        .sns-f-19 {
+            font-size: clamp(14px, 0.99vw, 19px) !important;
+        }
+
+        .sns-f-16 {
+            font-size: clamp(14px, 0.833vw, 16px) !important;
+        }
+
+        .sns-f-18-a {
+            font-size: clamp(14px, 0.938vw, 18px) !important;
+        }
+
+        .sns-f-18 {
+            font-size: clamp(14px, 0.938vw, 18px) !important;
+        }
+
+        .sns-f-14 {
+            font-size: clamp(12px, 0.875em, 19px) !important;
+        }
+
+        .sns-mar-in-30 {
+            margin-inline: 5%;
+        }
+
+        .sns-mar-in-28 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-27 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-26 {
+            margin-inline: 4%;
+        }
+
+        .sns-mar-in-35 {
+            margin-inline: 4%;
+        }
+
+        .sns-mar-in-18 {
+            margin-inline: 4%;
+        }
+
+        .sns-mar-in-15 {
+            margin-inline: 4%;
+        }
+
+        .sns-mar-in-25 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-24 {
+            margin-inline: 3%;
+        }
+    }
+
+    .sns-mt-6 {
+        margin-top: 6%;
+    }
+
+    .sns-mt-5 {
+        margin-top: 5%;
+    }
+
+    .sns-mt-4 {
+        margin-top: 4%;
+    }
+
+    .sns-mt-3 {
+        margin-top: 3%;
+    }
+
+    .sns-mt-2 {
+        margin-top: 2%;
+    }
+
+    .sns-mt-1 {
+        margin-top: 1%;
+    }
+
+    .sns-mb-6 {
+        margin-bottom: 6%;
+    }
+
+    .sns-mb-5 {
+        margin-bottom: 5%;
+    }
+
+    .sns-mb-4 {
+        margin-bottom: 4%;
+    }
+
+    .sns-mb-3 {
+        margin-bottom: 3%;
+    }
+
+    .sns-mb-2 {
+        margin-bottom: 2%;
+    }
+
+    .sns-mb-1 {
+        margin-bottom: 1%;
+    }
+
+    .sns-mb-0 {
+        margin-bottom: 0% !important;
+    }
+
+    .sns-pt-6 {
+        padding-top: 6%;
+    }
+
+    .sns-pt-5 {
+        padding-top: 4.5%;
+    }
+
+    .sns-pt-4 {
+        padding-top: 4% !important;
+    }
+
+    .sns-pt-3 {
+        padding-top: 3%;
+    }
+
+    .sns-pt-2 {
+        padding-top: 2%;
+    }
+
+    .sns-pt-1 {
+        padding-top: 1%;
+    }
+
+    .sns-pb-6 {
+        padding-bottom: 6%;
+    }
+
+    .sns-pb-5 {
+        padding-bottom: 5%;
+    }
+
+    .sns-pb-4 {
+        padding-bottom: 4% !important;
+    }
+
+    .sns-pb-3 {
+        padding-bottom: 3% !important;
+    }
+
+    .sns-pb-2 {
+        padding-bottom: 2% !important;
+    }
+
+    .sns-pb-1 {
+        padding-bottom: 1%;
+    }
+
+    .sns-m-block-1 {
+        margin-block: 1%;
+    }
+
+    .sns-m-block-2 {
+        margin-block: 2%;
+    }
+
+    .sns-m-block-3 {
+        margin-block: 3%;
+    }
+
+    .sns-m-block-4 {
+        margin-block: 4%;
+    }
+
+    .sns-m-block-5 {
+        margin-block: 5%;
+    }
+
+    .sns-m-block-6 {
+        margin-block: 6%;
+    }
+
+    .sns-p-inline-1 {
+        padding-block: 1%;
+    }
+
+    .sns-p-inline-2 {
+        padding-block: 2%;
+    }
+
+    .sns-p-inline-3 {
+        padding-block: 3%;
+    }
+
+    .sns-p-inline-4 {
+        padding-block: 4%;
+    }
+
+    .sns-p-inline-5 {
+        padding-block: 5%;
+    }
+
+    .sns-p-inline-6 {
+        padding-block: 6%;
+    }
+
+
+    .sns-d-flex {
+        display: flex;
+    }
+
+
+    .sns-justify-content-center {
+        justify-content: center;
+    }
+
+    .sns-justify-center {
+        justify-content: center;
+    }
+
+
+    .sns-justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+
+    .sns-justify-content-space-between {
+        justify-content: space-between;
+    }
+
+
+    .sns-justify-content-space-around {
+        justify-content: space-around;
+    }
+
+
+    .sns-align-center {
+        align-items: center;
+    }
+
+    .sns-align-end {
+        align-items: end;
+    }
+
+
+    .sns-f-row {
+        flex-direction: row;
+    }
+
+
+    .sns-f-column {
+        flex-direction: column;
+    }
+
+
+    .sns-flex-wrap {
+        flex-wrap: wrap;
+    }
+
+
+    .sns-basline {
+        align-items: baseline;
+    }
+
+    .sns-wor {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+
+    .sns-w-25 {
+        width: 25%;
+    }
+
+    .sns-w-50 {
+        width: 50%;
+    }
+
+    .sns-w-75 {
+        width: 75%;
+    }
+
+    .sns-w-100 {
+        width: 100%;
+    }
+
+
+    .sns-desk-none {
+        display: none !important;
+    }
+
+    .sns-desk-none-para {
+        display: none !important;
+    }
+
+    .sns-mob-none {
+        display: block !important;
+    }
+
+    .sns-mob-none-para {
+        display: block !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-none-para {
+            display: block !important;
+        }
+
+        .sns-mob-none-para {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .sns-desk-none {
+            display: block !important;
+        }
+
+        /* 
+            .sns-pt-3{
+                padding-top: 6%;
+            } */
+        .sns-mt-3 {
+            margin-top: 5%;
+        }
+
+        .pt-5-mob {
+            padding-top: 5% !important;
+        }
+
+        .pb-1-mob {
+
+            padding-bottom: 1% !important;
+        }
+
+        .sns-mob-none {
+            display: none !important;
+        }
+
+    }
+
+    /* End */
+    /* None classes */
+    .sns-desk-view-c {
+        display: block !important;
+    }
+
+    .sns-tab-view-c {
+        display: none !important;
+    }
+
+    .sns-mob-view-c {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: block !important;
+        }
+
+        .sns-mob-view-c {
+            display: none !important;
+        }
+
+        .sns-wor {
+            padding-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: none !important;
+        }
+
+        .sns-mob-view-c {
+            display: block !important;
+        }
+
+        .sns-mb-2 {
+            margin-bottom: 3%;
+        }
+    }
+
+    .sns-desk-view-A {
+        display: block;
+    }
+
+    .sns-tab-view-A {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-A {
+            display: none;
+        }
+
+        .sns-tab-view-A {
+            display: block;
+        }
+    }
+
+    /* padding left and right in rem */
+    /* .sns-x-0 { padding-right: 0; padding-left: 0; } .sns-x-1 { padding-right: 0.25rem; padding-left: 0.25rem; } .sns-x-2 { padding-right: 0.5rem; padding-left: 0.5rem; } */
+    /* .sns-x-3 { padding-right: 1rem; padding-left: 1rem; } .sns-x-4 { padding-right: 1.5rem; padding-left: 1.5rem; } .sns-px-5 { padding-right: 3rem; padding-left: 3rem; } */
+    /* padding left and right in rem */
+    /* padding -top and bottom in rem */
+    /* .sns-py-0 { padding-top: 0; padding-bottom: 0; } .sns-py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; } .sns-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; } .sns-py-3 { padding-top: 1rem; padding-bottom: 1rem; } .sns-py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; } .sns-py-5 { padding-top: 3rem; padding-bottom: 3rem; } */
+    /* padding -top and bottom in rem */
+    .sns-fw-100 {
+        font-weight: 100;
+    }
+
+    .sns-fw-200 {
+        font-weight: 200;
+    }
+
+    .sns-fw-300 {
+        font-weight: 300;
+    }
+
+    .sns-fw-400 {
+        font-weight: 400;
+    }
+
+    .sns-fw-500 {
+        font-weight: 500;
+    }
+
+    .sns-fw-600 {
+        font-weight: 600;
+    }
+
+    .sns-fw-700 {
+        font-weight: 700;
+    }
+
+    .sns-fw-800 {
+        font-weight: 800;
+    }
+
+    /* font-weight normal italic bold */
+    .sns-text-start {
+        text-align: left;
+    }
+
+    .sns-text-end {
+        text-align: right;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-text-decoration-none {
+        text-decoration: none;
+    }
+
+    .sns-text-decoration-underline {
+        text-decoration: underline;
+    }
+
+    .sns-text-decoration-line-through {
+        text-decoration: line-through;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-text-lowercase {
+        text-transform: lowercase;
+    }
+
+    .sns-text-uppercase {
+        text-transform: uppercase;
+    }
+
+    .sns-text-capitalize {
+        text-transform: capitalize;
+    }
+
+    .sns-text-wrap {
+        white-space: normal;
+    }
+
+    .sns-text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-col-4 {
+        width: calc(85%/4);
+    }
+
+    .sns-col-3 {
+        width: calc(88%/3);
+    }
+
+    .sns-col-1 {
+        width: calc(94%/1);
+    }
+
+    .border-line {
+        border-bottom: 2px solid #C71806;
+        width: 5%;
+        padding-top: 0%;
+        margin-inline: auto;
+    }
+
+    .sns-underline {
+        border-bottom: 2px solid #C71806;
+        display: inline-block;
+        line-height: 2em;
+
+    }
+
+    .sns-ram_banner_sec {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img img {
+        width: 100%;
+    }
+
+    .sns-ram_banner_sec_lft {
+        position: absolute;
+        z-index: 2;
+        color: #000;
+        bottom: 8.5%;
+        left: 3%;
+    }
+
+    .sns-ram_banner_sec_lft p {
+        font-weight: 500;
+        font-size: 1.04vw;
+        text-transform: unset;
+        letter-spacing: 1px;
+    }
+
+    .sns-ram_banner_sec_lft h2 {
+        font-size: 1.04vw !important;
+        font-weight: 500;
+        letter-spacing: 0px;
+    }
+
+    .sns-ram_banner_sec_lft h1 {
+        margin-bottom: 0%;
+        font-size: 2.81vw !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .sns-ram_banner_sec_right {
+        position: absolute;
+        z-index: 1;
+        top: 2.4%;
+        right: 3%;
+        color: #fff;
+    }
+
+    /* .sns-ram_banner_sec_right h2 { font-size: 1.7vw; font-weight: 500; } */
+    .sns-ram_banner_sec_bottom {
+        position: absolute;
+        z-index: 1;
+        bottom: 3%;
+        left: 3%;
+        color: #D9D9D9;
+    }
+
+    .sns-ram_banner_sec_bottom p {
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+
+    .sns-ram_banner_sec_imgs_cnt {
+        color: #fff;
+        position: absolute;
+        left: 3%;
+        bottom: 7%;
+        z-index: 1;
+    }
+
+
+
+    @media screen and (max-width: 890px) {
+        .sns-ram_banner_sec_lft {
+            position: initial;
+            order: 1;
+            text-align: center;
+            padding-block: 5% 2.5%;
+            color: #000;
+            width: 100%;
+        }
+
+        .sns-underline {
+            line-height: 1.3em;
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 3% 3.2% 0% !important;
+        }
+
+        .sns-ram_banner_sec_lft p {
+            font-size: clamp(16px, 1.875vw, 28px) !important;
+            padding-inline: 4vw;
+            color: #000;
+            padding-top: 0.5%;
+        }
+
+        .sns-ram_banner_sec_lft h1 {
+            font-size: clamp(38px, 2.81vw, 54px) !important;
+            padding-bottom: 0;
+            margin-block: 3% 0%;
+            color: #000;
+            padding-inline: 11%;
+            line-height: 1.3em;
+        }
+
+
+        .sns-ram_banner_sec_lft h2 {
+            font-size: clamp(24px, 2.9688vw, 57px) !important;
+            margin-top: -2%;
+            font-weight: 600;
+        }
+
+        .sns-ram_banner_sec_bottom {
+            position: initial;
+            color: #D9D9D9;
+            background: #676767;
+            order: 3;
+            text-align: center;
+            margin-top: -1px;
+        }
+
+        .sns-ram_banner_sec_bottom p {
+            font-size: clamp(18px, 1.2vw, 20px);
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .sns-ram_banner_sec_imgs {
+            order: 1;
+        }
+
+        .sns-text-left-mob {
+            text-align: left;
+        }
+    }
+
+    .sns-four-button>.sns-BN {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5% 0;
+        background: #373737;
+        /* margin-top: -1px; */
+        gap: 1.5%;
+        border: 1px solid #1D394F;
+    }
+
+    .sns-BN>a {
+        color: #fff;
+        text-decoration: none !important;
+        text-transform: capitalize !important;
+    }
+
+    .sns-BN>.sns-btn {
+        width: calc(90%/4);
+        /* width: 21.25%; */
+        padding: 1.32% 0;
+        box-sizing: border-box;
+    }
+
+    .justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    .sns-BN .sns-butn {
+        background: #FF1D1D !important;
+        color: rgba(255, 255, 255, 1) !important;
+        font-size: 0.94vw !important;
+        font-weight: 700;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 10px;
+        text-transform: uppercase !important;
+        box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+        letter-spacing: 1px;
+    }
+
+    .sns-BN .sns-butn:hover {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-BN>.sns-btn {
+            width: calc(98.5%/2);
+            padding: 3% 0;
+        }
+
+        .sns-BN .sns-butn {
+            font-size: clamp(14px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-b {
+            margin-bottom: 5%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-BN>.sns-btn {
+            width: calc(95%/1);
+        }
+
+
+
+
+
+
+
+
+
+        .mtmob {
+            margin-top: 0% !important;
+        }
+
+        .mtmob6 {
+            margin-top: 6% !important;
+        }
+
+        .mtmob5 {
+            margin-top: 5% !important;
+        }
+
+        .mtmob4 {
+            margin-top: 4% !important;
+        }
+
+        .mtmob3 {
+            margin-top: 3% !important;
+        }
+
+        .mtmob2 {
+            margin-top: 2% !important;
+        }
+
+        .mtmob1 {
+            margin-top: 1% !important;
+        }
+
+        .mbmob6 {
+            margin-bottom: 6% !important;
+        }
+
+        .mbmob5 {
+            margin-bottom: 5% !important;
+        }
+
+        .mbmob4 {
+            margin-bottom: 4% !important;
+        }
+
+        .mbmob3 {
+            margin-bottom: 3% !important;
+        }
+
+        .mbmob2 {
+            margin-bottom: 2% !important;
+        }
+
+        .mbmob1 {
+            margin-bottom: 1% !important;
+        }
+
+        .mbmob {
+            margin-bottom: 0% !important;
+        }
+
+        .ptmob6 {
+            padding-top: 6% !important;
+        }
+
+        .ptmob5 {
+            padding-top: 5% !important;
+        }
+
+        .ptmob4 {
+            padding-top: 4% !important;
+        }
+
+        .ptmob3 {
+            padding-top: 3% !important;
+        }
+
+        .ptmob2 {
+            padding-top: 2% !important;
+        }
+
+        .ptmob1 {
+            padding-top: 1% !important;
+        }
+
+        .ptmob {
+            padding-top: 0% !important;
+        }
+
+        .pbmob6 {
+            padding-bottom: 6% !important;
+        }
+
+        .pbmob5 {
+            padding-bottom: 5% !important;
+        }
+
+        .pbmob4 {
+            padding-bottom: 4% !important;
+        }
+
+        .pbmob3 {
+            padding-bottom: 3% !important;
+        }
+
+        .pbmob2 {
+            padding-bottom: 2% !important;
+        }
+
+        .pbmob1 {
+            padding-bottom: 1% !important;
+        }
+
+        .pbmob {
+            padding-top: 0% !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-BN>.sns-btn {
+            width: calc(90%/1);
+        }
+
+        .sns-ram_banner_sec_lft {
+            position: initial;
+            /* background: #000; */
+            order: 1;
+            text-align: center;
+            padding-block: 0% 5%;
+            color: #000;
+            width: 100%;
+        }
+
+
+
+        .sns-BN>.sns-btn {
+            padding: 5% 0;
+            border-radius: 10px;
+        }
+
+        .sns-f-b {
+            margin-bottom: 5%;
+        }
+
+
+    }
+
+    .sns-head {
+        text-align: center;
+        color: #333333;
+        background-color: #fff;
+        /* padding-inline: 3%; */
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-42 {
+        text-transform: initial;
+    }
+
+    .sns-head p {
+        margin-bottom: 0.5em;
+
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-19 {
+        text-transform: uppercase;
+    }
+
+    .sns-head h2 {
+        margin-bottom: 1% !important;
+
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-head h2 {
+            margin-bottom: 3% !important;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-head h2 {
+            margin-bottom: 3% !important;
+        }
+    }
+
+
+    .card2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .card2c {
+        width: calc(93% / 2);
+        /* border: 1px solid black; */
+    }
+
+    .card2c .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .sns-inner-div-1 img {
+        width: 63%;
+        margin: 0 auto;
+    }
+
+    .sns-inner-div-1 .img1 {
+        width: 53%;
+        margin: 0 auto;
+        padding-top: 1%;
+    }
+
+    .sns-inner-div-1 .img-2 {
+        width: 56.1%;
+        margin: 0 auto;
+        padding-top: 3%;
+        padding-bottom: 5px;
+    }
+
+    .sns-inner-div-1 .img-3 {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 3.8%;
+    }
+
+    .sns-m-in-26 {
+        margin-inline: 26%;
+    }
+
+    .sns-m-in-5 {
+        margin-inline: 5%;
+    }
+
+    .card2c .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-img-w-76 {
+        width: 76.9% !important;
+        margin-inline: auto;
+    }
+
+    .card2c-3 {
+        width: calc(92% / 2);
+        box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        /* border: 1px solid black; */
+    }
+
+    .card2c-3 .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c-3 .sns-f-20R {
+        padding-inline: 4vw;
+        text-align: left;
+        padding-top: 2%;
+    }
+
+    .card2c-3 .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .card2c-3 .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c-3 .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 {
+        padding: 0 16% 0 12%;
+    }
+
+    .sns-padd-in-11 {
+        padding-inline: 11%;
+    }
+
+    .sns-w-1 .sns-p-1 {
+        padding-block: 3% 6%;
+    }
+
+    .sns-w-1 .sns-p-2 {
+        padding-block: 12% 20.7%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 h3 {
+        color: #fff !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p {
+        color: #000 !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p span {
+        color: #000 !important;
+    }
+
+    .overlaytxt {
+        position: absolute;
+        bottom: 0;
+        background-color: #000;
+        overflow: hidden;
+        /* width: 100%; */
+        height: 0;
+        transition: 0.5s ease;
+        /* color: #fff; */
+        display: flex;
+        align-items: center;
+    }
+
+    .overlaytxt .sns-padd-1 {
+        padding: 3%;
+    }
+
+    .overlaytxt .sns-padd-1 p {
+        color: #fff !important;
+    }
+
+    .imgtext:hover .overlaytxt {
+        height: 100%;
+    }
+
+    .sns-ln {
+        font-weight: 500;
+        font-size: 0.7291vw;
+    }
+
+    /* @media only screen and (max-width: 1440px) { .sns-ln { line-height: 1.2em !important; } } */
+    @media only screen and (max-width: 1024px) {
+        /* .card2c .imgtext { flex-direction: column-reverse; } .card2c .imgtext .sns-inner-div-1 { width: calc(100%/1) !important; } */
+        /* .sns-ln { line-height: 1.55em !important; } */
+    }
+
+    @media only screen and (max-width: 890px) {
+        .card2c .imgtext {
+            flex-direction: row;
+        }
+
+        .sns-padd-in-11 {
+            padding-inline: 0;
+        }
+
+        .card2c {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .card2c-3 .imgtext {
+            flex-direction: row;
+        }
+
+        .card2c-3 {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .sns-bg-box {}
+
+        .sns-m-in-26 {
+            margin-inline: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(90%/2);
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 60%;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 60%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .card2c-3 {
+            width: calc(100%/1);
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 5% 0 !important;
+        }
+
+        .card2c-3 h3 {
+            padding-inline: 4vw;
+            padding-bottom: 2%;
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 80%;
+        }
+
+        .mblk-mob {
+            margin-block: 5% -3% !important;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 80%;
+        }
+
+        .sns-inner-div-1 .sns-padd-2 {
+            padding: 0 16% 0 8%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        .imgtext {
+            /* display: initial; justify-content: center; */
+        }
+
+        .card2c .imgtext {
+            flex-direction: column-reverse;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .card2c-3 .imgtext {}
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .sns-w-1 .sns-p-1 {
+            padding: 5%;
+        }
+
+        .sns-w-1 .sns-p-2 {
+            padding: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(94%/1);
+        }
+    }
+
+    .CONQUER-mn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sns .CONQUER-img {
+        width: 50%;
+    }
+
+    .CONQUER-back {
+        width: 50%;
+        background: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        padding-top: 4%;
+    }
+
+    .conquer-in {
+        margin-inline: 5%;
+    }
+
+    .conquer-padd {
+        padding-left: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .conquer-in {
+            margin-inline: 7%;
+        }
+
+        .conquer-padd {
+            padding-left: 7%;
+        }
+
+        .CONQUER-mn {
+            width: calc(100%/1);
+        }
+
+        .CONQUER-img {
+            width: 100%;
+        }
+
+        .CONQUER-back {
+            width: 100%;
+            padding-bottom: 7%;
+            padding-right: 3%;
+        }
+
+        .mblk-mob {
+            margin-block: 5% 0% !important;
+        }
+    }
+
+    .cards2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3%;
+    }
+
+    .cards2c {
+        width: calc(91% / 2);
+        background: linear-gradient(180deg, #D3D3D3 0%, #FFFFFF 100%);
+        text-align: left;
+        /* box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.08); */
+        margin-bottom: 3%;
+        border: 1px solid #A9A9A9;
+        border-radius: 10px;
+        padding: 3%;
+
+        /* margin: 0.5%; */
+    }
+
+    .cards2c h3 {
+        color: #000;
+    }
+
+    .cards2c.cards2ccc {
+        width: calc(94%/1);
+    }
+
+    .text-di {
+        padding: 0% 2%;
+    }
+
+    .div-img {
+        padding-left: 0%;
+        padding-right: 6%;
+    }
+
+    .sns-head-space-6 {
+        margin-block: 2.8% 1.5%;
+    }
+
+    .wdadmin .cards2c h3 {
+        margin-block: 7.5% 2.5% !important;
+    }
+
+    .cards2c.cards2ccc .sns-head-space-6 {
+        margin-block: 1%;
+    }
+
+    .cards2c.cards2ccc .div-img {
+        padding-left: 1.5%;
+        padding-right: 11%;
+    }
+
+    .wdadmin .cards2c {
+        width: calc(88% / 3);
+        background: linear-gradient(90deg, #D3D3D3 0%, #FFFFFF 100%);
+    }
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 890px) {
+        .cards2c {
+            width: calc(90%/2);
+            margin-bottom: 5%;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .cards2c p {
+            padding-bottom: 6%;
+        }
+
+        .wdadmin .cards2c {
+            width: calc(90% / 2);
+        }
+
+        .div-img {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        /* .text-di {} */
+    }
+
+    @media only screen and (max-width: 640px) {
+        .cards2c {
+            width: calc(90%/1);
+            padding: 5% 5% 0%;
+            margin-top: 0%;
+        }
+
+        .wdadmin .cards2c h3 {
+            margin-block: 5% 2.5% !important;
+        }
+
+        .wdadmin .cards2c {
+            width: 90%;
+        }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+        .cards2c {
+            width: calc(90%/1);
+            padding: 5% 5% 0%;
+            margin-top: 0%;
+        }
+
+
+        .sns-head-space-6 {
+            margin-block: 4% 3%;
+        }
+
+        .text-di {
+            padding: 0;
+        }
+    }
+
+    .three-crds-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5%;
+        background-color: #fff;
+        padding-top: 4.5%;
+        padding-bottom: 1.5%;
+    }
+
+    .three-crds-ch {
+        width: calc(70%/3);
+
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        background-color: #F0F4F7;
+
+    }
+
+    .shadow {
+        box-shadow: none !important;
+    }
+
+    .three-crds-ch .shadow {
+        padding: 3% 5% 2% 5%;
+    }
+
+    .three-crds-mn-full {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3%;
+        background-color: #fff;
+        padding-top: 5%;
+        padding-bottom: 1%;
+    }
+
+    .three-crds-mn-full-blue {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3%;
+
+    }
+
+    .three-crds-ch-full {
+        width: calc(88%/3);
+
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        background-color: #F0F4F7;
+
+    }
+
+    .three-crds-ch-full .shadow {
+        padding: 3% 5% 2% 5%;
+    }
+
+
+
+    .four-crds-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5%;
+        background-color: #878787;
+        padding-top: 4%;
+        padding-bottom: 1%;
+    }
+
+    .four-crds-ch {
+        width: calc(86.5%/4);
+        text-align: center;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        background-color: #F0F4F7;
+
+    }
+
+    .four-crds-ch .shadow {
+        padding: 3% 5% 2% 5%;
+    }
+
+    .sns-bg-blue {
+        background-color: #fff;
+
+    }
+
+    .sns-bg-blue h2 {
+        color: #fff;
+        text-align: center;
+        padding-block: 2.5%;
+
+    }
+
+    .sns-bg-blue1 h2 {
+        color: #fff;
+        text-align: center;
+        padding-top: 2.5%;
+        padding-bottom: 1%;
+
+    }
+
+    .sns-head-blue {
+        padding-bottom: 2.5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .three-crds-ch {
+            width: calc(91%/2);
+            margin-bottom: 3%;
+        }
+
+        .three-crds-mn-full {
+            padding-bottom: 4%;
+        }
+
+        .four-crds-mn {
+            gap: 3%;
+        }
+
+        .three-crds-ch .shadow {
+            padding: 3% 4% 2% 4%;
+        }
+
+        .three-crds-ch-full {
+            width: calc(91%/2);
+            margin-bottom: 3%;
+        }
+
+        .three-crds-ch-full .shadow {
+            padding: 3% 4% 2% 4%;
+        }
+
+        .four-crds-ch {
+            width: calc(91%/2);
+            margin-bottom: 3%;
+        }
+
+        .four-crds-ch .shadow {
+            padding: 3% 4% 2% 4%;
+        }
+
+        .sns-bg-blue h2 {
+            padding-block: 3.5%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .three-crds-ch {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+
+        }
+
+        .sns-head-blue {
+            padding-inline: 4%;
+            padding-bottom: 6%;
+
+        }
+
+        .three-crds-ch-full {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+
+        }
+
+        .four-crds-mn {
+            padding-bottom: 0%;
+            padding-top: 5%;
+        }
+
+        .four-crds-ch {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+
+        }
+
+        .three-crds-ch .shadow {
+            padding: 1% 4% 1% 4%;
+        }
+
+        .three-crds-ch .shadow p {
+            padding-top: 1%;
+        }
+
+        .three-crds-mn-full-blue {
+            padding-bottom: 1%;
+        }
+
+        .three-crds-mn-full {
+            padding-bottom: 0%;
+        }
+
+        .three-crds-mn {
+            padding-bottom: 0;
+        }
+    }
+
+    .conta {
+        position: relative;
+        width: 100%;
+    }
+
+    .conta img {
+        width: 100%;
+    }
+
+    .sns-posi-top {
+        /* top: 9% !important; */
+    }
+
+    .conta .btnn {
+        position: absolute;
+        bottom: 12%;
+        right: 3%;
+        padding: 1.3% 0;
+        background: #003057;
+        color: rgba(255, 255, 255, 1);
+        font-size: 0.833vw !important;
+        font-weight: 800;
+        text-align: center;
+        border: none;
+        text-transform: uppercase;
+        width: 22.5%;
+        transition: 0.5s;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+
+    .conta1 {
+        position: relative;
+        width: 100%;
+    }
+
+    /* .conta1 img {
+            width: 100%;
+        } */
+
+    .conta1 .btnn {
+        position: absolute;
+        bottom: 8%;
+        left: 40%;
+        padding: 1.3% 0;
+        background: #FF1D1D;
+        color: rgba(255, 255, 255, 1);
+        font-size: 0.94vw !important;
+        font-weight: 800;
+        text-align: center;
+        border: none;
+        text-transform: uppercase;
+        width: 20%;
+        transition: 0.5s;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+
+    .conta .btnn:hover {
+        background-color: #2d72ad;
+        color: #fff;
+    }
+
+    .conta1 .btnn:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+
+    .conta1 img {
+        width: 60%;
+        padding-top: 2.7%;
+        margin-inline: auto;
+        padding-bottom: 10%;
+    }
+
+    @media (max-width: 890px) {
+        .conta .btnn {
+            font-size: clamp(14px, 0.833vw, 16px) !important;
+            position: absolute;
+            width: 42.5%;
+            top: auto;
+            left: 0%;
+            transform: none;
+            margin-inline: auto;
+            display: block;
+            padding: 2% 0;
+            bottom: 4%;
+            right: 0%;
+        }
+
+
+        .conta1 img {
+            width: 90%;
+            padding-top: 6%;
+            padding-bottom: 26%;
+        }
+
+        .conta1 .btnn {
+            font-size: clamp(14px, 0.833vw, 16px) !important;
+            position: absolute;
+            width: 42.5%;
+            top: auto;
+            left: 0%;
+            transform: none;
+            margin-inline: auto;
+            display: block;
+            padding: 2% 0;
+            bottom: 4%;
+            right: 0%;
+        }
+
+        .navn-btn {
+            /* background-color: #000;
+                padding: 2%; */
+        }
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 640px) {
+        .conta .btnn {
+            position: absolute;
+            /* margin: 5.6% auto; */
+            padding: 6% 2%;
+            width: 90%;
+            top: auto;
+            left: auto;
+            transform: none;
+            text-align: center;
+            left: 0%;
+            bottom: 4%;
+            border-radius: 10px;
+        }
+
+        .conta1 .btnn {
+            position: absolute;
+            /* margin: 5.6% auto; */
+            padding: 6% 2%;
+            width: 90%;
+            top: auto;
+            left: auto;
+            transform: none;
+            text-align: center;
+            left: 0%;
+            bottom: 4%;
+            border-radius: 10px;
+        }
+
+
+    }
+
+    /* This Secton was duplicated from Section 3. */
+    .sns-image {
+        position: relative;
+
+    }
+
+    .sns-image h2 {
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+
+
+
+
+    .sns-large-img-inner {
+
+        right: 3%;
+        width: 30%;
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        line-height: 1.55em;
+    }
+
+    .sns-large-img-inner h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-2 {
+        position: absolute;
+        right: 6%;
+        width: 32%;
+        color: #fff;
+        bottom: 10%;
+    }
+
+    .sns-large-img-inner-22 {
+        position: absolute;
+        right: 5%;
+        width: 60%;
+        color: #fff;
+        top: 9.5%;
+    }
+
+    .sns-large-img-inner-lft-btm {
+        position: absolute;
+        left: 3%;
+        width: 36%;
+        color: #fff;
+        bottom: 5.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 {
+        position: absolute;
+        left: 5%;
+        width: 32%;
+        color: #fff;
+        top: 11%;
+    }
+
+    .sns-large-img-inner-lft-btm h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm2 h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm p {
+        color: #fff;
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 p {
+        color: #fff;
+        margin-block: 0.5% 2.5%;
+
+    }
+
+    .sns-large-img-inner-rgt-btm {
+        position: absolute;
+        left: 6%;
+        width: 46%;
+        color: #fff;
+        bottom: 9.3%;
+    }
+
+    .sns-large-img-inner-rgt-btm h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-rgt-btm p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-block: 1% 2%;
+        line-height: 150%;
+    }
+
+    .sns-large-img-inner-rgt-btm1 {
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    .sns-large-img-inner-rgt-btm1 h3 {
+
+        line-height: 1.25em;
+
+    }
+
+    .sns-large-img-inner-rgt-btm1 p {
+
+        margin-block: .5% 2.5%;
+        line-height: 150%;
+    }
+
+    .sns-large-img-inner-rgt-btm2 {
+        position: absolute;
+        left: 4.6%;
+        width: 35%;
+        color: #fff;
+        bottom: 8.5%;
+    }
+
+    .sns-large-img-inner-rgt-btm2 h3 {
+        color: #fff;
+        line-height: 1.25em;
+
+    }
+
+    .sns-large-img-inner-rgt-btm2 p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-block: 1% 2%;
+        line-height: 150%;
+    }
+
+    .sns-large-img-inner-2 h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        margin-block: 2% 2.5%;
+    }
+
+    .sns-large-img-inner-22 p {
+        margin-block: 1% 2.5%;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    .sns-large-img-inner-3 {
+        position: absolute;
+        left: 3%;
+        width: 27%;
+        color: #fff;
+        top: 9%;
+    }
+
+    .sns-large-img-inner-3 h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        margin-block: 2.5%;
+    }
+
+    .sns-r-3 {
+        right: 3% !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-large-img-inner {
+            position: initial;
+            padding: 8% 6% 4%;
+
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-rgt-btm {
+            position: initial;
+            padding: 5% 4.5% 3%;
+            color: #000;
+            width: auto;
+            width: 100%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-rgt-btm1 {
+            position: initial;
+            padding: 5% 4.5% 3%;
+            color: #000;
+            width: auto;
+
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-rgt-btm2 {
+            position: initial;
+            padding: 5% 4.5% 3%;
+            color: #000;
+            width: auto;
+            width: 100%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 5% 3%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-3 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-large-img-inner-rgt-btm {
+            width: 90%;
+        }
+
+        .three-crds-ch-full {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+
+        }
+
+        .sns-bg-blue1 h2 {
+            padding-bottom: 3%;
+        }
+
+        .sns-image h2 {
+            padding-bottom: 5%;
+        }
+
+        .sns-large-img-inner-rgt-btm1 p {
+            margin-block: 3% 2%;
+        }
+
+        .sns-image-inner img {
+            margin-top: 5%;
+        }
+
+        .sns-large-img-inner-rgt-btm p {
+            margin-block: 4% 2%;
+        }
+
+        .sns-large-img-inner-rgt-btm1 {
+            width: 90%;
+        }
+
+        .sns-large-img-inner-rgt-btm2 {
+            width: 90%;
+        }
+
+        /* .sns-image {
+                width: 100%;
+            } */
+
+        .sns-large-img-inner-rgt-btm2 p {
+            margin-block: 4% 2%;
+        }
+
+        .sns-large-img-inner-22 p {
+            margin-block: 4% 2.5%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 6. */
+    /* This Secton was duplicated from Section 3. */
+    /* Custom css */
+    /* section css */
+    .sns-img-g {
+        width: calc(94%/3);
+        margin-bottom: 0%;
+    }
+
+    .sns-img-g-interior {
+        width: calc(99.2%/4);
+        margin-bottom: 0.25%;
+    }
+
+    .s-main-gallery {
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+
+    /* section css */
+    .s-gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    .sns-img-g {
+        width: calc(99%/2);
+        margin-bottom: 0%;
+        margin-bottom: 1%;
+    }
+
+    .sns-gallery-img {
+        overflow: hidden;
+        /* border-radius: 0.52vw; */
+
+    }
+
+    .sns-gallery-img img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .sns-gallery-img img:hover {
+        transform: scale(1.2);
+    }
+
+    .sns-gallery-img {
+        overflow: hidden;
+    }
+
+    .sns-gallery-img img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .sns-gallery-img img:hover {
+        transform: scale(1.2);
+    }
+
+    /* media */
+    @media screen and (max-width: 890px) {
+        .sns-flex-wrap-reverse-mob {
+            flex-wrap: wrap-reverse;
+        }
+
+        .sns-img-g {
+            width: calc(91%/3);
+            margin-bottom: 0%;
+        }
+
+        .sns-img-g-interior {
+            width: calc(99.2%/2);
+            margin-bottom: 0.25%;
+        }
+
+        .sns-img-g {
+            width: calc(98%/2);
+            margin-bottom: 2%;
+        }
+
+        .s-gallery {
+            gap: 2%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .sns-img-g {
+            width: calc(100%/1);
+            margin-bottom: 4%;
+        }
+
+        .s-gallery {
+            margin-bottom: 0%;
+        }
+    }
+
+
+
+
+
+    @media screen and (max-width: 480px) {
+        .sns-img-g {
+            width: calc(90%/1);
+        }
+
+        .sns-img-g-interior {
+            width: calc(90%/1);
+        }
+    }
+
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 11. */
+    /* This Secton was duplicated from Section 7. */
+    /* This Secton was duplicated from Section 3. */
+    .sns-img-con {
+        margin-inline: 3%;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    .sns-img-con .sns-w-35 {
+        width: 50%;
+    }
+
+    .padd h3 {
+        font-weight: 600;
+    }
+
+    .sns-img-con .sns-w-65 {
+        width: 50%;
+    }
+
+    .sns-w-65 .padd {
+        padding: 3% 6%;
+    }
+
+    .sns-w-65 .padd-1 {
+        padding: 3% 6% 3% 6%;
+    }
+
+    .sns-w-65 .padd h3 {
+        color: #000 !important;
+    }
+
+    .sns-w-65 .padd-1 h3 {
+        color: #000 !important;
+        text-transform: uppercase;
+    }
+
+    .sns-w-65 .padd p {
+        padding-top: 2%;
+        padding-right: 1.7%;
+        color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .sns-w-65 .padd-1 p {
+        padding-top: 2%;
+        padding-right: 3.5%;
+        color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .up {
+        margin-top: 1%;
+    }
+
+    .sns-mt-0 {
+        margin-top: 0;
+    }
+
+    .sns-wheel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3%;
+        background: #fff;
+        padding-top: 4.5%;
+        padding-bottom: 2%;
+    }
+
+    .sns-inner-wheel {
+        width: calc(88% / 3);
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        background-color: #F0F4F7;
+    }
+
+    .sns-inner-wheel .padd-3 {
+        padding: 4% 13.5% 4%;
+    }
+
+    .padd-3 h3 {
+        text-transform: uppercase;
+        padding-bottom: 2.5%;
+    }
+
+
+
+
+    .sns-inner-wheel .padd-3 .sns-f-20R {
+        padding-top: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-inner-wheel {
+            width: calc(91% / 2);
+        }
+
+        .up {
+            margin-top: 2%;
+        }
+
+        .sns-mt-0 {
+            margin-top: 0;
+        }
+
+
+        .sns-img-con .sns-w-35 {
+            width: 100%;
+        }
+
+        .sns-img-con .sns-w-65 {
+            width: 100%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd-1 h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd p {
+            padding-top: 4.5%;
+
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-top: 3%;
+
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-inner-wheel .padd-3 h3 {
+            padding-bottom: 3%;
+        }
+
+        .sns-m-inn5 {
+            margin-inline: 5% !important;
+        }
+
+        .up {
+            margin-top: 4%;
+        }
+
+        .sns-mt-0 {
+            margin-top: 0;
+        }
+
+        .sns-inner-wheel {
+            width: calc(90% / 1);
+            margin-bottom: 5%;
+
+        }
+
+        .sns-inner-wheel .padd-3 {
+            padding: 3% 11% 4%;
+        }
+
+        .sns-inner-wheel .padd-3 .sns-f-20R {
+            padding-top: 3%;
+        }
+
+        .sns-img-con {
+            margin-inline: 5%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 5% 4% 4%;
+        }
+
+        .sns-w-65 .padd-1 h3 {
+            padding-right: 8%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 4% 4% 4%;
+        }
+    }
+
+    .available-tools-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .available-tools-crds {
+        width: calc(90%/5);
+        box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        padding-bottom: 0.7%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .available-tools-crds {
+            width: calc(93%/2);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .available-tools-crds {
+            width: calc(94%/1);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+
+        .sns-wheel {
+            padding-top: 5%;
+            padding-bottom: 1%;
+        }
+
+        .sns-bg-blue h2 {
+            padding-block: 6%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 31. */
+    .sns-model {
+        gap: 3%;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2%;
+        background-color: #fff;
+
+    }
+
+    .sns-model-name {
+        margin-top: 6%;
+        text-transform: uppercase;
+
+    }
+
+    .sns-mrp {
+        width: calc(63%/2);
+        background-color: #F0F4F7;
+        margin-bottom: 3%;
+        position: relative;
+        padding: 3% 3.5%;
+        border-radius: 10px;
+        border: 1px solid #A9A9A9;
+        background: linear-gradient(to bottom, #f1f1f1 0%, #686868 100%);
+    }
+
+    .sns-mrp .sns-f-25 {
+        margin-top: 4% !important;
+    }
+
+    .img-4 {
+        width: 10% !important;
+    }
+
+    .sns-pb-10-desk-only {
+        padding-bottom: 10%;
+    }
+
+    .s-content-img-section {
+        /* Optional spacing */
+        padding: 3%;
+        padding-bottom: 1%;
+
+        /* border-radius: 10px; */
+    }
+
+
+    .s-content-img-section img {
+        border-radius: 16px;
+    }
+
+    .s-content-img-section .s-inner-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        align-items: center;
+        border-radius: 16px;
+        background: linear-gradient(90deg, #D3D3D3 0%, #FFFFFF 100%);
+        padding: 3%;
+        border: 2px solid #CBCBCB;
+        margin-bottom: 3%;
+    }
+
+    .s-content-img-section .s-inner-card:nth-child(even) {
+        flex-direction: row-reverse;
+        background: linear-gradient(90deg, #FFFFFF 0%, #D3D3D3 100%);
+    }
+
+
+    .backblk.s-content-img-section .s-inner-card:nth-child(even) {
+        background: linear-gradient(90deg, #d3d3d3 0%, #fff 100%);
+    }
+
+
+
+    .s-content-img-section .s-inner-div-1 {
+        width: 43%;
+    }
+
+    .s-content-img-section .s-inner-div-1 .s-padding-1 {
+        padding: 0;
+    }
+
+    /* Content Column */
+    .s-content-img-section .s-inner-div-2 {
+        width: 55%;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 {
+        padding: 3% 15% 3% 0%;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box {
+        display: flex;
+        gap: 8%;
+        flex-wrap: wrap;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 h4 {
+        padding-top: 1%;
+        margin: 0;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 p {
+        padding: 1.5% 0 0 0;
+        margin: 0;
+    }
+
+    /* Reverse Layout */
+    .s-content-img-section .s-reverse {
+        flex-direction: row-reverse !important;
+
+
+    }
+
+    .bggradient {
+        background: linear-gradient(to bottom, #0a0a0a 10%, #2c2c2c 50%, #4d4d4d 100%);
+    }
+
+    @media only screen and (max-width: 890px) {
+
+        .s-content-img-section {
+            padding: 3.2%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box-1 {
+            margin-bottom: 3%;
+        }
+
+        .s-content-img-section .s-inner-card {
+            flex-direction: column;
+            gap: 0;
+            padding: 5%;
+            margin-bottom: 3%;
+            text-align: center;
+        }
+
+        .s-content-img-section .s-inner-div-1,
+        .s-content-img-section .s-inner-div-2 {
+            width: 100%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 {
+            padding: 4% 5% 0% !important;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 p {
+            padding-top: 3%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 h3 {
+            letter-spacing: 3px !important;
+            line-height: 1.3em;
+        }
+
+        .sns-model {
+
+            gap: 3%;
+            width: 100%;
+        }
+
+        .sns-pb-10-desk-only {
+            padding-bottom: 0%;
+        }
+
+        .sns-model-name {
+            margin-top: 0%;
+        }
+
+        .sns-mrp {
+            width: calc(90%/2);
+            margin-bottom: 4%;
+            padding-bottom: 5%;
+            padding-inline: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .s-content-img-section {
+            /* Optional spacing */
+            padding-inline: 5%;
+            padding-bottom: 5%;
+        }
+
+        .s-content-img-section .s-inner-card {
+            margin-bottom: 6%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 {
+            padding: 5% 0;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 h4 {
+            padding-top: 3%;
+            /* margin: 0; */
+        }
+
+        .sns-model {
+
+            gap: 0;
+            width: 100%;
+            padding-top: 5%;
+        }
+
+        .sns-mrp {
+            width: calc(90% / 1);
+            margin-bottom: 5%;
+            padding-bottom: 14%;
+            padding-top: 6%;
+            padding-inline: 0%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 2. */
+    .seo {
+        background-color: #fff;
+    }
+
+    .seo-per {
+        padding: 4% 3% 0 2.7%;
+        background-color: #fff;
+
+    }
+
+    .seo-per p {
+        margin-bottom: 1.5%;
+        line-height: 1.3em !important;
+    }
+
+    .seo-per p a {
+        text-decoration-color: var(--sns-black);
+    }
+
+    .disc {
+        padding: 2% 2.7%;
+        background-color: var(--sns-white);
+        font-weight: 400;
+        line-height: 1.3em !important;
+
+    }
+
+    .disc p {
+        margin-bottom: 1.5%;
+        line-height: 1.3em !important;
+    }
+
+    @media screen and (max-width: 640px) {
+        .seo-per {
+            padding: 7% 5% 0 5%;
+            background-color: #fff;
+
+        }
+
+        .disc {
+            padding: 2% 5%;
+            background-color: var(--sns-white);
+            font-weight: 400;
+            line-height: 1.3em !important;
+
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .seo-per {
+            padding: 7% 5% 0 5%;
+        }
+
+        .seo-per p {
+            margin-bottom: 5%;
+        }
+
+        .disc {
+            padding: 3% 5%;
+        }
+
+        .disc p {
+            margin-bottom: 5%;
+            padding-inline: 0 3%;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .border-line {
+            width: 20%;
+        }
+
+        .snpt-10mob {
+            padding-top: 12%;
+        }
+
+        .sns-mob-padd {
+            padding-top: 13%;
+            padding-bottom: 6.5%;
+        }
+
+        .sns-mt-8-mob {
+            margin-top: 8%;
+        }
+
+        .sns-pt-8-mob {
+            padding-top: 8%;
+        }
+
+        .snspb-8mob {
+            padding-bottom: 5%;
+        }
+
+        .snspt-12mob {
+            padding-top: 12%;
+        }
+
+        .snspb-12mob {
+            padding-bottom: 12%;
+        }
+
+        .sns-pt-4-mob {
+            padding-top: 4%;
+        }
+
+        .sns-padd-in-11-mob {
+            padding-inline: 11%;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-image {
+            margin-block: 1% 2%;
+        }
+
+        .sns-image .sns-mob-view-c {
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 7% 3% 5%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 p {
+            padding-top: 2%;
+        }
+
+        .cards2c p.sns-f-20R.div-img.sns-pb-3 {
+            padding-bottom: 5%;
+            padding-top: 2%;
+        }
+
+        .cards2c.cards2ccc {
+            width: calc(90%/1);
+        }
+
+        .sns-pr-4 {
+            padding-right: 4% !important;
+        }
+    }
+
+
+    @media (min-width: 641px) and (max-width: 890px) {
+        .sns-f-b-r {
+            margin-bottom: 5%;
+        }
+
+        .sns-four-button>.sns-BN {
+            padding-block: 5% 0% !important;
+        }
+
+        .conta1 img {
+            padding-bottom: 12%;
+        }
+
+        .bggradient {
+            padding-bottom: 4%;
+        }
+    }
+</style>
+
+<div class="main-div">
+    <div class="sns-ram_banner_sec">
+        <div class="sns-ram_banner_sec_lft">
+            <h1>2026 RAM 3500, Alvin, TX
+            </h1>
+
+            <p class="sns-fw-400">CONQUER THE OBSTACLES</p>
+        </div>
+        <div class="sns-ram_banner_sec_imgs">
+            <figure class="sns-main_img"> <img
+                    src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/BannerRon-Carter-CDJR-2026-Ram-3500.jpg"
+                    alt="Banner" class="sns-mob-none"> <img
+                    src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Benner-Ron-Carter-CDJR-2026-Ram-3500.png"
+                    alt="Banner" class="sns-desk-none">
+            </figure>
+        </div>
+
+    </div>
+
+
+    <!-- Section 2 Code -->
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center"> <a class="sns-btn sns-butn sns-f-b"
+                href="https://www.roncartercdjr.com/new-vehicles/hornet/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b" href="https://www.roncartercdjr.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b" href="https://www.roncartercdjr.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r"
+                href="https://www.roncartercdjr.com/get-pre-qualified-with-capital-one/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+
+
+    <!-- Section 3 Code -->
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">THE MOST ADVANCED RAM HEAVY DUTY PICKUPS EVER*</h2>
+            <!-- <p class="sns-f-18 sns-mar-in-18 mblk-mob">Not only is the Dodge Hornet the most powerful CUV in its segment, but
+                each of its powertrains boast their own accolades—the R/T is the quickest*, with a 0-60 mph time of 5.6
+                seconds, while the GT is the fastest* with an estimated top speed of 140 mph.</p> -->
+
+        </div>
+    </div>
+
+
+    <!-- Section 4 Code -->
+    <div class="sns-image">
+        <div class="sns-image-inner">
+
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/THE-MOST-ADVANCED-RAM-HEAVY-DUTY-PICKUPS-EVER-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/THE-MOST-ADVANCED-RAM-HEAVY-DUTY-PICKUPS-EVER-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE">
+
+        </div>
+    </div>
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">AVAILABLE 12-INCH DIGITAL CLUSTER DISPLAY</h2>
+            <p class="sns-f-18 sns-mar-in-18 mblk-mob">Keep your stats front and center with full-color 3D graphics, color customization, safety and security alerts and navigation.</p>
+
+        </div>
+    </div>
+
+    <div class="cards2 sns-pt-3">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Turn-by-Turn-Navigation-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS" style="border-radius: 8px;">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Turn-by-Turn-Navigation-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS">
+            <h3 class="sns-f-24 div-img sns-head-space-6">Turn-by-Turn Navigation</h3>
+            <!-- <p class="sns-f-16 div-img">Standard on Dodge Hornet R/T and available on select GT models with the Track
+                Pack are our Segment-Exclusive available column-mounted aluminum paddle&nbsp;shifters*. With a flick of your
+                fingers, the paddles allow you to change gears and can engage the performance-boosting PowerShot feature
+                included on R/T models.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Trailer-Tire-Pressure-Monitoring-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="AWD AND HYBRID eAWD">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Trailer-Tire-Pressure-Monitoring-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="AWD AND HYBRID eAWD">
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none-para">Trailer Tire Pressure Monitoring</h3>
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none-para">Trailer Tire Pressure Monitoring</h3>
+            <!-- <p class="sns-f-16 div-img">The Dodge Hornet GT comes equipped with standard all-wheel drive and a
+                continuously adjusting torque split for a drive that’s responsive in more ways than one. The R/T handles
+                conditions its own way with eAWD hybrid performance. It masterfully counters curves and conditions with
+                independently powered front and rear axles, maximum efficiency and the delivery of more power when
+                needed compared to traditional all-wheel-drive systems.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Gauge-Summary-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="EXPERIENCE SPORT MODE SPEED">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Gauge-Summary-Ron-Carter-CDJR-2026-Ram-3500-2.png"
+                class="sns-desk-none" alt="EXPERIENCE SPORT MODE SPEED">
+            <h3 class="sns-f-24 div-img sns-head-space-6">Gauge Summary</h3>
+            <!-- <p class="sns-f-16 div-img">Engaging Sport Mode adds incredible responsiveness to the Dodge Hornet. Just hit
+                the button on the steering wheel of the GT or the center console on the R/T to elevate throttle,
+                optimize steering, engage an electronic slip differential and maximize performance.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Vehicle-Dynamics-and-Diagnostics-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="DYNAMIC CAPABILITIES">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Vehicle-Dynamics-and-Diagnostics-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="DYNAMIC CAPABILITIES">
+            <h3 class="sns-f-24 div-img sns-head-space-6">Vehicle Dynamics and Diagnostics
+            </h3>
+
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+            <!-- 
+            <h2 class="sns-f-44">DODGE HORNET PERFORMANCE <br/> THE MOST POWERFUL CUV OUT THERE</h2> -->
+            <p class="sns-f-18 sns-mar-in-18 mblk-mob">Check the status of your exhaust brake, diesel particulate filter, turbo boost and more via the gauge summary.</p>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-main-gallery" style="">
+
+        <div class="sns-gallery-section" style="">
+            <div class="s-gallery">
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G1-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery1">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G1-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                            class="sns-desk-none" alt="Gallery1">
+                    </div>
+                </div>
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G2-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery2">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G2-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                            class="sns-desk-none" alt="Gallery2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Section 5 Code -->
+    <div class="s-content-img-section" style="background-color: #000;">
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-TRAILER-TOW-PAGES-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-TRAILER-TOW-PAGES-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">AVAILABLE TRAILER TOW PAGES</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Maneuver with confidence thanks to features like Trailer Light Check and Trailer Brake Status, easily visible in the available 12-inch Digital Cluster Display.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/OFF-ROAD-PAGES-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/OFF-ROAD-PAGES-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">OFF-ROAD PAGES</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Available Off-Road Pages explore pitch and roll and put vehicle dynamics, traction control, gear shifting and more all front and center.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Section 11 Code -->
+    <div class="bggradient sns-mt-1 pbmob3">
+        <div class="conta1"> <img
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/View-Inventory-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="View Inventory" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/View-Inventory-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="View Inventory">
+            <div class="navn-btn"> <a href="https://www.roncartercdjr.com/new-vehicles/hornet/"
+                    style="text-decoration: none"><button class="btnn sns-posi-top">View Inventory</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">DIGITAL REARVIEW MIRROR</h2>
+            <p class="sns-f-18 sns-mar-in-18 mblk-mob">The available Digital Rearview Mirror with side camera integration features an LCD Monitor that provides a real-time video stream from a rear-facing camera. When paired with available exterior mirror cameras, it offers views to the left and right of your trailer. Activate the available wired Tow Mode Camera for a view behind your trailer.</p>
+
+        </div>
+    </div>
+
+    <div class="cards2 sns-pt-3">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ALL-CAMERAS-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS" style="border-radius: 8px;">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ALL-CAMERAS-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS">
+            <h3 class="sns-f-24 div-img sns-head-space-6">ALL CAMERAS ACTIVATED</h3>
+            <!-- <p class="sns-f-16 div-img">Standard on Dodge Hornet R/T and available on select GT models with the Track
+                Pack are our Segment-Exclusive available column-mounted aluminum paddle&nbsp;shifters*. With a flick of your
+                fingers, the paddles allow you to change gears and can engage the performance-boosting PowerShot feature
+                included on R/T models.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/EXTERIOR-MIRROR-CAMERAS-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="AWD AND HYBRID eAWD">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/EXTERIOR-MIRROR-CAMERAS-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="AWD AND HYBRID eAWD">
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none-para">EXTERIOR MIRROR CAMERAS ACTIVATED</h3>
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none-para">EXTERIOR MIRROR CAMERAS ACTIVATED</h3>
+            <!-- <p class="sns-f-16 div-img">The Dodge Hornet GT comes equipped with standard all-wheel drive and a
+                continuously adjusting torque split for a drive that’s responsive in more ways than one. The R/T handles
+                conditions its own way with eAWD hybrid performance. It masterfully counters curves and conditions with
+                independently powered front and rear axles, maximum efficiency and the delivery of more power when
+                needed compared to traditional all-wheel-drive systems.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TOW-MODE-CAMERA-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="EXPERIENCE SPORT MODE SPEED">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TOW-MODE-CAMERA-ACTIVATED-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="EXPERIENCE SPORT MODE SPEED">
+            <h3 class="sns-f-24 div-img sns-head-space-6">TOW MODE CAMERA ACTIVATED</h3>
+            <!-- <p class="sns-f-16 div-img">Engaging Sport Mode adds incredible responsiveness to the Dodge Hornet. Just hit
+                the button on the steering wheel of the GT or the center console on the R/T to elevate throttle,
+                optimize steering, engage an electronic slip differential and maximize performance.</p> -->
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ALL-CAMERAS-OFF-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="DYNAMIC CAPABILITIES">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ALL-CAMERAS-OFF-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="DYNAMIC CAPABILITIES">
+            <h3 class="sns-f-24 div-img sns-head-space-6">ALL CAMERAS OFF
+            </h3>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2" style="background-color: #000;">
+
+            <h2 style="color: #fff;" class="sns-f-44">UCONNECT</h2>
+            <p style="color: #fff;" class="sns-f-18 sns-mar-in-18 mblk-mob">Have the world at your fingertips via the available Uconnect® 5 NAV. Create up to five driver profiles, view tow-specific navigation and access available Ram Connect* Services for safety and security features and comfort control.</p>
+
+        </div>
+    </div>
+
+    <div style="background-color: #000;">
+        <div class="wdadmin cards2">
+            <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                    src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Wireless-Apple-CarPlay-Support-for-Your-iPhone-Ron-Carter-CDJR-2026-Ram-3500.png"
+                    alt="AMAZON ALEXA*">
+                <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Wireless-Apple-CarPlay-Support-for-Your-iPhone-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                    class="sns-desk-none" alt="AMAZON ALEXA*">
+                <h3 class="sns-f-26 div-img sns-head-space-6">Wireless Apple CarPlay®* Support for Your iPhone®</h3>
+                
+            </div>
+
+
+            <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                    src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Wireless-Android-Auto-Compatibility-Ron-Carter-CDJR-2026-Ram-3500.png"
+                    alt="HYBRID ELECTRIC PAGES">
+                <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Wireless-Android-Auto-Compatibility-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                    class="sns-desk-none" alt="HYBRID ELECTRIC PAGES">
+                <h3 class="sns-f-26 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none">Wireless Android Auto™*
+Compatibility
+                </h3>
+                <h3 class="sns-f-26 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none">Wireless Android Auto™*
+Compatibility
+                </h3>
+                
+            </div>
+
+
+            <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                    src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Navigation-Ron-Carter-CDJR-2026-Ram-3500.png"
+                    alt="4G LTE Wi-Fi&nbsp;HOTSPOT*">
+                <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Navigation-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                    class="sns-desk-none" alt="4G LTE Wi-Fi&nbsp;HOTSPOT*">
+                <h3 class="sns-f-26 div-img sns-head-space-6 sns-mob-none">Navigation</h3>
+                <h3 class="sns-f-26 div-img sns-head-space-6 sns-desk-none">Navigation</h3>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2" style="background-color: #000;">
+
+            <p style="color: #fff;" class="sns-f-18 sns-mar-in-18 mblk-mob">Follow directions with a quick glance at your Uconnect® touchscreen. Your path will be displayed clearly with full-color 3D graphics.</p>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-main-gallery" style="">
+
+        <div class="sns-gallery-section" style="">
+            <div class="s-gallery">
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G3-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery1">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G3-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                            class="sns-desk-none" alt="Gallery1">
+                    </div>
+                </div>
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G4Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery2">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G4-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-desk-none" alt="Gallery2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cards2 sns-pt-3">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/360-SURROUND-VIEW-CAMERA-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS" style="border-radius: 8px;">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/360-SURROUND-VIEW-CAMERA-Ron-Carter-CDJR-2026-Ram-3500.png"
+                class="sns-desk-none" alt="SEGMENT-EXCLUSIVE AVAILABLE PADDLE&nbsp;SHIFTERS">
+            <h3 class="sns-f-24 div-img sns-head-space-6">360° SURROUND VIEW CAMERA</h3>
+            <p class="sns-f-16 div-img">Get the complete picture of what surrounds your vehicle with the available 360° Surround View Camera*</p>
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/360-TRAILER-SURROUND-VIEW-CAMERA-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="AWD AND HYBRID eAWD">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/360-TRAILER-SURROUND-VIEW-CAMERA-Ron-Carter-CDJR-2026-Ram-3500.png"
+                class="sns-desk-none" alt="AWD AND HYBRID eAWD">
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none-para">360° TRAILER SURROUND VIEW CAMERA</h3>
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none-para">360° TRAILER SURROUND VIEW CAMERA</h3>
+            <p class="sns-f-16 div-img">Have a bird’s-eye view of the area around your trailer with the help of the available 360° Trailer Surround View Camera*</p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="s-main-gallery" style="">
+
+        <div class="sns-gallery-section" style="">
+            <div class="s-gallery">
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G5-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery1">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G5-Ron-Carter-CDJR-2026-Ram-3500-2.png"
+                            class="sns-desk-none" alt="Gallery1">
+                    </div>
+                </div>
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G6-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery2">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G6-Ron-Carter-CDJR-2026-Ram-3500-2.png"
+                            class="sns-desk-none" alt="Gallery2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">CLASS-EXCLUSIVE AVAILABLE 10.25-INCH FRONT PASSENGER INTERACTIVE DISPLAY*</h2>
+            <!-- <p class="sns-f-18 sns-mar-in-18 mblk-mob">Not only is the Dodge Hornet the most powerful CUV in its segment, but
+                each of its powertrains boast their own accolades—the R/T is the quickest*, with a 0-60 mph time of 5.6
+                seconds, while the GT is the fastest* with an estimated top speed of 140 mph.</p> -->
+
+        </div>
+    </div>
+
+    <div class="sns-image">
+        <div class="sns-image-inner">
+
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-10.25-INCH-FRONT-PASSENGER-INTERACTIVE-DISPLAY-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-10.25-INCH-FRONT-PASSENGER-INTERACTIVE-DISPLAY-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE">
+
+        </div>
+    </div>
+
+
+    <div class="s-content-img-section">
+
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-DUAL-WIRELESS-CHARGING-PADS-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-DUAL-WIRELESS-CHARGING-PADS-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">CLASS-EXCLUSIVE DUAL WIRELESS CHARGING PADS*</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">The available dual wireless charging pads feature ventilation to help optimize charging and keep your devices cool while charging on the go.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-content-img-section" style="background-color: #000;">
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/SEND-GO-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/SEND-GO-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">SEND & GO*</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Search for locations and send destinations to your available navigation system.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/VEHICLE-FINDER-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/VEHICLE-FINDER-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">VEHICLE FINDER*</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Easily locate your truck by remotely sounding the horn and flashing the headlamps.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/REMOTE-VEHICLE-START-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/REMOTE-VEHICLE-START-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">REMOTE VEHICLE START*</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Use a key fob or Ram Digital Key* to start the engine and control the temperature of your truck before you even enter the cabin.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="bggradient sns-mt-1 pbmob3">
+        <div class="conta1"> <img
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/get-a-quote-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="get a quote" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/get-a-quote-Ron-Carter-CDJR-2026-Ram-3500-2.png"
+                class="sns-desk-none" alt="get a quote">
+            <div class="navn-btn"> <a href="https://www.roncartercdjr.com/new-vehicles/hornet/"
+                    style="text-decoration: none"><button class="btnn sns-posi-top">get a quote</button></a> </div>
+        </div>
+    </div>
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">PREMIER INTERIOR SOUND WITH THE 900-WATT HARMAN KARDON® PREMIUM AUDIO SYSTEM</h2>
+            <p class="sns-f-18 sns-mar-in-18 mblk-mob">With 17 speakers, this available sound system features an Interior Active Noise Cancellation System and 900 watts of power. </p>
+
+        </div>
+    </div>
+
+
+
+    <div class="sns-image">
+        <div class="sns-image-inner">
+
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/PREMIER-INTERIOR-SOUND-WITH-THE-900-WATT-HARMAN-KARDON-PREMIUM-AUDIO-SYSTEM-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/PREMIER-INTERIOR-SOUND-WITH-THE-900-WATT-HARMAN-KARDON-PREMIUM-AUDIO-SYSTEM-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="DODGE HORNET PERFORMANCE THE MOST POWERFUL CUV OUT THERE">
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-content-img-section" style="background-color: #000;">
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">LIMITED</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Enjoy 100% leather seats and accents made of real wood and aluminum. Choose either the all black or black and ebony red interior for a next-level experience.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-LONGHORN-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-LONGHORN-Ron-Carter-CDJR-2026-Ram-3500-3.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">LIMITED LONGHORN®</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Southwestern-inspired, this interior includes filigree stitching on the seats and a premium bison brown leather-trimmed interior.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LARAMIE-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LARAMIE-Ron-Carter-CDJR-2026-Ram-3500-mob-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">LARAMIE®</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">This sophisticated interior features bison brown or black leather-trimmed front bucket seats.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="s-main-gallery" style="">
+
+        <div class="sns-gallery-section" style="">
+            <div class="s-gallery">
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G7-Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery1">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G7-Ron-Carter-CDJR-2026-Ram-3500-2.png"
+                            class="sns-desk-none" alt="Gallery1">
+                    </div>
+                </div>
+                <div class=" sns-img-g">
+                    <div class="sns-gallery-img">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G8Ron-Carter-CDJR-2026-Ram-3500.png"
+                            class="sns-mob-none loaded" alt="Gallery2">
+                        <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/G8-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                            class="sns-desk-none" alt="Gallery2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2 mtmob2">
+
+            <h2 class="sns-f-44">ADJUSTABLE FOR PASSENGERS AND CARGO</h2>
+            <p class="sns-f-18 sns-mar-in-18">Ample space is offered for passengers and cargo alike. Options include a 40/20/40 split-folding bench or available bucket seats in the front, three different 60/40 split-folding seating configurations in the rear and, in Mega Cab® models, Class-Exclusive Reclining Rear Seats* and Class-Exclusive Forward Fold-Flat Rear Seats*.</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="wdadmin cards2 sns-pt-3 ptmob5">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Three-Across-Rear-Seating-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="YOURS TO COMMAND">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Three-Across-Rear-Seating-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="YOURS TO COMMAND">
+            <h3 class="sns-f-26 div-img sns-head-space-6">Three-Across Rear Seating</h3>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Single-Rear-Seat-Folded-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="LET THEM HEAR YOU">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Single-Rear-Seat-Folded-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="LET THEM HEAR YOU">
+            <h3 class="sns-f-26 div-img sns-head-space-6 sns-padd-in-11">Single Rear Seat Folded
+            </h3>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Double-Rear-Seats-Folded-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="CHARGE TO THE TOP">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Double-Rear-Seats-Folded-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="CHARGE TO THE TOP">
+            <h3 class="sns-f-26 div-img sns-head-space-6">Double Rear Seats Folded</h3>
+            <!-- <p class="sns-f-18 div-img">Keep your devices at 100% with an available wireless smartphone charger and
+                multiple Type A-C USB&nbsp;ports.</p> -->
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="s-content-img-section" style="background-color: #000;">
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CENTER-CONSOLE-REAR-CUBBY-BIN-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CENTER-CONSOLE-REAR-CUBBY-BIN-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">CENTER CONSOLE REAR CUBBY BIN</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Rear passengers have access to a 115-volt outlet for powering devices and can conveniently stash items in the center console rear cubby bin.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/FOLD-FLAT-LOAD-FLOOR-WITH-UNDER-SEAT-STORAGE-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/FOLD-FLAT-LOAD-FLOOR-WITH-UNDER-SEAT-STORAGE-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">FOLD-FLAT LOAD FLOOR WITH UNDER-SEAT STORAGE</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">The available fold-flat load floor with under-seat storage helps maximize cargo-carrying options. 
+                        </span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/SPACIOUS-SECURE-AVAILABLE-RAM-BINS-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/SPACIOUS-SECURE-AVAILABLE-RAM-BINS-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">SPACIOUS, SECURE AVAILABLE RAM BINS</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Available on 2026 Ram 2500 Crew Cab models, this spacious, Class-Exclusive available Rear In-Floor Storage can accommodate a 4-inch drop hitch and comes equipped with removable liners for easy cleaning.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2">
+
+            <h2 class="sns-f-44">BEST-IN-CLASS AVAILABLE ONBOARD POWER*</h2>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="cards2 sns-pt-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ONBOARD-POWER-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cabin View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ONBOARD-POWER-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="Cabin View">
+            <h3 class="sns-f-24 div-img sns-head-space-6">ONBOARD POWER</h3>
+            <p class="sns-f-16 div-img">Turn your truck into a generator with the 400-watt inverter, or go for Best-in-Class Available Onboard Power* with the 2.4-kilowatt inverter.</p>
+        </div>
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-RAMBOX-CARGO-MANAGEMENT-SYSTEM-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cluster View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-RAMBOX-CARGO-MANAGEMENT-SYSTEM-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="Cluster View">
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none-para">CLASS-EXCLUSIVE AVAILABLE RAMBOX@ CARGO MANAGEMENT SYSTEM</h3>
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none-para">CLASS-EXCLUSIVE AVAILABLE RAMBOX@ CARGO MANAGEMENT SYSTEM</h3>
+            <p class="sns-f-16 div-img">Featuring two lockable, drainable storage bins with LED lighting, this available system also includes a front driver-side 115-volt power outlet and remote access via the key fob.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="bggradient sns-mt-1 pbmob3">
+        <div class="conta1"> <img
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/value-your-trade-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="value your trade" class="sns-mob-none">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/value-your-trade-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="value your trade">
+            <div class="navn-btn"> <a href="https://www.roncartercdjr.com/contact-us/"
+                    style="text-decoration: none"><button class="btnn sns-posi-top">value your trade</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="wdadmin cards2 sns-pt-3 ptmob5">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TRUCK-BED-LIGHTING-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="YOURS TO COMMAND">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TRUCK-BED-LIGHTING-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="YOURS TO COMMAND">
+            <h3 class="sns-f-26 div-img sns-head-space-6">TRUCK BED LIGHTING</h3>
+            <p class="sns-f-18 div-img">Keep the job going at night with available LED lighting integrated into the cargo lamp and bed.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LED-LIGHTING-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="LET THEM HEAR YOU">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LED-LIGHTING-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="LET THEM HEAR YOU">
+            <h3 class="sns-f-26 div-img sns-head-space-6 sns-padd-in-11">LED LIGHTING
+            </h3>
+            <p class="sns-f-18 div-img">Cast a bright light with distinct LED headlamps, LED fog lamps and available LED taillamps.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/MOPAR-SPORT-PERFORMANCE-HOOD-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="CHARGE TO THE TOP">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/MOPAR-SPORT-PERFORMANCE-HOOD-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="CHARGE TO THE TOP">
+            <h3 class="sns-f-26 div-img sns-head-space-6">MOPAR® SPORT PERFORMANCE HOOD</h3>
+            <p class="sns-f-18 div-img">The available Mopar® Sport Performance Hood and unique hard badging on the exterior let the world know you mean business.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="s-content-img-section" style="background-color: #000;">
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ACCESSIBLE-EXTERIOR-ELEMENTS-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/ACCESSIBLE-EXTERIOR-ELEMENTS-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="R/T – PERFORMANCE ELECTRIFIED" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">ACCESSIBLE EXTERIOR ELEMENTS</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Work smarter and easily access your cabin and bed with features like available power side running boards, an available Mopar® bed step and a dampened tailgate with available power release.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-inner-card">
+            <div class="s-inner-div-1">
+                <div class="s-padding-1">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-POWER-CONVEX-TRAILER-TOW-MIRROR-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-AVAILABLE-POWER-CONVEX-TRAILER-TOW-MIRROR-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="SEGMENT-EXCLUSIVE POWERSHOT FEATURE" class="sns-desk-none">
+                </div>
+            </div>
+            <div class="s-inner-div-2">
+                <div class="s-padding-2">
+                    <h3 class="sns-f-26">CLASS-EXCLUSIVE AVAILABLE POWER CONVEX TRAILER TOW MIRROR*</h3>
+                    <!-- <h4 class="s-f-30-24">MPG City/Highway — up to</h4> -->
+                    <p class="sns-f-18"><span class="s-font">Power-adjustable Telescopic Mirrors can extend and retract to offer flexibility when parking while the available forward and reverse spotter functionality paired with the available mirror-mounted camera system help offer visibility when towing.
+                        </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-5 sns-pb-2 ptmob6">
+            <h2 class="sns-f-44">OVER 100 STANDARD AND AVAILABLE SAFETY AND SECURITY FEATURES</h2>
+        </div>
+    </div>
+
+
+
+    <div class="cards2 sns-pt-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LED-TRAILER-HITCH-LIGHT-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cabin View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LED-TRAILER-HITCH-LIGHT-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="Cabin View">
+            <h3 class="sns-f-24 div-img sns-head-space-6">LED TRAILER HITCH LIGHT</h3>
+            <p class="sns-f-16 div-img">This illuminating feature is built into the tailgate handle area to help provide visibility when connecting and securing a trailer.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/REAR-SEAT-REMINDER-ALERTRon-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cabin View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/REAR-SEAT-REMINDER-ALERT-Ron-Carter-CDJR-2026-Ram-3500.png"
+                class="sns-desk-none" alt="Cabin View">
+            <h3 class="sns-f-24 div-img sns-head-space-6">REAR SEAT REMINDER ALERT</h3>
+            <p class="sns-f-16 div-img">The Rear Seat Reminder Alert can remind you to check your rear seats for cargo before exiting the vehicle.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/FORWARD-COLLISION-WARNING-WITH-ACTIVE-BRAKING-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cabin View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/FORWARD-COLLISION-WARNING-WITH-ACTIVE-BRAKING-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="Cabin View">
+            <h3 class="sns-f-24 div-img sns-head-space-6">FORWARD COLLISION WARNING WITH ACTIVE BRAKING*</h3>
+            <p class="sns-f-16 div-img">Forward Collision Warning with Active Braking helps warn the driver when an accident is imminent. This feature can even apply the brakes, bringing the vehicle to a complete stop—even with a trailer attached.</p>
+        </div>
+
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-STANDARD-ADAPTIVE-CRUISE-CONTROL-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="Cluster View">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/CLASS-EXCLUSIVE-STANDARD-ADAPTIVE-CRUISE-CONTROLRon-Carter-CDJR-2026-Ram-3500.png"
+                class="sns-desk-none" alt="Cluster View">
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-mob-none-para">CLASS-EXCLUSIVE STANDARD ADAPTIVE CRUISE CONTROL*</h3>
+            <h3 class="sns-f-24 div-img sns-head-space-6 sns-padd-in-11 sns-desk-none-para">CLASS-EXCLUSIVE STANDARD ADAPTIVE CRUISE CONTROL*</h3>
+            <p class="sns-f-16 div-img">Adaptive Cruise Control can help maintain a set distance, selected by the driver, from vehicles in the lane ahead. If slower traffic is detected, the truck can automatically adjust its speed all the way down to 0 mph, even with a trailer attached.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="wdadmin cards2 sns-pt-3 ptmob5" style="background-color: #000;">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Available-LaneSense-Lane-Departure-Warning-with-Lane-Keep-Assist-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="YOURS TO COMMAND">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/Available-LaneSense-Lane-Departure-Warning-with-Lane-Keep-Assist-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="YOURS TO COMMAND">
+            <h3 class="sns-f-26 div-img sns-head-space-6">Available LaneSense® Lane Departure Warning with Lane Keep Assist*</h3>
+            <p class="sns-f-18 div-img">When unintentional lane drifts occur, the available LaneSense® Lane Departure Warning with newly enhanced Lane Keep Assist* can display a visual alert and help guide the vehicle back into its lane.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-DROWSY-DRIVER-DETECTION-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="LET THEM HEAR YOU">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-DROWSY-DRIVER-DETECTIONRon-Carter-CDJR-2026-Ram-3500.png"
+                class="sns-desk-none" alt="LET THEM HEAR YOU">
+            <h3 class="sns-f-26 div-img sns-head-space-6 sns-padd-in-11">AVAILABLE DROWSY DRIVER DETECTION*
+            </h3>
+            <p class="sns-f-18 div-img">This available system detects drowsiness behind the wheel and audibly and visually alerts the driver that getting rest is recommended.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-TRAFFIC-SIGN-RECOGNITION-Ron-Carter-CDJR-2026-Ram-3500.png"
+                alt="CHARGE TO THE TOP">
+            <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/AVAILABLE-TRAFFIC-SIGN-RECOGNITION-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                class="sns-desk-none" alt="CHARGE TO THE TOP">
+            <h3 class="sns-f-26 div-img sns-head-space-6">AVAILABLE TRAFFIC SIGN RECOGNITION*</h3>
+            <p class="sns-f-18 div-img">This available feature detects road signs and displays their information on the Digital Cluster Display or Head-Up Display if equipped.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+
+        <div class="">
+            <div class="sns-head sns-pt-1">
+
+                <h2 class="sns-f-44">CHOOSE YOUR TRUCK</h2>
+
+            </div>
+        </div>
+
+        <section>
+            <div class="sns-d-flex sns-justify-center sns-flex-wrap sns-model sns-mt-2 sns-pb-2 ptmob2">
+                <div class="sns-mrp sns-text-center"> <img
+                        src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TRADESMAN-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="GT" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/TRADESMAN-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="GT" class="sns-desk-none">
+                    <div style="margin-top: 1rem;">
+                        <h3 class="sns-f-26 sns-model-name" style="color: #fff;">TRADESMAN</h3>
+                        <p class="sns-f-14 sns-mt-1 sns-mb-3 ptmob2 pbmob2" style="color: #fff;">MSRP* starting at
+                        </p>
+                        <h4 class="sns-f-32" style="padding-top:0%; color: #fff;">$47,490</h4>
+                    </div>
+                </div>
+
+                <div class="sns-mrp sns-text-center"> <img
+                        src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/BIG-HORN-Ron-Carter-CDJR-2026-Ram-3500.png"
+                        alt="GT PLUS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/BIG-HORN-Ron-Carter-CDJR-2026-Ram-3500-1.png"
+                        alt="GT PLUS" class="sns-desk-none">
+                    <div style="margin-top: 1rem;">
+                        <h3 class="sns-f-26 sns-model-name" style="color: #fff;">BIG HORN®</h3>
+                        <p class="sns-f-14 sns-mt-1 sns-mb-3 ptmob2 pbmob2" style="color: #fff;">MSRP* starting at
+                        </p>
+                        <h4 class="sns-f-32" style="padding-top:0%; color: #fff;">$51,240</h4>
+                    </div>
+                </div>
+
+                <div class="sns-mrp sns-text-center"> <img
+                        src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LARAMIE-2026-Ram-3500-desk.png"
+                        alt="GT PLUS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LARAMIE-Ron-Carter-CDJR-2026-Ram-3500-3.png"
+                        alt="GT PLUS" class="sns-desk-none">
+                    <div style="margin-top: 1rem;">
+                        <h3 class="sns-f-26 sns-model-name" style="color: #fff;">LARAMIE®</h3>
+                        <p class="sns-f-14 sns-mt-1 sns-mb-3 ptmob2 pbmob2" style="color: #fff;">MSRP* starting at
+                        </p>
+                        <h4 class="sns-f-32" style="padding-top:0%; color: #fff;">$63,245</h4>
+                    </div>
+                </div>
+
+
+
+
+                <div class="sns-mrp sns-text-center"> <img
+                        src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-2026-Ram-3500-desk.png"
+                        alt="R/T" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-Ron-Carter-CDJR-2026-Ram-3500-1-.png"
+                        alt="R/T" class="sns-desk-none">
+                    <div style="margin-top: 1rem;">
+                        <h3 class="sns-f-26 sns-model-name" style="color: #fff;">LIMITED</h3>
+                        <p class="sns-f-14 sns-mt-1 sns-mb-3 ptmob2 pbmob2" style="color: #fff;">MSRP* starting at
+                        </p>
+                        <h4 class="sns-f-32" style="padding-top:0%; color: #fff;">$81,540</h4>
+                    </div>
+                </div>
+
+
+                <div class="sns-mrp sns-text-center"> <img
+                        src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-LONGHORN-2026-Ram-3500-desk-1.png"
+                        alt="R/T PLUS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod44.dealerinspire.com/roncartercdjrinalvin/uploads/2025/11/LIMITED-LONGHORN-Ron-Carter-CDJR-2026-Ram-3500-1-.png"
+                        alt="R/T PLUS" class="sns-desk-none">
+                    <div style="margin-top: 1rem;">
+                        <h3 class="sns-f-26 sns-model-name" style="color: #fff;">LIMITED LONGHORN®</h3>
+                        <p class="sns-f-14 sns-mt-1 sns-mb-3 ptmob2 pbmob2" style="color: #fff;">MSRP* starting at
+                        </p>
+                        <h4 class="sns-f-32" style="padding-top:0%; color: #fff;">$75,245</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Section 30 Code -->
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center"> <a class="sns-btn sns-butn sns-f-b"
+                href="https://www.roncartercdjr.com/new-vehicles/hornet/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b" href="https://www.roncartercdjr.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b" href="https://www.roncartercdjr.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r"
+                href="https://www.roncartercdjr.com/get-pre-qualified-with-capital-one/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+
+
+    <!-- Section 31 Code -->
+    <div class="seo">
+        <div class="seo-per sns-f-14">
+            <p> <b>Introducing the 2025 Dodge Hornet in Alvin, TX</b> </p>
+            <p>The excitement has arrived as the 2025 Dodge Hornet in Alvin, TX is now available for purchase, bringing
+                bold style and dynamic performance to local drivers. This compact SUV blends aggressive design cues with
+                a comfortable, tech‑focused interior that’s ready for daily drives or weekend adventures. Powered by a
+                responsive engine and equipped with advanced safety features, the Hornet delivers a confident, spirited
+                driving experience. Shoppers in Alvin can now explore various trims, each designed to suit different
+                needs and tastes. With its distinctive look and modern capabilities, the 2025 Dodge Hornet is ready to
+                stand out on Texas roads.
+            </p>
+            <p><b>Where to Buy a 2025 Dodge Hornet for Sale in Alvin, TX?</b></p>
+            <p>You can buy a 2025 Dodge Hornet for sale in Alvin, TX at Ron Carter CDJR dealership!
+            </p>
+            <p>The 2025 Dodge Hornet in Alvin, TX stands out as the most powerful CUV in its segment. Performance is
+                delivered through two distinct models: the R/T and the GT. The Hornet R/T is the quickest CUV in its
+                segment. It achieves 0-60 mph in 5.6 seconds flat and uses electric all-wheel drive. The R/T features
+                the available Segment-Exclusive PowerShot feature, which can provide a boost of up to an additional 30
+                horsepower, resulting in a total output of 288 horsepower. The Hornet GT is positioned as the fastest
+                CUV in the segment. It is equipped with a power-packed gas engine that produces 268 horsepower and 295
+                pound-feet of torque, allowing it to reach a top speed of 140 mph.
+
+            </p>
+            <p>The design of the 2025 Dodge Hornet in Alvin, TX elevates expectations for a compact SUV, featuring an
+                aggressive execution of Dodge Brand cues and lines. The look is characterized as "savage by design" and
+                "untamable design". The exterior features a sculpted appearance along with infamous hood scoops. Inside,
+                the Hornet showcases a performance-inspired interior. Optional design elements available through
+                packages include 20-Inch Abyss Finish Wheels and Alcantara<sup>®</sup> Sport Seats found in the Track
+                Pack. The
+                Blacktop<sup>®</sup> Package offers 18-Inch Abyss Finish Wheels and Black Badges. Interior comfort is
+                enhanced by
+                the available Cold Weather Package, which includes a Heated Steering Wheel and Heated Front Seats.
+
+            </p>
+            <p>The 2025 Dodge Hornet in Alvin, TX is designed to make life easier through customizable and intuitive
+                technology. It features the largest total standard screen size in its class. The driver benefits from a
+                12.3-inch Digital Cluster Display that presents vehicle statistics. Central to the interior is the
+                10.25-inch customizable touchscreen powered by Uconnect<sup>®</sup> 5, which supports Apple
+                Carplay<sup>®</sup> and Android
+                Auto<sup>™</sup> compatibility. For safety and convenience, both standard and available features are
+                offered, such
+                as Active Driving Assist and Drowsy Driver Detection.
+            </p>
+
+            <p><b>Where to Test Drive a 2025 Dodge Hornet in Alvin, TX?
+                </b></p>
+            <p>You can test drive a 2025 Dodge Hornet in Alvin, TX at Ron Carter CDJR! Feel the responsive handling,
+                enjoy the advanced technology, and see why this compact SUV is turning heads across Texas. A test drive
+                gives you the chance to explore its stylish interior, examine the attention to detail, and understand
+                the comfort and capability it brings to every journey. Our team at Ron Carter CDJR is ready to welcome
+                you, answer your questions, and help you find the perfect Hornet trim. Reserve your spot today and take
+                the wheel with confidence!
+            </p>
+        </div>
+        <div class="disc sns-f-14">
+            <p>*Based on 2023 IIHS’s Compact UV segment, latest available competitive information and R/T (PHEV) 288
+                HORSEPOWER & GT 268 horsepower.</p>
+
+            <p>*Based on 2023 IIHS’s Compact UV segment, latest available competitive information and a 0-60 time of 5.6
+                seconds.
+            </p>
+
+            <p>*Based on 2023 IIHS’s Compact UV segment, latest available competitive information and top speed of 140
+                mph.</p>
+
+            <p>*Based on 2023 IIHS’s Compact UV segment, latest available competitive information and a 0-60 time of 5.6
+                seconds.</p>
+
+            <p>*Based on 2023 IIHS’s Compact UV segment, latest available competitive information and 288 horsepower.
+            </p>
+
+
+
+
+        </div>
+    </div>
+</div>
