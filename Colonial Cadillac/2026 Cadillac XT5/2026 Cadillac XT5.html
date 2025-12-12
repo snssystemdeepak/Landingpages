@@ -1,0 +1,1549 @@
+<style>
+	.main-div {
+		max-width: 1440px;
+		overflow: hidden;
+		margin: 0 auto;
+		color: #000;
+	}
+
+	.inner2 {
+		max-width: 929px;
+		margin: 0px auto;
+	}
+
+	.offer-bg {
+		background: url('https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/OFFER-BG.jpg?v=H1h63Fa9vikJk0pUzKVU3w==')center;
+		background-size: cover;
+		color: #fff;
+		padding: 1px;
+		width: 100%;
+		height: 328px;
+	}
+
+	@media screen and (max-width: 769px) {
+		.offer-bg {
+			height: 420px;
+		}
+	}
+
+	.banner-title {
+		/* background: url('https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/OFFER-BG.jpg?v=okgHfUXsRrUz0MiupnjFCQ==')center;
+    background-size: cover;
+    color: #fff;
+    padding: 1px;
+    width: 100%; */
+	}
+
+	.banner-image {
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.banner-image .banner-title {
+		background: #4c4c4c;
+		color: #fff;
+	}
+
+	.banner-title2 {
+		background: #4c4c4c;
+		color: #fff;
+		padding: 4px 10px 0px 8px;
+		line-height: 1.3;
+	}
+
+	.title1 {
+		position: absolute;
+		top: 4%;
+		left: 20%;
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.offer .row {
+		margin: 25px 0px;
+	}
+
+	.offer .name {
+		margin-bottom: -90px;
+		margin-top: 10px;
+		color: #000;
+		z-index: 999;
+		position: relative;
+		font-size: 38px;
+		padding-left: 15px;
+		font-weight: 100;
+	}
+
+	.offer .content-div {
+		line-height: 0.8;
+		position: relative;
+	}
+
+	.offer .content-div .dol {
+		font-size: 35px;
+		top: -1.7em;
+		font-weight: 600;
+		color: #000
+	}
+
+	.offer .content-div .mo {
+		font-size: 35px;
+		top: -1.7em;
+		font-weight: 600;
+		color: #000
+	}
+
+	.offer .content-div .amt {
+		font-size: 120px;
+		color: #000
+	}
+
+	.offer .content-div .lease {
+		color: #000;
+		line-height: 1.2;
+		font-size: 13px;
+		display: inline-block;
+		top: 10px;
+		padding-top: 35px;
+		right: -20px;
+		padding-left: 0px;
+	}
+
+	.offer .off-car {
+		max-width: 100%;
+		position: absolute;
+		top: -64px;
+		margin-top: -30px;
+	}
+
+	.offer-diclaimer {
+		line-height: 1.2;
+		font-size: 11px;
+		padding: 25px 0 20px
+	}
+
+	.box {
+		background: #28509b;
+		padding: 20px;
+		color: #fff;
+	}
+
+	/* .arrow {
+    top: -9px;
+    font-size: 20px;
+    position: relative;
+    color: #28509b;
+    margin-bottom: -28px
+} */
+
+	.arrow {
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #4c4c4c;
+		margin: 0 auto;
+		position: relative;
+		top: -11px;
+	}
+
+	.price-modal {
+		background: #4c4c4c;
+		color: #fff;
+		padding: 10px 0 20px 20px;
+		font-size: 12px;
+		line-height: 1.8em;
+		text-align: left;
+	}
+
+	.price-modal span {
+		font-weight: 500;
+		font-size: 21px;
+	}
+
+	.modal-text {
+		padding: 9px;
+		text-align: left;
+		background: #f7f7f7;
+	}
+
+	.modelimage {
+		padding: 0px;
+	}
+
+	.prc {
+		margin-top: -30px;
+	}
+
+	.border-line {
+		width: 10.5%;
+		margin: 0 auto;
+		border-top: 2px solid #b5a46b;
+		margin-top: 0px;
+	}
+
+	@media screen and (max-width:769px) {
+		.banner-image {
+			position: unset;
+			color: #000;
+			text-align: center;
+			margin: -1px 0;
+		}
+
+		.banner-image .title1 {
+			position: unset;
+			top: 0px;
+		}
+
+		.banner-image .price {
+			position: unset;
+			bottom: 0px;
+		}
+
+		.banner-title2 {
+			background: #4c4c4c;
+			color: #fff;
+			padding: 10px
+		}
+
+		.offer {
+			height: auto;
+			padding: 0px;
+		}
+
+		.offer .content-div .lease {
+			width: 100%;
+			position: unset;
+			display: block;
+			padding: 10px 0;
+			font-size: 14px
+		}
+
+		.offer .row .name {
+			background-color: #dbab69;
+		}
+
+		.offer .content-div {
+			margin-top: 0px;
+		}
+
+		.offer .off-car {
+			padding: 0;
+			position: relative;
+			top: 0px !important
+		}
+
+		.offer-diclaimer {
+			padding: 20px
+		}
+
+		.title1 {
+			font-size: 13px;
+			color: #fff;
+		}
+
+		.col-sm-4 {
+			padding: 0px 20px !important;
+		}
+
+		.col-sm-4 img {
+			max-width: 100% !important;
+			display: inline !important;
+		}
+
+		.point-heading {
+			text-align: center !important;
+		}
+
+		.point-text {
+			padding-left: 30% !important
+		}
+
+		.modelimage {
+			padding: 0px 10px;
+		}
+
+		.offer inner2 .col-sm-10 .p1 {
+			margin-top: -20px
+		}
+
+		.border-line {
+			width: 42%;
+			margin: 0 auto;
+			border-top: 2px solid #b5a46b;
+			margin-top: -6px;
+		}
+
+		.sh-vw {
+			padding: 35px 10px 0px !important;
+		}
+	}
+</style>
+
+
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;">
+	<div class="offer-bg">
+		<div class="inner2" style="padding: 30px 0 0;max-width: 935px;">
+
+			<h1 class="hidden-xs"
+				style=" margin: 5px 0px 5px;font-size:31px;line-height:1.2;letter-spacing: 0px;text-transform: uppercase;">
+				2026 Cadillac <span style="font-weight:bold;">XT5</span></h1>
+
+			<h1 class="hidden-sm hidden-md hidden-lg"
+				style="margin:5px 15px 5px;padding-bottom:22px;font-size:25px;line-height:1.2;letter-spacing: 0px;text-transform: uppercase;">
+				2026 Cadillac <span style="font-weight:bold;">XT5</span></h1>
+
+			<p class="hidden-xs" style="font-size:15px;line-height: 1.2; color: #fff;">Please contact Colonial
+				Cadillac for the latest
+				<br> lease and finance offers.
+			</p>
+
+
+
+			<p class="hidden-sm hidden-md hidden-lg"
+				style="font-size:15px;line-height: 1.2; color: #fff; padding-inline: 17px;">Please contact Colonial
+				Cadillac for the latest lease and finance offers.</p>
+			<!-- <p class="hidden-xs" style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:30px;display: none
+            ;">
+            Ultra <span style="white-space: nowrap;">Low-Mileage</span> Lease for Qualified Lessees.</p>
+            <p class="hidden-sm hidden-lg hidden-md" style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:40px;display: none;">
+            Ultra <span style="white-space: nowrap;">Low-Mileage</span> Lease for Qualified Lessees.</p> -->
+		</div>
+		<div class="offer inner2">
+			<div class="row" style="margin:0px 0 0px;">
+				<div class="col-sm-4">
+					<div class="content-div">
+						<div class="prc" style="display: none;"> <sup class="dol">$</sup><span
+								class="amt">599</span><sup class="mo">/mo.</sup>
+							<div class="lease" style="top: 10px;padding-top: 28px;right: 0px;padding-left: 0px;">for
+								36 months.
+								<br>$4,699 due at signing (after all offers).**
+								<br>$0 security deposit.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8 hidden-xs"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/OFFER_CAR.png?v=k6pAwDbO/bSRTo6q3FIaVQ=="
+						alt="2025 xt5"
+						style="width: 100%;display: inline-block;margin-top: 10px;margin-left: 3px;padding-right: 0px;"
+						class="off-car"></div>
+				<div class="col-sm-7 hidden-lg hidden-sm hidden-md"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/OFFER_CAR.png?v=k6pAwDbO/bSRTo6q3FIaVQ=="
+						alt="2025 xt5" style="width:100%;display: inline-block;margin-top: 30px;" class="off-car">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="/* max-width: 1035px; */margin: 0 auto;margin-block: 20px 50px;">
+		<div class="row" style="margin: 00px auto 0px;max-width: 1053px;">
+
+
+
+
+			<div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+				<a href="https://www.colonialcadillacwoburn.com/Lease-Specials" style="padding-bottom: 0px;"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/View_All_Offers_2025-Cadillac-CT4.png?v=1coF56l1kKQiXXUl42k9iA=="
+						alt="2025 xt5">
+				</a>
+			</div>
+			<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md"
+				style="padding:7px 0!important;margin-top: -77px;">
+				<a href="https://www.colonialcadillacwoburn.com/Lease-Specials"
+					style="display: inline-block;padding-bottom: 1px;">
+					<img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/View_All_Offers_2025-Cadillac-CT4.png?v=1coF56l1kKQiXXUl42k9iA=="
+						alt="2025 xt5"></a>
+			</div>
+
+
+
+
+
+			<div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+				<a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&ModelAndTrim=XT5&yearrange=2026-2026"
+					style="display: inline-block;padding-bottom: 1px;"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_XT5/Shop_xt5.jpg?v=VufR5ExTayD/O5tZJkWIhQ=="
+						alt="2025 xt5"></a>
+			</div>
+			<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+				<a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&ModelAndTrim=XT5&yearrange=2026-2026"
+					style="display: inline-block;padding-bottom: 1px;"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_XT5/Shop_xt5.jpg?v=VufR5ExTayD/O5tZJkWIhQ=="
+						alt="2025 xt5"></a>
+			</div>
+
+
+
+
+
+			<div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+				<a href="tel:+17818970507" style="display: inline-block;padding-bottom: 1px;margin-left:0px;"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/CALL_FOR_DETAILS_2025-Cadillac-CT4.png?v=IRMCQKZKfl90UiHscrnOOw=="
+						alt="CALL FOR DETAILS"></a>
+			</div>
+			<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+				<a href="tel:+17818970507" style="display: inline-block;padding-bottom: 1px;">
+					<img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/CALL_FOR_DETAILS_2025-Cadillac-CT4.png?v=IRMCQKZKfl90UiHscrnOOw=="
+						alt="2025 xt5"></a>
+			</div>
+
+
+
+
+
+			<div class="col-sm-12 text-center" style="padding:0px 15px 0px;">
+
+				<p style="margin-top: 30px;font-size:11px;display: none;">**For Current Lessees of 2017 model year
+					or newer Buick, Cadillac, Chevrolet and GMC vehicles : Each dealer sets own price. $599/month
+					for 36 months. Your payments may vary. Payments are for a 2022 CADILLAC XT6 FWD Premium Luxury
+					with an MSRP of $54,190. Based on due at signing amount of $5,699 (after all offers). 36 monthly
+					payments total $21,564. Must show proof of lease. Option to purchase at lease end for an amount
+					to be determined at lease signing. Lessor must approve lease. Take new retail delivery by
+					07-05-2022. Lessee pays for maintenance, repair, excess wear and disposition fee of $595 or less
+					at end of lease. No security deposit required. Payments may be higher in some states. Not
+					available with other offers. </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner-image">
+		<div class="banner-title">
+			<div class="inner2">
+				<div class="banner-title2">
+					<div class="row" style="margin-bottom:1px;">
+
+						<p class="col-sm-6 hidden-xs"
+							style="text-transform: none;font-size:30px;margin:0;padding:5px !important;font-weight: 100; margin-left: 0% !important;">
+							2026 CADILLAC <span style="font-weight:bold;">XT5</span></p>
+
+						<p class="col-sm-6 hidden-sm hidden-md hidden-lg"
+							style="text-transform: none;font-size:30px;margin:0;padding:0 !important;font-weight: 100;line-height: 1;">
+							2026 CADILLAC <span style="font-weight:bold;">XT5</span></p>
+
+						<p class="col-sm-2"
+							style="text-transform: none;font-size:28px;font-weight:bold;padding:0 !important;margin:0;">
+						</p>
+
+						<p class="col-sm-4 hidden-xs"
+							style="text-transform: none;font-size:17px;margin:0;margin-top:16px;padding:0 5px;text-align:right; margin-right: 0px !important ; text-transform:uppercase;">
+							Starting MSRP: $44,300*
+						</p>
+
+						<p class="col-sm-4 hidden-sm hidden-md hidden-lg"
+							style="text-transform: none;font-size:18px;margin:0;margin-top:1cqb;padding:0 !important; text-transform: uppercase;">
+							Starting MSRP: $44,300*
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/HERO14.jpg?v=H4akZcMLW5py7uZ70Zzqbg=="
+		alt="2025 xt5" style="max-width:100%;display: inline-block; margin-top: -1px;">
+	<div style="max-width:920px;margin:0px auto;padding-top:0px;">
+		<div class="row text-center" id="fourbuttons" style="margin: 35px auto 30px;">
+
+
+			<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+				<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_A_QUOTE_2025-Cadillac-CT4.gif?v=AVhS+jFbI6np5Olk5xSpmQ=="
+						alt="Get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+
+
+			<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+				<a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_PRE-APPROVED_2025-Cadillac-CT4.gif?v=3UCixCgnjfG5TtiRjw0tgQ=="
+						alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+
+
+			<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+				<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/REQUEST_MORE_INFO_2025-Cadillac-CT4.gif?v=rTahY92af/Vz+VRtU+ayMw=="
+						alt="Request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+
+
+			<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+				<a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html" style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/VALUE_YOUR_TRADE_2025-Cadillac-CT4.gif?v=9ILRwUe0vYlnhk2NtlQKwA=="
+						alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #ffffff; color: #000000;">
+
+
+
+
+		<!-----need2code--start----->
+
+		<div style="color: #fff;background: #4c4c4c;">
+			<div style="padding: 20px 0 32px;">
+
+				<p style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;text-transform: uppercase;">
+					Performance</p>
+
+				<p class="border-line"></p>
+			</div> <img
+				src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/PERFORMANCE.jpg?v=lLALtvj1SSYJc9WfvTHzWA=="
+				alt="2025 xt5" style="max-width:100%;">
+		</div>
+		<!-----need2code--END----->
+	</div>
+	<div style="background-color:#ffffff;color:#000000; max-width: 1440px; margin: 0 auto;">
+		<div style="max-width:929px;margin:0px auto;">
+			<div class="col-sm-12">
+
+				<p class="sh-vw" style="padding:26px 0px 13px;font-size:13px;line-height:1.2;text-align: center;">
+					Where luxury meets refined power and speed. Confidently take corners with the available 3.6L V6
+					engine.*
+				</p>
+			</div>
+			<div class="row text-center" style="padding-top:0px;margin:0px; padding-bottom: 0px;">
+
+				<div class="col-sm-8" style="padding:5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/AVAILABLE_CHASSIS_DAMPING_CONTROL.jpg?v=0fDDxRsDeDZ3wt2bVX6R1Q=="
+						alt="2025 xt5" style="max-width:100%;display:inline;">
+
+					<p style="padding:25px 0 10px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						AVAILABLE CHASSIS DAMPING CONTROL</p>
+
+					<p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Responds up to 200 times per
+						second to adjust suspension damping to road and driving conditions for improved ride and
+						handling</p>
+				</div>
+				<div class="col-sm-4" style="padding:5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/BREMBO__PERFORMANCE_FRONT_BRAKES.jpg?v=6197WZAwWztdwMuJWNDObw=="
+						alt="2025 xt5" style="max-width:100%;display:inline;">
+
+					<p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						Brembo<sup style="font-size: 26px; top: 0.2em;">®</sup> PERFORMANCE FRONT BRAKES</p>
+
+					<p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">Precise stopping power paired
+						with front and rear red painted brake calipers, standard on Sport</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div style="margin-bottom: 25px; margin-top: 3px;">
+		<div class="inner-4">
+			<div class="row text-center"
+				style="padding-bottom: 0px; margin: 0px; background-color: #4c4c4c; color: #ffffff;">
+				<div class="col-sm-7" style="padding: 0px;"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/DRIVER-MODE-SELECTOR.jpg?v=KaWLEMKntewZ0HsU9VlRJw=="
+						alt="2025 Ram ProMaster" style="max-width: 100%; display: inline-block;"></div>
+				<div class="col-sm-3" style="padding: 2px;">
+
+					<p style="padding-top: 40px; padding-inline: 1px; font-size: 17px;">DRIVER MODE SELECTOR</p>
+
+					<p class="hidden-xs" style="padding-top: 6px; padding-inline: 20px; font-size: 13px;">Customize
+						your drive or adapt to changing road conditions</p>
+
+
+					<p class="hidden-sm hidden-lg hidden-md"
+						style="padding-top: 0px; padding-inline: 20px; font-size: 13px; padding-bottom: 25px;">
+						Customize your drive or adapt to changing road conditions</p>
+
+
+				</div>
+				<div class="col-sm-2" style="padding: 2px;">
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+		<div style="max-width:929px;margin:0px auto; text-align: center;">
+
+			<div class="col-sm-6" style="padding:5px;">
+
+				<p style="padding:10px 5px 7px;font-size:13px;line-height:1.3; margin-top: 10px;"><span
+						style="font-size: 16px; font-weight: 500;">FWD DRIVER MODES</span>
+					<br>
+					<br>• TOUR: The most common mode for everyday driving, with tuning and calibration set for a
+					smooth ride.
+					<br>
+					<br>• SNOW/ICE: Designed to help prevent wheel spin in snow or other slippery conditions.
+					<br>
+					<br>• SPORT: Calibrated for an enhanced feeling of road connection and improved steering at
+					higher speeds.
+				</p>
+			</div>
+
+			<div class="col-sm-6" style="padding:5px;">
+
+				<p style="padding:10px 5px 7px;font-size:13px;line-height:1.3; margin-top: 10px;"><span
+						style="font-size: 16px; font-weight: 500;">AWD DRIVER MODES</span>
+					<br>
+					<br>• TOUR: The most common mode for everyday driving, with tuning and calibration set for a
+					smooth ride.
+					<br>
+					<br>• AWD: Engages the front and rear wheels to help improve normal driving on paved roads that
+					are covered with water, snow or ice.
+					<br>
+					<br>• SPORT: AWD is engaged, improving vehicle handling and acceleration on dry pavement.
+					Provides an enhanced feeling of road connection and more confident steering at higher speeds for
+					a <span style="white-space: nowrap;">fun-to-drive</span> experience.
+					<br>
+					<br>• <span style="white-space: nowrap;">OFF-ROAD:</span> <span
+						style="white-space: nowrap;">Off-Road</span> is designed to engage the front and rear wheels
+					to help improve traction in <span style="white-space: nowrap;">off-road</span> conditions such
+					as gravel, sand and mud.
+				</p>
+			</div>
+
+
+		</div>
+
+
+		<div style="background-color:#ffffff;color:#000000;">
+			<div style="padding-top:0px;padding-bottom:0px;"> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-1.jpg?v=240X3lybjZGk+wiyC+CTvQ=="
+					alt="2025 xt5" style="width:100%; margin-top: 10px;"> </div>
+
+
+			<div id="viewinventory" style="padding-top:30px;padding-bottom: 30px;">
+				<a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&ModelAndTrim=XT5&yearrange=2026-2026"
+					style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/Colonial_Cadillac_XT5_2026_MOVGIF_VI_.gif?v=HesBuiL5t88qwynSt+4w0Q=="
+						alt="view inventory" style="max-width:100%;"> </a>
+			</div>
+
+
+			<!-----need2code--END----->
+
+			<div style="color: #fff;background: #4c4c4c;" bis_skin_checked="1">
+				<div style="padding: 25px 0 35px;" bis_skin_checked="1">
+					<p style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;">INTERIOR</p>
+					<p class="border-line"></p>
+				</div> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/interior.jpg?v=6v3sXyYebc6ZQaXiQx8j/A=="
+					alt="2025 xt5" style="width:100%;">
+			</div>
+
+
+			<div style="background-color:#ffffff;color:#000000;" bis_skin_checked="1">
+				<div style="max-width:929px;margin:0px auto;" bis_skin_checked="1">
+					<div class="col-sm-12" bis_skin_checked="1">
+						<p class="sh-vw hidden-xs"
+							style="padding:25px 0px 10px;font-size:14px;line-height:1.2;text-align: center;">
+							A complement to your ambition. The spacious XT5 luxury <span
+								style="white-space: nowrap;">5-passenger</span> SUV features a collection of
+							versatile, premium materials.
+						</p>
+						<p class="sh-vw hidden-sm hidden-lg hidden-md"
+							style="padding:25px 0px 20px;font-size:14px;line-height:1.2;text-align: center;">
+							A complement to your ambition. The spacious XT5 luxury <span
+								style="white-space: nowrap;">5-passenger</span> SUV features a collection of
+							versatile, premium materials.
+						</p>
+					</div>
+					<div class="row text-center" style="padding-top:25px;margin:0px; padding-bottom: 0px;"
+						bis_skin_checked="1">
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2025_XT5/RECONFIGURABLE_SPACE.jpg?v=xEnV2LTSXXhHLg2CTVqVsw=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								RECONFIGURABLE SPACE</p>
+							<p style="padding:10px 5px 7px;font-size:13px;line-height:1.2;">Rear seats fold flat
+								providing up to 63 cubic feet* of cargo space</p>
+						</div>
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/PREMIUM_FRONT_SEATING.jpg?v=uejJr+6yrFqDyOZuc2Socw=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								PREMIUM FRONT SEATING</p>
+							<p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Standard heated front
+								seats with <span style="white-space: nowrap;">8-way</span> power driver and <span
+									style="white-space: nowrap;">6-way</span> power front passenger seat adjuster
+							</p>
+						</div>
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/AIR_QUALITY_AND_CLIMATE_CONTROL.jpg?v=fldsI8Fc2jOeYMpjJWdNOA=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								AIR QUALITY AND CLIMATE CONTROL</p>
+							<p style="padding:10px 2px 2px;font-size:13px;line-height:1.2;">Air Ionizer helps to
+								filter cabin air while available <span style="white-space: nowrap;">Tri-Zone</span>
+								Climate Control offers climate settings for the driver, front passenger and second
+								row</p>
+						</div>
+					</div>
+					<div class="row text-center" style="padding-top:6px;margin:0px; padding-bottom: 5px;"
+						bis_skin_checked="1">
+						<div class="col-sm-6" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/ULTRAVIEW_SUNROOF.jpg?v=Z5wG4JC93r18YOPNquWsEQ=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								UltraView<sup style="font-size: 26px; top: 0.2em;">®</sup> SUNROOF</p>
+							<p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Experience astounding
+								views—available sunroof spans both the front and rear seats</p>
+						</div>
+						<div class="col-sm-6" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/BOSE__AUDIO_SYSTEM.jpg?v=dhAyUasgMt0FhEsnvr+Hhg=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								Bose<sup style="font-size: 26px; top: 0.2em;">®</sup>* AUDIO SYSTEM</p>
+							<p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Acoustically tuned for a
+								premium listening experience</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div style="padding-top:1px;"> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-2.jpg?v=2HzQ3/m8n8/dtdowiMkRBA=="
+					alt="2025 xt5" style="max-width:100%;"> </div>
+
+
+
+			<div id="Get" style="padding:30px 0 30px;">
+				<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/Colonial_Cadillac_XT5_2026_MOVGIF_GAQ_.gif?v=P7MRkZscENyjzCu8OcB4XQ=="
+						alt="get a quote" style="max-width:100%;"> </a>
+			</div>
+
+
+
+			<div style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #ffffff; color: #000000;"
+				bis_skin_checked="1">
+				<!----need2code------>
+				<div style="color: #ffffff;background: #4c4c4c;" bis_skin_checked="1">
+					<div style="padding: 20px 0 35px;" bis_skin_checked="1">
+						<p style="text-align: center;font-size: 34px;margin: 0px;padding-bottom:0px;">EXTERIOR</p>
+						<p class="border-line"></p>
+					</div> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/EXTERIOR.jpg?v=g1/RSCLaaWnSsceCYGQ4+g=="
+						alt="2025 xt5" style="max-width:100%;">
+				</div>
+				<!-----need2code--END----->
+				<div style="max-width:929px;margin:0px auto;" bis_skin_checked="1">
+					<div class="col-sm-12" bis_skin_checked="1">
+						<p class="sh-vw"
+							style="padding:26px 10px 13px;font-size:13px;line-height:1.2;text-align: center;">
+							Turn heads on arrival. Leave them coveting upon departure. The 2026 XT5 impresses with
+							unmistakable exterior design.
+						</p>
+					</div>
+					<div class="row text-center" style="padding-top:25px;margin:0px;" bis_skin_checked="1">
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/STATEMENT_LIGHTING.jpg?v=BiH9OymCevaLAbv7rR3D0w=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								<span style="white-space: nowrap;">STATEMENT LIGHTING</span>
+							</p>
+							<p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">IntelliBeam
+								automatically turns high beam headlamps on and off according to traffic conditions
+							</p>
+						</div>
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/20__ALLOY_WHEELS.jpg?v=lxTMVTJYvqkoTAJm0omieg=="
+								alt="2025 xt5" style="max-width:100%;display: inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								20" ALLOY WHEELS</p>
+							<p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">An available wheel
+								option that makes a statement wherever the road leads you</p>
+						</div>
+						<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+								src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/HANDS-FREE_POWER_LIFTGATE.jpg?v=ckfMMX9nMqZxMmMrBWNRuw=="
+								alt="2025 xt5" style="max-width:100%;display:inline;">
+							<p
+								style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+								HANDS-FREE POWER LIFTGATE</p>
+							<p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">Easily open the
+								available <span style="white-space: nowrap;">hands-free</span> liftgate with a
+								simple kick of your foot</p>
+						</div>
+					</div>
+				</div>
+				<div style="padding-top:15px;padding-bottom: 0px;" bis_skin_checked="1"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-3.jpg?v=aRs0cbUXN/yJzbEqxdHhYw=="
+						alt="2025 xt5" style="max-width:100%;"> </div>
+				<div id="viewinventory" style="padding-top:30px;padding-bottom: 30px;" bis_skin_checked="1">
+					<a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&ModelAndTrim=XT5&yearrange=2026-2026"
+						style="display:block;"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/Colonial_Cadillac_XT5_2026_MOVGIF_VI_.gif?v=HesBuiL5t88qwynSt+4w0Q=="
+							alt="view inventory" style="max-width:100%;"> </a>
+				</div>
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div style="color: #fff;background: #4c4c4c;">
+				<div style="padding: 20px 0 30px;">
+
+					<p class="hidden-xs" style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 0px;">
+						TECHNOLOGY</p>
+
+					<p class="hidden-sm hidden-md hidden-lg"
+						style="text-align: center;font-size: 36px;margin: 0;padding:5px 10px 15px;line-height: 1.2em;">
+						TECHNOLOGY</p>
+
+					<p class="border-line"></p>
+				</div> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/TECHNLOGY.jpg?v=kSdMdUM9C5GAYIksqew9wg=="
+					alt="2025 xt5" style="max-width:100%;">
+			</div>
+		</div>
+		<!-----need2code--END----->
+		<div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+		<div style="background-color:#ffffff;color:#000000; max-width: 1440px; margin: 0 auto;" bis_skin_checked="1">
+			<div style="max-width:929px;margin:0px auto;" bis_skin_checked="1">
+				<div class="col-sm-12" bis_skin_checked="1">
+					<p class="sh-vw" style="padding:26px 0px 13px;font-size:13px;line-height:1.2;text-align: center;">
+						Seamless connectivity, <span style="white-space: nowrap;">state-of-the-art</span>
+						technology. Everything you need is within reach, stylishly integrated into
+						the 2026 XT5 luxury <span style="white-space: nowrap;">mid-size</span> SUV.
+					</p>
+				</div>
+				<div class="row text-center" style="padding-top:0px;margin:0px; padding-bottom: 0px;"
+					bis_skin_checked="1">
+					<div class="col-sm-8" style="padding:5px;" bis_skin_checked="1"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/AUTOMATIC_PARKING_ASSIST_.jpg?v=eH/UttI/BgFUm2EGMlcFGg=="
+							alt="2025 xt5" style="max-width:100%;display:inline;">
+						<p style="padding:25px 0 10px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+							AUTOMATIC PARKING ASSIST*</p>
+						<p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Automatically steers and
+							uses limited braking to place your vehicle into a detected parallel or perpendicular
+							parking space while you shift gears. You must always be prepared to override the feature
+							and take control.</p>
+					</div>
+					<div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/WIRELESS_APPLE_CARPLAY__AND_WIRELESS_ANDROID_AUTO_COMPATIBILITY.jpg?v=y/8Wmk87PxwwQy/o+uHEbg=="
+							alt="2025 xt5" style="max-width:100%;display:inline;">
+						<p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+							WIRELESS Apple CarPlay<sup style="font-size: 24px; top: 0.2em;">®</sup>* AND WIRELESS
+							Android Auto<sup style="font-size: 18px; top: 0.1em;">™</sup>
+							COMPATIBILITY*</p>
+						<p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">Seamlessly connect your
+							smartphone to access music, maps, calls and <span
+								style="white-space: nowrap;">more—hands-free</span> and <span
+								style="white-space: nowrap;">cable-free</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inner-4" bis_skin_checked="1">
+			<div class="row text-center"
+				style="padding-bottom: 0px; margin: 0px; background-color: #4c4c4c; color: #ffffff;margin-bottom: 15px;"
+				bis_skin_checked="1">
+				<div class="col-sm-7" style="padding: 0px;" bis_skin_checked="1"><img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/ONSTAR.jpg?v=aQAHrgaX7dNQJDDxy3PKbA=="
+						alt="2025 Ram ProMaster" style="max-width: 100%; display: inline-block;"></div>
+				<div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1">
+					<p style="padding-top: 35px; padding-inline: 1px; font-size: 17px;">OnStar<sup
+							style="font-size: 24px; top: 0.2em;">®</sup>*</p>
+					<p class="hidden-xs" style="padding-top: 0px; padding-inline: 20px; font-size: 13px;">OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup>
+						features are included with your Cadillac to make every drive better than the last</p>
+					<p class="hidden-sm hidden-lg hidden-md"
+						style="padding-top: 0px; padding-inline: 20px; font-size: 13px; padding-bottom: 25px;">
+						OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup> features are included with your Cadillac to make every drive better than the last</p>
+				</div>
+				<div class="col-sm-2" style="padding: 2px;" bis_skin_checked="1">
+				</div>
+			</div>
+		</div>
+
+
+		<div style="max-width:929px;margin:0px auto; text-align: center;">
+
+			<div class="col-sm-6" style="padding:5px;">
+
+				<p style="padding:10px 5px 7px;font-size:13px;line-height:1.3; margin-top: 10px;">OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup> One
+					Essentials* is standard with your vehicle, giving you core services on and off the road.
+					<br>
+					<br>• Automatic Crash Response* </br>• Select Mobile App Commands </br>• Google Maps<sup
+						style="font-size: 18px; top: 0.1em;">™</sup>* and Google
+					Assistant<sup style="font-size: 18px; top: 0.1em;">™</sup>*</br>• Alexa<sup
+						style="font-size: 24px; top: 0.2em;">®</sup> <span
+						style="white-space: nowrap;">Built-in*</br>•</span> Maps*</br>•
+					Waze*
+				</p>
+			</div>
+
+			<div class="col-sm-6" style="padding:5px;">
+
+				<p style="padding:10px 5px 7px;font-size:13px;line-height:1.3; margin-top: 10px;">Plus, OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup>
+					Premium* is included for three years, giving you all OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup> has to offer.
+					<br>
+					<br>• <span style="white-space: nowrap;">In-Vehicle</span> Apps*</br>• Emergency Services*</br>•
+					Roadside Assistance*</br>• OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup> Guardian<sup style="font-size: 24px; top: 0.2em;">®</sup>
+					App*</br>• Stolen Vehicle
+					Assistance*</br>• Crisis Assist*</br>• <span style="white-space: nowrap;">In-Vehicle</span>
+					Data*</br>• <span style="white-space: nowrap;">Turn-by-Turn</span> Navigation*
+				</p>
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+		<div style="padding-top:1px;"> <img
+				src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-4.jpg?v=aZvaAO3qbrIEz7+7tbZnlw=="
+				alt="2025 xt5" style="max-width:100%;"> </div>
+
+
+		<div id="Get" style="padding:30px 0 30px;" bis_skin_checked="1">
+			<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/Colonial_Cadillac_XT5_2026_MOVGIF_GAQ_.gif?v=P7MRkZscENyjzCu8OcB4XQ=="
+					alt="get a quote" style="max-width:100%;"> </a>
+		</div>
+
+
+
+		<div style="color: #fff;background: #4c4c4c;">
+			<div style="padding: 20px 0 30px;">
+
+				<p class="hidden-xs" style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 0px;">
+					SAFETY AND DRIVER ASSISTANCE</p>
+
+				<p class="hidden-sm hidden-md hidden-lg"
+					style="text-align: center;font-size: 36px;margin: 0;padding:5px 10px 15px;line-height: 1.2em;">
+					SAFETY AND DRIVER ASSISTANCE</p>
+
+				<p class="border-line"></p>
+			</div> <img
+				src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/SAFETY_AND_DRIVER_ASSISTANCE.jpg?v=DxrYNt/S0tAvm5w5VhHhsA=="
+				alt="2025 xt5" style="max-width:100%;">
+		</div>
+
+		<div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+		<div style="max-width:929px;margin:0px auto;">
+			<div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 0px;">
+				<div class="col-sm-12" style="padding:5px;">
+
+					<p style="padding:10px 15px 8px;font-size:13px;line-height:1.2;">Form follows function. Safety
+						inspires innovation. Explore the extensive collection of available safety and driver
+						assistance
+						features on the XT5 luxury SUV.
+					</p>
+				</div>
+				<div class="col-sm-4" style="padding:5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/STANDARD-1.jpg?v=R5p0S8tkZYJbkkdpZCEghA=="
+						alt="2025 xt5" style="max-width:100%;display:inline;">
+
+					<p class="hidden-xs"
+						style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						STANDARD</br>HD REAR VISION CAMERA
+					</p>
+
+					<p class="hidden-sm hidden-md hidden-lg"
+						style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						STANDARD</br>HD REAR VISION CAMERA
+					</p>
+				</div>
+				<div class="col-sm-4" style="padding:5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/STANDARD-2.jpg?v=tbElIIFOfneBd4meuuW/vg=="
+						alt="2025 xt5" style="max-width:100%;display:inline;">
+
+					<p class="hidden-xs"
+						style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						STANDARD</br>LANE KEEP ASSIST WITH LANE DEPARTURE WARNING
+					</p>
+
+					<p class="hidden-sm hidden-md hidden-lg"
+						style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						STANDARD</br>LANE KEEP ASSIST WITH LANE DEPARTURE WARNING
+					</p>
+				</div>
+				<div class="col-sm-4" style="padding:5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/STANDARD-3.jpg?v=hripVlNa/yFWlZq46mcAmg=="
+						alt="2025 xt5" style="max-width:100%;display:inline;">
+
+					<p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+						STANDARD</br>FORWARD COLLISION ALERT
+					</p>
+				</div>
+				<div class="col-sm-6" style="padding:5px;">
+
+					<p style="padding:10px 5px 0px;font-size:14px;line-height:1.3;"><span
+							style="font-size: 16px; font-weight: 500;">STANDARD ON XT5</span>
+						<br>
+						<br>• Automatic Emergency Braking</br>• Forward Collision Alert</br>• Front Pedestrian
+						Braking</br>• HD Rear Vision Camera</br>• Rear Seat Reminder*</br>• Safety Alert Seat</br>•
+						Teen Driver</br>• Vehicle Diagnostics*</br>• Lane Keep Assist with Lane Departure
+						Warning</br>• Front and Rear Park Assist</br>• Following Distance Indicator
+					</p>
+				</div>
+				<div class="col-sm-6" style="padding:5px;">
+
+					<p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;"><span
+							style="font-size: 16px; font-weight: 500;">AVAILABLE ON XT5</span>
+						<br>
+						<br>• Rear Camera Mirror with Washer</br>• HD Surround Vision</br>• Rear Cross Traffic
+						Alert</br>• Lane Change Alert with Side Blind Zone Alert</br>• Rear Pedestrian Alert</br>•
+						Automatic Parking Assist with Braking</br>• Adaptive Cruise Control</br>• Enhanced Automatic
+						Emergency Braking</br>• Reverse Automatic Braking
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div style="padding-top:15px;"> <img
+				src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-5.jpg?v=TptgjewkyiM08S25pA3ZjA=="
+				alt="2025 xt5" style="max-width:100%;"> </div>
+		<div id="viewinventory" style="padding:30px 0;">
+			<a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&ModelAndTrim=XT5&yearrange=2026-2026"
+				style="display:block;"> <img
+					src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/Colonial_Cadillac_XT5_2026_MOVGIF_VI_.gif?v=HesBuiL5t88qwynSt+4w0Q=="
+					alt="viewinventory" style="max-width:100%;"> </a>
+		</div>
+
+
+
+		<div style="max-width: 1440px; margin: 0 auto ; background-color: #1e1e1e; color: #fff;">
+			<div style="margin:0px auto;">
+				<div style="padding: 20px 0 15px;">
+
+					<p
+						style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;text-transform: uppercase;">
+						specs</p>
+				</div>
+
+				<div style="padding-top:1px; padding-bottom: 5px;"> <img
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-6.jpg?v=qdMg3XnvMfCbxD6GV9NyqA=="
+						alt="2025 xt5" style="max-width:100%;">
+				</div>
+			</div>
+			<div class="row text-center" style="max-width: 929px; margin: 0 auto;">
+				<div class="col-sm-6" style="padding:5px;">
+
+					<p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">ENGINE: 2.0L <span
+							style="white-space: nowrap;">TURBO</br>4-CYLINDER</span> HORSEPOWER 235</br>with premium
+						gasoline
+					</p>
+					<p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">TORQUE: 258 <span
+							style="white-space: nowrap;">LB.-FT.</br>with</span> premium gasoline</p>
+					<p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;"><span
+							style="white-space: nowrap;">EPA-ESTIMATED</span> MPG: </br>FWD 22 city/29 hwy</br>AWD
+						21 city/27 hwy</p>
+
+				</div>
+				<div class="col-sm-6" style="padding:5px;">
+
+					<p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">ENGINE: 3.6L V6</br>available on
+						Premium Luxury, </br>standard on Sport</br>HORSEPOWER 310</br>with premium gasoline
+					</p>
+
+					<p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">TORQUE: 271 <span
+							style="white-space: nowrap;">LB.-FT.</br>with</span> premium gasoline</p>
+					<p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;"><span
+							style="white-space: nowrap;">EPA-ESTIMATED</span> MPG:</br>FWD 19 city/26 hwy</br>AWD 18
+						city/26 hwy</p>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+
+		<div style="padding-top:30px;"> <img
+				src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/image-7.jpg?v=x8a85hAStngAgC+k2efqWA=="
+				alt="2025 xt5" style="max-width:100%;"> </div>
+
+
+
+
+		<div style="max-width:929px;margin:0px auto;">
+			<div class="row text-center" id="fourbuttons" style="margin: 30px auto 15px;">
+				<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+					<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_A_QUOTE_2025-Cadillac-CT4.gif?v=AVhS+jFbI6np5Olk5xSpmQ=="
+							alt="Get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+					<a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_PRE-APPROVED_2025-Cadillac-CT4.gif?v=3UCixCgnjfG5TtiRjw0tgQ=="
+							alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+					<a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+							src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/REQUEST_MORE_INFO_2025-Cadillac-CT4.gif?v=rTahY92af/Vz+VRtU+ayMw=="
+							alt="Request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+					<a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html" style="display:block;">
+						<img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/VALUE_YOUR_TRADE_2025-Cadillac-CT4.gif?v=9ILRwUe0vYlnhk2NtlQKwA=="
+							alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:center;font-size:36px;margin-top:24px;text-transform: uppercase; color: #000;"> Trim
+			levels
+		</div>
+
+
+
+
+
+
+
+
+		<div style="max-width:929px;margin:12px auto 30px;">
+			<div class="row text-center" style="padding-top:0px;margin:0px;">
+				<div class="col-sm-4" style="padding:23px !important;"> <img
+						style="padding-bottom: 0px;display: inline;"
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/LUXURY.jpg?v=8pZpFXMRoNxeLXuSurpRJg=="
+						alt="2025 xt5">
+					<div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+						<h4
+							style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+							LUXURY
+						</h4>
+					</div>
+					<div class="arrow"></div>
+					<div style="background-color:#f7f7f7;margin-top: -18px;">
+
+						<p
+							style="color:#7c7c7c;    padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+						</p>
+
+						<p
+							style="color:#7c7c7c;    padding: 10px 15px 155px 15px;text-align: left;font-size:11px;line-height:1.2; margin-left: 5px;">
+							• 2.0L Turbo <span style="white-space: nowrap;">4-cylinder</span> engine (235 HP, 258
+							<span style="white-space: nowrap;">lb.-ft.</span> of torque with premium gasoline)</br>•
+							18" <span style="white-space: nowrap;">Multi-Spoke</span> alloy wheels with Bright
+							Silver finish</br>• Bose<sup style="font-size: 22px; top: 0.2em;">®</sup>* Premium <span
+								style="white-space: nowrap;">8-speaker</span>
+							system</br>• <span style="white-space: nowrap;">Front-Wheel</span> Drive</br>• Bright
+							Brushed Aluminum roof rails</br>• Automatic Emergency Braking* and Lane Keep Assist with
+							Lane Departure Warning*</br>• Front and Rear Park Assist*</br>• <span
+								style="white-space: nowrap;">Dual-zone</span> automatic Climate Control with
+							individual climate settings for driver and front passenger
+						</p>
+					</div>
+					<div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+						<p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+						<h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+							$44,300*</h1>
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="col-sm-4" style="padding:23px !important;"> <img
+						style="padding-bottom: 0px;display: inline;"
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/PREMIUM_LUXURY.jpg?v=cuE/HWlPk7/DnwUXO5GG5w=="
+						alt="2025 xt5">
+					<div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+						<h4
+							style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+							PREMIUM LUXURY</h4>
+					</div>
+					<div class="arrow"></div>
+					<div style="background-color:#f7f7f7;margin-top: -18px;">
+
+						<p
+							style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+						</p>
+
+						<p
+							style="color:#7c7c7c; padding: 10px 10px 24.5px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+							• 20" <span style="white-space: nowrap;">6-Split</span> Spoke alloy wheels with
+							Polished/Android<sup style="font-size: 18px; top: 0.1em;">™</sup> finish</br>• Bose<sup
+								style="font-size: 22px; top: 0.2em;">®</sup>* Performance Series <span
+								style="white-space: nowrap;">14-speaker</span> system with Cadillac speaker grille
+							pattern </br>• Memory Package with two “presets” for power driver seat, outside mirrors,
+							and power tilt and telescoping steering column</br>• Wireless Phone Charging*</br>•
+							<span style="white-space: nowrap;">Hands-free</span> power liftgate with programmable
+							memory height and <span style="white-space: nowrap;">Cadillac-branded</span> projection
+							light</br>Illuminating door handles </br>• Leather seating surfaces with <span
+								style="white-space: nowrap;">mini-perforated</span> inserts</br>• Lane Change Alert
+							with Side Blind Zone Alert* and Rear Cross Traffic Alert*</br>• 8" diagonal color Driver
+							Information Center</br>• <span style="white-space: nowrap;">Head-Up</span>
+							Display*</br>• HD Surround Vision*</br>• Rear Camera Mirror* with Washer*</br>•
+							Automatic Parking Assist with Braking*
+						</p>
+					</div>
+					<div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+						<p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+						<h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+							$52,900*</h1>
+					</div>
+				</div>
+
+
+
+
+				<div class="col-sm-4" style="padding:23px !important;"> <img
+						style="padding-bottom: 0px;display: inline;"
+						src="https://cdn.dlron.us/static/dealer-27085/2026_Cadillac_XT5/SPORT.jpg?v=wg4ygMkmLRrk5iKV8DIrQg=="
+						alt="2025 xt5">
+					<div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+						<h4
+							style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+							SPORT
+						</h4>
+					</div>
+					<div class="arrow"></div>
+
+					<div style="background-color:#f7f7f7;margin-top: -18px;">
+
+						<p
+							style="color:#7c7c7c;padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+						</p>
+
+						<p class="hidden-xs"
+							style="color:#7c7c7c;padding: 10px 25px 120px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+
+							• 3.6L V6 engine with Smart Towing* (310 HP, 271 <span
+								style="white-space: nowrap;">lb.-ft.</span> of torque with premium gasoline) </br>•
+							20" <span style="white-space: nowrap;">12-Spoke</span> alloy wheels with Pearl Nickel
+							finish</br>• Chassis Damping Control suspension and Yaw Control </br>• Twin Clutch Sport
+							Control <span style="white-space: nowrap;">All-Wheel</span> Drive</br>•
+							Brembo<sup style="font-size: 22px; top: 0.2em;">®</sup> Performance front brakes with front
+							and rear red painted
+							calipers</br>• Gloss Black roof rails</br>• <span
+								style="white-space: nowrap;">Tri-zone</span> automatic Climate Control with
+							individual climate settings for driver, front passenger and rear passengers</br>• Driver
+							Assist Package
+						</p>
+
+
+
+
+						<p class="hidden-sm hidden-lg hidden-md"
+							style="color:#7c7c7c;    padding: 0px 25px 50px 30px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+							• 3.6L V6 engine with Smart Towing* (310 HP, 271 <span
+								style="white-space: nowrap;">lb.-ft.</span> of torque with premium gasoline) </br>•
+							20" <span style="white-space: nowrap;">12-Spoke</span> alloy wheels with Pearl Nickel
+							finish</br>• Chassis Damping Control suspension and Yaw Control </br>• Twin Clutch Sport
+							Control <span style="white-space: nowrap;">All-Wheel</span> Drive</br>•
+							Brembo<sup style="font-size: 22px; top: 0.2em;">®</sup> Performance front brakes with front
+							and rear red painted
+							calipers</br>• Gloss Black roof rails</br>• <span
+								style="white-space: nowrap;">Tri-zone</span> automatic Climate Control with
+							individual climate settings for driver, front passenger and rear passengers</br>• Driver
+							Assist Package
+
+						</p>
+
+
+
+					</div>
+					<div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+						<p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+						<h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+							$62,100*</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div style="max-width:1300px;margin:0px auto;">
+			<div
+				style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:14px;line-height:1.3em; color: #000;">
+
+				<p><b style="font-weight: bold !important;">2026 Cadillac XT5 </b></p>
+
+				<p> </p>
+
+				<p><b style="font-weight: bold !important;">Introducing the 2026 Cadillac XT5 Boston, MA, from
+						Colonial Cadillac </b> </p>
+
+				<p>The 2026 Cadillac XT5 Boston, MA, brings a refined mix of comfort, capability and signature
+					Cadillac craftsmanship to drivers who want a luxury SUV suited for both city travel and weekend
+					escapes. Now offered at Colonial Cadillac, this luxury Cadillac provides a confident ride,
+					upscale cabin features and a striking design that fits right in with Boston’s blend of historic
+					neighborhoods and busy downtown routes.</p>
+
+				<p> </p>
+
+				<p><b style="font-weight: bold !important;">Which Cadillac dealers have the 2026 Cadillac XT5
+						Boston, MA, in stock? </b></p>
+
+				<p>We do! Don’t miss out on exploring the key features of this Cadillac SUV. Power for the 2026
+					Cadillac XT5 Boston, MA, begins with a turbocharged <span
+						style="white-space: nowrap;">2.0-liter</span> <span
+						style="white-space: nowrap;">four-cylinder</span> engine that produces 235 horsepower and
+					258 <span style="white-space: nowrap;">lb-ft</span> of torque when using premium fuel. <span
+						style="white-space: nowrap;">Front-wheel</span> drive and selectable drive modes help the
+					2026 Cadillac XT5 Boston, MA, adapt easily to changing road surfaces. Drivers who desire more
+					strength can opt for the available <span style="white-space: nowrap;">3.6-liter</span> V6 engine
+					with 310 horsepower and 271 <span style="white-space: nowrap;">lb-ft</span> of torque. This
+					setup can be paired with the Twin Clutch Sport Control <span
+						style="white-space: nowrap;">all-wheel</span> drive system for enhanced traction in rain or
+					snow. Available BREMBO<sup style="font-size: 24px; top: 0.2em;">®</sup> front brakes, chassis
+					damping control and yaw control
+					create a stable, responsive feel that suits more spirited driving.
+				</p>
+
+				<p> </p>
+
+				<p>The cabin of the 2026 Cadillac XT5 Boston, MA, is designed to seat five passengers comfortably
+					with standard <span style="white-space: nowrap;">dual-zone</span> automatic climate control and
+					heated front seats. An <span style="white-space: nowrap;">eight-way</span> power driver seat and
+					<span style="white-space: nowrap;">six-way</span> power front passenger seat allow riders to
+					find the right position for longer commutes or weekend trips to the Cape. Those seeking a more
+					premium interior can upgrade to leather seating surfaces with <span
+						style="white-space: nowrap;">mini-perforated</span> inserts. The available Memory Package
+					adds two presets that save preferred settings for the power driver seat, mirrors and power tilt
+					and telescoping steering column. A <span style="white-space: nowrap;">tri-zone</span> climate
+					control system is also offered for improved comfort in all rows.
+				</p>
+
+				<p> </p>
+
+				<p>Within the interior of the 2026 Cadillac XT5 Boston, MA, technology is placed within easy reach
+					to support navigation, entertainment and communication. A standard Bose<sup
+						style="font-size: 24px; top: 0.2em;">®</sup> Premium
+					<span style="white-space: nowrap;">eight-speaker</span> audio system fills the cabin with rich
+					sound, while wireless Apple CarPlay<sup style="font-size: 24px; top: 0.2em;">®</sup> and Android
+					Auto<sup style="font-size: 18px; top: 0.1em;">™</sup> make
+					phone pairing effortless. OnStar<sup style="font-size: 24px; top: 0.2em;">®</sup> One Essentials provides connected services for added peace of
+					mind. For drivers who enjoy additional convenience, the 2026 Cadillac XT5 Boston, MA, offers
+					several premium upgrades. The available wireless charging pad keeps compatible devices powered
+					throughout the day. A <span style="white-space: nowrap;">head-up</span> display helps reduce
+					distraction by projecting key information onto the windshield. Buyers can also add the
+					Bose<sup style="font-size: 24px; top: 0.2em;">®</sup> Performance Series <span
+						style="white-space: nowrap;">14-speaker</span>
+					sound system and an <span style="white-space: nowrap;">8-inch</span> color Driver Information
+					Center for an elevated digital experience.
+				</p>
+
+				<p> </p>
+
+				<p>The 2026 Cadillac XT5 Boston, MA, stands out with clean lines and refined design elements.
+					Standard features include <span style="white-space: nowrap;">18-inch</span> <span
+						style="white-space: nowrap;">multi-spoke</span> alloy wheels in Bright Silver and Bright
+					Brushed Aluminum roof rails. Optional <span style="white-space: nowrap;">20-inch</span> <span
+						style="white-space: nowrap;">six-split</span> spoke alloy wheels with a Diamond Cut and
+					Android<sup style="font-size: 18px; top: 0.1em;">™</sup> finish create a bolder look, while
+					available illuminating door handles add a distinctive
+					touch. Other upgrades include a <span style="white-space: nowrap;">hands-free</span> power
+					liftgate with programmable memory height and a <span
+						style="white-space: nowrap;">Cadillac-branded</span> projection light that adds convenience
+					in tight parking areas. The ultraview sunroof brightens the cabin, too. </p>
+				<p> </p>
+				<p>The 2026 Cadillac XT5 Boston, MA, comes equipped with Automatic Emergency Braking, Lane Keep
+					Assist with Lane Departure Warnings, Forward Collision Alerts and both Front and Rear Park
+					Assist. </p>
+				<p> </p>
+
+				<p><b style="font-weight: bold !important;">Where can I test drive a 2026 Cadillac XT5 in Boston,
+						MA?
+					</b></p>
+
+				<p>Luxury, strength and technology define the 2026 Cadillac XT5 Boston, MA. Visit Colonial Cadillac
+					to explore available trims and test drive this premium SUV.</p>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div
+				style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:11px;line-height: 1.2em; color: #000;">
+
+				<p>*The Manufacturer’s Suggested Retail Price excludes destination freight charge, tax, title,
+					license, dealer fees and optional equipment. Dealer sets final price. To see all Cadillac vehicles’
+					destination freight charges, visit https://www.cadillac.com/destination-freight-charges</p>
+				<p>PERFORMANCE</br>*Available on Premium Luxury model. Standard on Sport model.</p>
+				<p>TECHNOLOGY</br>*Safety or driver assistance features are no substitute for the driver’s
+					responsibility to operate the vehicle in a safe manner. The driver should remain attentive to
+					traffic, surroundings and road conditions at all times. Visibility, weather and road conditions
+					may affect feature performance. Read the vehicle Owner’s Manual for more important feature
+					limitations and information.</br>*See onstar.com for details and limitations. Services vary by
+					model. Service plan required.</br>*OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell reception and
+					GPS signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links to emergency services. Not all vehicles may transmit all crash
+					data. Check here for details and limitations.</br>*Google Assistant<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> is not available in certain
+					languages and countries. Requires Internet connection. Service availability, features and
+					functionality are subject to limitations and vary by vehicle, device, location and active
+					service plan. Device data connection is required. Google<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> Actions require account linking to use.
+					Lock/unlock feature requires automatic locks. Remote start requires GM <span
+						style="white-space: nowrap;">factory-installed</span> and enabled remote start system. Check
+					here for details and limitations. Google<sup style="font-size: 18px; top: 0.1em;">™</sup>,
+					Google<sup style="font-size: 18px; top: 0.1em;">™</sup> Home, Android<sup
+						style="font-size: 18px; top: 0.1em;">™</sup>, other related marks and logos
+					are trademarks of Google<sup style="font-size: 18px; top: 0.1em;">™</sup> LLC.</br>*Functionality is
+					subject to limitations and varies by
+					vehicle, infotainment system, and location. Select service plan required. Certain Alexa<sup
+						style="font-size: 22px; top: 0.2em;">®</sup> Skills
+					require account linking to use. Amazon<sup style="font-size: 22px; top: 0.2em;">®</sup>, Alexa<sup
+						style="font-size: 22px; top: 0.2em;">®</sup> and all related logos are trademarks of
+					Amazon.com, Inc. or its affiliates. Check here for additional details.</br>*US only. Available
+					on properly equipped 2018MY and newer GM vehicles. Requires select service plan. Functionality
+					is subject to user terms and limitations and varies by vehicle model. Check here for details and
+					limitations.</br>*Google Play<sup style="font-size: 18px; top: 0.1em;">™</sup>, YouTube<sup style="font-size: 18px; top: 0.1em;">™</sup> and Waze are
+					trademarks of Google<sup style="font-size: 18px; top: 0.1em;">™</sup> LLC.</br>*Available on
+					select 2017 model year and newer GM vehicles with compatible hardware. <span
+						style="white-space: nowrap;">Third-party</span> trademarks are the property of their
+					respective <span style="white-space: nowrap;">third-party</span> owners and used under
+					agreement. Requires active service plan and paid AT&T<sup style="font-size: 22px; top: 0.2em;">®</sup> vehicle data plan. Check here for details
+					and limitations.</br>*Emergency Services, Crisis Assist, OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> Safety Alerts: OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan,
+					working electrical system, cell reception and GPS signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links to emergency
+					services. Check here for coverage map, details and limitations.</br>*Emergency Services, Crisis
+					Assist, OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> Safety Alerts: OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell reception and GPS
+					signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links to emergency services. Check here for coverage map, details and
+					limitations.</br>*U.S. and Canada only. Available on select Apple<sup
+						style="font-size: 22px; top: 0.2em;">®</sup> and Android<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> devices. Mobile
+					Crash Response services are intended for use in select vehicles only and can connect
+					automatically on Android<sup style="font-size: 18px; top: 0.1em;">™</sup> devices only. Service
+					coverage varies with conditions and location.
+					Service availability, features and functionality vary by device and software version. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup>
+					Guardian service plan <span style="white-space: nowrap;">(stand-alone</span> plan, <span
+						style="white-space: nowrap;">add-on</span> plan or plan that includes the service), cell
+					reception, GPS signal and device data connection required. Terms apply. Device permissions are
+					required for app to operate properly. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links to emergency services. Device and app may not
+					transmit all crash data. Check here for details and limitations. Pricing and availability
+					subject to change. You may cancel at any time by calling 1.888.4 OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup>
+					(1.888.466.7827).</br>*Requires paid plan, working electrical system, cell reception, GPS
+					signal, armed GM <span style="white-space: nowrap;">factory-installed</span> <span
+						style="white-space: nowrap;">theft-deterrent</span> system, contact method on file and
+					enrollment to receive alerts. Additional messaging and data rates may apply. Services are
+					intended to assist with vehicle recovery and do not prevent theft or protect against damage or
+					loss. Check here for details and limitations.</br>*Emergency Services, Crisis Assist, OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup>
+					Safety Alerts: OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell reception and GPS signal required.
+					OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links to emergency services. Check here for coverage map, details and
+					limitations.</br>*AT&T<sup style="font-size: 22px; top: 0.2em;">®</sup> Connected Car Unlimited Plan (Prepaid <span
+						style="white-space: nowrap;">30-Day</span> Auto Renewal): U.S. only. Prepaid <span
+						style="white-space: nowrap;">session-based</span> data plans provide you with access to AT&T<sup style="font-size: 22px; top: 0.2em;">®</sup>
+					wireless data services for your equipped vehicle including, but not limited to, features that
+					may be used with wireless data services, content and application. Eligible vehicle, data plan
+					and compatible SIM card required. Duration: <span style="white-space: nowrap;">Session-based</span>
+					prepaid plans for 30 days. Auto Renewal:
+					Plans automatically renew every 30 days unless canceled. To cancel at any time, call
+					1.888.466.7827 or by accessing your account online. <span
+						style="white-space: nowrap;">Auto-Renewal</span> Payments: Monthly charges will
+					automatically be billed to credit card on file on day 30 unless canceled. Payments are
+					nonrefundable (subject to applicable law). Pricing: $25 for a <span
+						style="white-space: nowrap;">30-day</span> prepaid plan. Limit: 1 vehicle per <span
+						style="white-space: nowrap;">30-day</span> prepaid plan. Devices: Sold separately. Data: For
+					use in the U.S. only. Hotspot: Connects a limited number of <span
+						style="white-space: nowrap;">Wi-Fi-capable</span> devices per vehicle hotspot as specified
+					by the vehicle maker. Devices connected to vehicle’s hotspot use data from your plan. Once a
+					device connects, it will automatically reconnect and use data from your plan unless hotspot is
+					removed from returning device settings or hotspot password is changed. Performance varies based
+					on number of devices connected and other factors. Stream Saver feature not available for this
+					Plan. General Wireless Service Terms: Subject to AT&T<sup style="font-size: 22px; top: 0.2em;">®</sup> <span
+						style="white-space: nowrap;">Session-Based</span> Wireless Data Services Agreement available
+					at att.com/USTermsandconditions. Pricing, offer and terms subject to change and may be modified
+					or terminated at any time without notice. Coverage and service not available
+					everywhere.</br>*Requires paid plan and properly equipped vehicle. Mobile app functionality is
+					available on select devices and requires data connection. Map coverage available in the U.S.,
+					Puerto Rico and Canada. Check here for details and limitations.</br>*Vehicle user interface is a
+					product of Apple<sup style="font-size: 22px; top: 0.2em;">®</sup>, and its terms and privacy
+					statements apply. Requires
+					compatible iPhone<sup style="font-size: 22px; top: 0.2em;">®</sup>, and data plan rates apply. Apple
+					CarPlay<sup style="font-size: 22px; top: 0.2em;">®</sup>,
+					Siri<sup style="font-size: 22px; top: 0.2em;">®</sup>, iPhone<sup
+						style="font-size: 22px; top: 0.2em;">®</sup> and Apple Music<sup
+						style="font-size: 22px; top: 0.2em;">®</sup> are trademarks of
+					Apple<sup style="font-size: 22px; top: 0.2em;">®</sup> Inc., registered in the U.S. and other
+					countries.</br>*Vehicle user interface is a product
+					of Google<sup style="font-size: 18px; top: 0.1em;">™</sup>, and its terms and privacy statements
+					apply. Requires the Android Auto<sup style="font-size: 18px; top: 0.1em;">™</sup> app on Google
+					Play<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> and a compatible Android<sup style="font-size: 18px; top: 0.1em;">™</sup> smartphone. Data plan
+					rates apply. You can check
+					which smartphones are compatible at g.co/androidauto/requirements. Android<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> and Android Auto<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> are
+					trademarks of Google<sup style="font-size: 18px; top: 0.1em;">™</sup> LLC. Wireless use of Android
+					Auto<sup style="font-size: 18px; top: 0.1em;">™</sup> requires a compatible Android<sup
+						style="font-size: 18px; top: 0.1em;">™</sup> 11.0+ phone
+					and compatible active data plan. Check g.co/androidauto/requirements for compatibility.</p>
+				<p>INTERIOR</br>*Cargo and load capacity limited by weight and distribution.</p>
+				<p>SAFETY AND DRIVER ASSISTANCE</br>*Safety or driver assistance features are no substitute for the
+					driver’s responsibility to operate the vehicle in a safe manner. The driver should remain
+					attentive to traffic, surroundings and road conditions at all times. Visibility, weather and
+					road conditions may affect feature performance. Read the vehicle Owner’s Manual for important
+					feature limitations and information.</br>*Does not detect people or items. Always check rear
+					seat before exiting.</br>*Diagnostic capabilities vary by model and plan. Message and data rates
+					may apply. Requires contact method on file and enrollment to receive alerts. Not all issues will
+					deliver alerts. Click here for details and limitations.</p>
+			</div>
+		</div>
+
+		<p class="text-center" style="padding-top:30px;">Powered By <a href="http://automotiveadvertisinggroup.com/"
+				rel="noreferrer noopener" style="text-decoration:none;" target="_blank">Automotive Advertising
+				Group</a> </p>
+		<!---->
+	</div>
+</div>
