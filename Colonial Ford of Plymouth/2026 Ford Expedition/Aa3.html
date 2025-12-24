@@ -1,0 +1,3840 @@
+<style>
+    /* Write your master css here */
+    @font-face {
+        font-family: "Toyota Type";
+        src: url('https://assets.dealerinspire.com/public/fonts/ToyotaType-Semibold.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Toyota Type";
+        src: url('https://assets.dealerinspire.com/public/fonts/ToyotaType-Book.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .main-div {
+        width: 100%;
+    }
+
+    .main-div .sendToPdfFiller {
+        display: none !important;
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-family: "Toyota Type";
+    }
+
+    p {
+        margin: 0;
+        font-family: "Toyota Type";
+    }
+
+    h2 {
+        letter-spacing: -0.03em;
+    }
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    /* .main-div sup { line-height: 0.3em; top: -0.2em !important; } */
+    .main-div sup {
+
+        top: 0em !important;
+        font-size: inherit;
+
+    }
+
+    :root {
+        --sns-black: #000;
+        --sns-white: #fff;
+        --sns-gray: #F6F6F6;
+    }
+
+    .sns-f-72 {
+        font-size: 3.75vw !important;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .sns-f-57 {
+        font-size: 2.969vw !important;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .sns-f-50 {
+        font-size: 1.563vw !important;
+        font-weight: 600;
+        color: #000;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-43 {
+        font-size: 2.24vw !important;
+        font-weight: 700;
+        color: rgba(51, 51, 51, 1);
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-42 {
+        font-size: 2.4vw !important;
+        font-weight: 600;
+        color: #000;
+        line-height: 1.2em;
+        letter-spacing: unset;
+    }
+
+    .sns-f-36 {
+        font-size: 1.56vw !important;
+        font-weight: 600 !important;
+        color: #000;
+        font-family: "Toyota Type";
+        line-height: 1.25em;
+    }
+
+    .sns-f-35 {
+        font-size: 1.88vw !important;
+        font-weight: 400;
+        color: #333333;
+        line-height: 1.4em;
+    }
+
+    .sns-f-32 {
+        font-size: 1.666vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-30 {
+        font-size: 1.563vw !important;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Toyota Type";
+        letter-spacing: 0.2px;
+    }
+
+    .sns-f-28 {
+        font-size: 1.458vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-25 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(108, 15, 18, 1) !important;
+        font-family: "Toyota Type";
+        text-transform: uppercase;
+    }
+
+
+    .sns-f-24 {
+        font-size: 1.25vw !important;
+        font-weight: 400;
+        line-height: 1.5em;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-24-p {
+        font-size: 1.25vw !important;
+        font-weight: 400;
+        line-height: 1.4em;
+        font-family: "Toyota Type";
+        color: #333333 !important;
+    }
+
+    .sns-f-23 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8) !important;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-20R {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: #000;
+        font-family: "Toyota Type";
+        line-height: 1.4em;
+    }
+
+    .sns-f-20 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.4em;
+    }
+
+    .sns-f-19 {
+        font-size: 0.94vw !important;
+        font-weight: 600;
+        color: #EB0A1E;
+        font-family: "Toyota Type";
+        line-height: 1.55em;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 3px; */
+    }
+
+    .sns-f-14 {
+        font-size: 0.729vw !important;
+        font-weight: 500;
+        color: #333333;
+        line-height: 1.2em;
+    }
+
+    .sns-mar-in-30 {
+        margin-inline: 30%;
+    }
+
+    .sns-mar-in-28 {
+        margin-inline: 28%;
+    }
+
+    .sns-mar-in-27 {
+        margin-inline: 26.7%;
+    }
+
+    .sns-mar-in-26 {
+        margin-inline: 23%;
+    }
+
+    .sns-mar-in-25 {
+        margin-inline: 24%;
+    }
+
+    .sns-mar-in-24 {
+        margin-inline: 23.8%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-f-72 {
+            font-size: clamp(40px, 3.75vw, 50px) !important;
+        }
+
+        .sns-f-57 {
+            font-size: clamp(38px, 2.969vw, 50px) !important;
+        }
+
+        .sns-f-50 {
+            font-size: clamp(30px, 2.604vw, 50px) !important;
+        }
+
+        .sns-f-43 {
+            font-size: clamp(34px, 2.188vw, 43px) !important;
+        }
+
+        .sns-f-42 {
+            font-size: clamp(30px, 2.188vw, 42px) !important;
+        }
+
+        .sns-f-36 {
+            font-size: clamp(24px, 1.875vw, 36px) !important;
+        }
+
+        .sns-f-35 {
+            font-size: clamp(24px, 1.823vw, 35px) !important;
+        }
+
+        .sns-f-32 {
+            font-size: clamp(27px, 1.823vw, 32px) !important;
+        }
+
+        .sns-f-30 {
+            font-size: clamp(24px, 1.563vw, 30px) !important;
+            line-height: 1.3em;
+        }
+
+        .sns-f-28 {
+            font-size: clamp(24px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-25 {
+            font-size: clamp(16px, 1.302vw, 25px) !important;
+        }
+
+        .sns-f-24 {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-24-p {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-23 {
+            font-size: clamp(16px, 1.198vw, 23px) !important;
+        }
+
+        .sns-f-20R {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+            line-height: 1.4em;
+        }
+
+        .sns-f-20 {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+        }
+
+        .sns-f-19 {
+            font-size: clamp(14px, 0.99vw, 19px) !important;
+        }
+
+        .sns-f-14 {
+            font-size: clamp(15px, 0.875em, 19px) !important;
+        }
+
+        .sns-mar-in-30 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-28 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-27 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-26 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-25 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-24 {
+            margin-inline: 3%;
+        }
+    }
+
+    .sns-mt-6 {
+        margin-top: 6%;
+    }
+
+    .sns-mt-5 {
+        margin-top: 5%;
+    }
+
+    .sns-mt-4 {
+        margin-top: 4%;
+    }
+
+    .sns-mt-3 {
+        margin-top: 3%;
+    }
+
+    .sns-mt-2 {
+        margin-top: 2%;
+    }
+
+    .sns-mt-1 {
+        margin-top: 1%;
+    }
+
+    .sns-mb-6 {
+        margin-bottom: 6%;
+    }
+
+    .sns-mb-5 {
+        margin-bottom: 5%;
+    }
+
+    .sns-mb-4 {
+        margin-bottom: 4%;
+    }
+
+    .sns-mb-3 {
+        margin-bottom: 3%;
+    }
+
+    .sns-mb-2 {
+        margin-bottom: 2%;
+    }
+
+    .sns-mb-1 {
+        margin-bottom: 1%;
+    }
+
+    .sns-mb-0 {
+        margin-bottom: 0% !important;
+    }
+
+    .sns-pt-6 {
+        padding-top: 6%;
+    }
+
+    .sns-pt-5 {
+        padding-top: 5%;
+    }
+
+    .sns-pt-4 {
+        padding-top: 4%;
+    }
+
+    .sns-pt-3 {
+        padding-top: 3%;
+    }
+
+    .sns-pt-2 {
+        padding-top: 2%;
+    }
+
+    .sns-pt-1 {
+        padding-top: 1%;
+    }
+
+    .sns-pb-6 {
+        padding-bottom: 6%;
+    }
+
+    .sns-pb-5 {
+        padding-bottom: 5%;
+    }
+
+    .sns-pb-4 {
+        padding-bottom: 4%;
+    }
+
+    .sns-pb-3 {
+        padding-bottom: 3%;
+    }
+
+    .sns-pb-2 {
+        padding-bottom: 2%;
+    }
+
+    .sns-pb-1 {
+        padding-bottom: 1%;
+    }
+
+    .sns-m-block-1 {
+        margin-block: 1%;
+    }
+
+    .sns-m-block-2 {
+        margin-block: 2%;
+    }
+
+    .sns-m-block-3 {
+        margin-block: 3%;
+    }
+
+    .sns-m-block-4 {
+        margin-block: 4%;
+    }
+
+    .sns-m-block-5 {
+        margin-block: 5%;
+    }
+
+    .sns-m-block-6 {
+        margin-block: 6%;
+    }
+
+    .sns-p-inline-1 {
+        padding-block: 1%;
+    }
+
+    .sns-p-inline-2 {
+        padding-block: 2%;
+    }
+
+    .sns-p-inline-3 {
+        padding-block: 3%;
+    }
+
+    .sns-p-inline-4 {
+        padding-block: 4%;
+    }
+
+    .sns-p-inline-5 {
+        padding-block: 5%;
+    }
+
+    .sns-p-inline-6 {
+        padding-block: 6%;
+    }
+
+    /* Custom css */
+    /* The sns-d-flex becomes flexible by setting the display property to flex */
+    .sns-d-flex {
+        display: flex;
+    }
+
+    /* justify-content to align the item on the main axis ,center */
+    .sns-justify-content-center {
+        justify-content: center;
+    }
+
+    .sns-justify-center {
+        justify-content: center;
+    }
+
+    /* Distribute items evenly Start, in-between, and end gaps have equal sizes */
+    .sns-justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    /*Items will have space between them */
+    .sns-justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    /*tems will have space before, between, and after them */
+    .sns-justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    /* the align-items property to align our item on the cross axis, center*/
+    .sns-align-center {
+        align-items: center;
+    }
+
+    .sns-align-end {
+        align-items: end;
+    }
+
+    /* sets the items in row */
+    .sns-f-row {
+        flex-direction: row;
+    }
+
+    /* sets the items in column */
+    .sns-f-column {
+        flex-direction: column;
+    }
+
+    /* sns-flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines.  */
+    .sns-flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    /* The flexbox items are aligned at the baseline of the cross axis. */
+    .sns-basline {
+        align-items: baseline;
+    }
+
+    .sns-wor {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    /* ====================== Width ==========================*/
+    .sns-w-25 {
+        width: 25%;
+    }
+
+    .sns-w-50 {
+        width: 50%;
+    }
+
+    .sns-w-75 {
+        width: 75%;
+    }
+
+    .sns-w-100 {
+        width: 100%;
+    }
+
+    /* start */
+    .sns-desk-none {
+        display: none !important;
+    }
+
+    .sns-mob-none {
+        display: block !important;
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-desk-none {
+            display: block !important;
+        }
+
+        .sns-mob-none {
+            display: none !important;
+        }
+    }
+
+    /* End */
+    /* None classes */
+    .sns-desk-view-c {
+        display: block !important;
+    }
+
+    .sns-tab-view-c {
+        display: none !important;
+    }
+
+    .sns-mob-view-c {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: block !important;
+        }
+
+        .sns-mob-view-c {
+            display: none !important;
+        }
+
+        .sns-wor {
+            padding-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: none !important;
+        }
+
+        .sns-mob-view-c {
+            display: block !important;
+        }
+    }
+
+    .sns-desk-view-A {
+        display: block;
+    }
+
+    .sns-tab-view-A {
+        display: none;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-A {
+            display: none;
+        }
+
+        .sns-tab-view-A {
+            display: block;
+        }
+    }
+
+    /* padding left and right in rem */
+    /* .sns-x-0 { padding-right: 0; padding-left: 0; } .sns-x-1 { padding-right: 0.25rem; padding-left: 0.25rem; } .sns-x-2 { padding-right: 0.5rem; padding-left: 0.5rem; } */
+    /* .sns-x-3 { padding-right: 1rem; padding-left: 1rem; } .sns-x-4 { padding-right: 1.5rem; padding-left: 1.5rem; } .sns-px-5 { padding-right: 3rem; padding-left: 3rem; } */
+    /* padding left and right in rem */
+    /* padding -top and bottom in rem */
+    /* .sns-py-0 { padding-top: 0; padding-bottom: 0; } .sns-py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; } .sns-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; } .sns-py-3 { padding-top: 1rem; padding-bottom: 1rem; } .sns-py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; } .sns-py-5 { padding-top: 3rem; padding-bottom: 3rem; } */
+    /* padding -top and bottom in rem */
+    .sns-fw-100 {
+        font-weight: 100;
+    }
+
+    .sns-fw-200 {
+        font-weight: 200;
+    }
+
+    .sns-fw-300 {
+        font-weight: 300;
+    }
+
+    .sns-fw-400 {
+        font-weight: 400;
+    }
+
+    .sns-fw-500 {
+        font-weight: 500;
+    }
+
+    .sns-fw-600 {
+        font-weight: 600;
+    }
+
+    .sns-fw-700 {
+        font-weight: 700;
+    }
+
+    .sns-fw-800 {
+        font-weight: 800;
+    }
+
+    /* font-weight normal italic bold */
+    .sns-text-start {
+        text-align: left;
+    }
+
+    .sns-text-end {
+        text-align: right;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-text-decoration-none {
+        text-decoration: none;
+    }
+
+    .sns-text-decoration-underline {
+        text-decoration: underline;
+    }
+
+    .sns-text-decoration-line-through {
+        text-decoration: line-through;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-text-lowercase {
+        text-transform: lowercase;
+    }
+
+    .sns-text-uppercase {
+        text-transform: uppercase;
+    }
+
+    .sns-text-capitalize {
+        text-transform: capitalize;
+    }
+
+    .sns-text-wrap {
+        white-space: normal;
+    }
+
+    .sns-text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-col-4 {
+        width: calc(85%/4);
+    }
+
+    .sns-col-3 {
+        width: calc(88%/3);
+    }
+
+    .sns-col-1 {
+        width: calc(94%/1);
+    }
+
+    .border-line {
+        border-bottom: 2px solid #EB0A1E;
+        width: 10%;
+        padding-top: 0%;
+        margin-inline: auto;
+        margin-bottom: 0.5em;
+        display: none;
+    }
+
+    .headborde {
+        /* background: #6c0f12;
+        width: 7.13%;
+        margin-inline: auto;
+        padding: 0.3%;
+        border-radius: 5px;
+        border-bottom: 2px solid #c71806; */
+    }
+
+    .sns-ram_banner_sec {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img img {
+        /* width: 100%;
+        background: #6c0f12;
+        padding-top: 0.5%; */
+    }
+
+    .sns-ram_banner_sec_lft {
+        position: absolute;
+        z-index: 2;
+        left: 0%;
+        color: #fff;
+        bottom: 3%;
+        text-align: center;
+        width: 99%;
+        padding-inline: 0.5%;
+    }
+
+    .sns-ram_banner_sec_lft h1 {
+        font-weight: 600;
+        font-size: 2.71vw;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 1.3em;
+    }
+
+    .sns-ram_banner_sec_lft h2 {
+        font-size: 1.042vw !important;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 0 !important;
+        padding-top: 0.5%;
+    }
+
+
+
+    .sns-ram_banner_sec_right {
+        position: absolute;
+        z-index: 1;
+        top: 2.4%;
+        right: 3%;
+        color: #fff;
+    }
+
+    /* .sns-ram_banner_sec_right h2 { font-size: 1.7vw; font-weight: 500; } */
+    .sns-ram_banner_sec_bottom {
+        position: absolute;
+        z-index: 1;
+        bottom: 3%;
+        left: 3%;
+        color: #D9D9D9;
+    }
+
+    .sns-ram_banner_sec_bottom p {
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+
+    .sns-ram_banner_sec_imgs_cnt {
+        color: #fff;
+        position: absolute;
+        left: 3%;
+        bottom: 7%;
+        z-index: 1;
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .sns-ram_banner_sec_lft {
+            position: initial;
+            background: #0C0C0C;
+            order: 1;
+            text-align: center;
+            padding-block: 8% 5%;
+            color: #fff;
+            width: 100%;
+            padding-inline: 3%;
+            /* overflow: hidden; */
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 3% !important;
+        }
+
+        .sns-ram_banner_sec_lft h1 {
+            font-size: clamp(32px, 3.75vw, 72px) !important;
+            padding-inline: 3vw;
+            /* text-transform: uppercase; */
+            LINE-HEIGHT: 1.3em;
+        }
+
+
+
+        /* .sns-ram_banner_sec_right { position: initial; color: #fff; text-align: center; background: #676767; order: 2; } */
+        .sns-ram_banner_sec_lft h2 {
+            font-size: clamp(16px, 2.9688vw, 57px) !important;
+            margin-top: 0%;
+            font-weight: 600;
+            text-transform: uppercase;
+            PADDING-INLINE: 20%;
+            line-height: 2.3em;
+        }
+
+        .sns-ram_banner_sec_bottom {
+            position: initial;
+            color: #D9D9D9;
+            background: #676767;
+            order: 3;
+            text-align: center;
+            margin-top: -1px;
+        }
+
+        .sns-ram_banner_sec_bottom p {
+            font-size: clamp(18px, 1.2vw, 20px);
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .sns-ram_banner_sec_imgs {
+            order: 1;
+        }
+    }
+
+    .sns-four-button>.sns-BN {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5% 0;
+        background: #DFD6CF;
+        /* margin-top: -1px; */
+        gap: 1.2%;
+    }
+
+    .sns-BN>a {
+        color: #fff;
+        text-decoration: none !important;
+        text-transform: capitalize !important;
+    }
+
+    .sns-BN>.sns-btn {
+        width: calc(91.5%/4);
+        /* width: 21.25%; */
+        padding: 0.8% 0;
+        box-sizing: border-box;
+    }
+
+    .justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    .sns-BN .sns-butn {
+        background: #EB0A1E;
+        color: #FFFFFF !important;
+        font-size: 1.25vw;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 8px;
+        text-transform: capitalize !important;
+        font-family: "Toyota Type";
+    }
+
+    .sns-BN .sns-butn:hover {
+        background-color: #A22321 !important;
+        color: #fff !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-BN>.sns-btn {
+            width: calc(93%/2);
+            padding: 2% 0;
+        }
+
+        .sns-BN .sns-butn {
+            font-size: clamp(20px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-b {
+            margin-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-BN>.sns-btn {
+            width: calc(90%/1);
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 7% 0 7% !important;
+        }
+
+        .sns-BN>.sns-btn {
+            padding: 3.5% 0;
+        }
+
+        .sns-f-b {
+            margin-bottom: 3%;
+        }
+
+        .sns-f-b-r {
+            margin-bottom: 4%;
+        }
+    }
+
+    .sns-head {
+        text-align: center;
+        color: #333333;
+        /* padding-inline: 3%; */
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-42 {
+        text-transform: inherit;
+        padding-bottom: 1%;
+        margin-bottom: 0 !important;
+    }
+
+    .sns-head h2 {
+        margin-bottom: 0.5em;
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-19 {
+        text-transform: uppercase;
+        margin-bottom: 0.7em !important;
+        letter-spacing: 5px;
+        border-bottom: 2px solid #c71806;
+        display: inline-block !important;
+        line-height: 2em !important;
+        margin-bottom: 0.7% !important;
+        padding-bottom: 0.3%;
+    }
+
+    .sns-head h2 {
+        margin-bottom: 1% !important;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-head h2 {
+            margin-bottom: 3% !important;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-head h2 {
+            margin-bottom: 5% !important;
+        }
+
+        .sns-head {
+            padding-inline: 6%;
+        }
+    }
+
+
+    .card2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .card2c {
+        width: calc(93% / 2);
+        /* border: 1px solid black; */
+    }
+
+    .card2c .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .sns-inner-div-1 img {
+        width: 63%;
+        margin: 0 auto;
+    }
+
+    .sns-inner-div-1 .img1 {
+        width: 53%;
+        margin: 0 auto;
+        padding-top: 1%;
+    }
+
+    .sns-inner-div-1 .img-2 {
+        width: 56.1%;
+        margin: 0 auto;
+        padding-top: 3%;
+        padding-bottom: 5px;
+    }
+
+    .sns-inner-div-1 .img-3 {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 3.8%;
+    }
+
+    .sns-m-in-26 {
+        margin-inline: 26%;
+    }
+
+    .sns-m-in-5 {
+        margin-inline: 5%;
+    }
+
+    .card2c .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-img-w-76 {
+        width: 76.9% !important;
+        margin-inline: auto;
+    }
+
+    .card2c-3 {
+        width: calc(92% / 2);
+        box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;
+        /* border: 1px solid black; */
+    }
+
+    .card2c-3 .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c-3 .sns-f-20R {
+        padding-inline: 4vw;
+        text-align: left;
+        padding-top: 2%;
+    }
+
+    .card2c-3 .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .card2c-3 .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c-3 .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 {
+        padding: 0 16% 0 12%;
+    }
+
+    .sns-w-1 .sns-p-1 {
+        padding-block: 3% 6%;
+    }
+
+    .sns-w-1 .sns-p-2 {
+        padding-block: 12% 20.7%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 h3 {
+        color: #fff !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p {
+        color: #000 !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p span {
+        color: #000 !important;
+    }
+
+    .overlaytxt {
+        position: absolute;
+        bottom: 0;
+        background-color: #000;
+        overflow: hidden;
+        /* width: 100%; */
+        height: 0;
+        transition: 0.5s ease;
+        /* color: #fff; */
+        display: flex;
+        align-items: center;
+    }
+
+    .overlaytxt .sns-padd-1 {
+        padding: 3%;
+    }
+
+    .overlaytxt .sns-padd-1 p {
+        color: #fff !important;
+    }
+
+    .imgtext:hover .overlaytxt {
+        height: 100%;
+    }
+
+    .sns-ln {
+        font-family: "Toyota Type";
+        font-weight: 500;
+        font-size: 0.7291vw;
+    }
+
+    /* @media only screen and (max-width: 1440px) { .sns-ln { line-height: 1.2em !important; } } */
+    @media only screen and (max-width: 1024px) {
+        /* .card2c .imgtext { flex-direction: column-reverse; } .card2c .imgtext .sns-inner-div-1 { width: calc(100%/1) !important; } */
+        /* .sns-ln { line-height: 1.55em !important; } */
+    }
+
+    @media only screen and (max-width: 890px) {
+        .card2c .imgtext {
+            flex-direction: row;
+        }
+
+        .card2c {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .card2c-3 .imgtext {
+            flex-direction: row;
+        }
+
+        .card2c-3 {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .sns-bg-box {
+            background: rgba(199, 24, 6, 1);
+        }
+
+        .sns-m-in-26 {
+            margin-inline: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(91.5%/2);
+            margin-bottom: 3%;
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 60%;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 60%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .card2c-3 {
+            width: calc(100%/1);
+        }
+
+        .card2c-3 h3 {
+            padding-inline: 4vw;
+            padding-bottom: 2%;
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 80%;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 80%;
+        }
+
+        .sns-inner-div-1 .sns-padd-2 {
+            padding: 0 16% 0 8%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        .imgtext {
+            /* display: initial; justify-content: center; */
+        }
+
+        .card2c .imgtext {
+            flex-direction: column-reverse;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .card2c-3 .imgtext {}
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .sns-w-1 .sns-p-1 {
+            padding: 5%;
+        }
+
+        .sns-w-1 .sns-p-2 {
+            padding: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(94%/1);
+        }
+    }
+
+    .CONQUER-mn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sns .CONQUER-img {
+        width: 50%;
+    }
+
+    .CONQUER-back {
+        width: 50%;
+        background: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        padding-top: 4%;
+    }
+
+    .conquer-in {
+        margin-inline: 5%;
+    }
+
+    .conquer-padd {
+        padding-left: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .conquer-in {
+            margin-inline: 7%;
+        }
+
+        .conquer-padd {
+            padding-left: 7%;
+        }
+
+        .CONQUER-mn {
+            width: calc(100%/1);
+        }
+
+        .CONQUER-img {
+            width: 100%;
+        }
+
+        .CONQUER-back {
+            width: 100%;
+            padding-bottom: 7%;
+            padding-right: 3%;
+        }
+    }
+
+    .cards2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .cards2c {
+        width: calc(93%/2);
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5%;
+        border-radius: 24px;
+        padding-bottom: 0.5%;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+    }
+
+    .cards2cmax {
+        width: calc(92% / 3) !important;
+    }
+
+
+
+    .cards2c.cards2ccc {
+        width: calc(94%/1);
+    }
+
+    .text-di {
+        padding: 0% 2%;
+    }
+
+    .div-img {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    .sns-head-space-6 {
+        margin-block: 2.5% 2.3%;
+    }
+
+    .cards2c.cards2ccc .sns-head-space-6 {
+        margin-block: 1%;
+    }
+
+    .cards2c.cards2ccc .div-img {
+        padding-left: 1.5%;
+        padding-right: 11%;
+    }
+
+    p.div-img {
+        /* padding-bottom: 6%; */
+    }
+
+    @media only screen and (max-width: 890px) {
+        .cards2c {
+            width: calc(94%/2);
+            margin-bottom: 5%;
+        }
+
+        .div-img {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        /* .text-di {} */
+    }
+
+    @media only screen and (max-width: 640px) {
+        .cards2c {
+            width: calc(90%/1);
+            padding: 0;
+            margin-top: 0%;
+            text-align: left;
+            padding-bottom: 3.5%;
+        }
+
+        .text-di {
+            padding: 0;
+        }
+
+        .sns-head-space-6 {
+            margin-block: 4% 4%;
+        }
+    }
+
+    .three-crds-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .three-crds-ch {
+        width: calc(92%/3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin-bottom: 1%;
+        border: 1px solid rgba(108, 15, 18, 0.4);
+        border-radius: 10px;
+    }
+
+    .three-crds-ch .shadow {
+        padding: 3% 4% 2% 4%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .three-crds-ch {
+            width: calc(93%/2);
+            margin-bottom: 3%;
+        }
+
+        .three-crds-ch .shadow {
+            padding: 3% 4.5% 2% 4%;
+        }
+
+        .three-crds-ch .shadow p {
+            padding-top: 2%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .three-crds-ch {
+            width: calc(90%/1);
+            margin-bottom: 2%;
+            margin-top: 3%;
+        }
+    }
+
+    .conta {}
+
+
+    .pi-26 {
+        padding-inline: 26% !important;
+    }
+
+    .conta img {
+        width: 27% !important;
+        position: absolute;
+        left: 20%;
+        top: 8%;
+    }
+
+    .sns-posi-top {
+        /* top: 9% !important; */
+    }
+
+    .conta .btnn {
+        position: absolute;
+        top: 40%;
+        right: 22%;
+        padding: 0.5% 0 1%;
+        background: #fff;
+        color: #EB0A1E;
+        font-size: 1.25vw !important;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        text-transform: capitalize;
+        width: 22%;
+        font-family: "Toyota Type";
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+
+    .conta1 .btnn {
+        top: 13%;
+        /* Adjusted position for the button */
+        left: 77%;
+    }
+
+    .conta .btnn:hover {
+        background-color: #A22321;
+        color: #fff;
+    }
+
+    @media (max-width: 890px) {
+        .conta {
+            margin-bottom: 5%;
+        }
+
+        .conta .btnn {
+            font-size: clamp(20px, 1.458vw, 28px) !important;
+            position: absolute;
+            width: 42.5%;
+            top: auto;
+            left: 26%;
+            transform: none;
+            margin-inline: auto;
+            display: block;
+            padding: 2% 0;
+            bottom: 10%;
+        }
+
+
+        .pi-26 {
+            padding-inline: 5% !important;
+        }
+
+        .navn-btn {
+            /* background-color: #000;
+                    padding: 2%; */
+        }
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 640px) {
+        .conta .btnn {
+            position: absolute;
+            /* margin: 5.6% auto; */
+            padding: 4%;
+            width: 90%;
+            top: auto;
+            left: auto;
+            transform: none;
+            text-align: center;
+            left: 5%;
+            bottom: 9%;
+        }
+
+        .conta {
+            margin-bottom: 0%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 3. */
+    .sns-image {
+        position: relative;
+        width: 100%;
+    }
+
+    .sns-large-img-inner {
+        position: absolute;
+        right: 3%;
+        width: 30%;
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        line-height: 1.55em;
+    }
+
+    .sns-large-img-inner h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-2 {
+        position: absolute;
+        right: 6%;
+        width: 32%;
+        color: #fff;
+        bottom: 10%;
+    }
+
+    .sns-large-img-inner-22 {
+        position: absolute;
+        right: 7%;
+        width: 50%;
+        color: #fff;
+        bottom: 3.5%;
+    }
+
+    .sns-large-img-inner-lft-btm {
+        position: absolute;
+        left: 3%;
+        width: 36%;
+        color: #fff;
+        bottom: 5.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 {
+        position: absolute;
+        left: 5%;
+        width: 32%;
+        color: #fff;
+        top: 11%;
+    }
+
+    .sns-large-img-inner-lft-btm h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm2 h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm p {
+        color: #fff;
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 p {
+        color: #fff;
+        margin-block: 0.5% 2.5%;
+
+    }
+
+    .sns-large-img-inner-rgt-btm {
+        position: absolute;
+        left: 5.5%;
+        width: 35%;
+        color: #fff;
+        bottom: 10%;
+    }
+
+    .sns-large-img-inner-rgt-btm h4 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-rgt-btm p {
+        color: #fff;
+        margin-block: 2%;
+    }
+
+    .sns-large-img-inner-2 h4 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        margin-block: 2% 2.5%;
+    }
+
+    .sns-large-img-inner-22 p {
+        margin-block: 1% 2.5%;
+
+    }
+
+    .sns-large-img-inner-3 {
+        position: absolute;
+        left: 3%;
+        width: 27%;
+        color: #fff;
+        top: 9%;
+    }
+
+    .sns-large-img-inner-3 h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        margin-block: 2.5%;
+    }
+
+    .sns-r-3 {
+        right: 3% !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-large-img-inner {
+            position: initial;
+            padding: 8% 6% 4%;
+
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-rgt-btm {
+            position: initial;
+            padding: 5% 4.5% 3%;
+            color: #000;
+            width: auto;
+            width: 100%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 5% 3%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-3 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-large-img-inner-rgt-btm {
+            width: 90%;
+        }
+
+        .sns-image {
+            width: 100%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 6. */
+    /* This Secton was duplicated from Section 3. */
+    /* Custom css */
+    /* section css */
+    .sns-img-g {
+        width: calc(92%/3);
+        margin-bottom: 1%;
+    }
+
+    .sns-img-g-interior {
+        width: calc(99.2%/4);
+        margin-bottom: 0.25%;
+    }
+
+    .sns-gallery-img {
+        overflow: hidden;
+    }
+
+    .sns-gallery-img img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .sns-gallery-img img:hover {
+        transform: scale(1.2);
+    }
+
+    /* media */
+    @media screen and (max-width: 890px) {
+        .sns-flex-wrap-reverse-mob {
+            flex-wrap: wrap-reverse;
+        }
+
+        .sns-img-g {
+            width: calc(91%/3);
+            margin-bottom: 1%;
+        }
+
+        .sns-img-g-interior {
+            width: calc(99.2%/2);
+            margin-bottom: 0.25%;
+        }
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .sns-img-g {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+        }
+
+        .sns-img-g-interior {
+            width: calc(90%/1);
+        }
+    }
+
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 11. */
+    /* This Secton was duplicated from Section 7. */
+    /* This Secton was duplicated from Section 3. */
+    .sns-img-con {
+        margin-inline: 3%;
+        background-color: #fff;
+        box-sizing: border-box;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+        text-align: center !important;
+
+    }
+
+    .sns-img-con .sns-w-35 {
+        width: 50%;
+    }
+
+    .padd h3 {
+        font-weight: 600;
+    }
+
+    .sns-img-con .sns-w-65 {
+        width: 50%;
+    }
+
+    .sns-w-65 .padd {
+        padding: 3% 9% 3% 7%;
+    }
+
+    .sns-w-65 .padd-1 {
+        padding: 3% 3% 3% 3%;
+    }
+
+    .sns-w-65 .padd h3 {
+        color: #000 !important;
+    }
+
+    .sns-w-65 .padd-1 h3 {
+        color: #000 !important;
+        text-transform: uppercase;
+    }
+
+    .sns-w-65 .padd p {
+        padding-top: 2%;
+        padding-right: 1.7%;
+        color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .sns-w-65 .padd-1 p {
+        padding-top: 2%;
+        padding-inline: 8%;
+        color: #000 !important;
+    }
+
+    .up {
+        margin-top: 1.3%;
+    }
+
+    .sns-wheel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+        margin-top: 4%;
+    }
+
+    .sns-inner-wheel {
+        width: calc(91% / 4);
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin-bottom: 1%;
+        background-color: #fff;
+        border: 1px solid rgba(108, 15, 18, 0.4);
+        border-radius: 8px;
+    }
+
+    .sns-inner-wheel .padd-3 {
+        padding: 5% 8% 13% 4%;
+    }
+
+    .sns-inner-wheel .padd-3 h3 {
+        text-transform: inherit;
+    }
+
+    .sns-inner-wheel .padd-3 .sns-f-20R {
+        padding-top: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-inner-wheel {
+            width: calc(90% / 2);
+        }
+
+        .up {
+            margin-top: 3%;
+        }
+
+        .sns-img-con .sns-w-35 {
+            width: 100%;
+        }
+
+        .sns-img-con .sns-w-65 {
+            width: 100%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd-1 h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd p {
+            padding-top: 3%;
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-top: 3%;
+            color: #000 !important;
+            padding-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-img-con .sns-w-65 {
+            text-align: left;
+
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-left: 0;
+        }
+
+        .sns-wheel {
+            margin-top: 12%;
+        }
+
+        .sns-inner-wheel .padd-3 h3 {
+            padding-right: 0%;
+        }
+
+        .sns-m-inn5 {
+            margin-inline: 5% !important;
+        }
+
+        .up {
+            margin-top: 6%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(90% / 1);
+            margin-bottom: 6%;
+            text-align: center;
+        }
+
+        .sns-inner-wheel .padd-3 {
+            padding: 3% 4% 9%;
+        }
+
+        .sns-inner-wheel .padd-3 .sns-f-20R {
+            padding-top: 3%;
+        }
+
+        .sns-img-con {
+            margin-inline: 5%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 4% 2% 7.5% 4%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 4% 4% 6%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 13. */
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 24. */
+    /* This Secton was duplicated from Section 25. */
+    /* This Secton was duplicated from Section 26. */
+    /* This Secton was duplicated from Section 27. */
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 16. */
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 22. */
+    /* This Secton was duplicated from Section 27. */
+    /* This Secton was duplicated from Section 29. */
+    .available-tools-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .available-tools-crds {
+        width: calc(90%/5);
+        box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;
+        padding-bottom: 0.7%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .available-tools-crds {
+            width: calc(93%/2);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .available-tools-crds {
+            width: calc(94%/1);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 31. */
+    .sns-model {
+        gap: 1%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sns-model-name {
+        /* margin-top: 9%; */
+        text-transform: capitalize;
+    }
+
+    .sns-mrp {
+        width: calc(90%/3);
+        background-color: #fff;
+        margin-bottom: 5%;
+        position: relative;
+        padding-bottom: 0%;
+        padding-top: 2%;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+        border-radius: 20px;
+    }
+
+    .snmodelll {
+        background-color: #000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 5%;
+
+    }
+
+    .snmodelll h4,
+    h5 {
+        color: #fff !important;
+    }
+
+    .sns-mrp .sns-f-25 {
+        margin-top: 0% !important;
+        letter-spacing: 0.5px;
+        color: #fff !important;
+        margin-bottom: 3.5%;
+    }
+
+    .img-4 {
+        width: 10% !important;
+    }
+
+    .sns-mrp img {
+        width: 90% !important;
+        margin-inline: auto;
+        padding-block: 4% 2%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .sns-model {
+
+            gap: 3%;
+            width: 100%;
+        }
+
+        .sns-model-name {
+            margin-top: 4%;
+        }
+
+        .sns-model-name.sns-f-36 {
+            font-size: clamp(30px, 1.875vw, 36px) !important;
+        }
+
+        .sns-mrp {
+            width: calc(91%/2);
+            margin-bottom: 4%;
+            padding-bottom: 0%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sns-model {
+
+            gap: 0;
+            width: 100%;
+        }
+
+        .sns-mrp {
+            width: calc(90%/1);
+            margin-bottom: 5.5%;
+            /* padding-bottom: 6%; */
+            padding-top: 0%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .sns-mrp img {
+            width: 80% !important;
+            margin-inline: auto;
+        }
+    }
+
+    /* This Secton was duplicated from Section 2. */
+    .seo-per {
+        padding: 3% 3% 0 3%;
+        background-color: #fff;
+        color: #324047;
+    }
+
+    .seo-per p {
+        margin-bottom: 1.5%;
+        line-height: 1.3em !important;
+        color: #000;
+
+    }
+
+    .seo-per p a {
+        text-decoration-color: var(--sns-black);
+        color: #000;
+
+    }
+
+    .disc {
+        padding: 2% 3%;
+        background-color: var(--sns-white);
+        font-weight: 400;
+        line-height: 1.3em !important;
+        color: #324047;
+    }
+
+    .disc p {
+        margin-bottom: 1.5%;
+        line-height: 1.35em !important;
+        color: #000;
+    }
+
+    .disc p a {
+        color: inherit !important;
+    }
+
+    @media screen and (max-width:890px) {
+        .seo-per {
+            padding: 5% 3% 1% 3%;
+        }
+
+    }
+
+    @media screen and (max-width: 640px) {
+        .seo-per {
+            padding: 10% 5% 0 5%;
+        }
+
+        .seo-per p {
+            margin-bottom: 5%;
+        }
+
+        .disc {
+            padding: 3% 5%;
+        }
+
+        .disc p {
+            margin-bottom: 5%;
+            padding-inline: 0 3%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .border-line {
+            width: 42%;
+        }
+
+        .snpt-10mob {
+            padding-top: 12%;
+        }
+
+        .sns-mt-8-mob {
+            margin-top: 8%;
+        }
+
+        .snpt-5mob {
+            padding-top: 5%;
+        }
+
+        .snspb-8mob {
+            padding-bottom: 5%;
+        }
+
+        .snspb-10mob {
+            padding-bottom: 10%;
+        }
+
+        .snspb-3mob {
+            padding-bottom: 3%;
+        }
+
+        .snspb-0mob {
+            padding-bottom: 0%;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-image {
+            background: rgba(248, 249, 250, 1);
+        }
+
+        .sns-image .sns-mob-view-c {
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 7% 3% 5%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 p {
+            padding-top: 2%;
+        }
+
+        .cards2c p.sns-f-20R.div-img.sns-pb-3 {
+            padding-bottom: 5%;
+        }
+
+        .cards2c.cards2ccc {
+            width: calc(90%/1);
+        }
+
+        .cards2c img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+
+    .deskreverserow {
+        /* flex-direction: row-reverse; */
+    }
+
+    div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+        flex-direction: row-reverse;
+        /* border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px; */
+    }
+
+    div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+        flex-direction: row-reverse;
+        /* border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px; */
+    }
+
+    .clr-blk {
+        color: #000 !important;
+    }
+
+
+    .singcont {
+        background-color: #6C0F12;
+        padding: 2%;
+        margin-bottom: -1px;
+    }
+
+    .singcont p {
+        font-size: 1.042vw !important;
+        color: #fff;
+        line-height: 1.4em;
+        font-weight: 400;
+        text-align: center;
+        padding-inline: 5%;
+    }
+
+    .singcont h2 {
+        margin-bottom: 0.5%;
+        text-align: center;
+    }
+
+    .sns-ltr {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-radius: 10px;
+
+    }
+
+    .sns-rtr {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-radius: 10px;
+
+    }
+
+    .snsbtnbg {
+        background: URL("https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/button-bg-2026-Toyota-Highlander-Gas-desktop.png");
+        position: relative;
+        height: 13vw;
+    }
+
+    @media screen and (max-width:890px) {
+        div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+            flex-direction: column;
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 3% 0;
+        }
+
+        .headborde {
+            /* width: 15%; */
+        }
+
+        .singcont p {
+            font-size: 14px !important;
+        }
+
+        .snsflexwraprver {
+            flex-direction: column-reverse !important;
+        }
+
+        .snsbtnbg {
+            height: 33.5vw;
+        }
+
+        .conta img {
+            width: 40% !important;
+            position: absolute;
+            left: 32%;
+            top: 3%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .headborde {
+            /* width: 32%;
+                        background: #6c0f12;
+    margin-inline: auto;
+    padding-block: 2.5% 2%;
+    border-radius: 5px;
+    border-bottom: 2px solid #c71806; */
+        }
+
+        .sns-head .sns-f-42 {
+            margin-top: 3%;
+        }
+
+        .sns-head .sns-f-20 {
+            font-size: 16px !important;
+            padding-top: 4%;
+        }
+
+        .singcont {
+            background-color: #6c0f12;
+            padding: 4.5% 2% 4.5% 4.5%;
+        }
+
+        .singcont h2 {
+            text-align: left;
+            margin-bottom: 0 !important;
+        }
+
+        .singcont p {
+            padding-inline: 0%;
+            text-align: left;
+            padding-top: 3.5%;
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-top: 4%;
+            padding-right: 0;
+        }
+
+        .sns-ltr,
+        .sns-rtr {
+            border-radius: 10px;
+        }
+
+        .snsbtnbg {
+            height: 71vw;
+            margin-top: 7%;
+        }
+
+        .conta img {
+            width: 95% !important;
+            position: absolute;
+            left: 5%;
+            top: 11%;
+        }
+
+    }
+
+    .sns-w-1_2 {
+        width: 12% !important;
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-w-1_2 {
+            width: 25% !important;
+        }
+
+        .font-32-mob {
+            font-size: 32px !important;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-w-1_2 {
+            width: 50% !important;
+        }
+
+        .snspblk15_5 {
+            padding-block: 10% 8% !important;
+        }
+
+    }
+
+    .cards2cmin {
+        width: calc(93%/2) !important;
+    }
+
+
+    .cards2.SNS-3_3 .cards2c {
+        width: calc(93% / 3);
+        box-shadow: 0 2PX 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cards2c.padddd {
+        padding-block: 1%;
+    }
+
+    /* .snspb0desk {
+            padding-bottom: 0 !important;
+        } */
+    .snspb0_8desk {
+        padding-bottom: 0.8% !important;
+    }
+
+    .sns2_2pdin {
+        padding-inline: 15%;
+        gap: 1.5%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flexwrap {
+        flex-wrap: wrap;
+    }
+
+    .pi-12 {
+        padding-inline: 12% !important;
+    }
+
+    .justifycontent {
+        justify-content: center;
+    }
+
+    .gap3 {
+        gap: 3%;
+    }
+
+    .gallerychild {
+        width: calc(93% / 2);
+        margin-bottom: 1%;
+    }
+
+    .galleryminichild {
+        width: calc(98% / 2);
+    }
+
+    .galleryminichild,
+    .gallerychild {
+        overflow: hidden;
+    }
+
+    .galleryminichild,
+    .gallerychild img {
+        /* width: 100%; */
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .galleryminichild img:hover,
+    .gallerychild img:hover {
+        transform: scale(1.2);
+    }
+
+    @media screen and (max-width:890px) {
+        .cards2.SNS-3_3 .cards2c {
+            width: calc(93% / 2);
+            text-align: center;
+        }
+
+        .sns2_2pdin {
+            padding-inline: 0%;
+        }
+
+        .pi-12 {
+            padding-inline: 0% !important;
+        }
+
+        .cards2cmin {
+            width: 90% !important;
+        }
+
+        .cards2cmax {
+            width: 90% !important;
+        }
+
+
+
+    }
+
+    @media screen and (max-width:640px) {
+        .cards2.SNS-3_3 .cards2c {
+            width: calc(90% / 1);
+            text-align: left;
+            /* padding: 7%; */
+            margin-bottom: 4%;
+        }
+
+        .sns2_2pdin {
+            padding-inline: 0%;
+        }
+
+        .gallerychild {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+        }
+
+        .galleryminichild {
+
+            width: calc(100%/1);
+        }
+
+        .cards2c.padddd {
+            padding-block: 5%;
+        }
+
+        .snspdin5 {
+            padding-inline: 5%;
+        }
+
+        .snstextcc {
+            text-align: center !important;
+        }
+    }
+</style>
+
+
+
+
+<div class="main-div">
+    <div class="sns-ram_banner_sec">
+        <div class="sns-ram_banner_sec_lft">
+            <h1 class="sns-fw-400">2025 Toyota RAV4 Plug-in Hybrid, Westminster, CA
+            </h1>
+            <h2 class="">Starting MSRP $44,815*</h2>
+        </div>
+        <div class="sns-ram_banner_sec_imgs">
+            <figure class="sns-main_img"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/BANNER-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Banner" class="sns-desk-view-c"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/BANNER-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Banner" class="sns-tab-view-c"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/banner-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Banner" class="sns-mob-view-c"> </figure>
+        </div>
+
+    </div>
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center "> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.beachcitiestoyotawestminster.com/new-vehicles/rav4-plugin-hybrid/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b " href="https://www.beachcitiestoyotawestminster.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.beachcitiestoyotawestminster.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn "
+                href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 sns-pb-2 snpt-10mob snspb-8mob">
+            <!-- <h2 class="sns-f-19 headborde">RAV4 Specs</h2> -->
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">RAV4 Plug-in Hybrid Specs</h3>
+        </div>
+    </div>
+
+    <div class="cards2 SNS-3_3 sns-mt-1 sns-mt-8-mob">
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">DRIVETRAIN</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Electronic On-Demand All-Wheel Drive (AWD)</p>
+        </div>
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">NET COMBINED HORSEPOWER</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">302 HP Combined</p>
+        </div>
+
+
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">EST. RANGE RATING</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Up to Est. 42-Mile All-Electric Driving Range*</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-2 snpt-5mob snspb-3mob">
+            <h2 class="sns-f-19 headborde">PERFORMANCE</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42 snspb0_8desk">Outdo the ordinary.</h3>
+            <p class="sns-f-20 sns-mar-in-24">With 302 net combined horsepower and All-Wheel Drive (AWD), RAV4 Plug-in
+                Hybrid is ready to impress. Plug in to charge up to an estimated 42-mile all-electric driving range
+                rating * and keep it going with its Plug-in Hybrid engine’s up to 94 EPA-estimated combined MPGe
+                rating. *</p>
+        </div>
+    </div>
+
+    <div class="sns-pt-2 sns-pb-4 snspb-8mob" style="background-color: #fff;">
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Unplug-and-Play-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Unplug and Play" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Unplug-and-Play-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Unplug and Play" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Unplug and Play</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">RAV4 Plug-in Hybrid’s standard 6.6kW onboard charger helps it fully charge in
+                        approximately 2.5 hours under ideal conditions, for up to an estimated 42-mile all-electric
+                        driving range. * * And with its ability to seamlessly switch between all-electric mode and
+                        hybrid, it’s easy to keep the excitement going with an up to 94 EPA-estimated combined MPGe
+                        rating. *</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-flex-wrap-reverse-mob sns-ltr"
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Fun-to-Drive-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Fun to Drive" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Fun-to-Drive-2025-Toyota-RAV4-Prime-mobile.png"
+                    class="sns-desk-none" alt="Fun to Drive">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Fun to Drive</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">Wide-open roads. Sweeping bends. Thrilling corners. RAV4 Plug-in Hybrid gives
+                        you the agility you crave, while still delivering a smooth, comfortable ride.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Electronic-On-Demand-AWD-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Electronic On-Demand AWD" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Electronic-On-Demand-AWD-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Electronic On-Demand AWD" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Electronic On-Demand AWD</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">A smarter way to get the power to the ground. The standard All-Wheel Drive
+                        (AWD) system is able to accurately shift power across all four drive wheels, helping RAV4
+                        Plug-in Hybrid sustain optimal traction and breathtaking performance in inclement weather
+                        conditions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Personalized-Drive-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Personalized Drive" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Personalized-Drive-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Personalized Drive" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Personalized Drive</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">RAV4 Plug-in Hybrid’s available steering wheel-mounted paddle shifters give you
+                        control over what gear you’re in, while its available drive modes help give you a drive that’s
+                        efficient. Toggle between EV and HV Mode or choose EV Auto Mode to intelligently maximize
+                        performance based on current driving conditions and demand.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Feel-the-Power-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Feel the Power" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Feel-the-Power-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Feel the Power" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Feel the Power</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">RAV4 Plug-in Hybrid boasts an impressive 302 net combined horsepower, and its
+                        5.7-second 0-60 time* means that this SUV is quick too. The advanced Plug-in Hybrid EV
+                        powertrain provides the response you crave, giving you the power you want, when you want it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Battery-Warranty.png"
+                    alt="Hybrid Battery Warranty" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Battery-Warranty-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Hybrid Battery Warranty" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Hybrid Battery Warranty</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">Peace of mind for the long road ahead. Every Toyota Hybrid Battery Warranty for
+                        2025 models provides coverage for 10 years from date of first use or 150,000 miles, whichever
+                        comes first.*</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/View-Inventory-2026-Toyota-RAV4-Westminster-CA-desktop.png"
+                alt="View Inventory" style="width: 100%;" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/View-Inventory-2026-Toyota-RAV4-Westminster-CA-mobile.png"
+                alt="View Inventory" class="sns-desk-none">
+            <div class="navn-btn"> <a
+                    href="https://www.beachcitiestoyotawestminster.com/new-vehicles/rav4-plugin-hybrid/"
+                    style="text-decoration: none"><button class="btnn">View Inventory</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="snpt-5mob sns-head sns-mb-2 snspb-10mob" bis_skin_checked="1">
+        <h2 class="sns-f-42 font-32-mob" style="color: #000 !important; text-transform: inherit;">Gallery</h2>
+    </div>
+
+    <div class="gallerymain flex flexwrap justifycontent sns-pb-3" style="gap: 1%;">
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-1-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Gallery-1">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-1-2025-Toyota-RAV4-Prime-mobile.png"
+                alt="Gallery-1">
+        </div>
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery2-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Gallery-2">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-2-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Gallery-2" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-3-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Gallery-3">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-3-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Gallery-3">
+            </div>
+        </div>
+
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-4-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Gallery-4">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-4-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Gallery-4" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-5-2025-Toyota-RAV4-Prime-DESKTOP-1.png"
+                    alt="Gallery-5">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-5-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Gallery-5">
+            </div>
+        </div>
+
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-6-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Gallery-6">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-6-2025-Toyota-RAV4-Prime-mobile.png"
+                alt="Gallery-6">
+        </div>
+
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-7-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Gallery-7">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-7-2025-Toyota-RAV4-Prime-mobile.png"
+                alt="Gallery-7">
+        </div>
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-8-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Gallery-8">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-8-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Gallery-8" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-9-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Gallery-9">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-9-2026-Toyota-RAV4-Westminster-CA-mobile.png"
+                    alt="Gallery-9">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head snpt-10mob snspb-8mob">
+            <h2 class="sns-f-19 headborde">INTERIOR & COMFORT</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42 snspb0_8desk">Comfort zone defined.</h3>
+            <p class="sns-f-20">RAV4 Plug-in Hybrid raises the level of refinement, on- or off-road.</p>
+        </div>
+    </div>
+
+    <div class="sns-pt-2 sns-pb-4 snspb-8mob" style="background-color: #fff;">
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Sporty-Seats-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Sporty Seats" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Sporty-Seats-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Sporty Seats" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Sporty Seats</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">RAV4 Plug-in Hybrid’s sporty front seats are sculpted with spirited driving in
+                        mind and offer supportive side bolstering to help hold you in place. In RAV4 Plug-in Hybrid XSE,
+                        each seat is wrapped in luxurious SofTex®-trimmed materials, for maximum style and comfort.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-flex-wrap-reverse-mob sns-ltr"
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Panoramic-Glass-Roof-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Panoramic Glass roof" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Panoramic-Glass-Roof-2025-Toyota-RAV4-Prime-mobile.png"
+                    class="sns-desk-none" alt="Panoramic Glass Roof">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Panoramic Glass Roof</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">Expand everyone’s view. The available panoramic glass roof gives all passengers
+                        a front-row view of the wide-open sky.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-rtr "
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Premium-Leather-Trim-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Premium Leather Trim" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Premium-Leather-Trim-2025-Toyota-RAV4-Prime-mobile.png"
+                    alt="Premium Leather Trim" class="sns-desk-none">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Premium Leather Trim</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">A true treat for the driver. RAV4 Plug-in Hybrid’s steering wheel and shift
+                        knob are wrapped in leather for a premium feel and feature red contrast stitching for an
+                        authentically sporty look.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sns-d-flex sns-justify-content-center sns-flex-wrap sns-img-con sns-align-center up sns-flex-wrap-reverse-mob sns-ltr"
+            style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="sns-w-35"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Ambient-Lighting-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                    alt="Ambient Lighting" class="sns-mob-none">
+                <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Ambient-Lighting-2025-Toyota-RAV4-Prime-mobile.png"
+                    class="sns-desk-none" alt="Ambient Lighting">
+            </div>
+            <div class="sns-w-65">
+                <div class="padd-1">
+                    <h4 class="sns-f-36">Ambient Lighting</h4>
+                    <!-- <p class="border-line"></p> -->
+                    <p class="sns-f-20R">When the lights go down outside, RAV4 Plug-in Hybrid’s available LED accent
+                        lights help set the mood. The door switches are illuminated for better visibility, so you can
+                        see no matter how dark the night sky gets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="snsbtnbg">
+
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-a-Quote-2026-Toyota-RAV4-Westminster-CA-desktop.png"
+                alt="Get a quote" style="width: 100%" class="sns-mob-none" />
+
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-a-Quote-2026-Toyota-RAV4-Westminster-CA-mobile.png"
+                alt="Get a quote" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/contact-us/"
+                    style="text-decoration: none"> <button class="btnn">Get a quote</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">TECHNOLOGY</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Convenience built right in.</h3>
+            <p class="sns-f-20">Take advantage of available features, like the 10.5-in. multimedia display, Head-Up
+                Display (HUD) and 12.3-in. customizable digital gauge cluster, to get all the info you need for a drive
+                that’s centered around you.</p>
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2 pi-12" style="padding-bottom: 0%;">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/10.5-In.-Multimedia-Display-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="10.5-In. Multimedia Display">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/10.5-In.-Multimedia-Display-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="10.5-In. Multimedia Display">
+            <h4 class="sns-f-36 div-img sns-head-space-6">10.5-In. Multimedia Display</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Turn up the convenience with a touch of RAV4 Plug-in Hybrid’s
+                available 10.5-in. multimedia display. And with a standard SiriusXM® * 3-month trial, you’ll always be
+                up for the drive.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Customizable-Digital-Gauge-Cluster-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="12.3-In. Customizable Digital Gauge Cluster" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Customizable-Digital-Gauge-Cluster-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="12.3-In. Customizable Digital Gauge Cluster">
+            <h4 class="sns-f-36 div-img sns-head-space-6">12.3-In. Customizable Digital Gauge Cluster</h4>
+            <p class="sns-f-20R div-img sns-pb-3">The available 12.3-in. customizable digital gauge cluster presents
+                turn-by-turn directions, safety info, alerts and more, all at a glance, so you can keep your eyes on the
+                road.</p>
+        </div>
+    </div>
+
+    <div class="cards2 sns-mt-1 sns-pb-2">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Head-Up-Display-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Head-Up Display" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Head-Up-Display-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Head-Up Display">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Head-Up Display</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Get all the driving info you need projected right in front of you with
+                RAV4 Plug-in Hybrid’s available Head-Up Display (HUD).</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/USB-Ports-and-Qi-Compatible-Wireless-Charging-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="USB Ports and Qi-Compatible Wireless Charging" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/USB-Ports-and-Qi-Compatible-Wireless-Charging-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="USB Ports and Qi-Compatible Wireless Charging">
+            <h4 class="sns-f-36 div-img sns-head-space-6">USB Ports and Qi-Compatible Wireless Charging</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Stay connected to fun. Plug your smartphone or mobile device into one
+                of up to five USB* ports to power up. You can also place your device on the available Qi-compatible*
+                wireless smartphone charging pad found conveniently in the tray below the climate controls.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Digital-Rearview-Mirror-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Digital Rearview Mirror" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Digital-Rearview-Mirror-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Digital Rearview Mirror">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Digital Rearview Mirror</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Connected to a camera in the rear, RAV4 Plug-in Hybrid’s available
+                digital rearview mirror casts a clear, wide and obstruction-free view of what’s behind you. You can zoom
+                in, zoom out and adjust the mirror to give you a better perspective. Integrated HomeLink®* universal
+                transceiver buttons provide easy access to your garage door and more.</p>
+        </div>
+    </div>
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Value-Your-Trade-2026-Toyota-RAV4-Westminster-CA-desktop.png"
+                alt="Value Your Trade" style="width: 100%;" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Value-Your-Trade-2026-Toyota-RAV4-Westminster-CA-mobile.png"
+                alt="Value Your Trade" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/value-your-trade/"
+                    style="text-decoration: none"><button class="btnn">Value Your Trade</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pb-2 sns-mt-8-mob">
+            <h2 class="sns-f-19 headborde">Audio Multimedia</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Technology that keeps up with you.</h3>
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Toyota-Audio-Multimedia-System-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Toyota Audio Multimedia System">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Toyota-Audio-Multimedia-System-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Toyota Audio Multimedia System">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Toyota Audio Multimedia System</h3>
+            <p class="sns-f-20R div-img sns-pb-3">RAV4 Plug-in Hybrid’s Toyota Audio Multimedia system enhances every
+                moment behind the wheel while heightening your interaction through sight, touch and voice activation,
+                helping you stay connected to every adventure.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Apple-CarPlay-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Wireless Apple CarPlay" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Apple-CarPlay-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Wireless Apple CarPlay">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Wireless Apple CarPlay®</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Bring along a familiar interface. With RAV4 Plug-in Hybrid’s wireless
+                Apple CarPlay®* compatibility, you can use your compatible iPhone®* with the multimedia system to get
+                directions, make calls, send and receive messages and listen to music, all while staying focused behind
+                the wheel.*</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Android-Auto-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Wireless Android Auto" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Android-Auto-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Wireless Android Auto">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Wireless Android Auto™</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Stay connected on the road. By pairing your compatible Android™* phone
+                with the audio multimedia system, Android Auto™* lets you get real-time traffic alerts, make and receive
+                phone calls, listen to your favorite soundtrack and more.*</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/JBL-Premium-Audio-System-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="JBL Premium Audio System" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/JBL-Premium-Audio-System-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="JBL Premium Audio System">
+            <h3 class="sns-f-36 div-img sns-head-space-6">JBL® Premium Audio System</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Enhance the soundtrack to every adventure with RAV4 Plug-in Hybrid’s
+                available JBL®* Premium Audio system. This next-gen system uses 800 watts of total power to drive 11
+                speakers in nine locations, including front horn tweeters and a subwoofer.</p>
+        </div>
+    </div>
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">Connected Services</h2>
+            <p class="border-line"></p>
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2 pi-12" style="padding-bottom: 0%;">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Remote-Connect-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Remote Connect">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Remote-Connect-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Remote Connect">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Remote Connect</h4>
+            <p class="sns-f-20R div-img sns-pb-3">RAV4 Plug-in Hybrid is up to speed with the latest tech. With an
+                active Remote Connect trial or subscription, * you can start the engine, lock/unlock doors and locate
+                your vehicle using the Toyota app * through your compatible smartphone or smartwatch. 1-year trial
+                included. 4G network dependent.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wi-Fi-Connect-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Wireless Apple CarPlay" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wi-Fi-Connect-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Wireless Apple CarPlay">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Wi-Fi Connect</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Turn RAV4 Plug-in Hybrid into a hotspot. With an active Wi-Fi Connect
+                trial or subscription,* you can easily connect up to five devices. And, depending on your existing
+                mobile provider, you can add the Wi-Fi Connect subscription to your current mobile plan. We’ll even
+                include an up-to-30-day or 3-GB trial to get you started. 4G network dependent.</p>
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-pb-2">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Safety-Connect-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Safety Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Safety-Connect-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Safety Connect">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Safety Connect®</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Connect to our 24/7 response center in case of an accident or
+                emergency with the press of a button.* You also get 24/7 Roadside Assistance* and Stolen Vehicle
+                Locator* to give you peace of mind that help is on the way. Activation required. Up to 10-year trial
+                included. 4G network dependent.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Service-Connect-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Service Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Service-Connect-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Service Connect">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Service Connect</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Stay up to date with your RAV4 Plug-in Hybrid’s information, such as
+                status and alerts, maintenance reminders and more.* It’s a convenient way to help make sure your RAV4
+                Plug-in Hybrid is running at its best. Up to 10-year trial included. 4G network dependent.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Drive-Connect-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Drive Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Drive-Connect-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Drive Connect">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Drive Connect</h4>
+            <p class="sns-f-20R div-img sns-pb-3">With an active Drive Connect trial or subscription,* the Cloud
+                Navigation* and Intelligent Assistant* features help you find where you need to be, while Destination
+                Assist* allows you to talk to a live agent as they help you find your destination’s coordinates and
+                offer directions on how to get there. 1-year trial included on XSE; subscription required on SE. 4G
+                network dependent.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-Pre-Approved-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="get pre-approved" style="width: 100%" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-Pre-Approved-2025-Toyota-RAV4-Prime-mobile.png"
+                alt="get pre-approved" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/"
+                    style="text-decoration: none"><button class="btnn">get pre-approved</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 sns-pb-2 sns-mt-8-mob">
+            <h2 class="sns-f-19 headborde" style="padding-inline: 5%;">Safety & Convenience</h2>
+            <p class="border-line"></p>
+            <!-- <h3 class="sns-f-42">Made to entertain and delight.</h3> -->
+        </div>
+    </div>
+
+
+
+    <div class="cards2 SNS-3_3 sns-mt-1 sns-mt-8-mob">
+        <div class="cards2c cards2cmin"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Blind-Spot-Monitor-With-Rear-Cross-Traffic-Alert-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Pre-Collision System With Pedestrian Detection">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Blind-Spot-Monitor-With-Rear-Cross-Traffic-Alert.png"
+                class="sns-desk-none" alt="Pre-Collision System With Pedestrian Detection">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Blind Spot Monitor With Rear Cross-Traffic Alert</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Designed to help look out for you. RAV4 Plug-in Hybrid’s Blind Spot
+                Monitor (BSM) * is designed to warn you when a vehicle in the next lane enters RAV4 Plug-in Hybrid’s
+                blind spot. And when you’re in reverse, Rear Cross-Traffic Alert (RCTA) * is designed to help detect
+                vehicles approaching from either side.</p>
+        </div>
+        <div class="cards2c cards2cmin"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Eight-Airbags-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Full-Speed Range Dynamic Radar
+Cruise Control" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Eight-Airbags-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Full-Speed Range Dynamic Radar
+Cruise Control">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Eight Airbags</h3>
+            <p class="sns-f-20R div-img sns-pb-3">RAV4 Plug-in Hybrid comes standard with a driver and front passenger
+                Advanced Airbag System with driver and front passenger seat-mounted side airbags, driver knee airbag,
+                front passenger seat-cushion airbag, in addition to front and rear side curtain airbags — eight airbags
+                total.</p>
+        </div>
+
+        <div class="cards2c cards2cmin"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Star-Safety-System-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Star Safety System" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Star-Safety-System-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Star Safety System">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Star Safety System</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Every new RAV4 Plug-in Hybrid is built with our Star Safety System™,
+                an advanced integration of safety technologies designed to enhance traction, braking and more. Armed
+                with these features, the RAV4 Plug-in Hybrid is designed to help keep you out of harm’s way.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmin"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/No-Cost-Maintenance-Plan-and-Roadside-Assistance-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="No Cost Maintenance Plan and Roadside Assistance" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/No-Cost-Maintenance-Plan-and-Roadside-Assistance-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="No Cost Maintenance Plan and Roadside Assistance">
+            <h3 class="sns-f-36 div-img sns-head-space-6">No Cost Maintenance Plan and Roadside Assistance</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Every new Toyota RAV4 Plug-in Hybrid comes with ToyotaCare,* a
+                maintenance plan that covers normal factory scheduled service for 2 years or 25,000 miles, whichever
+                comes first, and 24-hour Roadside Assistance for 2 years, unlimited mileage.</p>
+        </div>
+    </div>
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-2 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">Toyota Safety Sense™ 2.5+*</h2>
+            <p class="border-line"></p>
+            <!-- <h3 class="sns-f-42">Made to entertain and delight.</h3> -->
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-3">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Pre-Collision-System-With-Pedestrian-Detection-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Pre-Collision System With Pedestrian Detection">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Pre-Collision-System-With-Pedestrian-Detection-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Pre-Collision System With Pedestrian Detection">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Pre-Collision System With Pedestrian Detection</h3>
+            <p class="sns-f-20R div-img sns-pb-3">PCS w/PD * can alert you to potential collisions and may automatically
+                brake.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Full-Speed-Range-Dynamic-Radar-Cruise-Control-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Full-Speed Range Dynamic Radar Cruise Control" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Full-Speed-Range-Dynamic-Radar-Cruise-Control-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Full-Speed Range Dynamic Radar Cruise Control">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Full-Speed Range Dynamic Radar Cruise Control</h3>
+            <p class="sns-f-20R div-img sns-pb-3">DRCC* helps maintain a preset distance from the vehicle ahead of you,
+                from highway speeds down to a full stop.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Departure-Alert-With-Steering-Assist-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Lane Departure Alert With Steering Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Departure-Alert-With-Steering-Assist-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Lane Departure Alert With Steering Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Lane Departure Alert With Steering Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">From unexpected moments to everyday drives. The standard Drive
+                Recorder*&nbsp;helps document portions of your journey by capturing forward-facing video under certain
+                conditions.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Tracing-Assist-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                alt="Eight Airbags" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Tracing-Assist-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Lane Tracing Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Lane Tracing Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">LTA* helps you center the vehicle within its lane while DRCC* is
+                active.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Road-Sign-Assist-2025-Toyota-RAV4-Prime-DESKTOP-1.png"
+                alt="Road Sign Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Road-Sign-Assist-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Road Sign Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Road Sign Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">RSA* can recognize certain road signs and display them to you inside
+                the vehicle.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Automatic-High-Beams-2025-Toyota-RAV4-Prime-DESKTOP-1.png"
+                alt="Automatic High Beams" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Automatic-High-Beams-2025-Toyota-RAV4-Prime-mobile.png"
+                class="sns-desk-none" alt="Automatic High Beams">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Automatic High Beams</h3>
+            <p class="sns-f-20R div-img sns-pb-3">AHB* can automatically toggle between high and low beams based on the
+                vehicle’s surroundings.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-2 sns-pb-2 snspblk15_5">
+            <h2 class="sns-f-19 headborde snspdin5" style="text-transform: uppercase;">2025 Toyota RAV4 Prime Build &
+                Price</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Find the right model for you.</h3>
+
+        </div>
+        <!-- Section 5 Code -->
+        <section>
+            <div class="sns-d-flex sns-justify-center sns-flex-wrap sns-model sns-mt-2 pi-12">
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SE-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                        alt="SE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SE-2025-Toyota-RAV4-Prime-mobile.png"
+                        alt="SE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">SE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP* </p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$44,815</h5>
+                    </div>
+                </div>
+
+
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XSE-2025-Toyota-RAV4-Prime-DESKTOP.png"
+                        alt="XSE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XSE-2025-Toyota-RAV4-Prime-mobile.png"
+                        alt="XSE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">XSE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP* </p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$48,685</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center "> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.beachcitiestoyotawestminster.com/new-vehicles/rav4-plugin-hybrid/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b " href=" https://www.beachcitiestoyotawestminster.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.beachcitiestoyotawestminster.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn "
+                href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+    <div class="seo">
+        <div class="seo-per sns-f-23">
+            <p><b>Introducing the 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA</b></p>
+            <p>You can now explore the 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA. This smart SUV lets you enjoy
+                electric driving for short trips and smooth hybrid power for longer journeys. You stay confident with
+                advanced safety tech and a comfortable, tech-focused cabin that fits daily life. Plug in at home, cruise
+                through Orange County traffic, and cut your gas station visits. If you want efficiency without giving up
+                space or style, the 2025 RAV4 Plug-in Hybrid is for you.</p>
+            <p><b>Where to Buy a 2025 Toyota RAV4 Plug-in Hybrid for Sale in Westminster, CA?</b></p>
+            <p>You can buy a 2025 Toyota RAV4 Plug-in Hybrid for sale in Westminster, CA at Beach Cities Toyota
+                Westminster dealership!</p>
+            <p>The 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA is designed to amp up your adventures. You take
+                advantage of fuel-efficient plug-in capabilities coupled with exceptional quickness. Your vehicle
+                delivers a significant 302 HP Combined net combined horsepower. This output ensures the RAV4 Plug-in
+                Hybrid is ready to impress. Performance is supported by Electronic On-Demand All-Wheel Drive (AWD),
+                which is available to you. You are able to plug in to charge up to an estimated 42-mile all-electric
+                driving range rating. The plug-in capability allows you to keep going. The engine achieves an impressive
+                up to 94 EPA-estimated combined MPGe rating. The base SE grade provides an estimated 38 MPG and 94 MPGe.
+            </p>
+            <p>You experience a stylish design with the 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA that includes
+                impressive space. You define your comfort zone with an interior that raises the level of refinement,
+                whether you are on-road or off-road. Your vehicle allows you to do everything in style. Exterior colors
+                may include options such as Wind Chill Pearl paired with a Midnight Black Metallic Roof. Available
+                features such as LED accent lights help set the mood and enhance visibility. Driver touchpoints are
+                wrapped to give you a premium feel. Depending on the trim you select, you receive distinct wheel
+                designs. The SE grade comes equipped with 18-in. 5-spoke painted and machined sport alloy wheels and LED
+                projector low- and high-beam headlights that include LED DRL accent lights and turn signals.</p>
+            <p>The technology in the 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA enhances every drive and is
+                centered around you. Convenience is built right into the vehicle. You can utilize available features
+                like the 10.5-in. multimedia display. A Head-Up Display (HUD) is available to assist you. You also have
+                the availability of a 12.3-in. customizable digital gauge cluster. These features ensure you receive all
+                the information you need. Technology keeps up with your pace.</p>
+            <p>If you select the XSE grade, you will enjoy an 11-speaker JBL® Premium Audio system that includes both a
+                subwoofer and an amplifier. Connected Services and Audio Multimedia are integrated into the system.</p>
+            <p><b>Where to Test Drive a 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA?</b></p>
+            <p>You can test drive a 2025 Toyota RAV4 Plug-in Hybrid in Westminster, CA at Beach Cities Toyota
+                Westminster! Schedule a test drive and experience the instant electric response, quiet cabin, and
+                confident hybrid power on the streets you drive every day. You can explore the intuitive tech, flexible
+                cargo space, and comfort features at your own pace with a helpful team nearby. Book your appointment
+                today.</p>
+
+
+        </div>
+        <div class="disc sns-f-23">
+            <p>*Starting MSRP is the lowest Base MSRP for the series of a model and excludes manufacturer, distributor
+                and dealer options, taxes, title and license and dealer fees and charges. Also excludes the Delivery,
+                Processing and Handling of $1,195 for Cars (Corolla, Corolla HV, Corolla HB, GR Corolla, Camry, Prius,
+                Prius Plug-in Hybrid, Toyota Crown, Mirai, GR86, GR Supra), $1,450 for Entry SUV (Corolla Cross, Corolla
+                Cross HV), $1,450 for Small SUV (RAV4, RAV4 HV, RAV4 Plug-in Hybrid, bZ), $1,495 for Mid SUV/Van
+                (4Runner, 4Runner HV, Highlander, Highlander HV, Grand Highlander, Grand Highlander HV, Sienna, Land
+                Cruiser, Toyota Crown Signia), $1,595 for Small Pickup (Tacoma, Tacoma HV), $2,095 for Large
+                Pickup/Large SUV (Tundra, Tundra HV, Sequoia). (Historically, vehicle manufacturers and distributors
+                have charged a separate fee for processing, handling and delivering vehicles to dealerships. Toyota's
+                charge for these services is called "Delivery, Processing and Handling" and is based on the value of the
+                processing, handling and delivery services Toyota provides as well as Toyota's overall pricing structure
+                and may be subject to change at any time. Toyota may make a profit on Delivery, Processing and
+                Handling.) Delivery, Processing and Handling in AL, AR, FL, GA, LA, MS, NC, OK, SC and TX may vary.
+                Dealer price will vary.</p>
+
+            <p>*Base MSRP excludes manufacturer, distributor and dealer options, taxes, title and license and dealer
+                fees and charges. Also excludes the Delivery, Processing and Handling of $1,195 for Cars (Corolla,
+                Corolla HV, Corolla HB, GR Corolla, Camry, Prius, Prius Plug-in Hybrid, Toyota Crown, Mirai, GR86, GR
+                Supra), $1,450 for Entry SUV (Corolla Cross, Corolla Cross HV), $1,450 for Small SUV (RAV4, RAV4 HV,
+                RAV4 Plug-in Hybrid, bZ), $1,495 for Mid SUV/Van (4Runner, 4Runner HV, Highlander, Highlander HV, Grand
+                Highlander, Grand Highlander HV, Sienna, Land Cruiser, Toyota Crown Signia), $1,595 for Small Pickup
+                (Tacoma, Tacoma HV), $2,095 for Large Pickup/Large SUV (Tundra, Tundra HV, Sequoia). (Historically,
+                vehicle manufacturers and distributors have charged a separate fee for processing, handling and
+                delivering vehicles to dealerships. Toyota's charge for these services is called the "Delivery,
+                Processing and Handling Fee" and is based on the value of the processing, handling and delivery services
+                Toyota provides as well as Toyota's overall pricing structure and may be subject to change at any time.
+                Toyota may make a profit on the Delivery, Processing and Handling Fee.) The Delivery, Processing and
+                Handling Fee in AL, AR, FL, GA, LA, MS, NC, OK, SC and TX will be higher. Dealer price will vary.</p>
+
+            <p>*EPA-estimated 42-mile all-electric driving range when fully charged for 2025 RAV4 Plug-in Hybrid. Use
+                for comparison purposes only. Your mileage will vary for many reasons, including your vehicle’s
+                condition and how/where you drive. See www.fueleconomy.gov.</p>
+
+            <p>*Charging time provided is an estimate only and can vary depending on weather conditions and other
+                factors. Use for comparison purposes only. Actual range will vary significantly depending on charging
+                and driving conditions, including outside temperature, speed, accessory use, how/where you drive,
+                battery condition, and other factors. See www.fueleconomy.gov and Owner’s Manual for details.</p>
+
+            <p>*EPA-estimated 94 combined MPGe rating for 2025 RAV4 Plug-in Hybrid. MPGe is the EPA-equivalent of
+                gasoline fuel efficiency for electric operation. EPA-estimated 38 combined gas-only mpg. Use for
+                comparison purposes only. Your MPGe/MPG will vary for many reasons, including your vehicle’s condition
+                and how/where you drive. See www.fueleconomy.gov.</p>
+
+            <p>*Performance figures are for comparison only and were obtained with prototype vehicles by professional
+                drivers.</p>
+
+            <p>*For Toyota hybrid, plug-in hybrid, fuel cell and battery electric vehicles beginning model year 2020,
+                the hybrid (HV) battery is covered for 10 years from date of first use or 150,000 miles, whichever comes
+                first. Coverage is subject to the terms and conditions of your New Vehicle Limited Warranty. See the
+                Toyota Owner’s Warranty and Maintenance Guide for details.</p>
+
+            <p>*Service will automatically stop at the end of your trial subscription period unless you decide to
+                continue service. Trial is non-transferable. If you do not wish to enjoy your trial, you can cancel by
+                calling the number below. All SiriusXM services require a subscription, each sold separately by SiriusXM
+                after the trial period. Service subject to the SiriusXM Customer Agreement and Privacy Policy, visit
+                siriusxm.com for complete terms and how to cancel which includes online methods or calling
+                1-866-635-2349. Some services and features are subject to device capabilities and location availability.
+                Satellite service not available in AK & HI. Content varies by SiriusXM subscription plan. All fees,
+                content and features are subject to change. SiriusXM and related logos are trademarks of Sirius XM Radio
+                Inc. and its respective subsidiaries.</p>
+
+            <p>*May not be compatible with all mobile phones, smart devices, tablets, e-readers, MP3/WMA players and
+                like models.</p>
+
+            <p>*Wireless charging may not be compatible with all mobile phones, smart devices, tablets, e-readers,
+                MP3/WMA players and like products.</p>
+
+            <p>*HomeLink® and the HomeLink® house icon are registered trademarks of Gentex Corporation.</p>
+
+            <p>*Apple CarPlay® requires a compatible iPhone® with an active data plan. Check compatibility
+                at https://www.apple.com/ios/carplay/. Operability depends on network availability, a cellular
+                connection and GPS signal. Services vary by vehicle and are subject to change at any time without
+                notice. Data charges may apply. To learn more, go to <a
+                    href="https://www.toyota.com/connected-services/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/audio-multimedia/.</a> To learn more
+                about Toyota Connected Services data collection, use, sharing and retention practices, please visit <a
+                    href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a> Apple
+                CarPlay® is a registered trademark of Apple Inc.</p>
+
+            <p>*iPhone® is a registered trademark of Apple Inc. All rights reserved.</p>
+
+            <p>*Screen depiction accurate at time of posting.</p>
+
+            <p>*Google, Android, Android Auto, Google Maps, YouTube Music and other marks are trademarks of Google LLC.
+                Compatible Android phone and compatible active data plan required.</p>
+
+            <p>*Wireless use of Android Auto requires a compatible Android 11.0+ phone and compatible active data plan.
+                Check <a href="https://support.google.com/androidauto/answer/6348019?hl=en&ref_topic=6106969/"
+                    aria-describedby="audioeye_pdf_message">g.co/androidauto/requirements</a> for compatibility.
+                Operability depends on network availability, a cellular connection, and GPS signal. Services vary by
+                vehicle and are subject to change at any time without notice. Data charges may apply. To learn more, go
+                to <a href="https://www.toyota.com/connected-services/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/audio-multimedia/.</a> To learn more
+                about Toyota's Connected Services data collection, use, sharing, and retention practices, please
+                visit <a href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a> Google,
+                Android, Android Auto, Google Maps, YouTube Music and other marks are trademarks of Google LLC.
+                Compatible Android phone and compatible active data plan required.</p>
+
+            <p>*JBL® is a registered trademark of Harman International Industries, Inc.</p>
+
+            <p>*Use only if aware of circumstances surrounding vehicle it is legal safe to do so (e.g., do not remotely
+                start a gas engine vehicle in an enclosed space or if vehicle is occupied by a child). Remote Connect
+                services vary by vehicle and are subject to change at any time without notice. Services depend on 4G
+                network availability, a cellular connection and GPS signal. Without any one or more of these things,
+                operability may be limited or precluded. Further, if and when 4G network changes or is discontinued, or
+                the underlying technology required to support service becomes obsolete, then the services will not work
+                and will need to be discontinued. Digital Key also requires Bluetooth® connectivity. Not available on
+                manual transmissions. Services require account registration through Toyota app and acceptance of
+                Connected Services Terms of Use at <a
+                    href="https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf"
+                    aria-describedby="audioeye_pdf_message">toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf</a> and
+                Master Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements,
+                see toyota.com/support/privacy-notice/. Trial period begins on original purchase or lease date of new
+                vehicle. Paid subscription required after trial (if applicable). Terms of Use apply.</p>
+
+            <p>*An active Remote Connect trial or subscription is required to use the features mentioned in the Toyota
+                app.</p>
+
+            <p>*Service not available everywhere or in every vehicle. Depends on 4G cellular network availability, a
+                cellular connection and GPS signal. Without any one or more of these things, operability may be limited
+                or precluded. Up to 5 devices can be supported using in-vehicle connectivity. Services may vary and are
+                subject to change without notice. Data charges may apply. Requires separate subscriptions to third-party
+                provider services. Valid in the contiguous U.S. and Alaska. Go to <a
+                    href="https://myvehicle.att.com/#/toyota/learn?language=en&country=US"
+                    aria-describedby="audioeye_pdf_message">https://myvehicle.att.com/#/toyota/learn?language=en&country=US</a> for
+                terms and conditions. The Wi-Fi Connect trial begins at the time of enrollment and expires the earlier
+                of 3GB data use or the 1-month trial period ends. Trial begins at activation and expires the earlier of
+                3 GB data use or 1 mo. Valid in contiguous U.S. and Alaska. See <a
+                    href="https://myvehicle.att.com/#/toyota/learn?language=en&country=US"
+                    aria-describedby="audioeye_pdf_message">https://myvehicle.att.com/#/toyota/learn?language=en&country=US</a> for
+                terms and conditions.</p>
+
+            <p>*Safety Connect® services vary by vehicle and are subject to change at any time without notice. Services
+                depend on 4G network availability, a cellular connection, and GPS signal. Without any one or more of
+                these things, operability may be limited or precluded, including access to response center and emergency
+                support. Further, if and when 4G network changes or is discontinued, or the underlying technology
+                required to support service becomes obsolete, then the services will not work and will need to be
+                discontinued. Stolen vehicle police report required to use Stolen Vehicle Locator. Services require
+                account registration through Toyota app and acceptance of Connected Services Terms of Use
+                at https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connectedservices-terms-use.pdf and Master
+                Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements, see <a
+                    href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a> The
+                Safety Connect® trial is included for a minimum of 5 years. 4G network dependent.</p>
+
+            <p>* Enhanced 24/7 Roadside Assistance allows use of in-vehicle SOS button to assist response agent to
+                identify vehicle location. Unlimited mileage coverage effective with an active Safety Connect® trial or
+                subscription that depends on certain factors, including 4G network availability. Services require
+                account registration through the Toyota app and acceptance of Connected Services Terms of Use at <a
+                    href="https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf"
+                    aria-describedby="audioeye_pdf_message">toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf</a> and
+                Master Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements,
+                see toyota.com/support/privacy-notice/. Enhanced Roadside Assistance does not include parts and fluids,
+                except limited emergency gas delivery. Towing distance up to 25 miles. Restrictions apply. Service
+                subject to change at any time. Available in the continental U.S. and Canada. See Toyota dealer for
+                details and exclusions.</p>
+
+            <p>*Building and/or parking structures may limit system effectiveness. Stolen vehicle police report required
+                to use Stolen Vehicle Locator. For additional assistance contact the Toyota Brand Engagement Center at
+                1-800-331-4331.</p>
+
+            <p>*Service Connect services vary by vehicle and are subject to change at any time without notice. Services
+                depend on 4G network availability, a cellular connection, and GPS signal. Without any one or more of
+                these things, operability may be limited or precluded. Further, if and when 4G network changes or is
+                discontinued, or the underlying technology required to support service becomes obsolete, then the
+                services will not work and will need to be discontinued. Information provided is based on the last time
+                data was collected from the vehicle and is not real-time data. Services require account registration
+                through Toyota app and acceptance of Connected Services Terms of Use at <a
+                    href="https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf</a> and
+                Master Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements, see <a
+                    href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a> The
+                Service Connect trial is included for a minimum of 5 years. 4G network dependent.</p>
+
+            <p>*Drive Connect services may vary and are subject to change at any time without notice. Availability and
+                accuracy depend on 4G network availability, a cellular connection and GPS signal. Without any one or
+                more of these things, operability may be limited or precluded. Further, if and when 4G network changes
+                or is discontinued, or the underlying technology required to support service becomes obsolete, then
+                services will not work, and will need to be discontinued. Services require account registration through
+                Toyota app and acceptance of Connected Services Terms of Use at <a
+                    href="https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf"
+                    aria-describedby="audioeye_pdf_message">toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf</a> and
+                Master Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements,
+                see toyota.com/support/privacy-notice/. Trial period begins on original purchase or lease date of new
+                vehicle. Services may vary and are subject to change without notice. Requires app download/registration,
+                acceptance of Terms of Use and subscription after trial (if applicable). Data charges may apply.</p>
+
+            <p>*Cloud Navigation requires a trial or subscription to Drive Connect. Drive Connect availability and
+                accuracy depend on certain factors outside of Toyota's control in order to operate, including 4G network
+                availability, a cellular connection and GPS signal. Without any one or more of these things, operability
+                may be limited or precluded. Services subject to change at any time without notice. Requires app
+                download/registration and subscription after trial (if applicable). Terms of Use apply. Data charges may
+                apply. See Owner’s Manual and https://www.toyota.com/connected-services/ for limitations. To learn about
+                Toyota's Connected Services data collection, use, sharing and retention practices, visit <a
+                    href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a></p>
+
+            <p>*Intelligent Assistant requires a trial or subscription to Drive Connect. Drive Connect availability and
+                accuracy depend on certain factors outside of Toyota's control in order to operate, including 4G network
+                availability, a cellular connection and GPS signal. Without any one or more of these things, operability
+                may be limited or precluded. Services subject to change at any time without notice. Requires app
+                download/registration and subscription after trial (if applicable). Terms of Use apply. Data charges may
+                apply. See Owner’s Manual and https://www.toyota.com/connected-services/ for limitations. To learn about
+                Toyota's Connected Services data collection, use, sharing and retention practices, visit <a
+                    href="https://www.toyota.com/support/privacy-notice/"
+                    aria-describedby="audioeye_pdf_message">https://www.toyota.com/support/privacy-notice/.</a></p>
+
+            <p>* On select models, Destination Assist will require a trial or subscription to Drive Connect. Drive
+                Connect services may vary and are subject to change at any time without notice. Availability and
+                accuracy depend on 4G network availability, a cellular connection and GPS signal. Without any one or
+                more of these things, operability may be limited or precluded. Further, if and when 4G network changes
+                or is discontinued, or the underlying technology required to support service becomes obsolete, then
+                services will not work, and will need to be discontinued. Services require account registration through
+                Toyota app and acceptance of Connected Services Terms of Use at <a
+                    href="https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf"
+                    aria-describedby="audioeye_pdf_message">toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf</a> and
+                Master Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements,
+                see toyota.com/support/privacy-notice/. Trial period begins on original purchase or lease date of new
+                vehicle. Services may vary and are subject to change without notice. Requires app download/registration,
+                acceptance of Terms of Use and subscription after trial (if applicable). Data charges may apply. The
+                Destination Assist trial period begins on original purchase or lease date of new vehicle. Paid
+                subscription required after trial (if applicable). Terms of Use apply.</p>
+
+            <p>*Do not rely exclusively on Blind Spot Monitor. Look over shoulder and use turn signal.
+                See Owner's Manual for limitations.</p>
+
+            <p>*Do not rely exclusively on the Rear Cross-Traffic Alert. Visually confirm clearance during use.
+                See Owner’s Manual for limitations.</p>
+
+            <p>*Airbag systems supplement the seatbelts and are designed to inflate only under certain conditions and in
+                certain types of severe collisions. Always wear seatbelt, sit upright in middle and as far back in seat
+                as possible to help decrease risk of injury. Do not put objects in front of an airbag.
+                See Owner’s Manual for limitations.</p>
+
+            <p>*The Pre-Collision System (PCS) with Pedestrian Detection (PD) is designed to determine if impact is
+                imminent and help reduce impact speed and damage in certain frontal collisions involving a vehicle, a
+                pedestrian, a bicycle, or a motorcyclist. PCS w/PD is not a substitute for safe and attentive driving.
+                System effectiveness depends on many factors, such as speed, size and position of pedestrian or
+                bicyclist and weather, light and road conditions. See Owner's Manual for limitations.</p>
+
+            <p>*Full-Speed Range Dynamic Radar Cruise Control is not a substitute for safe and attentive driving.
+                See Owner’s Manual for instructions and limitations.</p>
+
+            <p>*Lane Departure Alert with Steering Assist is designed to read visible lane markers under certain
+                conditions. It provides a visual/audible alert and slight steering force when lane departure is
+                detected. It is not a collision-avoidance system or a substitute for safe and attentive driving.
+                Effectiveness depends on many factors including road, weather and vehicle conditions.
+                See Owner’s Manual for limitations.</p>
+
+            <p>*The Lane Tracing Assist (LTA) lane centering function is designed to read visible lane markers and
+                detect other vehicles under certain conditions. It is only operational when DRCC is engaged.
+                See Owner's Manual for limitations.</p>
+
+            <p>*Dynamic Radar Cruise Control is not a substitute for safe and attentive driving.</p>
+            See Owner’s Manual for limitations.
+
+            <p>*Road Sign Assist only recognizes certain road signs. See Owner’s Manual for limitations.</p>
+
+            <p>*Automatic High Beams operate at speeds above 21 mph. See Owner’s Manual for instructions and
+                limitations.</p>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4292 @@
+<style>
+    /* Write your master css here */
+    @font-face {
+        font-family: "Toyota Type";
+        src: url('https://assets.dealerinspire.com/public/fonts/ToyotaType-Semibold.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Toyota Type";
+        src: url('https://assets.dealerinspire.com/public/fonts/ToyotaType-Book.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .main-div {
+        width: 100%;
+    }
+
+    .main-div .sendToPdfFiller {
+        display: none !important;
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-family: "Toyota Type";
+    }
+
+    p {
+        margin: 0;
+        font-family: "Toyota Type";
+    }
+
+    h2 {
+        letter-spacing: -0.03em;
+    }
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .main-div sup { line-height: 0.3em; top: -0.2em !important; } */
+
+    .main-div sup {
+        top: 0em !important;
+        font-size: inherit;
+    }
+
+    :root {
+        --sns-black: #000;
+        --sns-white: #fff;
+        --sns-gray: #F6F6F6;
+    }
+
+    .sns-f-72 {
+        font-size: 3.75vw !important;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .sns-f-57 {
+        font-size: 2.969vw !important;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .sns-f-50 {
+        font-size: 1.563vw !important;
+        font-weight: 600;
+        color: #000;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-43 {
+        font-size: 2.24vw !important;
+        font-weight: 700;
+        color: rgba(51, 51, 51, 1);
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-42 {
+        font-size: 2.4vw !important;
+        font-weight: 600;
+        color: #000;
+        line-height: 1.2em;
+        letter-spacing: unset;
+    }
+
+    .sns-f-36 {
+        font-size: 1.56vw !important;
+        font-weight: 600 !important;
+        color: #000;
+        font-family: "Toyota Type";
+        line-height: 1.25em;
+    }
+
+    .sns-f-35 {
+        font-size: 1.88vw !important;
+        font-weight: 400;
+        color: #333333;
+        line-height: 1.4em;
+    }
+
+    .sns-f-32 {
+        font-size: 1.666vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-30 {
+        font-size: 1.563vw !important;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Toyota Type";
+        letter-spacing: 0.2px;
+    }
+
+    .sns-f-28 {
+        font-size: 1.458vw !important;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .sns-f-25 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(108, 15, 18, 1) !important;
+        font-family: "Toyota Type";
+        text-transform: uppercase;
+    }
+
+
+    .sns-f-24 {
+        font-size: 1.25vw !important;
+        font-weight: 400;
+        line-height: 1.5em;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-24-p {
+        font-size: 1.25vw !important;
+        font-weight: 400;
+        line-height: 1.4em;
+        font-family: "Toyota Type";
+        color: #333333 !important;
+    }
+
+    .sns-f-23 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8) !important;
+        font-family: "Toyota Type";
+    }
+
+    .sns-f-20R {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: #000;
+        font-family: "Toyota Type";
+        line-height: 1.4em;
+    }
+
+    .sns-f-20 {
+        font-size: 1.042vw !important;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.4em;
+    }
+
+    .sns-f-19 {
+        font-size: 0.94vw !important;
+        font-weight: 600;
+        color: #EB0A1E;
+        font-family: "Toyota Type";
+        line-height: 1.55em;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 3px; */
+    }
+
+    .sns-f-14 {
+        font-size: 0.729vw !important;
+        font-weight: 500;
+        color: #333333;
+        line-height: 1.2em;
+    }
+
+    .sns-mar-in-30 {
+        margin-inline: 30%;
+    }
+
+    .sns-mar-in-28 {
+        margin-inline: 28%;
+    }
+
+    .sns-mar-in-27 {
+        margin-inline: 26.7%;
+    }
+
+    .sns-mar-in-26 {
+        margin-inline: 23%;
+    }
+
+    .sns-mar-in-25 {
+        margin-inline: 24%;
+    }
+
+    .sns-mar-in-24 {
+        margin-inline: 23.8%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-f-72 {
+            font-size: clamp(40px, 3.75vw, 50px) !important;
+        }
+
+        .sns-f-57 {
+            font-size: clamp(38px, 2.969vw, 50px) !important;
+        }
+
+        .sns-f-50 {
+            font-size: clamp(30px, 2.604vw, 50px) !important;
+        }
+
+        .sns-f-43 {
+            font-size: clamp(34px, 2.188vw, 43px) !important;
+        }
+
+        .sns-f-42 {
+            font-size: clamp(30px, 2.188vw, 42px) !important;
+        }
+
+        .sns-f-36 {
+            font-size: clamp(24px, 1.875vw, 36px) !important;
+        }
+
+        .sns-f-35 {
+            font-size: clamp(24px, 1.823vw, 35px) !important;
+        }
+
+        .sns-f-32 {
+            font-size: clamp(27px, 1.823vw, 32px) !important;
+        }
+
+        .sns-f-30 {
+            font-size: clamp(24px, 1.563vw, 30px) !important;
+            line-height: 1.3em;
+        }
+
+        .sns-f-28 {
+            font-size: clamp(24px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-25 {
+            font-size: clamp(16px, 1.302vw, 25px) !important;
+        }
+
+        .sns-f-24 {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-24-p {
+            font-size: clamp(18px, 1.25vw, 24px) !important;
+        }
+
+        .sns-f-23 {
+            font-size: clamp(16px, 1.198vw, 23px) !important;
+        }
+
+        .sns-f-20R {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+            line-height: 1.4em;
+        }
+
+        .sns-f-20 {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+        }
+
+        .sns-f-19 {
+            font-size: clamp(14px, 0.99vw, 19px) !important;
+        }
+
+        .sns-f-14 {
+            font-size: clamp(15px, 0.875em, 19px) !important;
+        }
+
+        .sns-mar-in-30 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-28 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-27 {
+            margin-inline: 3vw;
+        }
+
+        .sns-mar-in-26 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-25 {
+            margin-inline: 3%;
+        }
+
+        .sns-mar-in-24 {
+            margin-inline: 3%;
+        }
+    }
+
+    .sns-mt-6 {
+        margin-top: 6%;
+    }
+
+    .sns-mt-5 {
+        margin-top: 5%;
+    }
+
+    .sns-mt-4 {
+        margin-top: 4%;
+    }
+
+    .sns-mt-3 {
+        margin-top: 3%;
+    }
+
+    .sns-mt-2 {
+        margin-top: 2%;
+    }
+
+    .sns-mt-1 {
+        margin-top: 1%;
+    }
+
+    .sns-mb-6 {
+        margin-bottom: 6%;
+    }
+
+    .sns-mb-5 {
+        margin-bottom: 5%;
+    }
+
+    .sns-mb-4 {
+        margin-bottom: 4%;
+    }
+
+    .sns-mb-3 {
+        margin-bottom: 3%;
+    }
+
+    .sns-mb-2 {
+        margin-bottom: 2%;
+    }
+
+    .sns-mb-1 {
+        margin-bottom: 1%;
+    }
+
+    .sns-mb-0 {
+        margin-bottom: 0% !important;
+    }
+
+    .sns-pt-6 {
+        padding-top: 6%;
+    }
+
+    .sns-pt-5 {
+        padding-top: 5%;
+    }
+
+    .sns-pt-4 {
+        padding-top: 4%;
+    }
+
+    .sns-pt-3 {
+        padding-top: 3%;
+    }
+
+    .sns-pt-2 {
+        padding-top: 2%;
+    }
+
+    .sns-pt-1 {
+        padding-top: 1%;
+    }
+
+    .sns-pb-6 {
+        padding-bottom: 6%;
+    }
+
+    .sns-pb-5 {
+        padding-bottom: 5%;
+    }
+
+    .sns-pb-4 {
+        padding-bottom: 4%;
+    }
+
+    .sns-pb-3 {
+        padding-bottom: 3%;
+    }
+
+    .sns-pb-2 {
+        padding-bottom: 2%;
+    }
+
+    .sns-pb-1 {
+        padding-bottom: 1%;
+    }
+
+    .sns-m-block-1 {
+        margin-block: 1%;
+    }
+
+    .sns-m-block-2 {
+        margin-block: 2%;
+    }
+
+    .sns-m-block-3 {
+        margin-block: 3%;
+    }
+
+    .sns-m-block-4 {
+        margin-block: 4%;
+    }
+
+    .sns-m-block-5 {
+        margin-block: 5%;
+    }
+
+    .sns-m-block-6 {
+        margin-block: 6%;
+    }
+
+    .sns-p-inline-1 {
+        padding-block: 1%;
+    }
+
+    .sns-p-inline-2 {
+        padding-block: 2%;
+    }
+
+    .sns-p-inline-3 {
+        padding-block: 3%;
+    }
+
+    .sns-p-inline-4 {
+        padding-block: 4%;
+    }
+
+    .sns-p-inline-5 {
+        padding-block: 5%;
+    }
+
+    .sns-p-inline-6 {
+        padding-block: 6%;
+    }
+
+    /* Custom css */
+    /* The sns-d-flex becomes flexible by setting the display property to flex */
+    .sns-d-flex {
+        display: flex;
+    }
+
+    /* justify-content to align the item on the main axis ,center */
+    .sns-justify-content-center {
+        justify-content: center;
+    }
+
+    .sns-justify-center {
+        justify-content: center;
+    }
+
+    /* Distribute items evenly Start, in-between, and end gaps have equal sizes */
+    .sns-justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    /*Items will have space between them */
+    .sns-justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    /*tems will have space before, between, and after them */
+    .sns-justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    /* the align-items property to align our item on the cross axis, center*/
+    .sns-align-center {
+        align-items: center;
+    }
+
+    .sns-align-end {
+        align-items: end;
+    }
+
+    /* sets the items in row */
+    .sns-f-row {
+        flex-direction: row;
+    }
+
+    /* sets the items in column */
+    .sns-f-column {
+        flex-direction: column;
+    }
+
+    /* sns-flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines.  */
+    .sns-flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    /* The flexbox items are aligned at the baseline of the cross axis. */
+    .sns-basline {
+        align-items: baseline;
+    }
+
+    .sns-wor {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    /* ====================== Width ==========================*/
+    .sns-w-25 {
+        width: 25%;
+    }
+
+    .sns-w-50 {
+        width: 50%;
+    }
+
+    .sns-w-75 {
+        width: 75%;
+    }
+
+    .sns-w-100 {
+        width: 100%;
+    }
+
+    /* start */
+    .sns-desk-none {
+        display: none !important;
+    }
+
+    .sns-mob-none {
+        display: block !important;
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-desk-none {
+            display: block !important;
+        }
+
+        .sns-mob-none {
+            display: none !important;
+        }
+    }
+
+    /* End */
+    /* None classes */
+    .sns-desk-view-c {
+        display: block !important;
+    }
+
+    .sns-tab-view-c {
+        display: none !important;
+    }
+
+    .sns-mob-view-c {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: block !important;
+        }
+
+        .sns-mob-view-c {
+            display: none !important;
+        }
+
+        .sns-wor {
+            padding-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-desk-view-c {
+            display: none !important;
+        }
+
+        .sns-tab-view-c {
+            display: none !important;
+        }
+
+        .sns-mob-view-c {
+            display: block !important;
+        }
+    }
+
+    .sns-desk-view-A {
+        display: block;
+    }
+
+    .sns-tab-view-A {
+        display: none;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-desk-view-A {
+            display: none;
+        }
+
+        .sns-tab-view-A {
+            display: block;
+        }
+    }
+
+    /* padding left and right in rem */
+    /* .sns-x-0 { padding-right: 0; padding-left: 0; } .sns-x-1 { padding-right: 0.25rem; padding-left: 0.25rem; } .sns-x-2 { padding-right: 0.5rem; padding-left: 0.5rem; } */
+    /* .sns-x-3 { padding-right: 1rem; padding-left: 1rem; } .sns-x-4 { padding-right: 1.5rem; padding-left: 1.5rem; } .sns-px-5 { padding-right: 3rem; padding-left: 3rem; } */
+    /* padding left and right in rem */
+    /* padding -top and bottom in rem */
+    /* .sns-py-0 { padding-top: 0; padding-bottom: 0; } .sns-py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; } .sns-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; } .sns-py-3 { padding-top: 1rem; padding-bottom: 1rem; } .sns-py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; } .sns-py-5 { padding-top: 3rem; padding-bottom: 3rem; } */
+    /* padding -top and bottom in rem */
+    .sns-fw-100 {
+        font-weight: 100;
+    }
+
+    .sns-fw-200 {
+        font-weight: 200;
+    }
+
+    .sns-fw-300 {
+        font-weight: 300;
+    }
+
+    .sns-fw-400 {
+        font-weight: 400;
+    }
+
+    .sns-fw-500 {
+        font-weight: 500;
+    }
+
+    .sns-fw-600 {
+        font-weight: 600;
+    }
+
+    .sns-fw-700 {
+        font-weight: 700;
+    }
+
+    .sns-fw-800 {
+        font-weight: 800;
+    }
+
+    /* font-weight normal italic bold */
+    .sns-text-start {
+        text-align: left;
+    }
+
+    .sns-text-end {
+        text-align: right;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-text-decoration-none {
+        text-decoration: none;
+    }
+
+    .sns-text-decoration-underline {
+        text-decoration: underline;
+    }
+
+    .sns-text-decoration-line-through {
+        text-decoration: line-through;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-text-lowercase {
+        text-transform: lowercase;
+    }
+
+    .sns-text-uppercase {
+        text-transform: uppercase;
+    }
+
+    .sns-text-capitalize {
+        text-transform: capitalize;
+    }
+
+    .sns-text-wrap {
+        white-space: normal;
+    }
+
+    .sns-text-nowrap {
+        white-space: nowrap;
+    }
+
+    /* .text-capitalize lowercase capitalize*/
+    .sns-col-4 {
+        width: calc(85%/4);
+    }
+
+    .sns-col-3 {
+        width: calc(88%/3);
+    }
+
+    .sns-col-1 {
+        width: calc(94%/1);
+    }
+
+    .border-line {
+        border-bottom: 2px solid #EB0A1E;
+        width: 10%;
+        padding-top: 0%;
+        margin-inline: auto;
+        margin-bottom: 0.5em;
+        display: none;
+    }
+
+    .headborde {
+        /* background: #6c0f12;
+        width: 7.13%;
+        margin-inline: auto;
+        padding: 0.3%;
+        border-radius: 5px;
+        border-bottom: 2px solid #c71806; */
+    }
+
+    .sns-ram_banner_sec {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+    }
+
+    .sns-ram_banner_sec_imgs .sns-main_img img {
+        /* width: 100%;
+        background: #6c0f12;
+        padding-top: 0.5%; */
+    }
+
+    .sns-ram_banner_sec_lft {
+        position: absolute;
+        z-index: 2;
+        left: 0%;
+        color: #fff;
+        bottom: 3%;
+        text-align: center;
+        width: 99%;
+        padding-inline: 0.5%;
+    }
+
+    .sns-ram_banner_sec_lft h1 {
+        font-weight: 600;
+        font-size: 2.71vw;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 1.3em;
+    }
+
+    .sns-ram_banner_sec_lft h2 {
+        font-size: 1.042vw !important;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 0 !important;
+        padding-top: 0.5%;
+    }
+
+
+
+    .sns-ram_banner_sec_right {
+        position: absolute;
+        z-index: 1;
+        top: 2.4%;
+        right: 3%;
+        color: #fff;
+    }
+
+    /* .sns-ram_banner_sec_right h2 { font-size: 1.7vw; font-weight: 500; } */
+    .sns-ram_banner_sec_bottom {
+        position: absolute;
+        z-index: 1;
+        bottom: 3%;
+        left: 3%;
+        color: #D9D9D9;
+    }
+
+    .sns-ram_banner_sec_bottom p {
+        font-size: 1.2vw;
+        font-weight: 400;
+    }
+
+    .sns-ram_banner_sec_imgs_cnt {
+        color: #fff;
+        position: absolute;
+        left: 3%;
+        bottom: 7%;
+        z-index: 1;
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .sns-ram_banner_sec_lft {
+            position: initial;
+            background: #0C0C0C;
+            order: 1;
+            text-align: center;
+            padding-block: 8% 5%;
+            color: #fff;
+            width: 100%;
+            padding-inline: 3%;
+            /* overflow: hidden; */
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 3% !important;
+        }
+
+        .sns-ram_banner_sec_lft h1 {
+            font-size: clamp(32px, 3.75vw, 72px) !important;
+            padding-inline: 3vw;
+            /* text-transform: uppercase; */
+            LINE-HEIGHT: 1.3em;
+        }
+
+
+
+        /* .sns-ram_banner_sec_right { position: initial; color: #fff; text-align: center; background: #676767; order: 2; } */
+        .sns-ram_banner_sec_lft h2 {
+            font-size: clamp(16px, 2.9688vw, 57px) !important;
+            margin-top: 0%;
+            font-weight: 600;
+            text-transform: uppercase;
+            PADDING-INLINE: 20%;
+            line-height: 2.3em;
+        }
+
+        .sns-ram_banner_sec_bottom {
+            position: initial;
+            color: #D9D9D9;
+            background: #676767;
+            order: 3;
+            text-align: center;
+            margin-top: -1px;
+        }
+
+        .sns-ram_banner_sec_bottom p {
+            font-size: clamp(18px, 1.2vw, 20px);
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .sns-ram_banner_sec_imgs {
+            order: 1;
+        }
+    }
+
+    .sns-four-button>.sns-BN {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5% 0;
+        background: #DFD6CF;
+        /* margin-top: -1px; */
+        gap: 1.2%;
+    }
+
+    .sns-BN>a {
+        color: #fff;
+        text-decoration: none !important;
+        text-transform: capitalize !important;
+    }
+
+    .sns-BN>.sns-btn {
+        width: calc(89.5%/4);
+        /* width: 21.25%; */
+        padding: 0.8% 0;
+        box-sizing: border-box;
+    }
+
+    .justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    .sns-BN .sns-butn {
+        background: #EB0A1E;
+        color: #FFFFFF !important;
+        font-size: 1.25vw;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 8px;
+        text-transform: capitalize !important;
+        font-family: "Toyota Type";
+    }
+
+    .sns-BN .sns-butn:hover {
+        background-color: #A22321 !important;
+        color: #fff !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-BN>.sns-btn {
+            width: calc(93%/2);
+            padding: 2% 0;
+        }
+
+        .sns-BN .sns-butn {
+            font-size: clamp(20px, 1.458vw, 28px) !important;
+        }
+
+        .sns-f-b {
+            margin-bottom: 4%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-BN>.sns-btn {
+            width: calc(90%/1);
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 7% 0 7% !important;
+        }
+
+        .sns-BN>.sns-btn {
+            padding: 3.5% 0;
+        }
+
+        .sns-f-b {
+            margin-bottom: 3%;
+        }
+
+        .sns-f-b-r {
+            margin-bottom: 4%;
+        }
+    }
+
+    .sns-head {
+        text-align: center;
+        color: #333333;
+        /* padding-inline: 3%; */
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-42 {
+        text-transform: inherit;
+        padding-bottom: 1%;
+        margin-bottom: 0 !important;
+    }
+
+    .sns-head h2 {
+        margin-bottom: 0.5em;
+        /* text-transform: uppercase; */
+    }
+
+    .sns-head .sns-f-19 {
+        text-transform: uppercase;
+        margin-bottom: 0.7em !important;
+        letter-spacing: 5px;
+        border-bottom: 2px solid #EB0A1E;
+        display: inline-block !important;
+        line-height: 2em !important;
+        margin-bottom: 0.7% !important;
+        padding-bottom: 0.3%;
+    }
+
+    .sns-head h2 {
+        margin-bottom: 1% !important;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-head h2 {
+            margin-bottom: 3% !important;
+        }
+
+        .sns-head .sns-f-19 {
+            padding-bottom: 2%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-head h2 {
+            margin-bottom: 5% !important;
+        }
+
+        .sns-head {
+            padding-inline: 6%;
+        }
+    }
+
+
+    .card2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .card2c {
+        width: calc(93% / 2);
+        /* border: 1px solid black; */
+    }
+
+    .card2c .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .sns-inner-div-1 img {
+        width: 63%;
+        margin: 0 auto;
+    }
+
+    .sns-inner-div-1 .img1 {
+        width: 53%;
+        margin: 0 auto;
+        padding-top: 1%;
+    }
+
+    .sns-inner-div-1 .img-2 {
+        width: 56.1%;
+        margin: 0 auto;
+        padding-top: 3%;
+        padding-bottom: 5px;
+    }
+
+    .sns-inner-div-1 .img-3 {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 3.8%;
+    }
+
+    .sns-m-in-26 {
+        margin-inline: 26%;
+    }
+
+    .sns-m-in-5 {
+        margin-inline: 5%;
+    }
+
+    .card2c .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-img-w-76 {
+        width: 76.9% !important;
+        margin-inline: auto;
+    }
+
+    .card2c-3 {
+        width: calc(92% / 2);
+        box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;
+        /* border: 1px solid black; */
+    }
+
+    .card2c-3 .imgtext {
+        display: flex;
+        position: relative;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .card2c-3 .sns-f-20R {
+        padding-inline: 4vw;
+        text-align: left;
+        padding-top: 2%;
+    }
+
+    .card2c-3 .imgtext .sns-inner-div-1 {
+        /* width: calc(100%/2); */
+    }
+
+    .card2c-3 .imgtext .sns-w-1 {
+        width: 50%;
+    }
+
+    .card2c-3 .imgtext .sns-w-2 {
+        width: 48%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 {
+        padding: 0 16% 0 12%;
+    }
+
+    .sns-w-1 .sns-p-1 {
+        padding-block: 3% 6%;
+    }
+
+    .sns-w-1 .sns-p-2 {
+        padding-block: 12% 20.7%;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 h3 {
+        color: #fff !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p {
+        color: #000 !important;
+    }
+
+    .sns-inner-div-1 .sns-padd-2 p span {
+        color: #000 !important;
+    }
+
+    .overlaytxt {
+        position: absolute;
+        bottom: 0;
+        background-color: #000;
+        overflow: hidden;
+        /* width: 100%; */
+        height: 0;
+        transition: 0.5s ease;
+        /* color: #fff; */
+        display: flex;
+        align-items: center;
+    }
+
+    .overlaytxt .sns-padd-1 {
+        padding: 3%;
+    }
+
+    .overlaytxt .sns-padd-1 p {
+        color: #fff !important;
+    }
+
+    .imgtext:hover .overlaytxt {
+        height: 100%;
+    }
+
+    .sns-ln {
+        font-family: "Toyota Type";
+        font-weight: 500;
+        font-size: 0.7291vw;
+    }
+
+    /* @media only screen and (max-width: 1440px) { .sns-ln { line-height: 1.2em !important; } } */
+    @media only screen and (max-width: 1024px) {
+        /* .card2c .imgtext { flex-direction: column-reverse; } .card2c .imgtext .sns-inner-div-1 { width: calc(100%/1) !important; } */
+        /* .sns-ln { line-height: 1.55em !important; } */
+    }
+
+    @media only screen and (max-width: 890px) {
+        .card2c .imgtext {
+            flex-direction: row;
+        }
+
+        .card2c {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .card2c-3 .imgtext {
+            flex-direction: row;
+        }
+
+        .card2c-3 {
+            width: calc(94% / 1);
+            margin-bottom: 3%;
+        }
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/2) !important;
+        }
+
+        .sns-bg-box {
+            background: rgba(199, 24, 6, 1);
+        }
+
+        .sns-m-in-26 {
+            margin-inline: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(91.5%/2);
+            margin-bottom: 3%;
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 60%;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 60%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .card2c-3 {
+            width: calc(100%/1);
+        }
+
+        .card2c-3 h3 {
+            padding-inline: 4vw;
+            padding-bottom: 2%;
+        }
+
+        .sns-inner-div-1 .img1 {
+            width: 80%;
+        }
+
+        .sns-inner-div-1 .img-2 {
+            width: 80%;
+        }
+
+        .sns-inner-div-1 .sns-padd-2 {
+            padding: 0 16% 0 8%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        .imgtext {
+            /* display: initial; justify-content: center; */
+        }
+
+        .card2c .imgtext {
+            flex-direction: column-reverse;
+        }
+
+        .card2c .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .card2c-3 .imgtext {}
+
+        .card2c-3 .imgtext .sns-inner-div-1 {
+            width: calc(100%/1) !important;
+        }
+
+        .sns-w-1 .sns-p-1 {
+            padding: 5%;
+        }
+
+        .sns-w-1 .sns-p-2 {
+            padding: 5%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(94%/1);
+        }
+    }
+
+    .CONQUER-mn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sns .CONQUER-img {
+        width: 50%;
+    }
+
+    .CONQUER-back {
+        width: 50%;
+        background: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        padding-top: 4%;
+    }
+
+    .conquer-in {
+        margin-inline: 5%;
+    }
+
+    .conquer-padd {
+        padding-left: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .conquer-in {
+            margin-inline: 7%;
+        }
+
+        .conquer-padd {
+            padding-left: 7%;
+        }
+
+        .CONQUER-mn {
+            width: calc(100%/1);
+        }
+
+        .CONQUER-img {
+            width: 100%;
+        }
+
+        .CONQUER-back {
+            width: 100%;
+            padding-bottom: 7%;
+            padding-right: 3%;
+        }
+    }
+
+    .cards2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .cards2c {
+        width: calc(94%/2);
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5%;
+        border-radius: 24px;
+        padding-bottom: 0.5%;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+    }
+
+    .cards2cmax {
+        width: calc(92% / 3) !important;
+    }
+
+
+
+    .cards2c.cards2ccc {
+        width: calc(94%/1);
+    }
+
+    .text-di {
+        padding: 0% 2%;
+    }
+
+    .div-img {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    .sns-head-space-6 {
+        margin-block: 2.5% 2.3%;
+    }
+
+    .cards2c.cards2ccc .sns-head-space-6 {
+        margin-block: 1%;
+    }
+
+    .cards2c.cards2ccc .div-img {
+        padding-left: 1.5%;
+        padding-right: 11%;
+    }
+
+    p.div-img {
+        /* padding-bottom: 6%; */
+    }
+
+    @media only screen and (max-width: 890px) {
+        .cards2c {
+            width: calc(94%/2);
+            margin-bottom: 5%;
+        }
+
+        .div-img {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        /* .text-di {} */
+    }
+
+    @media only screen and (max-width: 640px) {
+        .cards2c {
+            width: calc(90%/1);
+            padding: 0;
+            margin-top: 0%;
+            text-align: left;
+            padding-bottom: 3.5%;
+        }
+
+        .text-di {
+            padding: 0;
+        }
+
+        .sns-head-space-6 {
+            margin-block: 4% 4%;
+        }
+    }
+
+    .three-crds-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .three-crds-ch {
+        width: calc(92%/3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin-bottom: 1%;
+        border: 1px solid rgba(108, 15, 18, 0.4);
+        border-radius: 10px;
+    }
+
+    .three-crds-ch .shadow {
+        padding: 3% 4% 2% 4%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .three-crds-ch {
+            width: calc(93%/2);
+            margin-bottom: 3%;
+        }
+
+        .three-crds-ch .shadow {
+            padding: 3% 4.5% 2% 4%;
+        }
+
+        .three-crds-ch .shadow p {
+            padding-top: 2%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .three-crds-ch {
+            width: calc(90%/1);
+            margin-bottom: 2%;
+            margin-top: 3%;
+        }
+    }
+
+    .conta {}
+
+
+    .pi-26 {
+        padding-inline: 26% !important;
+    }
+
+    .conta img {
+        width: 27% !important;
+        position: absolute;
+        left: 20%;
+        top: 8%;
+    }
+
+    .sns-posi-top {
+        /* top: 9% !important; */
+    }
+
+    .conta .btnn {
+        position: absolute;
+        top: 40%;
+        right: 22%;
+        padding: 0.5% 0 1%;
+        background: #fff;
+        color: #EB0A1E;
+        font-size: 1.25vw !important;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        text-transform: capitalize;
+        width: 22%;
+        font-family: "Toyota Type";
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+
+    .conta1 .btnn {
+        top: 13%;
+        /* Adjusted position for the button */
+        left: 77%;
+    }
+
+    .conta .btnn:hover {
+        background-color: #A22321;
+        color: #fff;
+    }
+
+    @media (max-width: 890px) {
+        .conta {
+            margin-bottom: 5%;
+        }
+
+        .conta .btnn {
+            font-size: clamp(20px, 1.458vw, 28px) !important;
+            position: absolute;
+            width: 42.5%;
+            top: auto;
+            left: 26%;
+            transform: none;
+            margin-inline: auto;
+            display: block;
+            padding: 2% 0;
+            bottom: 10%;
+        }
+
+
+        .pi-26 {
+            padding-inline: 5% !important;
+        }
+
+        .navn-btn {
+            /* background-color: #000;
+                    padding: 2%; */
+        }
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 640px) {
+        .conta .btnn {
+            position: absolute;
+            /* margin: 5.6% auto; */
+            padding: 4%;
+            width: 90%;
+            top: auto;
+            left: auto;
+            transform: none;
+            text-align: center;
+            left: 5%;
+            bottom: 9%;
+        }
+
+        .conta {
+            margin-bottom: 0%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 3. */
+    .sns-image {
+        position: relative;
+        width: 100%;
+    }
+
+    .sns-large-img-inner {
+        position: absolute;
+        right: 3%;
+        width: 30%;
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        line-height: 1.55em;
+    }
+
+    .sns-large-img-inner h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner p {
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-2 {
+        position: absolute;
+        right: 6%;
+        width: 32%;
+        color: #fff;
+        bottom: 10%;
+    }
+
+    .sns-large-img-inner-22 {
+        position: absolute;
+        right: 7%;
+        width: 50%;
+        color: #fff;
+        bottom: 3.5%;
+    }
+
+    .sns-large-img-inner-lft-btm {
+        position: absolute;
+        left: 3%;
+        width: 36%;
+        color: #fff;
+        bottom: 5.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 {
+        position: absolute;
+        left: 5%;
+        width: 32%;
+        color: #fff;
+        top: 11%;
+    }
+
+    .sns-large-img-inner-lft-btm h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm2 h3 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-lft-btm p {
+        color: #fff;
+        margin-block: 2.5%;
+    }
+
+    .sns-large-img-inner-lft-btm2 p {
+        color: #fff;
+        margin-block: 0.5% 2.5%;
+
+    }
+
+    .sns-large-img-inner-rgt-btm {
+        position: absolute;
+        left: 5.5%;
+        width: 35%;
+        color: #fff;
+        bottom: 10%;
+    }
+
+    .sns-large-img-inner-rgt-btm h4 {
+        color: #fff;
+
+    }
+
+    .sns-large-img-inner-rgt-btm p {
+        color: #fff;
+        margin-block: 2%;
+    }
+
+    .sns-large-img-inner-2 h4 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-2 p {
+        margin-block: 2% 2.5%;
+    }
+
+    .sns-large-img-inner-22 p {
+        margin-block: 1% 2.5%;
+
+    }
+
+    .sns-large-img-inner-3 {
+        position: absolute;
+        left: 3%;
+        width: 27%;
+        color: #fff;
+        top: 9%;
+    }
+
+    .sns-large-img-inner-3 h3 {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        color: #fff;
+    }
+
+    .sns-large-img-inner-3 p {
+        margin-block: 2.5%;
+    }
+
+    .sns-r-3 {
+        right: 3% !important;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-large-img-inner {
+            position: initial;
+            padding: 8% 6% 4%;
+
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-rgt-btm {
+            position: initial;
+            padding: 5% 4.5% 3%;
+            color: #000;
+            width: auto;
+            width: 100%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 5% 3%;
+            color: #000;
+            width: auto;
+        }
+
+        .sns-large-img-inner-3 {
+            position: initial;
+            padding: 8% 6% 4%;
+            color: #000;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-large-img-inner-rgt-btm {
+            width: 90%;
+        }
+
+        .sns-image {
+            width: 100%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 6. */
+    /* This Secton was duplicated from Section 3. */
+    /* Custom css */
+    /* section css */
+    .sns-img-g {
+        width: calc(92%/3);
+        margin-bottom: 1%;
+    }
+
+    .sns-img-g-interior {
+        width: calc(99.2%/4);
+        margin-bottom: 0.25%;
+    }
+
+    .sns-gallery-img {
+        overflow: hidden;
+    }
+
+    .sns-gallery-img img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .sns-gallery-img img:hover {
+        transform: scale(1.2);
+    }
+
+    /* media */
+    @media screen and (max-width: 890px) {
+        .sns-flex-wrap-reverse-mob {
+            flex-wrap: wrap-reverse;
+        }
+
+        .sns-img-g {
+            width: calc(91%/3);
+            margin-bottom: 1%;
+        }
+
+        .sns-img-g-interior {
+            width: calc(99.2%/2);
+            margin-bottom: 0.25%;
+        }
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .sns-img-g {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+        }
+
+        .sns-img-g-interior {
+            width: calc(90%/1);
+        }
+    }
+
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 11. */
+    /* This Secton was duplicated from Section 7. */
+    /* This Secton was duplicated from Section 3. */
+    .sns-img-con {
+        margin-inline: 2.5%;
+        background-color: #fff;
+        box-sizing: border-box;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+        text-align: center !important;
+
+    }
+
+    .sns-img-con .sns-w-35 {
+        width: 50%;
+    }
+
+    .padd h3 {
+        font-weight: 600;
+    }
+
+    .sns-img-con .sns-w-65 {
+        width: 50%;
+    }
+
+    .sns-w-65 .padd {
+        padding: 3% 9% 3% 7%;
+    }
+
+    .sns-w-65 .padd-1 {
+        padding: 3% 3% 3% 3%;
+    }
+
+    .sns-w-65 .padd h3 {
+        color: #000 !important;
+    }
+
+    .sns-w-65 .padd-1 h3 {
+        color: #000 !important;
+        text-transform: uppercase;
+    }
+
+    .sns-w-65 .padd p {
+        padding-top: 2%;
+        padding-right: 1.7%;
+        color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .sns-w-65 .padd-1 p {
+        padding-top: 2%;
+        padding-inline: 8%;
+        color: #000 !important;
+    }
+
+    .up {
+        margin-top: 1.3%;
+    }
+
+    .sns-wheel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+        margin-top: 4%;
+    }
+
+    .sns-inner-wheel {
+        width: calc(91% / 4);
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin-bottom: 1%;
+        background-color: #fff;
+        border: 1px solid rgba(108, 15, 18, 0.4);
+        border-radius: 8px;
+    }
+
+    .sns-inner-wheel .padd-3 {
+        padding: 5% 8% 13% 4%;
+    }
+
+    .sns-inner-wheel .padd-3 h3 {
+        text-transform: inherit;
+    }
+
+    .sns-inner-wheel .padd-3 .sns-f-20R {
+        padding-top: 5%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-inner-wheel {
+            width: calc(90% / 2);
+        }
+
+        .up {
+            margin-top: 3%;
+        }
+
+        .sns-img-con .sns-w-35 {
+            width: 100%;
+        }
+
+        .sns-img-con .sns-w-65 {
+            width: 100%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 3%;
+        }
+
+        .sns-w-65 .padd h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd-1 h3 {
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd p {
+            padding-top: 3%;
+            color: #000 !important;
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-top: 3%;
+            color: #000 !important;
+            padding-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-img-con .sns-w-65 {
+            text-align: left;
+
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-left: 0;
+        }
+
+        .sns-wheel {
+            margin-top: 12%;
+        }
+
+        .sns-inner-wheel .padd-3 h3 {
+            padding-right: 0%;
+        }
+
+        .sns-m-inn5 {
+            margin-inline: 5% !important;
+        }
+
+        .up {
+            margin-top: 6%;
+        }
+
+        .sns-inner-wheel {
+            width: calc(90% / 1);
+            margin-bottom: 6%;
+            text-align: center;
+        }
+
+        .sns-inner-wheel .padd-3 {
+            padding: 3% 4% 9%;
+        }
+
+        .sns-inner-wheel .padd-3 .sns-f-20R {
+            padding-top: 3%;
+        }
+
+        .sns-img-con {
+            margin-inline: 5%;
+        }
+
+        .sns-w-65 .padd-1 {
+            padding: 4% 2% 7.5% 4%;
+        }
+
+        .sns-w-65 .padd {
+            padding: 4% 4% 6%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 13. */
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 24. */
+    /* This Secton was duplicated from Section 25. */
+    /* This Secton was duplicated from Section 26. */
+    /* This Secton was duplicated from Section 27. */
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 16. */
+    /* This Secton was duplicated from Section 8. */
+    /* This Secton was duplicated from Section 22. */
+    /* This Secton was duplicated from Section 27. */
+    /* This Secton was duplicated from Section 29. */
+    .available-tools-mn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .available-tools-crds {
+        width: calc(90%/5);
+        box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;
+        padding-bottom: 0.7%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .available-tools-crds {
+            width: calc(93%/2);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .available-tools-crds {
+            width: calc(94%/1);
+            margin-bottom: 3%;
+            padding-bottom: 3%;
+        }
+    }
+
+    /* This Secton was duplicated from Section 31. */
+    .sns-model {
+        gap: 1%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sns-model-name {
+        /* margin-top: 9%; */
+        text-transform: capitalize;
+    }
+
+    .sns-mrp {
+        width: calc(90%/3);
+        background-color: #fff;
+        margin-bottom: 5%;
+        position: relative;
+        padding-bottom: 0%;
+        padding-top: 2%;
+        /* border: 1px solid rgba(108, 15, 18, 0.4); */
+        border-radius: 20px;
+    }
+
+    .snmodelll {
+        background-color: #000;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 5%;
+
+    }
+
+    .snmodelll h4,
+    h5 {
+        color: #fff !important;
+    }
+
+    .sns-mrp .sns-f-25 {
+        margin-top: 0% !important;
+        letter-spacing: 0.5px;
+        color: #fff !important;
+        margin-bottom: 3.5%;
+    }
+
+    .img-4 {
+        width: 10% !important;
+    }
+
+    .sns-mrp img {
+        width: 90% !important;
+        margin-inline: auto;
+        padding-block: 4% 2%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        .sns-model {
+
+            gap: 3%;
+            width: 100%;
+        }
+
+        .sns-model-name {
+            margin-top: 4%;
+        }
+
+        .sns-model-name.sns-f-36 {
+            font-size: clamp(30px, 1.875vw, 36px) !important;
+        }
+
+        .sns-mrp {
+            width: calc(91%/2);
+            margin-bottom: 4%;
+            padding-bottom: 0%;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .sns-model {
+
+            gap: 0;
+            width: 100%;
+        }
+
+        .sns-mrp {
+            width: calc(90%/1);
+            margin-bottom: 5.5%;
+            /* padding-bottom: 6%; */
+            padding-top: 0%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .sns-mrp img {
+            width: 80% !important;
+            margin-inline: auto;
+        }
+    }
+
+    /* This Secton was duplicated from Section 2. */
+    .seo-per {
+        padding: 3% 2.5% 0;
+        background-color: #fff;
+        color: #324047;
+    }
+
+    .seo-per p {
+        margin-bottom: 1.5%;
+        line-height: 1.3em !important;
+        color: #000;
+
+    }
+
+    .seo-per p a {
+        text-decoration-color: var(--sns-black);
+        color: #000;
+
+    }
+
+    .disc {
+        padding: 2% 2.5%;
+        background-color: var(--sns-white);
+        font-weight: 400;
+        line-height: 1.3em !important;
+        color: #324047;
+    }
+
+    .disc p {
+        margin-bottom: 1.5%;
+        line-height: 1.35em !important;
+        color: #000;
+    }
+
+    .disc p a {
+        color: inherit !important;
+    }
+
+    @media screen and (max-width:890px) {
+        .seo-per {
+            padding: 5% 3% 1% 3%;
+        }
+
+    }
+
+    @media screen and (max-width: 640px) {
+        .seo-per {
+            padding: 10% 5% 0 5%;
+        }
+
+        .seo-per p {
+            margin-bottom: 5%;
+        }
+
+        .disc {
+            padding: 3% 5%;
+        }
+
+        .disc p {
+            margin-bottom: 5%;
+            padding-inline: 0 3%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .border-line {
+            width: 42%;
+        }
+
+        .snpt-10mob {
+            padding-top: 12%;
+        }
+
+        .sns-mt-8-mob {
+            margin-top: 8%;
+        }
+
+        .snpt-5mob {
+            padding-top: 5%;
+        }
+
+        .snspb-8mob {
+            padding-bottom: 5%;
+        }
+
+        .snspb-10mob {
+            padding-bottom: 10%;
+        }
+
+        .snspb-3mob {
+            padding-bottom: 3%;
+        }
+
+        .snspb-0mob {
+            padding-bottom: 0%;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-image {
+            background: rgba(248, 249, 250, 1);
+        }
+
+        .sns-image .sns-mob-view-c {
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-22 {
+            position: initial;
+            padding: 4% 6% 2%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-lft-btm2 {
+            position: initial;
+            padding: 3% 7% 3% 5%;
+            color: #000;
+            width: 90%;
+            margin-inline: auto;
+        }
+
+        .sns-large-img-inner-2 p {
+            padding-top: 2%;
+        }
+
+        .cards2c p.sns-f-20R.div-img.sns-pb-3 {
+            padding-bottom: 5%;
+        }
+
+        .cards2c.cards2ccc {
+            width: calc(90%/1);
+        }
+
+        .cards2c img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+
+    .deskreverserow {
+        /* flex-direction: row-reverse; */
+    }
+
+    div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+        flex-direction: row-reverse;
+        /* border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px; */
+    }
+
+    div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+        flex-direction: row-reverse;
+        /* border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px; */
+    }
+
+    .clr-blk {
+        color: #000 !important;
+    }
+
+
+    .singcont {
+        background-color: #6C0F12;
+        padding: 2%;
+        margin-bottom: -1px;
+    }
+
+    .singcont p {
+        font-size: 1.042vw !important;
+        color: #fff;
+        line-height: 1.4em;
+        font-weight: 400;
+        text-align: center;
+        padding-inline: 5%;
+    }
+
+    .singcont h2 {
+        margin-bottom: 0.5%;
+        text-align: center;
+    }
+
+    .sns-ltr {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-radius: 10px;
+
+    }
+
+    .sns-rtr {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-radius: 10px;
+
+    }
+
+    .snsbtnbg {
+        background: URL("https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/button-bg-2026-Toyota-Highlander-Gas-desktop.png");
+        position: relative;
+        height: 13vw;
+    }
+
+    @media screen and (max-width:890px) {
+        div .sns-d-flex.sns-justify-content-center.sns-flex-wrap.sns-img-con.sns-align-center.up:nth-child(even) {
+            flex-direction: column;
+        }
+
+        .sns-four-button>.sns-BN {
+            padding: 3% 0;
+        }
+
+        .headborde {
+            /* width: 15%; */
+        }
+
+        .singcont p {
+            font-size: 14px !important;
+        }
+
+        .snsflexwraprver {
+            flex-direction: column-reverse !important;
+        }
+
+        .snsbtnbg {
+            height: 33.5vw;
+        }
+
+        .conta img {
+            width: 40% !important;
+            position: absolute;
+            left: 32%;
+            top: 3%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .headborde {
+            /* width: 32%;
+                        background: #6c0f12;
+    margin-inline: auto;
+    padding-block: 2.5% 2%;
+    border-radius: 5px;
+    border-bottom: 2px solid #c71806; */
+        }
+
+        .sns-head .sns-f-42 {
+            margin-top: 3%;
+        }
+
+        .sns-head .sns-f-20 {
+            font-size: 16px !important;
+            padding-top: 4%;
+        }
+
+        .singcont {
+            background-color: #6c0f12;
+            padding: 4.5% 2% 4.5% 4.5%;
+        }
+
+        .singcont h2 {
+            text-align: left;
+            margin-bottom: 0 !important;
+        }
+
+        .singcont p {
+            padding-inline: 0%;
+            text-align: left;
+            padding-top: 3.5%;
+        }
+
+        .sns-w-65 .padd-1 p {
+            padding-top: 4%;
+            padding-right: 0;
+        }
+
+        .sns-ltr,
+        .sns-rtr {
+            border-radius: 10px;
+        }
+
+        .snsbtnbg {
+            height: 71vw;
+            margin-top: 7%;
+        }
+
+        .conta img {
+            width: 95% !important;
+            position: absolute;
+            left: 5%;
+            top: 11%;
+        }
+
+    }
+
+    .sns-w-1_2 {
+        width: 12% !important;
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-w-1_2 {
+            width: 25% !important;
+        }
+
+        .font-32-mob {
+            font-size: 32px !important;
+        }
+
+    }
+
+    @media screen and (max-width:640px) {
+        .sns-w-1_2 {
+            width: 50% !important;
+        }
+
+        .snspblk15_5 {
+            padding-block: 10% 8% !important;
+        }
+
+    }
+
+    .cards2cmin {
+        width: calc(94%/2) !important;
+    }
+
+
+    .cards2.SNS-3_3 .cards2c {
+        width: calc(93% / 2);
+        box-shadow: 0 2PX 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cards2c.padddd {
+        padding-block: 1%;
+    }
+
+    /* .snspb0desk {
+            padding-bottom: 0 !important;
+        } */
+    .snspb0_8desk {
+        padding-bottom: 0.8% !important;
+    }
+
+    .sns2_2pdin {
+        padding-inline: 15%;
+        gap: 1.5%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flexwrap {
+        flex-wrap: wrap;
+    }
+
+    .pi-12 {
+        padding-inline: 12% !important;
+    }
+
+    .justifycontent {
+        justify-content: center;
+    }
+
+    .gap3 {
+        gap: 3%;
+    }
+
+    .gallerychild {
+        width: calc(94% / 2);
+        margin-bottom: 1%;
+    }
+
+    .galleryminichild {
+        width: calc(98% / 2);
+    }
+
+    .galleryminichild,
+    .gallerychild {
+        overflow: hidden;
+    }
+
+    .galleryminichild,
+    .gallerychild img {
+        /* width: 100%; */
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .galleryminichild img:hover,
+    .gallerychild img:hover {
+        transform: scale(1.2);
+    }
+
+    .sns-pad-inl-5 {
+        padding-inline: 5vw !important;
+    }
+
+
+    @media screen and (max-width:890px) {
+        .cards2.SNS-3_3 .cards2c {
+            width: calc(93% / 2);
+            text-align: center;
+        }
+
+
+        .sns-mt-3-mob {
+            margin-top: 3% !important;
+        }
+
+        .sns-pad-inl-5 {
+            padding-inline: 0vw !important;
+        }
+
+        .sns2_2pdin {
+            padding-inline: 0%;
+        }
+
+        .pi-12 {
+            padding-inline: 0% !important;
+        }
+
+        .cards2cmin {
+            width: 90% !important;
+        }
+
+        .cards2cmax {
+            width: 90% !important;
+        }
+
+
+
+    }
+
+    @media screen and (max-width:640px) {
+        .cards2.SNS-3_3 .cards2c {
+            width: calc(90% / 1);
+            text-align: left;
+            /* padding: 7%; */
+            margin-bottom: 4%;
+        }
+
+        .sns2_2pdin {
+            padding-inline: 0%;
+        }
+
+        .gallerychild {
+            width: calc(90%/1);
+            margin-bottom: 5%;
+        }
+
+        .galleryminichild {
+
+            width: calc(100%/1);
+        }
+
+        .cards2c.padddd {
+            padding-block: 5%;
+        }
+
+        .snspdin5 {
+            padding-inline: 5%;
+        }
+
+        .mi-5-mob {
+            margin-inline: 5vw !important;
+        }
+
+        .pb-6-mob {
+            padding-bottom: 6% !important;
+        }
+
+        .snstextcc {
+            text-align: center !important;
+        }
+
+        .mi-3-mob {
+            margin-inline: 3vw !important;
+            line-height: 1.3em;
+        }
+
+
+
+
+    }
+</style>
+
+
+
+
+<div class="main-div">
+    <div class="sns-ram_banner_sec">
+        <div class="sns-ram_banner_sec_lft">
+            <h1 class="sns-fw-400">2026 Toyota Camry, Westminster, CA
+            </h1>
+            <h2 class="">Starting MSRP $29,000*</h2>
+        </div>
+        <div class="sns-ram_banner_sec_imgs">
+            <figure class="sns-main_img"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/banner-2026-Camry-desktop.png"
+                    alt="Banner" class="sns-desk-view-c"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/banner-2026-Camry-desktop.png"
+                    alt="Banner" class="sns-tab-view-c"> <img
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/banner-2026-Camry-mobile.jpg"
+                    alt="Banner" class="sns-mob-view-c"> </figure>
+        </div>
+
+    </div>
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center "> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.beachcitiestoyotawestminster.com/new-vehicles/camry/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b " href="https://www.beachcitiestoyotawestminster.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.beachcitiestoyotawestminster.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn "
+                href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 sns-pb-2 snpt-10mob snspb-8mob">
+            <!-- <h2 class="sns-f-19 headborde">RAV4 Specs</h2> -->
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Camry Specs</h3>
+        </div>
+    </div>
+
+    <div class="cards2 SNS-3_3 sns-mt-1 sns-mt-8-mob">
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">EST. MPG RATING</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Up to Est. 51 Combined MPG *</p>
+        </div>
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">HORSEPOWER</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Up to 232 Net Combined Horsepower</p>
+        </div>
+
+
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">DRIVETRAIN</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Available Front-Wheel Drive or Electronic On-Demand
+                All-Wheel Drive</p>
+        </div>
+
+        <div class="cards2c padddd">
+            <h3 class="sns-f-36 div-img sns-head-space-6 snstextcc">AUDIO MULTIMEDIA</h3>
+            <p class="sns-f-20R div-img sns-pb-3 snstextcc clr-blk">Available 9-Speaker JBL® * Premium Audio System</p>
+        </div>
+    </div>
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 snpt-10mob sns-pb-1">
+            <h2 class="sns-f-19 headborde mi-3-mob">PERFORMANCE</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Transform routine drives into thrilling escapes.</h3>
+            <p class="sns-f-20 pi-26">Engineered for efficiency, Camry’s all-hybrid powertrain has up to a 51 combined
+                EPA-estimated mpg rating. * With an impressive up to 232 net combined hp and available Electronic
+                On-Demand All-Wheel Drive (AWD) capability, it will keep the good drives going.</p>
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-pb-2">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Electronic-On-Demand-All-Wheel-Drive-AWD-2026-Camry-DESKTOP.png"
+                alt="Electronic On-Demand All-Wheel Drive (AWD)" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Electronic-On-Demand-All-Wheel-Drive-AWD-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Electronic On-Demand All-Wheel Drive (AWD)">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Electronic On-Demand All-Wheel Drive (AWD)</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s available AWD offers peace-of-mind performance for every
+                drive. When the system senses slippage at the front wheels, it automatically sends torque to the rear
+                wheels to help maximize traction, wherever you’re going. So, whether you’re driving in the rain or snow
+                or taking on corners, you’ll find confidence every time you’re behind the wheel.</p>
+        </div>
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Impressive-Efficiency-2026-Camry-desk.jpg"
+                alt="Impressive Efficiency" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Impressive-Efficiency-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Impressive Efficiency">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Impressive Efficiency</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry can take you farther with fewer stops, thanks to an up to 51
+                combined EPA-estimated mpg rating. * That means you can spend less time at the pump and more time spent
+                with the windows down and the wind in your hair.</p>
+        </div>
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Responsive-Handling-2026-Camry-DESKTOP.png"
+                alt="Responsive Handling" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Responsive-Handling-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Responsive Handling">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Responsive Handling</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Feel connected in every turn. Camry’s suspension delivers unique
+                handling and an exceptionally smooth ride—elevating your comfort and control on every drive.</p>
+        </div>
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/4-Mode-Drive-Switch-2026-Camry-DESKTOP.png"
+                alt="4-Mode Drive Switch" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/4-Mode-Drive-Switch-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="4-Mode Drive Switch">
+            <h4 class="sns-f-36 div-img sns-head-space-6">4-Mode Drive Switch</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Four distinct available drive modes give you even more control.
+                Defaulted for everyday driving, Normal Mode blends fuel economy with performance. Sport Mode indulges
+                your spirited side with a sharper acceleration feel. Eco Mode adjusts throttle input to help maximize
+                your efficiency, while EV Mode* drives in 100% electric for low speeds and short distances. With these
+                choices, you can instantly tailor your drive to suit your whim, just by pressing a button.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Dynamic-Acceleration-2026-Camry-DESKTOP.png"
+                alt="Dynamic Acceleration" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Dynamic-Acceleration-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Dynamic Acceleration">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Dynamic Acceleration</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Beneath Camry's hood is an up to 225 net combined horsepower hybrid
+                powertrain-and with available All-Wheel Drive (AWD), Camry has 232 net combined horsepower-that packs a
+                mighty punch. Its grin-inducing acceleration and thrilling power on tap make it incredibly fun to drive.
+            </p>
+        </div>
+    </div>
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/View-Inventory-2026-Camry-DESKTOP.png"
+                alt="View Inventory" style="width: 100%;" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/View-Inventory-2026-Camry-mobile.png"
+                alt="View Inventory" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/new-vehicles/camry/"
+                    style="text-decoration: none"><button class="btnn">View Inventory</button></a> </div>
+        </div>
+    </div>
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 snpt-10mob snspb-8mob sns-pb-2">
+            <h2 class="sns-f-19 headborde">Design & Comfort</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42 snspb0_8desk">Steal the spotlight, day and night.</h3>
+            <!-- <p class="sns-f-20">Nightshade</p> -->
+        </div>
+    </div>
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 snpt-10mob snspb-8mob sns-pb-2">
+            <h2 class="sns-f-19 headborde" style="border-bottom: none;">Nightshade</h2>
+        </div>
+    </div>
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/19-In.-Black-Satin-Wheels-2026-Camry-DESKTOP.png"
+                alt="19-In. Black Satin Wheels">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/19-In.-Black-Satin-Wheels-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="19-In. Black Satin Wheels">
+            <h4 class="sns-f-36 div-img sns-head-space-6">19-In. Black Satin Wheels</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Outfitted with black-finished alloy wheels, each Nightshade expresses
+                more personality on the street, with a design that enhances its total look.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Nightshade-Exterior-2026-Camry-DESKTOP.png"
+                alt="Nightshade Exterior" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Nightshade-Exterior-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Nightshade Exterior">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Nightshade Exterior</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Make a statement at every stop. Whether you’re coming or going, its
+                black accents and sporty style always make you noticeable.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Captivating-Interior-2026-Camry-DESKTOP.png"
+                alt="Captivating Interior" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Captivating-Interior-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Captivating Interior">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Captivating Interior</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Leave a lasting impression with sporty SofTex®-and fabric-trimmed
+                seats that continue Nightshade’s alluring design.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Aluminum-Sport-Pedals-2026-Camry-DESKTOP.png"
+                alt="Aluminum Sport Pedals" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Aluminum-Sport-Pedals-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Aluminum Sport Pedals">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Aluminum Sport Pedals</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Standard aluminum sport pedals add to Nightshade's sportier vibe while
+                enhancing grip and control for better feedback.</p>
+        </div>
+
+    </div>
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 snpt-10mob snspb-8mob sns-pb-2">
+            <h2 class="sns-f-19 headborde" style="border-bottom: none;">EXTERIOR</h2>
+        </div>
+    </div>
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/LED-Headlights-and-Taillights-2026-Camry-DESKTOP.png"
+                alt="LED Headlights and Taillights">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/LED-Headlights-and-Taillights-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="LED Headlights and Taillights">
+            <h4 class="sns-f-36 div-img sns-head-space-6">LED Headlights and Taillights</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s LED headlights and taillights shine with clean, sophisticated
+                style and offer bright visibility that illuminates the road in front of you.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Refined-XLE-Design-2026-Camry-DESKTOP.png"
+                alt="Refined XLE Design" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Refined-XLE-Design-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Refined XLE Design">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Refined XLE Design</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Embolden your presence in Camry XLE. From its 18-in. two-tone machined
+                and black-finished wheels, and gleaming chrome-finished accents, to a unique dark metallic front grille,
+                XLE commands attention at every angle.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Contemporary-Exterior-Styling-2026-Camry-DESKTOP.png"
+                alt="Contemporary Exterior Styling" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Contemporary-Exterior-Styling-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Contemporary Exterior Styling">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Contemporary Exterior Styling</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Make a statement wherever you go, with Camry’s chiseled build and
+                wide, low stance, which complement its sleek roofline and new alluring Dark Cosmos body color.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Sporty-XSE-Design-2026-Camry-DESKTOP.png"
+                alt="Sporty XSE Design" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Sporty-XSE-Design-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Sporty XSE Design">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Sporty XSE Design</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Design with purpose. Camry XSE’s modern aerodynamic air ducts and
+                front-side canards, 19-in. black and smoke-gray-finished alloy wheels, and color-matching mesh grille
+                add sporty yet functional touches.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 snpt-10mob snspb-8mob sns-pb-2">
+            <h2 class="sns-f-19 headborde" style="border-bottom: none;">Interior</h2>
+        </div>
+    </div>
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Flex-Space-2026-Camry-DESKTOP.png"
+                alt="Flex Space">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Flex-Space-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Flex Space">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Flex Space</h4>
+            <p class="sns-f-20R div-img sns-pb-3">From drinks to sunglasses to snacks and more, Camry’s configurable
+                center console offers unique storage solutions for all your favorite things.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Aluminum-Sport-Pedals-2026-Camry-desk.jpg"
+                alt="Aluminum Sport Pedals" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Aluminum-Sport-Pedals-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Aluminum Sport Pedals">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Aluminum Sport Pedals</h4>
+            <p class="sns-f-20R div-img sns-pb-3">It’s all about the details. Camry’s available aluminum sport pedals
+                give an extra “oomph” to its premium look and feel.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Modern-Interior-Design-2026-Camry-DESKTOP.png"
+                alt="Modern Interior Design" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Modern-Interior-Design-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Modern Interior Design">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Modern Interior Design</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s open-concept interior blends premium styling and superior
+                comfort that’s sure to impress you from every seat and enhance the experience every time you enter
+                Camry.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Convenient-Charging-2026-Camry-DESKTOP.png"
+                alt="Convenient Chargingr" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Convenient-Charging-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Convenient Charging">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Convenient Charging</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Stay connected to fun with Camry’s Qi-compatible wireless charging
+                pad. * You and your passengers can also power up devices by plugging into one of the five available USB
+                ports. *</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-3 snpt-10mob snspb-8mob sns-pb-2">
+            <h2 class="sns-f-19 headborde" style="border-bottom: none;">Comfort</h2>
+        </div>
+    </div>
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Heated-and-Ventilated-Seats-2026-Camry-DESKTOP.png"
+                alt="Heated and Ventilated Seats">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Heated-and-Ventilated-Seats-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Heated and Ventilated Seats">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Heated and Ventilated Seats</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s available heated and ventilated front seats put a premium on
+                comfort with the touch of a button, while an available heated steering wheel warms up for those extra
+                chilly drives.</p>
+        </div>
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Rain-Sensing-Wipers-2026-Camry-DESKTOP.png"
+                alt="Rain-Sensing Wipers" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Rain-Sensing-Wipers-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Rain-Sensing Wipers">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Rain-Sensing Wipers</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s available rain-sensing wipers help keep your line of sight
+                clear by activating when rain is detected on the windshield and adjust their speed according to how much
+                rain is falling.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Dual-Zone-Automatic-Climate-Control-2026-Camry-DESKTOP.png"
+                alt="Dual Zone Automatic Climate Control" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Dual-Zone-Automatic-Climate-Control-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Dual Zone Automatic Climate Control">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Dual Zone Automatic Climate Control</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Crank up the comfort. Front-seat passengers can fine-tune the
+                temperature to their liking, while rear vents ensure back-seat passengers stay nice and comfortable.</p>
+        </div>
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Memory-Seats-and-Mirrors-2026-Camry-DESKTOP.png"
+                alt="Memory Seats and Mirrors" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Memory-Seats-and-Mirrors-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Memory Seats and Mirrors">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Memory Seats and Mirrors</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s available driver’s seat with position memory saves up to two
+                seating and side mirror positions. When it’s your turn to drive, just press a button to shift everything
+                into place.</p>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-a-Quote-2026-Camry-DESKTOP.png"
+                alt="Get a quote" style="width: 100%" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-a-Quote-2026-Camry-mobile.png"
+                alt="Get a quote" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/contact-us/"
+                    style="text-decoration: none"> <button class="btnn">Get a quote</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 snpt-10mob sns-pb-1">
+            <h2 class="sns-f-19 headborde mi-3-mob">TECHNOLOGY</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Your intelligent sidekick.</h3>
+            <p class="sns-f-20 pi-26">Technology at your fingertips. Whether it’s a display helping keep you focused on
+                the drive or a system that connects you to the entertainment of wireless fun, a personal drive is always
+                within reach.</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="cards2 sns-mt-1 sns-pb-2">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Digital-Gauge-Cluster-and-Head-Up-Display-2026-Camry-DESKTOP.png"
+                alt="12.3-In. Digital Gauge Cluster and Head-Up Display" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Digital-Gauge-Cluster-and-Head-Up-Display-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="12.3-In. Digital Gauge Cluster and Head-Up Display">
+            <h4 class="sns-f-36 div-img sns-head-space-6">12.3-In. Digital Gauge Cluster and Head-Up Display</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Camry’s available 12.3-in. digital gauge cluster with selectable
+                gauges and available Head-Up Display (HUD) puts vitals right in front of you. Keep track of real-time
+                driving data, turn-by-turn directions, safety information and alerts—all while keeping both hands on the
+                wheel.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Blind-Spot-Monitor-w-Rear-Cross-Traffic-Alert-2026-Camry-DESKTOP.png"
+                alt="Blind Spot Monitor w/Rear Cross-Traffic Alert" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Blind-Spot-Monitor-wRear-Cross-Traffic-Alert-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Blind Spot Monitor w/Rear Cross-Traffic Alert">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Blind Spot Monitor w/Rear Cross-Traffic Alert</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Standard Blind Spot Monitor (BSM) * warns you when a vehicle in the
+                next lane enters Camry’s blind spot on either side of the vehicle. And when you’re in reverse, Rear
+                Cross-Traffic Alert (RCTA) * helps detect vehicles approaching from either side, warning you with side
+                mirror indicators and a warning tone.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Traffic-Jam-Assist-2026-Camry-DESKTOP.png"
+                alt="
+Traffic Jam Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Traffic-Jam-Assist-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Traffic Jam Assist">
+            <h4 class="sns-f-36 div-img sns-head-space-6">
+                Traffic Jam Assist</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Enjoy freeway driving with newfound ease. Traffic Jam Assist (TJA) *
+                helps navigate the ebb and flow of stop-and-go traffic on controlled access freeways by providing
+                hands-free control of the vehicle steering, braking and acceleration at speeds under 25 mph, when Lane
+                Tracing Assist (LTA) * is on. Requires an active Drive Connect trial or subscription. * * 4G network
+                dependent.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Front-Cross-Traffic-Alert-2026-Camry-DESKTOP.png"
+                alt="
+Front Cross-Traffic Alert" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Front-Cross-Traffic-Alert-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Front Cross-Traffic Alert">
+            <h4 class="sns-f-36 div-img sns-head-space-6">
+                Front Cross-Traffic Alert</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Available Front Cross-Traffic Alert (FCTA) * is designed to detect the
+                approach of crossing vehicles when Camry enters an intersection at a low speed. It notifies the driver
+                via an audible alert and a visual alert on both the Multi-Information Display (MID) and the Head-Up
+                Display (HUD), to help give you greater awareness of your surroundings.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Easy-and-Convenient-Charging-2026-Camry-DESKTOP.png"
+                alt="Easy and Convenient Charging" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Easy-and-Convenient-Charging-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Easy and Convenient Charging">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Easy and Convenient Charging</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Stay connected to fun. Simply place your smartphone on the
+                Qi-compatible wireless charging pad * to find a charge. You and your passengers can also power up
+                devices by plugging into one of the available five USB ports * found below the climate controls and
+                behind the center console.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Panoramic-View-Monitor-2026-Camry-DESKTOP.png"
+                alt="Panoramic View Monitor" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Panoramic-View-Monitor-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Panoramic View Monitor">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Panoramic View Monitor</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Available on Camry XLE and XSE, Panoramic View Monitor (PVM) * helps
+                you check your surroundings for hazards. It uses four cameras to display a panoramic view on the
+                touchscreen display. When you're parked and using the Moving View setting, PVM creates a virtual view
+                from above to give you a bigger picture of what's around your Camry.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Front-and-Rear-Parking-Assist-with-Automatic-Braking-2026-Camry-DESKTOP.png"
+                alt="Front and Rear Parking Assist with Automatic Braking" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Front-and-Rear-Parking-Assist-with-Automatic-Braking-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Front and Rear Parking Assist with Automatic Braking">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Front and Rear Parking Assist with Automatic Braking</h4>
+            <p class="sns-f-20R div-img sns-pb-3">Ease into tight spaces with more confidence, thanks to Camry's
+                available Front and Rear Parking Assist with Automatic Braking (PA w/AB). * It warns you when it detects
+                nearby obstacles and, if necessary, under certain conditions, will reduce engine power and apply the
+                brakes.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Value-Your-Trade-2026-Camry-DESKTOP.png"
+                alt="Value Your Trade" style="width: 100%;" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Value-Your-Trade-2026-Camry-mobile.png"
+                alt="Value Your Trade" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/value-your-trade/"
+                    style="text-decoration: none"><button class="btnn">Value Your Trade</button></a> </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-4 snpt-10mob sns-pb-1">
+            <h2 class="sns-f-19 headborde mi-3-mob">Audio Multimedia</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Technology that keeps up with you.</h3>
+        </div>
+    </div>
+
+
+
+
+    <div class="cards2 sns-mt-2 sns-mt-8-mob sns-pb-2">
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Toyota-Audio-Multimedia-Touchscreen-2026-Camry-DESKTOP.png"
+                alt="12.3-In. Toyota Audio Multimedia Touchscreen" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/12.3-In.-Toyota-Audio-Multimedia-Touchscreen-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="12.3-In. Toyota Audio Multimedia Touchscreen">
+            <h4 class="sns-f-36 div-img sns-head-space-6">12.3-In. Toyota Audio Multimedia Touchscreen</h4>
+            <p class="sns-f-20R div-img sns-pb-5">Camry’s available 12.3-in. Toyota Audio Multimedia touchscreen
+                heightens your interactions through sight, touch and even voice recognition that lets you activate the
+                system with a phrase like, “Hey, Toyota.” From listening to music to finding your destinations, and
+                more—stay connected to every adventure.</p>
+        </div>
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Apple-CarPlay-2026-Camry-DESKTOP.png"
+                alt="
+Wireless Apple CarPlay®" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Apple-CarPlay-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Wireless Apple CarPlay®">
+            <h4 class="sns-f-36 div-img sns-head-space-6">
+                Wireless Apple CarPlay®</h4>
+            <p class="sns-f-20R div-img sns-pb-5">Bring along a familiar interface. With Camry’s wireless Apple CarPlay®
+                * compatibility, you can use your compatible iPhone® * with the multimedia system to get directions,
+                make calls, send and receive messages, and listen to music, all while staying focused on your drive.</p>
+        </div>
+
+
+
+        <div class="cards2c"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Android-Auto-2026-Camry-DESKTOP.png"
+                alt="Wireless Android Auto™" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wireless-Android-Auto-2026-Camry-mob.jpg"
+                class="sns-desk-none" alt="Wireless Android Auto™">
+            <h4 class="sns-f-36 div-img sns-head-space-6">Wireless Android Auto™</h4>
+            <p class="sns-f-20R div-img sns-pb-5">Stay connected on the road. By pairing your compatible Android™ *
+                phone with the audio multimedia system, wireless Android Auto™ * lets you get real-time traffic alerts,
+                make and receive phone calls, listen to your favorite soundtrack and more.</p>
+        </div>
+
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/JBL-Premium-Audio-2026-Camry-DESKTOP.png"
+                alt="JBL® Premium Audio" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/JBL-Premium-Audio-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="JBL® Premium Audio">
+            <h4 class="sns-f-36 div-img sns-head-space-6">JBL® Premium Audio</h4>
+            <p class="sns-f-20R div-img sns-pb-5">Enjoy the soundtrack of every drive. Camry's available JBL®* Premium
+                Audio system utilizes nine speakers with a subwoofer to produce
+                phenomenal sound, for an immersive experience.</p>
+        </div>
+
+        <div class="cards2c"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SiriusXM-3-Month-Trial-Subscription-2026-Camry-DESKTOP.png"
+                alt="SiriusXM® 3-Month Trial Subscription" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SiriusXM-3-Month-Trial-Subscription-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="SiriusXM® 3-Month Trial Subscription">
+            <h4 class="sns-f-36 div-img sns-head-space-6">SiriusXM® 3-Month Trial Subscription</h4>
+            <p class="sns-f-20R div-img sns-pb-5">SiriusXM® * has premium entertainment that you won't hear anyplace
+                else. With the SiriusXM® 3-month trial, you get 425+ channels, including 165+ channels in your vehicle,
+                to enjoy ad-free music, plus sports, news, talk, comedy and more. Experience even more on the SiriusXM®
+                app, featuring expertly curated podcasts, Xtra channels of music, Artist Stations, SiriusXM® video and
+                more.</p>
+        </div>
+    </div>
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-2 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">Toyota Safety Sense™ 3.0*</h2>
+            <p class="border-line"></p>
+            <!-- <h3 class="sns-f-42">Made to entertain and delight.</h3> -->
+        </div>
+    </div>
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-3">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Proactive-Driving-Assist-2026-Camry-DESKTOP.png"
+                alt="Proactive Driving Assist">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Proactive-Driving-Assist-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Proactive Driving Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Proactive Driving Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">PDA * may provide gentle braking and/or steering to help control
+                distance between your vehicle and a vehicle, pedestrian or bicyclist ahead of you.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Pre-Collision-System-With-Pedestrian-Detection-2026-Camry-DESKTOP.png"
+                alt="
+Pre-Collision System With Pedestrian Detection" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Pre-Collision-System-With-Pedestrian-Detection-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Pre-Collision System With Pedestrian Detection">
+            <h3 class="sns-f-36 div-img sns-head-space-6 sns-pad-inl-5">
+                Pre-Collision System With Pedestrian Detection</h3>
+            <p class="sns-f-20R div-img sns-pb-3">PCS w/PD * can alert you to potential collisions and may automatically
+                brake.
+            </p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Full-Speed-Range-Dynamic-Radar-Cruise-Control-2026-Camry-DESKTOP.png"
+                alt="Full-Speed Range Dynamic Radar Cruise Control" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Full-Speed-Range-Dynamic-Radar-Cruise-Control-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Full-Speed Range Dynamic Radar Cruise Control">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Full-Speed Range Dynamic Radar Cruise Control</h3>
+            <p class="sns-f-20R div-img sns-pb-3">DRCC * helps maintain a preset distance from the vehicle ahead of you,
+                from highway speeds down to a full stop.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Departure-Alert-With-Steering-Assist-2026-Camry-DESKTOP.png"
+                alt="Lane Departure Alert With Steering Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Departure-Alert-With-Steering-Assist-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Lane Departure Alert With Steering Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Lane Departure Alert With Steering Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">LDA w/SA * may alert you to inadvertent lane departures and make minor
+                steering corrections to help keep you in your lane.
+            </p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Tracing-Assist-2026-Camry-DESKTOP.png"
+                alt="Lane Tracing Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Lane-Tracing-Assist-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Lane Tracing Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Lane Tracing Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">LTA * helps you center the vehicle within its lane while DRCC * is
+                active.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Road-Sign-Assist-2026-Camry-DESKTOP.png"
+                alt="Road Sign Assist" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Road-Sign-Assist-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Road Sign Assist">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Road Sign Assist</h3>
+            <p class="sns-f-20R div-img sns-pb-3">RSA * can recognize certain road signs and display them to you inside
+                the vehicle.</p>
+        </div>
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Automatic-High-Beams-2026-Camry-DESKTOP.png"
+                alt="Automatic High Beams" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Automatic-High-Beams-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Automatic High Beams">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Automatic High Beams</h3>
+            <p class="sns-f-20R div-img sns-pb-3">AHB * can automatically toggle between high and low beams based on the
+                vehicle's surroundings.</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-2 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">Connected Services</h2>
+            <p class="border-line"></p>
+            <!-- <h3 class="sns-f-42">Made to entertain and delight.</h3> -->
+        </div>
+    </div>
+
+
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-3">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Available-Digital-Key-Capability-2026-Camry-DESKTOP.png"
+                alt="Available Digital Key Capability">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Available-Digital-Key-Capability-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Available Digital Key Capability">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Available Digital Key Capability</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Available on Camry XLE and XSE, and, with an available active Remote
+                Connect trial or subscription * and the Toyota app, * Digital Key * allows your smartphone and
+                smartwatch to act like your key. You can lock/unlock doors, heat up the cabin on cold winter mornings,
+                and even share your keys with a friend—all from the Toyota app. 1-year Remote Connect trial included on
+                select grades. 4G network dependent.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Remote-Connect-2026-Camry-DESKTOP.png"
+                alt="
+Remote Connect" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Remote-Connect-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Remote Connect">
+            <h3 class="sns-f-36 div-img sns-head-space-6 sns-pad-inl-5">
+                Remote Connect</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Camry is up to speed with the latest tech. With an active Remote
+                Connect trial or subscription, * you can start the engine, lock/unlock doors and locate your vehicle
+                using the Toyota app * through your compatible smartphone or smartwatch. 1-year trial included on select
+                grades. 4G network dependent.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Safety-Connect-2026-Camry-DESKTOP.png"
+                alt="Safety Connect®" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Safety-Connect-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Safety Connect®">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Safety Connect®</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Connect to our 24/7 response center in case of an accident or
+                emergency with the press of a button. * You also get 24/7 Roadside Assistance * and Stolen Vehicle
+                Locator * to give you peace of mind that help is on the way. Activation required. 5-year-minimum trial
+                subscription included. 4G network dependent.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Service-Connect-2026-Camry-DESKTOP.png"
+                alt="Service Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Service-Connect-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Service Connect">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Service Connect</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Stay up to date with your Camry's information. With the 5-year-minimum
+                trial subscription of Service Connect, * you're provided with data such as mileage, fuel level and
+                service history. Enable maintenance alerts and receive maintenance reminders that can also be sent to
+                your preferred dealer for extra convenience. 4G network dependent.</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Drive-Connect-2026-Camry-DESKTOP.png"
+                alt="Drive Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Drive-Connect-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Drive Connect">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Drive Connect</h3>
+            <p class="sns-f-20R div-img sns-pb-3">With an active Drive Connect trial or subscription, * the Cloud
+                Navigation* and Intelligent Assistant* features help you find where you need to be, while Destination
+                Assist* allows you to talk to a live agent as they help you find your destination's coordinates and
+                offer directions on how to get there. 1-year trial included on select grades. 4G network dependent.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wi-Fi-Connect-2026-Camry-DESKTOP.png"
+                alt="Wi-Fi Connect" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Wi-Fi-Connect-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Wi-Fi Connect">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Wi-Fi Connect</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Turn Camry into a hotspot. With an active Wi-Fi Connect trial or
+                subscription, * you can easily connect up to five devices. And, depending on your existing mobile
+                provider, you can add the Wi-Fi Connect subscription to your current mobile plan. We'll even include a
+                1-month or 3-GB trial to get you started. 4G network dependent.</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="" style="background-color: #fff;">
+        <div class="sns-head sns-pt-2 sns-pb-2 snpt-5mob">
+            <h2 class="sns-f-19 headborde">Safety & Convenience</h2>
+            <p class="border-line"></p>
+            <!-- <h3 class="sns-f-42">Made to entertain and delight.</h3> -->
+        </div>
+    </div>
+
+
+
+    <div class="cards2 sns-mt-1 sns-mt-8-mob sns-pb-3">
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Battery-Warranty-2026-Camry-DESKTOP.png"
+                alt="Hybrid Battery Warranty">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Battery-Warranty-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Hybrid Battery Warranty">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Hybrid Battery Warranty</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Peace of mind for life’s many journeys. Every Toyota Hybrid Battery
+                Warranty * for 2026 models provides coverage for 10 years from date of first use or 150,000 miles,
+                whichever comes first.</p>
+        </div>
+        <div class="cards2c cards2cmax"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Warranty-2026-Camry-DESKTOP.png"
+                alt="
+Hybrid Warranty" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Hybrid-Warranty-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Hybrid Warranty">
+            <h3 class="sns-f-36 div-img sns-head-space-6 sns-pad-inl-5">
+                Hybrid Warranty</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Covering hybrid-related components, including the battery control
+                module, hybrid control module and inverter with converter is a warranty that lasts for 8 years or
+                100,000 miles, whichever comes first. *</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Basic-Warranty-2026-Camry-DESKTOP.png"
+                alt="
+Basic Warranty" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Basic-Warranty-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="
+Basic Warranty">
+            <h3 class="sns-f-36 div-img sns-head-space-6">
+                Basic Warranty</h3>
+            <p class="sns-f-20R div-img sns-pb-3">To make sure every new vehicle is up to Toyota standards, a warranty
+                for 3 years or 36,000 miles, whichever comes first, covers all components and systems other than normal
+                wear and maintenance items. *</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/No-Cost-Maintenance-Plan-and-Roadside-Assistance-2026-Camry-DESKTOP.png"
+                alt="No Cost Maintenance Plan and Roadside Assistance" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/No-Cost-Maintenance-Plan-and-Roadside-Assistance-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="No Cost Maintenance Plan and Roadside Assistance">
+            <h3 class="sns-f-36 div-img sns-head-space-6">No Cost Maintenance Plan and Roadside Assistance</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Every new Toyota Camry comes with ToyotaCare,* a maintenance plan that
+                covers normal factory scheduled service for 2 years or 25,000 miles, whichever comes first, and 24-hour
+                Roadside Assistance for 2 years, unlimited mileage.*</p>
+        </div>
+
+
+        <div class="cards2c cards2cmax"> <img class="w-100 lazyload-loading sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Eight-Airbags-2026-Camry-DESKTOP.png"
+                alt="Eight Airbags" cl="">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Eight-Airbags-2026-Camry-mobile.png"
+                class="sns-desk-none" alt="Eight Airbags">
+            <h3 class="sns-f-36 div-img sns-head-space-6">Eight Airbags</h3>
+            <p class="sns-f-20R div-img sns-pb-3">Camry comes standard with advanced dual-stage SRS driver and front
+                passenger airbags, in addition to front and rear side curtain airbags.* Eight airbags total-all designed
+                to help protect you.</p>
+        </div>
+    </div>
+
+
+
+    <div class="snsbtnbg">
+        <div class="conta"> <img
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-Pre-Approved-2026-Camry-DESKTOP.png"
+                alt="get pre-approved" style="width: 100%" class="sns-mob-none">
+            <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Get-Pre-Approved-2026-Camry-mobile.png"
+                alt="get pre-approved" class="sns-desk-none">
+            <div class="navn-btn"> <a href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/"
+                    style="text-decoration: none"><button class="btnn">get pre-approved</button></a> </div>
+        </div>
+    </div>
+
+    <div class="snpt-5mob sns-head sns-mb-2 snspb-10mob" bis_skin_checked="1">
+        <h2 class="sns-f-42 font-32-mob" style="color: #000 !important; text-transform: inherit;">Gallery</h2>
+    </div>
+
+
+
+    <div class="gallerymain flex flexwrap justifycontent sns-pb-3" style="gap: 1%;">
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-1-2026-Camry-DESKTOP.png"
+                alt="Gallery-1">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-1-2026-Camry-mobile.png"
+                alt="Gallery-1">
+        </div>
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-2-2026-Camry-DESKTOP.png"
+                    alt="Gallery-2">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-2-2026-Camry-mobile.png"
+                    alt="Gallery-2" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-3-2026-Camry-DESKTOP.png"
+                    alt="Gallery-3">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-3-2026-Camry-mobile.png"
+                    alt="Gallery-3">
+            </div>
+        </div>
+
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-4-2026-Camry-DESKTOP.png"
+                    alt="Gallery-4">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-4-2026-Camry-mobile.png"
+                    alt="Gallery-4" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-5-2026-Camry-DESKTOP.png"
+                    alt="Gallery-5">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-5-2026-Camry-mobile.png"
+                    alt="Gallery-5">
+            </div>
+        </div>
+
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-6-2026-Camry-DESKTOP.png"
+                alt="Gallery-6">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-6-2026-Camry-mobile.png"
+                alt="Gallery-6">
+        </div>
+
+
+        <div class="gallerychild">
+            <img class="sns-mob-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-7-2026-Camry-DESKTOP.png"
+                alt="Gallery-7">
+            <img class="sns-desk-none"
+                src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-7-2026-Camry-mobile.png"
+                alt="Gallery-7">
+        </div>
+
+        <div class="gallerychild flex flexwrap justifycontent" style="gap: 2%;">
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-8-2026-Camry-DESKTOP.png"
+                    alt="Gallery-8">
+                <img class="sns-desk-none"
+                    src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Gallery-8-2026-Camry-mobile.png"
+                    alt="Gallery-8" style="margin-bottom: 5%;">
+            </div>
+
+            <div class="galleryminichild">
+                <img class="sns-mob-none"
+                    src=""
+                    alt="Gallery-9">
+                <img class="sns-desk-none"
+                    src=""
+                    alt="Gallery-9">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="">
+        <div class="sns-head sns-pt-2 sns-pb-2 snspblk15_5">
+            <h2 class="sns-f-19 headborde snspdin5" style="text-transform: uppercase;">2026 Camry Build & Price</h2>
+            <p class="border-line"></p>
+            <h3 class="sns-f-42">Discover Your Camry</h3>
+
+        </div>
+        <!-- Section 5 Code -->
+        <section>
+            <div class="sns-d-flex sns-justify-center sns-flex-wrap sns-model sns-mt-2 pb-6-mob">
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/LE-2026-Camry-DESKTOP.png"
+                        alt="LE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/LE-2026-Camry-mobile.png"
+                        alt="LE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">LE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP* </p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$29,000</h5>
+                    </div>
+                </div>
+
+
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SE-2026-Camry-DESKTOP.png"
+                        alt="SE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/SE-2026-Camry-mobile.png"
+                        alt="SE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">SE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP* </p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$31,300</h5>
+                    </div>
+                </div>
+
+
+
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Nightshade-2026-Camry-DESKTOP.png"
+                        alt="Nightshade" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/Nightshade-2026-Camry-mobile.png"
+                        alt="Nightshade" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">Nightshade</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP*</p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$32,300</h5>
+                    </div>
+                </div>
+
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XLE-2026-Camry-DESKTOP.png"
+                        alt="XLE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XLE-2026-Camry-mobile.png"
+                        alt="XLE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">XLE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP*</p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$34,000</h5>
+                    </div>
+                </div>
+
+                <div class="sns-mrp sns-text-center" style="box-shadow: rgba(0, 0, 0, 0.05) -1px 4px 28px;"> <img
+                        src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XSE-2026-Camry-DESKTOP.png"
+                        alt="XSE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod47.dealerinspire.com/beachcitiestoyotawestminster/uploads/2025/12/XSE-2026-Camry-mobile.png"
+                        alt="XSE" class="sns-desk-none">
+                    <div class="snmodelll" style="">
+                        <h4 class="sns-f-36 sns-model-name">XSE</h4>
+                        <p class="sns-f-25 sns-mt-5 sns-mb-2" style="color: rgba(0, 0, 0, 0.8);">Base MSRP*</p>
+                        <h5 class="sns-f-50 " style="padding-top:0%;">$35,200</h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+    <div class="sns-four-button">
+        <div class="sns-BN sns-justify-center "> <a class="sns-btn sns-butn sns-f-b "
+                href="https://www.beachcitiestoyotawestminster.com/new-vehicles/camry/">
+                <div>View Inventory</div>
+            </a> <a class="sns-btn sns-butn sns-f-b " href="https://www.beachcitiestoyotawestminster.com/contact-us/">
+                <div>Get A Quote</div>
+            </a> <a class="sns-btn sns-butn sns-f-b-r "
+                href="https://www.beachcitiestoyotawestminster.com/value-your-trade/">
+                <div>Value Your Trade</div>
+            </a> <a class="sns-btn sns-butn "
+                href="https://www.beachcitiestoyotawestminster.com/finance/apply-for-financing/">
+                <div>Get Pre-Approved</div>
+            </a> </div>
+    </div>
+
+
+
+
+    <div class="seo">
+        <div class="seo-per sns-f-23">
+            <p><b>Introducing the 2026 Toyota Camry in Westminster, CA</b></p>
+            <p>Get behind the wheel of the 2026 Toyota Camry in Westminster, CA, and see why your daily driving will
+                never feel the same. Notice the sharper styling, upgraded tech and confident road presence that make
+                this sedan hard to ignore. Enjoy a quiet, comfortable cabin with advanced safety features that help you
+                feel in control on every trip. From weekday commutes to weekend escapes, the 2026 Camry invites you to
+                explore more of Orange County with comfort, efficiency and style working in your favor.</p>
+            <p><b>Where to Buy a 2026 Toyota Camry for Sale in Westminster, CA?</b></p>
+            <p>You can buy a 2026 Toyota Camry for sale in Westminster, CA at Beach Cities Toyota Westminster
+                dealership!</p>
+            <p>Your 2026 Toyota Camry in Westminster, CA provides refined performance and an elevated design that lets
+                you chase your daily thrills in style. The vehicle features an all-hybrid powertrain. This engineering
+                choice promotes efficiency, transforming your routine drives into thrilling escapes. You will achieve an
+                impressive up to 51 combined EPA-estimated mpg rating. The combined output provides up to 232 net
+                combined horsepower. The Camry’s engineering is precise, creating seamless synergy with your drive. You
+                have the choice of Front-Wheel Drive or the enhanced capability of available Electronic On-Demand
+                All-Wheel Drive (AWD). If you select the XSE grade, you benefit from a sport-tuned suspension. The
+                Hybrid EV Camry helps reduce carbon emissions as Toyota moves toward its Beyond Zero vision.
+            </p>
+            <p>The 2026 Toyota Camry in Westminster, CA exhibits a sleek design with timeless appeal. Its contemporary
+                exterior styling features a chiseled build, a wide, low stance, and a sleek roofline. The LED headlights
+                and taillights shine with clean, sophisticated style and illuminate the road in front of you with bright
+                visibility. If you choose the Nightshade exterior, you make a statement with black accents, sporty
+                styling, and 19-In. Black Satin Wheels. The XSE design includes sporty touches such as modern
+                aerodynamic air ducts, front-side canards, and 19-in. smoked gray and black-finished alloy wheels.
+                Inside, the modern design joins premium styling and superior comfort. You can crank up the comfort with
+                Dual Zone Automatic Climate Control and available heated and ventilated front seats.
+            </p>
+            <p>The technology of the 2026 Toyota Camry in Westminster, CA acts as your intelligent sidekick, making a
+                personal drive always within reach. Entertainment is available through the optional
+                9-Speaker JBL® Premium Audio System. You can control functions through display screens,
+
+                including the 8-in. Toyota Audio Multimedia touchscreen, standard on the LE grade, or the available
+                12.3-in. touchscreen found on the XLE grade. To keep connected, you benefit from a Qi-compatible
+                wireless charging pad. You and your passengers can also power up devices utilizing one of the five
+                available USB ports.
+            </p>
+            <p><b>Where to Test Drive a 2026 Toyota Camry in Westminster, CA?</b></p>
+            <p>You can test drive a 2026 Toyota Camry in Westminster, CA at Beach Cities Toyota Westminster! Picture
+                yourself behind the wheel, testing the smooth acceleration, responsive handling and advanced tech that
+                can upgrade every drive. When you schedule a test drive with us, you get a closer look at the features
+                that matter most to you, from safety to comfort and style. Get in touch with Beach Cities Toyota
+                Westminster to reserve your spot!
+            </p>
+        </div>
+        <div class="disc sns-f-23">
+            <p>* Starting MSRP is the lowest Base MSRP for the series of a model and excludes manufacturer, distributor
+                and dealer options, taxes, title and license and dealer fees and charges. Also excludes the Delivery,
+                Processing and Handling of $1,195 for Cars (Corolla, Corolla HV, Corolla HB, GR Corolla, Camry, Prius,
+                Prius Plug-in Hybrid, Toyota Crown, Mirai, GR86, GR Supra), $1,450 for Entry SUV (Corolla Cross, Corolla
+                Cross HV), $1,450 for Small SUV (RAV4, RAV4 HV, RAV4 Plug-in Hybrid, bZ), $1,495 for Mid SUV/Van
+                (4Runner, 4Runner HV, Highlander, Highlander HV, Grand Highlander, Grand Highlander HV, Sienna, Land
+                Cruiser, Toyota Crown Signia), $1,595 for Small Pickup (Tacoma, Tacoma HV), $2,095 for Large
+                Pickup/Large SUV (Tundra, Tundra HV, Sequoia). (Historically, vehicle manufacturers and distributors
+                have charged a separate fee for processing, handling and delivering vehicles to dealerships. Toyota's
+                charge for these services is called "Delivery, Processing and Handling" and is based on the value of the
+                processing, handling and delivery services Toyota provides as well as Toyota's overall pricing structure
+                and may be subject to change at any time. Toyota may make a profit on Delivery, Processing and
+                Handling.) Delivery, Processing and Handling in AL, AR, FL, GA, LA, MS, NC, OK, SC and TX may vary.
+                Dealer price will vary.
+            </p>
+            <p>* Base MSRP excludes manufacturer, distributor and dealer options, taxes, title and license and dealer
+                fees and charges. Also excludes the Delivery, Processing and Handling of $1,195 for Cars (Corolla,
+                Corolla HV, Corolla HB, GR Corolla, Camry, Prius, Prius Plug-in Hybrid, Toyota Crown, Mirai, GR86, GR
+                Supra), $1,450 for Entry SUV (Corolla Cross, Corolla Cross HV), $1,450 for Small SUV (RAV4, RAV4 HV,
+                RAV4 Plug-in Hybrid, bZ), $1,495 for Mid SUV/Van (4Runner, 4Runner HV, Highlander, Highlander HV, Grand
+                Highlander, Grand Highlander HV, Sienna, Land Cruiser, Toyota Crown Signia), $1,595 for Small Pickup
+                (Tacoma, Tacoma HV), $2,095 for Large Pickup/Large SUV (Tundra, Tundra HV, Sequoia). (Historically,
+                vehicle manufacturers and distributors have charged a separate fee for processing, handling and
+                delivering vehicles to dealerships. Toyota's charge for these services is called the "Delivery,
+                Processing and Handling Fee" and is based on the value of the processing, handling and delivery services
+                Toyota provides as well as Toyota's overall pricing structure and may be subject to change at any time.
+                Toyota may make a profit on the Delivery, Processing and Handling Fee.) The Delivery, Processing and
+                Handling Fee in AL, AR, FL, GA, LA, MS, NC, OK, SC and TX will be higher. Dealer price will vary.
+            </p>
+            <p>* EPA-estimated 52 city/49 hwy/51 combined mpg rating for 2026 Camry LE; 50 city/49 hwy/50 combined mpg
+                rating for 2026 Camry LE AWD; 47 city/45 hwy/46 combined mpg rating for 2026 Camry SE, XLE and XSE; 46
+                city/46 hwy/46 combined mpg rating for 2026 Camry SE AWD and XLE AWD; 43 city/43 hwy/43 combined mpg
+                rating for 2026 Camry XSE AWD. Use for comparison purposes only. Your mileage will vary for many
+                reasons, including your vehicle’s condition and how/where you drive. See www.fueleconomy.gov.</p>
+            <p>* EV Mode lets you operate solely on battery power at low speeds for short distances and in limited
+                circumstances, such as in a parking garage. Different conditions may prevent or limit usage. See your
+                Owner’s Manual for instructions and limitations.</p>
+            <p>* Do not rely exclusively on Blind Spot Monitor. Look over shoulder and use turn signal. See Owner's
+                Manual for limitations.</p>
+            <p>* Traffic Jam Assist is not an automated driving system, requires driver supervision at all times, and is
+                designed to function on controlled access freeways at speeds of 25 mph or less. Operation requires Lane
+                Tracing Assist to be active. Use this system in accordance with applicable laws. Requires an active
+                subscription to Drive Connect that depends on 4G network availability and other factors. Service
+                requires account registration through the Toyota app and acceptance of Connected Services Terms of Use
+                at toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data
+                Consent. Data charges may apply. Before operating, refer to Owner’s Manual for instructions and
+                limitations.</p>
+            <p>* The Lane Tracing Assist (LTA) lane centering function is designed to read visible lane markers and
+                detect other vehicles under certain conditions. It is only operational when DRCC is engaged. See Owner's
+                Manual for limitations.</p>
+            <p>* Drive Connect services may vary and are subject to change at any time without notice. Availability and
+                accuracy depend on 4G network availability, a cellular connection and GPS signal. Without any one or
+                more of these things, operability may be limited or precluded. Further, if and when 4G network changes
+                or is discontinued, or the underlying technology required to support service becomes obsolete, then
+                services will not work, and will need to be discontinued. Services require account registration through
+                Toyota app and acceptance of Connected Services Terms of Use at
+                toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data Consent.
+                Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection, use,
+                sharing, and retention practices and agreements, see toyota.com/support/privacy-notice/. Trial period
+                begins on original purchase or lease date of new vehicle. Services may vary and are subject to change
+                without notice. Requires app download/registration, acceptance of Terms of Use and subscription after
+                trial (if applicable). Data charges may apply.
+            </p>
+            <p>* Trial period begins on original purchase or lease date of new vehicle Services may vary and are subject
+                to change without notice. Requires app download/registration, acceptance of Terms of Use and
+                subscription after trial (if applicable). Data charges may apply.</p>
+            <p>* Do not overly rely on the Front Cross-Traffic Alert system. Always visually confirm that it is safe to
+                proceed. See Owner’s Manual for limitations.</p>
+            <p>* Wireless charging may not be compatible with all mobile phones, smart devices, tablets, e-readers,
+                MP3/WMA players and like products.</p>
+            <p>* May not be compatible with all mobile phones, smart devices, tablets, e-readers, MP3/WMA players and
+                like models.</p>
+            <p>* The Panoramic View Monitor does not provide a comprehensive view of the area surrounding your vehicle.
+                Look around to confirm clearance. See Owner’s Manual for limitations.</p>
+            <p>* Front and Rear Parking Assist with Automatic Braking (PA w/AB) may warn drivers of, and potentially
+                brake for front and rear collisions with certain objects when traveling at low speeds. Drivers should
+                visually confirm clearance during use. See Owner’s Manual for instructions and limitations.</p>
+            <p>* Apple CarPlay® requires a compatible iPhone® with an active data plan. Check compatibility at
+                https://www.apple.com/ios/carplay/. Operability depends on network availability, a cellular connection
+                and GPS signal. Services vary by vehicle and are subject to change at any time without notice. Data
+                charges may apply. To learn more, go to https://www.toyota.com/audio-multimedia/. To learn more about
+                Toyota Connected Services data collection, use, sharing and retention practices, please visit
+                https://www.toyota.com/support/privacy-notice/. Apple CarPlay® is a registered trademark of Apple Inc.
+            </p>
+            <p>* iPhone® is a registered trademark of Apple Inc. All rights reserved.</p>
+            <p>* Google, Android, Android Auto, Google Maps, YouTube Music and other marks are trademarks of Google LLC.
+                Compatible Android phone and compatible active data plan required.</p>
+            <p>* Wireless use of Android Auto requires a compatible Android 11.0+ phone and compatible active data plan.
+                Check g.co/androidauto/requirements for compatibility. Operability depends on network availability, a
+                cellular connection, and GPS signal. Services vary by vehicle and are subject to change at any time
+                without notice. Data charges may apply. To learn more, go to https://www.toyota.com/audio-multimedia/.
+                To learn more about Toyota's Connected Services data collection, use, sharing, and retention practices,
+                please visit https://www.toyota.com/support/privacy-notice/. Google, Android, Android Auto, Google Maps,
+                YouTube Music and other marks are trademarks of Google LLC. Compatible Android phone and compatible
+                active data plan required.
+            </p>
+            <p>* JBL® is a registered trademark of Harman International Industries, Inc.</p>
+            <p>* Service will automatically stop at the end of your trial subscription period unless you decide to
+                continue service. Trial is non-transferable. If you do not wish to enjoy your trial, you can cancel by
+                calling the number below. All SiriusXM services require a subscription, each sold separately by SiriusXM
+                after the trial period. Service subject to the SiriusXM Customer Agreement and Privacy Policy, visit
+                siriusxm.com for complete terms and how to cancel which includes online methods or calling
+                1-866-635-2349. Some services and features are subject to device capabilities and location availability.
+                Satellite service not available in AK & HI. Content varies by SiriusXM subscription plan. All fees,
+                content and features are subject to change. SiriusXM and related logos are trademarks of Sirius XM Radio
+                Inc. and its respective subsidiaries.
+            </p>
+            <p>* Proactive Driving Assist (PDA) is designed to detect certain objects or curves in the road and provide
+                gentle braking and/or steering support. PDA is not a substitute for safe and attentive driving. System
+                effectiveness depends on many factors, such as speed, size and position of detected objects and weather,
+                light and road conditions. See Owner’s Manual for additional limitations and details.</p>
+            <p>* The Pre-Collision System (PCS) with Pedestrian Detection (PD) is designed to determine if impact is
+                imminent and help reduce impact speed and damage in certain frontal collisions involving a vehicle, a
+                pedestrian, a bicycle, or a motorcyclist. PCS w/PD is not a substitute for safe and attentive driving.
+                System effectiveness depends on many factors, such as speed, size and position of pedestrian or
+                bicyclist and weather, light and road conditions. See Owner's Manual for limitations.
+            </p>
+            <p>* Full-Speed Range Dynamic Radar Cruise Control is not a substitute for safe and attentive driving.
+                See Owner’s Manual for instructions and limitations.</p>
+            <p>* Lane Departure Alert with Steering Assist is designed to read visible lane markers under certain
+                conditions. It provides a visual/audible alert and slight steering force when lane departure is
+                detected. It is not a collision-avoidance system or a substitute for safe and attentive driving.
+                Effectiveness depends on many factors including road, weather and vehicle conditions. See Owner’s Manual
+                for limitations.
+            </p>
+            <p>* Dynamic Radar Cruise Control is not a substitute for safe and attentive driving. See Owner’s Manual for
+                limitations.</p>
+            <p>* Road Sign Assist only recognizes certain road signs. See Owner’s Manual for limitations.</p>
+            <p>* Automatic High Beams operate at speeds above 21 mph. See Owner’s Manual for instructions and
+                limitations.</p>
+            <p>* Use only if aware of circumstances surrounding vehicle it is legal safe to do so (e.g., do not remotely
+                start a gas engine vehicle in an enclosed space or if vehicle is occupied by a child). Remote Connect
+                services vary by vehicle and are subject to change at any time without notice. Services depend on 4G
+                network availability, a cellular connection and GPS signal. Without any one or more of these things,
+                operability may be limited or precluded. Further, if and when 4G network changes or is discontinued, or
+                the underlying technology required to support service becomes obsolete, then the services will not work
+                and will need to be discontinued. Digital Key also requires Bluetooth® connectivity. Not available on
+                manual transmissions. Services require account registration through Toyota app and acceptance of
+                Connected Services Terms of Use
+                at toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data
+                Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection,
+                use, sharing, and retention practices and agreements, see toyota.com/support/privacy-notice/. Trial
+                period begins on original purchase or lease date of new vehicle. Paid subscription required after trial
+                (if applicable). Terms of Use apply.</p>
+            <p>* An active Remote Connect trial or subscription is required to use the features mentioned in the Toyota
+                app.</p>
+            <p>* Digital Key requires active Remote Connect subscription. Remote start/stop and/or lock/unlock and other
+                features of Remote Connect are only available on select models. Use only if aware of circumstances
+                surrounding the vehicle it is legal and safe to do so (e.g., do not remotely start a gas engine vehicle
+                in an enclosed space or if the vehicle is occupied by a child). Remote Connect depends on certain
+                factors outside of Toyota's control in order to operate, including 4G network availability, a cellular
+                connection, and GPS signal. Without any one or more of these things, operability may be limited or
+                precluded. Digital Key also requires Bluetooth® connectivity. Remote Connect is included with select
+                paid Connected Services packages. See your Toyota dealer for details. Services may vary and are subject
+                to change without notice. Services require account registration through the Toyota app and acceptance of
+                the Connected Services Terms of Use at
+                https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master
+                Data Consent. Data charges may apply. For Toyota Connected Services’ vehicle-generated data collection,
+                use, sharing, and retention practices and agreements,
+                see<br>https://www.toyota.com/support/privacy-notice/.
+
+            </p>
+            <p>* Use only if aware of circumstances surrounding vehicle it is legal safe to do so (e.g., do not remotely
+                start a gas engine vehicle in an enclosed space or if vehicle is occupied by a child). Remote Connect
+                services vary by vehicle and are subject to change at any time without notice. Services depend on 4G
+                network availability, a cellular connection and GPS signal. Without any one or more of these things,
+                operability may be limited or precluded. Further, if and when 4G network changes or is discontinued, or
+                the underlying technology required to support service becomes obsolete, then the services will not work
+                and will need to be discontinued. Digital Key also requires Bluetooth® connectivity. Not available on
+                manual transmissions. Services require account registration through Toyota app and acceptance of
+                Connected Services Terms of Use at
+                toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data Consent.
+                Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection, use,
+                sharing, and retention practices and agreements, see toyota.com/support/privacy-notice/. Trial period
+                begins on original purchase or lease date of new vehicle. Paid subscription required after trial (if
+                applicable). Terms of Use apply.
+            </p>
+            <p>* An active Remote Connect trial or subscription is required to use the features mentioned in the Toyota
+                app.</p>
+            <p>* Safety Connect® services vary by vehicle and are subject to change at any time without notice. Services
+                depend on 4G network availability, a cellular connection, and GPS signal. Without any one or more of
+                these things, operability may be limited or precluded, including access to response center and emergency
+                support. Further, if and when 4G network changes or is discontinued, or the underlying technology
+                required to support service becomes obsolete, then the services will not work and will need to be
+                discontinued. Stolen vehicle police report required to use Stolen Vehicle Locator. Services require
+                account registration through Toyota app and acceptance of Connected Services Terms of Use at
+                https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connectedservices-terms-use.pdf and Master Data
+                Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection,
+                use, sharing, and retention practices and agreements, see
+                https://www.toyota.com/support/privacy-notice/. The Safety Connect® trial is included for a minimum of 5
+                years. 4G network dependent.
+            </p>
+            <p>* Enhanced 24/7 Roadside Assistance allows use of in-vehicle SOS button to assist response agent to
+                identify vehicle location. Unlimited mileage coverage effective with an active Safety Connect® trial or
+                subscription that depends on certain factors, including 4G network availability. Services require
+                account registration through the Toyota app and acceptance of Connected Services Terms of Use at
+                toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data Consent.
+                Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection, use,
+                sharing, and retention practices and agreements, see toyota.com/support/privacy-notice/. Enhanced
+                Roadside Assistance does not include parts and fluids, except limited emergency gas delivery. Towing
+                distance up to 25 miles. Restrictions apply. Service subject to change at any time. Available in the
+                continental U.S. and Canada. See Toyota dealer for details and exclusions.
+            </p>
+            <p>* Building and/or parking structures may limit system effectiveness. Stolen vehicle police report
+                required to use Stolen Vehicle Locator. For additional assistance contact the Toyota Brand Engagement
+                Center at 1-800-331-4331.
+            </p>
+            <p>* Service Connect services vary by vehicle and are subject to change at any time without notice. Services
+                depend on 4G network availability, a cellular connection, and GPS signal. Without any one or more of
+                these things, operability may be limited or precluded. Further, if and when 4G network changes or is
+                discontinued, or the underlying technology required to support service becomes obsolete, then the
+                services will not work and will need to be discontinued. Information provided is based on the last time
+                data was collected from the vehicle and is not real-time data. Services require account registration
+                through Toyota app and acceptance of Connected Services Terms of Use at
+                https://www.toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master
+                Data Consent. Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data
+                collection, use, sharing, and retention practices and agreements, see
+                https://www.toyota.com/support/privacy-notice/. The Service Connect trial is included for a minimum of 5
+                years. 4G network dependent.
+            </p>
+            <p>* Cloud Navigation requires a trial or subscription to Drive Connect. Drive Connect availability and
+                accuracy depend on certain factors outside of Toyota's control in order to operate, including 4G network
+                availability, a cellular connection and GPS signal. Without any one or more of these things, operability
+                may be limited or precluded. Services subject to change at any time without notice. Requires app
+                download/registration and subscription after trial (if applicable). Terms of Use apply. Data charges may
+                apply. See Owner’s Manual and https://www.toyota.com/connected-services/ for limitations. To learn about
+                Toyota's Connected Services data collection, use, sharing and retention practices, visit
+                https://www.toyota.com/support/privacy-notice/.
+            </p>
+            <p>* Intelligent Assistant requires a trial or subscription to Drive Connect. Drive Connect availability and
+                accuracy depend on certain factors outside of Toyota's control in order to operate, including 4G network
+                availability, a cellular connection and GPS signal. Without any one or more of these things, operability
+                may be limited or precluded. Services subject to change at any time without notice. Requires app
+                download/registration and subscription after trial (if applicable). Terms of Use apply. Data charges may
+                apply. See Owner’s Manual and https://www.toyota.com/connected-services/ for limitations. To learn about
+                Toyota's Connected Services data collection, use, sharing and retention practices, visit
+                https://www.toyota.com/support/privacy-notice/.
+            </p>
+            <p>* On select models, Destination Assist will require a trial or subscription to Drive Connect. Drive
+                Connect services may vary and are subject to change at any time without notice. Availability and
+                accuracy depend on 4G network availability, a cellular connection and GPS signal. Without any one or
+                more of these things, operability may be limited or precluded. Further, if and when 4G network changes
+                or is discontinued, or the underlying technology required to support service becomes obsolete, then
+                services will not work, and will need to be discontinued. Services require account registration through
+                Toyota app and acceptance of Connected Services Terms of Use at
+                toyota.com/content/dam/toyota/privacyvts/pdf/connected-services-terms-use.pdf and Master Data Consent.
+                Data charges may apply. For Toyota’s Connected Services’ vehicle-generated data collection, use,
+                sharing, and retention practices and agreements, see toyota.com/support/privacy-notice/. Trial period
+                begins on original purchase or lease date of new vehicle. Services may vary and are subject to change
+                without notice. Requires app download/registration, acceptance of Terms of Use and subscription after
+                trial (if applicable). Data charges may apply. The Destination Assist trial period begins on original
+                purchase or lease date of new vehicle. Paid subscription required after trial (if applicable). Terms of
+                Use apply.
+            </p>
+            <p>* Service not available everywhere or in every vehicle. Depends on 4G cellular network availability, a
+                cellular connection and GPS signal. Without any one or more of these things, operability may be limited
+                or precluded. Up to 5 devices can be supported using in-vehicle connectivity. Services may vary and are
+                subject to change without notice. Data charges may apply. Requires separate subscriptions to third-party
+                provider services. Valid in the contiguous U.S. and Alaska. Go
+                to<br>https://myvehicle.att.com/#/toyota/learn?language=en&country=US for terms and conditions. The
+                Wi-Fi Connect trial begins at the time of enrollment and expires the earlier of 3GB data use or the
+                1-month trial period ends. Trial begins at activation and expires the earlier of 3 GB data use or 1 mo.
+                Valid in contiguous U.S. and Alaska. See https://myvehicle.att.com/#/toyota/learn?language=en&country=US
+                for terms and conditions.
+
+            </p>
+            <p>* For Toyota hybrid, plug-in hybrid, fuel cell and battery electric vehicles beginning model year 2020,
+                the hybrid (HV) battery is covered for 10 years from date of first use or 150,000 miles, whichever comes
+                first. Coverage is subject to the terms and conditions of your New Vehicle Limited Warranty. See the
+                Toyota Owner’s Warranty and Maintenance Guide for details.</p>
+            <p>* Hybrid-related components are covered for 8 years from original date of first use or 100,000 miles,
+                whichever comes first. The HV battery may have longer coverage under emissions warranty. See the Toyota
+                Owner’s Warranty and Maintenance Guide for details.</p>
+            <p>* Date and mileage limitations refer to whichever comes first from the date of first purchase. Warranty
+                coverage is subject to other terms and conditions. Refer to applicable Warranty and Maintenance Guide
+                for full details and for information regarding the Federal and California Emission Control Warranties,
+                and Tire Limited Warranties. Emission coverages vary under Federal and California regulations.</p>
+            <p>* ToyotaCare covers normal factory scheduled maintenance for 2 years or 25,000 miles, whichever comes
+                first, and 24/7 Roadside Assistance is for 2 years/unlimited mileage (note: ToyotaCare for Mirai is 3
+                years/35,000 miles and Roadside Assistance for Mirai, bZ, bZ4X, Prius, Prius Prime and Prius Plug-in
+                Hybrid is 3 years/unlimited mileage). Roadside Assistance does not include parts and fluids, except
+                limited emergency gas delivery. Towing distance up to 25 miles. Restrictions apply. Available in the
+                continental U.S. and Canada. See Toyota dealer for details and exclusions.</p>
+            <p>* Airbag systems supplement the seatbelts and are designed to inflate only under certain conditions and
+                in certain types of severe collisions. Always wear seatbelt, sit upright in middle and as far back in
+                seat as possible to help decrease risk of injury. Do not put objects in front of an airbag. See Owner’s
+                Manual for limitations.</p>
+            <p>* Toyota Safety Sense™ effectiveness is dependent on many factors including road, weather and vehicle
+                conditions. Drivers are responsible for their own safe driving. Always pay attention to your
+                surroundings and drive safely. See Owner’s Manual for limitations.</p>
+        </div>
+    </div>
+</div>
