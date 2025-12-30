@@ -1,0 +1,1006 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+	.main {
+		margin-top: 0px !important;
+	}
+	
+	.main-div {
+		max-width: 1440px; overflow: hidden; margin: 0 auto; color: #000;
+	}
+	
+	.inner2 {
+		max-width: 960px; margin: 0px auto;
+	}
+	
+	.banner-title {
+		background: url(https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/OFFER-BG.jpg?v=gdDMrbT3/LhK9HjCG9Izwg==); background-size: inherit; background-repeat: no-repeat; color: #fff; padding: 10px; width: 100%
+	}
+	
+	.banner-image {
+		color: #fff; text-transform: uppercase;
+	}
+	
+	.banner-image .banner-title {
+		background: #e9ba49; color: #fff; padding: 10px
+	}
+	
+	.offer .name {
+		margin-bottom: -90px; margin-top: 10px; color: #000; z-index: 999; position: relative; font-size: 38px; padding-left: 15px; font-weight: 100;
+	}
+	
+	.offer .content-div {
+		margin: 20px 0 0 0; padding-bottom: 5px; line-height: 0.8; position: relative;
+	}
+	
+	.offer .content-div .dol {
+		font-size: 35px; top: -1.7em; font-weight: 600; color: #1a63b2;
+	}
+	
+	.offer .content-div .mo {
+		font-size: 35px; top: -1.8em; font-weight: 600; color: #1a63b2;
+	}
+	
+	.offer .content-div .amt {
+		font-size: 120px; color: #1a63b2;
+	}
+	
+	.offer .content-div .prc {
+		padding-top: 10px;
+	}
+	
+	.offer .content-div .lease {
+		color: #000; width: 135px; line-height: 1.2; font-size: 14px; display: inline-block; position: absolute; top: 10px; padding-top: 30px; right: 0px; padding-left: 20px;
+	}
+	
+	.offer .off-car {
+		max-width: 100%; top: -62px; margin-top: 10px;
+	}
+	
+	.offer .off-car {
+		max-width: 100%; top: -62px; margin-top: 10px;
+	}
+	
+	.arrow {
+		top: -9px; font-size: 20px; position: relative; color: #28509b; margin-bottom: -28px
+	}
+	
+	.price-modal {
+		background: #e9ba49; color: #fff; padding: 10px 0 20px 20px; font-size: 12px; line-height: 1.8em; text-align: left;
+	}
+	
+	.price-modal span {
+		font-weight: 500; font-size: 21px;
+	}
+	
+	.modal-text {
+		padding: 10px; text-align: left; background: #f7f7f7;
+	}
+	
+	.ban-image {
+		position: relative; color: #fff; text-transform: uppercase;
+	}
+	
+	.ban-image .title2 {
+		position: absolute; top: 5px; padding: 10px 5px;
+	}
+	
+	.ban-image .price {
+		position: absolute; bottom: 5px; padding: 0px 5px;
+	}
+	
+	.ban-image .title2 h4 {
+		color: #fff !important;
+	}
+	
+	.offer-diclaimer {
+		line-height: 1.2; font-size: 11px; padding: 25px 0 20px;
+	}
+	
+	.title1 {
+		position: absolute; color: #fff; margin-left: 258px; font-size: 20px;
+	}
+	
+	.FLX {
+		display: flex;
+	}
+	
+	@media screen and (max-width:426px) {
+		.FLX {
+			display: flex; flex-direction: column;
+		}
+		.pad-top {
+			padding-top: 0 !important;
+		}
+	}
+	
+	@media screen and (max-width:375px) {
+		.main {
+			margin-top: 0px !important;
+		}
+		.banner-image {
+			position: unset; color: #000; text-align: center;
+		}
+		.banner-image .title1 {
+			position: unset; top: 0px;
+		}
+		.banner-image .price {
+			position: unset; bottom: 0px;
+		}
+		.offer {
+			height: auto; padding: 0px;
+		}
+		.offer .content-div .lease {
+			width: 100%; position: unset; display: block; text-align: center; padding: 10px 0; font-size: 14px
+		}
+		.offer .row .name {
+			background-color: #dbab69;
+		}
+		.offer .content-div {
+			margin-top: 20px;
+		}
+		.offer .off-car {
+			padding: 0; position: relative; top: 30px !important
+		}
+		.offer-diclaimer {
+			padding: 20px
+		}
+		.title1 {
+			text-align: center; padding: 10px; position: initial; color: #000; font-size: 14px; margin-left: 0;
+		}
+		.col-sm-4 img {
+			max-width: 100% !important
+		}
+		.main-div p {
+			padding: 10px !important
+		}
+		.ban-image {
+			position: unset; color: #000; text-align: center;
+		}
+		.ban-image .title2 {
+			position: unset; top: 0px; padding-top: 5px;
+		}
+		.ban-image .price {
+			position: unset; bottom: 0px;
+		}
+		.ban-image .title2 h4 {
+			color: #000 !important;
+		}
+		.main-div ul {
+			margin-left: 10px !important;
+		}
+		.new-text {
+			padding-bottom: 0px !important;
+		}
+		.col-sm-4 {
+			padding: 0 15px !important
+		}
+		.main-div .mod {
+			text-align: center;
+		}
+		.offer-diclaimer {
+			padding: 20px;
+		}
+		.offer .content-div .mo {
+			font-size: 35px; top: -1.9em; font-weight: 600; color: #1a63b2; padding-left: 200px;
+		}
+		.offer .content-div .amt {
+			font-size: 105px; color: #1a63b2;
+		}
+		.mob-center {
+			margin: 0 auto;
+		}
+		.pad-top {
+			padding-top: 0 !important;
+		}
+		.pad-bot {
+			padding-bottom: 0 !important;
+		}
+		.five-col {
+			width: 100% !important;
+		}
+		.flex-direc {
+			flex-direction: column;
+		}
+		/* .main { margin-top: 43px; } */
+		.red-line {
+			padding-top: 37px !important
+		}
+		.red-line-row {
+			padding-top: 20px !important;
+		}
+		.model-pad {
+			margin-top: 0 !important;
+		}
+		.FLX {
+			display: flex; flex-direction: column;
+		}
+	}
+
+</style>
+
+<div>
+	<div class="main" style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color: #fff;padding-top: 0px;margin-top: 0px !importan;">
+		<div class="banner-title">
+			<div style="padding: 10px 0 0;">
+
+				<h1 class="hidden-xs inner2" style="margin:0 auto; color: #fff; font-size:3.2rem!important;line-height: 1.2;padding-left: 10px;">
+					2026 CHEVROLET TRAVERSE
+					<br>
+				</h1>
+
+				<h1 class="hidden-sm hidden-md hidden-lg inner2" style="margin:0 auto; color: #fff; font-size:2.6rem!important;padding-left: 0px;line-height: 1.2;text-align: center;">
+					2026 CHEVROLET TRAVERSE </h1>
+
+				<p class="hidden-xs" style="margin:0 0 30px;padding-left: 240px;font-size:1.7rem!important;display: none;">For Well-Qualified Buyers </p>
+
+				<p class="hidden-sm hidden-md hidden-lg" style="margin:0;padding-left: 20px;font-size:1.7rem!important;margin-bottom: 25px;display: none;">
+					For Well-Qualified Buyers </p>
+			</div>
+			<div class="offer">
+				<div class="row inner2">
+					<div class="col-sm-5 hidden-xs" style="padding-top:23px;">
+						<div class="content-div">
+							<div class="prc" style="display: none;"><sup style="font-size: 50px;top: -62px;font-weight: 600; color: #1a63b2;display: none;" class="dol"></sup><span style="display: none;" class="amt"></span><sup class="mo" style="display: none;">APR</sup>
+								<div class="lease" style="right: 0px; padding-left: 25px;display: none;">+ No monthly payments for 90 days when you finance with GM</div>
+							</div>
+							<div class="prc"><sup style="font-size: 47px;top: -30px;font-weight: 600; color: #1a63b2;display: none;" class="dol"></sup><span style="display: none;" class="amt"></span><sup class="mo"></sup>
+
+								<p style="padding-top:30px;color: #000;padding-left: 20px;line-height: 1.4;display: none;">
+									+ No monthly payments for 90 days when you finance with GM</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-sm hidden-lg hidden-md" style="padding-top:0px;">
+						<div class="content-div">
+							<div class="prc" style="display: none;"><sup class="dol" style="font-size: 47px;top: -45px;font-weight: 600; color: #1a63b2;">$</sup><span class="amt">319</span><sup class="mo">/mo.</sup>
+								<div class="lease" style="right: -100px; position: absolute; padding-left: 0; top: 25%;display: none;">
+									for 36 months.
+									<br>$4,009 due at signing
+									<br> (after all offers).**
+									<br>$0 security deposit.
+								</div>
+							</div>
+							<div class="prc"><sup class="dol"></sup><span class="amt"></span><sup class="mo" style="padding-left: 0px;top: -1.8em;font-size: 31px;display: none;">APR</sup>
+								<div style="padding-top:30px; color: #000;padding-left: 20px;line-height: 1.4;display: none;">
+									+ No monthly payments for 90 days when you finance with GM</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-7 hidden-xs"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/OFFER_CAR.png?v=flIsFbgj+NzlumEf6bpPbQ==" style="max-width:110%;display: inline-block;margin: auto;margin-top: -35px;margin-left: -5px;" alt="2025 Chevrolet Traverse" class="off-car"> </div>
+					<div class="col-sm-7 hidden-lg hidden-md hidden-sm"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/OFFER_CAR.png?v=flIsFbgj+NzlumEf6bpPbQ==" style="max-width:100%;display: inline-block;margin: auto;" alt="2025 Chevrolet Traverse" class="off-car"> </div>
+				</div>
+
+				<p class="inner2 text-center" style="font-size:16px;line-height:1.2;color:#1c62b1;font-weight:600;">
+				</p>
+			</div>
+			<div class="row hidden-xs" style="padding-top: 20px;">
+				<div class="col-sm-12 text-center">
+
+					<p style="margin-top: 0px;font-size:16px;color:#1f64b2;font-weight:600;padding-bottom: 10px;">Please contact Colonial Chevrolet of Acton for the latest lease and finance offers.</p>
+				</div>
+			</div>
+			<div class="row hidden-lg hidden-md hidden-sm">
+				<div class="col-sm-12 text-center">
+
+					<p style="margin-top: 36px;font-size:16px;color:#1f64b2;font-weight:600;">Please contact Colonial Chevrolet of Acton for the latest lease and finance offers.</p>
+				</div>
+			</div>
+			<div class="row inner2" style="margin-top:18px;max-width:1060px;">
+				<div class="col-sm-4 text-center hidden-xs">
+					<a href="https://www.buycolonialchevrolet.com/newspecials.html" style="display: inline-block;padding-bottom: 5px;"><img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/view_all_offers.webp?v=hw+3m+voKcIYJUahNoZrqw==" alt="VIEW ALL OFFERS"></a>
+				</div>
+				<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:0!important;">
+					<a href="https://www.buycolonialchevrolet.com/newspecials.html" style="display: inline-block;padding-top: 5px;padding-bottom: 5px;"><img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/view_all_offers.webp?v=hw+3m+voKcIYJUahNoZrqw==" alt="VIEW ALL OFFERS"></a>
+				</div>
+				<div class="col-sm-4 text-center hidden-xs">
+					<a href="https://www.buycolonialchevrolet.com/searchnew.aspx?make=Chevrolet&model=Traverse&yearrange=2026-2026" style="display: inline-block;padding-bottom: 5px;"><img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevy_Traverse/shop_travers.png?v=ezD335LiKs7HKaLkvw0Eww==" alt="SHOP TRAVERSE"></a>
+				</div>
+				<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:0!important;">
+					<a href="https://www.buycolonialchevrolet.com/searchnew.aspx?make=Chevrolet&model=Traverse&yearrange=2026-2026" style="display: inline-block;padding-bottom: 5px;"><img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevy_Traverse/shop_travers.png?v=ezD335LiKs7HKaLkvw0Eww==" alt="SHOP TRAVERSE"></a>
+				</div>
+				<div class="col-sm-4 text-center hidden-xs">
+					<a href="tel:+19786311211" style="display: inline-block;padding-bottom: 5px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/call_for_details.webp?v=E4kn6CPVniw9zDBZmfhePw==" alt="CALL FOR DETAILS"></a>
+				</div>
+				<div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:0!important;">
+					<a href="tel:+19786311211" style="display: inline-block;padding-bottom: 5px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/call_for_details.webp?v=E4kn6CPVniw9zDBZmfhePw==" alt="CALL FOR DETAILS"></a>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 text-center" style="padding:0px 40px 15px;color:#000;">
+
+					<p style="margin-top: 20px;font-size:11px;display:none;">Finance charges accrue from date of financing. Deferred monthly payments for 90 days. 1.9% APR for 36 months. Monthly payment is $28.60 for every $1,000 you finance. Example down payment: 17.5%. Must finance with GM Financial. Down payment required at signing, if applicable. Not available in PA. Some customers may not qualify. Not available with lease and some other offers. Take new retail delivery by 4/30/24.
+					</p>
+
+					<p style="margin-top: 15px;font-size:11px;display: none;">Finance charges accrue from date of financing. Deferred monthly payments for 90 days. 1.9% APR for 36 months. Monthly payment is $28.60 for every $1,000 you finance. Example down payment: 17.5%. Must finance with GM Financial. Down payment required at signing, if applicable. Not available in PA. Some customers may not qualify. Not available with lease and some other offers. Take new retail delivery by 4/30/24. </p>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+		<div class="banner-image">
+			<div class="banner-title" style="padding:10px;">
+				<div class="inner2">
+					<div class="banner-title2" style="position:relative;">
+
+						<p class="hidden-xs" style="margin-bottom:0px; font-size:34px;text-transform: initial !important;padding-left: 10px;line-height: 1.2;">
+							<span style="font-weight: bold;">2026 </span><span style="font-weight: 100 !important;">Chevrolet</span> <span style="font-weight: bold;">Traverse</span>
+						</p>
+
+						<p class="hidden-lg hidden-md hidden-sm" style="margin-bottom:0px; font-size:24px;text-transform: initial !important;padding-left: 0px;line-height: 1.2;text-align:center;">
+							2026 <span style="font-weight: 100 !important;">Chevrolet</span> <span style="font-weight: bold;">Traverse</span> </p>
+
+						<p class="text-center hidden-sm hidden-md hidden-lg" style="padding-top: 5px;margin-bottom:3px;font-size:18px;color:#fff;">Starting at: $40,800*
+						</p>
+
+						<p class="title1 inner2 hidden-xs" style="padding-top: 15px;position:absolute;margin:0;z-index:1;padding-left: 10px;"> Starting at: $40,800* </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="position:relative; text-transform: uppercase;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/HERO2.jpg?v=YfB5JwuGwIphyf0KktEdtQ==" style="max-width:100%;display: inline-block;" alt="2025 Chevrolet Traverse"> </div>
+
+
+
+
+
+
+
+		<div style="max-width:940px;margin:0px auto;">
+			<div class="row text-center" id="fourbuttons" style="margin: 30px auto 20px;">
+				<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+					<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/get_a_quote.gif?v=ujxI3JNLH8lH+Ytb2rqqqQ==" alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+					<a href="https://www.buycolonialchevrolet.com/preapproved.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevy_Traverse/get_pre_aproved.gif?v=T59rNQvlO3jZwLVnhTsYlw==" alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+					<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/request_more_info.gif?v=JQ1bewrzbOAkmMZ9ALsIiw==" alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+				<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+					<a href="https://www.buycolonialchevrolet.com/trade.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/value_your_trade.gif?v=7ysIJSbYwoveRi/JXZzeCQ==" alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+				</div>
+			</div>
+		</div>
+		<!----need2code------>
+		<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;">
+			<div style="background-color:#1c579b;color:#fff;">
+				<div style="max-width:960px;margin:0px auto;">
+					<div class="row text-center" style="padding-top:27px;">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8" style="padding: 0px; padding-bottom:2px;">
+
+							<h2 style="text-transform:uppercase;font-size: 38px;margin-bottom:0px;margin-top: 0px;font-weight: 600;">
+								DESIGN</h2>
+
+							<p style="padding: 0 10px;font-size: 30px;line-height:1.4;padding-left:15px;padding-right:15px;text-transform: uppercase;">
+								Spoiled for choice</p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="row text-center" style="margin: 0;background-color:#3e73b3;color:#fff;">
+					<div class="col-sm-2"></div>
+					<div class="hidden-xs">
+						<div class="col-sm-3 text-center" style="padding: 80px 15px 0px;text-align: center;color: #fff;">
+
+							<p style="margin:0px;font-size: 19px;line-height:1.2;">Z71 is geared up with <span style="white-space: nowrap;">off-road</span> capability and rugged looks to match. High Country is a <span style="white-space: nowrap;">3-row</span> SUV with <span style="white-space: nowrap;">all-around</span> premium appeal. RS pairs bold street style with impressive versatility. And LT provides both value and space for any growing family.
+							</p>
+
+							<p></p>
+						</div>
+					</div>
+					<div class="hidden-sm hidden-md hidden-lg">
+						<div class="col-sm-3 text-center" style="padding: 15px;text-align: center;color: #fff;">
+
+							<p style="margin:0px;font-size: 19px;line-height:1.2;">Z71 is geared up with <span style="white-space: nowrap;">off-road</span> capability and rugged looks to match. High Country is a <span style="white-space: nowrap;">3-row</span> SUV with <span style="white-space: nowrap;">all-around</span> premium appeal. RS pairs bold street style with impressive versatility. And LT provides both value and space for any growing family.
+							</p>
+
+							<p></p>
+						</div>
+					</div>
+					<div class="col-sm-7 text-right hidden-xs" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/DESIGN.jpg?v=KMViS8zrn0CEU1FmLzJ1zw==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 1px;"> </div>
+					<div class="col-sm-7 text-right hidden-lg hidden-md hidden-sm" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/DESIGN.jpg?v=KMViS8zrn0CEU1FmLzJ1zw==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 1px;"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="row inner2 text-center" style="padding-top:30px;padding-bottom: 30px;">
+			<div class="row text-center" style="padding-top:0px;margin:0px;">
+				<div class="col-sm-6" style="padding:2px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Midnight_and_Sport_Special_Editions.jpg?v=xz/Jn2rVmrE9mpv/s3CMmA==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;"> </div>
+				<div class="col-sm-6" style="padding:2px;">
+
+					<p class="hidden-xs" style="padding:6px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						MIDNIGHT AND SPORT SPECIAL EDITIONS</p>
+
+					<p class="hidden-lg hidden-md hidden-sm" style="padding:16px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						MIDNIGHT AND SPORT SPECIAL EDITIONS</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">• Black grille and blackout components
+						<br>• Black Traverse badging
+						<br>• Black Chevrolet bowties
+						<br>• <span style="white-space: nowrap;">20-inch</span> <span style="white-space: nowrap;">high-gloss</span> <span style="white-space: nowrap;">Black-painted</span> aluminum wheels
+					</p>
+				</div>
+			</div>
+		</div>
+		<div style="background:#505050;color:#fff;padding-bottom: 28px;">
+			<div class="row text-center" style="padding-top:25px;max-width: 960px;margin: 0 auto;">
+				<div class="col-sm-12" style="padding: 0px; padding-bottom:13px;">
+
+					<p style="text-transform:uppercase;font-size: 38px;margin-bottom:0px;padding-left: 16px;padding-right: 17px;line-height:1.2;font-weight: 600;">
+						INTERIOR</p>
+
+					<p style="padding: 0 10px;font-size: 30px;line-height:1.2;padding-left:15px;padding-right:15px;text-transform: uppercase;">
+						Inner goals</p>
+				</div>
+
+				<p class="hidden-xs" style="padding:28px 0px 5px;font-size:18px;line-height:1.2;">Traverse offers available seating for up to eight,* plus flexible <span style="white-space: nowrap;">second-row</span> seating options with your choice of bench seats or captain’s chairs, and a <span style="white-space: nowrap;">best-in-class*</span> max cargo volume* of 98 cu. ft.</p>
+
+				<p class="hidden-SM hidden-md hidden-lg" style="padding:0px 10px 10px;font-size:18px;line-height:1.2;">
+					Traverse offers available seating for up to eight,* plus flexible <span style="white-space: nowrap;">second-row</span> seating options with your choice of bench seats or captain’s chairs, and a <span style="white-space: nowrap;">best-in-class*</span> max cargo volume* of 98 cu. ft.</p>
+			</div>
+
+			<div class="row inner2 text-center" style="padding-top:10px;">
+				<div class="col-sm-4" style="padding:2px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Top-of-class_max_cargo_space.jpg?v=x6pjHYo6c7wemUVPN1LR3A==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+					<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto 0px;">
+						<span style="white-space: nowrap;">Top-of-class</span> max cargo space
+					</p>
+
+					<p style="padding:15px 20px 10px;font-size:18px;line-height:1.2;">Pack in what you need and still have space for more with up to 98 cu. ft. <span style="white-space: nowrap;">best-in-class</span> max cargo volume.* </p>
+				</div>
+				<div class="col-sm-4" style="padding:2px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Open_hands-free__.jpg?v=VxqBsX5sIx/iNQsvEirrSQ==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+					<p style="padding:28px 0px 10px;font-size:18px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Open <span style="white-space: nowrap;">hands-free</span></p>
+
+					<p style="padding:15px 20px 10px;font-size:18px;line-height:1.2;">The innovative AutoSense Power Liftgate recognizes your presence and opens without you needing to fumble for keys or search for sensors.
+					</p>
+				</div>
+				<div class="col-sm-4" style="padding:2px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Flex__fold_and_fit_what_you_need.jpg?v=rQk/0407WvsJbAw0+UoS7w==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+					<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Flex, fold and fit what you need</p>
+
+					<p style="padding:15px 20px 10px;font-size:18px;line-height:1.2;">A roomy <span style="white-space: nowrap;">third-row</span> 60/40 split bench provides the flexibility you need. RS and High Country add standard <span style="white-space: nowrap;">One-Touch</span> Fold
+						<span style="white-space: nowrap;">second-row</span> seats and <span style="white-space: nowrap;">power-folding</span> <span style="white-space: nowrap;">second-</span> and <span style="white-space: nowrap;">third-row</span> seating.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="getaquote" style="padding-top:30px;">
+			<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Colonial_Chevrolet_Traverse_2026_GAQ_MOVGIF.gif?v=JSFOoYkT2fiw1CEMgWCfWQ==" alt="get a quote" style="max-width:100%;display: inline-block;"> </a>
+		</div>
+		<div style="padding-top:30px;padding-bottom: 30px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/IMAGE-1.jpg?v=mbtMdrPB9ouI+xPl7uJPQA==" alt="image1" style="max-width:100%;display: inline-block;"> </div>
+		<!----need2code------>
+		<div style="background-color:#3e73b3;color:#fff;">
+			<div style="max-width:960px;margin:0px auto;">
+				<div class="row text-center" style="padding-top:12px;">
+					<div class="col-sm-12" style="padding: 0px; padding-bottom:12px;">
+
+						<p style="text-transform:uppercase;font-size: 38px;margin-bottom:0px;padding-left: 16px;padding-right: 17px;line-height:1.2;font-weight: 600;">
+							CAPABILITY</p>
+
+						<p style="padding: 0 10px;font-size: 30px;line-height:1.2;padding-left:15px;padding-right:15px;text-transform: uppercase;">
+							Built to explore</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center hidden-xs" style="margin: 0;background-color:#1f579b;color:#fff;">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-4 text-center" style="padding: 2px 10px 0px 20px;text-align:center;">
+
+					<p style="padding:70px 10px 10px;font-size: 20px;line-height:1.2;margin-bottom: 0;">The Traverse midsize SUV features a turbocharged 2.5L engine with improved performance and greater efficiency than the previous generation V6.
+					</p>
+				</div>
+				<div class="col-sm-6 text-left hidden-xs" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/CAPABILITY.jpg?v=Huz97b7JLrcu6ZaFUSBlFw==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 2px;">
+				</div>
+				<div class="col-sm-6 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/CAPABILITY.jpg?v=Huz97b7JLrcu6ZaFUSBlFw==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 0px;">
+				</div>
+			</div>
+			<div class="row text-center hidden-sm hidden-md hidden-lg" style="margin: 0;background-color:#1f579b;color:#fff;">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-4 text-center" style="padding: 20px 10px 20px 20px;text-align:center;">
+
+					<p style="padding:25px 10px 10px;font-size:18px;line-height:1.2;margin-bottom: 0;">The Traverse midsize SUV features a turbocharged 2.5L engine with improved performance and greater efficiency than the previous generation V6.
+					</p>
+				</div>
+				<div class="col-sm-6 text-left" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevy_Traverse/capability1.jpg?v=IEjdkJys5B6zNZeXSsK/+w==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 1PX;">
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div bis_skin_checked="1" class="row inner2 text-center pad-top " style="padding-top:3px;">
+			<div bis_skin_checked="1" class="col-sm-3 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;margin:auto -10px;">
+					328/326 <span style="white-space: nowrap;text-transform: uppercase;">lb.-ft.</span>
+					<br>Max horsepower /torque
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-3 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;margin:auto -10px;">
+					<span style="white-space: nowrap;text-transform: uppercase;">8-speed</span>
+					<br>Standard automatic transmission
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-3 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;margin:auto -10px;">
+					<span style="white-space: nowrap;text-transform: uppercase;">5,000 lbs.*</span>
+					<br>Standard towing capacity with included trailering equipment
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-3 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;margin:auto -10px;">
+					<span style="white-space: nowrap;text-transform: uppercase;">20/26 MPG</span>
+					<br>City/Highway*
+					<br>on FWD
+				</p>
+			</div>
+
+
+		</div>
+
+
+
+
+
+		<div bis_skin_checked="1" class="row inner text-center" style="background-color:#505050;color: #fff;margin-top: 13px;">
+			<div bis_skin_checked="1" class="red-line-row col-sm-6 text-right hidden-xs" style="padding: 0px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Off-road_comfort.jpg?v=fv98ILkh2K9waLL3GMLl+Q==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-right: 1px;">
+			</div>
+			<div bis_skin_checked="1" class="red-line-row col-sm-6 text-center hidden-sm hidden-md hidden-lg" style="padding: 0 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Off-road_comfort.jpg?v=fv98ILkh2K9waLL3GMLl+Q==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;"> </div>
+			<div bis_skin_checked="1" class="col-sm-4 text-center hidden-xs" style="padding-left: 17px;">
+
+				<p style="padding:25px 10px 0px;font-size:20px;line-height:1.2;text-transform: uppercase;"><span style="white-space: nowrap;">Off-road</span> comfort
+				</p>
+
+				<p style="padding:13px 10px 20px;font-size:18px;line-height:1.2;">The Traverse Z71 <span style="white-space: nowrap;">all-terrain</span> SUV combines the legendary Z71 brand’s <span style="white-space: nowrap;">off-road</span> capability with the comfort and versatility you need, and offers the ability to turn you and your crew from travelers to explorers.</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-5 text-center hidden-sm hidden-md hidden-lg">
+
+				<p style="padding:30px 10px 0px;font-size: 20px;line-height:1.2;text-transform: uppercase;"><span style="white-space: nowrap;">Off-road</span> comfort
+				</p>
+
+				<p style="padding:13px 10px 20px;font-size:20px;line-height:1.2;">The Traverse Z71 <span style="white-space: nowrap;">all-terrain</span> SUV combines the legendary Z71 brand’s <span style="white-space: nowrap;">off-road</span> capability with the comfort and versatility you need, and offers the ability to turn you and your crew from travelers to explorers.</p>
+			</div>
+			<div class="col-sm-2 text-center" bis_skin_checked="1"></div>
+		</div>
+
+
+
+
+
+
+
+
+		<div bis_skin_checked="1" class="row inner2 text-center pad-top " style="padding-top:0px;">
+			<div bis_skin_checked="1" class="col-sm-0 col-pad " style="padding:0px 10px;"> </div>
+			<div bis_skin_checked="1" class="col-sm-12 col-pad" style="padding:0px 6px;">
+
+				<p style="padding:50px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+					Standard Z71 features</p>
+
+				<p style="padding:13px 2px 10px;font-size:20px;line-height:1.2;">• <span style="white-space: nowrap;">Twin-Clutch</span> AWD • Terrain Mode • Hill Descent Control •
+					<span style="white-space: nowrap;">Frequency-based</span> suspension dampers
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-0 col-pad " style="padding:0px 10px;"> </div>
+		</div>
+
+
+		<div bis_skin_checked="1" id="viewinventory " style="padding-top:8px;">
+			<a href="https://www.buycolonialchevrolet.com/searchnew.aspx?make=Chevrolet&model=Traverse&yearrange=2026-2026" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Colonial_Chevrolet_Traverse_2026_VI_MOVGIF.gif?v=nzGwDAMYMf1RnhkRDlwi9w==" alt="view inventory " style="max-width:100%;display: inline-block;"> </a>
+		</div>
+
+		<div bis_skin_checked="1" style="padding-top:30px;padding-bottom: 30px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/IMAGE-2.jpg?v=ESe/Tea2sxPa7o6XzcTe5g==" alt="image2" style="max-width:100% ;"> </div>
+
+		<!----need2code------>
+
+
+		<div bis_skin_checked="1" style="background-color:#fff;color:#000;">
+			<div bis_skin_checked="1" style="max-width:960px;margin:0px auto;">
+				<div bis_skin_checked="1" class="row text-center" style="padding-top:23px;">
+					<div bis_skin_checked="1" class="col-sm-12" style="padding: 0px; padding-bottom:4px;">
+
+						<p style="text-transform:uppercase;font-size: 38px;margin-bottom:0px;padding-left: 16px;padding-right: 17px;line-height:1.2;font-weight: 900;">
+							TECHNOLOGY</p>
+
+						<p style="padding: 0 10px;font-size: 30px;line-height:1.2;padding-left:15px;padding-right:15px;text-transform: uppercase;">
+							Connected around the clock</p>
+					</div>
+				</div>
+			</div>
+			<div bis_skin_checked="1" class="row text-center hidden-xs" style="margin: 0;background-color:#1f579b;color:#fff;">
+				<div class="col-sm-2 text-center" bis_skin_checked="1"></div>
+				<div bis_skin_checked="1" class="col-sm-4 text-center" style="padding: 20px 10px 0px 20px;text-align:center;">
+
+					<p style="padding:3px 10px 10px;font-size: 20px;line-height:1.2;margin-bottom: 0;">Chevy Traverse is stacked with convenient technology like the <span style="white-space: nowrap;">11-inch</span> diagonal Driver Information Center, and the impressive <span style="white-space: nowrap;">17.7-inch</span> diagonal display screen that can be personalized to your liking. Simplify every drive with Google<sup style="font-size: 16px;top: -0.1em;">™</sup> <span style="white-space: nowrap;">Built-in*</span> compatibility using apps like Google Assistant
+						<sup style="font-size: 16px;top: -0.1em;">™</sup>,* Google Maps<sup style="font-size: 16px;top: -0.1em;">™</sup> and Google Play<sup style="font-size: 16px;top: -0.1em;">™</sup>. And stay connected with available OnStar
+						<sup style="font-size: 13px;top: -0.3em;">®</sup>* services, which provide a variety of safety, entertainment, convenience and driver experience features.</p>
+				</div>
+				<div bis_skin_checked="1" class="col-sm-6 text-left" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/TECHNOLOGY.jpg?v=7IDhpS9Yo8SVELM8c/xw+w==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;margin-left: 15px;">
+				</div>
+			</div>
+
+
+			<div bis_skin_checked="1" class="row text-center hidden-sm hidden-md hidden-lg" style="margin: 0;background-color:#1f579b;color:#fff;">
+				<div class="col-sm-2 text-center" bis_skin_checked="1"></div>
+				<div bis_skin_checked="1" class="col-sm-3 text-center" style="padding: 20px 10px 20px 20px;text-align:center;">
+
+					<p style="padding:30px 10px 30px;font-size: 20px;line-height:1.2;margin-bottom: 0;">Chevy Traverse is stacked with convenient technology like the <span style="white-space: nowrap;">11-inch</span> diagonal Driver Information Center, and the impressive <span style="white-space: nowrap;">17.7-inch</span> diagonal display screen that can be personalized to your liking. Simplify every drive with Google<sup style="font-size: 16px;top: -0.1em;">™</sup> <span style="white-space: nowrap;">Built-in*</span> compatibility using apps like Google Assistant
+						<sup style="font-size: 16px;top: -0.1em;">™</sup>,* Google Maps<sup style="font-size: 16px;top: -0.1em;">™</sup> and Google Play<sup style="font-size: 16px;top: -0.1em;">™</sup>. And stay connected with available OnStar
+						<sup style="font-size: 13px;top: -0.3em;">®</sup>* services, which provide a variety of safety, entertainment, convenience and driver experience features.</p>
+				</div>
+				<div bis_skin_checked="1" class="col-sm-7 text-left" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/TECHNOLOGY.jpg?v=7IDhpS9Yo8SVELM8c/xw+w==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;"> </div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div bis_skin_checked="1" class="row inner2 text-center pad-top " style="padding-top:3px;">
+			<div bis_skin_checked="1" class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+					<span style="white-space: nowrap;">17.7-inch</span> diagonal color <span style="white-space: nowrap;">touch-screen<br>Standard</span>
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+					<span style="white-space: nowrap;">11-inch</span> diagonal Driver Information Center
+					<br>Standard
+				</p>
+			</div>
+			<div bis_skin_checked="1" class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+				<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+					HD Surround Vision*
+					<br>Available
+				</p>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div bis_skin_checked="1" style="max-width:960px;margin:15px auto;">
+			<div bis_skin_checked="1" class="row text-center " style="padding-top:0px;margin:0px;">
+				<div bis_skin_checked="1" class="col-sm-6 " style="padding:2px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Super_Cruise.jpg?v=ygaXq4j0jPCbSNHSM5gT1A==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				</div>
+				<div bis_skin_checked="1" class="col-sm-6 " style="padding:2px;">
+
+					<p style="padding:28px 20px 10px;font-size: 20px;line-height:1.2;text-transform:;margin:auto -10px;">
+						Super Cruise<sup style="font-size: 13px;top: -0.3em;">®</sup></p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">Enjoy a more relaxed and effortless
+						<span style="white-space: nowrap;">hands-free</span> driving experience on more than 585,000 miles of compatible roads in the U.S. and Canada with available <span style="white-space: nowrap;">Super Cruise<sup style="font-size: 13px;top: -0.3em;">®</sup></span>* driver assistance technology. When selected, you’ll get three years of <span style="white-space: nowrap;">Super
+                            Cruise<sup style="font-size: 13px;top: -0.3em;">®</sup></span>, plus Digital Services by OnStar
+						<sup style="font-size: 13px;top: -0.3em;">®</sup>, which includes an <span style="white-space: nowrap;">in-vehicle</span> <span style="white-space: nowrap;">Wi-Fi</span> Hotspot,* <span style="white-space: nowrap;">in-vehicle</span> apps* and Safety Services.* <span style="white-space: nowrap;">Super Cruise<sup style="font-size: 13px;top: -0.3em;">®</sup></span> is included in the Enhanced Driving Package which comes standard on High Country and RS.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div bis_skin_checked="1" id="getaquote" style="padding-top:30px;">
+			<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Colonial_Chevrolet_Traverse_2026_GAQ_MOVGIF.gif?v=JSFOoYkT2fiw1CEMgWCfWQ==" alt="get a quote" style="max-width:100%;display: inline-block;"> </a>
+		</div>
+
+
+		<div bis_skin_checked="1" style="padding-top:30px;padding-bottom: 30px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/IMAGE-3.jpg?v=srnGa8BwkkBumUqchhLrfg==" alt="image1" style="max-width:100%;display: inline-block;"> </div>
+
+
+		<div style="background-color:#1c579b;color:#fff;">
+			<div style="max-width:960px;margin:0px auto;">
+				<div class="row text-center" style="padding-top:23px;">
+					<div class="col-sm-12" style="padding: 0px; padding-bottom:7px;">
+
+						<p style="text-transform:uppercase;font-size: 38px;margin-bottom:0px;padding-left: 17px;padding-right: 17px;line-height:1.2;font-weight: 600;">
+							SAFETY</p>
+
+						<p style="padding: 0 10px;font-size: 30px;line-height:1.2;padding-left:15px;padding-right:15px;text-transform: uppercase;">
+							Ready with the assist</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center hidden-xs" style="margin: 0;background-color:#f1f1f1;color:#000;">
+				<div class="col-sm-7 text-left" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/SAFETY.jpg?v=5dm36iQp4y7Vi88nh8DuJg==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;"> </div>
+				<div class="col-sm-3 text-center" style="padding: 20px 10px 20px 20px;text-align:center;">
+
+					<p style="padding:58px 10px 10px;font-size: 20px;line-height:1.2;margin-bottom: 0;">The 2026 Traverse is packed with features like Chevy Safety Assist* and over 20 standard safety and driver assistance features* to help keep you and your passengers safe on the road.</p>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+			<div class="row text-center hidden-sm hidden-md hidden-lg" style="margin: 0;background-color:#f1f1f1;color:#000;">
+				<div class="col-sm-7 text-left" style="padding: 0;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/SAFETY.jpg?v=5dm36iQp4y7Vi88nh8DuJg==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;"> </div>
+				<div class="col-sm-3 text-center" style="padding: 20px 10px 20px 20px;text-align:center;">
+
+					<p style="padding:30px 10px 30px;font-size:18px;line-height:1.2;margin-bottom: 0;">The 2026 Traverse is packed with features like Chevy Safety Assist* and over 20 standard safety and driver assistance features* to help keep you and your passengers safe on the road.</p>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+		</div>
+		<div class="row inner2 text-center pad-top" style="margin-top:30px;">
+			<div class="col-sm-6 col-pad" style="padding:0px 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Front_Pedestrian_and_Bicycle_Braking.jpg?v=oIzQPRfBtNWZmCQgqD8xbQ==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				<p class="hidden-xs" style="padding:28px 0px 0px;margin:0;font-size: 20px;line-height:1.2;">Front Pedestrian and Bicycle Braking</p>
+
+				<p class="hidden-sm hidden-md hidden-lg" style="padding:28px 0px 28px;margin:0;font-size: 20px;line-height:1.2;">Front Pedestrian and Bicycle Braking </p>
+			</div>
+			<div class="col-sm-6 col-pad" style="padding:0px 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Blind_Zone_Steering_Assist.jpg?v=eZamp3Kktgkrfgyz15sRmg==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				<p class="hidden-xs" style="padding:28px 0px 0px;margin:0;font-size: 20px;line-height:1.2;">Blind Zone Steering Assist</p>
+
+				<p class="hidden-sm hidden-md hidden-lg" style="padding:28px 0px 28px;margin:0;font-size: 20px;line-height:1.2;">Blind Zone Steering Assist
+				</p>
+			</div>
+		</div>
+		<div class="row inner2 text-center pad-top " style="padding-top:30px;">
+			<div class="col-sm-6 col-pad" style="padding:0px 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Rear_Cross_Traffic_Braking.jpg?v=clm+g4RyccOHVbR9kMAgfQ==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				<p class="hidden-xs" style="padding:28px 0px 0px;margin:0;font-size: 20px;line-height:1.2;">Rear Cross Traffic Braking</p>
+
+				<p class="hidden-sm hidden-md hidden-lg" style="padding:28px 0px 28px;margin:0;font-size: 20px;line-height:1.2;">Rear Cross Traffic Braking
+				</p>
+			</div>
+			<div class="col-sm-6 col-pad" style="padding:0px 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Automatic_Emergency_Braking.jpg?v=w4R/lIJUov5iCFWu70XX1Q==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				<p class="hidden-xs" style="padding:28px 0px 0px;margin:0;font-size: 20px;line-height:1.2;">Automatic Emergency Braking</p>
+
+				<p class="hidden-sm hidden-md hidden-lg" style="padding:28px 0px 28px;margin:0;font-size: 20px;line-height:1.2;">Automatic Emergency Braking
+				</p>
+			</div>
+		</div>
+		<div class="row inner2 text-center pad-top" style="padding-top:30px;">
+			<div class="col-sm-3 col-pad" style="padding:0px 10px;"></div>
+			<div class="col-sm-6 col-pad" style="padding:0px 10px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Safety_Alert_Seat.jpg?v=lo45fS0bl02fjH/hsQrMNA==" alt="2025 Chevrolet Traverse" style="max-width:100%;display: inline-block;">
+
+				<p style="padding:28px 0px 0px;margin:0;font-size: 20px;line-height:1.2;">Safety Alert Seat</p>
+			</div>
+			<div class="col-sm-3 col-pad" style="padding:0px 10px;"></div>
+		</div>
+		<!----need2code------>
+		<div class="text-center hidden-xs" style=" padding:30px 0px 0px;margin:0;font-size: 20px;line-height:1.2;text-transform: uppercase;background-color: #f1f1f1;margin-top: 25px;">
+			Active safety and driver assistance features available for 2026</div>
+		<div class="text-center hidden-sm hidden-md hidden-lg" style=" padding:20px 6px 0px;margin:0;font-size: 20px;line-height:1.2;text-transform: uppercase;background-color: #f1f1f1;margin-top: 22px;">
+			Active safety and driver assistance features available for 2026</div>
+		<!-----need2code--END----->
+		<div style=" max-width:1440px;margin:0px auto;background-color: #f1f1f1;overflow: hidden;">
+			<div class="row inner2 text-center pad-top " style="padding-top:0px;background-color: #f1f1f1;">
+				<div class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+					<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Rear Pedestrian Alert</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">When in Reverse, can alert you to detected pedestrians directly behind your vehicle. It has limited nighttime and low visibility performance.
+					</p>
+				</div>
+				<div class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+					<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Adaptive Cruise Control</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">Allows you to set a cruise control speed and automatically follow a detected vehicle ahead at a <span style="white-space: nowrap;">driver-selected</span> following gap. If no vehicle is detected in your path, the feature works like regular cruise control. You can always override the feature and take control.</p>
+				</div>
+				<div class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+					<p style="padding:28px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Side Bicyclist Alert</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">Alerts you to a detected bicyclist that is approaching a side blind zone. Also, during a brief time after parking, the feature can alert you when a detected bicyclist is approaching so you don’t open your door.</p>
+				</div>
+			</div>
+			<div class="row inner2 text-center pad-top " style="padding-top:0px;background-color: #f1f1f1;">
+				<div class="col-sm-2 col-pad " style="padding:0px 10px;"></div>
+				<div class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+					<p style="padding:2px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Intersection Automatic Emergency Braking</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">Can help you avoid or reduce the severity of an intersection collision with a detected <span style="white-space: nowrap;">cross-traffic</span> vehicle. It provides alerts and can even automatically provide hard emergency braking or enhance the driver’s hard braking.</p>
+				</div>
+				<div class="col-sm-4 col-pad " style="padding:0px 10px;">
+
+					<p style="padding:2px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+						Lane Keep Assist with Lane Departure Warning</p>
+
+					<p style="padding:15px 6px 10px;font-size:18px;line-height:1.2;">Uses a brief steering wheel turn to alert you when it detects you are unintentionally drifting out of your lane lines. If needed, you may receive additional Lane Departure Warning alerts. System alerts do not occur if you’re using your turn signal or it detects you may be intentionally leaving your lane.</p>
+				</div>
+				<div class="col-sm-2 col-pad " style="padding:0px 10px;"> </div>
+			</div>
+		</div>
+
+
+
+
+		<div class="row inner2 text-center pad-top " style="padding-top:0px;">
+			<div class="col-sm-2 col-pad " style="padding:0px 10px;"> </div>
+			<div class="col-sm-8 col-pad" style="padding:0px 6px;">
+
+				<p style="padding:30px 0px 10px;font-size: 20px;line-height:1.2;text-transform: uppercase;margin:auto -10px;">
+					Standard</p>
+
+				<p style="padding:13px 2px 10px;font-size:18px;line-height:1.2;">• Forward Collision Alert
+					<br>• Following Distance Indicator
+					<br>• IntelliBeam<sup style="font-size: 13px;top: -0.3em;">®</sup>
+					<br>• Rear Park Assist
+					<br>• HD Rear Vision Camera
+					<br>• Lane Change Alert with Side Blind Zone Alert
+					<br>• Reverse Automatic Braking
+					<br>• Teen Driver
+					<br>• Buckle To Drive (Driver and <span style="white-space: nowrap;">front-seat</span> passenger)
+					<br>• Seat Belt Reminder (includes second and third rows)
+				</p>
+			</div>
+			<div class="col-sm-2 col-pad " style="padding:0px 10px;"> </div>
+		</div>
+		<div id="viewinventory " style="padding-top:8px;">
+			<a href="https://www.buycolonialchevrolet.com/searchnew.aspx?make=Chevrolet&model=Traverse&yearrange=2026-2026" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Colonial_Chevrolet_Traverse_2026_VI_MOVGIF.gif?v=nzGwDAMYMf1RnhkRDlwi9w==" alt="view inventory " style="max-width:100%;display: inline-block;"> </a>
+		</div>
+		<div style="padding-top:30px;padding-bottom: 12px;"> <img src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/IMAGE-4.jpg?v=g4d5PYkijiatAL79iiqKDw==" alt="image2" style="max-width:100% ;"> </div>
+		<!----need2code------>
+
+
+	</div>
+</div>
+
+<!----need2code------>
+
+
+
+
+
+<div style=" max-width:1440px;margin:0px auto;color: #000;overflow: hidden;">
+	<div style=" max-width:940px;margin:0px auto;">
+		<div class=" row text-center " id=" fourbuttons " style=" margin: 20px auto 20px;">
+			<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+				<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/get_a_quote.gif?v=ujxI3JNLH8lH+Ytb2rqqqQ==" alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+			<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+				<a href="https://www.buycolonialchevrolet.com/preapproved.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevy_Traverse/get_pre_aproved.gif?v=T59rNQvlO3jZwLVnhTsYlw==" alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+			<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+				<a href="https://www.buycolonialchevrolet.com/contactus.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/request_more_info.gif?v=JQ1bewrzbOAkmMZ9ALsIiw==" alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+			<div class="col-sm-3" style="padding:1px;padding-bottom:5px;">
+				<a href="https://www.buycolonialchevrolet.com/trade.aspx" style="display:block;"> <img src="https://cdn.dlron.us/static/dealer-28065/2025_Chevrolet_Trax/value_your_trade.gif?v=7ysIJSbYwoveRi/JXZzeCQ==" alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+			</div>
+		</div>
+	</div>
+	<!----need2code------>
+	<div style=" text-align: center;text-transform:uppercase;padding:40px 0px 6px;margin-bottom: 15px;font-weight: bold;margin-top: 0px;">
+
+		<h2 style=" font-size: 40px;font-weight: bold; margin-bottom: 0px;">MODELS</h2>
+	</div>
+	<!-----need2code--END----->
+	<div class=" row inner2 text-center ">
+		<div class=" col-sm-4 "> <img alt="LT" src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/LT.jpg?v=d2i6t44wH5Yr+r5dtB31Kg==" style=" width: 100%;">
+
+			<p style="color: #000;padding: 13px 20px 0px !important;margin-top: 0px;margin-bottom: 0;font-size: 32px;line-height: 1.4;">
+				LT </p>
+			<div class=" price " style=" color:#000;font-size: 19px;text-transform:none;"> Starting at </div>
+			<div class=" " style=" color:#000;padding: 0px 10px 10px;font-size: 32px;line-height: 1.3;"> $40,800*</div>
+		</div>
+		<div class=" col-sm-4 "> <img alt="Z71" src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/Z71.jpg?v=p80cSKwwUE4vY1XYLqFVNA==" style=" width: 100%;">
+
+			<p style="color: #000;padding: 13px 20px 0px !important;margin-top: 0px;margin-bottom: 0;font-size: 32px;line-height: 1.4;">
+				Z71 </p>
+			<div class=" price " style=" color:#000;font-size: 19px;text-transform:none;"> Starting at </div>
+			<div class=" " style=" color:#000;padding: 0px 10px 10px;font-size: 32px; line-height: 1.3;"> $48,900*</div>
+		</div>
+		<div class=" col-sm-4 "> <img alt="High Country" src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/HIGH_COUNTRY.jpg?v=+51AL9ZZdHKR/0Jd/7kADA==" style=" width: 100%;">
+
+			<p style="color: #000;padding: 13px 5px 0px !important;margin-top: 0px;margin-bottom: 0;font-size: 32px;line-height: 1.4;text-transform: uppercase;">
+				High Country</p>
+			<div class=" price " style=" color:#000;font-size: 19px;text-transform:none;"> Starting at </div>
+			<div class=" " style=" color:#000;padding: 0px 10px 10px;font-size: 32px;line-height: 1.3;">$57,100*</div>
+		</div>
+	</div>
+	<div class=" model-pad row inner2 text-center " style=" margin-top:15px;">
+		<div class="  col-sm-4 "> </div>
+		<div class=" col-sm-4 "> <img alt="RS" src="https://cdn.dlron.us/static/dealer-28065/2026_Chevrolet_Traverse/RS.jpg?v=Q5OlZkzo6j9egqv8WAUtFA==" style=" width: 100%;">
+
+			<p style="color: #000;padding: 13px 20px 0px !important;margin-top: 0px;margin-bottom: 0;font-size: 32px;line-height: 1.4;">
+				RS</p>
+			<div class=" price " style=" color:#000;font-size: 19px;text-transform:none;"> Starting at </div>
+			<div class=" " style=" color:#000;padding: 0px 10px 10px;font-size: 32px;line-height: 1.3;">$57,400*</div>
+		</div>
+		<div class=" col-sm-4 "> </div>
+	</div>
+	<div style=" max-width:1440px;margin:0px auto;color: #000;overflow: hidden;">
+		<div class=" inner2 " style=" padding-top:300px;padding-left:15px;padding-right:15px;font-size:14px;">
+
+			<p><strong>2026 Chevy Traverse</strong></p>
+
+			<p><strong>Get to Know the 2026 Chevy Traverse Marlborough, MA, from Colonial Chevrolet</strong> </p>
+
+			<p>The 2026 Chevrolet Traverse Marlborough, MA, brings bold design, advanced technology and <span style="white-space: nowrap;">family-friendly</span> flexibility to Colonial Chevrolet of Acton. Redesigned to offer more capability and comfort than ever before, this midsize SUV delivers powerful performance and everyday convenience wrapped in a striking exterior. </p>
+
+			<p><strong>Which Chevy dealers have the 2026 Chevy Traverse near Marlborough, MA, for test drives? </strong>
+			</p>
+
+			<p>Colonial Chevrolet is your destination for the 2026 Chevrolet Traverse Marlborough, MA. Under the hood, every trim level features a <span style="white-space: nowrap;">2.5-liter</span> turbocharged <span style="white-space: nowrap;">four-cylinder</span> engine that generates 328 horsepower and 326 <span style="white-space: nowrap;">lb-ft</span> of torque. Paired with an <span style="white-space: nowrap;">8-speed</span> automatic transmission, the 2026 Chevy Traverse Marlborough, MA, offers responsive acceleration and smooth shifts whether you're cruising down the highway or navigating city streets. Drivers can choose between standard <span style="white-space: nowrap;">front-wheel</span> drive or opt for an available <span style="white-space: nowrap;">twin-clutch</span> <span style="white-space: nowrap;">all-wheel</span> drive system for added traction in unpredictable weather or terrain.
+			</p>
+
+			<p>The interior of the 2026 Chevrolet Traverse Marlborough, MA, offers a spacious and adaptable layout that seats up to eight passengers with its standard <span style="white-space: nowrap;">second-row</span> bench seat and <span style="white-space: nowrap;">third-row</span> 60/40 split configuration. Drivers who prefer a <span style="white-space: nowrap;">seven-passenger</span> setup can choose <span style="white-space: nowrap;">second-row</span> captain’s chairs with SmartSlide <span style="white-space: nowrap;">one-touch</span> access. Premium configurations at our Chevy dealership also offer available <span style="white-space: nowrap;">power-folding</span> seats in the second and third rows, making it easier to expand cargo space when needed. With both rear rows folded, the 2026 Chevrolet Traverse Marlborough, MA, opens up to nearly 98 cubic feet of maximum cargo <span style="white-space: nowrap;">capacity—perfect</span> for busy family schedules and weekend getaways.</p>
+
+			<p>The cabin features modern tech designed for today's connected lifestyle. A standard <span style="white-space: nowrap;">17.7-inch</span> color touchscreen integrates Google<sup style="font-size: 16px;top: -0.1em;">™</sup> <span style="white-space: nowrap;">Built-in,</span> giving drivers access to Google Maps<sup style="font-size: 16px;top: -0.1em;">™</sup>, Google Assistant
+				<sup style="font-size: 16px;top: -0.1em;">™</sup> and Google Play<sup style="font-size: 16px;top: -0.1em;">™</sup>. The digital <span style="white-space: nowrap;">11-inch</span> Driver Information Center offers quick visibility of speed, fuel, navigation prompts and alerts. Bluetooth<sup style="font-size: 13px;top: -0.3em;">®</sup> connectivity, voice recognition and <span style="white-space: nowrap;">Wi-Fi</span> capabilities keep passengers entertained and in touch. Optional features like HD Surround Vision and Super Cruise<sup style="font-size: 13px;top: -0.3em;">®</sup> <span style="white-space: nowrap;">hands-free</span> <span style="white-space: nowrap;">driving—available</span> on select <span style="white-space: nowrap;">trims—bring</span> premium convenience to your daily routine.
+			</p>
+
+			<p>The 2026 Chevrolet Traverse Marlborough, MA, stands out with sculpted lines, LED lighting and distinct grille options tailored to each trim. Standard <span style="white-space: nowrap;">18-inch</span> aluminum wheels offer a clean, confident look, while appearance packages like Midnight and Sport add flair with black accents and <span style="white-space: nowrap;">gloss-black</span> <span style="white-space: nowrap;">20-inch</span> wheels. The athletic RS trim steps it up with <span style="white-space: nowrap;">22-inch</span> wheels and sporty design details, while the Z71 offers rugged elements such as red tow hooks and a skid plate for adventurous drivers. Chevy Safety Assist equips every 2026 Chevrolet Traverse Marlborough, MA, with a robust suite of driver assistance tools. These include automatic emergency braking, lane departure warning with lane keep assist, blind spot alerts, rear <span style="white-space: nowrap;">cross-traffic</span> notifications, IntelliBeam headlights and a rearview camera. Additional enhancements like Driver Attention Alert, a <span style="white-space: nowrap;">360-degree</span> camera system and <span style="white-space: nowrap;">hands-free</span> driving technology are available to further support your awareness on the road.
+			</p>
+
+			<p><strong>Where can I test drive a 2026 Chevy Traverse Marlborough, MA?</strong></p>
+
+			<p>Visit Colonial Chevrolet to see what makes the 2026 Chevrolet Traverse Marlborough, MA, stand out from the competition. From <span style="white-space: nowrap;">tech-savvy</span> features to thoughtful comfort and capability, this SUV is designed to meet the needs of modern families and busy professionals alike. Schedule your test drive today.</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class=" inner2 " style=" padding-top:300px;padding-left:15px;padding-right:15px;font-size:11px;">
+
+			<p>*MSRP: The Manufacturer's Suggested Retail Price excludes destination freight charge, tax, title, license, dealer fees and optional equipment. To see all Chevrolet vehicles’ destination freight charges, visit https://www.chevrolet.com/destination-freight-charges Colonial Chevrolet sets the final price.</p>
+
+			<p>Design
+				<br>*Available on LT. Midnight Edition available in Mosaic Black Metallic; Sport Edition available in Polar White Tricoat,* Summit White, Radiant Red Tintcoat, Lakeshore Blue Metallic, Stardust Metallic and Sterling Gray Metallic.
+				<br>*Available on LT. <span style="white-space: nowrap;">8-passenger</span> seating comes with <span style="white-space: nowrap;">second-row</span> bench seat. Z71, RS and High Country have standard <span style="white-space: nowrap;">7-passenger</span> seating, which includes
+				<span style="white-space: nowrap;">second-row</span> captain’s chairs.
+				<br>*With <span style="white-space: nowrap;">second-</span> and <span style="white-space: nowrap;">third-row</span> seats folded flat. Cargo and load capacity limited by weight and distribution.
+				<br>*With <span style="white-space: nowrap;">second-</span> and <span style="white-space: nowrap;">third-row</span> seats folded flat. Cargo and load capacity limited by weight and distribution. Based on latest available competitive data.
+			</p>
+
+			<p>Technology
+				<br>*Google<sup style="font-size: 13px;top: 0.1em;">™</sup> <span style="white-space: nowrap;">Built-in</span> services are subject to limitations and availability may vary by vehicle, infotainment system and location. Select service plan required. Certain Google<sup style="font-size: 13px;top: 0.1em;">™</sup> Actions and functionality may require account linking. User terms and privacy statements apply. Google<sup style="font-size: 13px;top: 0.1em;">™</sup>, Google Play<sup style="font-size: 13px;top: 0.1em;">™</sup>, and Google Maps<sup style="font-size: 13px;top: 0.1em;">™</sup> are trademarks of Google<sup style="font-size: 13px;top: 0.1em;">™</sup> LLC.
+				<br>*Google Assistant<sup style="font-size: 13px;top: 0.1em;">™</sup> is not available in certain languages and countries. Requires internet connection.
+				<br>*Visit onstar.com for details and limitations. Services vary by model. Service plan required.
+				<br>*Safety or driver assistance features are no substitute for the driver's responsibility to operate the vehicle in a safe manner. Read the vehicle Owner's Manual for important feature limitations and information.
+				<br>*Always pay attention while driving and when using Super Cruise<sup style="font-size: 10px;top: -0.3em;">®</sup>. Do not use a <span style="white-space: nowrap;">hand-held</span> device. Requires active Super Cruise<sup style="font-size: 10px;top: -0.3em;">®</sup> plan or trial. Terms apply. Visit chevysupercruise.com for compatible roads and full details.
+				<br>*Service varies with conditions and location. Requires active service plan. See onstar.com?for details and limitations. Vehicle must be on or in the accessory position for <span style="white-space: nowrap;">Wi-Fi</span> to function.
+				<br>*Available on select 2017 model year and newer GM vehicles with compatible hardware. <span style="white-space: nowrap;">Third-party</span> trademarks are the property of their respective
+				<span style="white-space: nowrap;">third-party</span> owners and used under agreement. Requires active service plan. See?onstar.com for details and limitations.
+				<br>*OnStar<sup style="font-size: 10px;top: -0.3em;">®</sup> plan, working electrical system, cell reception and GPS signal required. OnStar<sup style="font-size: 10px;top: -0.3em;">®</sup> links to emergency services. Service coverage varies with conditions and location. See?onstar.com for coverage map, details and limitations.
+			</p>
+
+			<p>Capability
+				<br>*Maximum trailering ratings are intended for comparison purposes only. Before you buy a vehicle or use it for trailering, carefully review the Trailering section of the Owner’s Manual. The trailering capacity of your specific vehicle may vary. The weight of passengers, cargo and options or accessories may reduce the amount you can <span style="white-space: nowrap;">trailer.<br>*GM-estimated.</span> Based on GM testing. Official EPA estimates not yet available.</p>
+
+			<p>Safety
+				<br>*Chevy Safety Assist includes Automatic Emergency Braking, Front Pedestrian Braking, Lane Keep Assist with Lane Departure Warning, Forward Collision Alert, IntelliBeam and Following Distance Indicator. Safety or driver assistance features are no substitute for the driver's responsibility to operate the vehicle in a safe manner. Read the vehicle Owner’s Manual for important feature limitations and information.
+				<br>*Safety or driver assistance features are no substitute for the driver's responsibility to operate the vehicle in a safe manner. Read the vehicle Owner's Manual for important feature limitations and information.
+				<br>*Safety or driver assistance features are no substitute for the driver’s responsibility to operate the vehicle in a safe manner. The driver should remain attentive to traffic, surroundings and road conditions at all times. Visibility, weather and road conditions may affect feature performance. Read the vehicle Owner’s Manual for more important feature limitations and information.
+			</p>
+		</div>
+	</div>
+</div>
+
+<p class=" text-center " style=" padding-top:15px;padding-bottom:0px;font-size:15px;">Powered By<a href=" http://automotiveadvertisinggroup.com/ " rel=" noreferrer noopener " style=" text-decoration: none;" target=" _blank "> Automotive Advertising Group</a></p>
