@@ -1,0 +1,1573 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .main-div {
+    max-width: 1439px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .main-div1 {
+    max-width: 1439px;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+  }
+  .main-div .trd {
+    top: -0.3em;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .main-div .reg {
+    top: -0em;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .modl sup {
+    top: -0.7em;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .seo .reg {
+    top: 0.1em;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .seo .trd {
+    top: -0.2em;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .dis .reg {
+    top: 0.1em;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .dis .trd {
+    top: -0.1em;
+    font-size: 11px;
+    font-weight: 100;
+  }
+  .banner-div {
+    position: relative;
+  }
+  .banner-div p {
+    position: absolute;
+    top: 2px;
+    left: 6%;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .banner-price {
+    margin-bottom: 0;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    padding: 465px 0 0 980px;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .offer-div {
+    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/bd79c11768924e21b99112afab1225d9.jpg');
+    background-repeat: no-repeat;
+    height: 508px;
+  }
+  .offer-div1 {
+    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/bd79c11768924e21b99112afab1225d9.jpg');
+    background-repeat: no-repeat;
+    height: 408px;
+  }
+  .offer-div > .row {
+    max-width: 1260px;
+    margin: -1px auto 0;
+  }
+  .offer-div1 > .row {
+    max-width: 1260px;
+    margin: -1px auto 0;
+  }
+  .ofr_had_line {
+    border-top: 1px solid #0078c1;
+    margin-top: 20px;
+    width: 42%;
+  }
+  .offer_car {
+    margin-top: 25px;
+    margin-left: 230px; /* width: 95%; */
+    max-width: 81%;
+    padding-bottom: 7%;
+  }
+  .car_name {
+    margin: 0 0 0 40px;
+    font-size: 26px !important;
+    padding-top: 2px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 0;
+    white-space: nowrap;
+    padding-top: 62px;
+  }
+  .car_modl_trim {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 40px;
+    display: none;
+  }
+  .ofr_leas {
+    font-size: 45px;
+    margin-bottom: 0;
+    line-height: 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 60px;
+    margin-left: 40px;
+  }
+  .ofr_detail {
+    color: #fff;
+    margin: 0 0 15px 42px;
+    font-size: 16px;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+  .no_offer {
+    color: #fff;
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 1.3em;
+    margin-left: 40px;
+  }
+  .ofr_disc {
+    padding: 0 25px;
+    color: #000;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .heading {
+    margin: 0 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    background: #3F3F3F;
+    padding: 20px 0 20px 80px !important;
+    text-align: center;
+    font-size: 18px !important;
+    line-height: 1;
+    text-align: left;
+  }
+  .inner-1 {
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  .inner-2 {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .inner-3 {
+    max-width: 965px;
+    margin: 0 auto;
+  }
+  .inner-4 {
+    max-width: 1295px;
+    margin: 0 auto;
+  }
+  .inner-5 {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+  }
+  .inner-6 {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+  # {
+    padding-top: 0;
+  }
+  .Flex-D {
+    display: flex;
+    align-items: center;
+  }
+  .Flex-D .head_2 {
+    padding: 5px 10px 10px;
+    margin-top: 0;
+  }
+  .Flex-D .para_2 {
+    line-height: 1.1;
+  }
+  .box_1 {
+    margin: 30px 0 0;
+    background-color: #D50001;
+    color: #fff;
+  }
+  .line {
+    border-top: 1px solid #0078c1;
+    margin: 30px auto 15px;
+    max-width: 110px;
+  }
+  .line2 {
+    border-top: 1px solid #0078c1;
+    margin: 30px auto 15px 0;
+    max-width: 80px;
+  }
+  .border {
+    padding: 1px;
+    background-color: #0374bb;
+  }
+  .box_1 h4 {
+    padding: 10px 10px 0;
+    margin-bottom: 0;
+    font-size: 39px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .box_p1 {
+    padding: 15px 5px 10px 80px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px !important;
+    text-align: left;
+  }
+  .box_p2 {
+    padding: 8px 20px 10px 80px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    font-size: 15px !important;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .bg_white_sec {
+    margin: 0;
+    background-color: #ffffff;
+    color: #000;
+  }
+  .bg_black_sec {
+    margin: 0;
+    background-color: #030303;
+    color: #fff;
+  }
+  .bg_black_sec_2 {
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+  }
+  .bg_grey_sec {
+    margin: 0;
+    background-color: #262626;
+    color: #fff;
+  }
+  .bg_green_sec {
+    margin: 0;
+    background-color: #9b0004;
+    color: #fff;
+  }
+  .bg_lightgreen_sec {
+    margin: 0;
+    background-color: #3c6d5d;
+    color: #fff;
+  }
+  .head_2 {
+    padding: 20px 5px 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .para_2 {
+    padding: 10px 17px;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .para_3 {
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+  }
+  .para_A {
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    font-weight: 500 !important;
+    margin-top: -15px !important;
+  }
+  .HS-Sec {
+    margin-top: -30px;
+  }
+  .mdl_had {
+    color: #000 !important;
+    text-align: center;
+    font-size: 36px;
+    padding: 0 40px 10px;
+  }
+  .mdlname {
+    padding: 0 21px;
+    margin-bottom: 0;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    margin-top: 15px;
+    line-height: 1.3em;
+    text-align: center;
+    color: #000;
+    margin-top: 5% !important;
+    text-transform: uppercase;
+  }
+  .mdl_msrp {
+    padding: 10px 35px 25px;
+    font-size: 12px;
+    line-height: 1.9;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin-bottom: -20px !important;
+  }
+  .malmrp {
+    padding: 0 35px;
+    font-size: 10px !important;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .mdl_msrps {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .Mdl_mrp {
+    color: #000;
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .mdl_vi {
+    color: #ff2d2d !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .head_2 {
+    padding: 20px 5px 15px;
+    margin-bottom: 0;
+    font-size: 17px !important;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+  .head_3 {
+    padding: 45px 5px 15px;
+    margin-bottom: 0;
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .sns-pd-in-12 {
+    padding-inline: 12vw;
+  }
+  .sns-pd-in-5 {
+    padding-inline: 5vw !important;
+  }
+  .col-sm-3 .mdlname h4:nth-of-type(2) {
+    margin-top: 5px !important;
+  }
+  .sns-pt-30px {
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    .banner-div p {
+      position: initial;
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: -1px;
+      background-color: #000;
+      padding-top: 10px;
+    }
+    .ofr_leas {
+      text-align: center;
+    }
+    .ofr_detail {
+      text-align: center;
+    }
+    .car_name {
+      margin: 0 0 0 15px;
+      font-size: 26px !important;
+      padding-top: 2px;
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+      padding-bottom: 0;
+      white-space: nowrap;
+      padding-top: 62px;
+    }
+    .ofr_disc {
+      padding-top: 25px;
+      padding-inline: 20px;
+    }
+    .car_modl_trim {
+      font-size: 14px;
+      color: #fff;
+      margin-left: 15px;
+      display: none;
+    }
+    .sns-pt-30px {
+      margin-top: 30px;
+    }
+    .heading {
+      margin: 0 !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      background: #741604;
+      padding: 20px 0 20px 40px !important;
+      text-align: center;
+      font-size: 18px !important;
+      line-height: 1;
+      text-align: left;
+    }
+    .banner-price {
+      margin-bottom: 0;
+      color: #fff !important;
+      font-size: 18px !important;
+      font-weight: 500;
+      padding: 10px 0 0;
+      text-align: center;
+      line-height: 1.2;
+      background-color: #000;
+    }
+    .offer-div {
+      height: unset;
+    }
+    .offer-div1 {
+      height: unset;
+    }
+    .ofr_had_line {
+      width: 30%;
+    }
+    .offer_car {
+      margin-top: 0;
+      margin-left: 0;
+      max-width: 100%;
+    }
+    # > .col-sm-3 {
+      padding: 10px 1px;
+    }
+    .HS-Sec {
+      margin-top: 0;
+      padding: 50px 0;
+    }
+    .Flex-D {
+      flex-direction: column;
+    }
+    .box_1 h4 {
+      font-size: 30px;
+    }
+    .para_2 {
+      margin-bottom: 10px;
+    }
+    .Flex-D .head_2 {
+      padding: 20px 10px 10px;
+    }
+    .mdl_had {
+      font-size: 30px;
+    }
+    .box_p1 {
+      padding: 15px 5px 10px 40px;
+      line-height: 1.3;
+      margin-bottom: 0;
+      color: #fff;
+      font-weight: 500;
+      font-size: 30px !important;
+      text-align: left;
+    }
+    .box_p2 {
+      padding: 10px 20px 10px 40px;
+      line-height: 1.4em;
+      margin-bottom: 15px;
+      font-size: 18px !important;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    .sns-pd-in-12 {
+      padding-inline: 20px;
+    }
+    .sns-pd-in-5 {
+      padding-inline: unset !important;
+    }
+  }
+</style>
+<p>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JJmsjbJ2kM9x3uVsYlfu4ISzv8Z6ru5GzmoXBK/07Q1Nw1W4jC9t59+f2wAeRx0b"
+    crossorigin="anonymous"></script>
+</p>
+<div class="main-div">
+  <div class="banner-div">
+    <p>2025 DODGE DURANGO</p>
+    <p class="banner-price">Starting MSRP: $41,995*</p><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/50e1763d175d4939b68e324735fc2051.jpg"
+      alt="banner"
+      style="max-width: 100%;" /></div>
+  <div class="offer-div">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1 class="car_name">2025 Dodge DURANGO
+        </h1>
+        <p class="car_modl_trim" style="display: none;">DURANGO R/T AWD</p>
+        <p class="ofr_leas" style="display: none;">6.9% APR</p>
+        <p class="ofr_detail" style="display: none;">For 72 months<sup style="font-size: 16px; top: -0.3em">+</sup>
+        </p>
+        <p class="no_offer" style="">Please contact Melloy Dodge Ram FIAT for the latest lease and finance offers.</p>
+      </div>
+      <div class="col-sm-9" style="padding-top: 5px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/716fc0666e2242039115a677e02e58ad.png"
+          alt="Offer Car"
+          class="offer_car" /></div>
+      <div class="ofr_disc">
+        <p style="display: none;">*Offer applies to 2025 DURANGO GT AWD.<br/>+ 6.9% APR financing for 72 months equals $17.00 per month per $1,000 financed for well-qualified buyers through Stellantis Financial Services regardless of down payment. Not all buyers will qualify. Not compatible with any other incentive programs or offers. Residency restrictions apply. Contact Melloy Dodge Ram FIAT for details. Must take delivery by 02/02/2026.</p>
+      </div>
+    </div>
+  </div>
+  <div class="inner-6" style="padding-top: 0%;">
+    <div id="" class="row text-center">
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/new-inventory/index.htm?year=2025-2025&make=Dodge&model=Durango" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+            alt="view inventroy"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+            alt="get"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+            alt="get pre approved"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+            alt="value your trade"
+            style="max-width: 100%;" /></a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width: 1439px; margin: 0% auto; background-color: #000; overflow: hidden; margin-top: 30px; color: #fff;">
+    <div class="row text-center" style="padding: 20px 0px 70px; margin: 0px auto; max-width: 1300px;">
+      <div class="col-sm-6" style="padding: 2px;">
+        <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">710</h1>
+        <p class="para_A">MAX HORSEPOWER</p>
+      </div>
+      <div class="col-sm-6" style="padding: 2px;">
+        <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">8,700</h1>
+        <p class="para_A">
+          <span style="white-space: nowrap;">BEST-IN-CLASS</span>
+          AVAILABLE TOWING CAPACITY (LB)
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center box_1" style="margin-bottom: 30px; box-shadow: 0 9px 17px -9px grey;">
+    <div class="col-sm-4 text-right" style="padding: 0px;">
+      <h4 class="heading" style="background-color: #3E3E3E;">design</h4>
+      <p class="box_p1">BEAUTY AND<br/>THE BEAST</p>
+      <p class="box_p2">Aggressively iconic on the outside, comfortable and intuitive on the inside, the 2025 Dodge DURANGO is designed to give committed drivers the
+        <span style="white-space: nowrap;">performance-focused</span>
+        thrill they deserve.
+      </p>
+    </div>
+    <div class="col-sm-8 text-left" style="padding: 0;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e8119c6e3e6b4adeac831d9302235c6c.jpg"
+        alt="2025 Dodge DURANGO"
+        style="max-width: 100%; display: inline;" /></div>
+  </div>
+  <div class="inner-1 bg_white_sec" style="padding-top: 0px; box-shadow: 0px 15px 45px -34px grey; margin-bottom: 28px; color: #000;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 13px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3318e51cff994d12a64a0523e4b74dc4.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DURANGO SRT<sup>&reg;</sup>
+            HELLCAT: CATCH IT IF YOU CAN</h4>
+          <p class="para_2">Get behind the wheel of the fastest and most powerful
+            <span style="white-space: nowrap;">gas-engine</span>
+            American SUV ever. Check out three SRT<sup>&reg;</sup>
+            Hellcat Special Editions with distinct combinations that have never been available before.
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/79e2612ce5944fd1b0694f5871d91193.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DURANGO SRT<sup>&reg;</sup>
+            HELLCAT SILVER BULLET</h4>
+          <p class="para_2">A Triple Nickel body color and Ebony Red Nappa
+            <span style="white-space: nowrap;">leather-trimmed</span>
+            SRT<sup>&reg;</sup>
+            seats bring sleek attitude to this
+            <span style="white-space: nowrap;">performance-inspired</span>
+            superstar.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center" style="padding-bottom: 20px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32ef31d7426d48008536b461b4c46a21.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DURANGO SRT<sup>&reg;</sup>
+            HELLCAT BRASS MONKEY</h4>
+          <p class="para_2">With a Red Oxide body color,
+            <span style="white-space: nowrap;">20-inch</span>
+            Brass Monkey wheels and Sepia Laguna
+            <span style="white-space: nowrap;">leather-trimmed</span>
+            SRT<sup>&reg;</sup>
+            seats, this Special Edition Hellcat exudes
+            <span style="white-space: nowrap;">old-school</span>
+            flair.
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a60abdef4ab1416aad5286752a144155.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DURANGO SRT<sup>&reg;</sup>
+            HELLCAT HAMMERHEAD</h4>
+          <p class="para_2">
+            <span style="white-space: nowrap;">20-inch</span>
+            Satin Carbon wheels, a Night Moves body color and Laguna
+            <span style="white-space: nowrap;">leather-trimmed</span>
+            seats in unique Hammerhead Gray provide a menacing appearance on a
+            <span style="white-space: nowrap;">high-performance</span>
+            SUV.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1 bg_green_sec" style="margin-bottom: 30px; background-color: #a61132; margin-top: 35px;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+        <div class="col-sm-6" style="padding: 2px;">
+          <h4 class="head_2 hidden-xs" style="padding-top: 37px; padding-inline: 1px;">ALWAYS BET ON BLACK</h4>
+          <h4 class="head_2 hidden-sm hidden-md hidden-lg" style="padding-top: 20px; padding-inline: 20px;">ALWAYS BET ON BLACK</h4>
+          <p class="para_2">Our available R/T and GT Blacktop<sup>&reg;</sup>
+            Packages strike a menacing figure, from the gloss black exterior badges and details to the
+            <span style="white-space: nowrap;">20x8-inch</span>
+            Black Noise aluminum wheels on R/T models.
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 0px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4564c622e3b9465687cc848ebfe421d8.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1 bg_white_sec" style="color: #000;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 28px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/eb584ec1052845c2ba37614dac550437.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+        <div class="col-sm-6" style="padding: 2px;">
+          <h4 class="head_2" style="padding-top: 25px;">DRAW THE LINE</h4>
+          <p class="para_2">Get a visual flex on performance with the available Mopar<sup>&reg;</sup>
+            dual racing stripes for the DURANGO R/T and GT models in colors like Sterling Silver, Bright Blue, Gunmetal Low Gloss and Flame Red.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1 bg_white_sec" style="padding-top: 0px; background-color: #000; margin-bottom: 20px;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #000;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/739b99fbb93e48eca7bf1a38e358bf8c.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8cf428671a3345acaaab0e87dbb22147.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/90afe1bee2934e18b52824f1314ea408.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/664b0d55951045cb850772daf19c5fbd.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="inner-1"
+    style="box-shadow: 0px 10px 20px -10px grey; background-color: #000; color: #fff;"
+    bis_skin_checked="1">
+    <div
+      class="inner-4"
+      style="margin-bottom: 28px;"
+      bis_skin_checked="1">
+      <div class="row text-center" style="padding-top: 5px;">
+        <h4 class="head_2" style="padding-inline: 11px;">GET LIT</h4>
+        <p class="para_2 hidden-xs">The LED headlights on the 2025 Dodge DURANGO keep the path ahead<br/> illuminated so you always know what you&rsquo;re driving into next.</p>
+        <p class="para_2 hidden-sm hidden-md hidden-lg" style="padding-inline: 20px;">The LED headlights on the 2025 Dodge DURANGO keep the path ahead illuminated so you always know what you&rsquo;re driving into next.</p>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-bottom: 40px; padding-top: 20px; margin: 0px; color: #fff;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/04f0dd0a52fa47579a4c58129c9a0015.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LED HEADLIGHTS</h4>
+          <p class="para_2">The LED
+            <span style="white-space: nowrap;">low-</span>
+            and
+            <span style="white-space: nowrap;">high-beam</span>
+            headlights on the 2025 DURANGO shed needed light on whatever&rsquo;s on the road ahead.
+          </p>
+        </div>
+        <div
+          class="col-sm-6"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/02e5df6984634501b14dd31ac36aeb22.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LED TAILLIGHTS</h4>
+          <p class="para_2">The signature Dodge LED Racetrack Taillight on the back end of the DURANGO offers other drivers a flash of burning scarlet before they&rsquo;re left behind.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/395c15498c2d403bb2801d4c2636f3c3.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding-inline: 11px;">AVAILABLE
+            <span style="white-space: nowrap;">AUTO-LEVELING</span>
+            HEADLIGHTS
+          </h4>
+          <p class="para_2">From steep hills to tilted highways, our available
+            <span style="white-space: nowrap;">auto-leveling</span>
+            headlights position the beams of light as high or low as is necessary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #000;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/01b4b16897ad41ee9617cb3f4f58f913.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">REACH FOR THE SKY</h4>
+          <p class="para_2">An available power sunroof lets you access fresh air and inspiring views with the press of a button.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e121b131c22b4abeb0ab63e36b0d8e66.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">PILE IT ON</h4>
+          <p class="para_2 hidden-xs">Our
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            available Stow N Place<sup>&reg;</sup>
+            Roof Rack System* can handle up to 150 pounds of extra equipment and cargo. A packed trunk is only the beginning.
+          </p>
+          <p class="para_2 hidden-sm hidden-md hidden-lg" style="padding-bottom: 0; margin-bottom: -5px;">Our
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            available Stow N Place<sup>&reg;</sup>
+            Roof Rack System* can handle up to 150 pounds of extra equipment and cargo. A packed trunk is only the beginning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 25px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f3e00f8813f34171809f0127ed1d3de2.jpg"
+      alt="image-1"
+      style="max-width: 100%;" /></div>
+  <div id="" style="margin-top: 30px;">
+    <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/81c53cf677614638b0c5b4481ec0976b.gif"
+        alt="get"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div style="padding-top: 30px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e803a827fab6489e944e4482d2767724.jpg"
+      alt="image-2"
+      style="max-width: 100%;" /></div>
+  <div class="row text-center box_1">
+    <div class="col-sm-4 text-right" style="padding: 0px;">
+      <h4 class="heading">TECHNOLOGY</h4>
+      <p class="box_p1">INTUITIVE AT<br/> EVERY TURN</p>
+      <p class="box_p2">Seamlessly integrated and intuitively customizable, the technology in the 2025 Dodge DURANGO puts the driver at the center of its connective interface.</p>
+    </div>
+    <div class="col-sm-8 text-left" style="padding: 0;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7384a30b62c244e8837bf83eeb2406b5.jpg"
+        alt="2025 Dodge DURANGO"
+        style="max-width: 100%; display: inline;" /></div>
+  </div>
+  <div class="inner-1 bg_white_sec" style="color: #fff; background-color: #000; margin-bottom: 30px; box-shadow: 0 3px 20px -3px grey;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 0px; margin: 0px; padding-top: 30px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3f5215776aff4f9994070fff54320af5.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /></div>
+        <div class="col-sm-6" style="padding: 2px;">
+          <h4 class="head_2">LET Uconnect<sup>&reg;</sup>
+            5 ELEVATE YOUR EXPERIENCE</h4>
+          <p class="para_2">Engage your Uconnect<sup>&reg;</sup>
+            5 system via the luminous
+            <span style="white-space: nowrap;">10.1-inch</span>
+            touchscreen and effortlessly connect with your personal smartphone, giving you access to entertainment, apps and performance stats via an
+            <span style="white-space: nowrap;">easy-to-use</span>
+            interface.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1" style="box-shadow: 0 16px 21px -21px grey;">
+    <div class="inner-4" bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-bottom: 10px; padding-top: 0px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/51c62e69234a4587a8d07c7c7bed89ed.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">STAY CONNECTED WITH DODGE CONNECT</h4>
+          <p class="para_2">Whether you&rsquo;re in the driver seat of your vehicle or in the comfort of your home, Uconnect<sup>&reg;</sup>
+            lets you stay connected and in control with available Dodge Connect*. With the Uconnect<sup>&reg;</sup>
+            5 infotainment system and Dodge app*, you can access features ranging from safety and security to available navigation straight from your vehicle or smartphone, providing the personalized benefits you deserve in your connected world.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/dac4ca83f40241eba8fa7f6e9f30ba84.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding-inline: 3px;">INTRODUCING THE DODGE APP</h4>
+          <p class="para_2">Experience the latest in connectivity and convenience in the palm of your hand. The customizable interface provides multiple ways to access features and stay connected to your vehicle.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7db8ee435b9a4d23aa5c0af7005d1191.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: uppercase;">Entertain The Whole Crew</h4>
+          <p class="para_2">Explore the open road from the comfort of your Dodge Brand vehicle. Enjoy a wide range of entertainment options, including
+            <span style="white-space: nowrap;">commercial-free</span>
+            music, podcasts, playlists and local radio. Keep both front and rear passengers entertained with
+            <span style="white-space: nowrap;">Amazon Alexa<sup>&reg;</sup>
+            </span>* in your vehicle. You can even connect a gaming console through the HDMI port for endless entertainment possibilities. Plus, with Uconnect<sup>&reg;</sup>
+            5 and the option of SiriusXM<sup>&reg;</sup>
+            with 360L*, you'll never have to worry about missing out on the content you love.
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6f3c3f359eb5436dbad49b0470b728e6.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">STAY CONNECTED</h4>
+          <p class="para_2">Your smartphone integrates seamlessly with your available Uconnect<sup>&reg;</sup>
+            system to let you make and receive calls*, reply to text messages*, play songs and more, right from your Dodge Brand vehicle. Enjoy the features of your smartphone with the convenience of your Uconnect<sup>&reg;</sup>
+            system.</p>
+        </div>
+      </div>
+      <div class="row text-center" style="padding-bottom: 28px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/981fcf4808f74f59a50901b9a01e323c.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">AT YOUR COMMAND</h4>
+          <p class="para_2">With several ways to access the features of the Uconnect<sup>&reg;</sup>
+            system, including Voice Command, on your Dodge Brand vehicle, you and your passengers will enjoy control over your entertainment, available navigation, climate and more.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/464e7a0c419d47ec83b81302fe7ded23.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">FROM DRIVEWAY TO DESTINATION</h4>
+          <p class="para_2">Go forth without fear in your Dodge Brand vehicle with available navigation guiding you and delivering information about your route along the way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1">
+    <div class="inner-4" bis_skin_checked="1">
+      <div class="row text-center" style="padding-block: 10px 20px;">
+        <h4 class="head_2">CONNECTED TO EVERY MILE</h4>
+        <p class="para_2">The 2025 Dodge DURANGO offers standard and available connectivity services that let your vehicle live by your rules.</p>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-bottom: 5px; padding-top: 0px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div class="row text-center" style="padding-bottom: 20px; margin: 0px;">
+          <div class="col-sm-6" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f1ea96ec058e4574b965d9d287359878.jpg"
+              alt="2025 Dodge DURANGO"
+              style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">PERFORMANCE AND SRT<sup>&reg;</sup>
+              PAGES</h4>
+            <p class="para_2">Know how your vehicle is operating with Performance and SRT<sup>&reg;</sup>
+              Pages. Essential stats like vehicle dynamics,
+              <span style="white-space: nowrap;">g-force,</span>
+              engine health and more can be easily accessed via the Uconnect<sup>&reg;</sup>
+              touchscreen.
+            </p>
+          </div>
+          <div class="col-sm-6" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/626652c8ca9d4039b318ea5c46632cdc.jpg"
+              alt="2025 Dodge DURANGO"
+              style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">AVAILABLE SiriusXM<sup>&reg;</sup>
+            </h4>
+            <p class="para_2">Over 150 channels of music, news and entertainment are yours to enjoy in any DURANGO model equipped with available SiriusXM<sup>&reg;</sup>*.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="inner-1 bg_black_sec_2"
+    style="padding-top: 0px; background-color: #000;"
+    bis_skin_checked="1">
+    <div class="inner" bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-bottom: 20px; margin: 0px; color: #fff; padding-top: 10px;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-12"
+          style="padding-top: 0px;"
+          bis_skin_checked="1">
+          <div class="inner-4" bis_skin_checked="1">
+            <h1 class="hidden-xs" style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 0PX; color: #ffff; line-height: 1.4em;margin-bottom: 4px;">
+              SAFETY &amp; SECURITY: GUARDIAN OF MUSCLE</h1>
+            <h1 class="hidden-sm hidden-md hidden-lg" style="font-size: 30px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 0PX; color: #ffff; line-height: 1.4em; padding-inline: 10px;">
+              SAFETY &amp; SECURITY: GUARDIAN OF MUSCLE</h1>
+            <p class="para_2" style="text-align: center; padding-bottom: 10px; color: #fff;">Sensors, cameras and integrated convenience technology allow the safety and security features of the 2025 Dodge DURANGO to instill an extra measure of confidence in drivers who know what needs to be protected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-1 bg_green_sec" style="background-color: #d50001;">
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+          <div class="col-sm-6" style="padding: 2px;">
+            <h4 class="head_2 hidden-xs" style="padding-top: 45px; padding-inline: 1px; margin-bottom: -3px;">LAYERS OF CONFIDENCE</h4>
+            <h4 class="head_2 hidden-sm hidden-md hidden-lg" style="padding-top: 20px; padding-inline: 20px;">LAYERS OF CONFIDENCE</h4>
+            <p class="para_2">Every 2025 Dodge DURANGO comes equipped with standard safety and security features that bring elevated assurance to the road ahead.</p>
+          </div>
+          <div class="col-sm-6" style="padding: 0px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/64e8113f246641bfa873259417085bc2.jpg"
+              alt="2025 Dodge DURANGO"
+              style="max-width: 100%; display: inline-block;" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-4" bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-top: 0px; padding-bottom: 20px; margin: 0px;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px; margin-top: -2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/03193f580cbe421eaa833ddac619d7aa.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding-top: 0; margin-top: 0;">Blind Spot Monitoring*<br/> with Rear Cross Path Detection</h4>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px; margin-top: -2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2bbdb2f3182c4a54b988600b42bf7b74.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0; padding-top: 0; padding-inline: 10px;">Advanced Brake Assist with Ready Alert Braking*</h4>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px; margin-top: -2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1b781247b5724c41b95a747261b25599.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0; padding-top: 0;">ParkView<sup>&reg;</sup>
+            Rear Back Up Camera*</h4>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px; margin-top: -2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ecb65e7195794affbdaf37ccaa5e4dfb.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0; padding-top: 0;">Electronic Stability Control*</h4>
+        </div>
+      </div>
+    </div>
+    <div class="inner-4" bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-top: 0px; padding-bottom: 0px; margin: 0px;"
+        bis_skin_checked="1">
+        <h4 class="head_2">DOUBLE DOWN</h4>
+        <p class="para_2" style="padding-bottom: 0;">Looking to upgrade your peace of mind? The 2025 Dodge DURANGO offers a lineup of available safety and security features to help lock in driver confidence.</p>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-top: 20px; padding-bottom: 20px; margin: 0px;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/462b9c6096c4453a9ee2b86e3d15e2a1.jpg" style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">LaneSense<sup>&reg;</sup>
+            LANE DEPARTURE WARNING WITH LANE KEEP ASSIST</h4>
+          <p class="para_2">Available LaneSense<sup>&reg;</sup>
+            Lane Departure Warning with Lane Keep Assist* can provide audible and visual alerts when an unintentional lane drift is detected. The feature can also provide steering input to help keep your vehicle from drifting out of its lane.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/17131e5cf8984779981bad9de9ec07af.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">BLIND SPOT MONITORING WITH TRAILER TOW DETECTION</h4>
+          <p class="para_2">Even the incredible towing capacity of the 2025 Dodge DURANGO is protected with the available Blind Spot Monitoring* with Trailer Tow Detection System, included in the available Trailer Tow Package. When the driver engages the turn signal, the system alerts them if a vehicle is in their blind spot or on the side of their trailer. Those big hauls just got a lot easier.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5822e1630e3e4a209e6528b8ed58ef43.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">FORWARD COLLISION WARNING WITH FULL STOP</h4>
+          <p class="para_2">Available Forward Collision Warning with Full Stop* uses audible and visible alerts to let the driver know when a forward collision is incoming, and can even use automated emergency braking to bring the vehicle to a full stop as needed.</p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8e911d2975fe4f8baede0bc299af73ea.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">ADAPTIVE CRUISE CONTROL WITH STOP</h4>
+          <p class="para_2">The available Adaptive Cruise Control with Stop* feature uses sensor input to keep the DURANGO a predetermined distance from the vehicle in front of it. If necessary, the system can even bring the vehicle to a complete stop.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 30px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e573ef09ecf74ae0900270dd7370ab65.jpg"
+      alt="image-3"
+      style="max-width: 100%;" /></div>
+  <div id="" style="margin-top: 30px;">
+    <a href="https://www.melloydodge.com/new-inventory/index.htm?year=2025-2025&make=Dodge&model=Durango" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8624b5116abc42adbe86214fbea1d0bd.gif"
+        alt="view inventory"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div style="padding-top: 30px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e7838486fdf94440a904a84a5c656c7e.jpg"
+      alt="image-4"
+      style="max-width: 100%;" /></div>
+  <div class="row text-center box_1">
+    <div class="col-sm-4 text-right" style="padding: 0px;">
+      <h4 class="heading">performance</h4>
+      <p class="box_p1" style="padding-top: 16px;">DYNAMIC THRILL</p>
+      <p class="box_p2">Roaring through the junction of
+        <span style="white-space: nowrap;">track-inspired</span>
+        performance and the brute strength of its muscle car legacy, the 2025 Dodge DURANGO brings together speed and brawn with
+        <span style="white-space: nowrap;">awe-inspiring</span>
+        results&mdash;including
+        <span style="white-space: nowrap;">Best-in-Class</span>
+        V8 power*.
+      </p>
+    </div>
+    <div class="col-sm-8" style="padding: 0;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fd3637dbca4c45e0950a776a59dedeea.jpg"
+        alt="2025 Dodge DURANGO"
+        style="width: 100%; display: inline;" /></div>
+  </div>
+  <div
+    class="inner-1 bg_black_sec_2"
+    style="padding-top: 30px; background-color: #000; padding-bottom: 50px; margin-bottom: 30px; box-shadow: 0 6px 17px -7px grey;"
+    bis_skin_checked="1">
+    <div class="inner-1 bg_grey_sec" style="background-color: #3e3e3e;">
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+          <div class="col-sm-6" style="padding: 0px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8c4bb08657f54fc99a688017bb37c450.jpg"
+              alt="2025 Dodge DURANGO"
+              style="max-width: 100%; display: inline-block;" /></div>
+          <div class="col-sm-6" style="padding: 2px;">
+            <h4 class="head_2" style="padding-top: 30px;">DURANGO SRT<sup>&reg;</sup>
+              HELLCAT: TOO FAST TO LAST</h4>
+            <p class="para_2">The legendary Dodge DURANGO SRT<sup>&reg;</sup>
+              Hellcat Special Editions represent the pinnacle of performance and distinctive design, while also rocking the title of the fastest* and most powerful
+              <span style="white-space: nowrap;">gas-engine</span>
+              American SUV ever*.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 8px; margin: 0px; color: #ffffff; padding-top: 10px;">
+        <h4 class="head_2">HEART OF THE STORM</h4>
+        <p class="para_2">Any of the three available engines on the 2025 DURANGO promises exceptional performance and might, whether you&rsquo;re towing cargo, opening it up on the road or just picking up the crew. Explore your options for horsepower, towing and more below.</p>
+      </div>
+      <div class="row text-center" style="padding-bottom: 15px; margin: 0px; color: #ffffff;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a571735795ef497c80f349ac9f198d8b.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">SUPERCHARGED 6.2L<br/> HEMI<sup>&reg;</sup>
+            V8 ENGINE</h4>
+          <p class="para_2">Standard on all DURANGO SRT<sup>&reg;</sup>
+            Hellcat Special Editions, the Supercharged 6.2L HEMI<sup>&reg;</sup>
+            V8 engine makes the Hellcat the most powerful
+            <span style="white-space: nowrap;">gas-engine</span>
+            SUV ever*.
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">710<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">MAX
+              <span style="white-space: nowrap;">HORSEPOWER</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">3.5<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">0-60 MPH TIME
+              <span style="white-space: nowrap;">(SEC)</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">645<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">LB-FT OF MAX TORQUE</span>
+          </p>
+          <p class="hidden-xs" style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">8,700 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">BEST-IN-CLASS AVAILABLE<br/> TOWING*
+            </span>
+          </p>
+          <p class="hidden-sm hidden-md hidden-lg" style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em; padding-bottom: 30px;">
+            8,700 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">BEST-IN-CLASS AVAILABLE<br/> TOWING*
+            </span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2038b17b5311408999bf546a643da5b3.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">5.7L HEMI<sup>&reg;</sup>
+            V8 ENGINE</h4>
+          <p class="para_2">Torque, towing, horsepower AND incredible efficiency&mdash;when properly equipped with variable valve timing and an
+            <span style="white-space: nowrap;">eight-speed</span>
+            automatic transmission, the 5.7L HEMI<sup>&reg;</sup>
+            V8 engine offers them all in spades. Standard on DURANGO R/T.
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">360<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">MAX
+              <span style="white-space: nowrap;">HORSEPOWER</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">6.2 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">0-60 MPH TIME
+              <span style="white-space: nowrap;">(SEC)</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">390<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">LB-FT OF MAX TORQUE</span>
+          </p>
+          <p class="hidden-xs" style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">7,400 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">STANDARD TOWING CAPACITY (LB)*
+            </span>
+          </p>
+          <p class="hidden-sm hidden-md hidden-lg" style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em; padding-bottom: 30px;">
+            7,400 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">STANDARD TOWING CAPACITY (LB)*
+            </span>
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7d2696fdd9e549ed998fafa977e10608.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="margin-top: 0;">3.6L Pentastar<sup>&reg;</sup>
+            V6 ENGINE</h4>
+          <p class="para_2">Power and efficiency reach a united crescendo when the 3.6L Pentastar<sup>&reg;</sup>
+            V6 engine is coupled with an
+            <span style="white-space: nowrap;">eight-speed</span>
+            automatic transmission. We&rsquo;re talking 295 horsepower, 260
+            <span style="white-space: nowrap;">pound-feet</span>
+            of torque and a
+            <span style="white-space: nowrap;">Best-in-Class</span>
+            V6 towing capacity of 6,200
+            <span style="white-space: nowrap;">pounds*--with</span>
+            a manufacturer&rsquo;s estimate of up to 26 highway MPG* to boot. Standard on DURANGO GT.
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">295<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">MAX
+              <span style="white-space: nowrap;">HORSEPOWER</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">7.4 <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">0-60 MPH TIME
+              <span style="white-space: nowrap;">(SEC)</span>
+            </span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">260<br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">LB-FT OF MAX TORQUE</span>
+          </p>
+          <p style="font-size: 35px; font-weight: bold; padding-top: 10px; line-height: 0.7em;">6,200+ <br/><span style="font-size: 18px; font-weight: 500; line-height: 0em;">V6 TOWING CAPACITY* (LB)
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="inner-1 bg_grey_sec">
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+          <div class="col-sm-6" style="padding: 2px;">
+            <h4 class="head_2" style="padding-top: 20px;">AVAILABLE
+              <span style="white-space: nowrap;">ALL-WHEEL-DRIVE</span>
+              (AWD) SYSTEM
+            </h4>
+            <p class="para_2">The available AWD system offers maximum confidence and traction on uneven roads. Whether it&rsquo;s the dirt of the trail or the
+              <span style="white-space: nowrap;">patched-up</span>
+              highway on your commute, this system provides a hefty dose of additional control to your drive.
+            </p>
+          </div>
+          <div class="col-sm-6" style="padding: 0px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b1376b35e1c34976bb274bb6b7473281.jpg"
+              alt="2025 Dodge DURANGO"
+              style="max-width: 100%; display: inline-block;" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1" style="padding-bottom: 10px; margin-bottom: 32px; box-shadow: 0 22px 27px -30px gray;">
+    <div
+      class="inner-2"
+      style="max-width: 1300px;"
+      bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-bottom: 10px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-6"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/08f1699fb4da4c9f80d6967e8b4e1518.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TRAILER SWAY CONTROL</h4>
+          <p class="para_2">Trailer Sway Control* applies brake pressure to alternating wheels while adjusting engine throttle, helping your 2025 Dodge DURANGO to stay steady on your next big haul.</p>
+        </div>
+        <div
+          class="col-sm-6"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/681a34f664234c9fb158c39423f4af51.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">AVAILABLE PADDLE SHIFTERS</h4>
+          <p class="para_2">Available paddle shifters change your game by allowing you to upshift and downshift without ever taking your hands off the wheel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1" style="padding-bottom: 0px; margin-bottom: 0px;">
+    <div
+      class="inner-2"
+      style="max-width: 1300px;"
+      bis_skin_checked="1">
+      <div
+        class="row text-center"
+        style="padding-bottom: 10px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <h4 class="head_2" style="padding-top: 0;">BUSTING OUT THE BIG GUNS</h4>
+        <p class="para_2">The dynamic driving systems within the 2025 Dodge DURANGO help this performance SUV be driven with precision and power.</p>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-bottom: 10px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/083042d0a1624ab8b10f0cc73cee9a90.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
+            <span style="white-space: nowrap;">EIGHT-SPEED</span>
+            AUTOMATIC TRANSMISSION
+          </h4>
+          <p class="para_2">A
+            <span style="white-space: nowrap;">top-of-the-line</span>
+            automatic transmission housing eight forward gears ups the efficiency and performance power of your 2025 DURANGO.
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f5d7102695474bbca53139b6b0dc87d3.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">WEIGHT DISTRIBUTION</h4>
+          <p class="para_2">Keep it level as
+            <span style="white-space: nowrap;">near-perfect</span>
+            weight distribution helps DURANGO maintain a solid grip on the road beneath it, allowing it to maneuver with optimal balance and improved handling.
+          </p>
+        </div>
+        <div
+          class="col-sm-6"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a4d11e3899404c3ea73bdb6d2ca35ca1.jpg"
+            alt="2025 Dodge DURANGO"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Bilstein<sup>&reg;</sup>&nbsp;<span style="white-space: nowrap;">HIGH-PERFORMANCE</span>
+            SUSPENSION</h4>
+          <p class="para_2">The available Bilstein<sup>&reg;</sup>&nbsp;<span style="white-space: nowrap;">Active-Damping</span>
+            <span style="white-space: nowrap;">High-Performance</span>
+            Suspension helps provide a smooth ride even on uneven roads by adjusting the vertical position of the wheels and axles as needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 0px;" bis_skin_checked="1"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6202b083dbb84e408cc416078f0ab609.jpg"
+      alt="image-5"
+      style="max-width: 100%;" /></div>
+  <div
+    id="get"
+    style="padding-top: 30px;"
+    bis_skin_checked="1">
+    <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/81c53cf677614638b0c5b4481ec0976b.gif"
+        alt="get"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div style="padding-top: 30px;" bis_skin_checked="1"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/92e71d11c8e3416399cb314ea474aa49.jpg"
+      alt="image-6"
+      style="max-width: 100%;" /></div>
+  <div class="inner-6">
+    <div
+      id=""
+      class="row text-center"
+      style="padding-top: 35px;">
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/new-inventory/index.htm?year=2025-2025&make=Dodge&model=Durango" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+            alt="view inventroy"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+            alt="get"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+            alt="get pre approved"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+            alt="value your trade"
+            style="max-width: 100%;" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4 modl">
+    <div class="mdl_had hidden-xs" style="padding-top: 30px; color: #000 !important; padding-bottom: 40px;">2025 DODGE DURANGO</div>
+    <div class="mdl_had hidden-sm hidden-md hidden-lg" style="padding-top: 30px; color: #000 !important; padding-bottom: 20px;">2025 DODGE DURANGO</div>
+    <div class="row text-center" style="padding-top: 15px; margin: 0px; color: #000;">
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9255c1232a5a4166a48f1b3d8407958e.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
+          <span style="text-transform: uppercase;">GT RWD</span>
+        </h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$41,995*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b9395655f442404e814d53cef862c647.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">GT PLUS AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$48,390*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1b29bcc80c3b4fb5b1b4662b9b7470ff.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">R/T AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$54,890*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/85f7406943ee4b82a7ff902edbc2ab1a.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
+          <span style="text-transform: uppercase;">R/T PLUS AWD</span>
+        </h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$57,890*</span>
+        </p>
+      </div>
+    </div>
+    <div class="row text-center" style="margin: 0px; padding-top: 35px; color: #000;">
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e66146997ce84e24bbd9d615ea6113a0.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
+          <span style="text-transform: uppercase;">R/T PREMIUM AWD</span>
+        </h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$61,390*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f42da728f08c40e5a010377c55799131.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">R/T 20TH ANNIVERSARY PLUS AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$66,970*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d1f4463a401b4ba2bd1444c5d248a428.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">R/T 20TH ANNIVERSARY PREMIUM AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$70,865*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/89b8909e762e4d91a28eeaa31df5e1ba.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
+          <span style="text-transform: uppercase;">SRT<sup>&reg;</sup>
+            HELLCAT SILVER BULLET AWD</span>
+        </h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$113,720*</span>
+        </p>
+      </div>
+    </div>
+    <div class="row text-center" style="margin: 0px; padding-top: 35px; color: #000;">
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8445ec85facc42cf92d4e448d9e6af84.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" style="padding-inline: 4px;">SRT<sup>&reg;</sup>
+          HELLCAT HAMMERHEAD AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$113,720*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fd7fc19958d64a86bdc6982405006479.jpg"
+          alt="2025 Dodge DURANGO"
+          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">SRT<sup>&reg;</sup>
+          HELLCAT BRASS MONKEY AWD</h4>
+        <p class="malmrp">
+          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$113,720*</span>
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"></div>
+      <div class="col-sm-3" style="padding: 2px;"></div>
+    </div>
+  </div>
+  <div class="inner-2 seo">
+    <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 14px;">
+      <p>
+        <b>2025 Dodge DURANGO</b>
+      </p>
+      <p></p>
+      <p>
+        <b>Introducing the 2025 Dodge DURANGO Albuquerque, NM, from Melloy Dodge</b>
+      </p>
+      <p>Get ready to see the 2025 Dodge DURANGO Albuquerque, NM, on display at Melloy Dodge. Designed to deliver both power and comfort, this Dodge SUV is equipped with features that cater to diverse needs. Whether you’re commuting through downtown traffic or venturing into the mountains, you’ll find the DURANGO’s performance, technology and design elements are perfect for any lifestyle. See for yourself on a test drive at our Dodge and Ram dealership Albuquerque, NM</p>
+      <p></p>
+      <p>
+        <b>Which Dodge dealers have the 2025 Dodge DURANGO in Albuquerque, NM for test drives?</b>
+      </p>
+      <p>With multiple trims, including the GT and R/T lineups, you’re sure to find a 2025 Dodge DURANGO Albuquerque, NM, to test drive at Melloy Dodge. This luxury SUV brings bold power to the road with a 3.6L Pentastar<sup>&reg;</sup>
+        V6 engine, delivering 295 horsepower alongs ide an 8-speed automatic transmission and
+        <span style="white-space: nowrap;">rear-wheel</span>
+        drive. If more muscle is what you crave, consider opting for the 5.7L HEMI<sup>&reg;</sup>
+        V8 that channels 360 horsepower or the exhilarating supercharged 6.2L HEMI<sup>&reg;</sup>
+        SRT<sup>&reg;</sup>
+        V8 boasting up to 710 horsepower. These engine upgrades include features like Bilstein<sup>&reg;</sup>&nbsp;<span style="white-space: nowrap;">Active-Damping</span>&nbsp;<span style="white-space: nowrap;">High-Performance</span>
+        Suspension and Brembo<sup>&reg;</sup>
+        Brakes.
+      </p>
+      <p></p>
+      <p>The interior of the 2025 Dodge DURANGO Albuquerque, NM, is something you’ll love. Standard amenities include
+        <span style="white-space: nowrap;">7-passenger</span>
+        seating, cloth seats,
+        <span style="white-space: nowrap;">three-zone</span>
+        automatic temperature Control and a
+        <span style="white-space: nowrap;">tilt-telescope</span>
+        steering column. Drivers looking for additional luxury can explore
+        <span style="white-space: nowrap;">high-end</span>
+        trim levels for Sepia Laguna leather seats or
+        <span style="white-space: nowrap;">second-row</span>
+        captain chairs that make family trips a breeze. Keeping connected is effortless through the standard UConnect<sup>&reg;</sup>
+        5 system, which integrates a 10.1-inch touchscreen, 6 Alpine<sup>&reg;</sup>
+        Speakers,
+        <span style="white-space: nowrap;">Apple CarPlay<sup>&reg;</sup>
+        </span>
+        and Google<sup style="font-size: 14px; top: -.2em;">&trade;</sup>&nbsp;<span style="white-space: nowrap;">Android Auto<sup style="font-size: 14px; top: -.2em;">&trade;</sup>
+        </span>
+        smartphone syncing. If you want something even more advanced, step up to premium configurations with wireless smartphone syncing, a
+        <span style="white-space: nowrap;">Harman Kardon<sup>&reg;</sup>
+        </span>
+        Premium Audio System with 19 speakers or SRT<sup>&reg;</sup>
+        Performance Pages that let you monitor real-time driving stats
+      </p>
+      <p></p>
+      <p>On the exterior, the 2025 Dodge DURANGO Albuquerque, NM, shines with standard
+        <span style="white-space: nowrap;">18–inch</span>
+        wheels and LED Projector Headlamps designed for enhanced visibility in a variety of conditions. Upgrades such as
+        <span style="white-space: nowrap;">Rain-Sensing</span>
+        Wipers or a power sunroof add further convenience and style. Additionally, the SRT<sup>&reg;</sup>
+        Hellcat Brass Monkey Wheel and flat run tires are available for those who want more aggressive styling and performance. A power liftgate ensures easy loading and unloading, too
+      </p>
+      <p></p>
+      <p>Ensuring your peace of mind, every 2025 Dodge DURANGO Albuquerque, NM, trim boasts a suite of safety features that includes
+        <span style="white-space: nowrap;">blind-spot</span>
+        and
+        <span style="white-space: nowrap;">cross-path</span>
+        detection, advanced multistage front air bags and ParkSense<sup>&reg;</sup>
+        rear
+        <span style="white-space: nowrap;">park-assist.</span>
+        Optional systems like advanced brake assist, adaptive cruise control and LaneSense<sup>&reg;</sup>
+        lane departure warnings with lane keep assist further enhance safety for you and your passengers in the 2025 Dodge DURANGO Albuquerque, NM.
+      </p>
+      <p></p>
+      <p>
+        <b>Where can I test drive a 2025 Dodge DURANGO Albuquerque, NM</b>
+      </p>
+      <p>If you’re ready to embrace performance and practicality, it’s time to test drive the 2025 Dodge DURANGO Albuquerque, NM, at our Dodge Ram dealership in Albuquerque. Visit Melloy Dodge to see this SUV for yourself and learn more about financing options, available trims and test drive opportunities.</p>
+    </div>
+  </div>
+  <div class="inner-2 dis">
+    <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 11px; margin-bottom: 30px;">
+      <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base model, optional equipment not included. A more expensive model may be shown. Pricing and offers may change at any time without notification. Contact Melloy Dodge Ram FIAT for full pricing details.
+      </p>
+      <p>*Refer to https://www.dodge.com/2025/DURANGO.html for additional disclosures.
+      </p>
+    </div>
+  </div>
+</div>

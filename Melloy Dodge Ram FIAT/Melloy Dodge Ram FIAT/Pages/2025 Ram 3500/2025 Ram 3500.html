@@ -1,0 +1,1576 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .main-div {
+    max-width: 1439px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .main-div1 {
+    max-width: 1439px;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+  }
+  .main-div .trd {
+    top: -0.3em;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .main-div .reg {
+    top: -0em;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .modl sup {
+    top: -0.2em;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .seo .reg {
+    top: 0.1em;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .seo .trd {
+    top: -0.2em;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .dis .reg {
+    top: 0.1em;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .dis .trd {
+    top: -0.1em;
+    font-size: 11px;
+    font-weight: 100;
+  }
+  .banner-div {
+    position: relative;
+  }
+  .banner-div p {
+    position: absolute;
+    top: 2px;
+    left: 6%;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .banner-price {
+    margin-bottom: 0;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    padding: 465px 0 0 980px;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .offer-div {
+    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/31b4d12b4c9a400ea4816e2cc27d6630.jpg');
+    background-repeat: no-repeat;
+    height: 445px;
+  }
+  .offer-div1 {
+    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/31b4d12b4c9a400ea4816e2cc27d6630.jpg');
+    background-repeat: no-repeat;
+    height: 408px;
+  }
+  .offer-div > .row {
+    max-width: 1260px;
+    margin: -1px auto 0;
+  }
+  .offer-div1 > .row {
+    max-width: 1260px;
+    margin: -1px auto 0;
+  }
+  .ofr_had_line {
+    border-top: 1px solid #0078c1;
+    margin-top: 20px;
+    width: 42%;
+  }
+  .offer_car {
+    margin-top: 25px;
+    margin-left: 230px; /* width: 95%; */
+    max-width: 81%;
+    padding-bottom: 3%;
+  }
+  .car_name {
+    margin: 0 0 0 40px;
+    font-size: 26px !important;
+    padding-top: 2px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 0;
+    white-space: nowrap;
+    padding-top: 30px;
+  }
+  .car_modl_trim {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 40px;
+  }
+  .ofr_leas {
+    font-size: 45px;
+    margin-bottom: 0;
+    line-height: 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 65px;
+    margin-left: 40px;
+  }
+  .ofr_detail {
+    color: #fff;
+    margin: 35px 0 15px 40px;
+    font-size: 16px;
+    padding-top: 30px;
+    font-weight: 500;
+  }
+  .no_offer {
+    color: #fff;
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 1.3em;
+    margin-left: 40px;
+    display: none;
+  }
+  .ofr_disc {
+    padding: 0 25px;
+    color: #000;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .heading {
+    margin: 0 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    background: #741604;
+    padding: 20px 0 20px 80px !important;
+    text-align: center;
+    font-size: 18px !important;
+    line-height: 1;
+    text-align: left;
+  }
+  .inner-1 {
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  .inner-2 {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .inner-3 {
+    max-width: 965px;
+    margin: 0 auto;
+  }
+  .inner-4 {
+    max-width: 1295px;
+    margin: 0 auto;
+  }
+  .inner-5 {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+  }
+  .inner-6 {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+  #fourbuttons {
+    padding-top: 45px;
+  }
+  .Flex-D {
+    display: flex;
+    align-items: center;
+  }
+  .Flex-D .head_2 {
+    padding: 5px 10px 10px;
+    margin-top: 0;
+  }
+  .Flex-D .para_2 {
+    line-height: 1.1;
+  }
+  .box_1 {
+    margin: 30px 0 0;
+    background-color: #9b0004;
+    color: #fff;
+  }
+  .line {
+    border-top: 1px solid #0078c1;
+    margin: 30px auto 15px;
+    max-width: 110px;
+  }
+  .line2 {
+    border-top: 1px solid #0078c1;
+    margin: 30px auto 15px 0;
+    max-width: 80px;
+  }
+  .border {
+    padding: 1px;
+    background-color: #0374bb;
+  }
+  .box_1 h4 {
+    padding: 10px 10px 0;
+    margin-bottom: 0;
+    font-size: 39px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .box_p1 {
+    padding: 15px 5px 10px 80px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px !important;
+    text-align: left;
+  }
+  .box_p2 {
+    padding: 8px 20px 10px 80px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    font-size: 15px !important;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .bg_white_sec {
+    margin: 0;
+    background-color: #ffffff;
+    color: #000;
+  }
+  .bg_black_sec {
+    margin: 0;
+    background-color: #030303;
+    color: #fff;
+  }
+  .bg_black_sec_2 {
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+  }
+  .bg_grey_sec {
+    margin: 0;
+    background-color: #262626;
+    color: #fff;
+  }
+  .bg_green_sec {
+    margin: 0;
+    background-color: #9b0004;
+    color: #fff;
+  }
+  .bg_lightgreen_sec {
+    margin: 0;
+    background-color: #3c6d5d;
+    color: #fff;
+  }
+  .head_2 {
+    padding: 20px 5px 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  .para_2 {
+    padding: 10px 17px;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .para_3 {
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+  }
+  .para_A {
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    font-weight: 500 !important;
+    margin-top: -15px !important;
+  }
+  .HS-Sec {
+    margin-top: -30px;
+  }
+  .mdl_had {
+    color: #000 !important;
+    text-align: center;
+    font-size: 36px;
+    padding: 0 40px 10px;
+  }
+  .mdlname {
+    padding: 0 21px;
+    margin-bottom: 0;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    margin-top: 15px;
+    line-height: 1.3em;
+    text-align: center;
+    color: #000;
+    margin-top: -10% !important;
+    text-transform: uppercase;
+  }
+  .mdl_msrp {
+    padding: 10px 35px 25px;
+    font-size: 12px;
+    line-height: 1.9;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin-bottom: -20px !important;
+  }
+  .malmrp {
+    padding: 0 35px;
+    font-size: 10px !important;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .mdl_msrps {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .Mdl_mrp {
+    color: #000;
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .mdl_vi {
+    color: #ff2d2d !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .head_2 {
+    padding: 20px 5px 15px;
+    margin-bottom: 0;
+    font-size: 17px !important;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+  .head_3 {
+    padding: 45px 5px 15px;
+    margin-bottom: 0;
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .sns-pd-in-12 {
+    padding-inline: 12vw;
+  }
+  .sns-pd-in-5 {
+    padding-inline: 5vw !important;
+  }
+  .col-sm-3 .mdlname h4:nth-of-type(2) {
+    margin-top: 5px !important;
+  }
+  .sns-pt-30px {
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    .banner-div p {
+      position: initial;
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: -1px;
+      background-color: #000;
+      padding-top: 10px;
+    }
+    .car_name {
+      margin: 0 0 0 60px;
+      font-size: 26px !important;
+      padding-top: 2px;
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+      padding-bottom: 0;
+      white-space: nowrap;
+      padding-top: 30px;
+    }
+    .ofr_leas {
+      text-align: center;
+    }
+    .ofr_detail {
+      text-align: center;
+    }
+    .ofr_disc {
+      padding-top: 25px;
+      padding-inline: 20px;
+    }
+    .sns-pt-30px {
+      margin-top: 30px;
+    }
+    .heading {
+      margin: 0 !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      background: #741604;
+      padding: 20px 0 20px 40px !important;
+      text-align: center;
+      font-size: 18px !important;
+      line-height: 1;
+      text-align: left;
+    }
+    .banner-price {
+      margin-bottom: 0;
+      color: #fff !important;
+      font-size: 18px !important;
+      font-weight: 500;
+      padding: 10px 0 0;
+      text-align: center;
+      line-height: 1.2;
+      background-color: #000;
+    }
+    .offer-div {
+      height: unset;
+    }
+    .offer-div1 {
+      height: unset;
+    }
+    .ofr_had_line {
+      width: 30%;
+    }
+    .offer_car {
+      margin-top: 0;
+      margin-left: 0;
+      max-width: 100%;
+    }
+    #fourbuttons > .col-sm-3 {
+      padding: 10px 1px;
+    }
+    .HS-Sec {
+      margin-top: 0;
+      padding: 50px 0;
+    }
+    .Flex-D {
+      flex-direction: column;
+    }
+    .box_1 h4 {
+      font-size: 30px;
+    }
+    .para_2 {
+      margin-bottom: 10px;
+    }
+    .Flex-D .head_2 {
+      padding: 20px 10px 10px;
+    }
+    .mdl_had {
+      font-size: 30px;
+    }
+    .box_p1 {
+      padding: 15px 5px 10px 40px;
+      line-height: 1.3;
+      margin-bottom: 0;
+      color: #fff;
+      font-weight: 500;
+      font-size: 30px !important;
+      text-align: left;
+    }
+    .box_p2 {
+      padding: 10px 20px 10px 40px;
+      line-height: 1.4em;
+      margin-bottom: 15px;
+      font-size: 18px !important;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    .sns-pd-in-12 {
+      padding-inline: 20px;
+    }
+    .sns-pd-in-5 {
+      padding-inline: unset !important;
+    }
+  }
+</style>
+<div class="main-div">
+  <div class="banner-div">
+    <p>THE NEW 2025 RAM 3500</p>
+    <p class="banner-price">Starting MSRP: $46,570*</p><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7100c96c05794446a6ce8bafb4d41025.jpg"
+      alt="Banner"
+      style="max-width: 100%;" /></div>
+  <div class="offer-div">
+    <div class="row">
+      <div class="col-sm-4" style="padding-left: 25px;">
+        <h1 class="car_name">2025 RAM 3500</h1>
+        <p class="car_modl_trim"></p>
+        <p class="ofr_leas">$2,000
+        </p>
+        <p class="ofr_detail">Bonus Cash Allowance +</p>
+        <p class="no_offer">Please contact Melloy Dodge Ram FIAT for the latest lease and finance offers.</p>
+      </div>
+      <div class="col-sm-8"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/690a4e6ba04f4175ad5b864f4335818f.png"
+          alt="Offer Car"
+          class="offer_car" /></div>
+      <div class="ofr_disc">
+        <p>Offer applies to 2025 RAM 3500 TRADESMAN<sup>&reg;</sup>
+          CREW CAB 4X2 6'4" BOX. <br/>+ Contact Melloy Dodge Ram FIAT for details. Must take delivery by 03/02/2026.</p>
+      </div>
+    </div>
+  </div>
+  <div class="inner-6">
+    <div id="fourbuttons" class="row text-center">
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=3500&year=2025-2025" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+            alt="view inventroy"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+            alt="get a quote"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+            alt="get pre approved"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+            alt="value your trade"
+            style="max-width: 100%;" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center box_1">
+    <div class="col-sm-4 text-right" style="padding: 0px;">
+      <h4 class="heading">DESIGN</h4>
+      <p class="box_p1">DIVE INTO THE<br/> DETAILS</p>
+      <p class="box_p2" style="margin-top: -10px;">Cargo capabilities, a luxurious interior and a tasteful exterior
+        <span style="white-space: nowrap;">design&mdash;this</span>
+        <span style="white-space: nowrap;">heavy-duty</span>
+        pickup truck has all that and more. Step in and see for yourself.
+      </p>
+    </div>
+    <div class="col-sm-8 text-left" style="padding: 0;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7e825f1261624e6b8a0127a8d667db85.png"
+        alt="DESIGN"
+        style="max-width: 100%; display: inline;" /></div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 5px; color: #000000;">
+      EXTERIOR</h1>
+  </div>
+  <div class="main-div" style="margin-bottom: 0px;">
+    <div class="inner-1 bg_green_sec" style="margin-bottom: 30px; background-color: #731604;">
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+          <div class="col-sm-6" style="padding: 0px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8d62718e7e7f47c489508a4fd9b67478.png"
+              alt="new exterior features"
+              style="max-width: 100%; display: inline-block;" /></div>
+          <div class="col-sm-6" style="padding: 2px;">
+            <h4 class="head_2 hidden-xs" style="padding-top: 40px; padding-inline: 1px;">NEW EXTERIOR FEATURES</h4>
+            <h4 class="head_2 hidden-sm hidden-md hidden-lg" style="padding-top: 20px; padding-inline: 20px;">NEW EXTERIOR FEATURES</h4>
+            <p class="para_2">With new
+              <span style="white-space: nowrap;">trim-specific</span>
+              front fascias and grilles, an updated wheel lineup and two new
+              <span style="white-space: nowrap;">eye-catching</span>
+              colors: Forged Blue Metallic and Molten Red, this truck is sure to become the talk of the town or the king of the jobsite.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-div" style="box-shadow: 0px 10px 15px -8px grey; margin-bottom: 30px;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 18px; padding-top: 0px; margin: 0px; color: #000000;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4ca19bf2bc2d4b53a2a77469a7c34040.png"
+            alt="new onboard power panel"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">NEW ONBOARD POWER PANEL</h4>
+          <p class="para_2">Turn your truck into a generator with the
+            <span style="white-space: nowrap;">400-watt</span>
+            inverter or go for
+            <span style="white-space: nowrap;">Best-in-Class</span>
+            available Onboard Power* with the
+            <span style="white-space: nowrap;">2.4-kilowatt</span>
+            inverter. Power tools and equipment from the truck bed or a
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            available RamBox<sup>&reg;</sup>
+            Cargo Management System* with one of these two new power panels.
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/956d592544154b1c846e53ba9d281e81.png"
+            alt="class-exclusive rambox cargo management system"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">
+            <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+            RamBox<sup>&reg;</sup>
+            CARGO MANAGEMENT SYSTEM*
+          </h4>
+          <p class="para_2">The
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            available RamBox<sup>&reg;</sup>
+            Cargo Management System* offers two lockable, drainable storage bins with LED lighting, plus features like a front driver side
+            <span style="white-space: nowrap;">115-volt</span>
+            power outlet and remote access via the key fob.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center" style="padding-bottom: 15px; padding-top: 0px; margin: 0px; color: #000000;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2b10e7b735974bfea74b5422a8c70e33.png"
+            alt="truck bed lighting"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TRUCK BED LIGHTING</h4>
+          <p class="para_2">Keep the job going at night with available LED lighting integrated into the cargo lamp and bed.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d694b1c6576d499eaad8d1cd225d76a0.png"
+            alt="led headlamps and taillamps"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LED HEADLAMPS AND TAILLAMPS</h4>
+          <p class="para_2">Cast a bright light on what&rsquo;s coming and going with distinct redesigned standard LED headlamps and fog lamps and available LED taillamps.</p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/777fbe48d1ed42d08b531f951bc7c6cb.png"
+            alt="mopar sport performance hood"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">Mopar<sup>&reg;</sup>
+            SPORT PERFORMANCE HOOD</h4>
+          <p class="para_2">The available Mopar<sup>&reg;</sup>
+            Sport Performance Hood gives the new 2025 Ram 3500 Laramie<sup>&reg;</sup>
+            Night, Laramie Sport and Limited Night models a menacing look. Combined with unique hard badging on the exterior, it lets the world know you mean business.</p>
+        </div>
+      </div>
+      <div class="row text-center" style="padding-bottom: 25px; padding-top: 0px; margin: 0px; color: #000000;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2426fb30b2824114858115f373188122.jpg"
+            alt="accessible exterior elements"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">ACCESSIBLE EXTERIOR ELEMENTS</h4>
+          <p class="para_2">Work smarter and easily access your cabin and bed with features like available power side running boards, an available Mopar<sup>&reg;</sup>
+            bed step and a dampened tailgate with available power release.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/30fc0f66fe9d46a191d51d9feb749bc2.png"
+            alt="class-exclusive available power convex trailer tow mirrors"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
+            <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+            AVAILABLE POWER CONVEX TRAILER TOW <br/>MIRRORS*
+          </h4>
+          <p class="para_2">The
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            available Power Convex Trailer Tow Mirrors* are your companion when towing a trailer. The
+            <span style="white-space: nowrap;">Power-Adjustable</span>
+            Telescopic Mirrors can extend and retract to offer more flexibility when parking in tight spots. The available forward and reverse spotter functionality together with the available
+            <span style="white-space: nowrap;">Mirror-Mounted</span>
+            Camera System help offer great visibility when towing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 0px; color: #000000;">
+      INTERIOR</h1>
+  </div>
+  <div class="inner-4">
+    <div class="row text-center" style="padding-bottom: 15px; margin: 0px; color: #000000;">
+      <div class="col-sm-6" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b9d6fdfaf0dd4320b76b0a1db4e7285f.png"
+          alt="limited interior ride in luxury"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LIMITED INTERIOR &mdash; RIDE IN LUXURY</h4>
+        <p class="para_2">The new 2025 Ram 3500 Limited interior offers the feeling of first class on four wheels and comes in either red or black. With 100% leather seats and accents made of real wood and aluminum, this interior experience is next level.</p>
+      </div>
+      <div class="col-sm-6" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/60ec92d3744f44bfba9ef55fa2f6316d.png"
+          alt="limited longhorninterior premium details"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">LIMITED
+          <span style="white-space: nowrap;">Longhorn<sup>&reg;</sup>
+            INTERIOR &mdash; PREMIUM</span>
+          DETAILS
+        </h4>
+        <p class="para_2">Enjoy finely crafted southwestern details, including filigree stitching on the seats and a premium bison brown
+          <span style="white-space: nowrap;">leather-trimmed</span>
+          interior on new 2025 Ram 3500 Limited Longhorn<sup>&reg;</sup>
+          models.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4">
+    <div class="row text-center" style="padding-bottom: 10px; padding-top: 0px; margin: 0px; color: #000000;">
+      <div class="col-sm-3" style="padding: 2px;"></div>
+      <div class="col-sm-6" style="padding: 2px;"><img src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cbd412309f4b439f9ab547380cf77c1a.png" style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">Laramie<sup>&reg;</sup>
+          INTERIOR &mdash; QUALITY ELEMENTS</h4>
+        <p class="para_2">Go for
+          <span style="white-space: nowrap;">top-notch</span>
+          details with the new 2025 Ram 3500 Laramie<sup>&reg;</sup>
+          interior. It includes new available Bison Brown or Black
+          <span style="white-space: nowrap;">leather-trimmed</span>
+          front bucket seats.
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"></div>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <div
+      class="row text-center"
+      style="padding-top: 0px; padding-bottom: 0px; margin: 0px; margin-bottom: 0px;"
+      bis_skin_checked="1">
+      <div class="main-div" style="box-shadow: 0px 10px 15px -8px grey; margin-bottom: 30px;">
+        <div
+          class="row text-center"
+          style="padding-top: 0px; padding-bottom: 15px; margin: 0px; margin-bottom: 10px;"
+          bis_skin_checked="1">
+          <div
+            class="col-sm-6"
+            style="padding: 2px;"
+            bis_skin_checked="1"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/481507bfabac4ddba9d856ba1307a164.jpg"
+              alt="music to your ears"
+              style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">MUSIC TO YOUR EARS</h4>
+            <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #000;">
+              Dampen sounds outside with the help of an Interior Active Noise Cancellation System. Turn up the volume on the music you want to hear with the available
+              <span style="white-space: nowrap;">900-watt</span>
+              Harman Kardon<sup>&reg;</sup>
+              Premium Audio System and surround yourself with 17 speakers.
+            </p>
+          </div>
+          <div
+            class="col-sm-6"
+            style="padding: 2px;"
+            bis_skin_checked="1"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b32361e4b18f4f2d89dc27193090b036.jpg"
+              alt="adjustable for passengers and cargo"
+              style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">ADJUSTABLE FOR PASSENGERS AND CARGO</h4>
+            <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #000;">
+              The new 2025 Ram 3500 offers available seating options that are designed to fit your everyday needs. With a 40/20/40
+              <span style="white-space: nowrap;">split-folding</span>
+              bench or available bucket seats in the front, three different 60/40
+              <span style="white-space: nowrap;">split-folding</span>
+              rear seating configurations and
+              <span style="white-space: nowrap;">Class-Exclusive</span>
+              available Reclining Rear Seats* in Mega Cab<sup>&reg;</sup>
+              models, ample space is offered for passengers and cargo alike.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 0px; color: #000000;margin-top: -5px;">
+      AVAILABLE STORAGE OPTIONS</h1>
+  </div>
+  <div class="inner-4">
+    <div class="row text-center" style="padding-bottom: 10px; margin: 0px; color: #000000;">
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8a155935c75a43e4a2779f89d9824737.jpg"
+          alt="center console rear cubby bin"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Center Console Rear Cubby Bin</h4>
+        <p class="para_2">Rear passengers can conveniently stash smaller items in the center console rear cubby bin. Just below the bin, they&rsquo;ll find a
+          <span style="white-space: nowrap;">115-volt</span>
+          outlet for powering devices without disrupting the driver.
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2890a020d59b40a8a7e6f95a772a6e66.jpg"
+          alt="center console and class-exclusive available dual wireless charging pads"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Center Console and
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          Available Dual Wireless Charging Pads*
+        </h4>
+        <p class="para_2">With the
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          available Dual Wireless Charging Pads*, you can charge up to five smartphones in the available reconfigurable center console. This functional storage space boasts enough room for a
+          <span style="white-space: nowrap;">15-inch</span>
+          laptop and a bin for hanging file folders, plus
+          <span style="white-space: nowrap;">Type-C</span>
+          USB charging ports and available dual wireless charging pads.
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d0942ac947244795961fc1e54a6eb8db.jpg"
+          alt="fold-flat load floor with under-seat storage"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
+          <span style="white-space: nowrap;">Fold-Flat</span>
+          Load Floor with
+          <span style="white-space: nowrap;">Under-Seat</span>
+          Storage
+        </h4>
+        <p class="para_2">2025 Ram 3500 pickups offer the available
+          <span style="white-space: nowrap;">flat-load</span>
+          floor with
+          <span style="white-space: nowrap;">under-seat</span>
+          storage to help maximize
+          <span style="white-space: nowrap;">cargo-carrying</span>
+          options. On Mega Cab<sup>&reg;</sup>
+          models,
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          available Forward
+          <span style="white-space: nowrap;">Fold-Flat</span>
+          rear seats* allow you to fold the rear seats forward to accommodate additional rear storage.
+        </p>
+      </div>
+      <div class="col-sm-3" style="padding: 2px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1032f12b1b074591a610050005b43b89.jpg"
+          alt="spacioussecure class-exclusive in-floorram bins"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Spacious, Secure
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          <span style="white-space: nowrap;">In-Floor</span>
+          Ram Bins*
+        </h4>
+        <p class="para_2">Available on 2025 Ram 3500 Crew Cab models, this spacious,
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          available Rear
+          <span style="white-space: nowrap;">In-Floor</span>
+          Storage* can accommodate a
+          <span style="white-space: nowrap;">4-inch</span>
+          drop hitch and comes equipped with removable liners for easy cleaning.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 0px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c4555657e7d644cb9f1486018704e503.jpg"
+      alt="image 1"
+      style="max-width: 100%;" /></div>
+  <div id="Get A quote" style="padding-top: 30px;">
+    <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/19492fcfe65845aca44e51a1b0a184b3.gif"
+        alt="Get A quote"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div class="row text-center box_1" bis_skin_checked="1">
+    <div
+      class="col-sm-4 text-right"
+      style="padding: 0px;"
+      bis_skin_checked="1">
+      <h4 class="heading">TECHNOLOGY</h4>
+      <p class="box_p1">MODERN<br/> AMENITIES</p>
+      <p class="box_p2">Tackle terrain with the Most Advanced Ram Heavy Duty Pickups Ever*. Immerse yourself in innovative technology and stay confident on the road with standard and available safety and security features. (New Limited Longhorn<sup>&reg;</sup>
+        interior shown).</p>
+    </div>
+    <div
+      class="col-sm-8 text-left"
+      style="padding: 0;"
+      bis_skin_checked="1"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/bacf419aa9a74878bf7c0ebd6d16030d.jpg"
+        alt="technology"
+        style="max-width: 100%; display: inline;" /></div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 5px; color: #000000;">
+      INFO FRONT AND CENTER</h1>
+    <h1 style="font-size: 18px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 0px; color: #000000;">
+      ADVANCED DIGITAL CLUSTER</h1>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <div
+      class="row text-center"
+      style="padding-top: 10px; padding-bottom: 10px; margin: 0px; margin-bottom: 0px;"
+      bis_skin_checked="1">
+      <div
+        class="col-sm-3"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/81bf5aafa6894b268b67d9567536bde9.jpg"
+          alt="turn-by-turn navigation"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 10px 0px 15px; color: #000;">
+          <span style="white-space: nowrap;">Turn-by-Turn</span>
+          Navigation
+        </h4>
+      </div>
+      <div
+        class="col-sm-3"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5f589977a2474a8e817bcf55fd33c797.jpg"
+          alt="trailer tire pressure monitoring"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 10px 0px 15px; color: #000;">Trailer Tire Pressure Monitoring</h4>
+      </div>
+      <div
+        class="col-sm-3"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3e31964732da4f259113a476de8127b4.jpg"
+          alt="gauge summary"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 10px 0px 15px; color: #000;">GAUGE SUMMARY</h4>
+      </div>
+      <div
+        class="col-sm-3"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5dfbbc0fe84649db838132a9f207b24e.jpg"
+          alt="vehicle dynamics and diagnostics"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 10px 0px 15px; color: #000;">VEHICLE DYNAMICS AND DIAGNOSTICS</h4>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 18px !important; font-weight: 500 !important; text-align: center; text-transform: none; padding: 0px 50px 0px 50px; color: #000000;margin-top: -5px;">
+      Offering
+      <span style="white-space: nowrap;">full-color</span>
+      3D graphics with color customization,
+      <span style="white-space: nowrap;">easy-to-see</span>
+      vehicle stats, safety and security alerts,
+      <span style="white-space: nowrap;">in-cluster</span>
+      navigation<br/> (if equipped) and driver profiles, the available
+      <span style="white-space: nowrap;">12-inch</span>
+      Digital Cluster Display offers the tools you need to help keep you focused.
+    </h1>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <div
+      class="row text-center"
+      style="padding-top: 10px; padding-bottom: 0px; margin: 0px; margin-bottom: 5px;"
+      bis_skin_checked="1">
+      <div
+        class="col-sm-6"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c55932f37dcb41b1b12834bd2ec30a26.jpg"
+          alt="trailer tow pages"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">TRAILER TOW PAGES</h4>
+        <p style="padding: 10px 20px 5px; font-size: 17px; line-height: 1.3; margin-top: 0; color: #000;">
+          Maneuver with confidence thanks to features like Trailer Light Check and Trailer Brake Status, easily visible in the available
+          <span style="white-space: nowrap;">12-inch</span>
+          Digital Cluster Display.
+        </p>
+      </div>
+      <div
+        class="col-sm-6"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/860065c4829247a0ba855bca3826b0e6.jpg"
+          alt="off-road pages"
+          style="max-width:100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">
+          <span style="white-space: nowrap;">OFF-ROAD</span>
+          PAGES
+        </h4>
+        <p style="padding: 10px 20px 5px; font-size: 17px; line-height: 1.3; margin-top: 0; color: #000;">
+          Available
+          <span style="white-space: nowrap;">Off-Road</span>
+          Pages explore pitch and roll and put vehicle dynamics, traction control, gear shifting and more all front and center.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="inner-1 bg_black_sec_2"
+    style="padding-top: 25px; background-color: #000;"
+    bis_skin_checked="1">
+    <div
+      class="inner-4"
+      bis_skin_checked="1"
+      style="padding-block: 5px 10px;">
+      <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 0px; color: #ffff;margin-top: 0px;">
+        VIEWS ALL AROUND</h1>
+      <p class="para_2" style="text-align: center; font-size: 18px;">DIGITAL REARVIEW MIRROR</p>
+    </div>
+    <div class="inner-4">
+      <div class="hidden-xs" style="padding-top: 5px; padding-bottom: 0px;"></div>
+      <div class="row text-center" style="padding-top: 0px; padding-bottom: 10px; margin: 0px;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e18cbb49d8ba4358831bda736738b485.jpg"
+            alt="all cameras activated"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">All Cameras Activated</h4>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce2d35e884e242c1859ffd55e0ec9c11.jpg"
+            alt="exterior mirror cameras activated"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Exterior Mirror Cameras<br/>Activated</h4>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2ec2026dd43b4ef7b005d60f33efecbc.jpg"
+            alt="tow mode camera activated"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">Tow Mode Camera Activated</h4>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b7525eb130fe404096a7825139ce8d61.jpg"
+            alt="all cameras off"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">All Cameras Off</h4>
+        </div>
+      </div>
+      <p style="padding: 0px 20px 5px; font-size: 18px; line-height: 1.3; margin-top: 0; color: #fff; text-align: center;">
+        The available Digital Rearview Mirror with side camera integration features an LCD monitor that when switched on, provides a
+        <span style="white-space: nowrap;">real-time</span>
+        video stream from a
+        <span style="white-space: nowrap;">rear-facing</span>
+        camera. Paired with the available exterior mirror cameras, the mirror also offers a view of the areas to the left and right of your trailer. Plus, you can activate the available wired tow mode camera for a clear view behind your trailer.
+      </p>
+      <p style="padding: 5px 20px 0px; font-size: 18px; line-height: 1.3; margin-top: 0; color: #fff; text-align: center;">
+        360&deg; SURROUND VIEW CAMERAS</p>
+    </div>
+    <div class="hidden-xs" style="padding-top: 10px; padding-bottom: 0px;"></div>
+    <div class="inner-4">
+      <div class="row text-center" style="padding-top: 0px; padding-bottom: 10px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7c935c906a1745188abf436c433f1e64.jpg"
+            alt="360 surround view camera"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">360&deg; Surround View Camera</h4>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/57ecc8e0aab54a4fa4ed95acbb5372dd.jpg"
+            alt="360 trailer surround view camera"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">360&deg; Trailer Surround View Camera</h4>
+        </div>
+      </div>
+      <p style="padding: 0px 20px 45px; font-size: 18px; line-height: 1.3; margin-top: 0; color: #fff; text-align: center;">
+        The available 360&deg; Surround View Camera* is designed to display a
+        <span style="white-space: nowrap;">bird&rsquo;s-eye</span>
+        view around your vehicle.<br/> And make towing a breeze with the added visibility of the available 360&deg; Trailer Surround View Camera*.
+      </p>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 10px; padding-top: 10px; color: #000000;">
+      <span style="white-space: nowrap;">LARGEST-IN-CLASS&nbsp;</span>
+      <span style="white-space: nowrap;">14.5-INCH</span>
+      INFOTAINMENT TOUCHSCREEN*
+    </h1>
+  </div>
+  <div class="inner-1 bg_white_sec" style="padding-top: 0px; box-shadow: 0px 10px 10px -8px grey; margin-bottom: 30px;">
+    <div class="inner-4">
+      <div class="row text-center" style="padding-bottom: 10px; margin: 0px; color: #000000;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d95a5b1f39be4c5fb23dff4bec583e8a.jpg"
+            alt="wireless apple carplaysupport for your iphone"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">WIRELESS Apple CarPlay<sup>&reg;</sup>* SUPPORT FOR YOUR iPhone<sup>&reg;</sup>
+          </h4>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ad0ab91325a64636b38912c691c0e2c7.jpg"
+            alt="wireless android auto compatibility"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="text-transform: none;">WIRELESS Android Auto<sup>&trade;</sup>* COMPATIBILITY</h4>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/897a194b2e3f4bf2b391880b621d6ee0.jpg"
+            alt="navigation"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">NAVIGATION</h4>
+        </div>
+      </div>
+      <p style="padding: 0px 20px 30px; font-size: 18px; line-height: 1.3; margin-top: 0; color: #000; text-align: center;">
+        Step things up with the Uconnect<sup>&reg;</sup>
+        5 NAV coupled with the
+        <span style="white-space: nowrap;">Largest-in-Class</span>
+        available
+        <span style="white-space: nowrap;">14.5-inch</span>
+        infotainment touchscreen*. It lets you create up to five driver profiles, view
+        <span style="white-space: nowrap;">tow-specific</span>
+        navigation and more. Access the available Ram Connect* services for safety and security features, comfort control and personalized benefits.
+      </p>
+    </div>
+  </div>
+  <div class="inner-4" bis_skin_checked="1">
+    <div
+      class="row text-center"
+      style="padding-top: 0px; padding-bottom: 0px; margin: 0px; margin-bottom: 0px;"
+      bis_skin_checked="1">
+      <div
+        class="col-sm-6"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a08ca8351fa34a43ab6f6fdae774de61.jpg"
+          alt="class-exclusive available 10 25-inch front passenger interactive display"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">
+          <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+          AVAILABLE
+          <span style="white-space: nowrap;">10.25-INCH</span>
+          FRONT PASSENGER<br/>INTERACTIVE DISPLAY*
+        </h4>
+        <p style="padding: 10px 20px 5px; font-size: 17px; line-height: 1.3; margin-top: 0; color: #000;">
+          Mounted seamlessly and conveniently on the passenger dash, the
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          available
+          <span style="white-space: nowrap;">10.25-inch</span>
+          Passenger Interactive Display* provides information and entertainment for your copilot. The front passenger can use this touchscreen to view navigation, access vehicle cameras, stream shows, play movies during a trip and blast music via the Uconnect<sup>&reg;</sup>
+          5 system.
+        </p>
+      </div>
+      <div
+        class="col-sm-6"
+        style="padding: 2px;"
+        bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/934ac4efa0334ccfa6b266c159c0143f.jpg"
+          alt="class-exclusive available dual wireless charging pads"
+          style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding: 20px 0px 15px; color: #000;">
+          <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+          AVAILABLE DUAL WIRELESS CHARGING PADS*
+        </h4>
+        <p style="padding: 10px 20px 5px; font-size: 17px; line-height: 1.3; margin-top: 0; color: #000;">Keep your smartphones and devices charged up while on the go. The 2025 Ram 3500 offers
+          <span style="white-space: nowrap;">Class-Exclusive</span>
+          available Dual Wireless Charging Pads* in the truck cabin for both driver and passenger convenience.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; padding-bottom: 0px; margin-bottom: 6px;">
+    <div class="inner-1 bg_reddark_sec1">
+      <div class="inner-1" style="background-color: #9b0004;">
+        <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;">
+          <div class="col-sm-6 text-right" style="padding: 0px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/82ebffe1359244579f495402979969e0.jpg"
+              alt="tech on the go"
+              style="max-width: 100%; display: inline-block;" /></div>
+          <div class="col-sm-5" style="padding: 2px;">
+            <h4 class="head_4" style="padding: 30px 5px 5px;">TECH ON THE GO</h4>
+            <p class="para_2" style="line-height: 1.2em;">The Ram App*, paired with available Ram Connect Services*, allows you to interact with your truck remotely as you go about your day. And bring
+              <span style="white-space: nowrap;">Wi-Fi</span>
+              along for the ride with a
+              <span style="white-space: nowrap;">built-in</span>
+              available 4G
+              <span style="white-space: nowrap;">Wi-Fi</span>
+              Hotspot*.
+            </p>
+          </div>
+          <div class="col-sm-1" style="padding: 2px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-3">
+    <div class="row text-center" style="padding-bottom: 10px; padding-top: 5px; margin: 0px; color: #000000;">
+      <div class="col-sm-4" style="padding: 2px;">
+        <h4 class="head_2">SEND &amp; GO*</h4>
+        <p class="para_2">Search for locations and send destinations to your available navigation
+          <span style="white-space: nowrap;">system&mdash;your</span>
+          route will be ready for you when you enter your truck.
+        </p>
+      </div>
+      <div class="col-sm-4" style="padding: 2px;">
+        <h4 class="head_2">VEHICLE FINDER*</h4>
+        <p class="para_2">Forgot where you parked? Easily locate your truck by remotely sounding the horn and flashing the headlamps.</p>
+      </div>
+      <div class="col-sm-4" style="padding: 2px;">
+        <h4 class="head_2">REMOTE VEHICLE START*</h4>
+        <p class="para_2">Start the engine and warm up or cool down your truck before you even enter the cabin.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 0px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/b75ae63c6e274b5ebb71255b6c3c92a5.jpg"
+      alt="image 2"
+      style="max-width: 100%;" /></div>
+  <div id="get a quote" style="padding-top: 30px;">
+    <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/19492fcfe65845aca44e51a1b0a184b3.gif"
+        alt="get a quote"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div style="padding-top: 30px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2d5838ec73b7462c92ca71f7ef8bff0e.jpg"
+      alt="image 3"
+      style="max-width: 100%;" /></div>
+  <div
+    class="row text-center box_1"
+    style="margin-bottom: 0px;"
+    bis_skin_checked="1">
+    <div
+      class="col-sm-6 text-right"
+      style="padding: 0px;"
+      bis_skin_checked="1">
+      <h4 class="heading">EVERYDAY SAFETY &amp; SECURITY FEATURES</h4>
+      <p class="box_p1">STAY CENTERED AND IN CONTROL</p>
+      <p class="box_p2" style="padding-bottom: 0px !important;">Stay centered within your lane while driving thanks to new blind spot sensors. These helpful sensors are used for added steering correction and lane centering. When unintentional lane drifts do occur, the available LaneSense<sup>&reg;</sup>
+        Lane Departure Warning with newly enhanced Lane Keep Assist* will display a visual alert and help guide the vehicle back into position.</p>
+    </div>
+    <div
+      class="col-sm-6 text-left"
+      style="padding: 0;"
+      bis_skin_checked="1"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/116aa0f6f84e4a0bb727fd7fcf3db95e.jpg"
+        alt="everyday safety security features"
+        style="width: 100%; display: inline;" /></div>
+  </div>
+  <div
+    class="inner-1 bg_black_sec_2"
+    style="padding-top: 25px; background-color: #000;"
+    bis_skin_checked="1">
+    <div class="inner-4">
+      <div class="hidden-xs" style="padding-top: 5px; padding-bottom: 0px;"></div>
+      <div class="row text-center" style="padding-top: 0px; padding-bottom: 10px; margin: 0px;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/913b086e70444d32bfc68bab940effeb.jpg"
+            alt="adaptive forward lighting system"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">ADAPTIVE FORWARD LIGHTING SYSTEM</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            The new 2025 Ram 3500 features an available Adaptive Forward Lighting System with illuminating LED lamps that turn up to 15 degrees, helping to enhance visibility despite dim conditions along your path, especially on dark, curved roads.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2a1fd1a96ca3466bad0e2d0936b0b654.jpg"
+            alt="forward collision warning with active braking"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">FORWARD COLLISION WARNING WITH ACTIVE BRAKING*</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            Forward Collision Warning with Active Braking helps warn the driver when an accident is imminent. This feature can even apply the brakes, bringing the vehicle to a complete stop&mdash;even with a trailer attached.</p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/967c2b0920984b8787d97a1cda1d472d.jpg"
+            alt="adaptive cruise controlwith stop"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">ADAPTIVE CRUISE CONTROL<br/> WITH STOP*</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            <span style="white-space: nowrap;">Class-Exclusive</span>
+            standard Adaptive Cruise Control* can help maintain a set distance, selected by the driver, from vehicles in the lane ahead. If slower traffic is detected, the truck will automatically adjust its speed all the way down to 0 mph, even with a trailer attached.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden-xs" style="padding-top: 10px; padding-bottom: 0px;"></div>
+    <div class="inner-4">
+      <div class="row text-center" style="padding-top: 0px; padding-bottom: 5px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fd2ccae5448e4f698cfeb25b3b50119a.jpg"
+            alt="led trailer hitch light"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LED TRAILER HITCH LIGHT</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            Hitch up day or night thanks to the LED trailer hitch light. This illuminating feature is built into the tailgate handle area to help enhance visibility when connecting and securing a trailer.
+          </p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ec983af37fde4bd0be7842d32ecbb322.jpg"
+            alt="rear seat reminder alert"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">REAR SEAT REMINDER ALERT</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            For enhanced safety and security in an
+            <span style="white-space: nowrap;">ever-moving</span>
+            world, the handy Rear Seat Reminder Alert can remind you to check your rear seats for precious cargo before leaving the vehicle.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="inner-4">
+      <div class="hidden-xs" style="padding-top: 5px; padding-bottom: 0px;"></div>
+      <div class="row text-center" style="padding-top: 0px; padding-bottom: 45px; margin: 0px;">
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0c07fa9f6a134a24857eff3708cfbd64.jpg"
+            alt="drowsy driver detection"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DROWSY DRIVER DETECTION*</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            This available system detects drowsiness behind the wheel and audibly and visually alerts the driver that getting rest is recommended.</p>
+        </div>
+        <div class="col-sm-6" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a8740404ab92406eb999319ac9f9ef63.jpg"
+            alt="traffic sign recognition"
+            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TRAFFIC SIGN RECOGNITION*</h4>
+          <p style="padding: 10px 20px 5px; font-size: 16px; line-height: 1.3; margin-top: 0; color: #fff;">
+            This available feature detects road signs and displays their information on the Digital Cluster Display or
+            <span style="white-space: nowrap;">Head-Up</span>
+            Display if equipped.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="viewinventory" style="padding-top: 30px;">
+    <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=3500&year=2025-2025" style="display: block;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c62b637ce8e64bbdbd5ef43ed4940f3f.gif"
+        alt="view inventory"
+        style="max-width: 100%;" /></a>
+  </div>
+  <div style="padding-top: 30px;"><img
+      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3f82a1031d5341f79a21b7c251f0819c.jpg"
+      alt="image 4"
+      style="max-width: 100%;" /></div>
+  <div class="inner-6">
+    <div
+      id="fourbuttons2"
+      class="row text-center"
+      style="padding-top:35px;">
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=3500&year=2025-2025" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+            alt="view inventroy"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+            alt="get a quote"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+            alt="get pre approved"
+            style="max-width: 100%;" /></a>
+      </div>
+      <div class="col-sm-3" style="padding: 1px;">
+        <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+            alt="value your trade"
+            style="max-width: 100%;" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="inner-4 modl">
+    <div class="mdl_had" style="padding-top: 30px; color: #000 !important;">2025 RAM 3500</div>
+    <div class="mdl_had" style="padding-top: 10px; color: #000; margin-bottom: 0%;">4x2</div>
+    <div class="row text-center" style="padding-top: 0px; margin: 0px; color: #000;">
+      <div
+        class="row text-center"
+        style="padding-top: 20px; margin-top: -20px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1fc8296e652945a4a6f83adc7afb6e9b.jpg"
+            alt="tradesman 4x2"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Tradesman<sup style="top: -0.3em;">&reg;</sup>
+            4X2<br/>REGULAR CAB 8' BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$46,570*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f166ca9012be476fb91d2bd87900b28e.jpg"
+            alt="big horn 4x2"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Big Horn<sup style="top: -0.3em;">&reg;</sup>
+            4X2<br/>REGULAR CAB 8' BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$50,190*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/716ebb0209314457962a1944642d8e0f.jpg"
+            alt="laramie 4x2"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Laramie<sup style="top: -0.3em;">&reg;</sup>
+            4X2<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$61,805*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cb9759bdab664cb4aee1cb9f05488989.jpg"
+            alt="limited 4x2"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" style="text-transform: initial;">LIMITED 4X2<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$75,115*</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-top: 70px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9633aba6a9c0487ca364b110dee555ee.jpg"
+            alt="limited longhorn 4x2"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" style="text-transform: initial;">LIMITED Longhorn<sup style="top: -0.3em;">&reg;</sup>
+            4X2<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$75,115*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+      </div>
+      <div class="mdl_had" style="padding-top: 10px; color: #000; margin-bottom: 0%;">4x4</div>
+      <div
+        class="row text-center"
+        style="padding-top: 20px; margin-top: -20px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/beeb6580ae024bf6843494e4bdeaab3b.jpg"
+            alt="tradesman 4x4"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Tradesman<sup style="top: -0.3em;">&reg;</sup>
+            4X4<br/>REGULAR Cab 8' box</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$49,795*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/306b05aba8614066bae8402b87b67058.jpg"
+            alt="big horn 4x4"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Big Horn<sup style="top: -0.3em;">&reg;</sup>
+            4X4<br/>REGULAR Cab 8' box</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$53,120*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2c1f8e27a259451e83e40905023fab15.jpg"
+            alt="laramie 4x4"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Laramie<sup style="top: -0.3em;">&reg;</sup>
+            4x4<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$64,735*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/75784741eb4248dab0fa37b78c01dfdb.jpg"
+            alt="limited 4x4"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" style="text-transform: initial;">LIMITED 4x4<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$78,045*</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="row text-center"
+        style="padding-top: 35px; margin: 0px; color: #000;"
+        bis_skin_checked="1">
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/eed329ed21df458895812cba0f707ca2.jpg"
+            alt="limited longhorn 4x4"
+            style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" style="text-transform: initial;">LIMITED Longhorn<sup style="top: -0.3em;">&reg;</sup>
+            4X4<br/>CREW CAB 6'4" BOX</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$78,045*</span>
+          </p>
+        </div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+        <div
+          class="col-sm-3"
+          style="padding: 2px;"
+          bis_skin_checked="1"></div>
+      </div>
+    </div>
+    <div class="inner-2 seo">
+      <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 14px;">
+        <p>
+          <b>2025 RAM 3500</b>
+        </p>
+        <p>
+          <b>Get to Know the 2025 RAM 3500 Albuquerque, NM, from Melloy Dodge Ram</b>
+        </p>
+        <p>Get to Know the 2025 RAM 3500 Albuquerque, NM, from Melloy Dodge Ram When it comes to conquering
+          <span style="white-space: nowrap;">heavy-duty</span>
+          tasks with ease, the 2025 RAM 3500 Albuquerque, NM, leads the pack. Designed for drivers who demand power, performance and versatility, this RAM truck delivers unmatched capability. At Melloy Dodge Ram in Albuquerque, NM, we are proud to showcase this powerhouse truck that combines
+          <span style="white-space: nowrap;">cutting-edge</span>
+          technology, bold styling and impressive towing and payload capacities.
+        </p>
+        <p></p>
+        <p>
+          <b>Which RAM dealers have the 2025 RAM 3500 in Albuquerque, NM for test drives?</b>
+        </p>
+        <p>We do! Stop in to see the suite of advanced safety features of the 2025 RAM 3500 Albuquerque, NM, on a test drive. Standard safety technologies include electronic stability control, trailer sway control and a rearview camera, while premium trims offer
+          <span style="white-space: nowrap;">cutting-edge</span>
+          <span style="white-space: nowrap;">driver-assist</span>
+          systems, such as adaptive cruise control,
+          <span style="white-space: nowrap;">blind-spot</span>
+          monitoring and a
+          <span style="white-space: nowrap;">forward-collision</span>
+          warning system with automatic emergency braking. For added convenience and safety,features like a
+          <span style="white-space: nowrap;">360-degree</span>
+          surround-view camera and front and rear parking sensors help you navigate tight spaces with confidence.
+        </p>
+        <p></p>
+        <p>The 2025 RAM 3500 Albuquerque, NM, is built to handle the toughest challenges, thanks to its robust engine lineup and advanced engineering. The standard
+          <span style="white-space: nowrap;">6.4-liter</span>
+          HEMI<sup>&reg;</sup>
+          V8 engine delivers 410 horsepower and 429
+          <span style="white-space: nowrap;">lb.-ft.</span>
+          of torque. For those who require even more muscle, the available
+          <span style="white-space: nowrap;">6.7-liter</span>
+          Cummins<sup>&reg;</sup>
+          Turbo Diesel I6 engine offers up to an incredible 1,075
+          <span style="white-space: nowrap;">lb.-ft.</span>
+          of torque, making it one of the most capable trucks in its class. Paired with an advanced transmission, the 2025 RAM 3500 Albuquerque, NM, ensures smooth shifts and optimal performance. With a maximum towing capacity of over 37,000 pounds when properly equipped, the 2025 RAM 3500 Albuquerque, NM, is ready to handle anything you throw at it.
+        </p>
+        <p></p>
+        <p>The 2025 RAM 3500 Albuquerque, NM, is as bold in design as it is in performance. Its commanding presence on the road is defined by a muscular stance, striking grille designs and available LED lighting. Standard
+          <span style="white-space: nowrap;">18-inch</span>
+          steel wheels provide durability, while
+          <span style="white-space: nowrap;">higher-level</span>
+          trims offer polished aluminum wheels up to 20 inches. Additional options, such as
+          <span style="white-space: nowrap;">power-deployable</span>
+          running boards, chrome accents and a multifunction tailgate, add functionality and style to this
+          <span style="white-space: nowrap;">heavy-duty</span>
+          truck. While the 2025 RAM 3500 Albuquerque, NM, is a beast on the outside, its interior offers premium comfort and smart features to keep you connected and comfortable. The spacious cabin is available with upscale materials, such as
+          <span style="white-space: nowrap;">leather-trimmed</span>
+          seats and genuine wood accents. With optional heated and ventilated front seats,
+          <span style="white-space: nowrap;">dual-zone</span>
+          climate control, and a heated steering wheel, the 2025 RAM 3500 Albuquerque, NM, ensures
+          <span style="white-space: nowrap;">all-day</span>
+          comfort, no matter the weather
+        </p>
+        <p></p>
+        <p>The advanced Uconnect<sup>&reg;</sup>
+          5 infotainment system includes a vibrant touchscreen display with smartphone integration through
+          <span style="white-space: nowrap;">Apple CarPlay<sup>&reg;</sup>
+          </span>
+          and
+          <span style="white-space: nowrap;">Android Auto<sup style="top: 0.0em;">&trade;</sup>.</span>
+          Available upgrades, such as a
+          <span style="white-space: nowrap;">12-inch</span>
+          display, premium audio system, and wireless charging pad, make every journey more enjoyable
+        </p>
+        <p></p>
+        <p>
+          <b>Where can I test drive a 2025 RAM 3500 Albuquerque, NM?</b>
+        </p>
+        <p>When you need a truck that offers
+          <span style="white-space: nowrap;">industry-leading</span>
+          performance, refined comfort, advanced technology and robust safety, the 2025 RAM 3500 Albuquerque, NM, is the perfect choice. Visit Melloy Dodge Ram in Albuquerque, NM, to explore this incredible truck in person.
+        </p>
+      </div>
+    </div>
+    <div class="inner-2 dis">
+      <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 11px; margin-bottom: 30px;">
+        <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base model, optional equipment not included. A more expensive model may be shown. Pricing and offers may change at any time without notification. Contact Melloy Dodge Ram FIAT for full pricing details.</p>
+        <p>*Refer to https://www.ramtrucks.com/ram-3500.html for additional disclosures.</p>
+      </div>
+    </div>
+  </div>
+</div>
