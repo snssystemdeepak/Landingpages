@@ -1,1517 +1,1678 @@
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  .main-div {
-    max-width: 1439px;
-    margin: 0 auto;
-    background-color: #fff;
-    overflow: hidden;
-  }
-  .main-div1 {
-    max-width: 1439px;
-    margin: 0 auto;
-    background-color: #000;
-    overflow: hidden;
-    color: #fff;
-  }
-  .main-div .trd {
-    top: -0.3em;
-    font-size: 12px;
-    font-weight: 100;
-  }
-  .main-div .reg {
-    top: -0em;
-    font-size: 16px;
-    font-weight: 100;
-  }
-  .modl sup {
-    top: -0.7em;
-    font-size: 16px;
-    font-weight: 100;
-  }
-  .seo .reg {
-    top: 0.1em;
-    font-size: 16px;
-    font-weight: 100;
-  }
-  .seo .trd {
-    top: -0.2em;
-    font-size: 12px;
-    font-weight: 100;
-  }
-  .dis .reg {
-    top: 0.1em;
-    font-size: 14px;
-    font-weight: 100;
-  }
-  .dis .trd {
-    top: -0.1em;
-    font-size: 11px;
-    font-weight: 100;
-  }
-  .banner-div {
-    position: relative;
-  }
-  .banner-div p {
-    position: absolute;
-    top: 2px;
-    left: 6%;
-    font-size: 28px;
-    font-weight: 600;
-    color: #fff;
-  }
-  .banner-price {
-    margin-bottom: 0;
-    color: #fff !important;
-    font-size: 18px !important;
-    font-weight: 500;
-    padding: 465px 0 0 980px;
-    text-align: left;
-    line-height: 1.2;
-  }
-  .offer-div {
-    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/012eb111d582426c972725db9dae76a7.jpg');
-    background-repeat: no-repeat;
-    height: 508px;
-  }
-  .offer-div1 {
-    background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/012eb111d582426c972725db9dae76a7.jpg');
-    background-repeat: no-repeat;
-    height: 408px;
-  }
-  .offer-div > .row {
-    max-width: 1260px;
-    margin: -1px auto 0;
-  }
-  .offer-div1 > .row {
-    max-width: 1260px;
-    margin: -1px auto 0;
-  }
-  .ofr_had_line {
-    border-top: 1px solid #0078c1;
-    margin-top: 20px;
-    width: 42%;
-  }
-  .offer_car {
-    margin-top: 25px;
-    margin-left: 230px; /* width: 95%; */
-    max-width: 81%;
-    padding-bottom: 3%;
-  }
-  .car_name {
-    margin: 25px 0 0 40px;
-    font-size: 26px !important;
-    padding-top: 2px;
-    line-height: 1;
-    font-weight: 600;
-    color: #fff;
-    padding-bottom: 0;
-    white-space: nowrap;
-    padding-top: 35px;
-  }
-  .car_modl_trim {
-    font-size: 14px;
-    color: #fff;
-    margin-left: 40px;
-  }
-  .ofr_leas {
-    font-size: 45px;
-    margin-bottom: 0;
-    line-height: 0;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding-top: 65px;
-    margin-left: 40px;
-  }
-  .ofr_detail {
-    color: #fff;
-    margin: 35px 0 15px 40px;
-    font-size: 16px;
-    padding-top: 30px;
-    font-weight: 500;
-  }
-  .no_offer {
-    color: #fff;
-    font-size: 16px;
-    padding-top: 30px;
-    line-height: 1.3em;
-    margin-left: 40px;
-    display: none;
-  }
-  .ofr_disc {
-    padding: 10px 25px;
-    color: #000;
-    font-size: 10px;
-    line-height: 1.3;
-    text-align: center;
-  }
-  .heading {
-    margin: 0 !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    background: #880e00;
-    padding: 20px 0 20px 80px !important;
-    text-align: center;
-    font-size: 18px !important;
-    line-height: 1;
-    text-align: left;
-  }
-  .inner-1 {
-    max-width: 1439px;
-    margin: 0 auto;
-  }
-  .inner-2 {
-    max-width: 980px;
-    margin: 0 auto;
-  }
-  .inner-3 {
-    max-width: 965px;
-    margin: 0 auto;
-  }
-  .inner-4 {
-    max-width: 1295px;
-    margin: 0 auto;
-  }
-  .inner-5 {
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: #000;
-    color: #fff;
-  }
-  .inner-6 {
-    max-width: 1270px;
-    margin: 0 auto;
-  }
-  .inner-7 {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  #fourbuttons {
-    padding-top: 0;
-  }
-  .Flex-D {
-    display: flex;
-    align-items: center;
-  }
-  .Flex-D .head_2 {
-    padding: 5px 10px 10px;
-    margin-top: 0;
-  }
-  .Flex-D .para_2 {
-    line-height: 1.1;
-  }
-  .box_1 {
-    margin: 30px 0 0;
-    background-color: #b60000;
-    color: #fff;
-  }
-  .line {
-    border-top: 1px solid #0078c1;
-    margin: 30px auto 15px;
-    max-width: 110px;
-  }
-  .line2 {
-    border-top: 1px solid #0078c1;
-    margin: 30px auto 15px 0;
-    max-width: 80px;
-  }
-  .border {
-    padding: 1px;
-    background-color: #0374bb;
-  }
-  .box_1 h4 {
-    padding: 10px 10px 0;
-    margin-bottom: 0;
-    font-size: 39px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-  .box_p1 {
-    padding: 15px 5px 10px 80px;
-    line-height: 1.3;
-    margin-bottom: 0;
-    color: #fff;
-    font-weight: 500;
-    font-size: 36px !important;
-    text-align: left;
-  }
-  .box_p2 {
-    padding: 8px 20px 10px 80px;
-    line-height: 1.4em;
-    margin-bottom: 10px;
-    font-size: 15px !important;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-align: left;
-  }
-  .bg_white_sec {
-    margin: 0;
-    background-color: #ffffff;
-    color: #000;
-  }
-  .bg_black_sec {
-    margin: 0;
-    background-color: #030303;
-    color: #fff;
-  }
-  .bg_black_sec_2 {
-    margin: 0;
-    background-color: #000000;
-    color: #fff;
-  }
-  .bg_grey_sec {
-    margin: 0;
-    background-color: #262626;
-    color: #fff;
-  }
-  .bg_green_sec {
-    margin: 0;
-    background-color: #741705;
-    color: #fff;
-  }
-  .bg_lightgreen_sec {
-    margin: 0;
-    background-color: #3c6d5d;
-    color: #fff;
-  }
-  .head_2 {
-    padding: 20px 5px 10px;
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 10px;
-    line-height: 1.2;
-  }
-  .para_2 {
-    padding: 10px 17px;
-    font-size: 17px;
-    line-height: 1.4;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  .para_3 {
-    padding: 0 20px !important;
-    font-size: 16px !important;
-    line-height: 1.4 !important;
-    font-weight: 500 !important;
-    margin-bottom: 0 !important;
-  }
-  .para_A {
-    padding: 0 20px !important;
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    font-weight: 500 !important;
-    margin-top: -15px !important;
-  }
-  .HS-Sec {
-    margin-top: -30px;
-  }
-  .mdl_had {
-    color: #000 !important;
-    text-align: center;
-    font-size: 36px;
-    padding: 0 40px 10px;
-  }
-  .mdlname {
-    padding: 30px 21px 0;
-    margin-bottom: 0;
-    font-size: 20px !important;
-    font-weight: 400 !important;
-    margin-top: 15px;
-    line-height: 1.3em;
-    text-align: center;
-    color: #000;
-    margin-top: -3% !important;
-  }
-  .mdl_msrp {
-    padding: 10px 35px 25px;
-    font-size: 12px;
-    line-height: 1.9;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    margin-bottom: -20px !important;
-  }
-  .malmrp {
-    padding: 0 35px;
-    font-size: 10px !important;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  .mdl_msrps {
-    color: #000;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .Mdl_mrp {
-    color: #000;
-    font-size: 18px !important;
-    text-align: center;
-  }
-  .mdl_vi {
-    color: #ff2d2d !important;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .head_2 {
-    padding: 20px 5px 15px;
-    margin-bottom: 0;
-    font-size: 17px !important;
-    font-weight: 500;
-    margin-top: 10px;
-    line-height: 1.3;
-  }
-  .head_3 {
-    padding: 45px 5px 15px;
-    margin-bottom: 0;
-    font-size: 18px !important;
-    font-weight: 500;
-    margin-top: 10px;
-    line-height: 1.2;
-  }
-  .sns-pd-in-12 {
-    padding-inline: 12vw;
-  }
-  .sns-pd-in-5 {
-    padding-inline: 5vw !important;
-  }
-  .col-sm-3 .mdlname h4:nth-of-type(2) {
-    margin-top: 5px !important;
-  }
-  .sns-pt-30px {
-    margin-top: 100px;
-  }
-  @media screen and (max-width: 768px) {
-    .banner-div p {
-      position: initial;
-      color: #fff;
-      text-align: center;
-      font-size: 25px;
-      margin-bottom: -1px;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-div {
+      max-width: 1439px;
+      margin: 0 auto;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .main-div1 {
+      max-width: 1439px;
+      margin: 0 auto;
       background-color: #000;
-      padding-top: 10px;
+      overflow: hidden;
+      color: #fff;
     }
-    .ofr_leas {
-      text-align: center;
+
+    .main-div .trd {
+      top: -0.3em;
+      font-size: 12px;
+      font-weight: 100;
     }
-    .ofr_detail {
-      text-align: center;
+
+    .main-div .reg {
+      top: -0em;
+      font-size: 16px;
+      font-weight: 100;
     }
-    .ofr_disc {
-      padding-top: 25px;
-      padding-inline: 20px;
+
+    .modl sup {
+      top: -0.7em;
+      font-size: 16px;
+      font-weight: 100;
     }
-    .sns-pt-30px {
-      margin-top: 30px;
+
+    .seo .reg {
+      top: 0.1em;
+      font-size: 16px;
+      font-weight: 100;
     }
-    .heading {
-      margin: 0 !important;
-      font-weight: 600 !important;
-      text-transform: uppercase !important;
-      background: #741604;
-      padding: 20px 0 20px 40px !important;
-      text-align: center;
-      font-size: 18px !important;
-      line-height: 1;
-      text-align: left;
+
+    .seo .trd {
+      top: -0.2em;
+      font-size: 12px;
+      font-weight: 100;
     }
+
+    .dis .reg {
+      top: 0.1em;
+      font-size: 14px;
+      font-weight: 100;
+    }
+
+    .dis .trd {
+      top: -0.1em;
+      font-size: 11px;
+      font-weight: 100;
+    }
+
+    .banner-div {
+      position: relative;
+    }
+
+    .banner-div p {
+      position: absolute;
+      top: 2px;
+      left: 6%;
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+    }
+
     .banner-price {
       margin-bottom: 0;
       color: #fff !important;
       font-size: 18px !important;
       font-weight: 500;
-      padding: 10px 0 0;
-      text-align: center;
+      padding: 465px 0 0 980px;
+      text-align: left;
       line-height: 1.2;
-      background-color: #000;
     }
+
     .offer-div {
-      height: unset;
+      background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/012eb111d582426c972725db9dae76a7.jpg');
+      background-repeat: no-repeat;
+      height: 508px;
     }
+
     .offer-div1 {
-      height: unset;
+      background-image: url('https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/012eb111d582426c972725db9dae76a7.jpg');
+      background-repeat: no-repeat;
+      height: 408px;
     }
+
+    .offer-div>.row {
+      max-width: 1260px;
+      margin: -1px auto 0;
+    }
+
+    .offer-div1>.row {
+      max-width: 1260px;
+      margin: -1px auto 0;
+    }
+
     .ofr_had_line {
-      width: 30%;
+      border-top: 1px solid #0078c1;
+      margin-top: 20px;
+      width: 42%;
     }
+
     .offer_car {
-      margin-top: 0;
-      margin-left: 0;
-      max-width: 100%;
+      margin-top: 25px;
+      margin-left: 230px;
+      /* width: 95%; */
+      max-width: 81%;
+      padding-bottom: 3%;
     }
-    #fourbuttons > .col-sm-3 {
-      padding: 10px 1px;
+
+    .car_name {
+      margin: 25px 0 0 40px;
+      font-size: 26px !important;
+      padding-top: 2px;
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+      padding-bottom: 0;
+      white-space: nowrap;
+      padding-top: 35px;
     }
-    .HS-Sec {
-      margin-top: 0;
-      padding: 50px 0;
+
+    .car_modl_trim {
+      font-size: 14px;
+      color: #fff;
+      margin-left: 40px;
     }
+
+    .ofr_leas {
+      font-size: 45px;
+      margin-bottom: 0;
+      line-height: 0;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-top: 65px;
+      margin-left: 40px;
+    }
+
+    .ofr_detail {
+      color: #fff;
+      margin: 35px 0 15px 40px;
+      font-size: 16px;
+      padding-top: 30px;
+      font-weight: 500;
+    }
+
+    .no_offer {
+      color: #fff;
+      font-size: 16px;
+      padding-top: 30px;
+      line-height: 1.3em;
+      margin-left: 40px;
+      display: none;
+    }
+
+    .ofr_disc {
+      padding: 10px 25px;
+      color: #000;
+      font-size: 10px;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .heading {
+      margin: 0 !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      background: #880e00;
+      padding: 20px 0 20px 80px !important;
+      text-align: center;
+      font-size: 18px !important;
+      line-height: 1;
+      text-align: left;
+    }
+
+    .inner-1 {
+      max-width: 1439px;
+      margin: 0 auto;
+    }
+
+    .inner-2 {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .inner-3 {
+      max-width: 965px;
+      margin: 0 auto;
+    }
+
+    .inner-4 {
+      max-width: 1295px;
+      margin: 0 auto;
+    }
+
+    .inner-5 {
+      max-width: 1400px;
+      margin: 0 auto;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .inner-6 {
+      max-width: 1270px;
+      margin: 0 auto;
+    }
+
+    .inner-7 {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #fourbuttons {
+      padding-top: 0;
+    }
+
     .Flex-D {
-      flex-direction: column;
+      display: flex;
+      align-items: center;
     }
-    .box_1 h4 {
-      font-size: 30px;
-    }
-    .para_2 {
-      margin-bottom: 10px;
-    }
+
     .Flex-D .head_2 {
-      padding: 20px 10px 10px;
+      padding: 5px 10px 10px;
+      margin-top: 0;
     }
-    .mdl_had {
-      font-size: 30px;
+
+    .Flex-D .para_2 {
+      line-height: 1.1;
     }
+
+    .box_1 {
+      margin: 30px 0 0;
+      background-color: #b60000;
+      color: #fff;
+    }
+
+    .line {
+      border-top: 1px solid #0078c1;
+      margin: 30px auto 15px;
+      max-width: 110px;
+    }
+
+    .line2 {
+      border-top: 1px solid #0078c1;
+      margin: 30px auto 15px 0;
+      max-width: 80px;
+    }
+
+    .border {
+      padding: 1px;
+      background-color: #0374bb;
+    }
+
+    .box_1 h4 {
+      padding: 10px 10px 0;
+      margin-bottom: 0;
+      font-size: 39px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
     .box_p1 {
-      padding: 15px 5px 10px 40px;
+      padding: 15px 5px 10px 80px;
       line-height: 1.3;
       margin-bottom: 0;
       color: #fff;
       font-weight: 500;
-      font-size: 30px !important;
+      font-size: 36px !important;
       text-align: left;
     }
+
     .box_p2 {
-      padding: 10px 20px 10px 40px;
+      padding: 8px 20px 10px 80px;
       line-height: 1.4em;
-      margin-bottom: 15px;
-      font-size: 18px !important;
+      margin-bottom: 10px;
+      font-size: 15px !important;
       font-weight: 400;
       letter-spacing: 0;
       text-align: left;
     }
+
+    .bg_white_sec {
+      margin: 0;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .bg_black_sec {
+      margin: 0;
+      background-color: #030303;
+      color: #fff;
+    }
+
+    .bg_black_sec_2 {
+      margin: 0;
+      background-color: #000000;
+      color: #fff;
+    }
+
+    .bg_grey_sec {
+      margin: 0;
+      background-color: #262626;
+      color: #fff;
+    }
+
+    .bg_green_sec {
+      margin: 0;
+      background-color: #741705;
+      color: #fff;
+    }
+
+    .bg_lightgreen_sec {
+      margin: 0;
+      background-color: #3c6d5d;
+      color: #fff;
+    }
+
+    .head_2 {
+      padding: 20px 5px 10px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 10px;
+      line-height: 1.2;
+    }
+
+    .para_2 {
+      padding: 10px 17px;
+      font-size: 17px;
+      line-height: 1.4;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .para_3 {
+      padding: 0 20px !important;
+      font-size: 16px !important;
+      line-height: 1.4 !important;
+      font-weight: 500 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .para_A {
+      padding: 0 20px !important;
+      font-size: 16px !important;
+      line-height: 1.6 !important;
+      font-weight: 500 !important;
+      margin-top: -15px !important;
+    }
+
+    .HS-Sec {
+      margin-top: -30px;
+    }
+
+    .mdl_had {
+      color: #000 !important;
+      text-align: center;
+      font-size: 36px;
+      padding: 0 40px 10px;
+    }
+
+    .mdlname {
+      padding: 30px 21px 0;
+      margin-bottom: 0;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      margin-top: 15px;
+      line-height: 1.3em;
+      text-align: center;
+      color: #000;
+      margin-top: -3% !important;
+    }
+
+    .mdl_msrp {
+      padding: 10px 35px 25px;
+      font-size: 12px;
+      line-height: 1.9;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+      margin-bottom: -20px !important;
+    }
+
+    .malmrp {
+      padding: 0 35px;
+      font-size: 10px !important;
+      line-height: 1.4;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .mdl_msrps {
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .Mdl_mrp {
+      color: #000;
+      font-size: 18px !important;
+      text-align: center;
+    }
+
+    .mdl_vi {
+      color: #ff2d2d !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .head_2 {
+      padding: 20px 5px 15px;
+      margin-bottom: 0;
+      font-size: 17px !important;
+      font-weight: 500;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+
+    .head_3 {
+      padding: 45px 5px 15px;
+      margin-bottom: 0;
+      font-size: 18px !important;
+      font-weight: 500;
+      margin-top: 10px;
+      line-height: 1.2;
+    }
+
     .sns-pd-in-12 {
-      padding-inline: 20px;
+      padding-inline: 12vw;
     }
+
     .sns-pd-in-5 {
-      padding-inline: unset !important;
+      padding-inline: 5vw !important;
     }
-  }
-</style>
-<div class="main-div">
-  <div class="banner-div">
-    <p>2026 RAM 1500</p>
-    <p class="banner-price">Starting MSRP: $41,025*</p><img
-      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/bb8350f186304c5281d63d4b877da8ef.jpg"
-      alt="Banner"
-      style="max-width: 100%;" /></div>
-  <div style="max-width: 1343px;margin: 0% auto;background-color: #fff;"></div>
-  <div class="offer-div" style="display: none;">
-    <div class="row">
-      <div class="col-sm-3">
-        <h1 class="car_name">2026 RAM 1500
-        </h1>
-        <p class="car_modl_trim"></p>
-        <p class="ofr_leas">0%<sup>APR</sup>
-        </p>
-        <p class="ofr_detail">For 60 months +</p>
-        <p class="no_offer" style="color:#fff;">Please contact Melloy Dodge Ram FIAT for the latest lease and finance offers.</p>
-      </div>
-      <div class="col-sm-9" style="padding-top: 5px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a6a009fefd9045a9a9f306e96a782e0d.png"
-          alt="Offer Car"
-          class="offer_car" /></div>
-      <div class="ofr_disc">
-        <p>Offer applies to 2026 RAM 1500 BIG HORN<sup>®</sup>
-          CREW CAB 4X2 5'7" BOX.<br/>+ 0% APR financing for 60 months equals $16.67 per month per $1,000 financed for
-          <span style="white-space: nowrap;">well-qualified</span>
-          buyers through Stellantis Financial Services regardless of down payment. Not all buyers will qualify. Not compatible with any other incentive programs or offers. Residency restrictions apply. Contact Melloy Dodge Ram FIAT for details. Must take delivery by 03/02/2026.</p>
-      </div>
+
+    .col-sm-3 .mdlname h4:nth-of-type(2) {
+      margin-top: 5px !important;
+    }
+
+    .sns-pt-30px {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .banner-div p {
+        position: initial;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: -1px;
+        background-color: #000;
+        padding-top: 10px;
+      }
+
+      .ofr_leas {
+        text-align: center;
+      }
+
+      .ofr_detail {
+        text-align: center;
+      }
+
+      .ofr_disc {
+        padding-top: 25px;
+        padding-inline: 20px;
+      }
+
+      .sns-pt-30px {
+        margin-top: 30px;
+      }
+
+      .heading {
+        margin: 0 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        background: #741604;
+        padding: 20px 0 20px 40px !important;
+        text-align: center;
+        font-size: 18px !important;
+        line-height: 1;
+        text-align: left;
+      }
+
+      .banner-price {
+        margin-bottom: 0;
+        color: #fff !important;
+        font-size: 18px !important;
+        font-weight: 500;
+        padding: 10px 0 0;
+        text-align: center;
+        line-height: 1.2;
+        background-color: #000;
+      }
+
+      .offer-div {
+        height: unset;
+      }
+
+      .offer-div1 {
+        height: unset;
+      }
+
+      .ofr_had_line {
+        width: 30%;
+      }
+
+      .offer_car {
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 100%;
+      }
+
+      #fourbuttons>.col-sm-3 {
+        padding: 10px 1px;
+      }
+
+      .HS-Sec {
+        margin-top: 0;
+        padding: 50px 0;
+      }
+
+      .Flex-D {
+        flex-direction: column;
+      }
+
+      .box_1 h4 {
+        font-size: 30px;
+      }
+
+      .para_2 {
+        margin-bottom: 10px;
+      }
+
+      .Flex-D .head_2 {
+        padding: 20px 10px 10px;
+      }
+
+      .mdl_had {
+        font-size: 30px;
+      }
+
+      .box_p1 {
+        padding: 15px 5px 10px 40px;
+        line-height: 1.3;
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 30px !important;
+        text-align: left;
+      }
+
+      .box_p2 {
+        padding: 10px 20px 10px 40px;
+        line-height: 1.4em;
+        margin-bottom: 15px;
+        font-size: 18px !important;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-align: left;
+      }
+
+      .sns-pd-in-12 {
+        padding-inline: 20px;
+      }
+
+      .sns-pd-in-5 {
+        padding-inline: unset !important;
+      }
+    }
+  </style>
+  <div class="main-div">
+    <div class="banner-div">
+      <p>2026 RAM 1500</p>
+      <p class="banner-price">Starting MSRP: $41,025*</p><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/bb8350f186304c5281d63d4b877da8ef.jpg" alt="Banner"
+        style="max-width: 100%;" />
     </div>
-  </div>
-  <div class="offer-div1">
-    <div class="row">
-      <div class="col-sm-3">
-        <h1 class="car_name">2026 RAM 1500</h1>
-        <p class="car_modl_trim"></p>
-        <p class="ofr_leas">0%<sup>APR</sup>
-        </p>
-        <p class="ofr_detail">For 60 months +</p>
-        <p class="no_offer">Please contact Melloy Dodge Ram FIAT for the latest lease and finance offers.</p>
-      </div>
-      <div class="col-sm-9" style="padding-top: 5px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a6a009fefd9045a9a9f306e96a782e0d.png"
-          alt="Offer Car"
-          class="offer_car" /></div>
-      <div class="ofr_disc">
-        <p>Offer applies to 2026 RAM 1500 BIG HORN<sup>®</sup>
-          CREW CAB 4X2 5'7" BOX.<br/>+ 0% APR financing for 60 months equals $16.67 per month per $1,000 financed for
-          <span style="white-space: nowrap;">well-qualified</span>
-          buyers through Stellantis Financial Services regardless of down payment. Not all buyers will qualify. Not compatible with any other incentive programs or offers. Residency restrictions apply. Contact Melloy Dodge Ram FIAT for details. Must take delivery by 03/02/2026.</p>
-      </div>
-    </div>
-  </div>
-  <div style="max-width: 1439px; margin: 0% auto; background-color: #fff; overflow: hidden; margin-top: 15px; color: #fff;">
-    <div class="inner-6" style="padding-top: 2%;">
-      <div id="fourbuttons" class="row text-center">
-        <div class="col-sm-3" style="padding: 1px;">
-          <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026" style="display: inline-block;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
-              alt="view inventroy"
-              style="max-width: 100%;" /></a>
+    <div style="max-width: 1343px;margin: 0% auto;background-color: #fff;"></div>
+    <div class="offer-div" style="display: none;">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="car_name">2026 RAM 1500
+          </h1>
+          <p class="car_modl_trim"></p>
+          <p class="ofr_leas">0%<sup>APR</sup>
+          </p>
+          <p class="ofr_detail">For 60 months +</p>
+          <p class="no_offer" style="color:#fff;">Please contact Melloy Dodge Ram FIAT for the latest lease and finance
+            offers.</p>
         </div>
-        <div class="col-sm-3" style="padding: 1px;">
-          <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
-              alt="get a quote"
-              style="max-width: 100%;" /></a>
-        </div>
-        <div class="col-sm-3" style="padding: 1px;">
-          <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
-              alt="get pre approved"
-              style="max-width: 100%;" /></a>
-        </div>
-        <div class="col-sm-3" style="padding: 1px;">
-          <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
-              alt="value your trade"
-              style="max-width: 100%;" /></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="max-width: 1439px; margin: 0% auto; background-color: #000; overflow: hidden; margin-top: 30px; color: #fff;">
-    <div class="row text-center" style="padding: 35px 0px 35px; margin: 0px;">
-      <div class="col-sm-4" style="padding: 2px;">
-        <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">540</h1>
-        <p class="para_A">MAXIMUM AVAILABLE<br/>HORSEPOWER</p>
-      </div>
-      <div class="col-sm-4" style="padding: 2px;">
-        <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">2,360</h1>
-        <p class="para_A">
-          <span style="white-space: nowrap;">MAXIMUM PAYLOAD (LB)*</span>
-        </p>
-      </div>
-      <div class="col-sm-4" style="padding: 2px;">
-        <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">50”+
-        </h1>
-        <p class="para_A">COMBINED<br/>AVAILABLE DIGITAL DISPLAY*</p>
-      </div>
-    </div>
-  </div>
-  <div class="row text-center box_1">
-    <div class="col-sm-4 text-right" style="padding: 0px;">
-      <h4 class="heading">design</h4>
-      <p class="box_p1">THE MOST LUXURIOUS RAM 1500 EVER*</p>
-      <p class="box_p2" style="display: none;">Building on a legacy of craftsmanship and comfort, the new 2026 RAM 1500 boasts bold design updates for a new era of pickup trucks.</p>
-    </div>
-    <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/282008bacfab438a8ee44fa139b20bb5.jpg"
-        alt="design"
-        style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
-    <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/282008bacfab438a8ee44fa139b20bb5.jpg"
-        alt="design"
-        style="max-width: 100%; display: inline;" /></div>
-  </div>
-  <div class="inner-1 bg_white_sec" style="padding-top: 30px; box-shadow: 0px 3px 30px -14px grey; margin-bottom: 28px; color: #000;">
-    <div class="inner-4">
-      <div class="row text-center" style="padding-bottom: 28px; margin: 0px;">
-        <div class="col-sm-6" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f779c028b92042fbb79ac6f430c61c47.jpg"
-            alt="walk-up animation"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-            <span style="white-space: nowrap;">WALK-UP</span>
-            ANIMATION</h4>
-          <p class="para_2">The 2026 Ram 1500 makes its appearance known with an available customizable LED
-            <span style="white-space: nowrap;">walk-up</span>
-            animation. An exterior light carpet also illuminates upon approach.</p>
-        </div>
-        <div class="col-sm-3" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/dce6055d1f6d4031a508d3654b213c98.jpg"
-            alt="DYNAMIC DETAILS"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DYNAMIC DETAILS</h4>
-          <p class="para_2">They’ll know it’s a Ram 1500. This truck boasts bold
-            <span style="white-space: nowrap;">R-A-M</span>
-            rear badging, plus
-            <span style="white-space: nowrap;">trim-specific</span>
-            grille surrounds and a sophisticated redesigned full front fascia.</p>
-        </div>
-        <div class="col-sm-3" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/621880304a1246d595962c6ca3c6773d.jpg"
-            alt="LED LIGHTS AT EVERY TURN"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LED LIGHTS AT EVERY TURN</h4>
-          <p class="para_2">Distinct LED headlamps and available LED taillamps and fog lamps set off the sleek exterior of the truck. For extra daytime lighting, signature daytime running lamps are available.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000; box-shadow: 0px 12px 26px -19px grey;"></div>
-  <div class="inner-1 bg_white_sec" style="padding-top:0px; box-shadow: 0px 12px 20px -16px grey; margin-bottom: 28px; color: #000;">
-    <div class="inner-4">
-      <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #000;">
-        <div class="col-sm-6" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ac0b1186d1e54a7b80abf8d25639c840.jpg"
-            alt="CLASS-EXCLUSIVE AVAILABLE RAMBOX CARGO MANAGEMENT SYSTEM*"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-            <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
-            AVAILABLE
-            <span style="text-transform: initial;">RamBox<sup>&reg;</sup>
-            </span>
-            CARGO MANAGEMENT SYSTEM*</h4>
-          <p class="para_2">This secured exterior storage system is versatile,
-            <span style="white-space: nowrap;">well-lit</span>
-            and has a
-            <span style="white-space: nowrap;">115-volt</span>
-            AC outlet located in the
-            <span style="white-space: nowrap;">driver-side</span>
-            RamBox<sup>&reg;</sup>.</p>
-        </div>
-        <div class="col-sm-6" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/783c04ec46d340089f23d330a5faefa4.jpg"
-            alt="2026 RAM 1500"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">REMOTE TAILGATE CONTROL</h4>
-          <p class="para_2 hidden-xs">Get quick and easy access to your tailgate. Control it via your key fob, a button in the overhead console or the tailgate handle (not available with the multifunction tailgate).</p>
-          <p class="para_2 hidden-sm hidden-md hidden-lg" style="padding-bottom: 0; margin-bottom: -5px;">Get quick and easy access to your tailgate. Control it via your key fob, a button in the overhead console or the tailgate handle (not available with the multifunction tailgate).</p>
+        <div class="col-sm-9" style="padding-top: 5px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a6a009fefd9045a9a9f306e96a782e0d.png"
+            alt="Offer Car" class="offer_car" /></div>
+        <div class="ofr_disc">
+          <p>Offer applies to 2026 RAM 1500 BIG HORN<sup>®</sup>
+            CREW CAB 4X2 5'7" BOX.<br />+ 0% APR financing for 60 months equals $16.67 per month per $1,000 financed for
+            <span style="white-space: nowrap;">well-qualified</span>
+            buyers through Stellantis Financial Services regardless of down payment. Not all buyers will qualify. Not
+            compatible with any other incentive programs or offers. Residency restrictions apply. Contact Melloy Dodge
+            Ram
+            FIAT for details. Must take delivery by 03/02/2026.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000; box-shadow: 0px 12px 26px -19px grey;">
-    <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
-      <div class="inner-4" style="max-width: 973px;">
-        <div class="row text-center" style="padding-bottom: 16px; margin: 0px; color: #000;">
-          <div class="col-sm-4" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/11765ea66cdb410ebe7b636c67412547.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TUNGSTEN INTERIOR</h4>
-            <p class="para_2">Sink into
-              <span style="white-space: nowrap;">Best-in-Class 24-way</span>
-              power adjustable and customizable driver and front passenger seats*<br> with heat, ventilation, memory and massage functionality.</p>
+    <div class="offer-div1">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="car_name">2026 RAM 1500</h1>
+          <p class="car_modl_trim"></p>
+          <p class="ofr_leas">0%<sup>APR</sup>
+          </p>
+          <p class="ofr_detail">For 60 months +</p>
+          <p class="no_offer">Please contact Melloy Dodge Ram FIAT for the latest lease and finance offers.</p>
+        </div>
+        <div class="col-sm-9" style="padding-top: 5px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/a6a009fefd9045a9a9f306e96a782e0d.png"
+            alt="Offer Car" class="offer_car" /></div>
+        <div class="ofr_disc">
+          <p>Offer applies to 2026 RAM 1500 BIG HORN<sup>®</sup>
+            CREW CAB 4X2 5'7" BOX.<br />+ 0% APR financing for 60 months equals $16.67 per month per $1,000 financed for
+            <span style="white-space: nowrap;">well-qualified</span>
+            buyers through Stellantis Financial Services regardless of down payment. Not all buyers will qualify. Not
+            compatible with any other incentive programs or offers. Residency restrictions apply. Contact Melloy Dodge
+            Ram
+            FIAT for details. Must take delivery by 03/02/2026.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      style="max-width: 1439px; margin: 0% auto; background-color: #fff; overflow: hidden; margin-top: 15px; color: #fff;">
+      <div class="inner-6" style="padding-top: 2%;">
+        <div id="fourbuttons" class="row text-center">
+          <div class="col-sm-3" style="padding: 1px;">
+            <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026"
+              style="display: inline-block;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+                alt="view inventroy" style="max-width: 100%;" /></a>
           </div>
-          <div class="col-sm-4" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/08fc6ec0243a456faae948f3f84c2f55.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">LIMITED INTERIOR</h4>
-            <p class="para_2">
-              <span style="white-space: nowrap;">Class-Exclusive</span>
-              available Reclining Rear Seats* are both heated and ventilated for custom comfort. And get the space you need with
-              <span style="white-space: nowrap;">Best-in-Class</span>
-              available Crew Cab Rear Seat Legroom of 44.8 inches*. Up front, the Ram 1500 Limited includes
-              <span style="white-space: nowrap;">12-way</span>
-              power premium quilted leather bucket seats and a wood and
-              <span style="white-space: nowrap;">leather-wrapped</span>
-              steering wheel.</p>
+          <div class="col-sm-3" style="padding: 1px;">
+            <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+                alt="get a quote" style="max-width: 100%;" /></a>
           </div>
-          <div class="col-sm-4" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/06026217afff4831b3d0fb27ace2443d.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-              <span style="text-transform: initial;">LARAMIE<sup>&reg;</sup>
-              </span>
-              INTERIOR</h4>
-            <p class="para_2">Drivers and front passengers can enjoy
-              <span style="white-space: nowrap;">leather-trimmed</span>
-              bucket seats that provide comfort on the drive. With
-              <span style="white-space: nowrap;">Class-Exclusive</span>
-              available
-              <span style="white-space: nowrap;">in-floor</span>
-              storage*, cargo and equipment can be stashed in the
-              <span style="white-space: nowrap;">full-length</span>
-              floor console. In back, enjoy
-              <span style="white-space: nowrap;">Class-Exclusive</span>
-              available Reclining Rear Seats*.</p>
+          <div class="col-sm-3" style="padding: 1px;">
+            <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+                alt="get pre approved" style="max-width: 100%;" /></a>
+          </div>
+          <div class="col-sm-3" style="padding: 1px;">
+            <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+                alt="value your trade" style="max-width: 100%;" /></a>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="inner-1 bg_black_sec_2"
-      style="padding-top: 0px; background-color: #000;"
-      bis_skin_checked="1">
-      <div class="inner" bis_skin_checked="1">
-        <div
-          class="row text-center"
-          style="padding-bottom: 16px; margin: 0px; color: #fff;"
-          bis_skin_checked="1">
-          <div
-            class="col-sm-12"
-            style="padding-top: 50px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2408f097bf3c486492496079cad4893d.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><div class="inner-4" bis_skin_checked="1">
-              <h1 style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 5PX; color: #ffff; line-height: 1.4em;">RAM 1500 OFFERS OVER 50 INCHES OF COMBINED AVAILABLE DIGITAL DISPLAY VIEWING AREA*</h1>
-            </div>
-          </div>
+      style="max-width: 1439px; margin: 0% auto; background-color: #000; overflow: hidden; margin-top: 30px; color: #fff;">
+      <div class="row text-center" style="padding: 35px 0px 35px; margin: 0px;">
+        <div class="col-sm-4" style="padding: 2px;">
+          <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">540</h1>
+          <p class="para_A">MAXIMUM AVAILABLE<br />HORSEPOWER</p>
         </div>
-      </div>
-      <div
-        class="inner-4"
-        style="max-width: 1295px;"
-        bis_skin_checked="1">
-        <div
-          class="row text-center"
-          style="padding-top: 0px; padding-bottom: 20px; margin: 0px;"
-          bis_skin_checked="1">
-          <div
-            class="col-sm-3"
-            style="padding: 2px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/98754dd44a734e31bffc81379383fab2.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">INTERACTIVE DIGITAL CLUSTER<br/>DISPLAY</h4>
-            <p class="para_2">Keep stats in sight. The available
-              <span style="white-space: nowrap;">12-inch</span>
-              Digital Cluster Display clearly displays vehicle information and safety alerts front and center.</p>
-          </div>
-          <div
-            class="col-sm-3"
-            style="padding: 2px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fa7290709d17446ca2e7ecc6d53cce5b.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM 1500 OFFERS THE LARGEST<br/> AVAILABLE TOUCHSCREEN IN ITS<br/>CLASS*</h4>
-            <p class="para_2">With just your fingertip, choose entertainment, view navigation and customize your comfort via the massive available
-              <span style="white-space: nowrap;">14.5-inch</span>
-              Uconnect<sup>&reg;</sup>
-              touchscreen.
-              <span style="white-space: nowrap;">Split-screen</span>
-              cast two apps simultaneously for both driver and passenger entertainment.</p>
-          </div>
-          <div
-            class="col-sm-3"
-            style="padding: 2px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/25f0eca289d3417e8599e91f07c9a31f.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM 1500 OFFERS A<br/><span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
-              AVAILABLE<br/><span style="white-space: nowrap;">10.25-INCH</span>
-              FRONT PASSENGER<br/>TOUCHSCREEN DISPLAY*</h4>
-            <p class="para_2">Engage your copilot. The available
-              <span style="white-space: nowrap;">10.25-inch</span>
-              Passenger Interactive Display allows the front passenger to view navigation, access vehicle cameras, stream content and more.</p>
-          </div>
-          <div
-            class="col-sm-3"
-            style="padding: 2px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1d062a6bf35b40e9aaf6a1b02ee1c713.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-              <span style="white-space: nowrap;">HEAD-UP</span>
-              DISPLAY</h4>
-            <p class="para_2">The available
-              <span style="white-space: nowrap;">Head-Up</span>
-              Display projects helpful information like vehicle speed, navigation, incoming calls and more all within your line of sight on the vehicle’s windshield.</p>
-          </div>
+        <div class="col-sm-4" style="padding: 2px;">
+          <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">2,360</h1>
+          <p class="para_A">
+            <span style="white-space: nowrap;">MAXIMUM PAYLOAD (LB)*</span>
+          </p>
+        </div>
+        <div class="col-sm-4" style="padding: 2px;">
+          <h1 style="font-size: 64px !important; font-weight: 600 !important; letter-spacing: 2px;">50”+
+          </h1>
+          <p class="para_A">COMBINED<br />AVAILABLE DIGITAL DISPLAY*</p>
         </div>
       </div>
     </div>
-    <div style="padding-top: 30px;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/aa1e202ec4b941fa880aed291c949144.jpg"
-        alt="image-1"
-        style="max-width: 100%;" /></div>
-    <div id="Get a quote" style="margin-top: 30px;">
-      <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6bff1c70c5374666b806057c66df3973.gif"
-          alt="Get a quote"
-          style="max-width: 100%;" /></a>
-    </div>
-    <div style="padding-top: 30px;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0ea407ac0b9f461995f2df7e5ff8e19f.jpg"
-        alt="image-2"
-        style="max-width: 100%;" /></div>
-    <div class="row text-center box_1" style="background-color: #9b0004 !important;">
+    <div class="row text-center box_1">
       <div class="col-sm-4 text-right" style="padding: 0px;">
-        <h4 class="heading" style="background-color: #741604 !important;">TECHNOLOGY</h4>
-        <p class="box_p1" style="padding-top: 16px;line-height: 1.2em;">THE MOST TECHNOLOGICALLY ADVANCED FEATURES IN ITS CLASS*</p>
+        <h4 class="heading">design</h4>
+        <p class="box_p1">THE MOST LUXURIOUS RAM 1500 EVER*</p>
+        <p class="box_p2" style="display: none;">Building on a legacy of craftsmanship and comfort, the new 2026 RAM
+          1500
+          boasts bold design updates for a new era of pickup trucks.</p>
       </div>
-      <div class="col-sm-8 hidden-xs" style="padding: 0;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8bc6e236fc854bc997067d7a513688dd.jpg"
-          alt="2026 RAM 1500"
-          style="width: 100%; display: inline; margin-left: 0.1px;" /></div>
-      <div class="col-sm-8 hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8bc6e236fc854bc997067d7a513688dd.jpg"
-          alt="2026 RAM 1500"
-          style="width: 100%; display: inline;" /></div>
+      <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/282008bacfab438a8ee44fa139b20bb5.jpg"
+          alt="design" style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
+      <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/282008bacfab438a8ee44fa139b20bb5.jpg"
+          alt="design" style="max-width: 100%; display: inline;" /></div>
     </div>
-    <div class="inner-1" style="box-shadow: 0px 10px 20px -10px grey;">
-      <div class="inner-4" style="margin-bottom: 28px;">
-        <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #000;">
-          <div class="col-sm-12" style="padding: 2px;">
+    <div class="inner-1 bg_white_sec"
+      style="padding-top: 30px; box-shadow: 0px 3px 30px -14px grey; margin-bottom: 28px; color: #000;">
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 28px; margin: 0px;">
+          <div class="col-sm-6" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f779c028b92042fbb79ac6f430c61c47.jpg"
+              alt="walk-up animation" style="max-width: 100%; display: inline-block;" />
             <h4 class="head_2">
-              <span style="white-space: nowrap;">HANDS-FREE</span>
-              ACTIVE DRIVING ASSIST*</h4>
-            <p class="para_2">Using sensors, cameras and radar, this available innovative system helps maintain a set speed and a safe distance from vehicles ahead. During long treks on approved roadways, it can help keep the truck centered within lanes.</p>
+              <span style="white-space: nowrap;">WALK-UP</span>
+              ANIMATION
+            </h4>
+            <p class="para_2">The 2026 Ram 1500 makes its appearance known with an available customizable LED
+              <span style="white-space: nowrap;">walk-up</span>
+              animation. An exterior light carpet also illuminates upon approach.
+            </p>
+          </div>
+          <div class="col-sm-3" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/dce6055d1f6d4031a508d3654b213c98.jpg"
+              alt="DYNAMIC DETAILS" style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">DYNAMIC DETAILS</h4>
+            <p class="para_2">They’ll know it’s a Ram 1500. This truck boasts bold
+              <span style="white-space: nowrap;">R-A-M</span>
+              rear badging, plus
+              <span style="white-space: nowrap;">trim-specific</span>
+              grille surrounds and a sophisticated redesigned full front fascia.
+            </p>
+          </div>
+          <div class="col-sm-3" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/621880304a1246d595962c6ca3c6773d.jpg"
+              alt="LED LIGHTS AT EVERY TURN" style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">LED LIGHTS AT EVERY TURN</h4>
+            <p class="para_2">Distinct LED headlamps and available LED taillamps and fog lamps set off the sleek
+              exterior
+              of the truck. For extra daytime lighting, signature daytime running lamps are available.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="inner-4">
-      <div class="row text-center" style="padding-bottom: 5px; padding-top: 20px; margin: 0px; color: #000;">
-        <div class="col-sm-9" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9f52d40a66bc4d938ff52ff5d6e3926d.jpg"
-            alt="2026 RAM 1500"
-            style="max-width: 100%; display: inline-block;" /></div>
-        <div class="col-sm-3" style="padding: 2px;">
-          <h4 class="head_2">FIVE DRIVE MODES</h4>
-          <p class="para_2">Choose from one of five drive modes to achieve optimal control in nearly any condition.</p>
-        </div>
-      </div>
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000; box-shadow: 0px 12px 26px -19px grey;">
     </div>
-    <div class="inner-4">
-      <div class="row text-center" style="padding-bottom: 10px; padding-top: 0px; margin: 0px; color: #000;">
-        <div class="col-sm-3" style="padding: 2px;">
-          <h4 class="head_2">AUTO</h4>
-          <p class="para_2">Auto Mode provides traction, comfort and balance during everyday driving.</p>
-        </div>
-        <div class="col-sm-2" style="padding: 2px;">
-          <h4 class="head_2" style="padding-inline: 3px;">TOW</h4>
-          <p class="para_2">Tow Mode is designed to provide stability, control and braking support when hauling heavy loads.</p>
-        </div>
-        <div class="col-sm-2" style="padding: 2px;">
-          <h4 class="head_2">SNOW</h4>
-          <p class="para_2">Designed to provide optimal traction, Snow Mode helps drivers avoid slipping in icy conditions.</p>
-        </div>
-        <div class="col-sm-2" style="padding: 2px;">
-          <h4 class="head_2">SPORT</h4>
-          <p class="para_2">Engage Sport Mode for agility and fast response times when handling tight curves.</p>
-        </div>
-        <div class="col-sm-3" style="padding: 2px;">
-          <h4 class="head_2">
-            <span style="white-space: nowrap;">OFF-ROAD</span>
-          </h4>
-          <p class="para_2">Designed to tackle tough terrain,
-            <span style="white-space: nowrap;">Off-Road</span>
-            Mode adjusts the vehicle suspension and power distribution.</p>
-        </div>
-      </div>
-    </div>
-    <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
+    <div class="inner-1 bg_white_sec"
+      style="padding-top:0px; box-shadow: 0px 12px 20px -16px grey; margin-bottom: 28px; color: #000;">
       <div class="inner-4">
         <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #000;">
           <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/946d2c5f9772444e8405ed22da2369a4.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">INTEGRATED TRAILER HEALTH MONITOR</h4>
-            <p class="para_2">Get valuable information about trailer updates and trailering performance at any given time. This helpful feature takes the guesswork out of towing and helps provide confidence while towing heavy loads.</p>
-          </div>
-          <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5f428b032dc6422a9a450ad4af873bb6.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TRAILER REVERSE GUIDANCE WITH DYNAMIC GRIDLINES*</h4>
-            <p class="para_2">When driving in reverse, this feature displays and highlights your trailer’s predicted trajectory with dynamic gridlines. In the event of a potential jackknife situation, an audible warning will sound.</p>
-          </div>
-        </div>
-      </div>
-      <div class="inner-4">
-        <div class="row text-center" style="padding-bottom: 10CAPABILITYpx; padding-top:px; margin: 0px; color: #000;">
-          <div class="col-sm-3" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1e1f0bd0468649efbe4c3a51c83b0ff2.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">DIGITAL REARVIEW MIRROR WITH TOW MODE</h4>
-            <p class="para_2">Tow with confidence. Get a live video stream from a
-              <span style="white-space: nowrap;">trailer-mounted</span>
-              <span style="white-space: nowrap;">rear-facing</span>
-              camera* with the available Digital Rearview Mirror with Tow Mode.</p>
-          </div>
-          <div class="col-sm-3" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2881b81079da4f649a10dc3c05ae9392.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2" style="padding-inline: 3px;">TRAILER AUTO HITCH ASSIST*</h4>
-            <p class="para_2">This smart system allows the vehicle to steer itself into alignment with the trailer tongue, while the driver maintains control of the brakes and throttle.</p>
-          </div>
-          <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3af75287d11a4df8a535a065b59684dc.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">TELESCOPIC TRAILER TOW MIRRORS</h4>
-            <p class="para_2">The available telescopic trailer tow mirrors help make towing an easier task. Enjoy flexibility and assistance with the available forward and reverse spotter functionality together with the available
-              <span style="white-space: nowrap;">Mirror-Mounted</span>
-              Camera System which extends and retracts to help offer great viewing range when towing.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="inner-1" style="padding-top: 30px; margin: 0px;background-color: #2a2a2a;padding-bottom: 30px;">
-      <div class="inner-4">
-        <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #fff;">
-          <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6942d75132cb43dbb05801b4e709ffbe.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM DIGITAL KEY*</h4>
-            <p class="para_2">
-              <span style="white-space: nowrap;">Hassle-free</span>
-              unlocking is here. Just add an available Ram Digital Key to a compatible iPhone<sup>&reg;</sup>
-              or Android Auto<sup>&trade;</sup>
-              device to access and start your truck without removing the smartphone from your pocket.</p>
-          </div>
-          <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c6c849ca07c5462e81567bf4f3566dec.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM 1500 OFFERS
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ac0b1186d1e54a7b80abf8d25639c840.jpg"
+              alt="CLASS-EXCLUSIVE AVAILABLE RAMBOX CARGO MANAGEMENT SYSTEM*"
+              style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">
               <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
-              AVAILABLE DUAL WIRELESS CHARGING PADS</h4>
-            <p class="para_2">Keep your smartphones and devices charged up. The 2026 Ram 1500 keeps
-              <span style="white-space: nowrap;">Class-Exclusive</span>
-              available dual wireless charging pads* within reach for both driver and front passenger convenience.</p>
+              AVAILABLE
+              <span style="text-transform: initial;">RamBox<sup>&reg;</sup>
+              </span>
+              CARGO MANAGEMENT SYSTEM*
+            </h4>
+            <p class="para_2">This secured exterior storage system is versatile,
+              <span style="white-space: nowrap;">well-lit</span>
+              and has a
+              <span style="white-space: nowrap;">115-volt</span>
+              AC outlet located in the
+              <span style="white-space: nowrap;">driver-side</span>
+              RamBox<sup>&reg;</sup>.
+            </p>
+          </div>
+          <div class="col-sm-6" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/783c04ec46d340089f23d330a5faefa4.jpg"
+              alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">REMOTE TAILGATE CONTROL</h4>
+            <p class="para_2 hidden-xs">Get quick and easy access to your tailgate. Control it via your key fob, a
+              button
+              in the overhead console or the tailgate handle (not available with the multifunction tailgate).</p>
+            <p class="para_2 hidden-sm hidden-md hidden-lg" style="padding-bottom: 0; margin-bottom: -5px;">Get quick
+              and
+              easy access to your tailgate. Control it via your key fob, a button in the overhead console or the
+              tailgate
+              handle (not available with the multifunction tailgate).</p>
           </div>
         </div>
       </div>
     </div>
-    <div style="padding-top: 30px;" bis_skin_checked="1"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/950b47ae7e3c46a0b3ac90af417e7bce.jpg"
-        alt="image-3"
-        style="max-width: 100%;" /></div>
-    <div
-      id="viewinventory"
-      style="padding-top: 30px;"
-      bis_skin_checked="1">
-      <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026" style="display: block;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/14deb82ad7c64d4684cfa6657a60fdef.gif"
-          alt="viewinventory"
-          style="max-width: 100%;" /></a>
-    </div>
-    <div style="padding-top: 25px;" bis_skin_checked="1"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/92dc833ecef442feb5893e844e4aff95.jpg"
-        alt="image-4"
-        style="max-width: 100%;" /></div>
-    <div class="row text-center box_1" style="background-color: #b60000;">
-      <div class="col-sm-4 text-right" style="padding: 0px;">
-        <h4 class="heading" style="background-color: #880e00;">CAPABILITY</h4>
-        <p class="box_p1">MEET THE STRONGEST RAM 1500 EVER</p>
-      </div>
-      <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0aa5af0dc08446cdbaf34f1d62eabfe8.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
-      <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0aa5af0dc08446cdbaf34f1d62eabfe8.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline;" /></div>
-    </div>
-    <div
-      class="inner-1 bg_black_sec_2"
-      style="padding-top: 0px; background-color: #000;"
-      bis_skin_checked="1">
-      <div class="inner-4" bis_skin_checked="1">
-        <div class="inner-4">
-          <div class="row text-center" style="padding-bottom: 20px; padding-top: 30px; margin: 0px; color: #ffffff;">
-            <div class="col-sm-3" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2e7f38d77482426096af8f8e8e4e2a29.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">GO BIG. GO HEMI<sup>&reg;</sup>
-                V8.</h4>
-              <p class="para_2">Now available on select 2026 Ram 1500 models, the HEMI<sup>&reg;</sup>
-                V8 engine you’ve been craving is back. Go get it.<br/><br/>395 MAXIMUM AVAILABLE HORSEPOWER<br/><br/>410 MAXIMUM TORQUE
-                <span style="white-space: nowrap;">(LB-FT)</span><br/><br/>11,320 MAXIMUM TOWING CAPACITY</p>
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000; box-shadow: 0px 12px 26px -19px grey;">
+      <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
+        <div class="inner-4" style="max-width: 973px;">
+          <div class="row text-center" style="padding-bottom: 16px; margin: 0px; color: #000;">
+            <div class="col-sm-4" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/11765ea66cdb410ebe7b636c67412547.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">TUNGSTEN INTERIOR</h4>
+              <p class="para_2">Sink into
+                <span style="white-space: nowrap;">Best-in-Class 24-way</span>
+                power adjustable and customizable driver and front passenger seats*<br> with heat, ventilation, memory
+                and
+                massage functionality.
+              </p>
             </div>
-            <div class="col-sm-3" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/184a57c0dd4940679b8fe1688cff4ac7.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-                <span style="white-space: nowrap;">HIGH-OUTPUT</span>
-                3.0L HURRICANE ENGINE*</h4>
-              <p class="para_2">540 MAXIMUM HORSEPOWER<br/><br/>521 MAXIMUM TORQUE
-                <span style="white-space: nowrap;">(LB-FT)</span><br/><br/>10,000 MAXIMUM TOWING CAPACITY (LB)*<br/><br/>1,490 MAXIMUM PAYLOAD (LB)</p>
+            <div class="col-sm-4" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/08fc6ec0243a456faae948f3f84c2f55.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">LIMITED INTERIOR</h4>
+              <p class="para_2">
+                <span style="white-space: nowrap;">Class-Exclusive</span>
+                available Reclining Rear Seats* are both heated and ventilated for custom comfort. And get the space you
+                need with
+                <span style="white-space: nowrap;">Best-in-Class</span>
+                available Crew Cab Rear Seat Legroom of 44.8 inches*. Up front, the Ram 1500 Limited includes
+                <span style="white-space: nowrap;">12-way</span>
+                power premium quilted leather bucket seats and a wood and
+                <span style="white-space: nowrap;">leather-wrapped</span>
+                steering wheel.
+              </p>
             </div>
-            <div class="col-sm-3" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/83c5088fb87243f5a1440bd571ad26f4.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">3.0L HURRICANE ENGINE</h4>
-              <p class="para_2">420 MAXIMUM HORSEPOWER<br/><br/>469 MAXIMUM TORQUE
-                <span style="white-space: nowrap;">(LB-FT)</span><br/><br/>11,610 MAXIMUM TOWING CAPACITY (LB)*<br/><br/>1,930 MAXIMUM PAYLOAD (LB)</p>
-            </div>
-            <div class="col-sm-3" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/83ea317c4e9f4dc7b47ebb764e03c521.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-                3.6L
-                <span style="text-transform: initial;">Pentastar<sup>&reg;</sup>
+            <div class="col-sm-4" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/06026217afff4831b3d0fb27ace2443d.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">
+                <span style="text-transform: initial;">LARAMIE<sup>&reg;</sup>
                 </span>
-                V6 ENGINE WITH ETORQUE</h4>
-              <p class="para_2">305 MAXIMUM HORSEPOWER<br/><br/>269 MAXIMUM TORQUE
-                <span style="white-space: nowrap;">(LB-FT)</span><br/><br/>8,130 MAXIMUM TOWING CAPACITY (LB)*<br>2,360 MAXIMUM PAYLOAD (LB)</p>
+                INTERIOR
+              </h4>
+              <p class="para_2">Drivers and front passengers can enjoy
+                <span style="white-space: nowrap;">leather-trimmed</span>
+                bucket seats that provide comfort on the drive. With
+                <span style="white-space: nowrap;">Class-Exclusive</span>
+                available
+                <span style="white-space: nowrap;">in-floor</span>
+                storage*, cargo and equipment can be stashed in the
+                <span style="white-space: nowrap;">full-length</span>
+                floor console. In back, enjoy
+                <span style="white-space: nowrap;">Class-Exclusive</span>
+                available Reclining Rear Seats*.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; background-color: #000;" bis_skin_checked="1">
+        <div class="inner" bis_skin_checked="1">
+          <div class="row text-center" style="padding-bottom: 16px; margin: 0px; color: #fff;" bis_skin_checked="1">
+            <div class="col-sm-12" style="padding-top: 50px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2408f097bf3c486492496079cad4893d.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <div class="inner-4" bis_skin_checked="1">
+                <h1
+                  style="font-size: 34px !important; font-weight: 500 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 5PX; color: #ffff; line-height: 1.4em;">
+                  RAM 1500 OFFERS OVER 50 INCHES OF COMBINED AVAILABLE DIGITAL DISPLAY VIEWING AREA*</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+          <div class="row text-center" style="padding-top: 0px; padding-bottom: 20px; margin: 0px;"
+            bis_skin_checked="1">
+            <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/98754dd44a734e31bffc81379383fab2.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">INTERACTIVE DIGITAL CLUSTER<br />DISPLAY</h4>
+              <p class="para_2">Keep stats in sight. The available
+                <span style="white-space: nowrap;">12-inch</span>
+                Digital Cluster Display clearly displays vehicle information and safety alerts front and center.
+              </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fa7290709d17446ca2e7ecc6d53cce5b.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">RAM 1500 OFFERS THE LARGEST<br /> AVAILABLE TOUCHSCREEN IN ITS<br />CLASS*</h4>
+              <p class="para_2">With just your fingertip, choose entertainment, view navigation and customize your
+                comfort
+                via the massive available
+                <span style="white-space: nowrap;">14.5-inch</span>
+                Uconnect<sup>&reg;</sup>
+                touchscreen.
+                <span style="white-space: nowrap;">Split-screen</span>
+                cast two apps simultaneously for both driver and passenger entertainment.
+              </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/25f0eca289d3417e8599e91f07c9a31f.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">RAM 1500 OFFERS A<br /><span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+                AVAILABLE<br /><span style="white-space: nowrap;">10.25-INCH</span>
+                FRONT PASSENGER<br />TOUCHSCREEN DISPLAY*</h4>
+              <p class="para_2">Engage your copilot. The available
+                <span style="white-space: nowrap;">10.25-inch</span>
+                Passenger Interactive Display allows the front passenger to view navigation, access vehicle cameras,
+                stream content and more.
+              </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1d062a6bf35b40e9aaf6a1b02ee1c713.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">
+                <span style="white-space: nowrap;">HEAD-UP</span>
+                DISPLAY
+              </h4>
+              <p class="para_2">The available
+                <span style="white-space: nowrap;">Head-Up</span>
+                Display projects helpful information like vehicle speed, navigation, incoming calls and more all within
+                your line of sight on the vehicle’s windshield.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 30px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/aa1e202ec4b941fa880aed291c949144.jpg"
+          alt="image-1" style="max-width: 100%;" /></div>
+      <div id="Get a quote" style="margin-top: 30px;">
+        <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6bff1c70c5374666b806057c66df3973.gif"
+            alt="Get a quote" style="max-width: 100%;" /></a>
+      </div>
+      <div style="padding-top: 30px;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0ea407ac0b9f461995f2df7e5ff8e19f.jpg"
+          alt="image-2" style="max-width: 100%;" /></div>
+      <div class="row text-center box_1" style="background-color: #9b0004 !important;">
+        <div class="col-sm-4 text-right" style="padding: 0px;">
+          <h4 class="heading" style="background-color: #741604 !important;">TECHNOLOGY</h4>
+          <p class="box_p1" style="padding-top: 16px;line-height: 1.2em;">THE MOST TECHNOLOGICALLY ADVANCED FEATURES IN
+            ITS CLASS*</p>
+        </div>
+        <div class="col-sm-8 hidden-xs" style="padding: 0;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8bc6e236fc854bc997067d7a513688dd.jpg"
+            alt="2026 RAM 1500" style="width: 100%; display: inline; margin-left: 0.1px;" /></div>
+        <div class="col-sm-8 hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/8bc6e236fc854bc997067d7a513688dd.jpg"
+            alt="2026 RAM 1500" style="width: 100%; display: inline;" /></div>
+      </div>
+      <div class="inner-1" style="box-shadow: 0px 10px 20px -10px grey;">
+        <div class="inner-4" style="margin-bottom: 28px;">
+          <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #000;">
+            <div class="col-sm-12" style="padding: 2px;">
+              <h4 class="head_2">
+                <span style="white-space: nowrap;">HANDS-FREE</span>
+                ACTIVE DRIVING ASSIST*
+              </h4>
+              <p class="para_2">Using sensors, cameras and radar, this available innovative system helps maintain a set
+                speed and a safe distance from vehicles ahead. During long treks on approved roadways, it can help keep
+                the truck centered within lanes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 5px; padding-top: 20px; margin: 0px; color: #000;">
+          <div class="col-sm-9" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9f52d40a66bc4d938ff52ff5d6e3926d.jpg"
+              alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" /></div>
+          <div class="col-sm-3" style="padding: 2px;">
+            <h4 class="head_2">FIVE DRIVE MODES</h4>
+            <p class="para_2">Choose from one of five drive modes to achieve optimal control in nearly any condition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 10px; padding-top: 0px; margin: 0px; color: #000;">
+          <div class="col-sm-3" style="padding: 2px;">
+            <h4 class="head_2">AUTO</h4>
+            <p class="para_2">Auto Mode provides traction, comfort and balance during everyday driving.</p>
+          </div>
+          <div class="col-sm-2" style="padding: 2px;">
+            <h4 class="head_2" style="padding-inline: 3px;">TOW</h4>
+            <p class="para_2">Tow Mode is designed to provide stability, control and braking support when hauling heavy
+              loads.</p>
+          </div>
+          <div class="col-sm-2" style="padding: 2px;">
+            <h4 class="head_2">SNOW</h4>
+            <p class="para_2">Designed to provide optimal traction, Snow Mode helps drivers avoid slipping in icy
+              conditions.</p>
+          </div>
+          <div class="col-sm-2" style="padding: 2px;">
+            <h4 class="head_2">SPORT</h4>
+            <p class="para_2">Engage Sport Mode for agility and fast response times when handling tight curves.</p>
+          </div>
+          <div class="col-sm-3" style="padding: 2px;">
+            <h4 class="head_2">
+              <span style="white-space: nowrap;">OFF-ROAD</span>
+            </h4>
+            <p class="para_2">Designed to tackle tough terrain,
+              <span style="white-space: nowrap;">Off-Road</span>
+              Mode adjusts the vehicle suspension and power distribution.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
+        <div class="inner-4">
+          <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #000;">
+            <div class="col-sm-6" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/946d2c5f9772444e8405ed22da2369a4.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">INTEGRATED TRAILER HEALTH MONITOR</h4>
+              <p class="para_2">Get valuable information about trailer updates and trailering performance at any given
+                time. This helpful feature takes the guesswork out of towing and helps provide confidence while towing
+                heavy loads.</p>
+            </div>
+            <div class="col-sm-6" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5f428b032dc6422a9a450ad4af873bb6.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">TRAILER REVERSE GUIDANCE WITH DYNAMIC GRIDLINES*</h4>
+              <p class="para_2">When driving in reverse, this feature displays and highlights your trailer’s predicted
+                trajectory with dynamic gridlines. In the event of a potential jackknife situation, an audible warning
+                will sound.</p>
             </div>
           </div>
         </div>
         <div class="inner-4">
-          <div class="row text-center" style="padding-bottom: 10px; padding-top: 2px; margin: 0px; color: #ffffff;">
+          <div class="row text-center"
+            style="padding-bottom: 10CAPABILITYpx; padding-top:px; margin: 0px; color: #000;">
+            <div class="col-sm-3" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1e1f0bd0468649efbe4c3a51c83b0ff2.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">DIGITAL REARVIEW MIRROR WITH TOW MODE</h4>
+              <p class="para_2">Tow with confidence. Get a live video stream from a
+                <span style="white-space: nowrap;">trailer-mounted</span>
+                <span style="white-space: nowrap;">rear-facing</span>
+                camera* with the available Digital Rearview Mirror with Tow Mode.
+              </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2881b81079da4f649a10dc3c05ae9392.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2" style="padding-inline: 3px;">TRAILER AUTO HITCH ASSIST*</h4>
+              <p class="para_2">This smart system allows the vehicle to steer itself into alignment with the trailer
+                tongue, while the driver maintains control of the brakes and throttle.</p>
+            </div>
+            <div class="col-sm-6" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/3af75287d11a4df8a535a065b59684dc.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">TELESCOPIC TRAILER TOW MIRRORS</h4>
+              <p class="para_2">The available telescopic trailer tow mirrors help make towing an easier task. Enjoy
+                flexibility and assistance with the available forward and reverse spotter functionality together with
+                the
+                available
+                <span style="white-space: nowrap;">Mirror-Mounted</span>
+                Camera System which extends and retracts to help offer great viewing range when towing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-1" style="padding-top: 30px; margin: 0px;background-color: #2a2a2a;padding-bottom: 30px;">
+        <div class="inner-4">
+          <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #fff;">
+            <div class="col-sm-6" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6942d75132cb43dbb05801b4e709ffbe.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">RAM DIGITAL KEY*</h4>
+              <p class="para_2">
+                <span style="white-space: nowrap;">Hassle-free</span>
+                unlocking is here. Just add an available Ram Digital Key to a compatible iPhone<sup>&reg;</sup>
+                or Android Auto<sup>&trade;</sup>
+                device to access and start your truck without removing the smartphone from your pocket.
+              </p>
+            </div>
+            <div class="col-sm-6" style="padding: 2px;"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c6c849ca07c5462e81567bf4f3566dec.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">RAM 1500 OFFERS
+                <span style="white-space: nowrap;">CLASS-EXCLUSIVE</span>
+                AVAILABLE DUAL WIRELESS CHARGING PADS
+              </h4>
+              <p class="para_2">Keep your smartphones and devices charged up. The 2026 Ram 1500 keeps
+                <span style="white-space: nowrap;">Class-Exclusive</span>
+                available dual wireless charging pads* within reach for both driver and front passenger convenience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 30px;" bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/950b47ae7e3c46a0b3ac90af417e7bce.jpg"
+          alt="image-3" style="max-width: 100%;" /></div>
+      <div id="viewinventory" style="padding-top: 30px;" bis_skin_checked="1">
+        <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026"
+          style="display: block;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/14deb82ad7c64d4684cfa6657a60fdef.gif"
+            alt="viewinventory" style="max-width: 100%;" /></a>
+      </div>
+      <div style="padding-top: 25px;" bis_skin_checked="1"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/92dc833ecef442feb5893e844e4aff95.jpg"
+          alt="image-4" style="max-width: 100%;" /></div>
+      <div class="row text-center box_1" style="background-color: #b60000;">
+        <div class="col-sm-4 text-right" style="padding: 0px;">
+          <h4 class="heading" style="background-color: #880e00;">CAPABILITY</h4>
+          <p class="box_p1">MEET THE STRONGEST RAM 1500 EVER</p>
+        </div>
+        <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0aa5af0dc08446cdbaf34f1d62eabfe8.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
+        <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/0aa5af0dc08446cdbaf34f1d62eabfe8.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline;" /></div>
+      </div>
+      <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; background-color: #000;" bis_skin_checked="1">
+        <div class="inner-4" bis_skin_checked="1">
+          <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 20px; padding-top: 30px; margin: 0px; color: #ffffff;">
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/2e7f38d77482426096af8f8e8e4e2a29.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">GO BIG. GO HEMI<sup>&reg;</sup>
+                  V8.</h4>
+                <p class="para_2">Now available on select 2026 Ram 1500 models, the HEMI<sup>&reg;</sup>
+                  V8 engine you’ve been craving is back. Go get it.<br /><br />395 MAXIMUM AVAILABLE
+                  HORSEPOWER<br /><br />410 MAXIMUM TORQUE
+                  <span style="white-space: nowrap;">(LB-FT)</span><br /><br />11,320 MAXIMUM TOWING CAPACITY
+                </p>
+              </div>
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/184a57c0dd4940679b8fe1688cff4ac7.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">
+                  <span style="white-space: nowrap;">HIGH-OUTPUT</span>
+                  3.0L HURRICANE ENGINE*
+                </h4>
+                <p class="para_2">540 MAXIMUM HORSEPOWER<br /><br />521 MAXIMUM TORQUE
+                  <span style="white-space: nowrap;">(LB-FT)</span><br /><br />10,000 MAXIMUM TOWING CAPACITY
+                  (LB)*<br /><br />1,490 MAXIMUM PAYLOAD (LB)
+                </p>
+              </div>
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/83c5088fb87243f5a1440bd571ad26f4.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">3.0L HURRICANE ENGINE</h4>
+                <p class="para_2">420 MAXIMUM HORSEPOWER<br /><br />469 MAXIMUM TORQUE
+                  <span style="white-space: nowrap;">(LB-FT)</span><br /><br />11,610 MAXIMUM TOWING CAPACITY
+                  (LB)*<br /><br />1,930 MAXIMUM PAYLOAD (LB)
+                </p>
+              </div>
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/83ea317c4e9f4dc7b47ebb764e03c521.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">
+                  3.6L
+                  <span style="text-transform: initial;">Pentastar<sup>&reg;</sup>
+                  </span>
+                  V6 ENGINE WITH ETORQUE
+                </h4>
+                <p class="para_2">305 MAXIMUM HORSEPOWER<br /><br />269 MAXIMUM TORQUE
+                  <span style="white-space: nowrap;">(LB-FT)</span><br /><br />8,130 MAXIMUM TOWING CAPACITY
+                  (LB)*<br>2,360 MAXIMUM PAYLOAD (LB)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 10px; padding-top: 2px; margin: 0px; color: #ffffff;">
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/157240e11a2f4253a658f3bea90ea95c.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">MAXIMUM PAYLOAD CAPACITY OF UP TO 2,360 POUNDS*</h4>
+              </div>
+              <div class="col-sm-3" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ef1b93f180e149b2876ecd3ce4d1b916.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">MAXIMUM TOWING CAPACITY OF UP TO 11,610 POUNDS*</h4>
+              </div>
+              <div class="col-sm-6" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cf6b7ea2cf4741afb4fda18fe06f5e3e.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">
+                  STRONG FROM THE GROUND UP</h4>
+                <p class="para_2">Made of steel, yet it moves with ease:<br>• 98% steel frame construction<br />•
+                  Available
+                  <span style="white-space: nowrap;">Class-Exclusive
+                  </span>
+                  <span style="white-space: nowrap;">Active-Level<sup>&trade;</sup>
+                  </span>
+                  Four Corner Air Suspension System* (Available on Crew Cab models only) automatically lowers to help
+                  reduce drag and offer maximum efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #ffffff;">
+              <div class="col-sm-6" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/024f7b2548074019b6730301f855cbc1.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">
+                  <span style="white-space: nowrap;text-transform: initial;">Selec-Speed<sup>&reg;</sup>
+                  </span>
+                  CONTROL
+                </h4>
+                <p class="para_2">Stay focused on steering while the available
+                  <span style="white-space: nowrap;">Selec-Speed<sup>&reg;</sup>
+                  </span>
+                  Control helps keep your speed consistent.
+                </p>
+              </div>
+              <div class="col-sm-6" style="padding: 2px;"><img
+                  src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e85400ebcd0541daaa0321ab40577862.jpg"
+                  alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+                <h4 class="head_2">RIDE HEIGHT AND LIFTED SUSPENSION</h4>
+                <p class="para_2">Get
+                  <span style="white-space: nowrap;">33-inch</span>
+                  tires, a
+                  <span style="white-space: nowrap;">1-inch</span>
+                  raised ride height, a lifted suspension and front and rear Bilstein<sup>&reg;</sup>
+                  <span style="white-space: nowrap;">
+                    performance-tuned</span>
+                  shock absorbers on the Ram 1500 Rebel<sup>&reg;</sup>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
+      <div class="inner-4">
+        <h1
+          style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 10PX; color: #000;">
+          THE
+          <span style="white-space: nowrap;">OFF-ROADING</span>
+          LINEUP
+        </h1>
+        <p class="para_2" style="text-align: center; padding-bottom: 25px; color: #000;">Explore even farther with
+          <span style="white-space: nowrap;">off-roading</span>
+          capability from the Ram 1500 lineup.
+        </p>
+      </div>
+      <div class="inner-4">
+        <div class="row text-center" style="padding-bottom: 20px; margin: 0px;">
+          <div class="col-sm-6" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/178a9c374a3649b2b0cb25f84301d569.jpg" alt=""
+              style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">
+              THE RAM 1500 RHO</h4>
+            <p class="para_2">With
+              <span style="white-space: nowrap;">trail-conquering</span>
+              power and capability and barriers against rocks and debris, this pickup truck was built for adventure.
+            </p>
+          </div>
+          <div class="col-sm-3" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5905585f1d4943ab88e53bf4dbf55f03.jpg" alt=""
+              style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">RAM 1500
+              <span style="text-transform: initial;">Rebel<sup>&reg;</sup>
+              </span>
+            </h4>
+            <p class="para_2">The Ram 1500 Rebel<sup>&reg;</sup>
+              offers a
+              <span style="white-space: nowrap;">Class-Exclusive
+              </span>
+              <span style="white-space: nowrap;">Active-Level<sup>&trade;</sup>
+              </span><br /><span style="white-space: nowrap;">Four-Corner</span>
+              Air Suspension System*, a selectable
+              <span style="white-space: nowrap;">E-Locker<sup>&reg;</sup>
+              </span>
+              in the rear axle and
+              <span style="white-space: nowrap;">off-road</span>
+              ready tires.
+            </p>
+          </div>
+          <div class="col-sm-3" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4bb89e396eab49dd991f8bd20c450ce3.jpg" alt=""
+              style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">RAM 1500 WARLOCK</h4>
+            <p class="para_2">
+              <span style="white-space: nowrap;">All-terrain</span>
+              tires, front and rear
+              <span style="white-space: nowrap;">
+                performance-tuned</span>
+              shock absorbers and a
+              <span style="white-space: nowrap;">1-inch</span>
+              raised ride height help the Ram 1500 Warlock own the
+              <span style="white-space: nowrap;">off-roads.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 0px;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/699aac6fd4c2484689c82504ca8baaf2.jpg"
+        alt="image-5" style="max-width: 100%;" /></div>
+    <div id="Get A quote" style="padding-top: 30px;">
+      <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6bff1c70c5374666b806057c66df3973.gif"
+          alt="Get A quote" style="max-width: 100%;" /></a>
+    </div>
+    <div style="padding-top: 30px;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/50b5b1c62c824669903eb00157fb3d52.jpg"
+        alt="image-6" style="max-width: 100%;" /></div>
+    <div class="row text-center box_1" style="background-color: #9b0004;">
+      <div class="col-sm-4 text-right" style="padding: 0px;">
+        <h4 class="heading" style="text-transform: uppercase;background-color: #741604">Professional</h4>
+        <p class="box_p1" style="padding-top: 10px;">HARD WORK PAYS OFF</p>
+        <p class="box_p2">Equipped with one of four available powerhouse engines, the 2026 Ram 1500 has the capability
+          needed to take on the job at hand.</p>
+      </div>
+      <div class="col-sm-8" style="padding: 0;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/13b201dc580d4158ae94e7b6dbb33b31.jpg"
+          alt="2026 RAM 1500" style="width: 100%; display: inline;" /></div>
+    </div>
+    <div class="inner-1 bg_black_sec_2" style="background-color: #000;padding-bottom: 30px;">
+      <div class="inner-4" style="padding-top: 30px; padding-bottom: 10px;">
+        <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
+          <div class="col-sm-3" style="padding: 2px;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7ef63b4c76d242719f125667efd5a93b.jpg"
+              alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+            <h4 class="head_2">
+              MAXIMUM TOWING CAPACITY OF 11,610 POUND</h4>
+          </div>
+          <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
             <div class="col-sm-3" style="padding: 2px;"><img
                 src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/157240e11a2f4253a658f3bea90ea95c.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">MAXIMUM PAYLOAD CAPACITY OF UP TO 2,360 POUNDS*</h4>
-            </div>
-            <div class="col-sm-3" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ef1b93f180e149b2876ecd3ce4d1b916.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">MAXIMUM TOWING CAPACITY OF UP TO 11,610 POUNDS*</h4>
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">
+                MAXIMUM PAYLOAD CAPACITY OF 2,360 POUNDS*</h4>
             </div>
             <div class="col-sm-6" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cf6b7ea2cf4741afb4fda18fe06f5e3e.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-                STRONG FROM THE GROUND UP</h4>
-              <p class="para_2">Made of steel, yet it moves with ease:<br>• 98% steel frame construction<br/>• Available
-                <span style="white-space: nowrap;">Class-Exclusive
-                </span>
-                <span style="white-space: nowrap;">Active-Level<sup>&trade;</sup>
-                </span>
-                Four Corner Air Suspension System* (Available on Crew Cab models only) automatically lowers to help reduce drag and offer maximum efficiency.</p>
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f26a32877e8849fab1fc0af40d5e879f.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+              <h4 class="head_2">POWERFUL EXTERIOR ELEMENTS</h4>
+              <p class="para_2">The 2026 Ram 1500 is equipped with a durable and
+                <span style="white-space: nowrap;">thoughtfully-designed</span>
+                exterior that accommodates cargo, provides power and stands up to what the work demands.
+              </p>
             </div>
           </div>
         </div>
-        <div class="inner-4">
-          <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #ffffff;">
-            <div class="col-sm-6" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/024f7b2548074019b6730301f855cbc1.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-                <span style="white-space: nowrap;text-transform: initial;">Selec-Speed<sup>&reg;</sup>
-                </span>
-                CONTROL</h4>
-              <p class="para_2">Stay focused on steering while the available
-                <span style="white-space: nowrap;">Selec-Speed<sup>&reg;</sup>
-                </span>
-                Control helps keep your speed consistent.</p>
-            </div>
-            <div class="col-sm-6" style="padding: 2px;"><img
-                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/e85400ebcd0541daaa0321ab40577862.jpg"
-                alt="2026 RAM 1500"
-                style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RIDE HEIGHT AND LIFTED SUSPENSION</h4>
-              <p class="para_2">Get
-                <span style="white-space: nowrap;">33-inch</span>
-                tires, a
-                <span style="white-space: nowrap;">1-inch</span>
-                raised ride height, a lifted suspension and front and rear Bilstein<sup>&reg;</sup>
-                <span style="white-space: nowrap;">
-                  performance-tuned</span>
-                shock absorbers on the Ram 1500 Rebel<sup>&reg;</sup>.
+      </div>
+      <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;" bis_skin_checked="1">
+        <div class="inner-1" bis_skin_checked="1">
+          <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;" bis_skin_checked="1">
+            <div class="col-sm-6" style="padding: 0px;" bis_skin_checked="1"><img
+                src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/737201cac0ef4f7ca0fa7c35f00bd106.jpg"
+                alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" /></div>
+            <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+              <h4 class="head_2" style="padding-top: 35px;">AVAILABLE RAM PROFESSIONAL CONNECTED SERVICES</h4>
+              <p class="para_2">Discover
+                <span style="white-space: nowrap;">web-based</span>
+                fleet management solutions designed to help you streamline the efficiencies of your mobile workforce
+                with
+                <span style="white-space: nowrap;">real-time</span>
+                driving data and comprehensive fleet analytics.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
-    <div class="inner-4">
-      <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 5px; padding-top: 10PX; color: #000;">
-        THE
-        <span style="white-space: nowrap;">OFF-ROADING</span>
-        LINEUP</h1>
-      <p class="para_2" style="text-align: center; padding-bottom: 25px; color: #000;">Explore even farther with
-        <span style="white-space: nowrap;">off-roading</span>
-        capability from the Ram 1500 lineup.</p>
+    <div style="padding-top: 30px;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c8acf91fa4c448f39cf4e560a370d774.jpg"
+        alt="image-7" style="max-width: 100%;" /></div>
+    <div style="padding-top: 30px;">
+      <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026"
+        style="display: block;"><img
+          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/14deb82ad7c64d4684cfa6657a60fdef.gif"
+          alt="viewinventory" style="max-width: 100%;" /></a>
     </div>
-    <div class="inner-4">
-      <div class="row text-center" style="padding-bottom: 20px; margin: 0px;">
-        <div class="col-sm-6" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/178a9c374a3649b2b0cb25f84301d569.jpg"
-            alt=""
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-            THE RAM 1500 RHO</h4>
-          <p class="para_2">With
-            <span style="white-space: nowrap;">trail-conquering</span>
-            power and capability and barriers against rocks and debris, this pickup truck was built for adventure.</p>
+    <div style="padding-top: 30px;"><img
+        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/eace60b218ec40baa9bced5e8f48b09c.jpg"
+        alt="image-8" style="max-width: 100%;" /></div>
+    <div class="inner-6">
+      <div class="row text-center" style="padding-top: 40px;">
+        <div class="col-sm-3" style="padding: 1px;">
+          <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026"
+            style="display: inline-block;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
+              alt="view inventroy" style="max-width: 100%;" /></a>
         </div>
+        <div class="col-sm-3" style="padding: 1px;">
+          <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
+              alt="get a quote" style="max-width: 100%;" /></a>
+        </div>
+        <div class="col-sm-3" style="padding: 1px;">
+          <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
+              alt="get pre approved" style="max-width: 100%;" /></a>
+        </div>
+        <div class="col-sm-3" style="padding: 1px;">
+          <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
+              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
+              alt="value your trade" style="max-width: 100%;" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="inner-4 modl">
+      <div class="mdl_had" style="padding-top: 40px; color: #000 !important;">2026 RAM 1500</div>
+      <div class="row text-center" style="padding-top: 20px; margin: 0px; color: #000;">
         <div class="col-sm-3" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/5905585f1d4943ab88e53bf4dbf55f03.jpg"
-            alt=""
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM 1500
-            <span style="text-transform: initial;">Rebel<sup>&reg;</sup>
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9ef025c8ba404b9ab3d5f10fdacb4a0c.png"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname" sty="">
+            <span style="text-align: initial;">Tradesman<sup>&reg;</sup>
+              Quad cab<sup>&reg;</sup>
             </span>
+            4X2<br /> 6'4" Box
           </h4>
-          <p class="para_2">The Ram 1500 Rebel<sup>&reg;</sup>
-            offers a
-            <span style="white-space: nowrap;">Class-Exclusive
-            </span>
-            <span style="white-space: nowrap;">Active-Level<sup>&trade;</sup>
-            </span><br/><span style="white-space: nowrap;">Four-Corner</span>
-            Air Suspension System*, a selectable
-            <span style="white-space: nowrap;">E-Locker<sup>&reg;</sup>
-            </span>
-            in the rear axle and
-            <span style="white-space: nowrap;">off-road</span>
-            ready tires.</p>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $41,025*</span>
+          </p>
         </div>
         <div class="col-sm-3" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4bb89e396eab49dd991f8bd20c450ce3.jpg"
-            alt=""
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">RAM 1500 WARLOCK</h4>
-          <p class="para_2">
-            <span style="white-space: nowrap;">All-terrain</span>
-            tires, front and rear
-            <span style="white-space: nowrap;">
-              performance-tuned</span>
-            shock absorbers and a
-            <span style="white-space: nowrap;">1-inch</span>
-            raised ride height help the Ram 1500 Warlock own the
-            <span style="white-space: nowrap;">off-roads.</span>
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6c013d2bed0e4b08855f0b3d36488ac0.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">
+            <span style="text-align: initial;">Express<sup>&reg;</sup>
+            </span>
+            <span style="text-align: initial;">
+              Quad cab<sup>&reg;</sup>
+            </span>
+            4X2<br />6'4" Box
+          </h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $43,445*</span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9334f9a1321f43b88537f999d2ac96e2.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">Warlock Crew Cab 4X4<br />5'7" Box</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">$51,865*</span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/63efe9d988d441bca857800686e604dc.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">
+            <span style="text-align: initial;">Lone Star<sup>&reg;</sup>
+            </span>
+            <span style="text-align: initial;">
+              Quad cab<sup>&reg;</sup>
+            </span>
+            4X2<br />6'4" Box
+          </h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">$46,575*</span>
           </p>
         </div>
       </div>
-    </div>
-  </div>
-  <div style="padding-top: 0px;"><img
-      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/699aac6fd4c2484689c82504ca8baaf2.jpg"
-      alt="image-5"
-      style="max-width: 100%;" /></div>
-  <div id="Get A quote" style="padding-top: 30px;">
-    <a href="https://www.melloydodge.com/contact.htm" style="display: block;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6bff1c70c5374666b806057c66df3973.gif"
-        alt="Get A quote"
-        style="max-width: 100%;" /></a>
-  </div>
-  <div style="padding-top: 30px;"><img
-      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/50b5b1c62c824669903eb00157fb3d52.jpg"
-      alt="image-6"
-      style="max-width: 100%;" /></div>
-  <div class="row text-center box_1" style="background-color: #9b0004;">
-    <div class="col-sm-4 text-right" style="padding: 0px;">
-      <h4 class="heading" style="text-transform: uppercase;background-color: #741604">Professional</h4>
-      <p class="box_p1" style="padding-top: 10px;">HARD WORK PAYS OFF</p>
-      <p class="box_p2">Equipped with one of four available powerhouse engines, the 2026 Ram 1500 has the capability needed to take on the job at hand.</p>
-    </div>
-    <div class="col-sm-8" style="padding: 0;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/13b201dc580d4158ae94e7b6dbb33b31.jpg"
-        alt="2026 RAM 1500"
-        style="width: 100%; display: inline;" /></div>
-  </div>
-  <div class="inner-1 bg_black_sec_2" style="background-color: #000;padding-bottom: 30px;">
-    <div class="inner-4" style="padding-top: 30px; padding-bottom: 10px;">
-      <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
+      <div class="row text-center" style="padding-top: 40px; margin: 0px; color: #000;">
         <div class="col-sm-3" style="padding: 2px;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/7ef63b4c76d242719f125667efd5a93b.jpg"
-            alt="2026 RAM 1500"
-            style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-            MAXIMUM TOWING CAPACITY OF 11,610 POUND</h4>
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d74800a5834b4dfc9c8e886ed2ea5e73.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname" sty="">
+            <span style="text-align: initial !important;">Laramie<sup>&reg;</sup>
+            </span>
+            Crew Cab 4X2 <br />5'7" Box
+          </h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $61,075*</span>
+          </p>
         </div>
-        <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
-          <div class="col-sm-3" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/157240e11a2f4253a658f3bea90ea95c.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">
-              MAXIMUM PAYLOAD CAPACITY OF 2,360 POUNDS*</h4>
-          </div>
-          <div class="col-sm-6" style="padding: 2px;"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/f26a32877e8849fab1fc0af40d5e879f.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /><h4 class="head_2">POWERFUL EXTERIOR ELEMENTS</h4>
-            <p class="para_2">The 2026 Ram 1500 is equipped with a durable and
-              <span style="white-space: nowrap;">thoughtfully-designed</span>
-              exterior that accommodates cargo, provides power and stands up to what the work demands.
-            </p>
-          </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/df5195bc40c74861b65e87aa3d2bdf6b.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">
+            <span style="text-transform: initial;">Rebel<sup>&reg;</sup>
+            </span>
+            Crew Cab 4X4 <br />5'7" Box
+          </h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $64,740*</span>
+          </p>
         </div>
-      </div>
-    </div>
-    <div
-      class="inner-1 bg_green_sec"
-      style="margin-bottom: 0px; background-color: #741705;"
-      bis_skin_checked="1">
-      <div class="inner-1" bis_skin_checked="1">
-        <div
-          class="row text-center"
-          style="padding-bottom: 0px; margin: 0px; color: #fff;"
-          bis_skin_checked="1">
-          <div
-            class="col-sm-6"
-            style="padding: 0px;"
-            bis_skin_checked="1"><img
-              src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/737201cac0ef4f7ca0fa7c35f00bd106.jpg"
-              alt="2026 RAM 1500"
-              style="max-width: 100%; display: inline-block;" /></div>
-          <div
-            class="col-sm-6"
-            style="padding: 2px;"
-            bis_skin_checked="1">
-            <h4 class="head_2" style="padding-top: 35px;">AVAILABLE RAM PROFESSIONAL CONNECTED SERVICES</h4>
-            <p class="para_2">Discover
-              <span style="white-space: nowrap;">web-based</span>
-              fleet management solutions designed to help you streamline the efficiencies of your mobile workforce with
-              <span style="white-space: nowrap;">real-time</span>
-              driving data and comprehensive fleet analytics.</p>
-          </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cd55568960344c43ad2a93485aebfc5d.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">RHO Crew Cab 4X4 5'7" <br />Box</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">$72,495*</span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1f4ff17056064d9bbfe4fc8f30b795dc.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">
+            Limited Crew Cab 4X4 <br />5'7" Box</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">$75,700*</span>
+          </p>
         </div>
       </div>
+      <div class="row text-center" style="padding-top: 40px; margin: 0px; color: #000;">
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fcf5e85069db49d5b23d3bf8fed11701.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname" sty="">
+            <span style="text-align: initial;">Limited Longhorn<sup>&reg;</sup>
+            </span>
+            Crew <br />Cab 4X4 5'7" Box
+          </h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $76,895*</span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"><img
+            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/953fb1db331449d69c94bb9f2c6a28c5.jpg"
+            alt="2026 RAM 1500" style="max-width: 100%; display: inline-block;" />
+          <h4 class="mdlname">
+            Tungsten Crew Cab 4X4</h4>
+          <p class="malmrp">
+            <span class="mdl_msrps">Starting at</span><br /><span class="Mdl_mrp">
+              $88,095*</span>
+          </p>
+        </div>
+        <div class="col-sm-3" style="padding: 2px;"></div>
+        <div class="col-sm-3" style="padding: 2px;"></div>
+      </div>
+    </div>
+    <div class="inner-7 seo">
+      <div
+        style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 14px;padding-bottom: 30px;">
+        <p>
+          <b>2026 Ram 1500</b>
+        </p>
+        <p></p>
+        <p>
+          <b>Get to Know the 2026 Ram 1500 Albuquerque, NM, from Melloy Dodge Ram</b>
+        </p>
+        <p>Melloy Dodge Ram is proud to showcase the 2026 Ram 1500 Albuquerque, NM, a
+          <span style="white-space: nowrap;">full-size</span>
+          pickup built for strength, sophistication and everyday versatility. Combining rugged capability with advanced
+          technology and refined comfort, this latest generation of the 2026 Ram 1500 stands as a symbol of performance
+          and craftsmanship.
+        </p>
+        <p></p>
+        <p>
+          <b>Which Ram dealers have the 2026 Ram 1500 in Albuquerque, NM, in stock?</b>
+        </p>
+        <p>Get ready to see bold power when exploring this Ram truck at our Ram dealership. Under the hood, the 2026 Ram
+          1500 Albuquerque, NM, offers a variety of engine options to match every task. The standard 3.6L
+          Pentastar<sup>&reg;</sup>
+          V6 eTorque engine produces 305 horsepower and pairs with an
+          <span style="white-space: nowrap;">8-speed</span>
+          automatic transmission for smooth and efficient performance. Drivers looking for more muscle can choose from
+          several powerful alternatives, including the 3.0L I6 Hurricane SO Twin Turbo engine delivering 420 horsepower
+          and 469
+          <span style="white-space: nowrap;">lb-ft</span>
+          of torque or the 5.7L V8 HEMI<sup>&reg;</sup>
+          eTorque engine with 395 horsepower and 410
+          <span style="white-space: nowrap;">lb-ft</span>
+          of torque. For maximum strength, the 3.0L I6 Hurricane HO Twin Turbo engine generates an incredible 540
+          horsepower and 521
+          <span style="white-space: nowrap;">lb-ft</span>
+          of torque. Available
+          <span style="white-space: nowrap;">4-Corner</span>
+          <span style="white-space: nowrap;">Air-Suspension</span>
+          and 4x4 capability enhance control whether hauling, towing or exploring
+          <span style="white-space: nowrap;">off-road.</span>
+        </p>
+        <p></p>
+        <p>The cab of the 2026 Ram 1500 Albuquerque, NM, blends durability and luxury with space for up to six
+          passengers.
+          Standard vinyl bench seats, air conditioning and power windows ensure everyday comfort and convenience.
+          <span style="white-space: nowrap;">Higher-level</span>
+          trims elevate the experience with leather upholstery,
+          <span style="white-space: nowrap;">20-way</span>
+          power front seats, heated and ventilated seating for both rows, massaging front seats and a heated steering
+          wheel.
+          <span style="white-space: nowrap;">Dual-zone</span>
+          automatic temperature control keeps everyone comfortable, while available
+          <span style="white-space: nowrap;">2nd-row</span>
+          <span style="white-space: nowrap;">in-floor</span>
+          storage bins and a jeweled rotary shifter add both function and flair.
+        </p>
+        <p></p>
+        <p>Every 2026 Ram 1500 Albuquerque, NM, comes equipped with Uconnect<sup>&reg;</sup>
+          5 and an
+          <span style="white-space: nowrap;">8.4-inch</span>
+          touchscreen that integrates
+          <span style="white-space: nowrap;">Apple CarPlay<sup>&reg;</sup>
+          </span>
+          and
+          <span style="white-space: nowrap;">Android Auto<sup>&trade;</sup>
+          </span>. A
+          <span style="white-space: nowrap;">6-speaker</span>
+          audio system, Bluetooth, remote start and keyless entry provide seamless connectivity, while the 4G LTE
+          <span style="white-space: nowrap;">Wi-Fi<sup>&reg;</sup>
+          </span>
+          Hot Spot keeps passengers connected on the go. Tech enthusiasts can opt for the available
+          <span style="white-space: nowrap;">14.4-inch</span>
+          touchscreen, navigation, dual wireless charging pads and a
+          <span style="white-space: nowrap;">23-speaker</span>
+          Klipsch<sup>&reg;</sup>
+          Reference Premiere Sound System for premium entertainment. The available
+          <span style="white-space: nowrap;">Hands-Free</span>
+          Active Driving Assist and Smartphone as a Key features bring modern convenience to every journey.
+        </p>
+        <p></p>
+        <p>The exterior of the 2026 Ram 1500 Albuquerque, NM, blends bold proportions with practical design. Standard
+          LED
+          reflector headlamps, black mesh grille and
+          <span style="white-space: nowrap;">18-inch</span>
+          steel painted wheels give it a powerful presence. Available options such as
+          <span style="white-space: nowrap;">bi-function</span>
+          LED projector headlamps,
+          <span style="white-space: nowrap;">22-inch</span>
+          polished wheels, power deployable running boards and
+          <span style="white-space: nowrap;">dual-pane</span>
+          panoramic sunroof elevate the look further. Functionality shines through with available RamBox<sup>&reg;</sup>
+          Cargo Management,
+          <span style="white-space: nowrap;">Multi-Function</span>
+          Tailgate and
+          <span style="white-space: nowrap;">power-release</span>
+          tailgate, making every job simpler and more efficient.
+        </p>
+        <p></p>
+        <p>Ram designed the 2026 Ram 1500 Albuquerque, NM, with an array of safety and driver assistance features.
+          Standard systems include a ParkView<sup>&reg;</sup>
+          Rear
+          <span style="white-space: nowrap;">Back-Up</span>
+          Camera,
+          <span style="white-space: nowrap;">Blind-Spot</span>
+          and
+          <span style="white-space: nowrap;">Cross-Path</span>
+          Detection, an Active
+          <span style="white-space: nowrap;">Lane-Management</span>
+          System, Adaptive Cruise Control with Stop and Go and
+          <span style="white-space: nowrap;">Full-Speed</span>
+          Forward Collision Warning Plus. Optional upgrades like the
+          <span style="white-space: nowrap;">Surround-View</span>
+          Camera System, Intersection
+          <span style="white-space: nowrap;">Collision-Assist</span>
+          and Evasive Steering Assist offer added protection in every environment.
+        </p>
+        <p></p>
+        <p>
+          <b>Where can I test drive a 2026 Ram 1500 Albuquerque, NM?
+          </b>
+        </p>
+        <p>Strength, sophistication and intelligence converge in the 2026 Ram 1500 Albuquerque, NM. Visit Melloy Dodge
+          Ram
+          to explore available trims, experience its advanced features firsthand and find the perfect configuration for
+          work or play.</p>
+      </div>
+    </div>
+    <div class="inner-7 dis">
+      <div
+        style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 11px; margin-bottom: 30px;">
+        <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base model,
+          optional equipment not included. A more expensive model may be shown. Pricing and offers may change at any
+          time
+          without notification. Contact Melloy Dodge Ram FIAT for full pricing details.</p>
+        <p>*Refer to https://www.ramtrucks.com/ram-1500.html for additional disclosures.</p>
+      </div>
     </div>
   </div>
-  <div style="padding-top: 30px;"><img
-      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/c8acf91fa4c448f39cf4e560a370d774.jpg"
-      alt="image-7"
-      style="max-width: 100%;" /></div>
-  <div style="padding-top: 30px;">
-    <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026" style="display: block;"><img
-        src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/14deb82ad7c64d4684cfa6657a60fdef.gif"
-        alt="viewinventory"
-        style="max-width: 100%;" /></a>
-  </div>
-  <div style="padding-top: 30px;"><img
-      src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/eace60b218ec40baa9bced5e8f48b09c.jpg"
-      alt="image-8"
-      style="max-width: 100%;" /></div>
-  <div class="inner-6">
-    <div class="row text-center" style="padding-top: 40px;">
-      <div class="col-sm-3" style="padding: 1px;">
-        <a href="https://www.melloydodge.com/new-inventory/index.htm?make=Ram&model=1500&year=2026-2026" style="display: inline-block;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/4d77544f558b4955b73217347fd8f669.gif"
-            alt="view inventroy"
-            style="max-width: 100%;" /></a>
-      </div>
-      <div class="col-sm-3" style="padding: 1px;">
-        <a href="https://www.melloydodge.com/contact.htm" style="display: inline-block;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/32b8dcc7e8694977a5e896cf7600c52c.gif"
-            alt="get a quote"
-            style="max-width: 100%;" /></a>
-      </div>
-      <div class="col-sm-3" style="padding: 1px;">
-        <a href="https://www.melloydodge.com/financing/index.htm" style="display: inline-block;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/07b5bd60618a46a887adc7ed19fb76d3.gif"
-            alt="get pre approved"
-            style="max-width: 100%;" /></a>
-      </div>
-      <div class="col-sm-3" style="padding: 1px;">
-        <a href="https://www.melloydodge.com/trade-in-form.htm" style="display: inline-block;"><img
-            src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/ce1e815682d44ad4a6d7df031a61ca63.gif"
-            alt="value your trade"
-            style="max-width: 100%;" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="inner-4 modl">
-    <div class="mdl_had" style="padding-top: 40px; color: #000 !important;">2026 RAM 1500</div>
-    <div class="row text-center" style="padding-top: 20px; margin: 0px; color: #000;">
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9ef025c8ba404b9ab3d5f10fdacb4a0c.png"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" sty="">
-          <span style="text-align: initial;">Tradesman<sup>&reg;</sup>
-            Quad cab<sup>&reg;</sup>
-          </span>
-          4X2<br/> 6'4" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $41,025*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/6c013d2bed0e4b08855f0b3d36488ac0.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
-          <span style="text-align: initial;">Express<sup>&reg;</sup>
-          </span>
-          <span style="text-align: initial;">
-            Quad cab<sup>&reg;</sup>
-          </span>
-          4X2<br/>6'4" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $43,445*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/9334f9a1321f43b88537f999d2ac96e2.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">Warlock Crew Cab 4X4<br/>5'7" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$51,865*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/63efe9d988d441bca857800686e604dc.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
-          <span style="text-align: initial;">Lone Star<sup>&reg;</sup>
-          </span>
-          <span style="text-align: initial;">
-            Quad cab<sup>&reg;</sup>
-          </span>
-          4X2<br/>6'4" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$46,575*</span>
-        </p>
-      </div>
-    </div>
-    <div class="row text-center" style="padding-top: 40px; margin: 0px; color: #000;">
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/d74800a5834b4dfc9c8e886ed2ea5e73.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" sty="">
-          <span style="text-align: initial !important;">Laramie<sup>&reg;</sup>
-          </span>
-          Crew Cab 4X2 <br/>5'7" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $61,075*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/df5195bc40c74861b65e87aa3d2bdf6b.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
-          <span style="text-transform: initial;">Rebel<sup>&reg;</sup>
-          </span>
-          Crew Cab 4X4 <br/>5'7" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $64,740*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/cd55568960344c43ad2a93485aebfc5d.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">RHO Crew Cab 4X4 5'7" <br/>Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$72,495*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/1f4ff17056064d9bbfe4fc8f30b795dc.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
-          Limited Crew Cab 4X4 <br/>5'7" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">$75,700*</span>
-        </p>
-      </div>
-    </div>
-    <div class="row text-center" style="padding-top: 40px; margin: 0px; color: #000;">
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/fcf5e85069db49d5b23d3bf8fed11701.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname" sty="">
-          <span style="text-align: initial;">Limited Longhorn<sup>&reg;</sup>
-          </span>
-          Crew <br/>Cab 4X4 5'7" Box</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $76,895*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"><img
-          src="https://pictures.dealer.com/m/melloydodgelandnmcllc/1234/953fb1db331449d69c94bb9f2c6a28c5.jpg"
-          alt="2026 RAM 1500"
-          style="max-width: 100%; display: inline-block;" /><h4 class="mdlname">
-          Tungsten Crew Cab 4X4</h4>
-        <p class="malmrp">
-          <span class="mdl_msrps">Starting at</span><br/><span class="Mdl_mrp">
-            $88,095*</span>
-        </p>
-      </div>
-      <div class="col-sm-3" style="padding: 2px;"></div>
-      <div class="col-sm-3" style="padding: 2px;"></div>
-    </div>
-  </div>
-  <div class="inner-7 seo">
-    <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 14px;padding-bottom: 30px;">
-      <p>
-        <b>2026 Ram 1500</b>
-      </p>
-      <p></p>
-      <p>
-        <b>Get to Know the 2026 Ram 1500 Albuquerque, NM, from Melloy Dodge Ram</b>
-      </p>
-      <p>Melloy Dodge Ram is proud to showcase the 2026 Ram 1500 Albuquerque, NM, a
-        <span style="white-space: nowrap;">full-size</span>
-        pickup built for strength, sophistication and everyday versatility. Combining rugged capability with advanced technology and refined comfort, this latest generation of the 2026 Ram 1500 stands as a symbol of performance and craftsmanship.
-      </p>
-      <p></p>
-      <p>
-        <b>Which Ram dealers have the 2026 Ram 1500 in Albuquerque, NM, in stock?</b>
-      </p>
-      <p>Get ready to see bold power when exploring this Ram truck at our Ram dealership. Under the hood, the 2026 Ram 1500 Albuquerque, NM, offers a variety of engine options to match every task. The standard 3.6L Pentastar<sup>&reg;</sup>
-        V6 eTorque engine produces 305 horsepower and pairs with an
-        <span style="white-space: nowrap;">8-speed</span>
-        automatic transmission for smooth and efficient performance. Drivers looking for more muscle can choose from several powerful alternatives, including the 3.0L I6 Hurricane SO Twin Turbo engine delivering 420 horsepower and 469
-        <span style="white-space: nowrap;">lb-ft</span>
-        of torque or the 5.7L V8 HEMI<sup>&reg;</sup>
-        eTorque engine with 395 horsepower and 410
-        <span style="white-space: nowrap;">lb-ft</span>
-        of torque. For maximum strength, the 3.0L I6 Hurricane HO Twin Turbo engine generates an incredible 540 horsepower and 521
-        <span style="white-space: nowrap;">lb-ft</span>
-        of torque. Available
-        <span style="white-space: nowrap;">4-Corner</span>
-        <span style="white-space: nowrap;">Air-Suspension</span>
-        and 4x4 capability enhance control whether hauling, towing or exploring
-        <span style="white-space: nowrap;">off-road.</span>
-      </p>
-      <p></p>
-      <p>The cab of the 2026 Ram 1500 Albuquerque, NM, blends durability and luxury with space for up to six passengers. Standard vinyl bench seats, air conditioning and power windows ensure everyday comfort and convenience.
-        <span style="white-space: nowrap;">Higher-level</span>
-        trims elevate the experience with leather upholstery,
-        <span style="white-space: nowrap;">20-way</span>
-        power front seats, heated and ventilated seating for both rows, massaging front seats and a heated steering wheel.
-        <span style="white-space: nowrap;">Dual-zone</span>
-        automatic temperature control keeps everyone comfortable, while available
-        <span style="white-space: nowrap;">2nd-row</span>
-        <span style="white-space: nowrap;">in-floor</span>
-        storage bins and a jeweled rotary shifter add both function and flair.
-      </p>
-      <p></p>
-      <p>Every 2026 Ram 1500 Albuquerque, NM, comes equipped with Uconnect<sup>&reg;</sup>
-        5 and an
-        <span style="white-space: nowrap;">8.4-inch</span>
-        touchscreen that integrates
-        <span style="white-space: nowrap;">Apple CarPlay<sup>&reg;</sup>
-        </span>
-        and
-        <span style="white-space: nowrap;">Android Auto<sup>&trade;</sup>
-        </span>. A
-        <span style="white-space: nowrap;">6-speaker</span>
-        audio system, Bluetooth, remote start and keyless entry provide seamless connectivity, while the 4G LTE
-        <span style="white-space: nowrap;">Wi-Fi<sup>&reg;</sup>
-        </span>
-        Hot Spot keeps passengers connected on the go. Tech enthusiasts can opt for the available
-        <span style="white-space: nowrap;">14.4-inch</span>
-        touchscreen, navigation, dual wireless charging pads and a
-        <span style="white-space: nowrap;">23-speaker</span>
-        Klipsch<sup>&reg;</sup>
-        Reference Premiere Sound System for premium entertainment. The available
-        <span style="white-space: nowrap;">Hands-Free</span>
-        Active Driving Assist and Smartphone as a Key features bring modern convenience to every journey.
-      </p>
-      <p></p>
-      <p>The exterior of the 2026 Ram 1500 Albuquerque, NM, blends bold proportions with practical design. Standard LED reflector headlamps, black mesh grille and
-        <span style="white-space: nowrap;">18-inch</span>
-        steel painted wheels give it a powerful presence. Available options such as
-        <span style="white-space: nowrap;">bi-function</span>
-        LED projector headlamps,
-        <span style="white-space: nowrap;">22-inch</span>
-        polished wheels, power deployable running boards and
-        <span style="white-space: nowrap;">dual-pane</span>
-        panoramic sunroof elevate the look further. Functionality shines through with available RamBox<sup>&reg;</sup>
-        Cargo Management,
-        <span style="white-space: nowrap;">Multi-Function</span>
-        Tailgate and
-        <span style="white-space: nowrap;">power-release</span>
-        tailgate, making every job simpler and more efficient.
-      </p>
-      <p></p>
-      <p>Ram designed the 2026 Ram 1500 Albuquerque, NM, with an array of safety and driver assistance features. Standard systems include a ParkView<sup>&reg;</sup>
-        Rear
-        <span style="white-space: nowrap;">Back-Up</span>
-        Camera,
-        <span style="white-space: nowrap;">Blind-Spot</span>
-        and
-        <span style="white-space: nowrap;">Cross-Path</span>
-        Detection, an Active
-        <span style="white-space: nowrap;">Lane-Management</span>
-        System, Adaptive Cruise Control with Stop and Go and
-        <span style="white-space: nowrap;">Full-Speed</span>
-        Forward Collision Warning Plus. Optional upgrades like the
-        <span style="white-space: nowrap;">Surround-View</span>
-        Camera System, Intersection
-        <span style="white-space: nowrap;">Collision-Assist</span>
-        and Evasive Steering Assist offer added protection in every environment.
-      </p>
-      <p></p>
-      <p>
-        <b>Where can I test drive a 2026 Ram 1500 Albuquerque, NM?
-        </b>
-      </p>
-      <p>Strength, sophistication and intelligence converge in the 2026 Ram 1500 Albuquerque, NM. Visit Melloy Dodge Ram to explore available trims, experience its advanced features firsthand and find the perfect configuration for work or play.</p>
-    </div>
-  </div>
-  <div class="inner-7 dis">
-    <div style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 11px; margin-bottom: 30px;">
-      <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base model, optional equipment not included. A more expensive model may be shown. Pricing and offers may change at any time without notification. Contact Melloy Dodge Ram FIAT for full pricing details.</p>
-      <p>*Refer to https://www.ramtrucks.com/ram-1500.html for additional disclosures.</p>
-    </div>
-  </div>
-</div>
+
+
+
+
+</body>
+
+</html>

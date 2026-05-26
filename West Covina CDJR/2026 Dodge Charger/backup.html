@@ -1,0 +1,2328 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-div {
+        max-width: 1439px;
+        margin: 0 auto;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .main-div1 {
+        max-width: 1439px;
+        margin: 0 auto;
+        background-color: #000;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .main-div .trd {
+        top: -0.3em;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .main-div .reg {
+        top: -0em;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .modl sup {
+        top: -0.7em;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .seo .reg {
+        top: 0.1em;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .seo .trd {
+        top: -0.2em;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .dis .reg {
+        top: 0.1em;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .dis .trd {
+        top: -0.1em;
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    .banner-div {
+        position: relative;
+    }
+
+    .banner-div1 {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    .banner-div h1 {
+
+        margin-top: 0px;
+        padding-top: 1%;
+        font-size: 28px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .banner-price {
+        margin-bottom: 0;
+        color: #fff !important;
+        font-size: 18px !important;
+        font-weight: 500;
+        padding-top: 447px;
+        text-align: left;
+        line-height: 1.2;
+        padding-bottom: 2%;
+        text-align: right;
+
+    }
+
+    .offer-div {
+        background-image: url('https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/OFFER-BG-Westcovina__Charger_2026.jpg');
+        background-repeat: no-repeat;
+        height: 508px;
+    }
+
+    .offer-div1 {
+        background-image: url('https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/OFFER-BG-Westcovina__Charger_2026.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .offer-div>.row {
+        max-width: 1260px;
+        margin: -1px auto 0;
+    }
+
+    .offer-div1>.row {
+        max-width: 1260px;
+        margin: -1px auto 0;
+    }
+
+    .ofr_had_line {
+        border-top: 1px solid #0078c1;
+        margin-top: 20px;
+        width: 42%;
+    }
+
+    .offer_car {
+        margin-top: 25px;
+
+        max-width: 100%;
+        padding-bottom: 2%;
+    }
+
+    .car_name {
+        margin: 25px 0 0 0px;
+        font-size: 28px !important;
+        padding-top: 2px;
+        line-height: 1;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 0;
+        white-space: nowrap;
+        padding-top: 35px;
+    }
+
+    .car_modl_trim {
+        font-size: 14px;
+        color: #fff;
+        margin-left: 40px;
+    }
+
+    .ofr_leas {
+        font-size: 70px;
+        margin-bottom: 0;
+        line-height: 1.5em;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+
+    }
+
+    .ofr_detail {
+        color: #fff;
+        margin: 0px 0 15px 0px;
+        font-size: 16px;
+        padding-top: 10px;
+        font-weight: 500;
+    }
+
+    .no_offer {
+        color: #fff;
+        font-size: 16px;
+        padding-top: 30px;
+        line-height: 1.3em;
+        margin-left: 0px;
+        display: none;
+    }
+
+    .ofr_disc {
+        padding: 20px 100px;
+        color: #000;
+        font-size: 12px;
+        line-height: 1.3;
+        text-align: center;
+
+    }
+
+    .heading {
+        margin: 0 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        background: #741604;
+        padding: 20px 0 20px 80px !important;
+        text-align: center;
+        font-size: 18px !important;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .inner-1 {
+        max-width: 1439px;
+        margin: 0 auto;
+    }
+
+    .inner-2 {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .inner-3 {
+        max-width: 965px;
+        margin: 0 auto;
+    }
+
+    .inner-4 {
+        max-width: 1295px;
+        margin: 0 auto;
+    }
+
+    .inner-5 {
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .inner-6 {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    .inner-7 {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #fourbuttons {
+        padding-top: 0;
+    }
+
+    .Flex-D {
+        display: flex;
+        align-items: center;
+    }
+
+    .Flex-D .head_2 {
+        padding: 5px 10px 10px;
+        margin-top: 0;
+    }
+
+    .Flex-D .para_2 {
+        line-height: 1.1;
+    }
+
+    .box_1 {
+        margin: 30px 0 0;
+        background-color: #9b0004;
+        color: #fff;
+    }
+
+    .line {
+        border-top: 1px solid #0078c1;
+        margin: 30px auto 15px;
+        max-width: 110px;
+    }
+
+    .line2 {
+        border-top: 1px solid #0078c1;
+        margin: 30px auto 15px 0;
+        max-width: 80px;
+    }
+
+    .border {
+        padding: 1px;
+        background-color: #0374bb;
+    }
+
+    .box_1 h5 {
+        padding: 10px 10px 0;
+        margin-bottom: 0;
+        font-size: 39px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    .box_p1 {
+        padding: 15px 5px 10px 80px;
+        line-height: 1.3;
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 36px !important;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    .box_p2 {
+        padding: 8px 20px 10px 80px;
+        line-height: 1.4em;
+        margin-bottom: 10px;
+        font-size: 15px !important;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .bg_white_sec {
+        margin: 0;
+        background-color: #ffffff;
+        color: #000;
+    }
+
+    .bg_black_sec {
+        margin: 0;
+        background-color: #030303;
+        color: #fff;
+    }
+
+    .bg_black_sec_2 {
+        margin: 0;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .bg_grey_sec {
+        margin: 0;
+        background-color: #262626;
+        color: #fff;
+    }
+
+    .bg_green_sec {
+        margin: 0;
+        background-color: #741705;
+        color: #fff;
+    }
+
+    .bg_lightgreen_sec {
+        margin: 0;
+        background-color: #3c6d5d;
+        color: #fff;
+    }
+
+    .head_2 {
+        padding: 20px 5px 10px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+
+    .para_2 {
+        padding: 10px 17px;
+        font-size: 17px;
+        line-height: 1.3;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .para_3 {
+        padding: 0 20px !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        font-weight: 500 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .para_A {
+        padding: 0 20px !important;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        font-weight: 500 !important;
+        margin-top: -15px !important;
+    }
+
+    .HS-Sec {
+        margin-top: -30px;
+    }
+
+    .mdl_had {
+        color: #000 !important;
+        text-align: center;
+        font-size: 36px;
+        padding: 0 40px 10px;
+    }
+
+    .mdlname {
+        padding: 30px 21px 0;
+        margin-bottom: 0;
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        margin-top: 15px;
+        line-height: 1.3em;
+        text-align: center;
+        color: #000;
+        margin-top: -3% !important;
+    }
+
+    .mdl_msrp {
+        padding: 10px 35px 25px;
+        font-size: 12px;
+        line-height: 1.9;
+        font-weight: 400;
+        color: #000;
+        text-align: center;
+        margin-bottom: -20px !important;
+    }
+
+    .malmrp {
+        padding: 0 35px;
+        font-size: 10px !important;
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .mdl_msrps {
+        color: #000;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .Mdl_mrp {
+        color: #000;
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .mdl_vi {
+        color: #ff2d2d !important;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .head_2 {
+        padding: 20px 5px 15px;
+        margin-bottom: 0;
+        font-size: 18px !important;
+        font-weight: 400;
+        margin-top: 10px;
+        line-height: 1.3;
+    }
+
+    .head_3 {
+        padding: 45px 5px 15px;
+        margin-bottom: 0;
+        font-size: 18px !important;
+        font-weight: 500;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+
+    .sns-pd-in-12 {
+        padding-inline: 12vw;
+    }
+
+    .sns-pd-in-5 {
+        padding-inline: 5vw !important;
+    }
+
+    .col-sm-3 .mdlname h5:nth-of-type(2) {
+        margin-top: 5px !important;
+    }
+
+    .sns-pt-30px {
+        margin-top: 100px;
+    }
+
+    .sns-tow {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .banner-div h1 {
+            position: initial;
+            color: #fff;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: -1px;
+            background-color: #000;
+            padding-top: 10px;
+        }
+
+        .sns-tow {
+            flex-wrap: wrap;
+        }
+
+        .head_2 {
+            padding: 20px 10% 15px;
+        }
+
+        .ofr_leas {
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .ofr_detail {
+            text-align: center;
+        }
+
+        .ofr_disc {
+            padding-top: 25px;
+            padding-inline: 20px;
+        }
+
+        .sns-pt-30px {
+            margin-top: 30px;
+        }
+
+        .heading {
+            margin: 0 !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            background: #741604;
+            padding: 20px 0 20px 40px !important;
+            text-align: center;
+            font-size: 18px !important;
+            line-height: 1;
+            text-align: left;
+        }
+
+        .banner-price {
+            margin-bottom: 0;
+            color: #fff !important;
+            font-size: 18px !important;
+            font-weight: 500;
+            padding: 10px 0 0;
+            text-align: center;
+            line-height: 1.2;
+            background-color: #000;
+        }
+
+        .car_name {
+            text-align: center;
+            margin-top: 11%;
+
+        }
+
+        .offer-div {
+            height: unset;
+        }
+
+        .offer-div1 {
+            /* height: unset; */
+            background-position: center;
+        }
+
+        .ofr_had_line {
+            width: 30%;
+        }
+
+        .offer_car {
+            margin-top: 0;
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        #fourbuttons>.col-sm-3 {
+            padding: 10px 1px;
+        }
+
+        .HS-Sec {
+            margin-top: 0;
+            padding: 50px 0;
+        }
+
+        .Flex-D {
+            flex-direction: column;
+        }
+
+        .box_1 h5 {
+            font-size: 30px;
+        }
+
+        .para_2 {
+            margin-bottom: 10px;
+        }
+
+        .Flex-D .head_2 {
+            padding: 20px 10px 10px;
+        }
+
+        .mdl_had {
+            font-size: 30px;
+        }
+
+        .box_p1 {
+            padding: 15px 5px 10px 40px;
+            line-height: 1.3;
+            margin-bottom: 0;
+            color: #fff;
+            font-weight: 500;
+            font-size: 30px !important;
+            text-align: left;
+        }
+
+        .box_p2 {
+            padding: 10px 20px 10px 40px;
+            line-height: 1.4em;
+            margin-bottom: 15px;
+            font-size: 18px !important;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-align: left;
+        }
+
+        .sns-pd-in-12 {
+            padding-inline: 20px;
+        }
+
+        .sns-pd-in-5 {
+            padding-inline: unset !important;
+        }
+    }
+</style>
+
+
+
+
+
+
+<div class="main-div">
+    <div class="banner-div hidden-xs"
+        style="background-image: url('https://di-uploads-pod4.s3.us-east-1.amazonaws.com/westcovinacdjr/uploads/2026/05/HERO13-Westcovina__Charger_2026.jpg');background-size: cover;background-repeat: no-repeat;">
+        <div class="banner-div1">
+
+            <h1 style="text-transform: none;">The 2026 Dodge Charger</h1>
+            <p class="banner-price">Starting MSRP: $49,995*</p>
+        </div>
+        <!-- <img
+      src=""
+      alt="Banner"
+      style="max-width: 100%;"/> -->
+    </div>
+
+    <div class="banner-div hidden-sm hidden-md hidden-lg">
+        <div class="banner-div1">
+
+            <h1 style="text-transform: none;">The 2026 Dodge Charger</h1>
+            <p class="banner-price">Starting MSRP: $49,995*</p>
+        </div>
+        <img src="https://di-uploads-pod4.s3.us-east-1.amazonaws.com/westcovinacdjr/uploads/2026/05/HERO13-Westcovina__Charger_2026.jpg"
+            alt="Banner" style="max-width: 100%;" />
+    </div>
+
+
+    <div style="max-width: 1343px;margin: 0% auto;background-color: #fff;"></div>
+
+    <div class="offer-div1">
+        <div class="row">
+            <div class="col-sm-5">
+                <h2 class="car_name">2026 Dodge Charger</h2>
+                <p class="car_modl_trim"></p>
+                <p class="ofr_leas">$1,500<sup style="font-size: 35px;top: -1em;display: none;">APR</sup>
+                </p>
+                <p class="ofr_detail">Bonus Cash Allowance +</p>
+                <p class="no_offer">Please contact West Covina CDJR for the latest lease and finance offers.</p>
+
+            </div>
+            <div class="col-sm-7" style=" padding: 0;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/OFFER-CAR-Westcovina__Charger_2026.png"
+                    alt="Offer Car" class="offer_car" /></div>
+
+
+        </div>
+    </div>
+
+    <div class="ofr_disc hidden-xs">
+        <p>Offer applies to 2026 CHARGER R/T 2-DOOR AWD.</br>
+            + No trade-in/turn-in required. Eligible customers who currently have a qualifying vehicle or who have had a
+            contract expire within the last 365 calendar days of the program start date. Contact dealer for details.
+            Must take delivery by <span style="white-space: nowrap;">06/01/2026.</span>
+        </p>
+    </div>
+
+
+    <div class="ofr_disc hidden-sm hidden-md hidden-lg">
+        <p>Offer applies to 2026 CHARGER R/T 2-DOOR AWD.</br>
+            + No trade-in/turn-in required. Eligible customers who currently have a qualifying vehicle or who have had a
+            contract expire within the last 365 calendar days of the program start date. Contact dealer for details.
+            Must take delivery by <span style="white-space: nowrap;">06/01/2026.</span>
+        </p>
+    </div>
+    <div
+        style="max-width: 1439px; margin: 0% auto; background-color: #fff; overflow: hidden; margin-top: 15px; color: #fff;">
+        <div class="inner-6" style="padding-top: 1.2%;">
+            <div id="fourbuttons" class="row text-center">
+                <div class="col-sm-3" style="padding: 1px;">
+                    <a href="https://www.westcovinacdjr.com/new-vehicles/?_dFR%5Blightning.isPolice%5D%5B0%5D=No&_dFR%5Bmake%5D%5B0%5D=Dodge&_dFR%5Bmodel%5D%5B0%5D=Charger&_dFR%5Byear%5D%5B0%5D=2026"
+                        style="display: inline-block;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/VI-Small.gif"
+                            alt="view inventroy" style="max-width: 100%;" /></a>
+                </div>
+                <div class="col-sm-3" style="padding: 1px;">
+                    <a href="https://www.westcovinacdjr.com/contact-us/" style="display: inline-block;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/GAQ-small-1500.gif"
+                            alt="get a quote" style="max-width: 100%;" /></a>
+                </div>
+                <div class="col-sm-3" style="padding: 1px;">
+                    <a href="https://www.westcovinacdjr.com/finance/apply-for-financing/"
+                        style="display: inline-block;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Get-pre-aproved-small-1500.gif"
+                            alt="get pre approved" style="max-width: 100%;" /></a>
+                </div>
+                <div class="col-sm-3" style="padding: 1px;">
+                    <a href="https://www.westcovinacdjr.com/value-your-trade/" style="display: inline-block;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Trade-small-1500.gif"
+                            alt="value your trade" style="max-width: 100%;" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row text-center box_1">
+        <div class="col-sm-4 text-right" style="padding: 0px;">
+            <h5 class="heading">design</h5>
+            <p class="box_p1">ICONIC FROM</br>EVERY ANGLE</p>
+            <p class="box_p2" style="">The 2026 Dodge Charger has an attitude all its own with clean lines, a
+                refined interior and <span style="white-space: nowrap;">driver-focused</span> design throughout.</p>
+        </div>
+        <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DESIGN-Westcovina__Charger_2026.jpg"
+                alt="design" style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
+        <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DESIGN-Westcovina__Charger_2026.jpg"
+                alt="design" style="max-width: 100%; display: inline;" /></div>
+    </div>
+
+
+    <div class="inner-1" style="" bis_skin_checked="1">
+        <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 10px; padding-top: 0px; margin: 0px; color: #000;"
+                bis_skin_checked="1">
+                <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                    <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 10PX; color: #000;margin-bottom: 0px;"
+                        role="heading" aria-level="2">
+                        EXTERIOR
+
+                    </h1>
+                    <h5 class="head_2" style="margin-top: 0px;">
+                        STREET CRED
+                    </h5>
+                    <p class="para_2">The 2026 Charger is built with distilled proportions to uphold true muscle car
+                        design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px; margin-bottom: 0px; color: #000;">
+        <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 20px; margin: 0px;">
+
+                <div class="col-sm-3" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WIDEBODY-FRAME-Westcovina__Charger_2026.jpg"
+                        alt="WIDEBODY FRAME" style="max-width: 100%; display: inline-block;" />
+                    <h5 class="head_2">WIDEBODY FRAME</h5>
+                    <p class="para_2">Muscle to the maximum width. Built on a widebody frame, the 2026 Dodge Charger
+                        has a presence that commands attention.
+                    </p>
+                </div>
+                <div class="col-sm-3" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/REAR-HATCH-DESIGN-Westcovina__Charger_2026.jpg"
+                        alt="REAR-HATCH" style="max-width: 100%; display: inline-block;" />
+                    <h5 class="head_2"><span style="white-space: nowrap;">REAR-HATCH</span> DESIGN</h5>
+                    <p class="para_2">Gain greater access to the cargo area via a rear “hidden hatch.” The hatch is
+                        seamlessly incorporated into the overall body design, opens to a maximum height and
+                        conveniently provides space to transport a variety of gear.</p>
+                </div>
+                <div class="col-sm-6" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/SIGNATURE-LIGHTING-Westcovina__Charger_2026.jpg"
+                        alt=" SIGNATURE LIGHTING" style="max-width: 100%; display: inline-block;" />
+                    <h5 class="head_2">
+                        SIGNATURE LIGHTING
+                    </h5>
+                    <p class="para_2">The signature lighting of the 2026 Dodge Charger offers sinister style. LED
+                        <span style="white-space: nowrap;">high-and</span> <span
+                            style="white-space: nowrap;">low-beam</span> headlights illuminate your drive while
+                        available <span style="white-space: nowrap;">cross-car</span> running lights stretch along
+                        the entire front fascia. At the center of it all is the illuminated Fratzog badge honoring
+                        the early days of Dodge Muscle in the 60s. And the rear LED taillights pay tribute to the
+                        classic race track design.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000;">
+    </div>
+    <div class="inner-1 bg_white_sec" style="padding-top:0px; margin-bottom: 28px; color: #000;">
+        <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #000;">
+                <div class="col-sm-6" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/PAINT-IT-BLACK-Westcovina__Charger_2026.jpg"
+                        alt="PAINT IT BLACK"
+                        style="max-width: 100%; display: inline-block;" />
+                    <h5 class="head_2">
+                        PAINT IT BLACK
+                    </h5>
+                    <p class="para_2">Available now on Daytona models, and available early 2026 on Charger R/T and
+                        Charger Scat Pack, the gloss black painted hood creates a sleek exterior contrast. Explore
+                        multiple packages and options to level up your Charger.
+                    </p>
+                </div>
+                <div class="col-sm-6" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/RACING-STRIPES-Westcovina__Charger_2026.jpg"
+                        alt="RACING STRIPES" style="max-width: 100%; display: inline-block;" />
+                    <h5 class="head_2">RACING STRIPES</h5>
+                    <p class="para_2 hidden-xs">Catch extra attention with an available dual Fratzog stripe that
+                        pays homage to racing traditions. Or, choose from several available packages that take the
+                        design and performance of the Charger even further.</p>
+                    <p class="para_2 hidden-sm hidden-md hidden-lg" style="padding-bottom: 0; margin-bottom: -5px;">
+                        Catch extra attention with an available dual Fratzog stripe that pays homage to racing
+                        traditions. Or, choose from several available packages that take the design and performance
+                        of the Charger even further.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px; color: #000; box-shadow: 0px 12px 26px -19px grey;">
+
+        <div class="inner-1 bg_black_sec_2" style="padding-top: 30px; background-color: #000;" bis_skin_checked="1">
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 18px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-1-Westcovina__Charger_2026.jpg"
+                            alt="18x8.5-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">18x8.5-INCH</span> TECH SILVER
+                            WHEELS</br>Standard on R/T</h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-2-Westcovina__Charger_2026.jpg"
+                            alt="20x10-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">20x10-INCH</span> DIAMOND CUT LUSTER
+                            WHEELS</br>Standard on Charger Scat Pack</h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-3-Westcovina__Charger_2026.jpg"
+                            alt="20x11-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;padding-inline: 10px;"><span style="white-space: nowrap;">20x11-INCH</span> SATIN CARBON
+                            WHEELS</br>Standard on Daytona Scat Pack</h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-4-Westcovina__Charger_2026.jpg"
+                            alt="20x9-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;">
+                            <span style="white-space: nowrap;">20x9-INCH</span> DIAMOND CUT BALTIC
+                            WHEELS</br>Standard on Charger R/T Plus
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 18px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-5-Westcovina__Charger_2026.jpg"
+                            alt="20x9-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">20x9-INCH</span> BLACKNOISE
+                            WHEELS</br>Available on Charger R/T with <span style="text-transform: none;">Blacktop</span><sup>&reg;</sup></h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-6-Westcovina__Charger_2026.jpg"
+                            alt="20x10-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">20x10-INCH</span> BLACKNOISE
+                            WHEELS</br>Available on Charger R/T Plus with <span style="text-transform: none;">Blacktop</span><sup>&reg;</sup> + Charger Scat
+                            Pack with <span style="text-transform: none;">Blacktop</span><sup>&reg;</sup></h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-7-Westcovina__Charger_2026.jpg"
+                            alt="20x11/11.5-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">20x11/11.5-INCH</span> LUSTER
+                            WHEELS</br>Available on Daytona Scat Pack with <span style="text-transform: none;">Blacktop</span><sup>&reg;</sup> and Track Pack
+                        </h5>
+
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-8-Westcovina__Charger_2026.jpg"
+                            alt="20x11-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;">
+                            <span style="white-space: nowrap;">20x11-INCH</span> LUSTER WHEELS</br>Available on
+                            Daytona Scat Pack with <span style="text-transform: none;">Blacktop</span><sup>&reg;</sup>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 28px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-4" style="padding: 2px;" bis_skin_checked="1">
+
+                    </div>
+
+                    <div class="col-sm-4" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WHEEL-9-Westcovina__Charger_2026.jpg"
+                            alt="20x11/11.5-INCH" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="text-transform: uppercase;"><span
+                                style="white-space: nowrap;">20x11/11.5-INCH</span> SATIN CARBON
+                            WHEELS</br>Available on Daytona Scat Pack with Track Pack</h5>
+
+                    </div>
+                    <div class="col-sm-4" style="padding: 2px;" bis_skin_checked="1">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inner-1 bg_white_sec" style="padding-top: 0px;" bis_skin_checked="1">
+            <div class="inner-4" bis_skin_checked="1">
+                <h2
+                    style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-top: 10PX; color: #000;margin-bottom: 10px;">
+                    DETROIT'S MOST WANTED
+                </h2>
+                <p class="para_2" style="text-align: center; padding-bottom: 25px; color: #000;">The Charger ups the
+                    ante with distinctly sinister design details to match the <span
+                        style="white-space: nowrap;">Twin-Turbo</span> SIXPACK engine’s performance.
+                </p>
+            </div>
+            <div class="inner-4" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; margin: 0px;" bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/STREAMLINED-PERFORMANCE-Westcovina__Charger_2026.jpg"
+                            alt="STREAMLINED PERFORMANCE" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2" aria-level="3" role="heading">
+                            STREAMLINED PERFORMANCE</h5>
+                        <p class="para_2">With
+                            Aggressive from all angles, the 2026 Dodge Charger takes pure muscle design and tailors
+                            it for optimal performance.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/PERFORMANCE-HOOD-Westcovina__Charger_2026.jpg"
+                            alt="PERFORMANCE HOOD" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">PERFORMANCE HOOD</h5>
+                        <p class="para_2">
+                            The bold exterior design of the Charger features a SIXPACK branded bezel to highlight
+                            the performance hood and a larger, more pronounced grille area for airflow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;" bis_skin_checked="1">
+            <div class="inner-1" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                        <h5 class="head_2" style="padding-top: 35px;">DUAL EXHAUST TIPS
+                        </h5>
+                        <p class="para_2">Standard Stainless Dual Exhaust Tips provide a bit of attitude to the rear
+                            profile of Charger gas models. Blacktop<sup>&reg;</sup> Packages shift to a dark
+                            appearance for an even more sinister look.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 text-right" style="padding: 0px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DUAL-EXHAUST-TIPS-Westcovina__Charger_2026.jpg"
+                            alt="DUAL EXHAUST TIPS" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner-1 bg_white_sec" style="padding-top: 0px;" bis_skin_checked="1">
+            <div class="inner-4" bis_skin_checked="1">
+                <h2
+                    style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-top: 10PX; color: #000;margin-bottom: 10px;">
+                    DISTINCTLY DAYTONA
+                </h2>
+                <p class="para_2" style="text-align: center; padding-bottom: 25px; color: #000;">Exclusive to
+                    Charger Daytona Scat Pack, the <span style="white-space: nowrap;">R-Wing</span> front aero
+                    passthrough and Fratzonic Chambered Exhaust offer a unique and signature style.
+                </p>
+            </div>
+            <div class="inner-4" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; margin: 0px;" bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/R-WING-Westcovina__Charger_2026.jpg"
+                            alt="R-WING" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2" aria-level="3" role="heading">
+                            <span style="white-space: nowrap;">R-WING</span></br> FRONT AERO PASSTHROUGH
+                        </h5>
+                        <p class="para_2">The <span style="white-space: nowrap;">patent-pending</span> <span
+                                style="white-space: nowrap;">R-Wing</span> Front Aero <span
+                                style="white-space: nowrap;">Passthrough—standard</span> on
+                            Charger Daytona Scat <span style="white-space: nowrap;">Pack—allows</span> air to move
+                            through the front fascia, reducing front
+                            lift by up to 30% and drag by up to 3%.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/FRATZONIC-CHAMBERED-EXHAUST-Westcovina__Charger_2026.jpg"
+                            alt="FRATZONIC CHAMBERED EXHAUST" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">FRATZONIC CHAMBERED EXHAUST</h5>
+                        <p class="para_2">
+                            The world’s first Fratzonic Chambered Exhaust delivers an audible and tangible rumble
+                            that is unique, distinct and only available on the Dodge Charger Daytona Scat Pack. The
+                            adjustable system responds to driver <span
+                                style="white-space: nowrap;">input—responding</span> differently whether you’re
+                            revving, accelerating, idling or engaging one of the <span
+                                style="white-space: nowrap;">race-oriented</span> drive modes. Engage “stealth mode”
+                            or silence the system when you need to go incognito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; background-color: #000;padding-bottom: 30px;"
+            bis_skin_checked="1">
+
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                        <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 10PX; color: #fff;margin-bottom: 0px;"
+                            role="heading" aria-level="2">
+                            INTERIOR
+
+                        </h1>
+                        <h5 class="head_2">
+                            INSTANT GRATIFICATION
+                        </h5>
+                        <p class="para_2">Enter a completely reimagined cabin that features refined textures, rich
+                            colors and dedicated functionality. Freestanding digital displays and <span
+                                style="white-space: nowrap;">performance-driven</span> features add to the interior
+                            ambiance in the 2026 Dodge Charger.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="padding-top: 0px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-1-Westcovina__Charger_2026.jpg"
+                    alt="image-1" style="max-width: 100%;" /></div>
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 28px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                        <h5 class="head_2">PERFORMANCE DRIVEN</h5>
+                        <p class="para_2">The 2026 Dodge Charger features a <span
+                                style="white-space: nowrap;">driver-focused</span> cockpit that offers quick and
+                            accessible control. A <span style="white-space: nowrap;">center-console</span> On button
+                            lets you start up with a single touch, while the <span
+                                style="white-space: nowrap;">pistol-grip</span> shifter elevates the performance
+                            feel each time you change gears.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                        <h5 class="head_2">UP THE ATTITUDE
+                        </h5>
+                        <p class="para_2">The available Attitude Adjustment Lighting feature illuminates the doors
+                            and instrument panel from below with an array of 64 selectable lighting colors.
+                            Parametric texture adds an interactive feel to the light as it reacts to events like the
+                            vehicle starting, the doors opening or a drive mode being engaged.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;"
+                bis_skin_checked="1">
+                <div class="inner-1" bis_skin_checked="1">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                        bis_skin_checked="1">
+                        <div class="col-sm-6 text-left" style="padding: 0px;" bis_skin_checked="1"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/PERFORMANCE-STEERING-WHEEL-Westcovina__Charger_2026.jpg"
+                                alt="PERFORMANCE STEERING WHEEL" style="max-width: 100%; display: inline-block;"
+                                class="lazyload-loading"></div>
+                        <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                            <h5 class="head_2" style="padding-top: 35px;">PERFORMANCE STEERING WHEEL</h5>
+                            <p class="para_2">Take hold of the heated, <span
+                                    style="white-space: nowrap;">leather-wrapped</span> <span
+                                    style="white-space: nowrap;">flat-top</span> and bottom steering wheel with
+                                dedicated buttons that allow for <span style="white-space: nowrap;">one-touch</span>
+                                customization of drive modes. Hit the PowerShot feature* on Daytona for 40 extra
+                                horsepower or quickly engage one of the <span
+                                    style="white-space: nowrap;">performance-focused</span> drive modes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-4" bis_skin_checked="1">
+                <div class="row text-center"
+                    style="padding-bottom: 25px; margin: 0px; color: #ffffff;padding-top: 30px;" bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/MAKE-IT-LOUd-Westcovina__Charger_2026.jpg"
+                            alt=" MAKE IT LOUD" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">
+                            MAKE IT LOUD
+                        </h5>
+                        <p class="para_2">Enjoy music and entertainment via a <span
+                                style="white-space: nowrap;">nine-speaker</span> Alpine<sup>&reg;</sup> Premium
+                            Audio System with a booming <span style="white-space: nowrap;">8-inch</span> subwoofer.
+                            Upgrade and get the premium Alpine<sup>&reg;</sup> Pro Audio System with 18 speakers and
+                            a <span style="white-space: nowrap;">10-inch</span> subwoofer (available in the Premium
+                            Audio Package).
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/BEST-IN-CLASS-CARGO-Westcovina__Charger_2026.jpg"
+                            alt="BEST-IN-CLASS" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2"><span style="white-space: nowrap;">BEST-IN-CLASS</span> CARGO</h5>
+                        <p class="para_2">Have space for nearly anything. The 2026 Dodge Charger offers a <span
+                                style="white-space: nowrap;">Best-in-Class</span> rear cargo volume* of 38.5 cubic
+                            <span style="white-space: nowrap;">feet— 133%</span> more than previous <span
+                                style="white-space: nowrap;">models—with</span> <span
+                                style="white-space: nowrap;">flat-folding</span> <span
+                                style="white-space: nowrap;">second-row</span> seats and a hidden rear hatch that
+                            help accommodate various sized and shaped cargo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;"
+                bis_skin_checked="1">
+                <div class="inner-1" bis_skin_checked="1">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                        bis_skin_checked="1">
+
+                        <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                            <h5 class="head_2" style="padding-top: 20px;">THE POWER OF COMFORT
+                            </h5>
+                            <p class="para_2">Supreme comfort meets performance details. Sink into multiple seating
+                                options including available Black or Demonic Red heated and ventilated <span
+                                    style="white-space: nowrap;">performance-inspired</span> seats with fixed
+                                headrests and adjustable thigh bolsters. Available in all cloth, all vinyl, cloth
+                                and vinyl, suede and vinyl, Nappa leather with fixed headrests, and a suede/Nappa
+                                leather combination with fixed headrests, each of these available seating options
+                                gives drivers ample comfort with which to experience the thrill of peak performance.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 text-right" style="padding: 0px;" bis_skin_checked="1"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/THE-POWER-OF-COMFORT-Westcovina__Charger_2026.jpg"
+                                alt="THE POWER OF COMFORT" style="max-width: 100%; display: inline-block;"
+                                class="lazyload-loading"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div style="padding-top: 30px;"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-2-Westcovina__Charger_2026.jpg"
+                alt="image-2" style="max-width: 100%;" /></div>
+        <div id="Get a quote" style="margin-top: 30px;">
+            <a href="https://www.westcovinacdjr.com/contact-us/" style="display: block;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Westcovina_Dodge_Charger_2026_GAQ_Movgif_.gif"
+                    alt="Get a quote" style="max-width: 100%;" /></a>
+        </div>
+        <div style="padding-top: 30px;"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-3-Westcovina__Charger_2026.jpg"
+                alt="image-3" style="max-width: 100%;" /></div>
+        <div class="row text-center box_1" style="background-color: #9b0004 !important;">
+            <div class="col-sm-4 text-right" style="padding: 0px;">
+                <h5 class="heading" style="background-color: #741604 !important;">TECHNOLOGY</h5>
+                <p class="box_p1" style="padding-top: 16px;line-height: 1.2em;">IN COMMAND </p>
+                <p class="box_p2" style="">Designed for drivers. Packed with power. The immersive cabin of the 2026
+                    Dodge Charger combines intuitive tech with a <span
+                        style="white-space: nowrap;">performance-driven</span> interior.</p>
+
+
+            </div>
+            <div class="col-sm-8 hidden-xs" style="padding: 0;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/TECHNOLOGY-Westcovina__Charger_2026.jpg"
+                    alt="TECHNOLOGY" style="width: 100%; display: inline; margin-left: 0.1px;" /></div>
+            <div class="col-sm-8 hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/TECHNOLOGY-Westcovina__Charger_2026.jpg"
+                    alt="TECHNOLOGY" style="width: 100%; display: inline;" /></div>
+        </div>
+
+
+
+        <div class="inner-1 bg_white_sec"
+            style="padding-top:0px; margin-bottom: 28px; color: #000;padding-top: 30px;"
+            bis_skin_checked="1">
+            <div class="inner-4" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #000;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CONTROL-WITHIN-REACH-Westcovina__Charger_2026.jpg"
+                            alt="CONTROL WITHIN REACH"
+                            style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                        <h5 class="head_2">
+                            CONTROL WITHIN REACH
+                        </h5>
+                        <p class="para_2">Intuitive technology keeps you in control behind the wheel and makes it
+                            easy to monitor information at a glance via the Uconnect<sup>&reg;</sup> touchscreen
+                            display, Digital
+                            Cluster Display and available <span style="white-space: nowrap;">Head-Up</span> Display.
+                            Quickly switch drive modes on the steering wheel and shift to <span
+                                style="white-space: nowrap;">rear-wheel</span> drive with the push of a button in
+                            the Charger Scat Pack.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/RECORD-YOUR-DRIVE-Westcovina__Charger_2026.jpg"
+                            alt="RECORD YOUR DRIVE" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">RECORD YOUR DRIVE</h5>
+                        <p class="para_2 hidden-xs">The Drive eXperience <span
+                                style="white-space: nowrap;">Recorder—included</span> on the available Track
+                            <span style="white-space: nowrap;">Package—is</span> a <span
+                                style="white-space: nowrap;">forward-facing</span> 1080p, <span
+                                style="white-space: nowrap;">60-fps</span> <span
+                                style="white-space: nowrap;">built-in</span> dashcam that lets you capture your
+                            circuit on camera. Record your ride, map a racing course or simply monitor the
+                            performance of your daily drive. <span style="white-space: nowrap;">In-vehicle</span>
+                            playback with <span style="white-space: nowrap;">post-event</span> analysis lets you
+                            analyze every detail while a <span style="white-space: nowrap;">built-in</span> USB
+                            port* lets you take it all with you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="inner-1 bg_white_sec" style="padding-top: 0px;">
+
+            <div class="inner-4">
+                <div class="row text-center" style="padding-bottom: 10px; padding-top:px; margin: 0px; color: #000;">
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/AVAILABLE-DRAG-MODE-Westcovina__Charger_2026.jpg"
+                            alt="AVAILABLE DRAG MODE" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">AVAILABLE DRAG MODE</h5>
+                        <p class="para_2">Available on Daytona Scat Pack, Drag Mode was made for <span
+                                style="white-space: nowrap;">straight-line</span> acceleration and maximized
+                            propulsion force, allowing you to race right out of the gate.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/SPORT-MODE-Westcovina__Charger_2026.jpg"
+                            alt="SPORT MODE" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="padding-inline: 3px;">SPORT MODE</h5>
+                        <p class="para_2">Sport Mode offers performance precision with improved handling capability
+                            and steering force as you take the curves and corners of the streets.</p>
+                    </div>
+
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/WET_SNOW-MODE-Westcovina__Charger_2026.jpg"
+                            alt="WET/SNOW MODE" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="padding-inline: 3px;">WET/SNOW MODE</h5>
+                        <p class="para_2">Wet/Snow Mode offers better traction and reduced slippage during wet and
+                            wintry conditions by equalizing torque between the front and rear wheels and softening
+                            the acceleration response.</p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CUSTOM-MODE-Westcovina__Charger_2026.jpg"
+                            alt="CUSTOM MODE" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2" style="padding-inline: 3px;">CUSTOM MODE</h5>
+                        <p class="para_2">Custom Mode lets you create your own unique drive mode by increasing or
+                            decreasing performance factors, including Propulsion, Traction, Steering and more.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="inner-1" style="padding-top: 50px; margin: 0px;background-color: #000;padding-bottom: 30px;">
+            <div class="inner-4">
+                <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #fff;">
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/PERFORMANCE-PAGES-Westcovina__Charger_2026.jpg"
+                            alt="PERFORMANCE PAGES" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">PERFORMANCE PAGES</h5>
+                        <p class="para_2">
+                            Monitor key performance information like Timers, Gauges, <span
+                                style="white-space: nowrap;">G-Force</span> and Propulsion, using the dedicated
+                            Performance Pages.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/ANDROID-AUTO-COMPATIBILITY-AND-APPLE-CARPLAY-SUPPORT-Westcovina__Charger_2026.jpg"
+                            alt="Android Auto" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">Android Auto<sup style="top: 0.1em;font-size: 20px;">&trade;</sup>
+                            COMPATIBILITY AND Apple
+                            CarPlay<sup>&reg;</sup> SUPPORT
+                        </h5>
+                        <p class="para_2">Sync your smartphone wirelessly thanks to Android Auto<sup
+                                style="top: 0.1em;font-size: 20px;">&trade;</sup>*
+                            compatibility and
+                            Apple CarPlay<sup>&reg;</sup> support. Make phone calls, listen to music or access your
+                            favorite phone apps on your <span style="white-space: nowrap;">12.3-inch</span>
+                            Uconnect<sup>&reg;</sup> touchscreen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row text-center" style="padding-bottom: 20px; margin: 0px; color: #fff;">
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/EV-PAGES-Westcovina__Charger_2026.jpg"
+                            alt="EV PAGES" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">EV PAGES</h5>
+                        <p class="para_2">
+                            Keep tabs on your vehicle’s health and performance</br>information* via EV Pages, which
+                            allow you to set and adjust your charging schedule and find a charging station.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DUAL-SMARTPHONE-SUPPORT-Westcovina__Charger_2026.jpg"
+                            alt="DUAL SMARTPHONE SUPPORT" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">DUAL SMARTPHONE SUPPORT
+                        </h5>
+                        <p class="para_2">This feature allows drivers and passengers the ability to access contacts,
+                            information and entertainment via the <span style="white-space: nowrap;">12.3-inch</span>
+                            Freestanding Touchscreen Display.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;"
+                bis_skin_checked="1">
+                <div class="inner-1" bis_skin_checked="1">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                        bis_skin_checked="1">
+
+                        <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                            <h5 class="head_2" style="padding-top: 35px;">AVAILABLE SiriusXM<sup>&reg;</sup>
+                            </h5>
+                            <p class="para_2">Access over 150 channels of music, news, radio and entertainment in
+                                the 2026 Dodge Charger Daytona when equipped with
+                                available</br>SiriusXM<sup>&reg;</sup>.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 text-right" style="padding: 0px;" bis_skin_checked="1"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/AVAILABLE-SIRIUSXM-Westcovina__Charger_2026.jpg"
+                                alt="AVAILABLE SiriusXM" style="max-width: 100%; display: inline-block;"
+                                class="lazyload-loading"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inner-1 bg_white_sec" style="padding-top: 30px;" bis_skin_checked="1">
+            <div class="inner-4" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #000;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CONNECTIVITY-PACKAGES-Westcovina__Charger_2026.jpg"
+                            alt="CONNECTIVITY PACKAGES" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">CONNECTIVITY PACKAGES</h5>
+                        <p class="para_2">Use the Dodge app* on your smartphone to seamlessly integrate your life
+                            with your vehicle. Stay connected with trial packages ranging from 3 months to up to 10
+                            years with packages like Dodge Connect ONE*, and get access to features including Remote
+                            Vehicle Operations*, Drive Alerts* and Dynamic Range Mapping*.</p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DODGE-CONNECT_-Westcovina__Charger_2026.jpg"
+                            alt="DODGE CONNECT*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">DODGE CONNECT*</h5>
+                        <p class="para_2">Stay connected to information, entertainment and vehicle stats via your
+                            Uconnect<sup>&reg;</sup> 5 system. Access everything from apps to performance gauges to
+                            energy consumption.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; background-color: #000;padding-bottom: 30px;"
+            bis_skin_checked="1">
+
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                        <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 0px; padding-top: 10PX; color: #fff;margin-bottom: 0px;"
+                            role="heading" aria-level="2">
+                            SAFETY & SECURITY
+
+                        </h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;" bis_skin_checked="1">
+
+                <div class="col-sm-6 text-left" style="padding: 0px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CONFIDENCE-AT-EVERY-TURN-Westcovina__Charger_2026.jpg"
+                        alt="CONFIDENCE AT EVERY TURN" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                    <h5 class="head_2" style="padding-top: 35px;">CONFIDENCE AT EVERY TURN
+                    </h5>
+                    <p class="para_2">Equipped with cameras and sensors throughout the vehicle, the 2026 Charger
+                        offers a host of standard and available safety and security features to help you drive with
+                        confidence.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+
+                        <h5 class="head_2">
+                            <span style="white-space: nowrap;">NEXT-LEVEL</span> SECURITY
+                        </h5>
+                        <p class="para_2">Take the safety and security of your 2026 Charger all the way with our
+                            available features.</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 20px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/TURN-SIGNAL-ACTIVATED-BLIND-SPOT_-Westcovina__Charger_2026.jpg"
+                            alt="TURN SIGNAL ACTIVATED BLIND SPOT*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">TURN SIGNAL ACTIVATED BLIND SPOT*</h5>
+                        <p class="para_2">This system uses side cameras to offer a view of blind spots. When the
+                            turn signal is activated, a visual of the vehicle’s blind spot appears on the vehicle
+                            touchscreen, helping drivers change lanes with confidence.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/SIDE-DISTANCE-WARNING_-Westcovina__Charger_2026.jpg"
+                            alt="SIDE DISTANCE WARNING*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">SIDE DISTANCE WARNING*
+                        </h5>
+                        <p class="para_2">The 2026 Dodge Charger Daytona uses ultrasonic side sensors to determine
+                            how close its sides are to an object. If a real risk of collision is sensed, visual and
+                            audible warnings are issued to alert the driver.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/360-SURROUND-VIEW-CAMERA_Westcovina__Charger_2026.jpg"
+                            alt="360º SURROUND VIEW CAMERA*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">360º SURROUND VIEW CAMERA*</h5>
+                        <p class="para_2">This system turns on automatically when the vehicle is shifted into
+                            reverse but can be engaged manually via the Freestanding Touchscreen Display. When the
+                            vehicle is in reverse and moving under 7 miles per hour, front, rear and side cameras
+                            offer a complete view of vehicle’s surroundings, with dynamic gridlines showing vehicle
+                            trajectory.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/PARKSENSE-WITH-CAMERA_-Westcovina__Charger_2026.jpg"
+                            alt="ParkSense" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">
+                            ParkSense<sup>&reg;</sup> WITH CAMERA*
+                        </h5>
+                        <p class="para_2">Using cameras within the vehicle, ParkSense<sup>&reg;</sup> with Camera
+                            offers front and <span style="white-space: nowrap;">top-down</span> views of the vehicle
+                            when it’s in Drive, and can alert you when obstacles are detected in the vehicle’s path.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;"
+                bis_skin_checked="1">
+                <div class="inner-1" bis_skin_checked="1">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                        bis_skin_checked="1">
+
+                        <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                            <h5 class="head_2" style="padding-top: 35px;">FRONT <span
+                                    style="white-space: nowrap;">TIRE-TO-CURB</span> CAMERA
+                            </h5>
+                            <p class="para_2">Front cameras in the vehicle provide a dedicated <span
+                                    style="white-space: nowrap;">tire-to-curb</span> view to help avoid brushing the
+                                curb during parking maneuvers.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 text-right" style="padding: 0px;" bis_skin_checked="1"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/FRONT-TIRE-TO-CURB-CAMERA-Westcovina__Charger_2026.jpg"
+                                alt="FRONT" style="max-width: 100%; display: inline-block;"
+                                class="lazyload-loading"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 15px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+
+                        <h5 class="head_2">
+                            SECURE FROM THE STARTING LINE
+
+                        </h5>
+                        <p class="para_2">Every 2026 Charger is fitted with standard safety and security features.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="inner-4" style="max-width: 1295px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 28px; margin: 0px;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/ACTIVE-DRIVING-ASSIST_-Westcovina__Charger_2026.jpg"
+                            alt="ACTIVE DRIVING ASSIST*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2" style="padding-top: 30px;">ACTIVE DRIVING ASSIST*</h5>
+                        <p class="para_2">Experience the most autonomous driving features of any muscle car ever*.
+                            Way beyond cruise control, this system lets the vehicle take partial control of
+                            acceleration and braking and can adjust lane positioning when the driver allows. A
+                            sensor in the steering wheel reminds the driver to keep their hands on the wheel while
+                            using the feature.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/FORWARD-COLLISION-WARNING-PLUS_-FORWARD-COLLISION-WARNING-PLUS__-Westcovina__Charger_2026.jpg"
+                            alt="FORWARD COLLISION WARNING PLUS*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">FORWARD COLLISION WARNING PLUS* FORWARD COLLISION WARNING PLUS*
+                        </h5>
+                        <p class="para_2">Using a <span style="white-space: nowrap;">forward-facing</span> camera
+                            and radar sensor input, this available system helps to detect vehicles or pedestrians.
+                            If driver input is not detected, the feature issues visual and audible notifications,
+                            and can even engage the emergency brakes if needed.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/BLIND-SPOT-MONITORING_WITH-REAR-CROSS-PATH-DETECTION_-Westcovina__Charger_2026.jpg"
+                            alt="BLIND SPOT MONITORING*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">BLIND SPOT MONITORING*WITH REAR CROSS PATH DETECTION*</h5>
+                        <p class="para_2">When another vehicle is detected in a blind spot, this system issues a
+                            visual warning via the triangle icon on the exterior mirror and makes an audible chime
+                            if the turn signal is activated. Rear Cross Path Detection can also detect objects
+                            behind the vehicle and issue an alert when the vehicle is backing up.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/TRAFFIC-SIGN-RECOGNITION_-Westcovina__Charger_2026.jpg"
+                            alt="TRAFFIC SIGN RECOGNITION*" style="max-width: 100%; display: inline-block;"
+                            class="lazyload-loading">
+                        <h5 class="head_2">
+                            TRAFFIC SIGN RECOGNITION*
+                        </h5>
+                        <p class="para_2">Using a <span style="white-space: nowrap;">forward-facing</span> camera
+                            and navigation information, Traffic Sign Recognition reads upcoming traffic signs and
+                            displays the speed limit via the Digital Cluster Display.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;"
+                bis_skin_checked="1">
+                <div class="inner-1" bis_skin_checked="1">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;"
+                        bis_skin_checked="1">
+                        <div class="col-sm-6 text-left" style="padding: 0px;" bis_skin_checked="1"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DROWSY-DRIVER-DETECTION_-DROWSY-DRIVER-DETECTION_-Westcovina__Charger_2026.jpg"
+                                alt="DROWSY DRIVER DETECTION*" style="max-width: 100%; display: inline-block;"
+                                class="lazyload-loading"></div>
+                        <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                            <h5 class="head_2" style="padding-top: 35px;">DROWSY DRIVER DETECTION*</h5>
+                            <p class="para_2">This system uses visual and audible alerts to warn drivers that
+                                erratic and fatigued driving has been detected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div style="padding-top: 30px;" bis_skin_checked="1"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-4-Westcovina__Charger_2026.jpg"
+                alt="image-4" style="max-width: 100%;" /></div>
+        <div id="viewinventory" style="padding-top: 30px;" bis_skin_checked="1">
+            <a href="https://www.westcovinacdjr.com/new-vehicles/?_dFR%5Blightning.isPolice%5D%5B0%5D=No&_dFR%5Bmake%5D%5B0%5D=Dodge&_dFR%5Bmodel%5D%5B0%5D=Charger&_dFR%5Byear%5D%5B0%5D=2026"
+                style="display: block;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Westcovina_Dodge_Charger_2026_VI_Movgif_.gif"
+                    alt="viewinventory" style="max-width: 100%;" /></a>
+        </div>
+        <div style="padding-top: 25px;" bis_skin_checked="1"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-5-Westcovina__Charger_2026.jpg"
+                alt="image-5" style="max-width: 100%;" /></div>
+        <div class="row text-center box_1" style="background-color: #9b0004;">
+            <div class="col-sm-4 text-right" style="padding: 0px;">
+                <h5 class="heading" style="background-color: #741604;">CAPABILITY</h5>
+                <p class="box_p1">PERFORMANCE </p>
+                <p class="box_p2" style="margin-bottom: 0px;">The 2026 Dodge Charger cements its legendary status as
+                    the World’s Most
+                    Powerful <span style="white-space: nowrap;">All-Wheel-Drive</span> Muscle Car*.</p>
+
+                <p class="box_p2" style="">And when performance leads, recognition follows. Dodge Charger has been
+                    named the 2026 North American Car of the Year<sup style="top: 0.1em;font-size: 20px;">&trade;</sup>,
+                    recognizing superiority among
+                    its competition.</p>
+
+            </div>
+            <div class="col-sm-8 text-left hidden-xs" style="padding: 0;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CAPABILITY-Westcovina__Charger_2026.jpg"
+                    alt="CAPABILITY" style="max-width: 100%; display: inline;margin-left: 0.1px;" /></div>
+            <div class="col-sm-8 text-left hidden-lg hidden-md hidden-sm" style="padding: 0;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CAPABILITY-Westcovina__Charger_2026.jpg"
+                    alt="CAPABILITY" style="max-width: 100%; display: inline;" /></div>
+        </div>
+
+
+
+        <div class="inner-1 bg_black_sec_2" style="padding-top: 0px; background-color: #000;" bis_skin_checked="1">
+
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+
+                        <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 20px; padding-top: 10PX; color: #fff;margin-bottom: 0px;"
+                            role="heading" aria-level="2">
+                            MUSCLE UNLEASHED
+
+                        </h1>
+
+                        <p class="para_2">The Jeep<sub>®</sub> Gladiator boasts the Trail Rated<sup>®</sup> badge, earned through a series of rigorous <span style="white-space: nowrap;">off-road</span> trials.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="inner-4" bis_skin_checked="1">
+
+
+                <div class="inner-4">
+                    <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #ffffff;">
+                        <div class="col-sm-6" style="padding: 2px;"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-SCAT-PACK-1-Westcovina__Charger_2026.jpg"
+                                alt="MUSCLE UNLEASHED" style="max-width: 100%; display: inline-block;" />
+
+                        </div>
+                        <div class="col-sm-6" style="padding: 2px;"><img
+                                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-SCAT-PACK-2-Westcovina__Charger_2026.jpg"
+                                alt="MUSCLE UNLEASHED" style="max-width: 100%; display: inline-block;" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-4" style="margin-bottom: 2px;" bis_skin_checked="1">
+                <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                    bis_skin_checked="1">
+                    <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+
+                        <h5 class="head_2">
+                            CHARGER SCAT PACK
+                        </h5>
+                        <p class="para_2">Tap into <span style="white-space: nowrap;">gas-powered</span>
+                            performance. The Charger Scat Pack is powered by a 3.0L SIXPACK <span
+                                style="white-space: nowrap;">HO Twin-Turbo</span> <span
+                                style="white-space: nowrap;">Straight-Six</span> engine that offers <span
+                                style="white-space: nowrap;">low-inertia,</span> <span
+                                style="white-space: nowrap;">high-flow</span> turbochargers that spin up fast to
+                            deliver a peak boost of 30 psi*. With the <span
+                                style="white-space: nowrap;">high-output</span> engine, more air is pushed into the
+                            combustion chamber, creating more horsepower and more torque. And with the ability to
+                            instantly switch from <span style="white-space: nowrap;">all-wheel</span> drive into
+                            <span style="white-space: nowrap;">rear-wheel</span> <span
+                                style="white-space: nowrap;">drive—this</span> vehicle delivers true
+                            muscle power.
+                        </p>
+
+                        <h5 class="head_2">
+                            550 MAX HORSEPOWER • 3.9 <span style="white-space: nowrap;">0-60</span> MPH (SEC) • 531
+                            MAX TORQUE <span style="white-space: nowrap;">(LB-FT)</span> • 12.2 <span
+                                style="white-space: nowrap;">QUARTER-MILE</span> (SEC)
+                        </h5>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="inner-1 bg_white_sec" style="padding-top: 30px;">
+
+        <div class="inner-4">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px;">
+                <div class="col-sm-6" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CAHRGER-RT-1-Westcovina__Charger_2026.jpg"
+                        alt=" CHARGER R/T" style="max-width: 100%; display: inline-block;" />
+
+                </div>
+                <div class="col-sm-6" style="padding: 2px;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-RT-2-Westcovina__Charger_2026.jpg"
+                        alt=" CHARGER R/T" style="max-width: 100%; display: inline-block;" />
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-1" style="box-shadow: 0px 10px 20px -10px grey;" bis_skin_checked="1">
+        <div class="inner-4" style="margin-bottom: 28px;" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #000;"
+                bis_skin_checked="1">
+                <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                    <h5 class="head_2">
+                        CHARGER R/T
+                    </h5>
+                    <p class="para_2">Fuel performance. The 3.0L SIXPACK SO <span
+                            style="white-space: nowrap;">Twin-Turbo</span> <span
+                            style="white-space: nowrap;">Straight-Six</span> engine in the Charger R/T brings
+                        relentless performance with maximum 420 horsepower and maximum 468 <span
+                            style="white-space: nowrap;">pound-feet</span> of torque.</p>
+
+                    <h5 class="head_2" style="padding-top: 5px;">
+                        420 MAX HORSEPOWER • 4.6 <span style="white-space: nowrap;">0-60</span> MPH (SEC) • 468 MAX
+                        TORQUE <span style="white-space: nowrap;">(LB-FT)</span> • 12.9 <span
+                            style="white-space: nowrap;">QUARTER-MILE</span> (SEC)
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px;" bis_skin_checked="1">
+        <div class="inner-4" bis_skin_checked="1">
+            <h2
+                style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-top: 10PX; color: #000;margin-bottom: 10px;">
+                RACING OPTIONS
+            </h2>
+            <p class="para_2" style="text-align: center; padding-bottom: 25px; color: #000;display: none;">Explore
+                even farther
+                with
+                <span style="white-space: nowrap;">off-roading</span>
+                capability from the Ram 1500 lineup.
+            </p>
+        </div>
+        <div class="inner-4" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 20px; margin: 0px;" bis_skin_checked="1">
+                <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/LINE-LOCK-Westcovina__Charger_2026.jpg"
+                        alt=" LINE LOCK" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                    <h5 class="head_2" aria-level="3" role="heading">
+                        LINE LOCK</h5>
+                    <p class="para_2">Standard on Charger Scat Pack, Line Lock lets the driver lock the front brakes
+                        only, while enabling rear wheel spin. When engaged, Line Lock helps clean/warm the tires
+                        before launch and perform <span style="white-space: nowrap;">tire-smoking</span> burnouts
+                        with a push of a button and punch of the throttle.
+                    </p>
+                </div>
+                <div class="col-sm-3" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/LAUNCH-CONTROL-Westcovina__Charger_2026.jpg"
+                        alt="LAUNCH CONTROL" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                    <h5 class="head_2" aria-level="4" role="heading">LAUNCH CONTROL
+                    </h5>
+                    <p class="para_2">Launch straight forward, right off the line. Standard on Charger Scat Pack and
+                        Daytona Scat Pack, Launch Control sets the torque at the wheels offering <span
+                            style="white-space: nowrap;">straight-line</span> acceleration at the starting point and
+                        reducing wheel slip based on surface conditions.
+                    </p>
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/RACE-PREP-Westcovina__Charger_2026.jpg"
+                        alt="RACE PREP" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                    <h5 class="head_2">RACE PREP</h5>
+                    <p class="para_2">
+                        Standard on Daytona Scat Pack, Race Prep lets drivers choose one of two racing styles. Drag
+                        Racing optimizes battery temperature to avoid derate and deliver quick acceleration off the
+                        line. Track Racing cools the battery temperature, allowing it to heat up gradually and
+                        helping to maintain stamina when racing longer laps. <span
+                            style="white-space: nowrap;">Pre-production</span> model shown.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;" bis_skin_checked="1">
+        <div class="inner-1" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;" bis_skin_checked="1">
+                <div class="col-sm-6 text-left" style="padding: 0px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DRIFT_DONUT-MODE-Westcovina__Charger_2026.jpg"
+                        alt="DRIFT/DONUT MODE" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                    <h5 class="head_2" style="padding-top: 35px;">DRIFT/DONUT MODE</h5>
+                    <p class="para_2">Standard on Daytona Scat Pack, Drift/Donut Mode sets you up for the thrill of
+                        drifting and donuts using three retractable slip angles, rear <span
+                            style="white-space: nowrap;">axle-biased</span> torque and tailored damper settings.
+                        Drift Min provides the most traction control intervention and allows for the minimum slip,
+                        Drift Max provides less traction control for more slip and Donut provides the least amount
+                        of traction control for the wildest slip of all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="padding-top: 30px;"><img
+            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-6-Westcovina__Charger_2026.jpg"
+            alt="image-6" style="max-width: 100%;" /></div>
+
+    <!-- missing -->
+
+    <div class="inner-1 bg_black_sec_2" style="background-color: #000;padding-bottom: 20px;">
+        <div class="inner-4" style="padding-top: 0px; padding-bottom: 10px;">
+
+            <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #fff;"
+                bis_skin_checked="1">
+                <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                    <h1 style="font-size: 34px !important; font-weight: 600 !important; text-align: center; text-transform: uppercase; padding-bottom: 20px; padding-top: 0PX; color: #fff;margin-bottom: 0px;margin-top: 0px;"
+                        role="heading" aria-level="2">
+                        THE WORLD’S ONLY <span style="white-space: nowrap;">ALL-WHEEL</span> DRIVE MUSCLE CAR*
+
+                    </h1>
+
+                    <p class="para_2">All 2026 Dodge Charger models have the power of <span
+                            style="white-space: nowrap;">all-wheel</span> drive with the ability to switch into
+                        <span style="white-space: nowrap;">rear-wheel</span> drive at your command.
+                    </p>
+                    <h5 class="head_2" style="margin-top: 0px;">
+                        A STABILIZING FORCE
+                    </h5>
+                    <p class="para_2">Expertly crafted suspension systems amplify the performance in the 2026
+                        Charger.</p>
+                </div>
+
+            </div>
+
+            <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
+
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 20px; margin: 0px;">
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/FRONT-AND-REAR-SUSPENSIONS.jpg"
+                            alt=" FRONT AND REAR SUSPENSIONS" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">
+                            FRONT AND REAR SUSPENSIONS</h5>
+                        <p class="para_2">Experience a powerful ride with greater grip. The Multilink Front
+                            Suspension uses <span style="white-space: nowrap;">negative-chamber</span> induction and
+                            forged aluminum links to amplify traction and strength. The <span
+                                style="white-space: nowrap;">fully-independent</span> Integral Link Rear Suspension
+                            offers enhanced steering feel and added body control at high cornering speeds.</p>
+                    </div>
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DUAL-VALVE-ADAPTIVE-DAMPING-SYSTEM.jpg"
+                            alt="DUAL-VALVE" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2"><span style="white-space: nowrap;">DUAL-VALVE</span> ADAPTIVE DAMPING
+                            SYSTEM</h5>
+                        <p class="para_2">Available on Charger Scat Pack and Daytona Scat Pack, the evolved <span
+                                style="white-space: nowrap;">Dual-Valve</span> Adaptive Damping System offers a
+                            plusher ride in <span style="white-space: nowrap;">rough-road</span> scenarios and a
+                            connected, engaging feeling through tight turns. The system achieves this control by
+                            using two dedicated <span style="white-space: nowrap;">valves—one</span> focused on
+                            compression, the other on <span style="white-space: nowrap;">rebound—to</span> allow for
+                            more damping force in handling scenarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
+
+                <div class="row text-center" style="padding-top: 0px; padding-bottom: 0px; margin: 0px;">
+
+                    <div class="col-sm-6" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/RIGID-CHASSIS-AND-50-50-WEIGHT-DISTRIBUTION.jpg"
+                            alt="RIGID CHASSIS AND" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">RIGID CHASSIS AND <span style="white-space: nowrap;">50-50</span> WEIGHT
+                            DISTRIBUTION</h5>
+                        <p class="para_2"><span style="white-space: nowrap;">Near-perfect</span> weight distribution
+                            on Daytona models and a rigid chassis on all 2026 Charger models helps you handle even
+                            the tightest curves like a boss.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/BREMBO-HIGH-PERFORMANCE-BRAKES.jpg"
+                            alt=" BREMBO" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">
+                            BREMBO <span style="white-space: nowrap;">HIGH-PERFORMANCE</span> BRAKES
+                        </h5>
+                        <p class="para_2">Experience ultimate track performance and the benefit of brake fade
+                            resistance thanks to a 31% increase in swept brake area. This available <span
+                                style="white-space: nowrap;">High-Performance</span> Braking System comes with fixed
+                            <span style="white-space: nowrap;">six-piston</span> front and <span
+                                style="white-space: nowrap;">four-piston</span> rear calipers, along with <span
+                                style="white-space: nowrap;">16-inch</span> vented front and rear rotors.
+                        </p>
+                    </div>
+                    <div class="col-sm-3" style="padding: 2px;"><img
+                            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/STAGGERED-TIRE-SETUP.jpg"
+                            alt=" STAGGERED TIRE SETUP" style="max-width: 100%; display: inline-block;" />
+                        <h5 class="head_2">
+                            STAGGERED TIRE SETUP
+                        </h5>
+                        <p class="para_2">The <span style="white-space: nowrap;">staggered-tire</span> setup is
+                            primed and ready for the course. The front tires are independently tuned for maximum
+                            lateral acceleration, while the rear tires are tuned for stability. The widebody stance
+                            of the 2026 Charger Daytona supports this available staggered tire setup, with
+                            305/35ZR20XL front tires and 325/35ZR20 rear Goodyear Eagle<sup>&reg;</sup> Sport <span
+                                style="white-space: nowrap;">All-Season</span> Tires.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="inner-1 bg_white_sec" style="padding-top: 30px;" bis_skin_checked="1">
+
+        <div class="inner-4" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px;" bis_skin_checked="1">
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DAYTONA-SCAT-PACK.jpg"
+                        alt=" DAYTONA SCAT PACK" style="max-width: 100%; display: inline-block;">
+
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/DAYTONA-SCAT-PACK-2.jpg"
+                        alt=" DAYTONA SCAT PACK" style="max-width: 100%; display: inline-block;">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-1" style="box-shadow: 0px 10px 20px -10px grey;" bis_skin_checked="1">
+        <div class="inner-4" style="margin-bottom: 28px;" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 20px; padding-top: 0px; margin: 0px; color: #000;"
+                bis_skin_checked="1">
+                <div class="col-sm-12" style="padding: 2px;" bis_skin_checked="1">
+                    <h5 class="head_2">
+                        DAYTONA SCAT PACK
+                    </h5>
+                    <p class="para_2">Now available in both <span style="white-space: nowrap;">two-door</span> and
+                        <span style="white-space: nowrap;">four-door</span> options, the Dodge Charger Daytona Scat
+                        Pack delivers staggering power and performance with 670 horsepower and a blistering <span
+                            style="white-space: nowrap;">0-60</span> time of 3.3 seconds.
+                    </p>
+
+                    <h5 class="head_2" style="margin-top: 0px;">
+                        670 MAX HORSEPOWER • 3.3 <span style="white-space: nowrap;">0-60</span> MPH (SEC) • 627
+                        TORQUE <span style="white-space: nowrap;">(LB-FT)</span> • 11.5 <span
+                            style="white-space: nowrap;">QUARTER-MILE</span> (SEC)
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="inner-1 bg_white_sec" style="padding-top: 0px;" bis_skin_checked="1">
+
+        <div class="inner-4" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px;" bis_skin_checked="1">
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/400-VOLTS.-AWARD-WINNING-ENGINE__-1.jpg"
+                        alt="400 VOLTS." style="max-width: 100%; display: inline-block;">
+                    <h5 class="head_2">
+                        400 VOLTS. <span style="white-space: nowrap;">AWARD-WINNING</span> ENGINE*.</h5>
+                    <p class="para_2">Experience a <span style="white-space: nowrap;">400-volt</span> surge, again
+                        and again. Named one of Wards 10 Best Engines & Propulsion Systems, the <span
+                            style="white-space: nowrap;">400-volt</span> propulsion system features a <span
+                            style="white-space: nowrap;">high-voltage</span> <span
+                            style="white-space: nowrap;">lithium-ion</span> battery that delivers an initial 550
+                        kilowatts of power before shifting to a steady rate of over 500 kilowatts*. It can then
+                        sustain that discharge rate to the electric drive motors for a full quarter mile. And
+                        ultimately delivers a total <span style="white-space: nowrap;">all-electric</span> driving
+                        range of over 270 miles* on Daytona Scat Pack.
+                    </p>
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/MORE-HORSEPOWER-IN-AN-INSTANT.jpg"
+                        alt="MORE HORSEPOWER IN AN INSTANT" style="max-width: 100%; display: inline-block;">
+                    <h5 class="head_2">MORE HORSEPOWER IN AN INSTANT
+                    </h5>
+                    <p class="para_2">Located on the performance steering wheel of Daytona EV models, PowerShot
+                        delivers an incremental 40 extra horsepower for 10 seconds*, and can be used repeatedly to
+                        amplify performance.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="inner-1 bg_green_sec" style="margin-bottom: 0px; background-color: #741705;" bis_skin_checked="1">
+        <div class="inner-1" bis_skin_checked="1">
+            <div class="row text-center" style="padding-bottom: 0px; margin: 0px; color: #fff;" bis_skin_checked="1">
+                <div class="col-sm-6 text-left" style="padding: 0px;" bis_skin_checked="1"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/EVOLVED-BRAKING-TECHNOLOGY.jpg"
+                        alt="VOLVED BRAKING TECHNOLOGY" style="max-width: 100%; display: inline-block;" class="lazyload-loading">
+                </div>
+                <div class="col-sm-6" style="padding: 2px;" bis_skin_checked="1">
+                    <h5 class="head_2" style="padding-top: 25px;">EVOLVED BRAKING TECHNOLOGY</h5>
+                    <p class="para_2">The central module of the <span style="white-space: nowrap;">brake-by-wire</span>
+                        technology in the 2026 Charger Daytona
+                        continuously monitors input from sensors in the vehicle while adjustable Regenerative
+                        Braking lets you customize how much of that kinetic energy is used to help recharge your
+                        battery. The result? Optimized brake time, a natural feel in all conditions, reduced brake
+                        pad fade, and even more time out on the track.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- missing -->
+
+
+
+    <div style="padding-top: 30px;"><img
+            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-7-Westcovina__Charger_2026.jpg"
+            alt="image-7" style="max-width: 100%;" /></div>
+    <div id="Get A quote" style="padding-top: 30px;" bis_skin_checked="1">
+        <a href="https://www.westcovinacdjr.com/contact-us/" style="display: block;"><img
+                src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Westcovina_Dodge_Charger_2026_GAQ_Movgif_.gif"
+                alt="Get A quote" style="max-width: 100%;" class="lazyload-loading"></a>
+    </div>
+    <div style="padding-top: 30px;"><img
+            src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/IMAGE-8-Westcovina__Charger_2026.jpg"
+            alt="image-8" style="max-width: 100%;" /></div>
+    <div class="inner-6">
+        <div class="row text-center" style="padding-top: 35px;">
+            <div class="col-sm-3" style="padding: 1px;">
+                <a href="https://www.westcovinacdjr.com/new-vehicles/?_dFR%5Blightning.isPolice%5D%5B0%5D=No&_dFR%5Bmake%5D%5B0%5D=Dodge&_dFR%5Bmodel%5D%5B0%5D=Charger&_dFR%5Byear%5D%5B0%5D=2026"
+                    style="display: inline-block;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/VI-Small.gif"
+                        alt="view inventroy" style="max-width: 100%;" /></a>
+            </div>
+            <div class="col-sm-3" style="padding: 1px;">
+                <a href="https://www.westcovinacdjr.com/contact-us/" style="display: inline-block;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/GAQ-small-1500.gif"
+                        alt="get a quote" style="max-width: 100%;" /></a>
+            </div>
+            <div class="col-sm-3" style="padding: 1px;">
+                <a href="https://www.westcovinacdjr.com/finance/apply-for-financing/"
+                    style="display: inline-block;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Get-pre-aproved-small-1500.gif"
+                        alt="get pre approved" style="max-width: 100%;" /></a>
+            </div>
+            <div class="col-sm-3" style="padding: 1px;">
+                <a href="https://www.westcovinacdjr.com/value-your-trade/" style="display: inline-block;"><img
+                        src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/Trade-small-1500.gif"
+                        alt="value your trade" style="max-width: 100%;" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="inner-4 modl">
+        <div class="mdl_had" style="padding-top: 55px; color: #000 !important;">2026 CHARGER TRIMS</div>
+        <div class="row text-center" style="padding-top: 0px; margin: 0px; color: #000;">
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-1-Westcovina__Charger_2026.jpg"
+                    alt="CHARGER R/T" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname" sty="">
+                    CHARGER R/T
+                </h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting
+                        at</span><br /><span class="Mdl_mrp">
+                        $49,995*</span>
+                </p>
+
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at </br><span class="Mdl_mrp">
+                        $51,995*</span>
+                </p>
+
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-2-Westcovina__Charger_2026.jpg"
+                    alt="CHARGER R/T PLUS" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname">
+                    CHARGER R/T PLUS
+                </h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting at
+                    </span><br /><span class="Mdl_mrp">
+                        $55,685*</span>
+                </p>
+
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at </br><span class="Mdl_mrp">
+                        $57,685*</span>
+                </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-3-Westcovina__Charger_2026.jpg"
+                    alt="CHARGER SCAT PACK" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname">CHARGER SCAT PACK</h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting at
+                    </span><br /><span class="Mdl_mrp">$55,690*</span>
+                </p>
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at </br><span class="Mdl_mrp">
+                        $57,690*</span>
+                </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-4-Westcovina__Charger_2026.jpg"
+                    alt="CHARGER SCAT PACK PLUS" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname">
+                    CHARGER SCAT PACK PLUS
+                </h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting
+                        at</span><br /><span class="Mdl_mrp">$60,685*</span>
+                </p>
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at </br><span class="Mdl_mrp">
+                        $62,685*</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center" style="padding-top: 20px; margin: 0px; color: #000;">
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-5-Westcovina__Charger_2026.jpg"
+                    alt=" DAYTONA SCAT PACK" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname" sty="">
+                    DAYTONA SCAT PACK
+                </h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting at
+                    </span><br /><span class="Mdl_mrp">
+                        $60,690*</span>
+                </p>
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at </br><span class="Mdl_mrp">
+                        $62,690*</span>
+                </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"><img
+                    src="https://di-uploads-pod4.dealerinspire.com/westcovinacdjr/uploads/2026/05/CHARGER-6-Westcovina__Charger_2026.jpg"
+                    alt="DAYTONA SCAT PACK PLUS" style="max-width: 100%; display: inline-block;" />
+                <h5 class="mdlname">
+                    DAYTONA SCAT PACK PLUS</h5>
+                <p class="malmrp">
+                    <span class="mdl_msrps"><span style="white-space: nowrap;">2-Door</span> AWD MSRP Starting at
+                    </span><br /><span class="Mdl_mrp">
+                        $65,685*</span>
+                </p>
+                <p class="malmrp" style="padding-top: 25px;">
+                    <span style="white-space: nowrap;">4-Door</span> AWD MSRP Starting at</br><span class="Mdl_mrp">
+                        $67,685*</span>
+                </p>
+            </div>
+            <div class="col-sm-3" style="padding: 2px;"></div>
+            <div class="col-sm-3" style="padding: 2px;"></div>
+        </div>
+    </div>
+
+
+    <div class="inner-7 seo">
+        <div
+            style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 14px;">
+            <p>
+                <b>2026 Dodge Charger </b>
+            </p>
+            <p></p>
+            <p>
+                <b>Introducing the 2026 Dodge Charger Los Angeles, CA, from West Covina CDJR</b>
+            </p>
+            <p>If you’re looking for a powerful vehicle that combines raw muscle with modern convenience, the 2026
+                Dodge Charger Los Angeles, CA, deserves your attention. Now available at West Covina CDJR, this
+                performance vehicle appeals to those who want strong acceleration, advanced technology, and
+                impressive comfort and style. Visit our CDJR dealership Los Angeles, CA, to explore the specs and
+                key features of this legendary car.
+            </p>
+            <p></p>
+            <p>
+                <b>Which Dodge dealers have the 2026 Dodge Charger near Los Angeles, CA?</b>
+            </p>
+            <p>We do! Test drive the power of this popular muscle car at West Covina CDJR today. Under the hood of
+                the 2026 Dodge Charger Los Angeles, CA, you will find thrilling powertrain choices in <span
+                    style="white-space: nowrap;">2-door</span> or <span style="white-space: nowrap;">4-door</span>
+                body styles across R/T, Plus, and Daytona Scat Pack trims. The standard 3.0L Twin Turbo Sixpack SO
+                engine generates up to 420 horsepower and 468 <span style="white-space: nowrap;">lb.-ft.</span> of
+                torque, paired with an <span style="white-space: nowrap;">8-speed</span> automatic transmission and
+                AWD with an adjustable RWD mode for a <span style="white-space: nowrap;">4.6-second</span> <span
+                    style="white-space: nowrap;">0-60</span> MPH sprint. Drivers craving extra power can opt for the
+                <span style="white-space: nowrap;">550-horsepower</span> <span
+                    style="white-space: nowrap;">high-output</span> variant. For ultimate acceleration, an optional
+                400V electric setup with <span style="white-space: nowrap;">dual-drive</span> motors delivers up to
+                670 horsepower and 627 <span style="white-space: nowrap;">lb.-ft.</span> of torque, flashing a <span
+                    style="white-space: nowrap;">3.3-second</span> <span style="white-space: nowrap;">0-60</span>
+                time using a <span style="white-space: nowrap;">One-Touch</span> PowerShot feature alongside an
+                estimated 267 miles of electric range.
+            </p>
+            <p></p>
+            <p>Every 2026 Dodge Charger Los Angeles, CA, configuration at West Covina CDJR features advanced tech
+                that keeps drivers and passengers connected and entertained. The standard Uconnect<sup>&reg;</sup> 5
+                system comes with a <span style="white-space: nowrap;">12.3-inch</span> touchscreen, Apple
+                CarPlay<sup>&reg;</sup> and Android Auto<sup style="top: 0.1em;font-size: 20px;">&trade;</sup>
+                smartphone syncing, plus a <span style="white-space: nowrap;">10.25-inch</span> color driver display and
+                remote start. If you
+                enjoy a premium audio experience, go for the optional Alpine<sup>&reg;</sup> <span
+                    style="white-space: nowrap;">9-speaker</span> system or consider the <span
+                    style="white-space: nowrap;">16-inch</span> color driver display and wireless charging pad
+                upgrades with premium trim levels of the 2026 Dodge Charger Los Angeles, CA.
+            </p>
+            <p></p>
+            <p>Take a seat inside the 2026 Dodge Charger Los Angeles, CA, to discover seating for five, complete
+                with cloth sport seats, a flat top and bottom steering wheel, and a <span
+                    style="white-space: nowrap;">leather-wrapped</span> <span
+                    style="white-space: nowrap;">pistol-grip</span> shifter. <span
+                    style="white-space: nowrap;">Dual-zone</span> automatic temperature control keeps everyone
+                comfortable no matter the weather, while a rear seat armrest with cupholders contributes to a
+                convenient <span style="white-space: nowrap;">day-to-day</span> experience. Optional <span
+                    style="white-space: nowrap;">high-performance</span> leather seats with heating and ventilation,
+                <span style="white-space: nowrap;">8-way</span> power front seats, and a heated steering wheel add
+                even more luxury.
+            </p>
+            <p></p>
+            <p>Find the visibility you need with standard auto on/off LED headlamps and the stability you want with
+                standard <span style="white-space: nowrap;">18-inch</span> aluminum wheels when <span
+                    style="white-space: nowrap;">test-driving</span> the 2026 Dodge Charger Los Angeles, CA. The
+                aggressive exterior sports a performance hood and flush door handles, with options like <span
+                    style="white-space: nowrap;">20-inch</span> wheels and a power hatch. From a safety standpoint,
+                every trim level includes advanced <span style="white-space: nowrap;">brake-assist,</span> <span
+                    style="white-space: nowrap;">blind-spot</span> and <span
+                    style="white-space: nowrap;">cross-path</span> detection, and an active <span
+                    style="white-space: nowrap;">lane-management</span> system. Adaptive cruise control with stop
+                and go simplifies highway driving, and optional active driving assist brings an extra layer of
+                protection to your drives.
+            </p>
+
+            <p></p>
+            <p>
+                <b>Where can I test drive a 2026 Dodge Charger Los Angeles, CA?
+                </b>
+            </p>
+            <p>Ready to see what makes this vehicle a standout? Stop by West Covina CDJR to test drive the 2026
+                Dodge Charger Los Angeles, CA, and explore its potent powertrains, spacious interior, and <span
+                    style="white-space: nowrap;">high-end</span> technology.</p>
+        </div>
+    </div>
+    <div class="inner-7 dis">
+        <div
+            style="padding-top: 300px; padding-left: 15px; padding-right: 15px; color: #000; background: #fff; font-size: 11px; margin-bottom: 30px;">
+            <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base
+                model, optional equipment not included. A more expensive model may be shown. Pricing and offers may
+                change at any time without notification. Contact West Covina CDJR for full pricing details.</p>
+            <p>*Refer to https://www.dodge.com/charger.html for additional disclosures.</p>
+        </div>
+    </div>
+</div>

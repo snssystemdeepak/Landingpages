@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .custom-buttons {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+
+    .custom-buttons .btn {
+      display: block;
+      background-color: #1c97b8;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      margin-bottom: 3px;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    /* underline hidden by default */
+    .custom-buttons .btn::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    /* arrow hidden */
+    .custom-buttons .btn::before {
+      content: "→";
+      position: absolute;
+      right: 20px;
+      opacity: 0;
+      transition: 0.3s ease;
+    }
+
+    /* HOVER EFFECT */
+    .custom-buttons .btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* underline show */
+    .custom-buttons .btn:hover::after {
+      width: 60%;
+    }
+
+    /* arrow show */
+    .custom-buttons .btn:hover::before {
+      opacity: 1;
+      right: 15px;
+    }
+
+
+    /* Tablet */
+    @media (max-width: 992px) {
+      .custom-buttons .btn {
+        font-size: 14px;
+        padding: 14px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .custom-buttons {
+        max-width: 100%;
+      }
+
+      .custom-buttons .btn {
+        font-size: 13px;
+        padding: 12px;
+      }
+    }
+
+    .custom-buttons .btn {
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="custom-buttons">
+    <a href="#" class="btn">LEER CAPITULO 8 GRATIS</a>
+    <a href="#" class="btn">ESCUCHAR CAPITULO 8 GRATIS</a>
+    <a href="#" class="btn">CALCULA TU HIPOTECA</a>
+  </div>
+
+</body>
+
+</html>
