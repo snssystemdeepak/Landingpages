@@ -1,0 +1,2434 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+
+<style>
+    h1.header {
+        display: none;
+    }
+
+    .main-div {
+        max-width: 1440px;
+        overflow: hidden;
+        margin: 0 auto;
+        color: #000;
+    }
+
+    .prc {
+        margin-top: -6px;
+    }
+
+    .inner2 {
+        max-width: 929px;
+        margin: 0px auto;
+    }
+
+    .banner-title {
+        background: url(https://cdn.dlron.us/static/dealer-28193/Offer_bg.png) center;
+        background-size: cover;
+        background-position: initial;
+        color: #fff;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .banner-image {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .banner-image .banner-title {
+        background: #E9BA49;
+        color: #fff;
+    }
+
+    .banner-title2 {
+        background: #E9BA49;
+        color: #fff;
+        padding: 5px 10px 0px 9px;
+        line-height: 1.3;
+    }
+
+    .title1 {
+        position: absolute;
+        top: 3%;
+        left: 18%;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .offer .row {
+        margin: 25px 0px;
+    }
+
+    .offer .name {
+        margin-bottom: -90px;
+        margin-top: 10px;
+        color: #000;
+        z-index: 999;
+        position: relative;
+        font-size: 38px;
+        padding-left: 15px;
+        font-weight: 100;
+    }
+
+    .offer .content-div {
+        line-height: 0.8;
+        position: relative;
+    }
+
+    .offer .content-div .dol {
+        font-size: 45px;
+        top: -1.3em;
+        font-weight: 600;
+        color: #1a63b2;
+    }
+
+    .offer .content-div .mo {
+        font-size: 35px;
+        top: -1.7em;
+        font-weight: 600;
+        color: #1a63b2;
+    }
+
+    .offer .content-div .amt {
+        font-size: 120px;
+        color: #1a63b2;
+    }
+
+    .offer .content-div .lease {
+        color: #000;
+        width: 350px;
+        line-height: 1.2;
+        font-size: 13px;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        padding-top: 35px;
+        right: -20px;
+        padding-left: 0px;
+    }
+
+    .offer .off-car {
+        max-width: 100%;
+        position: absolute;
+        top: -147px;
+        margin-top: -30px;
+    }
+
+    .offer-diclaimer {
+        line-height: 1.2;
+        font-size: 11px;
+        padding: 25px 0 20px;
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid #28509b;
+        margin: 0 auto;
+        position: relative;
+        top: -15px;
+    }
+
+    .box {
+        background: #28509b;
+        padding: 20px;
+        color: #fff;
+    }
+
+    .arrow {
+        top: -17px;
+        font-size: 20px;
+        position: relative;
+        color: #28509b;
+        margin-bottom: 5px;
+    }
+
+    .price-modal {
+        background: #e9ba49;
+        color: #fff;
+        padding: 10px 0 20px 20px;
+        font-size: 12px;
+        line-height: 1.8em;
+        text-align: left;
+    }
+
+    .price-modal span {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .modal-text {
+        padding: 9px;
+        text-align: left;
+        background: #f7f7f7;
+    }
+
+    .modelimage {
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 769px) {
+        .banner-image {
+            position: unset;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .banner-image .title1 {
+            position: unset;
+            top: 0px;
+        }
+
+        .banner-image .price {
+            position: unset;
+            bottom: 0px;
+        }
+
+        .banner-title2 {
+            background: #dcb953;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .offer {
+            height: auto;
+            padding: 0px;
+        }
+
+        .offer .content-div .lease {
+            width: 100%;
+            position: unset;
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 17px;
+        }
+
+        .offer .row .name {
+            background-color: #dbab69;
+        }
+
+        .offer .content-div {
+            margin-top: 0px;
+        }
+
+        .offer .off-car {
+            padding: 0;
+            position: relative;
+            top: 0px !important;
+        }
+
+        .offer-diclaimer {
+            padding: 20px;
+        }
+
+        .title1 {
+            font-size: 13px;
+            color: #fff;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 12px solid #28509b;
+            margin: 0 auto;
+            position: relative;
+            top: -15px;
+        }
+
+        .col-sm-4 {
+            padding: 10px 20px !important;
+        }
+
+        .col-sm-4 img {
+            max-width: 100% !important;
+            display: inline !important;
+        }
+
+        .point-heading {
+            text-align: center !important;
+        }
+
+        .point-text {
+            padding-left: 30% !important;
+        }
+
+        .modelimage {
+            padding: 0px 10px;
+        }
+
+        .offer inner2 .col-sm-10 .p1 {
+            margin-top: -20px;
+        }
+
+        .pre {
+            margin-top: -50px;
+        }
+
+        .prc {
+            margin-top: 0px;
+        }
+
+        .models {
+            padding: 10px 37px !important;
+        }
+    }
+</style>
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;"
+    bis_size='{"x":400,"y":20,"w":1440,"h":1593,"abs_x":460,"abs_y":819}'>
+    <div style="background-image: url('https://cdn.dlron.us/static/dealer-28193/Offer_bg.png');" bis_label="style"
+        bis_size='{"x":400,"y":20,"w":1450,"h":202,"abs_x":460,"abs_y":819}' class="banner-title">
+        <div style="padding: 25px 0 0;position: inherit;"
+            bis_size='{"x":661,"y":25,"w":928,"h":192,"abs_x":721,"abs_y":824}' class="inner2">
+
+            <h1 style="margin:0px 10px 5px;font-size:32px;"
+                bis_size='{"x":671,"y":50,"w":908,"h":37,"abs_x":731,"abs_y":849}' class="hidden-xs">2026 CHEVROLET
+                EQUINOX </h1>
+
+            <h1 style="margin:0px 10px 0px;font-size:28px;"
+                bis_size='{"x":671,"y":92,"w":908,"h":32,"abs_x":731,"abs_y":891}'
+                class="hidden-sm hidden-lg hidden-md">2026 CHEVROLET EQUINOX
+            </h1>
+
+            <p style="margin:0 0 30px;padding-left: 8px;font-size:1.7rem!important;display:none;"
+                bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="hidden-xs">
+                1.5-LITER TURBO, POWER SUNROOF, CONFIDENCE AND CONVENIENCE PACKAGE, LEATHER PACKAGE, AND 18” RIMS
+                <br
+                    bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:60,&quot;abs_y&quot;:799}">Stock
+                #: 106530 | MSRP $33,345
+            </p>
+
+            <p style="margin:0 0 30px;padding-left: 8px;font-size:1.7rem!important;"
+                bis_size='{"x":661,"y":125,"w":928,"h":31,"abs_x":721,"abs_y":924}' class="hidden-xs">For well-qualified
+                buyers
+            </p>
+
+            <p style="margin:0 0 0px;padding-left: 8px;font-size:1.7rem!important;display:none;"
+                bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="hidden-sm hidden-lg hidden-md">
+                1.5-LITER TURBO, POWER SUNROOF, CONFIDENCE AND CONVENIENCE PACKAGE, LEATHER PACKAGE, AND 18” RIMS
+                <br
+                    bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:60,&quot;abs_y&quot;:799}">Stock
+                #: 106530 | MSRP $33,345
+            </p>
+
+            <p style="margin:0;padding-left: 8px;font-size:1.7rem!important;color:#fff;"
+                bis_size='{"x":661,"y":186,"w":928,"h":31,"abs_x":721,"abs_y":985}'
+                class="hidden-sm hidden-md hidden-lg">For well-qualified buyers
+            </p>
+        </div>
+    </div>
+    <div bis_size='{"x":656,"y":241,"w":928,"h":219,"abs_x":716,"abs_y":1040}' class="offer inner2">
+        <div bis_size='{"x":656,"y":241,"w":928,"h":83,"abs_x":716,"abs_y":1040}' class="row">
+            <div bis_size='{"x":656,"y":241,"w":928,"h":83,"abs_x":716,"abs_y":1040}' class="col-sm-5">
+
+                <p style="font-size: 15px;display: none;" bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}'
+                    class="hidden-xs">Please contact Colonial West Chevrolet of Fitchburg for the latest lease and
+                    finance offers.</p>
+                <div bis_size='{"x":656,"y":241,"w":928,"h":83,"abs_x":716,"abs_y":1040}' class="content-div">
+                    <div bis_size='{"x":656,"y":241,"w":928,"h":83,"abs_x":716,"abs_y":1040}' class="prc"> <sup
+                            bis_size="{&quot;x&quot;:656,&quot;y&quot;:272,&quot;w&quot;:0,&quot;h&quot;:50,&quot;abs_x&quot;:716,&quot;abs_y&quot;:1071}"
+                            class="dol"></sup><span style="font-size: 105px;"
+                            bis_size='{"x":656,"y":225,"w":218,"h":116,"abs_x":716,"abs_y":1024}'
+                            class="amt">3.9%</span><sup
+                            bis_size='{"x":874,"y":281,"w":71,"h":38,"abs_x":934,"abs_y":1080}' class="mo">APR</sup>
+                        <div style="top: 70px;padding-top: 28px;right: 0px;padding-left: 10px;"
+                            bis_size='{"x":1225,"y":311,"w":360,"h":43,"abs_x":1285,"abs_y":1110}' class="lease">
+                            for 60 Months
+                            <br>
+                            For well-qualified buyers when you finance with GM
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div bis_size='{"x":656,"y":325,"w":928,"h":0,"abs_x":716,"abs_y":1124}' class="col-sm-7 hidden-xs"> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/OFFER_CAR.png?v=LoZv+JZz5aCLp4S0N7cz0A=="
+                    style="max-width:100%;display: inline-block;margin-top: 8px;margin-left: 20px;"
+                    bis_size="{&quot;x&quot;:676,&quot;y&quot;:-139,&quot;w&quot;:517,&quot;h&quot;:263,&quot;abs_x&quot;:736,&quot;abs_y&quot;:660}"
+                    class="off-car">
+            </div>
+            <div bis_size='{"x":656,"y":325,"w":928,"h":0,"abs_x":716,"abs_y":1124}'
+                class="col-sm-7 hidden-sm hidden-md hidden-lg hidden-xl"> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/OFFER_CAR.png?v=LoZv+JZz5aCLp4S0N7cz0A=="
+                    style="max-width:100%;display: inline-block;margin-top: 0px;"
+                    bis_size="{&quot;x&quot;:656,&quot;y&quot;:-146,&quot;w&quot;:517,&quot;h&quot;:263,&quot;abs_x&quot;:716,&quot;abs_y&quot;:653}"
+                    class="off-car"></div>
+        </div>
+        <div style="margin-bottom: 0;" bis_size='{"x":656,"y":350,"w":928,"h":0,"abs_x":716,"abs_y":1149}'
+            class="row hidden-sm hidden-md hidden-lg hidden-xl">
+            <div style="color: #000;font-size: 15px;"
+                bis_size='{"x":656,"y":350,"w":928,"h":0,"abs_x":716,"abs_y":1149}' class="col-sm-12">
+
+                <p style="padding: 0px 15px;margin-bottom: 0;line-height: 1.2;display: none;"
+                    bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}'>Please contact Colonial West Chevrolet
+                    of Fitchburg for the latest lease and finance offers.</p>
+            </div>
+        </div>
+        <div style="margin-top: 0px;display:none;" bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}'
+            class="row">
+            <div bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="col-sm-1">
+            </div>
+            <div style="padding:15px 36px 0px;font-weight:600;"
+                bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="col-sm-10 text-center hidden-xs">
+
+                <p style="margin-top:20px;font-size:16px;color:#1a63b2;margin-bottom: -5px;display: none;"
+                    bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="p1">
+                    1.5-LITER TURBO, POWER SUNROOF, CONFIDENCE AND CONVENIENCE PACKAGE, LEATHER PACKAGE, AND 18” RIMS
+                    <br
+                        bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:60,&quot;abs_y&quot;:799}">Stock
+                    #: 106530 | MSRP $33,345
+                </p>
+            </div>
+            <div style="padding:0px 36px 10px;font-weight:600;display: none;"
+                bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}'
+                class="col-sm-10 text-center hidden-sm hidden-md hidden-lg">
+
+                <p style="margin-top:0px;font-size:16px;color:#1a63b2;margin-bottom: -5px;display: none;"
+                    bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="p1">
+                    1.5-LITER TURBO, POWER SUNROOF, CONFIDENCE AND CONVENIENCE PACKAGE, LEATHER PACKAGE, AND 18” RIMS
+                    <br
+                        bis_size="{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:60,&quot;abs_y&quot;:799}">Stock
+                    #: 106530 | MSRP $33,345
+                </p>
+            </div>
+            <div bis_size='{"x":0,"y":0,"w":0,"h":0,"abs_x":60,"abs_y":799}' class="col-sm-1">
+            </div>
+        </div>
+        <div style="padding-top: 0px;margin:0;" bis_size='{"x":656,"y":375,"w":928,"h":85,"abs_x":716,"abs_y":1174}'
+            class="row">
+            <div style="padding:0px 45px 0px;" bis_size='{"x":656,"y":375,"w":928,"h":37,"abs_x":716,"abs_y":1174}'
+                class="col-sm-12 text-center hidden-xs">
+
+                <p style="margin-top: 70px;font-size:11px;"
+                    bis_size='{"x":701,"y":375,"w":838,"h":37,"abs_x":761,"abs_y":1174}'>
+                    <br
+                        bis_size="{&quot;x&quot;:831,&quot;y&quot;:375,&quot;w&quot;:0,&quot;h&quot;:12,&quot;abs_x&quot;:891,&quot;abs_y&quot;:1174}">
+                    3.9% for 36 months. Monthly payment is $18.37 for every $1,000 you finance. Example down payment: 17.0%. Must finance with GM Financial.  Some customers may not qualify. Not available with lease and some other offers. Take new retail delivery 7/7/26.
+
+                </p>
+            </div>
+            <div style="padding:0px 20px 0px;" bis_size='{"x":656,"y":423,"w":928,"h":37,"abs_x":716,"abs_y":1222}'
+                class="col-sm-12 text-center hidden-sm hidden-md hidden-lg">
+
+                <p style="margin-top: 0px;font-size:11px;"
+                    bis_size='{"x":676,"y":423,"w":888,"h":37,"abs_x":736,"abs_y":1222}'>
+                    <br
+                        bis_size="{&quot;x&quot;:806,&quot;y&quot;:423,&quot;w&quot;:0,&quot;h&quot;:12,&quot;abs_x&quot;:866,&quot;abs_y&quot;:1222}">
+                    3.9% for 36 months. Monthly payment is $18.37 for every $1,000 you finance. Example down payment: 17.0%. Must finance with GM Financial.  Some customers may not qualify. Not available with lease and some other offers. Take new retail delivery 7/7/26.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div bis_size='{"x":400,"y":472,"w":1440,"h":1141,"abs_x":460,"abs_y":1271}' class="main-div">
+        <div style="padding-top: 0px;max-width: 1020px;margin: 0 auto;padding-bottom: 30px;"
+            bis_size='{"x":610,"y":472,"w":1020,"h":467,"abs_x":670,"abs_y":1271}' class="row">
+            <div bis_size='{"x":610,"y":472,"w":1020,"h":65,"abs_x":670,"abs_y":1271}'
+                class="col-sm-4 text-center hidden-xs">
+                <a href="https://www.colonial-west.com/ctend-ncs" style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":472,"w":231,"h":65,"abs_x":670,"abs_y":1271}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/view_all_offers.png?v=0iGM/SFEC/17NBmOapTO7A=="
+                        alt="VIEW ALL OFFERS"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:472,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1271}"></a>
+            </div>
+            <div style="padding:7px 0!important;" bis_size='{"x":610,"y":538,"w":1020,"h":79,"abs_x":670,"abs_y":1337}'
+                class="col-sm-4 text-center hidden-sm hidden-lg hidden-md">
+                <a href="https://www.colonial-west.com/ctend-ncs" style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":545,"w":231,"h":65,"abs_x":670,"abs_y":1344}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/view_all_offers.png?v=0iGM/SFEC/17NBmOapTO7A=="
+                        alt="VIEW ALL OFFERS"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:545,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1344}"></a>
+            </div>
+            <div bis_size='{"x":610,"y":618,"w":1020,"h":65,"abs_x":670,"abs_y":1417}'
+                class="col-sm-4 text-center hidden-xs">
+                <a href="https://www.colonial-west.com/searchnew.aspx?ModelAndTrim=Equinox!Equinox%20EV&yearrange=2026-2026"
+                    style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":618,"w":231,"h":65,"abs_x":670,"abs_y":1417}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/Shop_equinox.png?v=9BSF59FpywYzE3NPmuQgdA=="
+                        alt="SHOP Equinox"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:618,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1417}"></a>
+            </div>
+            <div style="padding:7px 0!important;" bis_size='{"x":610,"y":684,"w":1020,"h":79,"abs_x":670,"abs_y":1483}'
+                class="col-sm-4 text-center hidden-sm hidden-lg hidden-md">
+                <a href="https://www.colonial-west.com/searchnew.aspx?ModelAndTrim=Equinox!Equinox%20EV&yearrange=2026-2026"
+                    style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":691,"w":231,"h":65,"abs_x":670,"abs_y":1490}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/Shop_equinox.png?v=9BSF59FpywYzE3NPmuQgdA=="
+                        alt="SHOP Equinox"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:691,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1490}"></a>
+            </div>
+            <div bis_size='{"x":610,"y":764,"w":1020,"h":65,"abs_x":670,"abs_y":1563}'
+                class="col-sm-4 text-center hidden-xs">
+                <a href="tel:+19785160798" style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":764,"w":231,"h":65,"abs_x":670,"abs_y":1563}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/call_for_details.png?v=fuR7dyCyUFxHNb1KMSAiig=="
+                        alt="CALL FOR DETAILS"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:764,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1563}"></a>
+            </div>
+            <div style="padding:7px 0!important;" bis_size='{"x":610,"y":830,"w":1020,"h":79,"abs_x":670,"abs_y":1629}'
+                class="col-sm-4 text-center hidden-sm hidden-lg hidden-md">
+                <a href="tel:+19785160798" style="display: inline-block;padding-bottom: 1px;"
+                    bis_size='{"x":610,"y":837,"w":231,"h":65,"abs_x":670,"abs_y":1636}'><img
+                        src="https://cdn.dlron.us/static/dealer-28193/2025_Chevy_Equinox/call_for_details.png?v=fuR7dyCyUFxHNb1KMSAiig=="
+                        alt="CALL FOR DETAILS"
+                        bis_size="{&quot;x&quot;:610,&quot;y&quot;:837,&quot;w&quot;:231,&quot;h&quot;:60,&quot;abs_x&quot;:670,&quot;abs_y&quot;:1636}"></a>
+            </div>
+        </div>
+        <div bis_size='{"x":400,"y":940,"w":1440,"h":132,"abs_x":460,"abs_y":1739}' class="banner-image">
+            <div bis_size='{"x":400,"y":940,"w":1450,"h":132,"abs_x":460,"abs_y":1739}' class="banner-title">
+                <div bis_size='{"x":661,"y":945,"w":928,"h":114,"abs_x":721,"abs_y":1744}' class="inner2">
+                    <div bis_size='{"x":661,"y":945,"w":928,"h":114,"abs_x":721,"abs_y":1744}' class="banner-title2">
+
+                        <p style="margin-bottom:0px;"
+                            bis_size='{"x":670,"y":966,"w":910,"h":41,"abs_x":730,"abs_y":1765}' class="hidden-xs"><span
+                                style="text-transform: none;font-size:32px;font-weight:bold;"
+                                bis_size='{"x":670,"y":968,"w":436,"h":36,"abs_x":730,"abs_y":1767}'>2026
+                                CHEVROLET
+                                EQUINOX</span>
+                        </p>
+
+                        <p style="margin-bottom:8px;"
+                            bis_size='{"x":670,"y":1023,"w":910,"h":36,"abs_x":730,"abs_y":1822}'
+                            class="hidden-sm hidden-md hidden-lg hidden-xl"><span
+                                style="text-transform: none;font-size:28px;font-weight:bold;"
+                                bis_size='{"x":670,"y":1026,"w":382,"h":31,"abs_x":730,"abs_y":1825}'>2026
+                                CHEVROLET
+                                EQUINOX</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position:relative; text-transform: uppercase;"
+            bis_size='{"x":400,"y":1067,"w":1440,"h":546,"abs_x":460,"abs_y":1866}'>
+
+            <p style="line-height:1.3em;margin-left: 6px;"
+                bis_size='{"x":665,"y":1083,"w":263,"h":51,"abs_x":725,"abs_y":1882}' class="title1 inner2 hidden-xs">
+                <span style="white-space: nowrap;"
+                    bis_size='{"x":665,"y":1085,"w":131,"h":21,"abs_x":725,"abs_y":1884}'>All-around</span> versatility
+                <br
+                    bis_size="{&quot;x&quot;:929,&quot;y&quot;:1085,&quot;w&quot;:0,&quot;h&quot;:21,&quot;abs_x&quot;:989,&quot;abs_y&quot;:1884}"><span
+                    bis_size='{"x":665,"y":1111,"w":208,"h":21,"abs_x":725,"abs_y":1910}'>Starting at: $28,600*</span>
+            </p>
+
+            <p style="text-align: center;position: relative;color: black;margin: -6px 0 6px;left: 0;right: 0;font-size: 18px;"
+                bis_size='{"x":400,"y":1067,"w":928,"h":42,"abs_x":460,"abs_y":1866}'
+                class="title1 inner2 hidden-sm hidden-lg hidden-md">
+                <span style="white-space: nowrap;"
+                    bis_size='{"x":746,"y":1067,"w":117,"h":20,"abs_x":806,"abs_y":1866}'>All-around</span> versatility
+                <br
+                    bis_size="{&quot;x&quot;:983,&quot;y&quot;:1067,&quot;w&quot;:0,&quot;h&quot;:20,&quot;abs_x&quot;:1043,&quot;abs_y&quot;:1866}"><span
+                    bis_size='{"x":771,"y":1088,"w":188,"h":20,"abs_x":831,"abs_y":1887}'>Starting at: $28,600*</span>
+            </p> <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/HERO14.jpg?v=2aNDS6RHu6UOmdCgTKRaXQ=="
+                style="max-width:100%;display: inline-block;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:1115,&quot;w&quot;:1441,&quot;h&quot;:492,&quot;abs_x&quot;:460,&quot;abs_y&quot;:1914}">
+        </div>
+
+    </div>
+
+</div>
+<div style="max-width:929px;margin:0px auto;" bis_size='{"x":656,"y":1645,"w":928,"h":335,"abs_x":716,"abs_y":2444}'>
+    <div id="fourbuttons" style="margin: 32px 0px 28px auto;"
+        bis_size='{"x":656,"y":1645,"w":928,"h":335,"abs_x":716,"abs_y":2444}' class="row text-center">
+        <div style="padding:1px;padding-bottom:5px;"
+            bis_size='{"x":656,"y":1645,"w":928,"h":83,"abs_x":716,"abs_y":2444}' class="col-sm-3">
+            <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+                bis_size='{"x":657,"y":1646,"w":926,"h":77,"abs_x":717,"abs_y":2445}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/get_a_quote.gif?v=ujxI3JNLH8lH+Ytb2rqqqQ=="
+                    alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"
+                    bis_size="{&quot;x&quot;:1002,&quot;y&quot;:1646,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:2445}">
+            </a>
+        </div>
+        <div style="padding:1px;padding-bottom:5px;"
+            bis_size='{"x":656,"y":1729,"w":928,"h":83,"abs_x":716,"abs_y":2528}' class="col-sm-3">
+            <a href="https://www.colonial-west.com/creditapplication" style="display:block;"
+                bis_size='{"x":657,"y":1730,"w":926,"h":77,"abs_x":717,"abs_y":2529}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/Get-Pre-Approved.gif?v=T59rNQvlO3jZwLVnhTsYlw=="
+                    alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"
+                    bis_size="{&quot;x&quot;:1002,&quot;y&quot;:1730,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:2529}">
+            </a>
+        </div>
+        <div style="padding:1px;padding-bottom:5px;"
+            bis_size='{"x":656,"y":1813,"w":928,"h":83,"abs_x":716,"abs_y":2612}' class="col-sm-3">
+            <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+                bis_size='{"x":657,"y":1814,"w":926,"h":77,"abs_x":717,"abs_y":2613}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/request_more_info.gif?v=JQ1bewrzbOAkmMZ9ALsIiw=="
+                    alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;"
+                    bis_size="{&quot;x&quot;:1002,&quot;y&quot;:1814,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:2613}">
+            </a>
+        </div>
+        <div style="padding:1px;padding-bottom:5px;"
+            bis_size='{"x":656,"y":1897,"w":928,"h":83,"abs_x":716,"abs_y":2696}' class="col-sm-3">
+            <a href="https://www.colonial-west.com/value-your-trade.html" style="display:block;"
+                bis_size='{"x":657,"y":1898,"w":926,"h":77,"abs_x":717,"abs_y":2697}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/Value-Your-trade.gif?v=7ysIJSbYwoveRi/JXZzeCQ=="
+                    alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"
+                    bis_size="{&quot;x&quot;:1002,&quot;y&quot;:1898,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:2697}">
+            </a>
+        </div>
+    </div>
+</div>
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;"
+    bis_size='{"x":400,"y":2009,"w":1440,"h":796,"abs_x":460,"abs_y":2808}'>
+    <div style="background-color:#1c579b;color:#fff;"
+        bis_size='{"x":400,"y":2009,"w":1440,"h":796,"abs_x":460,"abs_y":2808}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":2009,"w":928,"h":228,"abs_x":716,"abs_y":2808}'>
+            <div style="padding-top:2px;" bis_size='{"x":656,"y":2009,"w":928,"h":228,"abs_x":716,"abs_y":2808}'
+                class="row text-center">
+                <div bis_size='{"x":656,"y":2011,"w":928,"h":0,"abs_x":716,"abs_y":2810}' class="col-sm-2">
+                </div>
+                <div style="padding: 0px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":2044,"w":928,"h":193,"abs_x":716,"abs_y":2843}' class="col-sm-8">
+
+                    <h2 style="text-transform:uppercase;font-size: 40px;margin-bottom:0px;"
+                        bis_size='{"x":656,"y":2044,"w":928,"h":46,"abs_x":716,"abs_y":2843}' class="hidden-xs">
+                        DESIGN </h2>
+
+                    <h2 style="text-transform:uppercase;font-size: 34px;margin-bottom:0px;"
+                        bis_size='{"x":656,"y":2119,"w":928,"h":38,"abs_x":716,"abs_y":2918}'
+                        class="hidden-sm hidden-md hidden-lg hidden-xl">
+                        DESIGN
+                    </h2>
+
+                    <p style="padding: 5px 10px 0px;font-size: 20px;line-height:1;padding-left:15px;padding-right:15px;text-transform:uppercase;"
+                        bis_size='{"x":656,"y":2178,"w":928,"h":25,"abs_x":716,"abs_y":2977}'>
+                        Unmistakable style</p>
+                </div>
+                <div bis_size='{"x":656,"y":2238,"w":928,"h":0,"abs_x":716,"abs_y":3037}' class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <div style="margin: 0;background-color:#3e73b3;color:#fff;"
+            bis_size='{"x":400,"y":2238,"w":1440,"h":567,"abs_x":460,"abs_y":3037}' class="row text-center">
+            <div bis_size='{"x":400,"y":2238,"w":1440,"h":0,"abs_x":460,"abs_y":3037}' class="col-sm-2">
+            </div>
+            <div style="padding: 25px 25px 10px;text-align: center;color: #fff;"
+                bis_size='{"x":400,"y":2238,"w":1440,"h":117,"abs_x":460,"abs_y":3037}' class="col-sm-4 text-center">
+
+                <p style="margin:0px;font-size: 14px;padding: 46px 1px 20px;line-height: 1.2;"
+                    bis_size='{"x":425,"y":2263,"w":1390,"h":82,"abs_x":485,"abs_y":3062}'>The 2026 Equinox, with its
+                    bold grille and sleek taillamps, is a standout. The sporty RS and <span style="white-space: nowrap;"
+                        bis_size='{"x":1051,"y":2309,"w":90,"h":15,"abs_x":1111,"abs_y":3108}'>adventure-ready</span>
+                    ACTIV complement a variety of lifestyles, making Equinox one of the most exciting SUVs to drive.</p>
+            </div>
+            <div style="padding: 0;" bis_size='{"x":400,"y":2355,"w":1440,"h":225,"abs_x":460,"abs_y":3154}'
+                class="col-sm-6 text-left hidden-xs"> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/DESIGN.jpg?v=zJ3A7XiLDPh1d1jDee4h8w=="
+                    alt="Design" style="max-width:100%;margin-left: 3px;"
+                    bis_size="{&quot;x&quot;:403,&quot;y&quot;:2355,&quot;w&quot;:719,&quot;h&quot;:220,&quot;abs_x&quot;:463,&quot;abs_y&quot;:3154}">
+            </div>
+            <div style="padding: 0;" bis_size='{"x":400,"y":2580,"w":1440,"h":225,"abs_x":460,"abs_y":3379}'
+                class="col-sm-6 text-left hidden-sm hidden-md hidden-lg"> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/DESIGN.jpg?v=zJ3A7XiLDPh1d1jDee4h8w=="
+                    alt="Design" style="max-width:100%;margin-left: 0px;"
+                    bis_size="{&quot;x&quot;:400,&quot;y&quot;:2580,&quot;w&quot;:719,&quot;h&quot;:220,&quot;abs_x&quot;:460,&quot;abs_y&quot;:3379}">
+            </div>
+        </div>
+    </div>
+</div>
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;"
+    bis_size='{"x":400,"y":2805,"w":1440,"h":470,"abs_x":460,"abs_y":3604}'>
+    <div style="max-width:929px;margin:0px auto;"
+        bis_size='{"x":656,"y":2805,"w":928,"h":470,"abs_x":716,"abs_y":3604}'>
+
+        <div style="padding-top:0px;" bis_size='{"x":656,"y":2805,"w":928,"h":470,"abs_x":716,"abs_y":3604}'
+            class="row text-center">
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":2805,"w":928,"h":124,"abs_x":716,"abs_y":3604}' class="col-sm-4">
+
+                <p style="padding:18px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":2829,"w":908,"h":32,"abs_x":726,"abs_y":3628}'>Inspired exterior
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":2876,"w":908,"h":38,"abs_x":726,"abs_y":3675}'>Strong lines and a confident
+                    stance
+                </p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":2930,"w":928,"h":153,"abs_x":716,"abs_y":3729}' class="col-sm-4">
+
+                <p style="padding:18px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":2954,"w":908,"h":32,"abs_x":726,"abs_y":3753}' class="hidden-xs">
+                    Commanding view</p>
+
+                <p style="padding:0px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":3001,"w":908,"h":15,"abs_x":726,"abs_y":3800}'
+                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                    Commanding view</p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":3030,"w":908,"h":38,"abs_x":726,"abs_y":3829}'>An impressive perspective from
+                    behind the wheel
+                </p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":3084,"w":928,"h":192,"abs_x":716,"abs_y":3883}' class="col-sm-4">
+
+                <p style="padding:18px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":3108,"w":908,"h":32,"abs_x":726,"abs_y":3907}' class="hidden-xs">Available
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":745,"y":3126,"w":73,"h":15,"abs_x":805,"abs_y":3925}'>two-tone</span> roof
+                </p>
+
+                <p style="padding:0px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":3155,"w":908,"h":15,"abs_x":726,"abs_y":3954}'
+                    class="hidden-sm hidden-md hidden-lg hidden-xl">Available
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":745,"y":3155,"w":73,"h":15,"abs_x":805,"abs_y":3954}'>two-tone</span> roof
+                </p>
+
+                <p style="padding: 0 10px;font-size:14px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":3184,"w":908,"h":26,"abs_x":726,"abs_y":3983}' class="hidden-xs">For
+                    contrasting color combinations</p>
+
+                <p style="padding: 0 10px;font-size:14px;margin: 0;line-height: 1.3em;padding-top: 8px;margin-bottom: 25px;"
+                    bis_size='{"x":666,"y":3210,"w":908,"h":26,"abs_x":726,"abs_y":4009}'
+                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                    For contrasting color combinations</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff; margin-top: -20px;"
+    bis_size='{"x":400,"y":3256,"w":1440,"h":1111,"abs_x":460,"abs_y":4055}'>
+    <div style="max-width:929px;margin:0px auto;"
+        bis_size='{"x":656,"y":3256,"w":928,"h":1111,"abs_x":716,"abs_y":4055}'>
+
+        <div style="padding-top:0px;" bis_size='{"x":656,"y":3256,"w":928,"h":1111,"abs_x":716,"abs_y":4055}'
+            class="row text-center">
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":3256,"w":928,"h":361,"abs_x":716,"abs_y":4055}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Unique_grille_and_front_fascia.jpg?v=SyYL2Vk1Op4A5wS1ZqsYQA=="
+                    alt="new grille and front fascia " style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:3266,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:4065}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":3505,"w":908,"h":45,"abs_x":726,"abs_y":4304}'>Unique grille and front fascia
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":3564,"w":908,"h":38,"abs_x":726,"abs_y":4363}'>Each model has its own grille
+                    and front fascia that provide a modern look.</p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":3618,"w":928,"h":382,"abs_x":716,"abs_y":4417}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Finish_stitching.jpg?v=5sFPrWVSG3p5DZVXvN1wqQ=="
+                    alt="finish stitching" style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:3628,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:4427}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":3867,"w":908,"h":45,"abs_x":726,"abs_y":4666}'>Finish stitching
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":3926,"w":908,"h":59,"abs_x":726,"abs_y":4725}'>Sophisticated stitching
+                    elevates the seating with a premium look and feel. A perfect complement to the Evotex on RS and
+                    Evotex and sueded microfiber seating surfaces on ACTIV.</p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":4001,"w":928,"h":367,"abs_x":716,"abs_y":4800}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Large__innovative_screens.jpg?v=aqCpGYhtI8F5FyW6eu6n6w=="
+                    alt="largeinnovative screens" style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:4011,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:4810}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":4250,"w":908,"h":45,"abs_x":726,"abs_y":5049}'>Large, innovative screens
+                </p>
+
+                <p style="padding: 0 10px;font-size:14px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":4309,"w":908,"h":44,"abs_x":726,"abs_y":5108}'>Equinox now has an
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":793,"y":4318,"w":52,"h":15,"abs_x":853,"abs_y":5117}'>11.3-inch</span> diagonal
+                    infotainment
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":976,"y":4318,"w":71,"h":15,"abs_x":1036,"abs_y":5117}'>touch-screen</span> and an
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1092,"y":4318,"w":42,"h":15,"abs_x":1152,"abs_y":5117}'>11-inch</span> diagonal
+                    Driver Information Center, making it easier to interact with key vehicle information, navigation,
+                    apps, music and more.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color: #fff;background-color:#505050;margin-top: 10px;"
+    bis_size='{"x":400,"y":4378,"w":1440,"h":371,"abs_x":460,"abs_y":5177}'>
+    <div style="max-width:929px;margin:0px auto;"
+        bis_size='{"x":656,"y":4378,"w":928,"h":357,"abs_x":716,"abs_y":5177}'>
+        <div style="padding-top:20px;color: #fff;"
+            bis_size='{"x":656,"y":4378,"w":928,"h":357,"abs_x":716,"abs_y":5177}' class="row text-center">
+            <div style="padding: 0px;" bis_size='{"x":656,"y":4436,"w":928,"h":299,"abs_x":716,"abs_y":5235}'
+                class="col-sm-12">
+
+                <p style="font-size: 38px;text-transform:uppercase;padding: 0px 10px;font-weight: 600;"
+                    bis_size='{"x":656,"y":4436,"w":928,"h":43,"abs_x":716,"abs_y":5235}' class="hidden-xs">ACTIV
+                </p>
+
+                <p style="font-size: 38px;text-transform:uppercase;padding: 0px 10px;font-weight: 600;padding-top: 10px;"
+                    bis_size='{"x":656,"y":4518,"w":928,"h":53,"abs_x":716,"abs_y":5317}'
+                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                    ACTIV
+                </p>
+
+                <p style="font-size: 22px;text-transform:uppercase;padding: 0px 10px; margin-top: -20px;"
+                    bis_size='{"x":656,"y":4589,"w":928,"h":26,"abs_x":716,"abs_y":5388}'>A sense of adventure
+                </p>
+
+                <p style="font-size: 14px;padding: 20px 10px 20px;line-height: 1.2;position: relative;bottom: 0px;margin-top: -5px;"
+                    bis_size='{"x":656,"y":4633,"w":928,"h":56,"abs_x":716,"abs_y":5432}' class="hidden-xs">
+                    ACTIV gives Equinox a rugged <span style="white-space: nowrap;"
+                        bis_size='{"x":848,"y":4653,"w":45,"h":15,"abs_x":908,"abs_y":5452}'>off-road</span> appearance
+                    that’ll see you through one exciting quest after another.
+                </p>
+
+                <p style="font-size: 14px;padding: 15px 20px 0px;line-height: 1.2;"
+                    bis_size='{"x":656,"y":4703,"w":928,"h":31,"abs_x":716,"abs_y":5502}'
+                    class="hidden-sm hidden-md hidden-lg">ACTIV gives Equinox a rugged
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":858,"y":4718,"w":45,"h":15,"abs_x":918,"abs_y":5517}'>off-road</span> appearance
+                    that’ll see you through one exciting quest after another.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;"
+    bis_size='{"x":400,"y":4749,"w":1440,"h":610,"abs_x":460,"abs_y":5548}'>
+    <div style="margin: 0;background-color:#3E73B3;color:#fff;"
+        bis_size='{"x":400,"y":4749,"w":1440,"h":610,"abs_x":460,"abs_y":5548}' class="row text-center">
+        <div style="padding: 0;" bis_size='{"x":400,"y":4749,"w":1440,"h":310,"abs_x":460,"abs_y":5548}'
+            class="col-sm-7 text-right"> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/ACTIV_1.jpg?v=sdHqYD1vIu5ctXe4b15H1Q=="
+                alt="Cargo" style="max-width:100%;position: relative;right: 0px;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:4749,&quot;w&quot;:870,&quot;h&quot;:305,&quot;abs_x&quot;:460,&quot;abs_y&quot;:5548}">
+        </div>
+        <div style="padding: 40px 15px 10px;text-align: center;color: #fff;"
+            bis_size='{"x":400,"y":5059,"w":1440,"h":300,"abs_x":460,"abs_y":5858}' class="col-sm-3 text-center">
+
+            <p style="margin:0px;font-size: 14px;padding: 0px 0px;line-height: 1.3;text-transform: uppercase;"
+                bis_size='{"x":415,"y":5099,"w":1410,"h":36,"abs_x":475,"abs_y":5898}' class="hidden-xs">
+                Adventurous appearance
+                <br
+                    bis_size="{&quot;x&quot;:1220,&quot;y&quot;:5100,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1280,&quot;abs_y&quot;:5899}">
+                <span style="text-transform: none;"
+                    bis_size='{"x":1012,"y":5119,"w":215,"h":15,"abs_x":1072,"abs_y":5918}'>Looks great on the road
+                    or off the map</span>
+            </p>
+
+            <p style="margin:0px;font-size: 14px;padding: 15px 0px 0px;line-height: 1.3;text-transform: uppercase;"
+                bis_size='{"x":415,"y":5136,"w":1410,"h":51,"abs_x":475,"abs_y":5935}'
+                class="hidden-sm hidden-md hidden-lg hidden-xl">
+                Adventurous appearance
+                <br
+                    bis_size="{&quot;x&quot;:1220,&quot;y&quot;:5152,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1280,&quot;abs_y&quot;:5951}"><span
+                    style="text-transform: none;"
+                    bis_size='{"x":1012,"y":5170,"w":215,"h":15,"abs_x":1072,"abs_y":5969}'>Looks
+                    great on the road
+                    or off the map</span>
+            </p>
+
+            <p style="margin:0px;font-size: 14px;padding: 40px 0px 20px;line-height: 1.2;text-transform: uppercase;"
+                bis_size='{"x":415,"y":5187,"w":1410,"h":93,"abs_x":475,"abs_y":5986}'>
+                <span style="white-space: nowrap;"
+                    bis_size='{"x":1053,"y":5227,"w":92,"h":15,"abs_x":1113,"abs_y":6026}'>All-terrain</span> tires
+                <br
+                    bis_size="{&quot;x&quot;:1187,&quot;y&quot;:5227,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1247,&quot;abs_y&quot;:6026}"><span
+                    style="text-transform: none;"
+                    bis_size='{"x":1016,"y":5244,"w":207,"h":15,"abs_x":1076,"abs_y":6043}'>Added
+                    grip for a variety
+                    of situations</span>
+            </p>
+
+            <p style="margin:0px;font-size: 14px;padding: 18px 0px;line-height: 1.2;text-transform: uppercase;"
+                bis_size='{"x":415,"y":5281,"w":1410,"h":69,"abs_x":475,"abs_y":6080}'>
+                Uniquely tuned suspension
+                <br
+                    bis_size="{&quot;x&quot;:1225,&quot;y&quot;:5299,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1285,&quot;abs_y&quot;:6098}"><span
+                    style="text-transform: none;"
+                    bis_size='{"x":1030,"y":5315,"w":180,"h":15,"abs_x":1090,"abs_y":6114}'>Giving
+                    ACTIV a
+                    distinctive ride</span>
+            </p>
+
+        </div>
+        <div bis_size='{"x":400,"y":5360,"w":1440,"h":0,"abs_x":460,"abs_y":6159}' class="col-sm-2">
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#fff;background-color:#505050;"
+    bis_size='{"x":400,"y":5360,"w":1440,"h":1150,"abs_x":460,"abs_y":6159}'>
+    <div style="max-width:929px;margin:0px auto;"
+        bis_size='{"x":656,"y":5382,"w":928,"h":1128,"abs_x":716,"abs_y":6181}'>
+
+        <div style="padding-top:0px; margin-top: 22px;"
+            bis_size='{"x":656,"y":5382,"w":928,"h":1128,"abs_x":716,"abs_y":6181}' class="row text-center">
+            <div style="padding: 10px; padding-bottom:22px;"
+                bis_size='{"x":656,"y":5382,"w":928,"h":407,"abs_x":716,"abs_y":6181}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Over-the-top_looks_and_function.jpg?v=ISfDg2gtiY9bnKkt2SEW+Q=="
+                    alt="Over-the-top looks and function " style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:5392,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:6191}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":5631,"w":908,"h":45,"abs_x":726,"abs_y":6430}'><span
+                        style="white-space: nowrap;"
+                        bis_size='{"x":666,"y":5661,"w":100,"h":15,"abs_x":726,"abs_y":6460}'>Over-the-top</span> looks
+                    and function
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":5690,"w":908,"h":38,"abs_x":726,"abs_y":6489}'>The available <span
+                        style="white-space: nowrap;"
+                        bis_size='{"x":766,"y":5699,"w":56,"h":17,"abs_x":826,"abs_y":6498}'>two-tone</span> roof adds
+                    more wow to ACTIV, while roof rails let you take sizable gear with you.</p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":5729,"w":908,"h":38,"abs_x":726,"abs_y":6528}'>Optional equipment shown.</p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":5790,"w":928,"h":361,"abs_x":716,"abs_y":6589}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Refined_interior.jpg?v=PD8A8QrNsajGWRc6xiNM7w=="
+                    alt="Refined interior" style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:5800,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:6599}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":6039,"w":908,"h":45,"abs_x":726,"abs_y":6838}'>Refined interior
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":6098,"w":908,"h":38,"abs_x":726,"abs_y":6897}'>Evotex and sueded microfiber
+                    seating surfaces with ACTIV stitched into the head restraints.</p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":6151,"w":928,"h":359,"abs_x":716,"abs_y":6950}' class="col-sm-4">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Convenient_center_console_with_pass-through.jpg?v=mf9tmpatVLOmofi6KxLRaA=="
+                    alt="Convenient center console with pass-through " style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:6161,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:6960}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":6400,"w":908,"h":45,"abs_x":726,"abs_y":7199}'>Convenient center console with
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":925,"y":6430,"w":105,"h":15,"abs_x":985,"abs_y":7229}'>pass-through</span></p>
+
+                <p style="padding: 10px 10px;font-size:14px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":6459,"w":908,"h":36,"abs_x":726,"abs_y":7258}'>Holds electronics, beverages
+                    and anything you need close at hand.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;color:#000;"
+    bis_size='{"x":400,"y":6511,"w":1440,"h":1041,"abs_x":460,"abs_y":7310}'>
+    <div style="max-width:929px;margin:0px auto;padding-top: 20px; padding-bottom: 5px;"
+        bis_size='{"x":656,"y":6511,"w":928,"h":1041,"abs_x":716,"abs_y":7310}'>
+        <div style="padding-top:0px;" bis_size='{"x":656,"y":6531,"w":928,"h":1016,"abs_x":716,"abs_y":7330}'
+            class="row text-center">
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":6531,"w":928,"h":546,"abs_x":716,"abs_y":7330}' class="col-sm-6">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Rs_1.jpg?v=eDiXvbiSQPKGsq9eMp8aMg=="
+                    alt="all-new rs the show stealer" style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:6541,&quot;w&quot;:457,&quot;h&quot;:219,&quot;abs_x&quot;:726,&quot;abs_y&quot;:7340}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":6780,"w":908,"h":60,"abs_x":726,"abs_y":7579}'>
+                    RS
+                    <br
+                        bis_size="{&quot;x&quot;:683,&quot;y&quot;:6810,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:743,&quot;abs_y&quot;:7609}">Drive
+                    in the spotlight
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":6854,"w":908,"h":56,"abs_x":726,"abs_y":7653}'>The spirited Equinox RS can be
+                    recognized by stylish features, like its unique <span style="white-space: nowrap;"
+                        bis_size='{"x":1177,"y":6862,"w":53,"h":17,"abs_x":1237,"abs_y":7661}'>RS-only</span> grille and
+                    front fascia, <span style="white-space: nowrap;"
+                        bis_size='{"x":1380,"y":6862,"w":71,"h":17,"abs_x":1440,"abs_y":7661}'>flat-bottom</span>
+                    steering wheel, and Black emblems and badging.
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":6910,"w":908,"h":152,"abs_x":726,"abs_y":7709}'>• Black emblems and badging
+                    <br
+                        bis_size="{&quot;x&quot;:867,&quot;y&quot;:6918,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:927,&quot;abs_y&quot;:7717}">•
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":685,"y":6937,"w":48,"h":17,"abs_x":745,"abs_y":7736}'>19-inch</span> machined
+                    wheels
+                    <br
+                        bis_size="{&quot;x&quot;:849,&quot;y&quot;:6937,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:909,&quot;abs_y&quot;:7736}">•
+                    Unique lower fascia and Black grille
+                    <br
+                        bis_size="{&quot;x&quot;:920,&quot;y&quot;:6956,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:980,&quot;abs_y&quot;:7755}">•
+                    Torch Red and Santorini Blue interior stitching
+                    <br
+                        bis_size="{&quot;x&quot;:986,&quot;y&quot;:6976,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:1046,&quot;abs_y&quot;:7775}">•
+                    RS debossed <span style="white-space: nowrap;"
+                        bis_size='{"x":771,"y":6995,"w":61,"h":17,"abs_x":831,"abs_y":7794}'>front-seat</span> head
+                    restraints
+                    <br
+                        bis_size="{&quot;x&quot;:930,&quot;y&quot;:6995,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:990,&quot;abs_y&quot;:7794}">•
+                    Available Black <span style="white-space: nowrap;"
+                        bis_size='{"x":791,"y":7014,"w":56,"h":17,"abs_x":851,"abs_y":7813}'>two-tone</span> roof
+                    <br
+                        bis_size="{&quot;x&quot;:878,&quot;y&quot;:7014,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:938,&quot;abs_y&quot;:7813}">•
+                    Black roof rails and mirror caps
+                </p>
+            </div>
+            <div style="padding: 10px; padding-bottom:15px;"
+                bis_size='{"x":656,"y":7077,"w":928,"h":469,"abs_x":716,"abs_y":7876}' class="col-sm-6">
+                <img src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Special_editionS.jpg?v=Whg9BIfIzVAXIo4OR+H1yg=="
+                    alt="special edition dark and daring " style="max-width:100%;"
+                    bis_size="{&quot;x&quot;:666,&quot;y&quot;:7087,&quot;w&quot;:461,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:7886}">
+
+                <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                    bis_size='{"x":666,"y":7326,"w":908,"h":60,"abs_x":726,"abs_y":8125}'>
+                    Special editions
+                    <br
+                        bis_size="{&quot;x&quot;:790,&quot;y&quot;:7356,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:850,&quot;abs_y&quot;:8155}">Try
+                    it in black
+                </p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":7400,"w":908,"h":37,"abs_x":726,"abs_y":8199}'>Make a stylish statement any
+                    time of the day with the Midnight Edition, available on the LT model.</p>
+
+                <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                    bis_size='{"x":666,"y":7438,"w":908,"h":94,"abs_x":726,"abs_y":8237}'>•
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":685,"y":7445,"w":70,"h":17,"abs_x":745,"abs_y":8244}'>High-gloss</span> Black
+                    mirror caps
+                    <br
+                        bis_size="{&quot;x&quot;:874,&quot;y&quot;:7445,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:934,&quot;abs_y&quot;:8244}">•
+                    Exclusive <span style="white-space: nowrap;"
+                        bis_size='{"x":752,"y":7465,"w":48,"h":17,"abs_x":812,"abs_y":8264}'>19-inch</span> Black wheels
+                    <br
+                        bis_size="{&quot;x&quot;:891,&quot;y&quot;:7465,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:951,&quot;abs_y&quot;:8264}">•
+                    Black roof rails
+                    <br
+                        bis_size="{&quot;x&quot;:785,&quot;y&quot;:7484,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:845,&quot;abs_y&quot;:8283}">•
+                    Black grille, badging and bowties
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;padding-top: 0px;"
+    bis_size='{"x":400,"y":7552,"w":1440,"h":2309,"abs_x":460,"abs_y":8351}'>
+    <div style="margin: 0;background-color:#3E73B3;color:#fff;"
+        bis_size='{"x":400,"y":7552,"w":1440,"h":642,"abs_x":460,"abs_y":8351}' class="row text-center">
+        <div style="padding: 0;" bis_size='{"x":400,"y":7552,"w":1440,"h":224,"abs_x":460,"abs_y":8351}'
+            class="col-sm-6 text-right hidden-xs"> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/CARGO.jpg?v=FP+HOehvP/qT3NVLDp9x5g=="
+                alt="Cargo" style="max-width:100%;position: relative;right: 14px;"
+                bis_size="{&quot;x&quot;:386,&quot;y&quot;:7552,&quot;w&quot;:707,&quot;h&quot;:219,&quot;abs_x&quot;:446,&quot;abs_y&quot;:8351}">
+        </div>
+        <div style="padding: 0;" bis_size='{"x":400,"y":7777,"w":1440,"h":224,"abs_x":460,"abs_y":8576}'
+            class="col-sm-6 text-right hidden-sm hidden-md hidden-lg hidden-xl"> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/CARGO.jpg?v=FP+HOehvP/qT3NVLDp9x5g=="
+                alt="Cargo" style="max-width:100%;position: relative;right: 0px;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:7777,&quot;w&quot;:707,&quot;h&quot;:219,&quot;abs_x&quot;:460,&quot;abs_y&quot;:8576}">
+        </div>
+
+        <div style="padding: 25px 15px 10px;text-align: center;color: #fff;"
+            bis_size='{"x":400,"y":8002,"w":1440,"h":192,"abs_x":460,"abs_y":8801}' class="col-sm-4 text-center">
+
+            <p style="margin:0px;font-size: 14px;padding: 0px 0px;line-height: 1.3; text-transform: uppercase;"
+                bis_size='{"x":415,"y":8027,"w":1410,"h":36,"abs_x":475,"abs_y":8826}' class="hidden-xs">
+                CARGO
+                <br
+                    bis_size="{&quot;x&quot;:1145,&quot;y&quot;:8029,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1205,&quot;abs_y&quot;:8828}">Pack
+                in the possibilities
+            </p>
+
+            <p style="margin:0px;font-size: 14px;padding: 15px 0px 0px;line-height: 1.3;text-transform: uppercase;"
+                bis_size='{"x":415,"y":8064,"w":1410,"h":51,"abs_x":475,"abs_y":8863}'
+                class="hidden-sm hidden-md hidden-lg hidden-xl">
+                CARGO
+                <br
+                    bis_size="{&quot;x&quot;:1145,&quot;y&quot;:8080,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1205,&quot;abs_y&quot;:8879}">Pack
+                in the possibilities
+            </p>
+
+            <p style="margin:0px;font-size: 14px;padding: 18px 0px;line-height: 1.2;"
+                bis_size='{"x":415,"y":8115,"w":1410,"h":69,"abs_x":475,"abs_y":8914}'>Equinox gives you the room to do
+                what you like when you like thanks to its roomy interior and flexible folding seats that expand the
+                cargo space. Comfortably fit belongings for any occasion. And if you need an extra hand loading up, you
+                have the convenient, available <span style="white-space: nowrap;"
+                    bis_size='{"x":1075,"y":8150,"w":59,"h":15,"abs_x":1135,"abs_y":8949}'>hands-free</span> AutoSense
+                Power Liftgate.
+            </p>
+        </div>
+        <div bis_size='{"x":400,"y":8195,"w":1440,"h":0,"abs_x":460,"abs_y":8994}' class="col-sm-2">
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;"
+        bis_size='{"x":400,"y":8195,"w":1440,"h":903,"abs_x":460,"abs_y":8994}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":8195,"w":928,"h":354,"abs_x":716,"abs_y":8994}'>
+
+            <div style="padding-top:5px;" bis_size='{"x":656,"y":8195,"w":928,"h":354,"abs_x":716,"abs_y":8994}'
+                class="row text-center">
+                <div style="padding: 10px; padding-bottom:0px;"
+                    bis_size='{"x":656,"y":8200,"w":928,"h":116,"abs_x":716,"abs_y":8999}' class="col-sm-4">
+
+                    <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":8224,"w":908,"h":40,"abs_x":726,"abs_y":9023}'>63.5 cu. ft.*
+                        <br
+                            bis_size="{&quot;x&quot;:746,&quot;y&quot;:8234,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:806,&quot;abs_y&quot;:9033}">Max
+                        Cargo Volume
+                    </p>
+
+                    <p style="padding:10px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":8278,"w":908,"h":38,"abs_x":726,"abs_y":9077}'>Room to haul your
+                        equipment, supplies or luggage
+                    </p>
+                </div>
+                <div style="padding: 10px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":8316,"w":928,"h":115,"abs_x":716,"abs_y":9115}' class="col-sm-4">
+
+                    <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":8340,"w":908,"h":25,"abs_x":726,"abs_y":9139}'>Folding 60/40 <span
+                            style="white-space: nowrap;"
+                            bis_size='{"x":766,"y":8350,"w":88,"h":15,"abs_x":826,"abs_y":9149}'>split-bench</span> seat
+                    </p>
+
+                    <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":8379,"w":908,"h":37,"abs_x":726,"abs_y":9178}'>Added flexibility for all
+                        your cargo’s shapes and sizes</p>
+                </div>
+                <div style="padding: 10px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":8432,"w":928,"h":117,"abs_x":716,"abs_y":9231}' class="col-sm-4">
+
+                    <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":8456,"w":908,"h":25,"abs_x":726,"abs_y":9255}'>Hidden storage
+                    </p>
+
+                    <p style="padding: 0px 10px 15px;font-size:14px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":8495,"w":908,"h":39,"abs_x":726,"abs_y":9294}'>
+                        Under rear cargo floor to help protect and keep items from view</p>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top:0px;margin-bottom:0px;"
+            bis_size='{"x":400,"y":8549,"w":1440,"h":548,"abs_x":460,"abs_y":9348}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-1.jpg?v=JkTxbnCl+e400thrElLE0Q=="
+                alt="image" style="max-width:100%;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:8549,&quot;w&quot;:1441,&quot;h&quot;:543,&quot;abs_x&quot;:460,&quot;abs_y&quot;:9348}">
+        </div>
+    </div>
+    <div id="getaquote" style="margin: 0px 0 0px;"
+        bis_size='{"x":400,"y":9098,"w":1440,"h":185,"abs_x":460,"abs_y":9897}'>
+        <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+            bis_size='{"x":400,"y":9098,"w":1440,"h":185,"abs_x":460,"abs_y":9897}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Colonial_Chevrolet_Equinox_2026_GAQ_MOVGIF.gif?v=1RF7zokjuyB52hwBcKXkBg=="
+                alt="get a quote" style="max-width:100%;margin: 30px 0;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:9128,&quot;w&quot;:1441,&quot;h&quot;:120,&quot;abs_x&quot;:460,&quot;abs_y&quot;:9927}">
+        </a>
+    </div>
+
+    <div style="padding-top:0px;margin-bottom:30px;"
+        bis_size='{"x":400,"y":9283,"w":1440,"h":548,"abs_x":460,"abs_y":10082}'> <img
+            src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-2.jpg?v=AIYe4aFv3nHeWTuvvXxJDA=="
+            alt="image" style="max-width:100%;"
+            bis_size="{&quot;x&quot;:400,&quot;y&quot;:9283,&quot;w&quot;:1441,&quot;h&quot;:543,&quot;abs_x&quot;:460,&quot;abs_y&quot;:10082}">
+    </div>
+
+</div>
+
+<div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;"
+    bis_size='{"x":400,"y":9862,"w":1440,"h":13164,"abs_x":460,"abs_y":10661}'>
+    <div style="background-color:#1c579b;color:#fff;"
+        bis_size='{"x":400,"y":9862,"w":1440,"h":662,"abs_x":460,"abs_y":10661}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":9862,"w":928,"h":235,"abs_x":716,"abs_y":10661}'>
+            <div style="padding-top:2px;" bis_size='{"x":656,"y":9862,"w":928,"h":235,"abs_x":716,"abs_y":10661}'
+                class="row text-center">
+                <div bis_size='{"x":656,"y":9864,"w":928,"h":0,"abs_x":716,"abs_y":10663}' class="col-sm-2">
+                </div>
+                <div style="padding: 0px; padding-bottom:11px;"
+                    bis_size='{"x":656,"y":9897,"w":928,"h":200,"abs_x":716,"abs_y":10696}' class="col-sm-8">
+
+                    <h2 style="font-size: 40px;margin-bottom:0px;text-transform: uppercase!important;"
+                        bis_size='{"x":656,"y":9897,"w":928,"h":46,"abs_x":716,"abs_y":10696}' class="hidden-xs">
+                        Safety &amp; driver assistance
+                    </h2>
+
+                    <h2 style="text-transform: uppercase!important;font-size: 34px;margin-bottom:0px;"
+                        bis_size='{"x":656,"y":9972,"w":928,"h":38,"abs_x":716,"abs_y":10771}'
+                        class="hidden-sm hidden-md hidden-lg hidden-xl">
+                        Safety &amp; driver assistance
+                    </h2>
+
+                    <p style="padding: 5px 10px;font-size: 22px;line-height:1;padding-left:15px;padding-right:15px;text-transform:uppercase;"
+                        bis_size='{"x":656,"y":10033,"w":928,"h":31,"abs_x":716,"abs_y":10832}'>
+                        Assisted confidence</p>
+                </div>
+                <div bis_size='{"x":656,"y":10098,"w":928,"h":0,"abs_x":716,"abs_y":10897}' class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <div style="margin: 0;background-color:#f1f1f1;color:#000;"
+            bis_size='{"x":400,"y":10098,"w":1440,"h":426,"abs_x":460,"abs_y":10897}' class="row text-center">
+            <div bis_size='{"x":400,"y":10098,"w":1440,"h":0,"abs_x":460,"abs_y":10897}' class="col-sm-2">
+            </div>
+            <div style="padding: 10px 25px 2px;text-align: center;color: #000;"
+                bis_size='{"x":400,"y":10098,"w":1440,"h":201,"abs_x":460,"abs_y":10897}' class="col-sm-4 text-center">
+
+                <p style="margin:0px;font-size: 14px;padding: 10px 0px 10px;line-height: 1.2;"
+                    bis_size='{"x":425,"y":10108,"w":1390,"h":36,"abs_x":485,"abs_y":10907}'>The 2026 Equinox comes with
+                    over 15 standard safety and driver assistance features*, including Chevy Safety
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1262,"y":10118,"w":68,"h":15,"abs_x":1322,"abs_y":10917}'>Assist* — a</span>
+                    package of six advanced features comprised of:
+                </p>
+
+                <p style="margin:0px;font-size: 14px;padding: 10px 0px 25px;line-height: 1.2;"
+                    bis_size='{"x":425,"y":10144,"w":1390,"h":152,"abs_x":485,"abs_y":10943}'>
+                    • Automatic Emergency Braking*
+                    <br
+                        bis_size="{&quot;x&quot;:1215,&quot;y&quot;:10154,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1275,&quot;abs_y&quot;:10953}">
+                    • Front Pedestrian Braking*
+                    <br
+                        bis_size="{&quot;x&quot;:1198,&quot;y&quot;:10171,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1258,&quot;abs_y&quot;:10970}">
+                    • Lane Keep Assist with Lane Departure Warning*
+                    <br
+                        bis_size="{&quot;x&quot;:1262,&quot;y&quot;:10188,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1322,&quot;abs_y&quot;:10987}">
+                    • Forward Collision Alert*
+                    <br
+                        bis_size="{&quot;x&quot;:1195,&quot;y&quot;:10205,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1255,&quot;abs_y&quot;:11004}">
+                    • Following Distance Indicator*
+                    <br
+                        bis_size="{&quot;x&quot;:1210,&quot;y&quot;:10222,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:1270,&quot;abs_y&quot;:11021}">
+                    • IntelliBeam<sup style="font-size: 25px;top: 0.25em;"
+                        bis_size='{"x":1144,"y":10240,"w":19,"h":27,"abs_x":1204,"abs_y":11039}'>®</sup>*
+                </p>
+            </div>
+            <div style="padding: 0;" bis_size='{"x":400,"y":10299,"w":1440,"h":225,"abs_x":460,"abs_y":11098}'
+                class="col-sm-6 text-right"> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/SAFETY___DRIVER_ASSISTANCE.jpg?v=p0f9lWaTakhvgIGix2+Vsw=="
+                    alt="SAFETY" style="max-width:100%;margin-left:0.1px;"
+                    bis_size="{&quot;x&quot;:400,&quot;y&quot;:10299,&quot;w&quot;:721,&quot;h&quot;:220,&quot;abs_x&quot;:460,&quot;abs_y&quot;:11098}">
+            </div>
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;background-color:#505050;color:#fff;margin-top: 0px;"
+        bis_size='{"x":400,"y":10524,"w":1440,"h":1661,"abs_x":460,"abs_y":11323}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":10524,"w":928,"h":1661,"abs_x":716,"abs_y":11323}'>
+
+            <div style="padding-top:25px;margin:0px;"
+                bis_size='{"x":656,"y":10524,"w":928,"h":655,"abs_x":716,"abs_y":11323}' class="row text-center">
+                <div style="padding:10px;" bis_size='{"x":656,"y":10549,"w":928,"h":319,"abs_x":716,"abs_y":11348}'
+                    class="col-sm-8"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/HD_Surround_Vision_.jpg?v=l0iwq5RbSAFmwXveIS3RKA=="
+                        alt="HD Surround Vision*" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:666,&quot;y&quot;:10559,&quot;w&quot;:622,&quot;h&quot;:219,&quot;abs_x&quot;:726,&quot;abs_y&quot;:11358}">
+
+                    <p style="padding:30px 0px 0px;font-size:14px;line-height:1.2;text-transform:uppercase;"
+                        bis_size='{"x":666,"y":10798,"w":908,"h":46,"abs_x":726,"abs_y":11597}'>HD Surround Vision*
+                    </p>
+                </div>
+                <div style="padding:10px;" bis_size='{"x":656,"y":10869,"w":928,"h":310,"abs_x":716,"abs_y":11668}'
+                    class="col-sm-4"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Intersection_Automatic_Emergency_Braking_.jpg?v=Mc3ugAEfJKKEGZIMeNHS0A=="
+                        alt="Intersection Automatic Emergency Braking*" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:666,&quot;y&quot;:10879,&quot;w&quot;:301,&quot;h&quot;:210,&quot;abs_x&quot;:726,&quot;abs_y&quot;:11678}">
+
+                    <p style="padding:30px 12px 0px;font-size:14px;line-height:1.2;text-transform:uppercase;"
+                        bis_size='{"x":666,"y":11109,"w":908,"h":46,"abs_x":726,"abs_y":11908}'>
+                        Intersection Automatic Emergency Braking*</p>
+                </div>
+            </div>
+            <div style="margin:0px;padding-bottom: 17px;"
+                bis_size='{"x":656,"y":11180,"w":928,"h":1006,"abs_x":716,"abs_y":11979}' class="row text-center">
+                <div style="padding:10px;" bis_size='{"x":656,"y":11180,"w":928,"h":329,"abs_x":716,"abs_y":11979}'
+                    class="col-sm-4"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Side_Bicyclist_Alert_.jpg?v=jQwbpGP8ALZ6WMihh/ngqA=="
+                        alt="Side Bicyclist Alert*" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:666,&quot;y&quot;:11190,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:11989}">
+
+                    <p style="padding:30px 0px 10px;font-size:14px;line-height:1.2;text-transform:uppercase;"
+                        bis_size='{"x":666,"y":11429,"w":908,"h":56,"abs_x":726,"abs_y":12228}'>Side Bicyclist Alert*
+                    </p>
+                </div>
+                <div style="padding:10px;" bis_size='{"x":656,"y":11510,"w":928,"h":329,"abs_x":716,"abs_y":12309}'
+                    class="col-sm-4"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Rear_Camera_Mirror_.jpg?v=9eI8hrvD4FHoRKLlnLEA9g=="
+                        alt="Rear Camera Mirror*" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:666,&quot;y&quot;:11520,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:12319}">
+
+                    <p style="padding:30px 0px 10px;font-size:14px;line-height:1.2;text-transform:uppercase;"
+                        bis_size='{"x":666,"y":11759,"w":908,"h":56,"abs_x":726,"abs_y":12558}'>Rear Camera Mirror*
+                    </p>
+                </div>
+                <div style="padding:10px;" bis_size='{"x":656,"y":11839,"w":928,"h":329,"abs_x":716,"abs_y":12638}'
+                    class="col-sm-4"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Rear_Cross_Traffic_Braking_.jpg?v=m+1ktn+ji6cq/kqaivkvEg=="
+                        alt="Rear Cross Traffic Braking" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:666,&quot;y&quot;:11849,&quot;w&quot;:301,&quot;h&quot;:220,&quot;abs_x&quot;:726,&quot;abs_y&quot;:12648}">
+
+                    <p style="padding:30px 0px 10px;font-size:14px;line-height:1.2;text-transform:uppercase;"
+                        bis_size='{"x":666,"y":12088,"w":908,"h":56,"abs_x":726,"abs_y":12887}'>Rear Cross Traffic
+                        Braking*
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:white;color:black;"
+        bis_size='{"x":400,"y":12186,"w":1440,"h":457,"abs_x":460,"abs_y":12985}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":12186,"w":928,"h":457,"abs_x":716,"abs_y":12985}'>
+            <div style="padding-top:25px;" bis_size='{"x":656,"y":12186,"w":928,"h":73,"abs_x":716,"abs_y":12985}'
+                class="row text-center">
+                <div style="padding: 0px 18px;margin-bottom: -12px;"
+                    bis_size='{"x":656,"y":12233,"w":928,"h":26,"abs_x":716,"abs_y":13032}' class="col-sm-12">
+
+                    <p style="font-size: 22px;text-transform:uppercase;line-height: 1.2;"
+                        bis_size='{"x":674,"y":12233,"w":893,"h":26,"abs_x":734,"abs_y":13032}'>Active safety and driver
+                        assistance features for 2026</p>
+                </div>
+            </div>
+            <div style="max-width:929px;margin:0px auto;"
+                bis_size='{"x":656,"y":12270,"w":928,"h":374,"abs_x":716,"abs_y":13069}'>
+
+                <div style="padding-top:5px;" bis_size='{"x":656,"y":12270,"w":928,"h":374,"abs_x":716,"abs_y":13069}'
+                    class="row text-center">
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":12275,"w":928,"h":115,"abs_x":716,"abs_y":13074}' class="col-sm-4">
+
+                        <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                            bis_size='{"x":666,"y":12299,"w":908,"h":25,"abs_x":726,"abs_y":13098}'>Intersection
+                            Automatic Emergency Braking*
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":12338,"w":908,"h":37,"abs_x":726,"abs_y":13137}'>Can help you avoid
+                            or reduce the severity of an intersection collision with a detected <span
+                                style="white-space: nowrap;"
+                                bis_size='{"x":1222,"y":12345,"w":77,"h":17,"abs_x":1282,"abs_y":13144}'>cross-traffic</span>
+                            vehicle.
+                        </p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":12390,"w":928,"h":134,"abs_x":716,"abs_y":13189}' class="col-sm-4">
+
+                        <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                            bis_size='{"x":666,"y":12414,"w":908,"h":25,"abs_x":726,"abs_y":13213}'>Reverse Automatic
+                            Braking*
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":12453,"w":908,"h":56,"abs_x":726,"abs_y":13252}'>Alerts you and/or
+                            automatically provides hard emergency braking to help avoid collisions with detected
+                            vehicles and objects directly behind you when you’re in Reverse.</p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":12524,"w":928,"h":119,"abs_x":716,"abs_y":13323}' class="col-sm-4">
+
+                        <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                            bis_size='{"x":666,"y":12548,"w":908,"h":25,"abs_x":726,"abs_y":13347}'>Available HD
+                            Surround Vision*</p>
+
+                        <p style="padding: 0 10px;font-size:14px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":12587,"w":908,"h":41,"abs_x":726,"abs_y":13386}'>
+                            Provides selectable digital camera views of the area around your vehicle to help you park
+                            and avoid vehicles and objects. You can also display a guideline to show where your vehicle
+                            is heading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:white;color:black;"
+        bis_size='{"x":400,"y":12644,"w":1440,"h":675,"abs_x":460,"abs_y":13443}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":12644,"w":928,"h":675,"abs_x":716,"abs_y":13443}'>
+            <div style="padding-top:5px;" bis_size='{"x":656,"y":12644,"w":928,"h":157,"abs_x":716,"abs_y":13443}'
+                class="row text-center">
+                <div style="padding: 0px; margin-bottom: 5px;"
+                    bis_size='{"x":656,"y":12671,"w":928,"h":130,"abs_x":716,"abs_y":13470}' class="col-sm-12">
+
+                    <p style="font-size: 22px;text-transform:uppercase;line-height: 1.2;margin-bottom: 25px;"
+                        bis_size='{"x":656,"y":12671,"w":928,"h":26,"abs_x":716,"abs_y":13470}' class="hidden-xs">
+                        Additional Safety and Driver Assistance Features</p>
+
+                    <p style="font-size: 20px;text-transform:uppercase;line-height: 1.2;padding: 10px 30px;"
+                        bis_size='{"x":656,"y":12722,"w":928,"h":43,"abs_x":716,"abs_y":13521}'
+                        class="hidden-sm hidden-md hidden-lg hidden-xl">
+                        Additional Safety and Driver Assistance Features</p>
+
+                    <p style="padding: 0px 20px 0px;font-size: 14px;margin-bottom: -30px;"
+                        bis_size='{"x":656,"y":12786,"w":928,"h":15,"abs_x":716,"abs_y":13585}'>There’s a lot more to
+                        the Chevy safety story, and we’re committed to making sure you can start every drive with peace
+                        of mind.</p>
+                </div>
+            </div>
+            <div style="padding-top:5px;" bis_size='{"x":656,"y":12776,"w":928,"h":543,"abs_x":716,"abs_y":13575}'
+                class="row text-center">
+                <div style="padding: 10px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":12781,"w":928,"h":231,"abs_x":716,"abs_y":13580}' class="col-sm-6">
+
+                    <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":12805,"w":908,"h":45,"abs_x":726,"abs_y":13604}'>Standard</p>
+
+                    <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":12864,"w":908,"h":133,"abs_x":726,"abs_y":13663}'>• Side Bicyclist Alert*
+                        <br
+                            bis_size="{&quot;x&quot;:819,&quot;y&quot;:12872,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:879,&quot;abs_y&quot;:13671}">
+                        • Adaptive Cruise Control*
+                        <br
+                            bis_size="{&quot;x&quot;:850,&quot;y&quot;:12891,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:910,&quot;abs_y&quot;:13690}">
+                        • Rear Park Assist*
+                        <br
+                            bis_size="{&quot;x&quot;:799,&quot;y&quot;:12910,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:859,&quot;abs_y&quot;:13709}">
+                        • HD Rear Vision Camera*
+                        <br
+                            bis_size="{&quot;x&quot;:850,&quot;y&quot;:12930,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:910,&quot;abs_y&quot;:13729}">
+                        • Lane Change Alert with Side Blind Zone Alert*
+                        <br
+                            bis_size="{&quot;x&quot;:991,&quot;y&quot;:12949,&quot;w&quot;:0,&quot;h&quot;:17,&quot;abs_x&quot;:1051,&quot;abs_y&quot;:13748}">
+                        • Rear Cross Traffic Braking*
+                    </p>
+                </div>
+                <div style="padding: 10px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":13012,"w":928,"h":156,"abs_x":716,"abs_y":13811}' class="col-sm-6 hidden-xs">
+
+                    <p style="padding:30px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":13036,"w":908,"h":45,"abs_x":726,"abs_y":13835}'>
+                        Available</p>
+
+                    <p style="padding: 0 5px;font-size:14px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":13095,"w":908,"h":58,"abs_x":726,"abs_y":13894}'>• Rear Pedestrian Alert*
+                        <br
+                            bis_size="{&quot;x&quot;:806,&quot;y&quot;:13103,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:866,&quot;abs_y&quot;:13902}">
+                        • Traffic Sign Recognition*
+                        <br
+                            bis_size="{&quot;x&quot;:825,&quot;y&quot;:13120,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:885,&quot;abs_y&quot;:13919}">
+                        • Rear Camera Mirror*
+                    </p>
+                </div>
+                <div style="padding: 10px; padding-bottom:15px;"
+                    bis_size='{"x":656,"y":13168,"w":928,"h":150,"abs_x":716,"abs_y":13967}'
+                    class="col-sm-6 hidden-sm hidden-md hidden-lg">
+
+                    <p style="padding:0px 0px 0px;text-transform:uppercase;font-size:14px;"
+                        bis_size='{"x":666,"y":13192,"w":908,"h":15,"abs_x":726,"abs_y":13991}'>Available</p>
+
+                    <p style="padding: 0 5px 20px;font-size:14px;margin: 0;line-height: 1.3em;padding-top: 8px;"
+                        bis_size='{"x":666,"y":13221,"w":908,"h":82,"abs_x":726,"abs_y":14020}'>• Rear Pedestrian Alert*
+                        <br
+                            bis_size="{&quot;x&quot;:806,&quot;y&quot;:13231,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:866,&quot;abs_y&quot;:14030}">
+                        • Traffic Sign Recognition*
+                        <br
+                            bis_size="{&quot;x&quot;:825,&quot;y&quot;:13249,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:885,&quot;abs_y&quot;:14048}">
+                        • Rear Camera Mirror*
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;margin-top: 0px;"
+        bis_size='{"x":400,"y":13319,"w":1440,"h":2028,"abs_x":460,"abs_y":14118}'>
+        <div style="padding-top:0px;margin-bottom:0px;"
+            bis_size='{"x":400,"y":13319,"w":1440,"h":496,"abs_x":460,"abs_y":14118}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-3.jpg?v=G5IL8f6hRjpl4Ru6hZOl8w=="
+                alt="image 3" style="max-width:100%;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:13319,&quot;w&quot;:1441,&quot;h&quot;:491,&quot;abs_x&quot;:460,&quot;abs_y&quot;:14118}">
+        </div>
+        <div id="view inventory" style="margin: 30px 0 30px;"
+            bis_size='{"x":400,"y":13846,"w":1440,"h":135,"abs_x":460,"abs_y":14645}'>
+            <a href="https://www.colonial-west.com/searchnew.aspx?ModelAndTrim=Equinox!Equinox%20EV&yearrange=2026-2026"
+                style="display:block;" bis_size='{"x":400,"y":13846,"w":1440,"h":135,"abs_x":460,"abs_y":14645}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Colonial_Chevrolet_Equinox_2026_Vi_MOVGIF.gif?v=m+oBnIk6jJZwUpUdi45L+A=="
+                    alt="view inventory" style="max-width:100%;margin: 5px 0;"
+                    bis_size="{&quot;x&quot;:400,&quot;y&quot;:13851,&quot;w&quot;:1441,&quot;h&quot;:120,&quot;abs_x&quot;:460,&quot;abs_y&quot;:14650}">
+            </a>
+        </div>
+        <div style="background-color:#3e73b3;color:#fff;"
+            bis_size='{"x":400,"y":14011,"w":1440,"h":676,"abs_x":460,"abs_y":14810}'>
+            <div style="max-width:929px;margin:0px auto;"
+                bis_size='{"x":656,"y":14011,"w":928,"h":238,"abs_x":716,"abs_y":14810}'>
+                <div style="padding-top:10px;" bis_size='{"x":656,"y":14011,"w":928,"h":238,"abs_x":716,"abs_y":14810}'
+                    class="row text-center">
+                    <div bis_size='{"x":656,"y":14021,"w":928,"h":0,"abs_x":716,"abs_y":14820}' class="col-sm-2">
+                    </div>
+                    <div style="padding: 0px; padding-bottom:10px;"
+                        bis_size='{"x":656,"y":14054,"w":928,"h":195,"abs_x":716,"abs_y":14853}' class="col-sm-8">
+
+                        <h2 style="text-transform:uppercase;font-size: 40px;margin-bottom:0px;"
+                            bis_size='{"x":656,"y":14054,"w":928,"h":46,"abs_x":716,"abs_y":14853}' class="hidden-xs">
+                            PERFORMANCE &amp; CAPABILITY</h2>
+
+                        <h2 style="text-transform:uppercase;font-size: 34px;margin-bottom:0px;margin-top: 25px;"
+                            bis_size='{"x":656,"y":14125,"w":928,"h":38,"abs_x":716,"abs_y":14924}'
+                            class="hidden-sm hidden-md hidden-lg hidden-xl">
+                            PERFORMANCE &amp; CAPABILITY</h2>
+
+                        <p style="padding: 5px 10px 10px;font-size: 20px;line-height:1;padding-left:15px;padding-right:15px;text-transform:uppercase;"
+                            bis_size='{"x":656,"y":14184,"w":928,"h":35,"abs_x":716,"abs_y":14983}'>
+                            Power forward</p>
+                    </div>
+                    <div bis_size='{"x":656,"y":14249,"w":928,"h":0,"abs_x":716,"abs_y":15048}' class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0;background-color:#1c579b;color:#fff;"
+                bis_size='{"x":400,"y":14249,"w":1440,"h":438,"abs_x":460,"abs_y":15048}' class="row text-center">
+                <div style="padding: 0;" bis_size='{"x":400,"y":14249,"w":1440,"h":224,"abs_x":460,"abs_y":15048}'
+                    class="col-sm-6 text-right"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/PERFORMANCE.jpg?v=QHUNWZ0sqXxuuxuxTYbggQ=="
+                        alt="2025 Chevrolet Equinox" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:400,&quot;y&quot;:14249,&quot;w&quot;:722,&quot;h&quot;:219,&quot;abs_x&quot;:460,&quot;abs_y&quot;:15048}">
+                </div>
+                <div style="padding: 40px 33px 10px;text-align: center;color: #fff;"
+                    bis_size='{"x":400,"y":14474,"w":1440,"h":213,"abs_x":460,"abs_y":15273}'
+                    class="col-sm-4 text-center">
+
+                    <p style="margin:0px;font-size: 14px;padding: 40px 0px;line-height: 1.2;"
+                        bis_size='{"x":433,"y":14514,"w":1374,"h":96,"abs_x":493,"abs_y":15313}' class="hidden-xs">With
+                        features like the standard Drive Mode Selector and an efficient 1.5L Turbo engine, Equinox
+                        provides power and capability to help you get more out of your journey.</p>
+
+                    <p style="margin:0px;font-size: 14px;padding: 25px 0px;line-height: 1.2;"
+                        bis_size='{"x":433,"y":14611,"w":1374,"h":66,"abs_x":493,"abs_y":15410}'
+                        class="hidden-sm hidden-md hidden-lg hidden-xl">With features like the standard Drive Mode
+                        Selector and an efficient 1.5L Turbo engine, Equinox provides power and capability to help you
+                        get more out of your journey.</p>
+                </div>
+                <div bis_size='{"x":400,"y":14688,"w":1440,"h":0,"abs_x":460,"abs_y":15487}' class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;"
+            bis_size='{"x":400,"y":14688,"w":1440,"h":659,"abs_x":460,"abs_y":15487}'>
+            <div style="max-width:929px;margin:0px auto;color:fff;background-color:#fff;"
+                bis_size='{"x":656,"y":14688,"w":928,"h":659,"abs_x":716,"abs_y":15487}'>
+                <div style="padding-top:0px;margin:0px;"
+                    bis_size='{"x":656,"y":14688,"w":928,"h":659,"abs_x":716,"abs_y":15487}' class="row text-center">
+                    <div style="padding:10px;" bis_size='{"x":656,"y":14688,"w":928,"h":111,"abs_x":716,"abs_y":15487}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:20px 20px 10px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":14712,"w":908,"h":63,"abs_x":726,"abs_y":15511}'>175 HP
+                            <br
+                                bis_size="{&quot;x&quot;:728,&quot;y&quot;:14732,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:788,&quot;abs_y&quot;:15531}">Efficient
+                            performance
+                        </p>
+                    </div>
+                    <div style="padding:10px;" bis_size='{"x":656,"y":14799,"w":928,"h":101,"abs_x":716,"abs_y":15598}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:20px 20px 0px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":14823,"w":908,"h":53,"abs_x":726,"abs_y":15622}'>175 HP
+                            <br
+                                bis_size="{&quot;x&quot;:728,&quot;y&quot;:14843,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:788,&quot;abs_y&quot;:15642}">Efficient
+                            performance
+                        </p>
+                    </div>
+                    <div style="padding:10px;" bis_size='{"x":656,"y":14901,"w":928,"h":111,"abs_x":716,"abs_y":15700}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:20px 20px 10px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":14925,"w":908,"h":63,"abs_x":726,"abs_y":15724}'><span
+                                style="text-transform: uppercase;"
+                                bis_size='{"x":686,"y":14945,"w":205,"h":15,"abs_x":746,"abs_y":15744}'>Available
+                                <span style="white-space: nowrap;"
+                                    bis_size='{"x":765,"y":14945,"w":80,"h":15,"abs_x":825,"abs_y":15744}'>all-wheel</span>
+                                Drive
+                            </span>
+                            <br
+                                bis_size="{&quot;x&quot;:891,&quot;y&quot;:14945,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:951,&quot;abs_y&quot;:15744}">Traction
+                            on demand
+                        </p>
+                    </div>
+                    <div style="padding:10px;" bis_size='{"x":656,"y":15012,"w":928,"h":101,"abs_x":716,"abs_y":15811}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:20px 20px 0px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":15036,"w":908,"h":53,"abs_x":726,"abs_y":15835}'><span
+                                style="text-transform: uppercase;"
+                                bis_size='{"x":686,"y":15056,"w":205,"h":15,"abs_x":746,"abs_y":15855}'>Available
+                                <span style="white-space: nowrap;"
+                                    bis_size='{"x":765,"y":15056,"w":80,"h":15,"abs_x":825,"abs_y":15855}'>all-wheel</span>
+                                Drive
+                            </span>
+                            <br
+                                bis_size="{&quot;x&quot;:891,&quot;y&quot;:15056,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:951,&quot;abs_y&quot;:15855}">Traction
+                            on demand
+                        </p>
+                    </div>
+                    <div style="padding:10px;" bis_size='{"x":656,"y":15114,"w":928,"h":111,"abs_x":716,"abs_y":15913}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:20px 20px 10px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":15138,"w":908,"h":63,"abs_x":726,"abs_y":15937}'>
+                            <span style="text-transform: uppercase;"
+                                bis_size='{"x":686,"y":15158,"w":173,"h":15,"abs_x":746,"abs_y":15957}'>Up to 1,500
+                                lbs.* towing</span>
+                            <br
+                                bis_size="{&quot;x&quot;:859,&quot;y&quot;:15158,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:919,&quot;abs_y&quot;:15957}">Haul
+                            more when you need to
+                        </p>
+                    </div>
+                    <div style="padding:10px;" bis_size='{"x":656,"y":15226,"w":928,"h":121,"abs_x":716,"abs_y":16025}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:20px 20px 20px;font-size:14px;line-height:1.2;color: #000;"
+                            bis_size='{"x":666,"y":15250,"w":908,"h":73,"abs_x":726,"abs_y":16049}'>Up to 1,500 lbs.*
+                            towing
+                            <br
+                                bis_size="{&quot;x&quot;:825,&quot;y&quot;:15270,&quot;w&quot;:0,&quot;h&quot;:15,&quot;abs_x&quot;:885,&quot;abs_y&quot;:16069}">Haul
+                            more when you need to
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;"
+        bis_size='{"x":400,"y":15347,"w":1440,"h":1934,"abs_x":460,"abs_y":16146}'>
+        <div style="padding-top:0px;margin-bottom:0px;"
+            bis_size='{"x":400,"y":15347,"w":1440,"h":496,"abs_x":460,"abs_y":16146}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-4.jpg?v=5O5rgbFdBYTRZNQfcwfD6Q=="
+                alt="image4" style="max-width:100%;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:15347,&quot;w&quot;:1441,&quot;h&quot;:491,&quot;abs_x&quot;:460,&quot;abs_y&quot;:16146}">
+        </div>
+        <div style="background-color:#fff;color:#000;"
+            bis_size='{"x":400,"y":15844,"w":1440,"h":693,"abs_x":460,"abs_y":16643}'>
+            <div style="max-width:929px;margin:0px auto;"
+                bis_size='{"x":656,"y":15844,"w":928,"h":241,"abs_x":716,"abs_y":16643}'>
+                <div style="padding-top:15px;" bis_size='{"x":656,"y":15844,"w":928,"h":241,"abs_x":716,"abs_y":16643}'
+                    class="row text-center">
+                    <div bis_size='{"x":656,"y":15859,"w":928,"h":0,"abs_x":716,"abs_y":16658}' class="col-sm-2">
+                    </div>
+                    <div style="padding: 0px; padding-bottom:10px;"
+                        bis_size='{"x":656,"y":15892,"w":928,"h":193,"abs_x":716,"abs_y":16691}' class="col-sm-8">
+
+                        <h2 style="text-transform:uppercase;font-size: 40px;margin-bottom:0px;"
+                            bis_size='{"x":656,"y":15892,"w":928,"h":46,"abs_x":716,"abs_y":16691}' class="hidden-xs">
+                            TECHNOLOGY</h2>
+
+                        <h2 style="text-transform:uppercase;font-size: 34px;margin-bottom:0px;"
+                            bis_size='{"x":656,"y":15967,"w":928,"h":38,"abs_x":716,"abs_y":16766}'
+                            class="hidden-sm hidden-md hidden-lg hidden-xl">
+                            TECHNOLOGY</h2>
+
+                        <p style="padding: 5px 10px;font-size: 20px;line-height:1;padding-left:15px;padding-right:15px;text-transform:uppercase;"
+                            bis_size='{"x":656,"y":16026,"w":928,"h":30,"abs_x":716,"abs_y":16825}'>
+                            Everyday innovation</p>
+                    </div>
+                    <div bis_size='{"x":656,"y":16086,"w":928,"h":0,"abs_x":716,"abs_y":16885}' class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0;background-color:#1c579b;color:#fff;"
+                bis_size='{"x":400,"y":16086,"w":1440,"h":452,"abs_x":460,"abs_y":16885}' class="row text-center">
+                <div style="padding: 0;" bis_size='{"x":400,"y":16086,"w":1440,"h":224,"abs_x":460,"abs_y":16885}'
+                    class="col-sm-7 text-right"> <img
+                        src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/TECHNOLOGY.jpg?v=CsyUl2hF7WJGjqJuSPgRDA=="
+                        alt="Technology" style="max-width:100%;"
+                        bis_size="{&quot;x&quot;:400,&quot;y&quot;:16086,&quot;w&quot;:873,&quot;h&quot;:219,&quot;abs_x&quot;:460,&quot;abs_y&quot;:16885}">
+                </div>
+                <div style="padding: 25px 25px 10px;text-align: center;color: #fff;"
+                    bis_size='{"x":400,"y":16311,"w":1440,"h":227,"abs_x":460,"abs_y":17110}'
+                    class="col-sm-3 text-center">
+
+                    <p style="margin:0px;font-size: 14px;padding: 40px 0px 18px;line-height: 1.2;"
+                        bis_size='{"x":425,"y":16336,"w":1390,"h":108,"abs_x":485,"abs_y":17135}' class="hidden-xs">
+                        Features like Adaptive Cruise Control,* Wireless Apple CarPlay
+                        <sup style="font-size: 25px;top: 0.25em;"
+                            bis_size='{"x":797,"y":16377,"w":19,"h":27,"abs_x":857,"abs_y":17176}'>®</sup>* and Android
+                        Auto<sup style="font-size: 20px;top: 0.25em;"
+                            bis_size='{"x":927,"y":16382,"w":19,"h":21,"abs_x":987,"abs_y":17181}'>™</sup>*
+                        compatibility, and OnStar
+                        <sup style="font-size: 25px;top: 0.25em;"
+                            bis_size='{"x":1102,"y":16377,"w":19,"h":27,"abs_x":1162,"abs_y":17176}'>®</sup>* provide
+                        you with a variety of safety and driver assistance,* entertainment and convenience features to
+                        help you get more done — daily.
+                    </p>
+
+                    <p style="margin:0px;font-size: 14px;padding: 15px 0px 18px;line-height: 1.2;"
+                        bis_size='{"x":425,"y":16444,"w":1390,"h":83,"abs_x":485,"abs_y":17243}'
+                        class="hidden-sm hidden-md hidden-lg hidden-xl">Features like Adaptive Cruise Control,* Wireless
+                        Apple CarPlay
+                        <sup style="font-size: 25px;top: 0.25em;"
+                            bis_size='{"x":796,"y":16461,"w":19,"h":27,"abs_x":856,"abs_y":17260}'>®</sup>* and Android
+                        Auto
+                        <sup style="font-size: 20px;top: 0.25em;"
+                            bis_size='{"x":929,"y":16466,"w":19,"h":21,"abs_x":989,"abs_y":17265}'>™</sup>*
+                        compatibility, and OnStar
+                        <sup style="font-size: 25px;top: 0.25em;"
+                            bis_size='{"x":1103,"y":16461,"w":19,"h":27,"abs_x":1163,"abs_y":17260}'>®</sup>* provide
+                        you with a variety of safety and driver assistance,* entertainment and convenience features to
+                        help you get more done — daily.
+                    </p>
+                </div>
+                <div bis_size='{"x":400,"y":16538,"w":1440,"h":0,"abs_x":460,"abs_y":17337}' class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#fff;background-color:#3e73b3;"
+            bis_size='{"x":400,"y":16538,"w":1440,"h":743,"abs_x":460,"abs_y":17337}'>
+            <div style="max-width:929px;margin:0px auto;color:fff;background-color:#3e73b3;"
+                bis_size='{"x":656,"y":16538,"w":928,"h":743,"abs_x":716,"abs_y":17337}'>
+                <div style="padding-top:8px;margin:0px;"
+                    bis_size='{"x":656,"y":16538,"w":928,"h":743,"abs_x":716,"abs_y":17337}' class="row text-center">
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":16546,"w":928,"h":137,"abs_x":716,"abs_y":17345}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:10px 0px 0px;font-size:14px;"
+                            bis_size='{"x":666,"y":16570,"w":908,"h":38,"abs_x":726,"abs_y":17369}'>Google<sup
+                                style="top: 0.25em;font-size: 22px;"
+                                bis_size='{"x":707,"y":16580,"w":21,"h":25,"abs_x":767,"abs_y":17379}'>™</sup>
+                            <span style="white-space: nowrap;"
+                                bis_size='{"x":732,"y":16593,"w":65,"h":15,"abs_x":792,"abs_y":17392}'>BUILT-IN*</span>
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":16622,"w":908,"h":46,"abs_x":726,"abs_y":17421}'>Access apps and more
+                            using voice commands with Google Assistant
+                            <sup style="font-size: 20px;top: 0.25em;"
+                                bis_size='{"x":1118,"y":16629,"w":19,"h":21,"abs_x":1178,"abs_y":17428}'>™</sup>*
+                        </p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":16684,"w":928,"h":137,"abs_x":716,"abs_y":17483}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:10px 0px 0px;font-size:14px;"
+                            bis_size='{"x":666,"y":16708,"w":908,"h":38,"abs_x":726,"abs_y":17507}'>Google<sup
+                                style="top: 0.25em;font-size: 22px;"
+                                bis_size='{"x":707,"y":16718,"w":21,"h":25,"abs_x":767,"abs_y":17517}'>™</sup>
+                            <span style="white-space: nowrap;"
+                                bis_size='{"x":732,"y":16731,"w":65,"h":15,"abs_x":792,"abs_y":17530}'>BUILT-IN*</span>
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":16760,"w":908,"h":46,"abs_x":726,"abs_y":17559}'>Access apps and more
+                            using voice commands with Google Assistant
+                            <sup style="font-size: 20px;top: 0.25em;"
+                                bis_size='{"x":1118,"y":16767,"w":19,"h":21,"abs_x":1178,"abs_y":17566}'>™</sup>*
+                        </p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":16821,"w":928,"h":115,"abs_x":716,"abs_y":17620}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                            bis_size='{"x":666,"y":16845,"w":908,"h":25,"abs_x":726,"abs_y":17644}'><span
+                                style="white-space: nowrap;"
+                                bis_size='{"x":666,"y":16855,"w":62,"h":15,"abs_x":726,"abs_y":17654}'>11.3-inch</span>
+                            diagonal infotainment <span style="white-space: nowrap;"
+                                bis_size='{"x":917,"y":16855,"w":106,"h":15,"abs_x":977,"abs_y":17654}'>touch-screen</span>
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":16884,"w":908,"h":37,"abs_x":726,"abs_y":17683}'>A large display for
+                            engaging infotainment
+                        </p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":16936,"w":928,"h":115,"abs_x":716,"abs_y":17735}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:10px 0px 0px;text-transform:uppercase;font-size:14px;"
+                            bis_size='{"x":666,"y":16960,"w":908,"h":25,"abs_x":726,"abs_y":17759}'><span
+                                style="white-space: nowrap;"
+                                bis_size='{"x":666,"y":16970,"w":62,"h":15,"abs_x":726,"abs_y":17769}'>11.3-inch</span>
+                            diagonal infotainment <span style="white-space: nowrap;"
+                                bis_size='{"x":917,"y":16970,"w":106,"h":15,"abs_x":977,"abs_y":17769}'>touch-screen</span>
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":16999,"w":908,"h":37,"abs_x":726,"abs_y":17798}'>A large display for
+                            engaging infotainment
+                        </p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":17052,"w":928,"h":115,"abs_x":716,"abs_y":17851}'
+                        class="col-sm-4 hidden-xs">
+
+                        <p style="padding:10px 0px 0px;font-size:14px;text-transform: uppercase;"
+                            bis_size='{"x":666,"y":17076,"w":908,"h":25,"abs_x":726,"abs_y":17875}'>Available wireless
+                            phone charging*
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":17115,"w":908,"h":37,"abs_x":726,"abs_y":17914}'>Conveniently charge
+                            your phone while on the go</p>
+                    </div>
+                    <div style="padding: 10px; padding-bottom:15px;"
+                        bis_size='{"x":656,"y":17167,"w":928,"h":115,"abs_x":716,"abs_y":17966}'
+                        class="col-sm-4 hidden-sm hidden-md hidden-lg">
+
+                        <p style="padding:10px 0px 0px;font-size:14px;text-transform: uppercase;"
+                            bis_size='{"x":666,"y":17191,"w":908,"h":25,"abs_x":726,"abs_y":17990}'>Available wireless
+                            phone charging*
+                        </p>
+
+                        <p style="padding:10px;margin: 0;line-height: 1.2em;padding-top: 8px;"
+                            bis_size='{"x":666,"y":17230,"w":908,"h":37,"abs_x":726,"abs_y":18029}'>Conveniently charge
+                            your phone while on the go</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;background-color:#fff;"
+        bis_size='{"x":400,"y":17282,"w":1440,"h":1313,"abs_x":460,"abs_y":18081}'>
+        <div style="padding-top:30px;margin-bottom:30px;"
+            bis_size='{"x":400,"y":17282,"w":1440,"h":526,"abs_x":460,"abs_y":18081}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-5.jpg?v=vRv+CVo8zQwijDifXaIfPA=="
+                alt="image5" style="max-width:100%;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:17312,&quot;w&quot;:1441,&quot;h&quot;:491,&quot;abs_x&quot;:460,&quot;abs_y&quot;:18111}">
+        </div>
+        <div id="getaquote" style="margin: 30px 0 30px;"
+            bis_size='{"x":400,"y":17839,"w":1440,"h":125,"abs_x":460,"abs_y":18638}'>
+            <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+                bis_size='{"x":400,"y":17839,"w":1440,"h":125,"abs_x":460,"abs_y":18638}'> <img
+                    src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/Colonial_Chevrolet_Equinox_2026_GAQ_MOVGIF.gif?v=1RF7zokjuyB52hwBcKXkBg=="
+                    alt="get a quote" style="max-width:100%;margin: 0px 0;"
+                    bis_size="{&quot;x&quot;:400,&quot;y&quot;:17839,&quot;w&quot;:1441,&quot;h&quot;:120,&quot;abs_x&quot;:460,&quot;abs_y&quot;:18638}">
+            </a>
+        </div>
+        <div style="padding-top:0px;margin-bottom:30px;"
+            bis_size='{"x":400,"y":17994,"w":1440,"h":571,"abs_x":460,"abs_y":18793}'> <img
+                src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/IMAGE-6.jpg?v=tMDl5kar9jBuMt0H7zlDyw=="
+                alt="image6" style="max-width:100%;"
+                bis_size="{&quot;x&quot;:400,&quot;y&quot;:17994,&quot;w&quot;:1441,&quot;h&quot;:566,&quot;abs_x&quot;:460,&quot;abs_y&quot;:18793}">
+        </div>
+    </div>
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;"
+        bis_size='{"x":400,"y":18596,"w":1440,"h":4430,"abs_x":460,"abs_y":19395}'>
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":18611,"w":928,"h":335,"abs_x":716,"abs_y":19410}'>
+            <div id="fourbuttons" style="margin: 15px 0px 10px auto;"
+                bis_size='{"x":656,"y":18611,"w":928,"h":335,"abs_x":716,"abs_y":19410}' class="row text-center">
+                <div style="padding:1px;padding-bottom:5px;"
+                    bis_size='{"x":656,"y":18611,"w":928,"h":83,"abs_x":716,"abs_y":19410}' class="col-sm-3">
+                    <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+                        bis_size='{"x":657,"y":18612,"w":926,"h":77,"abs_x":717,"abs_y":19411}'> <img
+                            src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/get_a_quote.gif?v=ujxI3JNLH8lH+Ytb2rqqqQ=="
+                            alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"
+                            bis_size="{&quot;x&quot;:1002,&quot;y&quot;:18612,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:19411}">
+                    </a>
+                </div>
+                <div style="padding:1px;padding-bottom:5px;"
+                    bis_size='{"x":656,"y":18695,"w":928,"h":83,"abs_x":716,"abs_y":19494}' class="col-sm-3">
+                    <a href="https://www.colonial-west.com/creditapplication" style="display:block;"
+                        bis_size='{"x":657,"y":18696,"w":926,"h":77,"abs_x":717,"abs_y":19495}'> <img
+                            src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/Get-Pre-Approved.gif?v=T59rNQvlO3jZwLVnhTsYlw=="
+                            alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"
+                            bis_size="{&quot;x&quot;:1002,&quot;y&quot;:18696,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:19495}">
+                    </a>
+                </div>
+                <div style="padding:1px;padding-bottom:5px;"
+                    bis_size='{"x":656,"y":18779,"w":928,"h":83,"abs_x":716,"abs_y":19578}' class="col-sm-3">
+                    <a href="https://www.colonial-west.com/contactus.aspx" style="display:block;"
+                        bis_size='{"x":657,"y":18780,"w":926,"h":77,"abs_x":717,"abs_y":19579}'> <img
+                            src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/request_more_info.gif?v=JQ1bewrzbOAkmMZ9ALsIiw=="
+                            alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;"
+                            bis_size="{&quot;x&quot;:1002,&quot;y&quot;:18780,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:19579}">
+                    </a>
+                </div>
+                <div style="padding:1px;padding-bottom:5px;"
+                    bis_size='{"x":656,"y":18863,"w":928,"h":83,"abs_x":716,"abs_y":19662}' class="col-sm-3">
+                    <a href="https://www.colonial-west.com/value-your-trade.html" style="display:block;"
+                        bis_size='{"x":657,"y":18864,"w":926,"h":77,"abs_x":717,"abs_y":19663}'> <img
+                            src="https://cdn.dlron.us/static/dealer-28193/_2025_Chevy_Colorado_of_Colonial_Chevrolet_Fitchburg/Value-Your-trade.gif?v=7ysIJSbYwoveRi/JXZzeCQ=="
+                            alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"
+                            bis_size="{&quot;x&quot;:1002,&quot;y&quot;:18864,&quot;w&quot;:236,&quot;h&quot;:77,&quot;abs_x&quot;:1062,&quot;abs_y&quot;:19663}">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":18957,"w":928,"h":2057,"abs_x":716,"abs_y":19756}'>
+            <div bis_size='{"x":656,"y":18957,"w":928,"h":2057,"abs_x":716,"abs_y":19756}' class="inner2 text-center">
+
+                <h1 style="padding-top: 32px;padding-bottom: 40px;font-size:42px;margin-top: 0px;
+    margin-bottom: 0px;" bis_size='{"x":656,"y":18957,"w":928,"h":119,"abs_x":716,"abs_y":19756}'>MODELS</h1>
+
+                <div bis_size='{"x":656,"y":19076,"w":928,"h":1446,"abs_x":716,"abs_y":19875}' class="row">
+                    <div bis_size='{"x":656,"y":19076,"w":928,"h":477,"abs_x":716,"abs_y":19875}'
+                        class="col-sm-4 models"> <img style="padding-bottom: 10px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/LT.jpg?v=fAUErp2nZ2XaAFKq6thl0w=="
+                            alt="lt"
+                            bis_size="{&quot;x&quot;:656,&quot;y&quot;:19076,&quot;w&quot;:247,&quot;h&quot;:135,&quot;abs_x&quot;:716,&quot;abs_y&quot;:19875}">
+                        <div style="padding: 9px 13px 0px;position: relative;"
+                            bis_size='{"x":656,"y":19217,"w":928,"h":336,"abs_x":716,"abs_y":20016}'>
+                            <div style="background-color:#385898;margin-bottom: -15px;"
+                                bis_size='{"x":669,"y":19244,"w":903,"h":76,"abs_x":729,"abs_y":20043}'>
+
+                                <p style="color:#ffffff;padding: 15px 0px 40px;font-size:18px;"
+                                    bis_size='{"x":669,"y":19244,"w":903,"h":76,"abs_x":729,"abs_y":20043}'>
+                                    LT</p>
+                            </div>
+                            <div bis_size="{&quot;x&quot;:1110,&quot;y&quot;:19307,&quot;w&quot;:20,&quot;h&quot;:11,&quot;abs_x&quot;:1170,&quot;abs_y&quot;:20106}"
+                                class="arrow"></div>
+                            <div style="background-color:#f7f7f7;margin-top: -27px;"
+                                bis_size='{"x":669,"y":19313,"w":903,"h":174,"abs_x":729,"abs_y":20112}'>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":19313,"w":903,"h":39,"abs_x":729,"abs_y":20112}'
+                                    class="hidden-xs">
+                                    An exceptional everyday driver
+                                </p>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":19353,"w":903,"h":39,"abs_x":729,"abs_y":20152}'
+                                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                    An exceptional everyday driver
+                                </p>
+
+                                <p style="text-align: left;font-size: 12px; color: #000;margin: 0px;padding: 10px 15px 30px 20px;"
+                                    bis_size='{"x":669,"y":19392,"w":903,"h":95,"abs_x":729,"abs_y":20191}'>
+                                    • 1.5L turbo engine
+                                    <br
+                                        bis_size="{&quot;x&quot;:781,&quot;y&quot;:19402,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:841,&quot;abs_y&quot;:20201}">•
+                                    Heated front seats and steering wheel
+                                    <br
+                                        bis_size="{&quot;x&quot;:875,&quot;y&quot;:19416,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:935,&quot;abs_y&quot;:20215}">•
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":696,"y":19430,"w":45,"h":13,"abs_x":756,"abs_y":20229}'>11.3-inch</span>
+                                    diagonal infotainment <span style="white-space: nowrap;"
+                                        bis_size='{"x":689,"y":19430,"w":225,"h":27,"abs_x":749,"abs_y":20229}'>touch-screen<br
+                                            bis_size="{&quot;x&quot;:914,&quot;y&quot;:19430,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:974,&quot;abs_y&quot;:20229}">•</span>
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":696,"y":19444,"w":36,"h":13,"abs_x":756,"abs_y":20243}'>11-inch</span>
+                                    diagonal Driver Information Center
+                                </p>
+
+                            </div>
+                            <div style="background-color:#e9ba49;text-align: left;color:#ffffff;"
+                                bis_size='{"x":669,"y":19487,"w":903,"h":66,"abs_x":729,"abs_y":20286}'>
+
+                                <p style="padding: 10px 20px 0px;font-size:13px;margin: 0;"
+                                    bis_size='{"x":669,"y":19487,"w":903,"h":23,"abs_x":729,"abs_y":20286}'>
+                                    Starting at </p>
+
+                                <h1 style="padding: 0px 20px 20px;font-size:20px;margin: 0;"
+                                    bis_size='{"x":669,"y":19511,"w":903,"h":42,"abs_x":729,"abs_y":20310}'>$28,600*
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div bis_size='{"x":656,"y":19554,"w":928,"h":477,"abs_x":716,"abs_y":20353}'
+                        class="col-sm-4 models"> <img style="padding-bottom: 10px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/RS.jpg?v=s0/y7qcbsZbEFk6Ul0ji+g=="
+                            alt="rs"
+                            bis_size="{&quot;x&quot;:656,&quot;y&quot;:19554,&quot;w&quot;:242,&quot;h&quot;:133,&quot;abs_x&quot;:716,&quot;abs_y&quot;:20353}">
+                        <div style="padding: 9px 13px 0px;position: relative;"
+                            bis_size='{"x":656,"y":19693,"w":928,"h":338,"abs_x":716,"abs_y":20492}'>
+                            <div style="background-color:#1c579b;margin-bottom: -15px;"
+                                bis_size='{"x":669,"y":19720,"w":903,"h":76,"abs_x":729,"abs_y":20519}'>
+
+                                <p style="color:#ffffff;padding: 15px 0px 40px;font-size:18px;"
+                                    bis_size='{"x":669,"y":19720,"w":903,"h":76,"abs_x":729,"abs_y":20519}'>
+                                    RS</p>
+                            </div>
+                            <div bis_size="{&quot;x&quot;:1110,&quot;y&quot;:19782,&quot;w&quot;:20,&quot;h&quot;:11,&quot;abs_x&quot;:1170,&quot;abs_y&quot;:20581}"
+                                class="arrow"></div>
+                            <div style="background-color:#f7f7f7;margin-top: -27px;"
+                                bis_size='{"x":669,"y":19788,"w":903,"h":194,"abs_x":729,"abs_y":20587}'>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":19788,"w":903,"h":39,"abs_x":729,"abs_y":20587}'
+                                    class="hidden-xs">
+                                    The confident and sporty SUV
+                                </p>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":19828,"w":903,"h":39,"abs_x":729,"abs_y":20627}'
+                                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                    The confident and sporty SUV
+                                </p>
+
+                                <p style="text-align: left;font-size: 12px; color: #000;margin: 0px;padding: 10px 11px 50px 20px;"
+                                    bis_size='{"x":669,"y":19868,"w":903,"h":115,"abs_x":729,"abs_y":20667}'>
+                                    • Black mirrors, moldings, emblems and badging
+                                    <br
+                                        bis_size="{&quot;x&quot;:924,&quot;y&quot;:19878,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:984,&quot;abs_y&quot;:20677}">•
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":696,"y":19891,"w":36,"h":13,"abs_x":756,"abs_y":20690}'>19-inch</span>
+                                    and available
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":802,"y":19891,"w":36,"h":13,"abs_x":862,"abs_y":20690}'>20-inch</span>
+                                    machined wheels
+                                    <br
+                                        bis_size="{&quot;x&quot;:925,&quot;y&quot;:19891,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:985,&quot;abs_y&quot;:20690}">•
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":696,"y":19905,"w":56,"h":13,"abs_x":756,"abs_y":20704}'>Flat-bottom</span>
+                                    steering wheel
+                                    <br
+                                        bis_size="{&quot;x&quot;:825,&quot;y&quot;:19905,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:885,&quot;abs_y&quot;:20704}">•
+                                    Available <span style="white-space: nowrap;"
+                                        bis_size='{"x":744,"y":19919,"w":42,"h":13,"abs_x":804,"abs_y":20718}'>two-tone</span>
+                                    Black roof
+                                </p>
+                            </div>
+                            <div style="background-color:#e9ba49;margin-top: -18px;text-align: left;color:#ffffff;"
+                                bis_size='{"x":669,"y":19965,"w":903,"h":66,"abs_x":729,"abs_y":20764}'>
+
+                                <p style="padding: 10px 20px 0px;font-size:13px;margin: 0;"
+                                    bis_size='{"x":669,"y":19965,"w":903,"h":23,"abs_x":729,"abs_y":20764}'>
+                                    Starting at </p>
+
+                                <h1 style="padding: 0px 20px 20px;font-size:20px;margin: 0;"
+                                    bis_size='{"x":669,"y":19988,"w":903,"h":42,"abs_x":729,"abs_y":20787}'>$33,000*
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div bis_size='{"x":656,"y":20031,"w":928,"h":492,"abs_x":716,"abs_y":20830}'
+                        class="col-sm-4 models"> <img style="padding-bottom: 10px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/ACTIV.jpg?v=g6duC7oUbxRsFSXlufTpjg=="
+                            alt="activ"
+                            bis_size="{&quot;x&quot;:656,&quot;y&quot;:20031,&quot;w&quot;:248,&quot;h&quot;:133,&quot;abs_x&quot;:716,&quot;abs_y&quot;:20830}">
+                        <div style="padding: 9px 13px 0px;position: relative;"
+                            bis_size='{"x":656,"y":20170,"w":928,"h":353,"abs_x":716,"abs_y":20969}'>
+                            <div style="background-color:#1c579b;margin-bottom: -15px;"
+                                bis_size='{"x":669,"y":20197,"w":903,"h":76,"abs_x":729,"abs_y":20996}'>
+
+                                <p style="color:#ffffff;padding: 15px 0px 40px;font-size:18px;"
+                                    bis_size='{"x":669,"y":20197,"w":903,"h":76,"abs_x":729,"abs_y":20996}'>
+                                    ACTIV</p>
+                            </div>
+                            <div bis_size="{&quot;x&quot;:1110,&quot;y&quot;:20259,&quot;w&quot;:20,&quot;h&quot;:11,&quot;abs_x&quot;:1170,&quot;abs_y&quot;:21058}"
+                                class="arrow"></div>
+                            <div style="background-color:#f7f7f7;margin-top: -27px;"
+                                bis_size='{"x":669,"y":20265,"w":903,"h":209,"abs_x":729,"abs_y":21064}'>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":20265,"w":903,"h":39,"abs_x":729,"abs_y":21064}'
+                                    class="hidden-xs">
+                                    The SUV for those seeking adventure
+                                </p>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":20305,"w":903,"h":39,"abs_x":729,"abs_y":21104}'
+                                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                    The SUV for those seeking adventure
+                                </p>
+
+                                <p style="text-align: left;font-size: 12px; color: #000;margin: 0px;padding: 10px 10px 65px 20px;"
+                                    bis_size='{"x":669,"y":20345,"w":903,"h":130,"abs_x":729,"abs_y":21144}'>
+                                    • <span style="white-space: nowrap;"
+                                        bis_size='{"x":696,"y":20355,"w":36,"h":13,"abs_x":756,"abs_y":21154}'>17-inch</span>
+                                    machined wheels
+                                    <br
+                                        bis_size="{&quot;x&quot;:818,&quot;y&quot;:20355,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:878,&quot;abs_y&quot;:21154}">•
+                                    <span style="white-space: nowrap;"
+                                        bis_size='{"x":695,"y":20368,"w":50,"h":13,"abs_x":755,"abs_y":21167}'>All-terrain</span>
+                                    tires
+                                    <br
+                                        bis_size="{&quot;x&quot;:769,&quot;y&quot;:20368,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:829,&quot;abs_y&quot;:21167}">•
+                                    Evotex and sueded microfiber seating surfaces
+                                    <br
+                                        bis_size="{&quot;x&quot;:919,&quot;y&quot;:20382,&quot;w&quot;:0,&quot;h&quot;:13,&quot;abs_x&quot;:979,&quot;abs_y&quot;:21181}">•
+                                    Available <span style="white-space: nowrap;"
+                                        bis_size='{"x":744,"y":20396,"w":42,"h":13,"abs_x":804,"abs_y":21195}'>two-tone</span>
+                                    white roof
+                                </p>
+                            </div>
+                            <div style="background-color:#e9ba49;margin-top: -18px;text-align: left;color:#ffffff;"
+                                bis_size='{"x":669,"y":20457,"w":903,"h":66,"abs_x":729,"abs_y":21256}'>
+
+                                <p style="padding: 10px 20px 0px;font-size:13px;margin: 0;"
+                                    bis_size='{"x":669,"y":20457,"w":903,"h":23,"abs_x":729,"abs_y":21256}'>
+                                    Starting at </p>
+
+                                <h1 style="padding: 0px 20px 20px;font-size:20px;margin: 0;"
+                                    bis_size='{"x":669,"y":20480,"w":903,"h":42,"abs_x":729,"abs_y":21279}'>$33,000*
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div bis_size='{"x":656,"y":20523,"w":928,"h":491,"abs_x":716,"abs_y":21322}' class="row">
+                    <div bis_size='{"x":656,"y":20523,"w":928,"h":491,"abs_x":716,"abs_y":21322}'
+                        class="col-sm-4 models"> <img style="padding-bottom: 10px;display: inline;padding-top: 35px;"
+                            src="https://cdn.dlron.us/static/dealer-28065/2026_equinox/EQUINOX_EV.jpg?v=ljwuuYqPho6/T+A/x2Mb/w=="
+                            alt="lt"
+                            bis_size="{&quot;x&quot;:656,&quot;y&quot;:20523,&quot;w&quot;:248,&quot;h&quot;:164,&quot;abs_x&quot;:716,&quot;abs_y&quot;:21322}">
+                        <div style="padding: 9px 13px 0px;position: relative;"
+                            bis_size='{"x":656,"y":20693,"w":928,"h":321,"abs_x":716,"abs_y":21492}'>
+                            <div style="background-color:#385898;margin-bottom: -15px;"
+                                bis_size='{"x":669,"y":20720,"w":903,"h":76,"abs_x":729,"abs_y":21519}'>
+
+                                <p style="color:#ffffff;padding: 15px 0px 40px;font-size:18px;"
+                                    bis_size='{"x":669,"y":20720,"w":903,"h":76,"abs_x":729,"abs_y":21519}'>
+                                    Equinox EV</p>
+                            </div>
+                            <div bis_size="{&quot;x&quot;:1110,&quot;y&quot;:20782,&quot;w&quot;:20,&quot;h&quot;:11,&quot;abs_x&quot;:1170,&quot;abs_y&quot;:21581}"
+                                class="arrow"></div>
+                            <div style="background-color:#f7f7f7;margin-top: -27px;"
+                                bis_size='{"x":669,"y":20788,"w":903,"h":159,"abs_x":729,"abs_y":21587}'>
+
+                                <p style="color:#000000;padding: 16px 37px 90px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":20788,"w":903,"h":119,"abs_x":729,"abs_y":21587}'
+                                    class="hidden-xs">
+                                    As America’s most affordable 315+ mile range EV,* the <span
+                                        style="white-space: nowrap;"
+                                        bis_size='{"x":961,"y":20804,"w":61,"h":13,"abs_x":1021,"abs_y":21603}'>head-turning</span>
+                                    Equinox EV is bringing a whole new energy to electric vehicles.
+                                </p>
+
+                                <p style="color:#000000;padding: 16px 37px 10px 20px;text-align: left;font-size:12px;margin: 0;"
+                                    bis_size='{"x":669,"y":20908,"w":903,"h":39,"abs_x":729,"abs_y":21707}'
+                                    class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                    As America’s most affordable 315+ mile range EV,* the <span
+                                        style="white-space: nowrap;"
+                                        bis_size='{"x":961,"y":20924,"w":61,"h":13,"abs_x":1021,"abs_y":21723}'>head-turning</span>
+                                    Equinox EV is bringing a whole new energy to electric vehicles.
+                                </p>
+
+                            </div>
+                            <div style="background-color:#e9ba49;text-align: left;color:#ffffff;"
+                                bis_size='{"x":669,"y":20948,"w":903,"h":66,"abs_x":729,"abs_y":21747}'>
+
+                                <p style="padding: 10px 20px 0px;font-size:13px;margin: 0;"
+                                    bis_size='{"x":669,"y":20948,"w":903,"h":23,"abs_x":729,"abs_y":21747}'>
+                                    Starting at </p>
+
+                                <h1 style="padding: 0px 20px 20px;font-size:20px;margin: 0;"
+                                    bis_size='{"x":669,"y":20972,"w":903,"h":42,"abs_x":729,"abs_y":21771}'>$33,600*
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div style="max-width:929px;margin:0px auto;"
+            bis_size='{"x":656,"y":21014,"w":928,"h":1948,"abs_x":716,"abs_y":21813}'>
+            <div style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:14px;"
+                bis_size='{"x":656,"y":21014,"w":928,"h":931,"abs_x":716,"abs_y":21813}'>
+
+                <p bis_size='{"x":671,"y":21328,"w":898,"h":15,"abs_x":731,"abs_y":22127}'><strong
+                        bis_size='{"x":671,"y":21328,"w":123,"h":15,"abs_x":731,"abs_y":22127}'>2026 Chevy
+                        Equinox</strong></p>
+
+                <p bis_size='{"x":671,"y":21357,"w":898,"h":15,"abs_x":731,"abs_y":22156}'><strong
+                        bis_size='{"x":671,"y":21357,"w":474,"h":15,"abs_x":731,"abs_y":22156}'>Introducing the 2026
+                        Chevy Equinox
+                        Leominster, MA,
+                        from Colonial Chevrolet</strong></p>
+
+                <p bis_size='{"x":671,"y":21386,"w":898,"h":45,"abs_x":731,"abs_y":22185}'>The 2026 Chevrolet Equinox
+                    Leominster, MA, brings together bold design, everyday convenience and modern features in one
+                    versatile compact SUV. Now available at Colonial Chevrolet, the new Equinox is offered in LT, ACTIV
+                    and RS trims, each bringing its own mix of style and functionality. Visit our Chevy dealership
+                    Leominster, MA, to test drive this popular SUV. </p>
+
+                <p bis_size='{"x":671,"y":21445,"w":898,"h":15,"abs_x":731,"abs_y":22244}'><strong
+                        bis_size='{"x":671,"y":21445,"w":536,"h":15,"abs_x":731,"abs_y":22244}'>Which Chevy dealers have
+                        the 2026
+                        Chevy Equinox near
+                        Leominster, MA, for test drives?</strong> </p>
+
+                <p bis_size='{"x":671,"y":21474,"w":898,"h":45,"abs_x":731,"abs_y":22273}'>Colonial Chevrolet proudly
+                    stocks the full range of 2026 Chevrolet Equinox Leominster, MA, configurations for you to test
+                    drive. Every trim level comes equipped with a turbocharged <span style="white-space: nowrap;"
+                        bis_size='{"x":841,"y":21489,"w":44,"h":15,"abs_x":901,"abs_y":22288}'>1.5-liter</span> <span
+                        style="white-space: nowrap;"
+                        bis_size='{"x":889,"y":21489,"w":73,"h":15,"abs_x":949,"abs_y":22288}'>four-cylinder</span>
+                    engine pushing out 175 horsepower and 203 <span style="white-space: nowrap;"
+                        bis_size='{"x":1218,"y":21489,"w":24,"h":15,"abs_x":1278,"abs_y":22288}'>lb-ft</span> of torque.
+                    A CVT and
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1370,"y":21489,"w":65,"h":15,"abs_x":1430,"abs_y":22288}'>front-wheel</span>
+                    drive are standard, while <span style="white-space: nowrap;"
+                        bis_size='{"x":705,"y":21504,"w":52,"h":15,"abs_x":765,"abs_y":22303}'>all-wheel</span> drive
+                    and an <span style="white-space: nowrap;"
+                        bis_size='{"x":834,"y":21504,"w":43,"h":15,"abs_x":894,"abs_y":22303}'>8-speed</span> automatic
+                    transmission are available for those who want added control in varied conditions.
+                </p>
+
+                <p bis_size='{"x":671,"y":21533,"w":898,"h":75,"abs_x":731,"abs_y":22332}'>The exterior of the 2026
+                    Chevrolet Equinox Leominster, MA, blends rugged capability with sleek aesthetics. Standard styling
+                    includes <span style="white-space: nowrap;"
+                        bis_size='{"x":1428,"y":21533,"w":42,"h":15,"abs_x":1488,"abs_y":22332}'>17-inch</span> aluminum
+                    wheels, LED headlights,
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":812,"y":21548,"w":61,"h":15,"abs_x":872,"abs_y":22347}'>body-color</span> mirrors
+                    and a manual liftgate. For those seeking a more dynamic look, premium trims at Colonial Chevrolet
+                    offer <span style="white-space: nowrap;"
+                        bis_size='{"x":1515,"y":21548,"w":42,"h":15,"abs_x":1575,"abs_y":22347}'>20-inch</span> black
+                    machined wheels, <span style="white-space: nowrap;"
+                        bis_size='{"x":808,"y":21563,"w":58,"h":15,"abs_x":868,"abs_y":22362}'>high-gloss</span> black
+                    accents and a contrasting Mosaic Black Metallic roof. Practical enhancements like a power liftgate,
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1464,"y":21563,"w":68,"h":15,"abs_x":1524,"abs_y":22362}'>rain-sensing</span>
+                    windshield wipers and heated side mirrors improve visibility and ease of use in all types of
+                    weather. A <span style="white-space: nowrap;"
+                        bis_size='{"x":1246,"y":21578,"w":55,"h":15,"abs_x":1306,"abs_y":22377}'>dual-pane</span>
+                    sunroof is also available for those who want to enjoy natural light on the go when behind the wheel
+                    of the 2026 Chevrolet Equinox Leominster, MA.
+                </p>
+
+                <p bis_size='{"x":671,"y":21622,"w":898,"h":75,"abs_x":731,"abs_y":22421}'>The interior of the 2026
+                    Chevrolet Equinox Leominster, MA, allows you to experience a cabin designed for driver and passenger
+                    comfort. Standard features include cloth front bucket seats, a heated steering wheel and heated
+                    front seats. <span style="white-space: nowrap;"
+                        bis_size='{"x":1116,"y":21637,"w":62,"h":15,"abs_x":1176,"abs_y":22436}'>Entry-level</span>
+                    trims are equipped with a <span style="white-space: nowrap;"
+                        bis_size='{"x":1328,"y":21637,"w":35,"h":15,"abs_x":1388,"abs_y":22436}'>6-way</span> manual
+                    seat, and front passenger <span style="white-space: nowrap;"
+                        bis_size='{"x":671,"y":21652,"w":35,"h":15,"abs_x":731,"abs_y":22451}'>4-way</span>
+                    adjustability.
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":784,"y":21652,"w":66,"h":15,"abs_x":844,"abs_y":22451}'>Single-zone</span> manual
+                    climate control, a rear armrest, power windows and a
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1201,"y":21652,"w":83,"h":15,"abs_x":1261,"abs_y":22451}'>tilt-telescoping</span>
+                    steering column are also included. <span style="white-space: nowrap;"
+                        bis_size='{"x":1483,"y":21652,"w":63,"h":15,"abs_x":1543,"abs_y":22451}'>Higher-end</span> trims
+                    elevate the experience with available Evotex seating surfaces, <span style="white-space: nowrap;"
+                        bis_size='{"x":1052,"y":21667,"w":55,"h":15,"abs_x":1112,"abs_y":22466}'>dual-zone</span>
+                    automatic climate control, ventilated front seats, heated rear outboard seats and an <span
+                        style="white-space: nowrap;"
+                        bis_size='{"x":687,"y":21682,"w":134,"h":15,"abs_x":747,"abs_y":22481}'>8-way
+                        power-adjustable</span> driver seat. The rear 60/40
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":977,"y":21682,"w":69,"h":15,"abs_x":1037,"abs_y":22481}'>split-folding</span>
+                    bench adds flexibility for gear and cargo.
+                </p>
+
+                <p bis_size='{"x":671,"y":21711,"w":898,"h":91,"abs_x":731,"abs_y":22510}'>Stay connected in the 2026
+                    Chevrolet Equinox Leominster, MA, thanks to a suite of standard tech features. All trims at our
+                    Chevy dealership are outfitted with an <span style="white-space: nowrap;"
+                        bis_size='{"x":687,"y":21742,"w":52,"h":15,"abs_x":747,"abs_y":22541}'>11.3-inch</span>
+                    touchscreen with
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":842,"y":21742,"w":41,"h":15,"abs_x":902,"abs_y":22541}'>built-in</span>
+                    Google<sup style="font-size: 20px;top: 0.25em;"
+                        bis_size='{"x":928,"y":21731,"w":19,"h":21,"abs_x":988,"abs_y":22530}'>™</sup> integration,
+                    Bluetooth<sup style="font-size: 25px;top: 0.25em;"
+                        bis_size='{"x":1074,"y":21726,"w":19,"h":27,"abs_x":1134,"abs_y":22525}'>®</sup> connectivity,
+                    wireless
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1221,"y":21742,"w":101,"h":15,"abs_x":1281,"abs_y":22541}'>Apple
+                        CarPlay<sup style="font-size: 25px;top: 0.25em;"
+                            bis_size='{"x":1304,"y":21726,"w":19,"h":27,"abs_x":1364,"abs_y":22525}'>®</sup></span> and
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1349,"y":21742,"w":97,"h":15,"abs_x":1409,"abs_y":22541}'>Android Auto<sup
+                            style="font-size: 20px;top: 0.25em;"
+                            bis_size='{"x":1426,"y":21731,"w":19,"h":21,"abs_x":1486,"abs_y":22530}'>™</sup></span> and
+                    voice recognition. An <span style="white-space: nowrap;"
+                        bis_size='{"x":761,"y":21757,"w":42,"h":15,"abs_x":821,"abs_y":22556}'>11-inch</span> digital
+                    driver display provides essential information clearly and efficiently. USB ports, a <span
+                        style="white-space: nowrap;"
+                        bis_size='{"x":1304,"y":21757,"w":32,"h":15,"abs_x":1364,"abs_y":22556}'>Wi-Fi</span> hotspot
+                    and 5G connectivity keep everyone charged and online. Premium configurations add wireless device
+                    charging and OnStar
+                    <sup style="font-size: 25px;top: 0.25em;"
+                        bis_size='{"x":1210,"y":21772,"w":19,"h":27,"abs_x":1270,"abs_y":22571}'>®</sup> capabilities
+                    for added convenience.
+                </p>
+
+                <p bis_size='{"x":671,"y":21817,"w":898,"h":55,"abs_x":731,"abs_y":22616}'>All 2026 Chevrolet Equinox
+                    Leominster, MA, trims come with
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":1027,"y":21817,"w":68,"h":15,"abs_x":1087,"abs_y":22616}'>driver-assist</span>
+                    features like lane keep assist, adaptive cruise control, forward collision warnings, automatic
+                    emergency braking and blind zone steering assist. Standard IntelliBeam
+                    <sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1134,"y":21832,"w":15,"h":21,"abs_x":1194,"abs_y":22631}'>®</sup> high beams
+                    improve nighttime visibility. Available upgrades include traffic sign recognition, HD surround
+                    vision and rear pedestrian alerts.
+                </p>
+
+                <p bis_size='{"x":671,"y":21887,"w":898,"h":15,"abs_x":731,"abs_y":22686}'><strong
+                        bis_size='{"x":671,"y":21887,"w":378,"h":15,"abs_x":731,"abs_y":22686}'>Where can I test drive a
+                        2026 Chevy
+                        Equinox
+                        Leominster, MA?</strong></p>
+
+                <p bis_size='{"x":671,"y":21916,"w":898,"h":30,"abs_x":731,"abs_y":22715}'>Colonial Chevrolet invites
+                    you to test drive the 2026 Chevrolet Equinox Leominster, MA, today. Let our team help you explore
+                    the available features and specs while learning more about our new vehicle financing and lease
+                    offers.</p>
+            </div>
+
+            <div style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:11px;"
+                bis_size='{"x":656,"y":21960,"w":928,"h":1003,"abs_x":716,"abs_y":22759}'>
+
+                <p bis_size='{"x":671,"y":22271,"w":898,"h":37,"abs_x":731,"abs_y":23070}'>MSRP
+                    <br
+                        bis_size="{&quot;x&quot;:700,&quot;y&quot;:22271,&quot;w&quot;:0,&quot;h&quot;:12,&quot;abs_x&quot;:760,&quot;abs_y&quot;:23070}">*The
+                    Manufacturer's Suggested Retail Price excludes destination freight charge, tax, title, license,
+                    dealer fees and optional equipment. To see all Chevrolet vehicles’ destination freight charges,
+                    visit https://www.chevrolet.com/destination-freight-charges Dealer sets the final price.
+                </p>
+
+                <p bis_size='{"x":671,"y":22319,"w":898,"h":12,"abs_x":731,"abs_y":23118}'>DESIGN</p>
+
+                <p bis_size='{"x":671,"y":22343,"w":898,"h":12,"abs_x":731,"abs_y":23142}'>*With rear seats folded flat.
+                    Cargo and load capacity limited by weight and distribution.</p>
+
+                <p bis_size='{"x":671,"y":22366,"w":898,"h":12,"abs_x":731,"abs_y":23165}'>TECHNOLOGY</p>
+
+                <p bis_size='{"x":671,"y":22390,"w":898,"h":25,"abs_x":731,"abs_y":23189}'>*Safety or driver assistance
+                    features are no substitute for the driver's responsibility to operate the vehicle in a safe manner.
+                    Read the vehicle Owner's Manual for important feature limitations and information.
+                </p>
+
+                <p bis_size='{"x":671,"y":22426,"w":898,"h":49,"abs_x":731,"abs_y":23225}'>*Vehicle user interface is a
+                    product of Apple<sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":866,"y":22426,"w":15,"h":21,"abs_x":926,"abs_y":23225}'>®</sup>, and its terms
+                    and privacy statements apply. Requires compatible iPhone
+                    <sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1206,"y":22426,"w":15,"h":21,"abs_x":1266,"abs_y":23225}'>®</sup>, and data plan
+                    rates apply. Apple CarPlay
+                    <sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1408,"y":22426,"w":15,"h":21,"abs_x":1468,"abs_y":23225}'>®</sup>, Siri<sup
+                        style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1444,"y":22426,"w":15,"h":21,"abs_x":1504,"abs_y":23225}'>®</sup>, iPhone
+                    <sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1498,"y":22426,"w":15,"h":21,"abs_x":1558,"abs_y":23225}'>®</sup> and Apple Music
+                    <sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":701,"y":22451,"w":15,"h":21,"abs_x":761,"abs_y":23250}'>®</sup> are trademarks of
+                    Apple<sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":825,"y":22451,"w":15,"h":21,"abs_x":885,"abs_y":23250}'>®</sup> Inc., registered
+                    in the U.S. and other countries.
+                </p>
+
+                <p bis_size='{"x":671,"y":22487,"w":898,"h":70,"abs_x":731,"abs_y":23286}'>*Vehicle user interface is a
+                    product of Google<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":873,"y":22487,"w":17,"h":20,"abs_x":933,"abs_y":23286}'>™</sup>, and its terms
+                    and privacy statements apply. Requires the Android Auto
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1208,"y":22487,"w":17,"h":20,"abs_x":1268,"abs_y":23286}'>™</sup> app on Google
+                    Play
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1319,"y":22487,"w":17,"h":20,"abs_x":1379,"abs_y":23286}'>™</sup> and a
+                    compatible Android
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1453,"y":22487,"w":17,"h":20,"abs_x":1513,"abs_y":23286}'>™</sup> smartphone.
+                    Data plan rates apply. You can check which smartphones are compatible at
+                    g.co/androidauto/requirements. Android<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1154,"y":22510,"w":17,"h":20,"abs_x":1214,"abs_y":23309}'>™</sup> and Android
+                    Auto
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1256,"y":22510,"w":17,"h":20,"abs_x":1316,"abs_y":23309}'>™</sup> are trademarks
+                    of Google
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1389,"y":22510,"w":17,"h":20,"abs_x":1449,"abs_y":23309}'>™</sup> LLC. Wireless
+                    use of Android Auto<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":693,"y":22534,"w":17,"h":20,"abs_x":753,"abs_y":23333}'>™</sup> requires a
+                    compatible Android
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":849,"y":22534,"w":17,"h":20,"abs_x":909,"abs_y":23333}'>™</sup> 11.0+ phone and
+                    compatible active data plan. Check g.co/androidauto/requirements for compatibility.
+                </p>
+
+                <p bis_size='{"x":671,"y":22568,"w":898,"h":12,"abs_x":731,"abs_y":23367}'>*See onstar.com for details
+                    and limitations. Services vary by model. Service plan required.</p>
+
+                <p bis_size='{"x":671,"y":22592,"w":898,"h":25,"abs_x":731,"abs_y":23391}'>*Safety or driver assistance
+                    features are no substitute for the driver's responsibility to operate the vehicle in a safe manner.
+                    Read the vehicle Owner's Manual for important feature limitations and information.
+                </p>
+
+                <p bis_size='{"x":671,"y":22628,"w":898,"h":47,"abs_x":731,"abs_y":23427}'>*Google<sup
+                        style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":709,"y":22628,"w":17,"h":20,"abs_x":769,"abs_y":23427}'>™</sup>
+                    <span style="white-space: nowrap;"
+                        bis_size='{"x":729,"y":22639,"w":32,"h":12,"abs_x":789,"abs_y":23438}'>built-in</span> services
+                    are subject to limitations and availability may vary by vehicle, infotainment system, and location.
+                    Select service plan required. Certain Google<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1429,"y":22628,"w":17,"h":20,"abs_x":1489,"abs_y":23427}'>™</sup> actions and
+                    functionality may require account linking. User terms and privacy statements apply. Google<sup
+                        style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1016,"y":22652,"w":17,"h":20,"abs_x":1076,"abs_y":23451}'>™</sup>, Android
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1078,"y":22652,"w":17,"h":20,"abs_x":1138,"abs_y":23451}'>™</sup>, Google
+                    Play<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1156,"y":22652,"w":17,"h":20,"abs_x":1216,"abs_y":23451}'>™</sup>, Google Maps
+                    <sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1241,"y":22652,"w":17,"h":20,"abs_x":1301,"abs_y":23451}'>™</sup> and other marks
+                    are trademarks of Google<sup style="font-size: 18px;top: 0.25em;"
+                        bis_size='{"x":1447,"y":22652,"w":17,"h":20,"abs_x":1507,"abs_y":23451}'>™</sup> LLC.
+                </p>
+
+                <p bis_size='{"x":671,"y":22686,"w":898,"h":25,"abs_x":731,"abs_y":23485}'>*The system wirelessly
+                    charges one compatible mobile device. Some phones have <span style="white-space: nowrap;"
+                        bis_size='{"x":1036,"y":22686,"w":32,"h":12,"abs_x":1096,"abs_y":23485}'>built-in</span>
+                    wireless charging technology and others require a special adapter/back cover. To check for phone or
+                    other device compatibility, see my.chevrolet.com/learn or consult your carrier.
+                </p>
+
+                <p bis_size='{"x":671,"y":22722,"w":898,"h":12,"abs_x":731,"abs_y":23521}'>PERFORMANCE</p>
+
+                <p bis_size='{"x":671,"y":22746,"w":898,"h":25,"abs_x":731,"abs_y":23545}'>*Requires 1.5L Turbo engine
+                    and AWD. Maximum trailering ratings are intended for comparison purposes only. Before you buy a
+                    vehicle or use it for trailering, carefully review the Trailering section of the Owner’s Manual. The
+                    trailering capacity of your specific vehicle may vary. The weight of passengers, cargo and options
+                    or accessories may reduce the amount you can trailer.
+                </p>
+
+                <p bis_size='{"x":671,"y":22782,"w":898,"h":25,"abs_x":731,"abs_y":23581}'>*Based on comparison of
+                    starting-at MSRP of the 2025 Chevrolet Equinox EV LT with that of competing EVs. EPA estimated 319
+                    miles on a full charge with FWD. Actual range may vary based on several factors, including ambient
+                    temperature, terrain, battery age and condition, loading and how you use and maintain your vehicle.
+                </p>
+
+                <p bis_size='{"x":671,"y":22818,"w":898,"h":12,"abs_x":731,"abs_y":23617}'>SAFETY &amp; DRIVER
+                    ASSISTANCE</p>
+
+                <p bis_size='{"x":671,"y":22841,"w":898,"h":25,"abs_x":731,"abs_y":23640}'>*Safety or driver assistance
+                    features are no substitute for the driver's responsibility to operate the vehicle in a safe manner.
+                    Read the vehicle Owner's Manual for important feature limitations and information.
+                </p>
+
+                <p bis_size='{"x":671,"y":22877,"w":898,"h":49,"abs_x":731,"abs_y":23676}'>*Chevy Safety Assist includes
+                    Automatic Emergency Braking, Front Pedestrian Braking, Lane Keep Assist with Lane Departure Warning,
+                    Forward Collision Alert, IntelliBeam<sup style="top: 0.25em;font-size: 20px;"
+                        bis_size='{"x":1444,"y":22877,"w":15,"h":21,"abs_x":1504,"abs_y":23676}'>®</sup> and Following
+                    Distance Indicator. Safety or driver assistance features are no substitute for the driver's
+                    responsibility to operate the vehicle in a safe manner. Read the vehicle Owner’s Manual for
+                    important feature limitations and information.
+                </p>
+
+                <p bis_size='{"x":671,"y":22938,"w":898,"h":25,"abs_x":731,"abs_y":23737}'>*Safety or driver assistance
+                    features are no substitute for the driver’s responsibility to operate the vehicle in a safe manner.
+                    The driver should remain attentive to traffic, surroundings and road conditions at all times.
+                    Visibility, weather and road conditions may affect feature performance. Read the vehicle Owner’s
+                    Manual for more important feature limitations and information.</p>
+            </div>
+        </div>
+
+        <p style="padding-top:15px;padding-bottom:0px;font-size:15px;"
+            bis_size='{"x":400,"y":22978,"w":1440,"h":33,"abs_x":460,"abs_y":23777}' class="text-center">Powered By <a
+                href="http://automotiveadvertisinggroup.com/" rel="noreferrer noopener" style="text-decoration:none;"
+                target="_blank" bis_size='{"x":477,"y":22993,"w":187,"h":17,"abs_x":537,"abs_y":23792}'>Automotive
+                Advertising
+                Group</a> </p>
+    </div>
+</div>
