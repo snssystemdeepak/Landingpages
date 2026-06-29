@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <style>
+        .main-div {
+            max-width: 1440px;
+            overflow: hidden;
+            margin: 0 auto;
+            color: #000;
+        }
+
+        .inner2 {
+            max-width: 929px;
+            margin: 0px auto;
+        }
+
+        .offer-bg {
+            background: url('https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OFFER-BG.jpg?v=R9MADmoxl8reEk8HOlb8kQ==')center;
+            background-size: cover;
+            color: #fff;
+            padding: 1px;
+            width: 100%;
+            height: 328px;
+        }
+
+        @media screen and (max-width: 769px) {
+            .offer-bg {
+                height: 420px;
+            }
+        }
+
+        .banner-title {
+            /* background: url('https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OFFER-BG.jpg?v=R9MADmoxl8reEk8HOlb8kQ==')center;
+    background-size: cover;
+    color: #fff;
+    padding: 1px;
+    width: 100%; */
+        }
+
+        .banner-image {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .banner-image .banner-title {
+            background: #4c4c4c;
+            color: #fff;
+        }
+
+        .banner-title2 {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 4px 10px 0px 8px;
+            line-height: 1.3;
+        }
+
+        .title1 {
+            position: absolute;
+            top: 4%;
+            left: 20%;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .offer .row {
+            margin: 25px 0px;
+        }
+
+        .offer .name {
+            margin-bottom: -90px;
+            margin-top: 10px;
+            color: #000;
+            z-index: 999;
+            position: relative;
+            font-size: 38px;
+            padding-left: 15px;
+            font-weight: 100;
+        }
+
+        .offer .content-div {
+            line-height: 0.8;
+            position: relative;
+        }
+
+        .offer .content-div .dol {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .mo {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .amt {
+            font-size: 120px;
+            color: #000
+        }
+
+        .offer .content-div .lease {
+            color: #000;
+            line-height: 1.2;
+            font-size: 13px;
+            display: inline-block;
+            top: 10px;
+            padding-top: 35px;
+            right: -20px;
+            padding-left: 0px;
+        }
+
+        .offer .off-car {
+            max-width: 100%;
+            position: absolute;
+            top: -64px;
+            margin-top: -30px;
+        }
+
+        .offer-diclaimer {
+            line-height: 1.2;
+            font-size: 11px;
+            padding: 25px 0 20px
+        }
+
+        .box {
+            background: #28509b;
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* .arrow {
+    top: -9px;
+    font-size: 20px;
+    position: relative;
+    color: #28509b;
+    margin-bottom: -28px
+} */
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #4c4c4c;
+            margin: 0 auto;
+            position: relative;
+            top: -11px;
+        }
+
+        .price-modal {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 10px 0 20px 20px;
+            font-size: 12px;
+            line-height: 1.8em;
+            text-align: left;
+        }
+
+        .price-modal span {
+            font-weight: 500;
+            font-size: 21px;
+        }
+
+        .modal-text {
+            padding: 9px;
+            text-align: left;
+            background: #f7f7f7;
+        }
+
+        .modelimage {
+            padding: 0px;
+        }
+
+        .prc {
+            margin-top: -30px;
+        }
+
+        .border-line {
+            width: 10.5%;
+            margin: 0 auto;
+            border-top: 2px solid #b5a46b;
+            margin-top: 0px;
+        }
+
+        @media screen and (max-width:769px) {
+            .banner-image {
+                position: unset;
+                color: #000;
+                text-align: center;
+                margin: -1px 0;
+            }
+
+            .banner-image .title1 {
+                position: unset;
+                top: 0px;
+            }
+
+            .banner-image .price {
+                position: unset;
+                bottom: 0px;
+            }
+
+            .banner-title2 {
+                background: #4c4c4c;
+                color: #fff;
+                padding: 10px
+            }
+
+            .offer {
+                height: auto;
+                padding: 0px;
+            }
+
+            .offer .content-div .lease {
+                width: 100%;
+                position: unset;
+                display: block;
+                padding: 10px 0;
+                font-size: 14px
+            }
+
+            .offer .row .name {
+                background-color: #dbab69;
+            }
+
+            .offer .content-div {
+                margin-top: 0px;
+            }
+
+            .offer .off-car {
+                padding: 0;
+                position: relative;
+                top: 0px !important
+            }
+
+            .offer-diclaimer {
+                padding: 20px
+            }
+
+            .title1 {
+                font-size: 13px;
+                color: #fff;
+            }
+
+            .col-sm-4 {
+                padding: 0px 20px !important;
+            }
+
+            .col-sm-4 img {
+                max-width: 100% !important;
+                display: inline !important;
+            }
+
+            .point-heading {
+                text-align: center !important;
+            }
+
+            .point-text {
+                padding-left: 30% !important
+            }
+
+            .modelimage {
+                padding: 0px 10px;
+            }
+
+            .offer inner2 .col-sm-10 .p1 {
+                margin-top: -20px
+            }
+
+            .border-line {
+                width: 42%;
+                margin: 0 auto;
+                border-top: 2px solid #b5a46b;
+                margin-top: -6px;
+            }
+
+            .sh-vw {
+                padding: 35px 10px 0px !important;
+            }
+        }
+    </style>
+
+
+
+    <div style="max-width:1440px;overflow:hidden;margin:0 auto;color:#000;">
+        <div class="offer-bg">
+            <div style="padding: 30px 0 0;max-width: 935px;" class="inner2">
+
+                <h1 class="hidden-xs"
+                    style=" margin: 5px 0px 5px;font-size:31px;line-height:1.2;letter-spacing: 0px;text-transform: uppercase;">
+                    2026 Cadillac <span style="font-weight:bold;">OPTIQ</span></h1>
+
+                <h1 class="hidden-sm hidden-md hidden-lg"
+                    style="margin:5px 15px 5px;padding-bottom:22px;font-size:25px;line-height:1.2;letter-spacing: 0px;text-transform: uppercase;">
+                    2026 Cadillac <span style="font-weight:bold;">OPTIQ</span></h1>
+
+                <p class="hidden-xs" style="font-size:15px;line-height: 1.2; color: #fff;">Please contact Colonial
+                    Cadillac for the latest
+                    <br> lease and finance offers.
+                </p>
+
+
+
+                <p class="hidden-sm hidden-md hidden-lg"
+                    style="font-size:15px;line-height: 1.2; color: #fff; padding-inline: 17px;">Please contact Colonial
+                    Cadillac for the latest lease and finance offers.</p>
+                <!-- <p class="hidden-xs" style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:30px;display: none
+            ;">
+            Ultra <span style="white-space: nowrap;">Low-Mileage</span> Lease for Qualified Lessees.</p>
+            <p class="hidden-sm hidden-lg hidden-md" style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:40px;display: none;">
+            Ultra <span style="white-space: nowrap;">Low-Mileage</span> Lease for Qualified Lessees.</p> -->
+            </div>
+            <div class="offer inner2">
+                <div style="margin:0px 0 0px;" class="row">
+                    <div class="col-sm-4">
+                        <div class="content-div">
+                            <div style="display: none;" class="prc"> <sup class="dol">$</sup><span
+                                    class="amt">599</span><sup class="mo">/mo.</sup>
+                                <div style="top: 10px;padding-top: 28px;right: 0px;padding-left: 0px;" class="lease">for
+                                    36 months.
+                                    <br>$4,699 due at signing (after all offers).**
+                                    <br>$0 security deposit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 hidden-xs"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OFFER_CAR.png?v=nXAUsx0dhxysF75Bf7KbNw=="
+                            alt="2026 OPTIQ"
+                            style="width: 100%;display: inline-block;margin-top: 20px;margin-left: -25px;padding-right: 0px;"
+                            class="off-car"></div>
+                    <div class="col-sm-7 hidden-lg hidden-sm hidden-md"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OFFER_CAR.png?v=nXAUsx0dhxysF75Bf7KbNw=="
+                            alt="2026 OPTIQ" style="width:100%;display: inline-block;margin-top: 30px;" class="off-car">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="/* max-width: 1035px; */margin: 0 auto;margin-block: 0px 50px;">
+            <div class="row" style="margin: 0px auto 0px;max-width: 1053px;">
+
+
+
+
+                <div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+                    <a href="https://www.colonialcadillacwoburn.com/Lease-Specials" style="padding-bottom: 0px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/View_All_Offers_2025-Cadillac-CT4.png?v=1coF56l1kKQiXXUl42k9iA=="
+                            alt="2026 OPTIQ">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md"
+                    style="padding:7px 0!important;margin-top: -77px;">
+                    <a href="https://www.colonialcadillacwoburn.com/Lease-Specials"
+                        style="display: inline-block;padding-bottom: 1px;">
+                        <img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/View_All_Offers_2025-Cadillac-CT4.png?v=1coF56l1kKQiXXUl42k9iA=="
+                            alt="2026 OPTIQ"></a>
+                </div>
+
+
+
+
+
+                <div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&yearrange=2026-2026&ModelAndTrim=OPTIQ"
+                        style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Shop_OPTIQ.jpg?v=vdfCfEoEudoZ+D/AC1JVww=="
+                            alt="2026 OPTIQ"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&yearrange=2026-2026&ModelAndTrim=OPTIQ"
+                        style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Shop_OPTIQ.jpg?v=vdfCfEoEudoZ+D/AC1JVww=="
+                            alt="2026 OPTIQ"></a>
+                </div>
+
+
+
+
+
+                <div class="col-sm-4 text-center hidden-xs" style="
+                padding: 2px;">
+                    <a href="tel:+17818970507" style="display: inline-block;padding-bottom: 1px;margin-left:0px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/CALL_FOR_DETAILS_2025-Cadillac-CT4.png?v=IRMCQKZKfl90UiHscrnOOw=="
+                            alt="CALL FOR DETAILS"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+                    <a href="tel:+17818970507" style="display: inline-block;padding-bottom: 1px;">
+                        <img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/CALL_FOR_DETAILS_2025-Cadillac-CT4.png?v=IRMCQKZKfl90UiHscrnOOw=="
+                            alt="CALL FOR DETAILS"></a>
+                </div>
+
+
+
+
+
+                <div class="col-sm-12 text-center" style="padding:0px 15px 0px;">
+
+                    <p style="margin-top: 30px;font-size:11px;display: none;">**For Current Lessees of 2017 model year
+                        or newer Buick, Cadillac, Chevrolet and GMC vehicles : Each dealer sets own price. $599/month
+                        for 36 months. Your payments may vary. Payments are for a 2022 CADILLAC XT6 FWD Premium Luxury
+                        with an MSRP of $54,190. Based on due at signing amount of $5,699 (after all offers). 36 monthly
+                        payments total $21,564. Must show proof of lease. Option to purchase at lease end for an amount
+                        to be determined at lease signing. Lessor must approve lease. Take new retail delivery by
+                        07-05-2022. Lessee pays for maintenance, repair, excess wear and disposition fee of $595 or less
+                        at end of lease. No security deposit required. Payments may be higher in some states. Not
+                        available with other offers. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-image">
+            <div class="banner-title">
+                <div class="inner2">
+                    <div class="banner-title2">
+                        <div class="row" style="margin-bottom:1px;">
+
+                            <p class="col-sm-6 hidden-xs"
+                                style="text-transform: none;font-size:30px;margin:0;padding:5px !important;font-weight: 100; margin-left: 0% !important;">
+                                2026 CADILLAC <span style="font-weight:bold;">OPTIQ</span></p>
+
+                            <p class="col-sm-6 hidden-sm hidden-md hidden-lg"
+                                style="text-transform: none;font-size:30px;margin:0;padding:0 !important;font-weight: 100;line-height: 1;">
+                                2026 CADILLAC <span style="font-weight:bold;">OPTIQ</span></p>
+
+                            <p class="col-sm-2"
+                                style="text-transform: none;font-size:28px;font-weight:bold;padding:0 !important;margin:0;">
+                            </p>
+
+                            <p class="col-sm-4 hidden-xs"
+                                style="text-transform: none;font-size:17px;margin:0;margin-top:16px;padding:0 5px;text-align:right; margin-right: 0px !important ; text-transform:uppercase;">
+                                Starting MSRP: $50,900*
+                            </p>
+
+                            <p class="col-sm-4 hidden-sm hidden-md hidden-lg"
+                                style="text-transform: none;font-size:18px;margin:0;margin-top:1cqb;padding:0 !important; text-transform: uppercase;">
+                                Starting MSRP: $50,900*
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/HERO14.jpg?v=+cuNTm9mtvctt8NIFLB3dw=="
+            alt="2025 xt5" style="max-width:100%;display: inline-block; margin-top: -1px;">
+        <div style="max-width:920px;margin:0px auto;padding-top:0px;">
+            <div class="row text-center" id="fourbuttons" style="margin: 35px auto 30px;">
+
+
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_A_QUOTE_2025-Cadillac-CT4.gif?v=AVhS+jFbI6np5Olk5xSpmQ=="
+                            alt="Get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+
+
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_PRE-APPROVED_2025-Cadillac-CT4.gif?v=3UCixCgnjfG5TtiRjw0tgQ=="
+                            alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+
+
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/REQUEST_MORE_INFO_2025-Cadillac-CT4.gif?v=rTahY92af/Vz+VRtU+ayMw=="
+                            alt="Request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+
+
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/VALUE_YOUR_TRADE_2025-Cadillac-CT4.gif?v=9ILRwUe0vYlnhk2NtlQKwA=="
+                            alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #ffffff; color: #000000;">
+
+
+
+
+            <!-----need2code--start----->
+
+            <div style="color: #fff;background: #4c4c4c;">
+                <div style="padding: 20px 0 32px;">
+
+                    <p
+                        style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;text-transform: uppercase;">
+                        INTERIOR</p>
+
+                    <p class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/INTERIOR_OPTIQ_2026.jpg?v=lhtoNeJmr2tuh+Sb3MKm7g=="
+                    alt="2025 xt5" style="max-width:100%;">
+            </div>
+            <!-----need2code--END----->
+        </div>
+        <div style="background-color:#ffffff;color:#000000; max-width: 1440px; margin: 0 auto;">
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="col-sm-12">
+
+                    <p class="sh-vw" style="padding:26px 0px 13px;font-size:13px;line-height:1.2;text-align: center;">
+                        The patterns, textures and details capture a fresh approach to modern luxury in this Cadillac EV
+                        SUV. The 33&quot; diagonal advanced LED <span style="white-space: nowrap;">display—a</span>
+                        single continuous screen with 9k resolution—emits over 1 billion colors. With <span
+                            style="white-space: nowrap;">segment-best</span> <span
+                            style="white-space: nowrap;">second-row</span> legroom and spacious rear cargo volume, your
+                        friends and all of their gear will have plenty of room on your next road trip.
+                    </p>
+                </div>
+                <div class="row text-center" style="padding-top:0px;margin:0px; padding-bottom: 0px;">
+
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/19-SPEAKER_AKG__STUDIO_AUDIO_SYSTEM_WITH_AVAILABLE_DOLBY_ATMOS_OPTIQ_2026.jpg?v=XOnGLc4jiu15YJ74gDwiWQ=="
+                            alt="19-speaker akgstudio audio system with available dolby atmos"
+                            style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 10px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            <span style="white-space: nowrap;">19-SPEAKER</span> AKG<sup
+                                style="font-size: 22px; top: 0.1em;">™</sup>* STUDIO AUDIO SYSTEM WITH AVAILABLE DOLBY
+                            Atmos<sup style="font-size: 26px; top: 0.2em;">®</sup>
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Elevating every drive with a
+                            <span style="white-space: nowrap;">multi-dimensional</span> sound experience
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/RECYCLED_MATERIALS_OPTIQ_2026.jpg?v=mOUJWo3E7BFpXFQJMYdOvQ=="
+                            alt="recycled materials" style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            RECYCLED MATERIALS</p>
+
+                        <p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">OPTIQ's patterned accent fabric
+                            is woven from yarn made from 100% recycled materials; the available PaperWood veneer is made
+                            up of equal parts of Tulip wood and recycled newspaper</p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/126-COLOR_DUAL-ZONE_AMBIENT_LIGHTING_OPTIQ_2026.jpg?v=p5frgOSrW7fd2PEQWWgcmQ=="
+                            alt="126-color dual-zone ambient lighting" style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            <span style="white-space: nowrap;">126-COLOR</span> <span
+                                style="white-space: nowrap;">DUAL-ZONE</span> AMBIENT LIGHTING
+                        </p>
+
+                        <p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">An array of color options set
+                            the mood or express your personality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div style="margin-bottom: 25px; margin-top: 3px;">
+            <div class="inner-4">
+                <div class="row text-center"
+                    style="padding-bottom: 0px; margin: 0px; background-color: #4c4c4c; color: #ffffff;">
+
+                    <div class="col-sm-2" style="padding: 2px;">
+                    </div>
+                    <div class="col-sm-4" style="padding: 2px;">
+
+                        <p style="padding-top: 40px; padding-inline: 1px; font-size: 17px;">VIBRANT COLORWAYS</p>
+
+                        <p class="hidden-xs" style="padding-top: 6px; padding-inline: 20px; font-size: 13px;">Express
+                            your personality with genuine, innovative materials and exciting luxury hues, including
+                            available Autumn Canyon and available Phantom Blue</p>
+
+
+                        <p class="hidden-sm hidden-lg hidden-md"
+                            style="padding-top: 0px; padding-inline: 20px; font-size: 13px; padding-bottom: 25px;">
+                            Express your personality with genuine, innovative materials and exciting luxury hues,
+                            including available Autumn Canyon and available Phantom Blue</p>
+
+
+                    </div>
+                    <div class="col-sm-6" style="padding-top: 0px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/VIBRANT-COLORWAYS.jpg?v=aYaLHZ0FnZK779xQrAxVhg=="
+                            alt="vibrant colorways" style="max-width: 100%; display: inline-block;"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+
+            <div style="background-color:#ffffff;color:#000000;">
+                <div style="padding-top:0px;padding-bottom:0px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-1_OPTIQ_2026.jpg?v=WfXk62vxBGlujJxpYVcCNA=="
+                        alt="image" style="width:100%; margin-top: 30px;"> </div>
+
+
+                <div id="viewinventory" style="padding-top:30px;padding-bottom: 30px;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&yearrange=2026-2026&ModelAndTrim=OPTIQ"
+                        style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_VI_.gif?v=6deRZPrbl8FHGCyJgCbgPw=="
+                            alt="view inventory" style="max-width:100%;"> </a>
+                </div>
+
+
+                <!-----need2code--END----->
+
+                <div bis_skin_checked="1" style="color: #fff;background: #4c4c4c;">
+                    <div bis_skin_checked="1" style="padding: 25px 0 35px;">
+
+                        <p style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;">PERFORMANCE</p>
+
+                        <p class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PERFORMANCE_OPTIQ_2026-2.jpg?v=p/CyHd2ZDvGh5zfCGvj3KA=="
+                        alt="performance" style="width:100%;">
+                </div>
+
+
+                <div bis_skin_checked="1" style="background-color:#ffffff;color:#000000;">
+                    <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                        <div bis_skin_checked="1" class="col-sm-12">
+
+                            <p class="sh-vw hidden-xs"
+                                style="padding:25px 0px 10px;font-size:14px;line-height:1.2;text-align: center;">
+                                Flirt with the asphalt with the help of our battery platform, its near 50/50 vehicle
+                                weight distribution, low center of gravity and enhanced AWD system providing better
+                                suspension and driving dynamics. Spirited performance, thrilling agility and electric
+                                muscle are yours to command in this electric SUV.
+                            </p>
+
+                            <p class="sh-vw hidden-sm hidden-lg hidden-md"
+                                style="padding:25px 0px 20px;font-size:14px;line-height:1.2;text-align: center;">
+                                Flirt with the asphalt with the help of our battery platform, its near 50/50 vehicle
+                                weight distribution, low center of gravity and enhanced AWD system providing better
+                                suspension and driving dynamics. Spirited performance, thrilling agility and electric
+                                muscle are yours to command in this electric SUV.
+                            </p>
+                        </div>
+                        <div bis_skin_checked="1" class="row text-center"
+                            style="padding-top:25px;margin:0px; padding-bottom: 0px;">
+                            <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/DRIVER_MODES_OPTIQ_2026.jpg?v=4KdgwYm9/qMEnNiGLHGmhA=="
+                                    alt="driver modes" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    DRIVER MODES</p>
+
+                                <p style="padding:10px 5px 7px;font-size:13px;line-height:1.2;">Customize your driving
+                                    preferences or adapt to changing road conditions</p>
+                            </div>
+                            <div bis_skin_checked="1" class="col-sm-8" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/REGENERATIVE_BRAKING_OPTIQ_2026.jpg?v=Z7y7+qj2HnyEIkh7MrpxJA=="
+                                    alt="regenerative braking" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    REGENERATIVE BRAKING</p>
+
+                                <p
+                                    style="padding:10px 0 7px;margin-bottom:0;font-size:13px;line-height:1.2;font-weight:500;">
+                                    REGEN ON DEMAND*</p>
+
+                                <p style="padding:10px 2px 2px;font-size:13px;line-height:1.2;">A <span
+                                        style="white-space: nowrap;">driver-controlled</span> deceleration feature that
+                                    allows you to slow down or stop your OPTIQ with a dedicated, <span
+                                        style="white-space: nowrap;">pressure-sensitive</span> paddle located on the
+                                    steering wheel. The system also converts kinetic energy of your OPTIQ into
+                                    electricity, which is stored in your battery pack for future use.
+                                </p>
+
+                                <p
+                                    style="padding:10px 0 7px;margin-bottom:0;font-size:13px;line-height:1.2;font-weight:500;">
+                                    <span style="white-space: nowrap;">ONE-PEDAL</span> DRIVING*
+                                </p>
+
+                                <p style="padding:10px 2px 2px;font-size:13px;line-height:1.2;">Allows you to slow down
+                                    and stop your OPTIQ using only the accelerator under most driving conditions. The
+                                    system also converts kinetic energy from the vehicle's forward momentum into
+                                    electricity, which is stored in the battery pack for future use.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="inner-4" style="padding-top: 15px;">
+                    <div class="row text-center"
+                        style="padding-bottom: 0px; margin: 0px; background-color: #4c4c4c; color: #ffffff;">
+                        <div class="col-sm-6" style="padding: 0px;"><img
+                                src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/DUAL-MOTOR-ALL-WHEEL-DRIVE2_OPTIQ_2026.jpg?v=KUKUwxNWAlrjuX/2lEQl1Q=="
+                                alt="dual motor all-wheel drive"
+                                style="max-width: 100%; display: inline-block;margin-left: -4px;"></div>
+                        <div class="col-sm-4" style="padding: 2px;">
+
+                            <p style="padding-top: 40px; padding-inline: 1px; font-size: 17px;">DUAL MOTOR <span
+                                    style="white-space: nowrap;">ALL-WHEEL</span> DRIVE</p>
+
+                            <p class="hidden-xs" style="padding-top: 6px; padding-inline: 20px; font-size: 13px;">
+                                Available dual motors deliver 440 horsepower and 498 <span
+                                    style="white-space: nowrap;">lb.-ft.</span> of <span
+                                    style="white-space: nowrap;">near-instantaneous</span> torque for full acceleration
+                                behind all four wheels as soon as your foot hits the pedal</p>
+
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="padding-top: 0px; padding-inline: 20px; font-size: 13px; padding-bottom: 25px;">
+                                Available dual motors deliver 440 horsepower and 498 <span
+                                    style="white-space: nowrap;">lb.-ft.</span> of <span
+                                    style="white-space: nowrap;">near-instantaneous</span> torque for full acceleration
+                                behind all four wheels as soon as your foot hits the pedal</p>
+
+
+                        </div>
+                        <div class="col-sm-2" style="padding: 2px;">
+                        </div>
+                    </div>
+                </div>
+                <div bis_skin_checked="1" style="background-color:#ffffff;color:#000000;">
+                    <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                        <div bis_skin_checked="1" class="row text-center"
+                            style="padding-top:25px;margin:0px; padding-bottom: 0px;">
+                            <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/NEAR_INSTANTANEOUS_TORQUE_OPTIQ_2026.jpg?v=3ZLD/aLKRUjBM0ikJu4Lsw=="
+                                    alt="near instantaneous torque" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    NEAR INSTANTANEOUS TORQUE</p>
+
+                                <p style="padding:10px 5px 7px;font-size:13px;line-height:1.2;">Feel the exhilaration
+                                    when you press the pedal and OPTIQ immediately launches into powerful, smooth
+                                    acceleration</p>
+                            </div>
+                            <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PRECISION_HANDLING_OPTIQ_2026.jpg?v=78lcNIiGzEMmFJPIcRMzaQ=="
+                                    alt="precision handling" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    PRECISION HANDLING</p>
+
+                                <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">OPTIQ is designed to
+                                    feel firmly planted on the road for agile cornering and solid control
+                                </p>
+                            </div>
+                            <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/AGGRESSIVE_AERODYNAMICS_OPTIQ_2026.jpg?v=rEw1+s2c2wk7wbEeqoAuSg=="
+                                    alt="aggressive aerodynamics" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    AGGRESSIVE AERODYNAMICS</p>
+
+                                <p style="padding:10px 2px 2px;font-size:13px;line-height:1.2;">OPTIQ is designed to
+                                    slip cleanly through the air, optimizing every mile
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top:20px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-2_OPTIQ_2026.jpg?v=GxZqfAn2s9WTts3qpyZCgA=="
+                        alt="image 2" style="max-width:100%;"> </div>
+
+
+
+                <div id="Get" style="padding:30px 0 30px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_GAQ_.gif?v=QBSYDmgvOajvF0xb9S71Tw=="
+                            alt="get a quote" style="max-width:100%;"> </a>
+                </div>
+
+
+
+                <div bis_skin_checked="1"
+                    style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #ffffff; color: #000000;">
+                    <!----need2code------>
+                    <div bis_skin_checked="1" style="color: #ffffff;background: #4c4c4c;">
+                        <div bis_skin_checked="1" style="padding: 20px 0 35px;">
+
+                            <p style="text-align: center;font-size: 34px;margin: 0px;padding-bottom:0px;">CHARGING AND
+                                RANGE</p>
+
+                            <p class="border-line"></p>
+                        </div> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/CHARGING_AND_RANGE2.jpg?v=6MHEKdgqMYPAKnJisAYhIQ=="
+                            alt="charging and range" style="max-width:100%;">
+                    </div>
+                    <!-----need2code--END----->
+                    <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                        <div bis_skin_checked="1" class="col-sm-12">
+
+                            <p class="sh-vw"
+                                style="padding:26px 10px 13px;font-size:13px;line-height:1.2;text-align: center;">
+                                OPTIQ offers an <span style="white-space: nowrap;">EPA-estimated</span> 317 miles* of
+                                range with RWD. Charge up to <span style="white-space: nowrap;">36-miles</span> in about
+                                an hour* with 11.5 kW charging. Easily charge at home, at work or on the road with an
+                                <span style="white-space: nowrap;">ever-expanding</span> charging network. And through
+                                the myCadillac mobile app,* OPTIQ has access to over 250,000 public chargers throughout
+                                the U.S. and Canada, including more than 23,500 Tesla Super chargers.*
+                            </p>
+                        </div>
+                        <div bis_skin_checked="1" class="row text-center" style="padding-top:25px;margin:0px;">
+                            <div bis_skin_checked="1" class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/STANDARD_NACS_CHARGING_PORT.jpg?v=2Lb44hYOs1SzNGjdKravlA=="
+                                    alt="standard nacs charging port" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    STANDARD NACS CHARGING PORT
+                                </p>
+
+                                <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">The North American
+                                    Charging Standard (NACS) charge port supports home and DC fast charging.* Charge
+                                    your vehicle at <span style="white-space: nowrap;">non-NACS</span> home and public
+                                    chargers with the use of a <span style="white-space: nowrap;">GM-approved</span>
+                                    adapter.
+                                </p>
+                            </div>
+                            <div bis_skin_checked="1" class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/19.2_kW_AC_AND_DC_FAST_CHARGING_OPTIQ_2026.jpg?v=iDTUI8VWqQ/DMtiXfn1PcQ=="
+                                    alt="19 2 kw ac and dc fast charging" style="max-width:100%;display: inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    19.2 kW AC AND DC FAST CHARGING</p>
+
+                                <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">Enjoy up to 59 miles of
+                                    range* per hour of charge with an available GM Energy PowerShift wall charger and up
+                                    to 81 miles of range* in about 10 minutes at a public DC Fast Charging station</p>
+                            </div>
+                        </div>
+                        <div bis_skin_checked="1" class="row text-center" style="padding-top:15px;margin:0px;">
+                            <div bis_skin_checked="1" class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/BACKUP_POWER_FOR_YOUR_HOME_OPTIQ_2026.jpg?v=oYK+Ntlp3wGDvsf1GCHSDw=="
+                                    alt="backup power for your home" style="max-width:100%;display:inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    BACKUP POWER FOR YOUR HOME
+                                </p>
+
+                                <p style="padding:10px 2px 12px;font-size:13px;line-height:1.2;">• What is <span
+                                        style="white-space: nowrap;">Vehicle-to-Home</span> (V2H) technology and how
+                                    does it <span style="white-space: nowrap;">work? Vehicle-to-Home</span> (V2H)
+                                    technology allows your <span style="white-space: nowrap;">V2H-capable</span> GM EV
+                                    to act as a source of backup power for your properly equipped home* in a blackout.
+                                    By connecting your <span style="white-space: nowrap;">V2H-capable</span> GM EV to
+                                    your home energy system, you can use the energy stored in the vehicle’s battery to
+                                    provide power to select household appliances during power outages.
+                                    <br>
+                                    <br>• Can I use my EV to power my home during a blackout?
+                                    <br>Your <span style="white-space: nowrap;">V2H-capable</span> GM EV can provide
+                                    power to your properly equipped home* in a blackout.
+                                    <br>
+                                    <br>• What do I need to set up <span
+                                        style="white-space: nowrap;">Vehicle-to-Home</span> (V2H) functionality in my
+                                    home?
+                                    <br>To enable V2H functionality, you’ll need a GM Energy PowerShift Charger and GM
+                                    Energy V2H Enablement Kit* to move energy between your <span
+                                        style="white-space: nowrap;">V2H-capable</span> GM EV and your properly equipped
+                                    home* in a blackout.
+                                    <br>
+                                    <br>• Will I need an adapter to enable V2H?
+                                    <br>The <span style="white-space: nowrap;">NACS-native</span> OPTIQ requires the GM
+                                    PowerShift AC Charging Adapter to charge with the GM Energy PowerShift and the GM
+                                    CCS DC Adapter to discharge power from your vehicle’s battery to your home.
+                                </p>
+                            </div>
+                            <div bis_skin_checked="1" class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/MYCADILLAC_MOBILE_AND_IN-VEHICLE_APPS_OPTIQ_2026.jpg?v=8J6ifBl4K8l4GgNV7729xg=="
+                                    alt="mycadillac mobile and in-vehicle apps" style="max-width:100%;display: inline;">
+
+                                <p
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    MYCADILLAC MOBILE AND <span style="white-space: nowrap;">IN-VEHICLE</span> APPS</p>
+
+                                <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">Managing your electric
+                                    life is easy with the myCadillac mobile app* and <span
+                                        style="white-space: nowrap;">in-vehicle</span> apps,* which can help you plan
+                                    your routes and provide compatible public charging station locations and
+                                    availability in real time.
+                                    <br>
+                                    <br>• Plan Route: Find the most <span
+                                        style="white-space: nowrap;">energy-efficient</span> routes and the best
+                                    charging stations to use along the way
+                                    <br>
+                                    <br>• Explore Range: Quickly see how far your EV can travel on its current state of
+                                    charge
+                                    <br>
+                                    <br>• Find Charging Stations: View charging stations on the map and see <span
+                                        style="white-space: nowrap;">real-time</span> availability. Filter by your
+                                    preferred provider, plug type and charging speed
+                                    <br>
+                                    <br>• Plug and Charge: Plug in and charge immediately with qualifying DC Fast
+                                    Charging public stations (when enrolled through myCadillac)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div bis_skin_checked="1" style="background-color:#4C4C4C;color:#ffffff; max-width: 1440px;">
+                        <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                            <div bis_skin_checked="1" class="col-sm-12">
+
+                                <p class="sh-vw hidden-xs"
+                                    style="padding:25px 0px 10px;font-size:16px;line-height:1.2;text-align: center;">
+                                    YOUR EV LIFE BEGINS HERE
+                                </p>
+
+                                <p class="sh-vw hidden-sm hidden-lg hidden-md"
+                                    style="padding:25px 0px 20px;font-size:16px;line-height:1.2;text-align: center;">
+                                    YOUR EV LIFE BEGINS HERE
+                                </p>
+                            </div>
+                            <div bis_skin_checked="1" class="row text-center"
+                                style="padding-top:25px;margin:0px; padding-bottom: 12px;">
+                                <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/HOME_CHARGING_OPTIQ_2026.jpg?v=IrVXOoEfYvF3sLH++5iLag=="
+                                        alt="home charging" style="max-width:100%;display:inline;">
+
+                                    <p
+                                        style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                        HOME CHARGING</p>
+
+                                    <p style="padding:10px 5px 7px;font-size:13px;line-height:1.2;">Conveniently charge
+                                        at home</p>
+                                </div>
+                                <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PUBLIC_CHARGING_OPTIQ_2026.jpg?v=okUCD136yRXX9DFR8GkMdQ=="
+                                        alt="public charging" style="max-width:100%;display:inline;">
+
+                                    <p
+                                        style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                        PUBLIC CHARGING</p>
+
+                                    <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Compatible with a
+                                        nationwide charging network
+                                    </p>
+                                </div>
+                                <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/RANGE_OPTIQ_2026.jpg?v=GQI1fnSeKuyqaluAa8Q4AA=="
+                                        alt="range" style="max-width:100%;display:inline;">
+
+                                    <p
+                                        style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                        RANGE</p>
+
+                                    <p style="padding:10px 2px 2px;font-size:13px;line-height:1.2;">Designed for daily
+                                        driving and long road trips
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div bis_skin_checked="1" style="padding-top:30px;padding-bottom: 0px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-3_OPTIQ_2026.jpg?v=VXHdJf2stWTEwaIV2eteaw=="
+                            alt="image 3" style="max-width:100%;"> </div>
+                    <div bis_skin_checked="1" id="viewinventory" style="padding-top:30px;padding-bottom: 30px;">
+                        <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&yearrange=2026-2026&ModelAndTrim=OPTIQ"
+                            style="display:block;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_VI_.gif?v=6deRZPrbl8FHGCyJgCbgPw=="
+                                alt="view inventory" style="max-width:100%;"> </a>
+                    </div>
+
+
+                </div>
+
+
+                <div style="color: #fff;background: #4c4c4c;">
+                    <div style="padding: 20px 0 30px;">
+
+                        <p class="hidden-xs" style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 0px;">
+                            TECHNOLOGY</p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="text-align: center;font-size: 36px;margin: 0;padding:5px 10px 15px;line-height: 1.2em;">
+                            TECHNOLOGY</p>
+
+                        <p class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/TECHNOLOGY_OPTIQ_2026.2.jpg?v=AdNhERQfb9gBQ9V3Dx5jiQ=="
+                        alt="technology" style="max-width:100%;">
+                </div>
+            </div>
+            <!-----need2code--END----->
+            <div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+            <div bis_skin_checked="1"
+                style="background-color:#ffffff;color:#000000; max-width: 1440px; margin: 0 auto;">
+                <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                    <div bis_skin_checked="1" class="col-sm-12">
+
+                        <p class="sh-vw"
+                            style="padding:26px 0px 13px;font-size:13px;line-height:1.2;text-align: center;">
+                            Intelligent innovations let you curate an exceptional experience.
+                        </p>
+                    </div>
+                    <div bis_skin_checked="1" class="row text-center"
+                        style="padding-top:0px;margin:0px; padding-bottom: 0px;">
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/SUPER_CRUISE__OPTIQ_2026.jpg?v=P4u7TMbKpxVuo4fC6zE1xw=="
+                                alt="Super Cruise" style="max-width:100%;display:inline;">
+
+                            <p
+                                style="padding:25px 0 10px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                Super Cruise<sup style="font-size: 22px; top: 0.2em;">®</sup>*</p>
+
+                            <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Standard <span
+                                    style="white-space: nowrap;">hands-free</span> driver assistance technology with
+                                <span style="white-space: nowrap;">3-year</span> OnStar<sup
+                                    style="font-size: 24px; top: 0.2em;">®</sup> One Super Cruise<sup
+                                    style="font-size: 22px; top: 0.2em;">®</sup> plan,* awarded MotorTrend Best Tech
+                                2025, Driver Assistance
+                            </p>
+                        </div>
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OVER-THE-AIR_SOFTWARE_UPDATES_OPTIQ_2026.jpg?v=B6T/rN7Nr9LIjze1+tCsmg=="
+                                alt="over-the-air software updates" style="max-width:100%;display:inline;">
+
+                            <p
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                <span style="white-space: nowrap;">OVER-THE-AIR</span> SOFTWARE UPDATES
+                            </p>
+
+                            <p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">Receive free enhancements,
+                                purchase new upgrades and get software refinements right from your driveway using <span
+                                    style="white-space: nowrap;">over-the-air</span> technology. Updates are downloaded
+                                and installed via Connected Access* or by connecting your vehicle to a <span
+                                    style="white-space: nowrap;">Wi-Fi*</span> <span
+                                    style="white-space: nowrap;">network—no</span> paid data plan necessary.</p>
+                        </div>
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/GOOGLE_BUILT-IN__COMPATIBILITY_OPTIQ_2026.jpg?v=G7MSE+c/v7vP37zQs7IPtQ=="
+                                alt="google built-incompatibility" style="max-width:100%;display:inline;">
+
+                            <p
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                Google<sup style="font-size: 18px; top: 0.1em;">™</sup> <span
+                                    style="white-space: nowrap;">BUILT-IN*</span> COMPATIBILITY
+                            </p>
+
+                            <p style="padding:10px 2px 10px;font-size:13px;line-height:1.2;">Control, connect and access
+                                live traffic, podcasts, apps and more, like smart home integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div style="padding-top:10px;"> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-4_OPTIQ_2026.jpg?v=Gx6U1DbHObyxhNc+chJdgQ=="
+                    alt="image 4" style="max-width:100%;"> </div>
+
+
+            <div bis_skin_checked="1" id="Get" style="padding:30px 0 30px;">
+                <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_GAQ_.gif?v=QBSYDmgvOajvF0xb9S71Tw=="
+                        alt="get a quote" style="max-width:100%;"> </a>
+            </div>
+
+
+
+            <div style="color: #fff;background: #4c4c4c;">
+                <div style="padding: 20px 0 30px;">
+
+                    <p class="hidden-xs" style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 0px;">
+                        EXTERIOR</p>
+
+                    <p class="hidden-sm hidden-md hidden-lg"
+                        style="text-align: center;font-size: 36px;margin: 0;padding:5px 10px 15px;line-height: 1.2em;">
+                        EXTERIOR</p>
+
+                    <p class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/EXTERIOR_OPTIQ_2026.jpg?v=eqLKnAv/7w0iwX29IcS5pg=="
+                    alt="exterior" style="max-width:100%;">
+            </div>
+
+            <div style="max-width: 1440px; margin: 0 auto; background-color: #fff; color: #000;"></div>
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 0px;">
+                    <div class="col-sm-12" style="padding:5px;">
+
+                        <p style="padding:10px 15px 8px;font-size:13px;line-height:1.2;">OPTIQ flaunts proportions that
+                            evoke athletic prowess. A low roofline and large, deeply sloped windshield give the
+                            impression of movement, even when standing still. Widely placed 20&quot; or available
+                            21&quot; wheels add to its confident, assertive stance.
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/CHOREOGRAPHED_EXTERIOR_LED_LIGHTING_OPTIQ_2026.jpg?v=csgF3lLkrZJzdSLynUvv8Q=="
+                            alt="choreographed exterior led lighting" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            CHOREOGRAPHED EXTERIOR LED LIGHTING
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            CHOREOGRAPHED EXTERIOR LED LIGHTING
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">An available choreographed dance
+                            of light begins at the grille and headlamps and then moves around your vehicle each time you
+                            approach or walk away</p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PANORAMIC_GLASS_ROOF_WITH_POWER_SHADE_OPTIQ_2026.jpg?v=/lOf3NHtllS4AJqcUOgXCA=="
+                            alt="panoramic glass roof with power shade" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            PANORAMIC GLASS ROOF WITH POWER SHADE
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            PANORAMIC GLASS ROOF WITH POWER SHADE
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">The fixed <span
+                                style="white-space: nowrap;">full-glass</span> roof stretches uninterrupted, welcoming
+                            natural light and providing an expansive view from every seat</p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/LED_SLIMLINE_HEADLAMPS_OPTIQ_2026.jpg?v=jlIEogtekxlZ5bjmwwVsBA=="
+                            alt="led slimline headlamps" style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            LED SLIMLINE HEADLAMPS
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">LED technology elevates basic
+                            function into artful design; LED projectors stack to create a thin vertical signature and
+                            bring available choreographed lighting to life</p>
+                    </div>
+
+                </div>
+                <div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 0px;">
+                    <div class="col-sm-6" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OPTIQ_REAR_QUARTER-WINDOW_GRAPHIC_OPTIQ_2026.jpg?v=6yGNBVQRG0fb+G7YkIUTKQ=="
+                            alt="optiq rear quarter-window graphic" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            OPTIQ REAR <span style="white-space: nowrap;">QUARTER-WINDOW</span> GRAPHIC
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            OPTIQ REAR <span style="white-space: nowrap;">QUARTER-WINDOW</span> GRAPHIC
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">A <span
+                                style="white-space: nowrap;">Mondrian-patterned</span> rear <span
+                                style="white-space: nowrap;">quarter-window</span> graphic fades to the rear,
+                            strengthening the fastback effect and low roofline of OPTIQ</p>
+                    </div>
+                    <div class="col-sm-6" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OPTIQ-V_REAR_QUARTER-WINDOW_GRAPHIC_OPTIQ_2026.jpg?v=uUdQrN+u69jEQuEKYee6DQ=="
+                            alt="optiq-v rear quarter-window graphic" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            <span style="white-space: nowrap;">OPTIQ-V</span> REAR <span
+                                style="white-space: nowrap;">QUARTER-WINDOW</span> GRAPHIC
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            <span style="white-space: nowrap;">OPTIQ-V</span> REAR <span
+                                style="white-space: nowrap;">QUARTER-WINDOW</span> GRAPHIC
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;"><span
+                                style="white-space: nowrap;">OPTIQ-V</span> features an elevated homage to the iconic
+                            Mondrian pattern that has become a symbol of the <span
+                                style="white-space: nowrap;">V-Series</span> excellence since inception</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="padding-top:15px;"> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-5_OPTIQ_2026.jpg?v=K5fNEpERfHsh+PMQ23KHaQ=="
+                    alt="image 5" style="max-width:100%;"> </div>
+            <div id="viewinventory" style="padding:30px 0;">
+                <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?Make=Cadillac&yearrange=2026-2026&ModelAndTrim=OPTIQ"
+                    style="display:block;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_VI_.gif?v=6deRZPrbl8FHGCyJgCbgPw=="
+                        alt="viewinventory" style="max-width:100%;"> </a>
+            </div>
+            <div bis_skin_checked="1" style="color: #fff;background: #4c4c4c;">
+                <div bis_skin_checked="1" style="padding: 25px 0 35px;">
+
+                    <p style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;">2026 <span
+                            style="white-space: nowrap;">OPTIQ-V</span></p>
+
+                    <p class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/2026_OPTIQ-V_OPTIQ_2026.jpg?v=kqgmV40wJyYybpYceV/j9g=="
+                    alt="2026 OPTIQ-V" style="width:100%;">
+            </div>
+
+
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 0px;">
+                    <div class="col-sm-12" style="padding:5px;">
+
+                        <p style="padding:10px 15px 8px;font-size:13px;line-height:1.2;">WELCOME TO THE NEXT LEVEL
+                        </p>
+
+                        <p style="padding:10px 15px 8px;font-size:13px;line-height:1.2;">A member of the <span
+                                style="white-space: nowrap;">fifth-generation</span> of Cadillac vehicles to earn the
+                            <span style="white-space: nowrap;">V-Series</span> badge, <span
+                                style="white-space: nowrap;">OPTIQ-V</span> pairs luxurious refinement with thrilling
+                            performance for an <span style="white-space: nowrap;">all-electric</span> SUV that’s ready
+                            to conquer every corner.
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/DESIGN_OPTIQ_2026.jpg?v=IQz7dAoZ1TJwcwfqTuK1HQ=="
+                            alt="design" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            DESIGN
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            DESIGN
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Signature <span
+                                style="white-space: nowrap;">V-Series</span> badging lets the world know that <span
+                                style="white-space: nowrap;">OPTIQ-V</span> delivers commanding style that effortlessly
+                            turns <span style="white-space: nowrap;">heads – and corners – on</span> any road.</p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PERFORMANCE_OPTIQ_2026.jpg?v=SSJoArO8dsIM6CqQXolMcg=="
+                            alt="performance" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            PERFORMANCE
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            PERFORMANCE
+                        </p>
+
+                        <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">With a dual motor AWD capable of
+                            <span style="white-space: nowrap;">near-instant</span> torque, the agile and responsive
+                            <span style="white-space: nowrap;">OPTIQ-V</span> luxury sport SUV makes every drive feel
+                            electric and designed instinctively for you.
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/TECHNOLOGY_OPTIQ_2026.jpg?v=DxV9cxI2UtIdAEABRP7uRQ=="
+                            alt="technology" style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            TECHNOLOGY
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Innovations to enhance the
+                            driving experience and optimize performance for every drive.</p>
+                    </div>
+
+                </div>
+                <div class="row text-center" style="padding-top:0px;margin:0px;padding-bottom: 0px;">
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/POWER_YOU_CAN_HEAR_OPTIQ_2026.jpg?v=rmpofv/taLZ4/4fd9dH/qw=="
+                            alt="power you can hear" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            POWER YOU CAN HEAR
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            POWER YOU CAN HEAR
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;">Interior and exterior sounds are
+                            synchronized to provide a unique sonic experience.</p>
+                    </div>
+                    <div class="col-sm-8" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/CHARGING_AND_RANGE_OPTIQ_2026.jpg?v=Gh5xrM/gPtBBHo9G+QBMNQ=="
+                            alt="charging and range" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            CHARGING AND RANGE
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            CHARGING AND RANGE
+                        </p>
+
+                        <p style="padding:10px 2px 7px;font-size:13px;line-height:1.2;"><span
+                                style="white-space: nowrap;">OPTIQ-V</span> offers an <span
+                                style="white-space: nowrap;">EPA-estimated</span> 278 miles* of range. Charge up to 31
+                            miles in about an hour* with 11.5 kW charging. Easily charge at home, at work or on the road
+                            with an <span style="white-space: nowrap;">ever-expanding</span> charging network. And
+                            through the myCadillac mobile app,* the <span style="white-space: nowrap;">OPTIQ-V</span>
+                            <span style="white-space: nowrap;">mid-size</span> electric SUV has access to over 250,000
+                            public chargers throughout the U.S. and Canada, including more than 23,500 Tesla
+                            Superchargers.*
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="padding-top:15px;"> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-6_OPTIQ_2026.jpg?v=3FLYJRCUaQzEQK7VoM8Reg=="
+                    alt="image 6" style="max-width:100%;"> </div>
+
+            <div bis_skin_checked="1" id="Get" style="padding:30px 0 30px;">
+                <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/Colonial_Cadillac_Optiq_2026_MOVGIF_GAQ_.gif?v=QBSYDmgvOajvF0xb9S71Tw=="
+                        alt="get a quote" style="max-width:100%;"> </a>
+            </div>
+
+
+
+            <div style="color: #fff;background: #4c4c4c;">
+                <div style="padding: 20px 0 30px;">
+
+                    <p class="hidden-xs" style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 0px;">
+                        SAFETY AND DRIVER ASSISTANCE</p>
+
+                    <p class="hidden-sm hidden-md hidden-lg"
+                        style="text-align: center;font-size: 36px;margin: 0;padding:5px 10px 15px;line-height: 1.2em;">
+                        SAFETY AND DRIVER ASSISTANCE</p>
+
+                    <p class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/SAFETY_AND_DRIVER_ASSISTANCE_OPTIQ_2026.jpg?v=e+r4vio6b5hLogYa1hc3DA=="
+                    alt="safety and driver assistance" style="max-width:100%;">
+            </div>
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 15px;">
+                    <div class="col-sm-12" style="padding:5px;">
+
+                        <p style="padding:10px 15px 8px;font-size:13px;line-height:1.2;">OPTIQ is a bold step in our
+                            commitment to a <span style="white-space: nowrap;">zero-crash</span> future. Our <span
+                                style="white-space: nowrap;">5-passenger</span> EV SUV offers an extensive collection of
+                            safety and driver assistance features to help inspire confidence on every drive.
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/STANDARD-1_OPTIQ_2026.jpg?v=CtOSgSM7bTdZh11seXQQvA=="
+                            alt="STANDARD 1" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD
+                            <br>INTERSECTION AUTOMATIC EMERGENCY BRAKING
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD
+                            <br>INTERSECTION AUTOMATIC EMERGENCY BRAKING
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/STANDARD-2_OPTIQ_2026.jpg?v=y5i03PdziTY5Lq27k6IcOA=="
+                            alt="STANDARD 2" style="max-width:100%;display:inline;">
+
+                        <p class="hidden-xs"
+                            style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD
+                            <br>ENHANCED AUTOMATIC EMERGENCY BRAKING
+                        </p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD
+                            <br>ENHANCED AUTOMATIC EMERGENCY BRAKING
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/STANDARD-3_OPTIQ_2026.jpg?v=t7Xcz6X5Qzbnk3ggxz1RrA=="
+                            alt="STANDARD 3" style="max-width:100%;display:inline;">
+
+                        <p style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD
+                            <br>LANE KEEP ASSIST WITH LANE DEPARTURE WARNING
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div bis_skin_checked="1"
+                style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #4C4C4C; color: #ffffff;">
+                <!----need2code------>
+                <!-----need2code--END----->
+                <div bis_skin_checked="1" style="max-width:929px;margin:0px auto;">
+                    <div bis_skin_checked="1" class="col-sm-12">
+
+                        <p class="sh-vw"
+                            style="padding:40px 10px 13px;font-size:16px;line-height:1.2;text-align: center;margin-bottom: -12px;">
+                            STANDARD ON OPTIQ.
+                        </p>
+                    </div>
+                    <div bis_skin_checked="1" class="row text-center"
+                        style="padding-top:25px;margin:0px; padding-bottom: 30px;">
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;">
+
+                            <p
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                DRIVER ASSISTANCE
+                            </p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• Driver Attention Assist*
+                                <br>• Blind Zone Steering Assist
+                                <br>• Adaptive Cruise Control
+                                <br>• Lane Keep Assist with Lane Departure Warning
+                            </p>
+
+                            <p
+                                style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                ALERTS
+                            </p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• Forward Collision Alert
+                                <br>• Side Bicyclist Alert
+                                <br>• Safety Alert Seat
+                                <br>• Rear Pedestrian Alert
+                                <br>• Rear Cross Traffic Alert
+                            </p>
+                        </div>
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;">
+
+                            <p
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                VISION ASSISTANCE</p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• HD Surround Vision
+                                <br>• IntelliBeam Auto <span style="white-space: nowrap;">High-Beam</span> Assist
+                                <br>• Rear Camera Mirror
+                            </p>
+
+                            <p
+                                style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                EMERGENCY BRAKING</p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• Enhanced Automatic
+                                Emergency Braking
+                                <br>• Intersection Automatic Emergency Braking
+                                <br>• Rear Cross Traffic Braking
+                                <br>• Front Pedestrian and Bicyclist Braking
+                                <br>• Reverse Automatic Braking
+                            </p>
+                        </div>
+                        <div bis_skin_checked="1" class="col-sm-4" style="padding:5px;">
+
+                            <p
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                MONITORING</p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• Vehicle Diagnostics*
+                                <br>• Buckle to Drive
+                            </p>
+
+                            <p
+                                style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                PARKING ASSISTANCE</p>
+
+                            <p style="padding:10px 2px 0px;font-size:13px;line-height:1.2;">• Front and Rear Park Assist
+                                <br>• Enhanced Automatic Parking Assist
+                                <br>• Vision Enhanced Parking
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div bis_skin_checked="1"
+                style="max-width:1440px;margin:0px auto;padding-top: 0px; background-color: #ffffff; color: #000000;">
+                <div bis_skin_checked="1" style="padding-top:30px;padding-bottom: 0px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-7_OPTIQ_2026.jpg?v=oZuhNEPVBwpwP/63LNdv1w=="
+                        alt="image 7" style="max-width:100%;"> </div>
+
+            </div>
+            <div
+                style="max-width: 1440px; margin: 0 auto ; background-color: #181818; color: #fff;     margin-top: 30px;">
+                <div style="margin:0px auto;">
+                    <div style="padding: 20px 0 15px;">
+
+                        <p
+                            style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;text-transform: uppercase;">
+                            specs</p>
+                    </div>
+
+                    <div style="padding-top:1px; padding-bottom: 5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/IMAGE-8_OPTIQ_2026.jpg?v=Xvpyl9HTt1+DLUNcWocpqA=="
+                            alt="image 8" style="max-width:100%;">
+                    </div>
+                </div>
+                <div class="row text-center"
+                    style="max-width: 929px; margin: 0 auto; padding-bottom: 35px; padding-top: 10px;">
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">OPTIQ SINGLE MOTOR RWD
+                        </p>
+
+                        <p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">RANGE: 317 <span
+                                style="white-space: nowrap;">MILES*<br>EPA-estimated</span></p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">POWERTRAIN:
+                            315 <span style="white-space: nowrap;">HP<br>Cadillac-estimated</span></p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">TORQUE: 332
+                            <span style="white-space: nowrap;">LB.-FT.<br>Cadillac-estimated</span>
+                        </p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">TOWING*: 1,500 LBS.</p>
+
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">OPTIQ DUAL MOTOR AWD
+                        </p>
+
+                        <p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">RANGE: 303 <span
+                                style="white-space: nowrap;">MILES*<br>EPA-estimated</span></p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">POWERTRAIN:
+                            440 <span style="white-space: nowrap;">HP<br>Cadillac-estimated</span></p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">TORQUE: 498
+                            <span style="white-space: nowrap;">LB.-FT.<br>Cadillac-estimated</span>
+                        </p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">TOWING*: 1,500 LBS.</p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;"><span
+                                style="white-space: nowrap;">OPTIQ-V</span> SDUAL MOTOR AWD
+                        </p>
+
+                        <p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">RANGE: 278 MILES*
+                            <br>(with standard 11.5 kW <span
+                                style="white-space: nowrap;">charging)<br>EPA-estimated</span>
+                        </p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">RANGE: 250
+                            MILES*
+                            <br>(When equipped with available
+                            <br>Charging and Convenience Package <span
+                                style="white-space: nowrap;">2)<br>EPA-estimated</span>
+                        </p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;margin-bottom: 0px;">POWERTRAIN:
+                            519 <span style="white-space: nowrap;">HP<br>Cadillac-estimated</span> in Velocity Max </p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">TORQUE: 650 <span
+                                style="white-space: nowrap;">LB.-FT.<br>Cadillac-estimated</span> in Velocity Max</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="row text-center" id="fourbuttons" style="margin: 30px auto 15px;">
+                    <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                        <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_A_QUOTE_2025-Cadillac-CT4.gif?v=AVhS+jFbI6np5Olk5xSpmQ=="
+                                alt="Get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                    </div>
+                    <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                        <a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/GET_PRE-APPROVED_2025-Cadillac-CT4.gif?v=3UCixCgnjfG5TtiRjw0tgQ=="
+                                alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                    </div>
+                    <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                        <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/REQUEST_MORE_INFO_2025-Cadillac-CT4.gif?v=rTahY92af/Vz+VRtU+ayMw=="
+                                alt="Request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                    </div>
+                    <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                        <a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html" style="display:block;">
+                            <img src="https://cdn.dlron.us/static/dealer-27085/2025_Cadillac_CT4/VALUE_YOUR_TRADE_2025-Cadillac-CT4.gif?v=9ILRwUe0vYlnhk2NtlQKwA=="
+                                alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;font-size:36px;margin-top:40px;text-transform: uppercase; color: #000;"> Trim
+                levels
+            </div>
+
+
+
+
+
+
+
+
+            <div style="max-width:929px;margin:12px auto 30px;">
+                <div class="row text-center" style="padding-top:0px;margin:0px;">
+                    <div class="col-sm-4" style="padding:23px !important;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/LUXURY_OPTIQ_2026.jpg?v=sf8TidEUMj5XwcCjgC1SPg=="
+                            alt="LUXURY">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                LUXURY
+                            </h4>
+                        </div>
+                        <div class="arrow"></div>
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c;    padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p
+                                style="color:#7c7c7c;  padding: 10px 15px 39px 15px;text-align: left;font-size:11px;line-height:1.2; margin-left: 5px;">
+                                Key standard features:
+                                <br>
+                                <br>• North American Charging Standard (NACS) onboard charge port
+                                <br>• Exterior Galvano Chrome detailing with gloss black finishes
+                                <br>• Luxury grille with illuminated black crystal and Cadillac crest
+                                <br>• Single motor RWD with <span style="white-space: nowrap;">EPA-estimated</span> 317
+                                miles of range*
+                                <br>• <span style="white-space: nowrap;">Segment-exclusive</span> Super Cruise<sup
+                                    style="font-size: 22px; top: 0.2em;">®</sup>* <span
+                                    style="white-space: nowrap;">hands-free</span> driver assistance technology with
+                                <span style="white-space: nowrap;">3-year</span> OnStar<sup
+                                    style="font-size: 21px; top: 0.2em;">®</sup> One Super Cruise<sup
+                                    style="font-size: 22px; top: 0.2em;">®</sup> plan*
+                                <br>• <span style="white-space: nowrap;">Segment-largest</span> 33&quot; diagonal
+                                advanced LED display
+                                <br>• Google<sup style="font-size: 17px; top: 0.2em;">™</sup> <span
+                                    style="white-space: nowrap;">built-in*</span> compatibility
+                                <br>• <span style="white-space: nowrap;">19-speaker</span> AKG<sup
+                                    style="font-size: 17px; top: 0.2em;">™</sup>* Studio Surround with available Dolby
+                                Atmos<sup style="font-size: 21px; top: 0.2em;">®</sup>*
+                                <br>• <span style="white-space: nowrap;">8-way</span> power driver, <span
+                                    style="white-space: nowrap;">6-way</span> power passenger adjustability, <span
+                                    style="white-space: nowrap;">4-way</span> power lumbar with driver memory and heated
+                                front seats
+                                <br>• Wireless phone charging*
+                                <br>• 11.5 kW AC charging
+                            </p>
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $50,900*</h1>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="col-sm-4" style="padding:23px !important;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/SPORT_OPTIQ_2026.jpg?v=yuPvOYffqNFMP6dRo6jfhw=="
+                            alt="sport">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                SPORT</h4>
+                        </div>
+                        <div class="arrow"></div>
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p
+                                style="color:#7c7c7c; padding: 10px 10px 39px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                                Key standard features:
+                                <br>
+                                <br>• North American Charging Standard (NACS) onboard charge port
+                                <br>• Exterior Obsidian Chrome detailing with gloss black finishes
+                                <br>• Sport grille with illuminated black crystal and Cadillac crest
+                                <br>• Single motor RWD with <span style="white-space: nowrap;">EPA-estimated</span> 317
+                                miles of range*
+                                <br>• <span style="white-space: nowrap;">Segment-exclusive</span> Super Cruise<sup
+                                    style="font-size: 22px; top: 0.2em;">®</sup>* <span
+                                    style="white-space: nowrap;">hands-free</span> driver assistance technology with
+                                <span style="white-space: nowrap;">3-year</span> OnStar<sup
+                                    style="font-size: 21px; top: 0.2em;">®</sup> One Super Cruise<sup
+                                    style="font-size: 22px; top: 0.2em;">®</sup> plan*
+                                <br>• <span style="white-space: nowrap;">Segment-largest</span> 33&quot; diagonal
+                                advanced LED display
+                                <br>• Google<sup style="font-size: 17px; top: 0.2em;">™</sup> <span
+                                    style="white-space: nowrap;">built-in*</span> compatibility
+                                <br>• <span style="white-space: nowrap;">19-speaker</span> AKG<sup
+                                    style="font-size: 17px; top: 0.2em;">™</sup>* Studio Surround with available Dolby
+                                Atmos<sup style="font-size: 21px; top: 0.2em;">®</sup>*
+                                <br>• <span style="white-space: nowrap;">8-way</span> power driver, <span
+                                    style="white-space: nowrap;">6-way</span> power passenger adjustability, <span
+                                    style="white-space: nowrap;">4-way</span> power lumbar with driver memory and heated
+                                front seats
+                                <br>• Wireless phone charging*
+                                <br>• 11.5 kW AC charging
+                            </p>
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $51,500*</h1>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-sm-4" style="padding:23px !important;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PREMIUM_LUXURY_OPTIQ_2026.jpg?v=2vt6pEKaKoJSRLndtRDBQw=="
+                            alt="premium luxury">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                PREMIUM LUXURY
+                            </h4>
+                        </div>
+                        <div class="arrow"></div>
+
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c;padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p class="hidden-xs"
+                                style="color:#7c7c7c;padding: 10px 25px 196px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+
+                                Includes all Luxury key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+                            </p>
+
+
+
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="color:#7c7c7c;    padding: 0px 25px 50px 30px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                                Includes all Luxury key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+
+                            </p>
+
+
+
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $53,100*</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row text-center" style="padding-top:0px;margin:0px;     position: relative; top: -20px;">
+                    <div class="col-sm-4" style="padding:23px !important;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PREMIUM_SPORT_OPTIQ_2026.jpg?v=5mdFjiiPQjD/hpEaksB9Sw=="
+                            alt="premium sport">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                PREMIUM SPORT
+                            </h4>
+                        </div>
+                        <div class="arrow"></div>
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c;    padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p class="hidden-xs"
+                                style="color:#7c7c7c;  padding: 10px 15px 261px 15px;text-align: left;font-size:11px;line-height:1.2; margin-left: 5px;">
+                                Includes all Sport key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+                            </p>
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="color:#7c7c7c;  padding: 10px 15px 40px 15px;text-align: left;font-size:11px;line-height:1.2; margin-left: 5px;">
+                                Includes all Sport key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+                            </p>
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $53,600*</h1>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="col-sm-4" style="padding:23px !important;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/OPTIQ-V_OPTIQ_2026.jpg?v=v7BHjus/Ss9zAB7KJ0lvDA=="
+                            alt="optiq-v">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                <span style="white-space: nowrap;">OPTIQ-V</span>
+                            </h4>
+                        </div>
+                        <div class="arrow"></div>
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p
+                                style="color:#7c7c7c; padding: 10px 10px 24.5px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                                Includes all Premium Sport key standard features, plus:
+                                <br>
+                                <br>• Performance <span style="white-space: nowrap;">dual-motor</span> AWD with <span
+                                    style="white-space: nowrap;">Cadillac-estimated</span> 519 <span
+                                    style="white-space: nowrap;">lb.-ft.</span> torque &amp; 650 HP in Velocity Max
+                                <br>• Exterior Obsidian Chrome detailing with gloss black finishes, a lower suspension,
+                                distinct lower fascia and side rockers
+                                <br>• 21&quot; <span style="white-space: nowrap;">6-Spoke</span> Reverse Rim alloy with
+                                Satin Graphite finish and <span style="white-space: nowrap;">Laser-Etched</span> <span
+                                    style="white-space: nowrap;">V-Series</span> emblem paired with <span
+                                    style="white-space: nowrap;">low-profile</span> tires
+                                <br>• Performance Steering wheel and unique <span
+                                    style="white-space: nowrap;">V-Series</span> signature front seats
+                                <br>• Noir or Sky Cool Gray Inteluxe seating with perforated inserts and Santorini Blue
+                                accents
+                                <br>• Illuminated front door sills with <span
+                                    style="white-space: nowrap;">V-Series</span> logo
+                                <br>• <span style="white-space: nowrap;">12-way</span> power front passenger seats with
+                                memory
+                                <br>• Brembo Performance front brakes
+                                <br>• Continuous Damping Control (CDC) advanced adaptive <span
+                                    style="white-space: nowrap;">valve-based</span> damper suspension technology
+                                <br>• Driver Modes with <span style="white-space: nowrap;">V-Mode<br>•</span> Launch
+                                Control
+                                <br>• Competitive Mode
+                                <br>• Black painted roof
+                            </p>
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $67,300*</h1>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-sm-4" style="padding:23px !important; display:none;"> <img
+                            style="padding-bottom: 0px;display: inline;"
+                            src="https://cdn.dlron.us/static/dealer-27085/Colonial_Cadillac_OPTIQ_2026/PREMIUM_LUXURY_OPTIQ_2026.jpg?v=2vt6pEKaKoJSRLndtRDBQw=="
+                            alt="premium luxury">
+                        <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;">
+
+                            <h4
+                                style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                                PREMIUM LUXURY
+                            </h4>
+                        </div>
+                        <div class="arrow"></div>
+
+                        <div style="background-color:#f7f7f7;margin-top: -18px;">
+
+                            <p
+                                style="color:#7c7c7c;padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                            </p>
+
+                            <p class="hidden-xs"
+                                style="color:#7c7c7c;padding: 10px 25px 120px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+
+                                Includes all Luxury key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+                            </p>
+
+
+
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="color:#7c7c7c;    padding: 0px 25px 50px 30px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                                Includes all Luxury key standard features, plus:
+                                <br>
+                                <br>• <span style="white-space: nowrap;">Head-Up</span> Display
+                                <br>• <span style="white-space: nowrap;">8-way</span> power front passenger seat with
+                                seat memory
+                                <br>• Ventilated and lumbar massaging front seats
+                                <br>• Heated rear outboard seats
+                                <br>• Choreographed lighting with up level headlamps, taillamps, cornering lights and
+                                headlamp leveling
+                                <br>• Rear cargo cover
+
+                            </p>
+
+
+
+                        </div>
+                        <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;">
+
+                            <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+
+                            <h1 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                                $53,100*</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div style="max-width:1300px;margin:0px auto;">
+                <div
+                    style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:14px;line-height:1.3em; color: #000;">
+
+                    <p><b style="font-weight: bold !important;">2026 Cadillac OPTIQ </b></p>
+
+                    <p> </p>
+
+                    <p><b style="font-weight: bold !important;">The Debut of the 2026 Cadillac OPTIQ Boston, MA, from
+                            Colonial Cadillac </b> </p>
+
+                    <p>The 2026 Cadillac OPTIQ Boston, MA, arrives at Colonial Cadillac with a fresh approach to luxury
+                        electric driving, blending expressive design, cutting-edge technology and responsive performance
+                        in a refined compact SUV. </p>
+
+                    <p> </p>
+
+                    <p><b style="font-weight: bold !important;">Which Cadillac dealers have the 2026 Cadillac OPTIQ in
+                            Boston, MA, in stock? </b></p>
+
+                    <p>We do! Visit Colonial Cadillac to explore the bold features of this new release. Under the hood,
+                        the 2026 Cadillac OPTIQ Boston, MA, features a standard electric propulsion system with a single
+                        <span style="white-space: nowrap;">rear-mounted</span> motor producing 315 horsepower and 332
+                        <span style="white-space: nowrap;">lb.-ft.</span> of torque. This <span
+                            style="white-space: nowrap;">rear-wheel-drive</span> setup delivers smooth acceleration and
+                        balanced handling, ideal for urban driving and <span
+                            style="white-space: nowrap;">open-road</span> cruising. Drivers seeking more dynamic
+                        performance can opt for the available <span style="white-space: nowrap;">dual-motor</span>
+                        configuration. With 440 horsepower and 498 <span style="white-space: nowrap;">lb.-ft.</span> of
+                        torque, the <span style="white-space: nowrap;">all-wheel-drive</span> system adds enhanced
+                        traction, and a <span style="white-space: nowrap;">sport-tuned</span> suspension sharpens
+                        response while maintaining Cadillac refinement.
+                    </p>
+
+                    <p> </p>
+
+                    <p>Technology plays a central role in the 2026 Cadillac OPTIQ Boston, MA. The cabin is anchored by a
+                        sweeping <span style="white-space: nowrap;">33-inch</span> diagonal advanced color LED display
+                        that integrates driver information and infotainment into one seamless interface. Google<sup
+                            style="font-size: 18px; top: 0.1em;">™</sup> <span
+                            style="white-space: nowrap;">built-in</span> compatibility allows easy access to navigation,
+                        apps and voice commands, while 5G vehicle connectivity keeps the system responsive and up to
+                        date. Standard Super Cruise<sup style="font-size: 22px; top: 0.2em;">®</sup> adds <span
+                            style="white-space: nowrap;">hands-free</span> driving capability on compatible roads,
+                        enhancing comfort during longer trips around Massachusetts.
+                    </p>
+
+                    <p> </p>
+
+                    <p>Other standard features in the 2026 Cadillac OPTIQ Boston, MA, include Enhanced Automatic Parking
+                        Assist, a <span style="white-space: nowrap;">Head-Up</span> Display, remote start and a wireless
+                        charging pad. The AKG<sup style="font-size: 18px; top: 0.1em;">™</sup> Studio <span
+                            style="white-space: nowrap;">19-speaker</span> audio system fills the cabin with immersive
+                        sound, while <span style="white-space: nowrap;">Vehicle-to-Home</span> capability allows
+                        compatible homes to draw power from the OPTIQ during outages.
+                    </p>
+
+                    <p> </p>
+
+                    <p>Inside, the 2026 Cadillac OPTIQ Boston, MA, offers seating for five with a clean, contemporary
+                        layout. Inteluxe seating surfaces come standard along with heated front seats, a heated steering
+                        wheel and <span style="white-space: nowrap;">dual-zone</span> automatic climate control. <span
+                            style="white-space: nowrap;">An 8-way</span> power driver seat and <span
+                            style="white-space: nowrap;">6-way</span> power front passenger seat help drivers find a
+                        comfortable position for daily commuting or longer drives. Alloy sport pedals add a subtle <span
+                            style="white-space: nowrap;">performance-inspired</span> touch to the interior. Available
+                        upgrades elevate the experience further. Ventilated front seats, massaging front seats and
+                        ambient lighting create a more indulgent atmosphere. Heated <span
+                            style="white-space: nowrap;">second-row</span> outboard seats improve rear passenger
+                        comfort, while upgraded Inteluxe materials with perforated inserts enhance both style and feel.
+                    </p>
+
+                    <p> </p>
+
+                    <p>The exterior of the 2026 Cadillac OPTIQ Boston, MA, makes a bold first impression. Standard <span
+                            style="white-space: nowrap;">20-inch</span> Pearl Nickel painted alloy wheels with aero
+                        inserts combine efficiency with visual appeal. An illuminating front grille and emblem highlight
+                        Cadillac’s evolving electric design language, while LED headlamps and illuminating door handles
+                        add sophistication. A fixed full glass roof brightens the cabin, and the AutoSense power
+                        liftgate simplifies loading and unloading. Optional features allow drivers to personalize the
+                        look. Available <span style="white-space: nowrap;">21-inch</span> bronze alloy wheels, <span
+                            style="white-space: nowrap;">slim-line</span> LED vertical headlamps and a contrasting black
+                        roof create a more dramatic presence. LED <span
+                            style="white-space: nowrap;">choreography-capable</span> tail lamps and front cornering
+                        lamps add both function and flair. </p>
+
+                    <p> </p>
+
+                    <p>Safety is a priority in the 2026 Cadillac OPTIQ Boston, MA. Standard driver assistance features
+                        include Enhanced Automatic Emergency Braking, Intersection Automatic Emergency Braking, Blind
+                        Zone Steering Assist and Rear Pedestrian Alert. Rear Cross Traffic Braking and Reverse Automatic
+                        Braking help in crowded parking situations, while Traffic Sign Recognition and a reflective
+                        windshield collision alert provide added awareness. An available HD Surround Vision system
+                        offers a comprehensive view around the vehicle for tight urban environments. </p>
+
+                    <p> </p>
+
+                    <p><b style="font-weight: bold !important;">Where can I test drive a 2026 Cadillac OPTIQ Boston, MA?
+                        </b></p>
+
+                    <p>The 2026 Cadillac OPTIQ Boston, MA, represents a <span
+                            style="white-space: nowrap;">forward-looking</span> vision of luxury electric mobility.
+                        Visit Colonial Cadillac to test drive this electric vehicle today. </p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div
+                    style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:11px;line-height: 1.2em; color: #000;">
+
+                    <p>MSRP</p>
+
+                    <p>*The Manufacturer’s Suggested Retail Price excludes destination freight charge, tax, title,
+                        license, dealer fees and optional equipment. Dealer sets final price. To see all Cadillac
+                        vehicles’ destination freight charges, visit
+                        https://www.cadillac.com/destination-freight-charges</p>
+
+                    <p>INTERIOR</p>
+
+                    <p>*Requires active OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> service and compatible
+                        active streaming service.</p>
+
+                    <p>*AKG<sup style="font-size: 16px; top: 0.1em;">™</sup> is a trademark of AKG<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> Acoustics GmbH, registered in the United States
+                        and/or other countries.</p>
+
+                    <p>TECHNOLOGY</p>
+
+                    <p>*Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use a <span
+                            style="white-space: nowrap;">hand-held</span> device. Requires active Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup> plan or trial. Terms apply. Visit
+                        cadillac.com/supercruise for compatible roads and full details. </p>
+
+                    <p>*OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell
+                        reception and GPS signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links
+                        to emergency services. Not all vehicles may transmit all crash data. Service coverage varies
+                        with conditions and location. Service availability, features and functionality vary by device
+                        and software version. Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use handheld device. Visit
+                        cadillac.com/supercruise for Super Cruise<sup style="font-size: 22px; top: 0.2em;">®</sup>
+                        compatible roads and full details. Subject to user terms. See OnStar<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>.com for details and limitations.</p>
+
+                    <p>*Properly equipped model year 2015 and newer GM vehicles may be eligible for Connected Access for
+                        a limited time. Connectivity is dependent on compatible wireless networks provided by <span
+                            style="white-space: nowrap;">third-party</span> wireless service providers and other factors
+                        outside of GM control. Changes in technology and wireless networks may limit or prevent the
+                        operation of vehicle connectivity. Connected Access does not include emergency or security
+                        services and the services enabled by Connected Access are subject to change at any time.
+                        Connected Access activations prior to August 15, 2023 expire at the end of their stated term.
+                        Services, connectivity, and capabilities vary by model, vehicle configuration, and conditions as
+                        well as geographical and technical restrictions and are subject to user terms and limitations.
+                        See OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup>.com for details and limitations.</p>
+
+                    <p>*Google<sup style="font-size: 16px; top: 0.1em;">™</sup> <span
+                            style="white-space: nowrap;">built-in</span> services are subject to limitations and
+                        availability may vary by vehicle, infotainment system, and location. Select service plan
+                        required. Certain Google<sup style="font-size: 16px; top: 0.1em;">™</sup> actions and
+                        functionality may require account linking. User terms and privacy statements apply. Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Play<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Maps<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> and other marks are trademarks of Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> LLC.</p>
+
+                    <p>*Feature may be limited when the battery temperatures are extremely cold or hot or when battery
+                        is near full charge. See Owner’s Manual for details.</p>
+
+                    <p>*Feature may be limited when the battery temperatures are extremely cold or hot or when battery
+                        is near full charge. Always use the brake pedal when you need to stop immediately. See Owner’s
+                        Manual for details.</p>
+
+                    <p>CHARGING AND RANGE</p>
+
+                    <p>*On a full charge. Actual range may vary based on several factors, including ambient temperature,
+                        terrain, battery age and condition, loading and how you use and maintain your vehicle. </p>
+
+                    <p>*With <span style="white-space: nowrap;">Rear-Wheel</span> Drive. Requires professionally
+                        installed 60A dedicated charge station, sold separately. Actual charge times will vary based on
+                        battery condition, output of charger, vehicle settings and battery temperature. See the Owner’s
+                        Manuals for your vehicle and charger for additional details &amp; limitations.</p>
+
+                    <p>*Available on select Apple<sup style="font-size: 22px; top: 0.2em;">®</sup> and Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> devices. Service availability, features and
+                        functionality vary by vehicle, device and the plan you are enrolled in. Terms apply. Device data
+                        connection required.</p>
+
+                    <p>*Tesla and Supercharger are trademarks of Tesla, Inc.</p>
+
+                    <p>*Based on 150 kW DC Fast Charge Power. Actual charge times will vary based on battery starting
+                        state of charge, battery condition, output of charger, vehicle settings and battery temperature.
+                        See the Owner’s Manuals for your vehicle and charger for additional details &amp; limitations.
+                    </p>
+
+                    <p>*Actual production will vary. The GM Energy PowerShift Charger and GM Energy V2H Enablement Kit
+                        shown requires an adequately charged <span style="white-space: nowrap;">V2H-capable</span> GM
+                        EV, a properly equipped home, and proper grid interconnection. Weather conditions, life of the
+                        battery, vehicle variation and usage, and other external factors may impact the capability and
+                        duration of power supply. Power supply may be interrupted.
+                        <br>A GM CCS DC adapter is required for the NACS native OPTIQ to discharge power from the GM
+                        Energy PowerShift to your properly equipped home.
+                        <br>It is not recommended that the following devices be powered with the GM Energy PowerShift
+                        Charger and V2H Enablement Kit: Medical Devices.
+                    </p>
+
+                    <p>*With <span style="white-space: nowrap;">Rear-Wheel</span> Drive. When equipped with 19.2 kW
+                        onboard charging module. Requires professionally installed 100A dedicated charge station, sold
+                        separately. Actual charge times will vary based on battery condition, output of charger, vehicle
+                        settings and battery temperature. See the Owner’s Manuals for your vehicle and charger for
+                        additional details &amp; limitations.</p>
+
+                    <p>*With <span style="white-space: nowrap;">Rear-Wheel</span> Drive. Based on 150 kW DC Charge
+                        Power. Actual charge times will vary based on battery starting state of charge, battery
+                        condition, output of charger, vehicle settings and battery temperature. See the Owner’s Manuals
+                        for your vehicle and charger for additional details &amp; limitations.</p>
+
+                    <p>*Charger and Kit sold separately.</p>
+
+                    <p>*Available on select Apple<sup style="font-size: 22px; top: 0.2em;">®</sup> and Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> devices. Service availability, features and
+                        functionality vary by vehicle, device and the plan you are enrolled in. Terms apply. Device data
+                        connection required.</p>
+
+                    <p>*Available on select 2017 model year and newer GM vehicles with compatible hardware. <span
+                            style="white-space: nowrap;">Third-party</span> trademarks are the property of their
+                        respective <span style="white-space: nowrap;">third-party</span> owners and used under
+                        agreement. Requires active service plan and paid AT&amp;T<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup> vehicle data plan. Check https://www.OnStar<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>.com/us/en/new_vehicles for details and
+                        limitations.</p>
+
+                    <p>SAFETY AND DRIVER ASSISTANCE</p>
+
+                    <p>Safety or driver assistance features are no substitute for the driver’s responsibility to operate
+                        the vehicle in a safe manner. The driver should remain attentive to traffic, surroundings and
+                        road conditions at all times. Visibility, weather and road conditions may affect feature
+                        performance. Read the vehicle Owner’s Manual for more important feature limitations and
+                        information.</p>
+
+                    <p>
+                        <br>*Driver Attention Assist may not always detect the driver’s drowsiness status accurately.
+                        Driver Attention Assist is an assistance service and the driver should always pay attention to
+                        the road. The driver should take rest breaks when they’re tired or drowsy. Since Driver
+                        Attention Assist is a <span style="white-space: nowrap;">camera-based</span> system, keep hands
+                        off the camera and infrared LED banks to ensure the camera can see/detect/monitor the driver’s
+                        face and function properly.
+                    </p>
+
+                    <p>*Diagnostic capabilities vary by model and plan. Message and data rates may apply. Requires
+                        contact method on file and enrollment to receive alerts. Not all issues will deliver alerts.
+                        Click here for details and limitations.</p>
+
+                    <p>2026 <span style="white-space: nowrap;">OPTIQ-V</span></p>
+
+                    <p>*On a full charge. Actual range may vary based on several factors, including ambient temperature,
+                        terrain, battery age and condition, loading and how you use and maintain your vehicle.</p>
+
+                    <p>*When equipped with the 11.5 kW onboard charging module. Requires professionally installed 60A
+                        dedicated charge station, sold separately. Actual charge times will vary based on battery
+                        condition, output of charger, vehicle settings and battery temperature. See the Owner’s Manuals
+                        for your vehicle and charger for additional details &amp; limitations.</p>
+
+                    <p>*Available on select Apple<sup style="font-size: 22px; top: 0.2em;">®</sup> and Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> devices. Service availability, features and
+                        functionality vary by vehicle, device and the plan you are enrolled in. Terms apply. Device data
+                        connection required.</p>
+
+                    <p>*Tesla and Supercharger are trademarks of Tesla, Inc.</p>
+
+                    <p>
+                        <br>SPECS
+                    </p>
+
+                    <p>*On a full charge. Actual range may vary based on several factors, including ambient temperature,
+                        terrain, battery age and condition, loading and how you use and maintain your vehicle. </p>
+
+                    <p>*Before you buy a vehicle or use it for trailering, carefully review the trailering section of
+                        the Owner’s Manual. The weight of passengers, cargo, and options or accessories may reduce the
+                        amount you can tow.</p>
+
+                    <p>TRIM LEVELS</p>
+
+                    <p>LUXURY</p>
+
+                    <p>*On a full charge. Actual range may vary based on several factors, including ambient temperature,
+                        terrain, battery age and condition, loading and how you use and maintain your vehicle. </p>
+
+                    <p>*Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use a <span
+                            style="white-space: nowrap;">hand-held</span> device. Requires active Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup> plan or trial. Terms apply. Visit
+                        cadillac.com/supercruise for compatible roads and full details. </p>
+
+                    <p>*OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell
+                        reception and GPS signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links
+                        to emergency services. Not all vehicles may transmit all crash data. Service coverage varies
+                        with conditions and location. Service availability, features and functionality vary by device
+                        and software version. Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use handheld device. Visit
+                        cadillac.com/supercruise for Super Cruise<sup style="font-size: 22px; top: 0.2em;">®</sup>
+                        compatible roads and full details. Subject to user terms. See OnStar<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>.com for details and limitations.</p>
+
+                    <p>*Google<sup style="font-size: 16px; top: 0.1em;">™</sup> <span
+                            style="white-space: nowrap;">built-in</span> services are subject to limitations and
+                        availability may vary by vehicle, infotainment system, and location. Select service plan
+                        required. Certain Google<sup style="font-size: 16px; top: 0.1em;">™</sup> actions and
+                        functionality may require account linking. User terms and privacy statements apply. Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Play<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Maps<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> and other marks are trademarks of Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> LLC.</p>
+
+                    <p>*Requires active OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> service and compatible
+                        active streaming service.</p>
+
+                    <p>*The system wirelessly charges one compatible mobile device. Some phones have <span
+                            style="white-space: nowrap;">built-in</span> wireless charging technology and others require
+                        a special adaptor/back cover. To check for phone or other device compatibility, see
+                        my.cadillac.com/learn or consult your carrier.</p>
+
+                    <p>SPORT</p>
+
+                    <p>*On a full charge. Actual range may vary based on several factors, including ambient temperature,
+                        terrain, battery age and condition, loading and how you use and maintain your vehicle. </p>
+
+                    <p>*Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use a <span
+                            style="white-space: nowrap;">hand-held</span> device. Requires active Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup> plan or trial. Terms apply. Visit
+                        cadillac.com/supercruise for compatible roads and full details. </p>
+
+                    <p>*OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> plan, working electrical system, cell
+                        reception and GPS signal required. OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> links
+                        to emergency services. Not all vehicles may transmit all crash data. Service coverage varies
+                        with conditions and location. Service availability, features and functionality vary by device
+                        and software version. Always pay attention while driving and when using Super Cruise<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>. Do not use handheld device. Visit
+                        cadillac.com/supercruise for Super Cruise<sup style="font-size: 22px; top: 0.2em;">®</sup>
+                        compatible roads and full details. Subject to user terms. See OnStar<sup
+                            style="font-size: 22px; top: 0.2em;">®</sup>.com for details and limitations.</p>
+
+                    <p>*Google<sup style="font-size: 16px; top: 0.1em;">™</sup> <span
+                            style="white-space: nowrap;">built-in</span> services are subject to limitations and
+                        availability may vary by vehicle, infotainment system, and location. Select service plan
+                        required. Certain Google<sup style="font-size: 16px; top: 0.1em;">™</sup> actions and
+                        functionality may require account linking. User terms and privacy statements apply. Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Android<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Play<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup>, Google Maps<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> and other marks are trademarks of Google<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> LLC.</p>
+
+                    <p>*AKG<sup style="font-size: 16px; top: 0.1em;">™</sup> is a trademark of AKG<sup
+                            style="font-size: 16px; top: 0.1em;">™</sup> Acoustics GmbH, registered in the United States
+                        and/or other countries.</p>
+
+                    <p>*Requires active OnStar<sup style="font-size: 22px; top: 0.2em;">®</sup> service and compatible
+                        active streaming service.</p>
+
+                    <p>*The system wirelessly charges one compatible mobile device. Some phones have <span
+                            style="white-space: nowrap;">built-in</span> wireless charging technology and others require
+                        a special adaptor/back cover. To check for phone or other device compatibility, see
+                        my.cadillac.com/learn or consult your carrier.</p>
+                </div>
+            </div>
+
+            <p class="text-center" style="padding-top:30px;">Powered By <a href="http://automotiveadvertisinggroup.com/"
+                    rel="noreferrer noopener" style="text-decoration:none;" target="_blank">Automotive Advertising
+                    Group</a> </p>
+            <!---->
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
