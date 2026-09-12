@@ -1,0 +1,2205 @@
+
+
+
+
+    <style>
+        .main-div {
+            max-width: 1440px;
+            overflow: hidden;
+            margin: 0 auto;
+            color: #000;
+        }
+        .main-div h2, .main-div h3 {
+            letter-spacing: 0;
+            margin-top: 0;
+        }
+
+        .inner2 {
+            max-width: 929px;
+            margin: 0px auto;
+        }
+
+        .banner-title {
+            background: url(https://cdn.dlron.us/static/dealer-27085/2027_vistiq/OFFER-BG.jpg?v=FtAfMkWg83Bi2mQ8V4yP8g==) center;
+            background-size: cover;
+            color: #fff;
+            padding: 1px;
+            width: 100%;
+            height: 328px;
+        }
+
+        .banner-image {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .banner-image .banner-title {
+            background: #4c4c4c;
+            color: #fff;
+        }
+
+        .banner-title2 {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 4px 10px 0px 28px;
+            line-height: 1.3;
+        }
+
+        .title1 {
+            position: absolute;
+            top: 4%;
+            left: 20%;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .offer {
+            margin-top: -195px;
+        }
+
+        .offer .row {
+            margin: 25px 0px;
+        }
+
+        .offer .name {
+            margin-bottom: -90px;
+            margin-top: 12px;
+            color: #000;
+            z-index: 999;
+            position: relative;
+            font-size: 38px;
+            padding-left: 15px;
+            font-weight: 100;
+        }
+
+        .offer .content-div {
+            line-height: 0.8;
+            position: relative;
+        }
+
+        .offer .content-div .dol {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .mo {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .amt {
+            font-size: 70px;
+            color: #000
+        }
+
+        .offer .content-div .lease {
+            color: #000;
+            line-height: 1.2;
+            font-size: 13px;
+            display: inline-block;
+            top: 10px;
+            padding-top: 35px;
+            right: -20px;
+            padding-left: 0px;
+        }
+
+        .offer .off-car {
+            max-width: 100%;
+            position: absolute;
+            top: -100px;
+            margin-top: -30px;
+        }
+
+        .offer-diclaimer {
+            line-height: 1.2;
+            font-size: 11px;
+            padding: 25px 0 20px
+        }
+
+        .box {
+            background: #28509b;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .arrow {
+            top: -9px;
+            font-size: 20px;
+            position: relative;
+            color: #28509b;
+            margin-bottom: -28px
+        }
+
+        .price-modal {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 10px 0 20px 20px;
+            font-size: 12px;
+            line-height: 1.8em;
+            text-align: left;
+        }
+
+        .price-modal span {
+            font-weight: 500;
+            font-size: 21px;
+        }
+
+        .modal-text {
+            padding: 9px;
+            text-align: left;
+            background: #f7f7f7;
+        }
+
+        .modelimage {
+            padding: 0px;
+        }
+
+        .prc {
+            margin-top: -30px;
+        }
+
+        .border-line {
+            width: 10%;
+            margin: 0 auto;
+            border-top: 2px solid #b5a46b;
+            margin-top: -6px;
+        }
+
+        @media screen and (max-width:769px) {
+            .banner-image {
+                position: unset;
+                color: #000;
+                text-align: center;
+                margin: -1px 0;
+            }
+
+            .banner-image .title1 {
+                position: unset;
+                top: 0px;
+            }
+
+            .banner-image .price {
+                position: unset;
+                bottom: 0px;
+            }
+
+            .banner-title2 {
+                background: #4c4c4c;
+                color: #fff;
+                padding: 10px
+            }
+
+            .offer {
+                height: auto;
+                padding: 0px;
+            }
+
+            .offer .content-div .lease {
+                width: 100%;
+                position: unset;
+                display: block;
+                padding: 10px 0;
+                font-size: 14px
+            }
+
+            .offer .row .name {
+                background-color: #dbab69;
+            }
+
+            .offer .content-div {
+                margin-top: 0px;
+            }
+
+            .offer .off-car {
+                padding: 0;
+                position: relative;
+                top: 0px !important
+            }
+
+            .offer-diclaimer {
+                padding: 20px
+            }
+
+            .title1 {
+                font-size: 13px;
+                color: #fff;
+            }
+
+            .col-sm-4 {
+                padding: 0px 20px !important;
+            }
+
+            .col-sm-4 img {
+                max-width: 100% !important;
+                display: inline !important;
+            }
+
+            .point-heading {
+                text-align: center !important;
+            }
+
+            .point-text {
+                padding-left: 30% !important
+            }
+
+            .modelimage {
+                padding: 0px 10px;
+            }
+
+            .offer inner2 .col-sm-10 .p1 {
+                margin-top: -20px
+            }
+
+            .border-line {
+                width: 25%;
+                margin: 0 auto;
+                border-top: 2px solid #b5a46b;
+                margin-top: -6px;
+            }
+        }
+
+        .banner-title {
+            background: url(https://cdn.dlron.us/static/dealer-27085/2027_vistiq/OFFER-BG.jpg?v=FtAfMkWg83Bi2mQ8V4yP8g==)center;
+            background-size: cover;
+            color: #fff;
+            padding: 1px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .banner-image {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .banner-image .banner-title {
+            background: #4c4c4c;
+            color: #fff;
+        }
+
+        .banner-title2 {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 4px 10px 0px 28px;
+            line-height: 1.3;
+        }
+
+        .title1 {
+            position: absolute;
+            top: 4%;
+            left: 20%;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .offer .row {
+            margin: 25px 0px;
+        }
+
+        .offer .name {
+            margin-bottom: -90px;
+            margin-top: 10px;
+            color: #000;
+            z-index: 999;
+            position: relative;
+            font-size: 38px;
+            padding-left: 15px;
+            font-weight: 100;
+        }
+
+        .offer .content-div {
+            line-height: 0.8;
+            position: relative;
+        }
+
+        .offer .content-div .dol {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .mo {
+            font-size: 35px;
+            top: -1.7em;
+            font-weight: 600;
+            color: #000
+        }
+
+        .offer .content-div .amt {
+            font-size: 70px;
+            color: #000
+        }
+
+        .offer .content-div .lease {
+            color: #000;
+            line-height: 1.2;
+            font-size: 13px;
+            display: inline-block;
+            top: 10px;
+            padding-top: 35px;
+            right: -20px;
+            padding-left: 0px;
+        }
+
+        .offer .off-car {
+            max-width: 100%;
+            position: absolute;
+            top: -100px;
+            margin-top: -30px;
+        }
+
+        .offer-diclaimer {
+            line-height: 1.2;
+            font-size: 11px;
+            padding: 25px 0 20px
+        }
+
+        .box {
+            background: #28509b;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .arrow {
+            top: -9px;
+            font-size: 20px;
+            position: relative;
+            color: #28509b;
+            margin-bottom: -28px
+        }
+
+        .price-modal {
+            background: #4c4c4c;
+            color: #fff;
+            padding: 10px 0 20px 20px;
+            font-size: 12px;
+            line-height: 1.8em;
+            text-align: left;
+        }
+
+        .price-modal span {
+            font-weight: 500;
+            font-size: 21px;
+        }
+
+        .modal-text {
+            padding: 9px;
+            text-align: left;
+            background: #f7f7f7;
+        }
+
+        .modelimage {
+            padding: 0px;
+        }
+
+        .prc {
+            margin-top: -30px;
+        }
+
+        .border-line {
+            width: 11%;
+            margin: 0 auto;
+            border-top: 3px solid #b5a46b;
+            margin-top: -6px;
+        }
+
+        #content-description {
+            display: none;
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #4c4c4c;
+            margin: 0 auto;
+            position: relative;
+            top: -11px;
+        }
+
+        @media screen and (max-width:769px) {
+            .banner-image {
+                position: unset;
+                color: #000;
+                text-align: center;
+                margin: -1px 0;
+            }
+
+            .banner-image .title1 {
+                position: unset;
+                top: 0px;
+            }
+
+            .banner-image .price {
+                position: unset;
+                bottom: 0px;
+            }
+
+            .banner-title {
+                height: 250px;
+            }
+
+            .banner-title2 {
+                background: #4c4c4c;
+                color: #fff;
+                padding: 10px
+            }
+
+            .offer {
+                height: auto;
+                padding: 0px;
+            }
+
+            .offer .content-div .lease {
+                width: 100%;
+                position: unset;
+                display: block;
+                padding: 10px 0;
+                font-size: 14px
+            }
+
+            .offer .row .name {
+                background-color: #dbab69;
+            }
+
+            .offer .content-div {
+                margin-top: 0px;
+            }
+
+            .offer .off-car {
+                padding: 0;
+                position: relative;
+                top: 0px !important
+            }
+
+            .offer-diclaimer {
+                padding: 20px
+            }
+
+            .title1 {
+                font-size: 13px;
+                color: #fff;
+            }
+
+            .col-sm-4 {
+                padding: 0px 20px !important;
+            }
+
+            .col-sm-4 img {
+                max-width: 100% !important;
+                display: inline !important;
+            }
+
+            .point-heading {
+                text-align: center !important;
+            }
+
+            .point-text {
+                padding-left: 30% !important
+            }
+
+            .modelimage {
+                padding: 0px 10px;
+            }
+
+            .offer inner2 .col-sm-10 .p1 {
+                margin-top: -20px
+            }
+
+            .border-line {
+                width: 35%;
+                margin: 0 auto;
+                border-top: 3px solid #b5a46b;
+                margin-top: -6px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+    <div class="main-div" style="max-width:1440px;margin:0 auto;color:#000;">
+        <div class="banner-title">
+            <div style="padding: 30px 0 0;max-width: 885px;" class="inner2">
+
+                <h1 class="hidden-xs"
+                    style="margin:5px 15px;font-size:30px;line-height:1.2;letter-spacing: -1px;font-family: sans-serif;text-transform: uppercase;">
+                    2027 Cadillac <span style="font-weight: 600;">VISTIQ</span> </h1>
+
+                <p class="hidden-sm hidden-lg hidden-md"
+                    style="margin:5px 15px 30px;font-size:25px;line-height:1.2;letter-spacing: -1px; font-family: sans-serif;text-transform: uppercase;text-align: center;">
+                    2027 Cadillac <span style="font-weight: 600;">VISTIQ</span>
+            </p>
+
+                <p class="hidden-xs"
+                    style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:25px;visibility:hidden;">
+                    Ultra <span style="white-space: nowrap;">Low-Mileage</span> Lease for Qualified Lessees.</p>
+
+                <p class="hidden-sm hidden-lg hidden-md"
+                    style="margin:0 0 0px;padding-left: 16px;font-size:1.7rem!important;padding-bottom:30px;display:none;">
+                    Ultra <span style="white-space: nowrap;visibility:hidden;">Low-Mileage</span> Lease for Qualified
+                    Lessees.
+                </p>
+            </div>
+        </div>
+        <div class="offer inner2">
+            <div style="margin:43px 0 30px;" class="row">
+                <div class="col-sm-4">
+                    <div class="content-div">
+
+                        <p class="hidden-xs"
+                            style="font-size:14px;letter-spacing: -0px;line-height: 1.2;margin-bottom: 60px;padding: 0 16px 0px 23px;color: #000;">
+                            Please contact Colonial Cadillac for the latest lease and finance offers.</p>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="font-size:14px;letter-spacing: -0px;line-height: 1.2;margin-bottom: 20px;margin-top: 30px;color: #000;text-align: center;">
+                            Please contact Colonial Cadillac for the latest lease and finance offers.</p>
+                        <div style="display:none;" class="prc"> <sup class="dol"></sup><span class="amt">$509</span><sup
+                                class="mo"></sup>
+                            <div style="top: 10px;padding-top: 28px;right: 0px;padding-left: 0px;" class="lease">for 39
+                                months.
+                                <br>$4,259 due at signing (after all offers).**
+                                <br>$0 security deposit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/OFFER_CAR.png?v=GDJKq0BC0FLksMtzvWH/Jg=="
+                        alt="offer car" style="display: inline-block;margin-top: 35px;max-width: 100% !important; position: absolute;
+            top: -135px;right: 35px;" class="off-car hidden-xs"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/OFFER_CAR.png?v=GDJKq0BC0FLksMtzvWH/Jg=="
+                        style="width:100%;display: inline-block;margin-top: 0px;margin-bottom: -30px;"
+                        class="off-car hidden-sm hidden-md hidden-lg"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 text-center">
+
+                    <p class="p1"
+                        style="margin-top:20px;font-size:14px;letter-spacing: -0px;color:#1a63b2;margin-bottom: -5px;display: none;">
+                        Tax, title, license, and dealer fees extra. Mileage charge of $0.25/mile over 32,500 miles at
+                        participating dealers.</p>
+                </div>
+            </div>
+            <div style="margin-bottom: 40px;" class="row">
+                <div class="col-sm-4 text-center hidden-xs">
+                    <a href="https://www.colonialcadillacwoburn.com/Lease-Specials" style="padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/view_all_offer.png"
+                            alt="VIEW ALL OFFERS"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+                    <a href="https://www.colonialcadillacwoburn.com/Lease-Specials"
+                        style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/view_all_offer.png"
+                            alt="VIEW ALL OFFERS"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-xs">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?ModelAndTrim=VISTIQ&yearrange=2027-2027"
+                        style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/VISTIQ_2026/Shop_VISTIQ.jpg?v=37yAnh8QogIolibnkaXKsQ=="
+                            alt="SHOP ESCALADE"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?ModelAndTrim=VISTIQ&yearrange=2027-2027"
+                        style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/VISTIQ_2026/Shop_VISTIQ.jpg?v=37yAnh8QogIolibnkaXKsQ=="
+                            alt="SHOP ESCALADE"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-xs">
+                    <a href="tel:+17818970507"
+                        style="display: inline-block;padding-bottom: 1px;/* margin-left:50px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/call_for_details.png"
+                            alt="CALL FOR DETAILS"></a>
+                </div>
+                <div class="col-sm-4 text-center hidden-sm hidden-lg hidden-md" style="padding:7px 0!important;">
+                    <a href="tel:+17818970507" style="display: inline-block;padding-bottom: 1px;"><img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/call_for_details.png"
+                            alt="CALL FOR DETAILS"></a>
+                </div>
+                <div class="col-sm-12 text-center" style="padding:0px 15px 0px;display: none;">
+
+                    <p style="margin-top: 30px;font-size:11px;">Tax, title, license, and dealer fees extra.
+                        <br>Mileage charge of $0.25/mile over 32,500 miles at participating dealers.
+                        <br>**For Current Lessees of 2018 model year or newer Buick, Cadillac, Chevrolet and GMC
+                        vehicles at least 30 days prior to the lease of a new GM vehicle through Cadillac Financial :
+                        Each dealer sets own price. $509/month for 39 months. Your payments may vary. Payments are for a
+                        2024 CADILLAC XT5 FWD Luxury with an MSRP of $45,290. Based on due at signing amount of $4,259
+                        (after all offers). 39 monthly payments total $19,851. Must show proof of lease. Option to
+                        purchase at lease end for an amount to be determined at lease signing. Lessor must approve
+                        lease. Take new retail delivery by 01-02-2024. Lessee pays for maintenance, repair, excess wear
+                        and disposition fee of $595 or less at end of lease. No security deposit required. Payments may
+                        be higher in some states. Not available with other offers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="max-width:1440px;margin: 0px auto;overflow:hidden;background:#fff; padding-top: 0px;">
+            <div style="max-width: 1440px;margin: 0% auto;">
+                <div class="hidden-xs" style="position: relative;">
+                    <img src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/HERO12.jpg?v=bSs4DUxzK9BL9pXu7GWibg=="
+                        alt="Banner" style="max-width: 100%;margin: 0% auto;">
+
+                    <div style="position: absolute;top: 0;left: 0;right: 0;max-width: 880px;margin: 0 auto;">
+                        <div class="row">
+                            <div class="col-sm-8">
+
+                                <h2
+                                    style="color: #fff;display: inline-block;padding-bottom:0px;font-size: 30px;letter-spacing: normal;padding-top:10px;padding-left:20px; margin-top:0;margin-bottom:0.5px!important;font-family: sans-serif; text-transform: uppercase;">
+                                    2027 Cadillac <span style="font-weight: 600;">VISTIQ</span></h2>
+                            </div>
+                            <div class="col-sm-4">
+
+                                <p
+                                    style="padding-top:18px;font-size:18px;letter-spacing: normal;font-weight:100;color: #fff;margin-left: 0px;">
+                                    STARTING MSRP: $77,500*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm text-center">
+                    <div style="background:#4C4C4C;color: #fff;">
+
+                        <p
+                            style="background: #4d4d4d;color: white;padding-bottom:0px;padding: 25px 7px 0px;font-size: 26px;margin-top:0;margin: 0;letter-spacing: normal; font-family: sans-serif;text-transform: uppercase;">
+                            2027 Cadillac <span style="font-weight: 600;">VISTIQ</span> </p>
+
+                        <p style="color:#fff;padding:10px;font-weight: 500;background-color: #4d4d4d;margin: 0 auto;">
+                            STARTING MSRP: $77,500*</p>
+                        <img src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/HERO12.jpg?v=bSs4DUxzK9BL9pXu7GWibg=="
+                            alt="Banner" style="max-width: 100%;margin: 0% auto;">
+
+                    </div>
+                </div>
+            </div>
+            <div style="max-width:1440px;margin: 0px auto;overflow:hidden;">
+                <div style="max-width:920px;margin:0px auto;padding-top:0px;background:#ffffff;">
+                    <div class="row text-center" id="fourbuttons" style="margin: 30px auto;">
+                        <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                            <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;">
+                                <img src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/get_a_quote_blue.gif"
+                                    alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                        </div>
+                        <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                            <a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;">
+                                <img src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/get_pre_approved_blue.gif"
+                                    alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;">
+                            </a>
+                        </div>
+                        <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                            <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;">
+                                <img src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/request_more_info_blue.gif"
+                                    alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 " style="padding:2px;padding-bottom:5px;">
+                            <a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html"
+                                style="display:block;">
+                                <img src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/value_your_trade_blue.gif"
+                                    alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="max-width:1440px;margin:0px auto;padding-top: 0px;">
+                <!----need2code------>
+                <div style="color: #fff;background: #4c4c4c;">
+                    <div style="padding: 30px 0 35px;">
+
+                        <h2 style="text-align: center;font-size: 36px;margin: 0px;padding-bottom:5px;letter-spacing: 0px;">INTERIOR</h2>
+
+                        <p class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/INTERIOR.jpg?v=6ybQkUTDbMuoAaQ3VEpslQ=="
+                        alt="INTERIOR" style="max-width:100%;">
+                </div>
+                <!-----need2code--END----->
+                <div style="background-color:#fff;color:#000;">
+                    <div style="max-width:929px;margin:0px auto;">
+                        <div class="col-sm-12">
+
+                            <p class="sh-vw hidden-xs"
+                                style="padding:26px 0px 13px;font-size:14px;line-height:1.2;text-align: center;">A
+                                refined, spacious cabin welcomes you in this available <span
+                                    style="white-space: nowrap;">7-seater</span> electric SUV. Artfully integrated
+                                storage and expertly optimized cabin space create a comfortable, uncluttered
+                                environment.
+                            </p>
+
+                            <p class="sh-vw hidden-sm  hidden-md hidden-lg"
+                                style="padding:26px 0px 0px;font-size:14px;line-height:1.2;text-align: center;">A
+                                refined, spacious cabin welcomes you in this available <span
+                                    style="white-space: nowrap;">7-seater</span> electric SUV. Artfully integrated
+                                storage and expertly optimized cabin space create a comfortable, uncluttered
+                                environment.
+                            </p>
+                        </div>
+                        <div class="row text-center" style="padding-top:25px;margin:0px;">
+                            <div class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/COMFORTABLE_SEATING.jpg?v=RlOL8xf5rMNW+6iRJUPzRg=="
+                                    alt="COMFORTABLE SEATING" style="max-width:100%;display:inline;">
+
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    COMFORTABLE SEATING
+                            </h3>
+
+                                <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">EV <span
+                                        style="white-space: nowrap;">segment-best* front</span> row comfort, with the
+                                    combination of standard massaging, heated, ventilated and <span
+                                        style="white-space: nowrap;">18-way</span> <span
+                                        style="white-space: nowrap;">power-adjustable</span> seats. <span
+                                        style="white-space: nowrap;">Second-row</span> outboard seats are also heated.
+                                </p>
+                            </div>
+                            <div class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/INTELLIGENT_5-ZONE_CLIMATE_CONTROL.jpg?v=cLZGw2dGEPsglgEGx0Gazw=="
+                                    alt="INTELLIGENT 5-ZONE CLIMATE CONTROL" style="max-width:100%;display:inline;">
+
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    INTELLIGENT <span style="white-space: nowrap;">5-ZONE</span> CLIMATE CONTROL</h3>
+
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">This EV <span
+                                        style="white-space: nowrap;">segment-best* feature</span> provides
+                                    individualized comfort for every passenger via this microclimate system
+                                </p>
+                            </div>
+                            <div class="col-sm-4" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/23-SPEAKER_AKG__STUDIO_AUDIO_SYSTEM.jpg?v=Tk2MHUdnjrVYmH6fDss1ng=="
+                                    alt="23-SPEAKER AKG* STUDIO AUDIO SYSTEM" style="max-width:100%;display:inline;">
+
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:15px;line-height:1.2;font-weight:500;">
+                                    <span style="white-space: nowrap;">23-SPEAKER</span> AKG<sup style="font-size: 19px;top: 0.1em;">™</sup>* STUDIO AUDIO SYSTEM
+                                </h3>
+
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Elevate every drive with
+                                    available <span style="white-space: nowrap;">Dolby Atmos</span><sup style="font-size: 20px;top: 0.1em;">&reg;</sup>,* an immersive 3D sound environment that maps
+                                    each track so vocals and instruments surround you with exceptional clarity</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div style="max-width:1440px;margin:0px auto;padding-top: 0px;background:#4d4d4d;">
+                    <!----need2code------>
+                    <div bis_skin_checked="1" class="row text-center"
+                        style="padding-bottom: 0px; margin: 0px; background-color: #4d4d4d; color: #ffffff;">
+                        <div bis_skin_checked="1" class="col-sm-2" style="padding: 2px;">
+                        </div>
+
+                        <div bis_skin_checked="1" class="col-sm-3" style="padding: 2px;">
+
+                            <h3 style="padding-top: 35px; padding-inline: 1px; font-size: 16px;text-transform: none;"><span
+                                    style="white-space: nowrap; ">TRI-ZONE</span> Radiance Lighting<sup style="font-size: 19px;top: 0.1em;">™</sup></h3>
+
+                            <p class="hidden-xs"
+                                style="padding-top: 10px; padding-inline: 20px; font-size: 14px;line-height:1.2;">
+                                126 color options set the mood or express your personality with accents across
+                                footwells, interior doors, along the Power SkyGlass<sup style="font-size: 19px;top: 0.1em;">™</sup> roof and more</p>
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="padding-top: 0px; padding-inline: 20px; font-size: 14px; padding-bottom: 25px;line-height:1.2;">
+                                126 color options set the mood or express your personality with accents across
+                                footwells, interior doors, along the Power SkyGlass<sup style="font-size: 19px;top: 0.1em;">™</sup> roof and more</p>
+                        </div>
+                        <div bis_skin_checked="1" class="col-sm-7" style="padding: 0px;"><img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/TRI-ZONE-RADIANCE-LIGHTING2.jpg?v=t052FtBVSD3qQXEQvp7RfA=="
+                                alt="TRI-ZONE RADIANCE LIGHTING" style="max-width: 100%; display: inline-block;"></div>
+                    </div>
+                </div>
+
+                <div style="max-width:929px;margin:0px auto;">
+
+
+                    <div class="row text-center" style="padding-top:30px;margin:0px;padding-bottom: 5px;">
+                        <div class="col-sm-6" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/AN_EXPRESSIVE_COLORWAY.jpg?v=HR2ioltLRcY08x30yugQyw=="
+                                alt="AN EXPRESSIVE COLORWAY" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                AN EXPRESSIVE COLORWAY</h3>
+
+                            <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">Set the tone with the
+                                stunning Kona Brown found only on Platinum</p>
+
+
+                        </div>
+                        <div class="col-sm-6" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/TWO_COMMAND_CENTERS.jpg?v=UMsIH+TnGUF0Ir6ZaoZKlA=="
+                                alt="TWO COMMAND CENTERS" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                TWO COMMAND CENTERS
+                            </h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">The Front Command Center
+                                allows driver and passenger to adjust temperature, seating, Radiance
+                                Lighting<sup style="font-size: 19px;top: 0.1em;">™</sup> and more, using an 8" diagonal touchscreen for all three rows
+                                of seating.</p>
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">The Rear Command Center
+                                offers <span style="white-space: nowrap;">second-row passengers control</span> of <span
+                                    style="white-space: nowrap;">second-</span> and <span
+                                    style="white-space: nowrap;">third-row</span> climate and Radiance
+                                Lighting<sup style="font-size: 19px;top: 0.1em;">™</sup>.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div bis_skin_checked="1" id="getaquote" style="padding:0px 0 0px;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?ModelAndTrim=VISTIQ&yearrange=2027-2027"
+                        style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_VI_.gif?v=XI015VqEi1zearbP08FWFw=="
+                            alt="view inventory" style="max-width:100%;"> </a>
+                </div>
+
+
+                <div style="padding-top:30px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-1.jpg?v=CzyuU6oKxgafiR3hDb7j7A=="
+                        alt="image1" style="max-width:100%;"> </div>
+
+
+
+
+
+
+                <!----need2code------>
+                <div style="color: #fff;background: #4c4c4c;margin-top:30px;">
+                    <div style="padding: 20px 0 35px;">
+
+                        <h2 style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 5px;">PERFORMANCE</h2>
+
+                        <p class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/PERFORMANCE.jpg?v=xHTDy2koWTLbBldl82VhRg=="
+                        alt="PERFORMANCE" style="width:100%;">
+                </div>
+                <!-----need2code--END----->
+                <div style="background-color:#fff;color:#000;">
+                    <div style="max-width:929px;margin:0px auto;">
+                        <div class="col-sm-12">
+
+                            <p class="sh-vw hidden-xs"
+                                style="padding:26px 0px 13px;font-size:14px;line-height:1.2;text-align: center;">VISTIQ
+                                <span style="white-space: nowrap;">3-row</span> electric SUV reacts to the road,
+                                delivering a smooth, responsive and exciting drive.
+                            </p>
+
+                            <p class="sh-vw hidden-sm  hidden-md hidden-lg"
+                                style="padding:26px 0px 0px;font-size:14px;line-height:1.2;text-align: center;">VISTIQ
+                                <span style="white-space: nowrap;">3-row</span> electric SUV reacts to the road,
+                                delivering a smooth, responsive and exciting drive.
+                            </p>
+                        </div>
+                        <div class="row text-center" style="padding-top:25px;margin:0px;">
+                            <div class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/DUAL_MOTOR_ALL-WHEEL_DRIVE.jpg?v=8Pzzq1LZosiLtV5+EG8i4g=="
+                                    alt="DUAL MOTOR ALL-WHEEL DRIVE" style="max-width:100%;display:inline;">
+
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    DUAL MOTOR <span style="white-space: nowrap;">ALL-WHEEL</span> DRIVE</h3>
+
+                                <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">Standard dual motors
+                                    deliver <span style="white-space: nowrap;">Cadillac-estimated</span> 615 horsepower
+                                    and 650 <span style="white-space: nowrap;">lb.-ft.</span> of <span
+                                        style="white-space: nowrap;">near-instantaneous</span> torque in Velocity Max
+                                    for full acceleration behind all four wheels as soon as your foot hits the pedal</p>
+                            </div>
+                            <div class="col-sm-6" style="padding:5px;"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/AIR_RIDE_ADAPTIVE_SUSPENSION.jpg?v=D/+i128FjYINq5JHtgHQQg=="
+                                    alt="AIR RIDE ADAPTIVE SUSPENSION" style="max-width:100%;display:inline;">
+
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    AIR RIDE ADAPTIVE SUSPENSION</h3>
+
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">This available feature
+                                    lowers the vehicle’s height to improve aerodynamic efficiency at highway speeds and
+                                    enhance ride comfort
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    style="max-width:1440px;margin:0px auto;padding-top: 0px;background-color: #4c4c4c; color: #ffffff;margin-top: 20px;">
+                    <!----need2code------>
+                    <div class="row text-center"
+                        style="padding-bottom: 0px; margin: 0px; background-color: #4c4c4c; color: #ffffff;">
+                        <div class="col-sm-7 hidden-xs" style="padding: 0px;"><img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/ACTIVE-REAR-STEERING2.jpg?v=OlYYwQwIK1i7L+HZhv1vMg=="
+                                alt="ACTIVE REAR STEERING"
+                                style="max-width: 100%; display: inline-block;margin-left: -40px;"></div>
+                        <div class="col-sm-7 hidden-sm hidden-lg hidden-md" style="padding: 0px;"><img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/ACTIVE-REAR-STEERING2.jpg?v=OlYYwQwIK1i7L+HZhv1vMg=="
+                                alt="ACTIVE REAR STEERING" style="max-width: 100%; display: inline-block;"></div>
+
+                        <div class="col-sm-3" style="padding: 2px;">
+
+                            <h3 style="padding-top: 40px; padding-inline: 1px; font-size: 17px;">ACTIVE REAR STEERING</h3>
+
+                            <p class="hidden-xs" style="padding-top: 6px; padding-inline: 20px; font-size: 14px;">
+                                This available feature improves driver maneuverability and turning diameter, making the
+                                vehicle feel more agile and nimble</p>
+
+                            <p class="hidden-sm hidden-lg hidden-md"
+                                style="padding-top: 0px; padding-inline: 20px; font-size: 14px; padding-bottom: 25px;">
+                                This available feature improves driver maneuverability and turning diameter, making the
+                                vehicle feel more agile and nimble</p>
+                        </div>
+                        <div class="col-sm-2" style="padding: 2px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="max-width:929px;margin:0px auto;">
+                    <div class="row text-center" style="padding-top:30px;margin:0px;padding-bottom: 5px;">
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/VELOCITY_MAX.jpg?v=1PvIItfPqoa1QX1AO0XNfA=="
+                                alt="VELOCITY MAX" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                VELOCITY MAX</h3>
+
+                            <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">When activated, Velocity Max
+                                enables </br>0–60 in 3.7 seconds* with a<span style="white-space: nowrap;">
+                                    Cadillac-estimated 615</span> horsepower and 650 <span
+                                    style="white-space: nowrap;">lb.-ft.</span> of torque
+                            </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/DRIVER_MODES.jpg?v=tKjKE2CKiIurdiCPisjThQ=="
+                                alt="DRIVER MODES" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                DRIVER MODES</h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Customize your driving
+                                preferences or adapt to changing road conditions </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/BREMBO_BRAKES.jpg?v=UezWm4K0dqZkxb3yfXg7bg=="
+                                alt="BREMBO BRAKES" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;text-transform: none;">
+                                Brembo<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> BRAKES</h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Precise stopping power
+                                paired with front black painted brake calipers, exclusive to Platinum </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div style="background-color:#ffffff;color:#000000; max-width: 1440px; margin: 0 auto;"
+                    bis_skin_checked="1">
+                    <div style="max-width:929px;margin:0px auto;" bis_skin_checked="1">
+                        <div bis_skin_checked="1" class="col-sm-12">
+                            <h3
+                                style="padding:2px 0 20px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;text-align: center;">
+                                REGENERATIVE BRAKING</h3>
+
+                        </div>
+                        <div style="padding-top:0px;padding-bottom:0px;" bis_skin_checked="1"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-2.jpg?v=m9yKT06B/a1/N740+uzTCg=="
+                                alt="REGENERATIVE BRAKING" style="width:100%; margin-top: 10px;"> </div>
+                        <div class="row text-center" style="padding-top:0px;margin:0px; padding-bottom: 0px;"
+                            bis_skin_checked="1">
+                            <div class="col-sm-6" style="padding:5px;" bis_skin_checked="1">
+                                <h3
+                                    style="padding:25px 0 10px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;text-transform: none;">
+                                    Regen On Demand<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>*
+                                </h3>
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">A <span
+                                        style="white-space: nowrap;">driver-controlled</span> deceleration feature that
+                                    allows you to slow down or stop your VISTIQ with a dedicated, <span
+                                        style="white-space: nowrap;">pressure-sensitive</span> paddle located on the
+                                    steering wheel. The system also converts kinetic energy of your VISTIQ into
+                                    electricity, which is stored in your battery pack for future use.
+                                </p>
+                            </div>
+                            <div class="col-sm-6" style="padding:5px;" bis_skin_checked="1">
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    <span style="white-space: nowrap;">ONE-PEDAL</span> DRIVING*
+                                </h3>
+                                <p style="padding:10px 2px 10px;font-size:14px;line-height:1.2;">Precise stopping power
+                                    paired with front black painted brake calipers, exclusive to Platinum
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div bis_skin_checked="1" id="viewinventory" style="padding:10px 0 30px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_GAQ_.gif?v=zso0fM/UXnivacBmnOs8DQ=="
+                            alt="geta quote" style="max-width:100%;"> </a>
+                </div>
+
+                <div style="padding:0px 0 30px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-3.jpg?v=yOvC/ldHmg4P/C8cCBETvA=="
+                        alt="image3" style="max-width:100%;"> </div>
+
+
+
+                <!----need2code------>
+                <div style="color: #fff;background: #4c4c4c;">
+                    <div style="padding: 20px 0 35px;">
+
+                        <h2 style="text-align: center;font-size: 36px;margin: 0;padding-bottom: 5px;">CHARGING AND RANGE
+                        </h2>
+
+                        <p class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/CHARGING_AND_RANGE.jpg?v=NhpgumkxpVUkJ6Wo49+9/A=="
+                        alt="CHARGING AND RANGE" style="max-width:100%;">
+                </div>
+                <!-----need2code--END----->
+                <div style="background-color:#fff;color:#000;">
+                    <div style="max-width:929px;margin:0px auto;">
+                        <div class="col-sm-12">
+
+                            <p class="sh-vw"
+                                style="padding:25px 2px 0px;font-size:14px;line-height:1.2;text-align: center;">VISTIQ
+                                offers up <span style="white-space: nowrap;">to an EPA-estimated</span> 305 miles of
+                                range.*</br>
+                                Charging is easy with home charger solutions, available adapters for all charger options
+                                and an <span style="white-space: nowrap;">ever-expanding</span> charging network.
+                                Through the myCadillac mobile app,* access over 250,000 public chargers in the U.S. and
+                                Canada, including more than 29,000 Tesla Superchargers.*
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="max-width: 1440px;background-color: #fff;">
+                <div style="max-width:929px;margin:0px auto;">
+                    <div class="row text-center" style="padding-top:0px;margin:0px; padding-bottom: 8px;">
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3
+                                style="padding:10px;margin-bottom:0;margin-top: 5px;font-size:16px;line-height:1.2em;text-transform:uppercase;color: #000;font-weight: 500;">
+                                STANDARD NACS CHARGING PORT</h3>
+
+                            <p
+                                style="padding:10px;font-size:14px;line-height:1.2em;color: #000;    margin-bottom: 0px;">
+                                The North American Charging System (NACS) charge port supports home and public DC Fast
+                                Charging. Charge your vehicle at <span style="white-space: nowrap;">non-NACS</span> home
+                                and public chargers with the use of an available <span
+                                    style="white-space: nowrap;">GM-approved</span> adapter.
+                            </p>
+
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3
+                                style="padding:10px 0px;margin-bottom:0;margin-top: 5px;font-size:16px;line-height:1.2em;text-transform:uppercase;color: #000;font-weight: 500;">
+                                19.2 kW AC AND 190 kW DC FAST CHARGING</h3>
+
+                            <p style="padding:10px;font-size:14px;line-height:1.2em;color: #000;">Enjoy fast, convenient
+                                NACS charging with up to 80 miles of range* in about 10 minutes at public DC Fast
+                                Charging stations.* At home, the GM Energy PowerShift wall charger paired with an
+                                available <span style="white-space: nowrap;">GM‑approved</span> adapter can add up to 47 miles of range* per hour.</p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3
+                                style="padding:10px;margin-bottom:0;margin-top: 5px;font-size:16px;line-height:1.2em;text-transform:uppercase;color: #000;font-weight: 500;">
+                                BACKUP POWER FOR YOUR HOME
+                            </h3>
+
+                            <p style="padding:10px;font-size:14px;line-height:1.2em;color: #000;  margin-bottom: 0px;">
+                                Explore turning <span style="white-space: nowrap;">your Vehicle-to-Home</span> capable
+                                VISTIQ into a brilliant source of backup power for your properly equipped home* in a
+                                blackout
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div style="max-width: 1440px;background-color:#4c4c4c;color:#fff;">
+                    <div style="max-width:929px;margin:0px auto;">
+                        <div class="col-sm-12 row text-center">
+
+                            <h3 class="sh-vw "
+                                style="padding:30px 0px 10px;font-size:18px;line-height:1.2;text-align: center;">
+                                HOME ENERGY SOLUTIONS WITH <span style="white-space: nowrap;">VEHICLE-TO-HOME</span>
+                                TECHNOLOGY
+                            </h3>
+
+                            <p style="padding:0px 5px 0px;font-size:14px;line-height:1.2;margin-bottom: 0px;">What is <span
+                                    style="white-space: nowrap;">Vehicle-to-Home</span> (V2H) technology and how does it
+                                <span style="white-space: nowrap;">work?
+                            </p>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">Vehicle-to-Home</span> (V2H)
+                                technology allows your <span style="white-space: nowrap;">V2H-capable</span> GM EV to
+                                act as a source of backup power for your properly equipped home* in a blackout. By
+                                connecting your <span style="white-space: nowrap;">V2H-capable</span> GM EV to a GM
+                                Energy system, such as the V2H Bundle, you can use the energy stored in the vehicle’s
+                                battery to provide power to select household appliances during power outages.
+                            </p>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">Can I use my EV to power my
+                                home during a blackout? <br>
+                                Your <span style="white-space: nowrap;">V2H-capable</span> GM EV can provide power to
+                                your properly equipped home* in a blackout.
+                            </p>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">What do I need to set up
+                                <span style="white-space: nowrap;">Vehicle-to-Home</span> (V2H) functionality in my
+                                home?<br>
+                                To enable V2H functionality, you’ll need a GM Energy PowerShift Charger and GM Energy
+                                V2H Enablement Kit* to move energy between your <span
+                                    style="white-space: nowrap;">V2H-capable</span> GM EV and your properly equipped
+                                home* in a blackout.
+                            </p>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">Will I need an adapter to
+                                enable V2H?<br>
+                                The <span style="white-space: nowrap;">NACS-native</span> VISTIQ requires the GM
+                                PowerShift AC Charging Adapter to charge with the GM Energy PowerShift and the GM CCS DC
+                                Adapter to discharge power from your vehicle’s battery to your home.</p>
+
+                            <h3 class="sh-vw "
+                                style="padding:8px 0px 10px;font-size:18px;line-height:1.2;text-align: center;">
+                                MYCADILLAC MOBILE APP
+                            </h3>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">Managing your electric life
+                                is easy with the myCadillac mobile app,* which can help you plan your routes and provide
+                                compatible public charging station locations and availability in real time.
+                            </p>
+                            <p style="padding:0px 5px 7px;font-size:14px;line-height:1.2;">Easily start and stop a
+                                charging session, use Plug & Charge,* access charging across multiple networks in one
+                                place, and pay at compatible stations when you activate Energy Pass in myCadillac.
+                            </p>
+
+                        </div>
+                        <div class="row text-center" style="padding-top:25px;margin:0px; padding-bottom: 25px;">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="background-color:#fff;color:#000;" bis_skin_checked="1">
+                    <div style="max-width:929px;margin:0px auto;" bis_skin_checked="1">
+                        <div class="col-sm-12" bis_skin_checked="1">
+                            <h3 class="sh-vw hidden-xs"
+                                style="padding:30px 0px 15px;font-size:18px;line-height:1.2;text-align: center;">
+                                YOUR EV LIFE BEGINS HERE
+                            </h3>
+
+<p class="sh-vw hidden-sm hidden-md hidden-lg"
+                                style="padding:30px 0px 3px;font-size:18px;line-height:1.2;text-align: center;margin-bottom: 0px;">
+                                YOUR EV LIFE BEGINS HERE
+                            </p>
+
+                            
+                        </div>
+                        <div class="row text-center" style="padding-top:25px;margin:0px; padding-bottom: 12px;"
+                            bis_skin_checked="1">
+                            <div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/LOWER_COST_OF_OWNERSHIP.jpg?v=4McwBcQ7pUD9rMJFNTvIsw=="
+                                    alt="LOWER COST OF OWNERSHIP" style="max-width:100%;display:inline;">
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    LOWER COST OF OWNERSHIP</h3>
+                                <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">Enjoy potentially lower
+                                    operating costs and less scheduled maintenance than gas vehicles
+                                </p>
+                            </div>
+                            <div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/WAKE_UP_RECHARGED.jpg?v=DiEJ1ehn9cQryeeH7TkUlA=="
+                                    alt=" WAKE UP RECHARGED" style="max-width:100%;display:inline;">
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    WAKE UP RECHARGED </h3>
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Compatible with a
+                                    nationwide charging network</p>
+                            </div>
+                            <div class="col-sm-4" style="padding:5px;" bis_skin_checked="1"> <img
+                                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/BACKUP_POWER_FOR_YOUR_HOME.jpg?v=Wl3cgatSRe/AYepPRUy1zA=="
+                                    alt="BACKUP POWER FOR YOUR HOME"
+                                    style="max-width:100%;display:inline;">
+                                <h3
+                                    style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                    BACKUP POWER FOR YOUR HOME</h3>
+                                <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Turn your <span
+                                        style="white-space: nowrap;">Vehicle-to-Home</span> <span
+                                        style="white-space: nowrap;">(V2H)-capable Cadillac</span> EV into a brilliant
+                                    source of backup power for your properly equipped home* in a blackout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div bis_skin_checked="1" id="get a quote" style="padding-top:0px;padding-bottom: 0px;">
+                    <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?ModelAndTrim=VISTIQ&yearrange=2027-2027"
+                        style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_VI_.gif?v=XI015VqEi1zearbP08FWFw=="
+                            alt="view inventory" style="max-width:100%;"> </a>
+                </div>
+
+                <div style="padding:30px 0 30px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-4.jpg?v=e4SvtYDUQ5bPl1DvUFlH+w=="
+                        alt="image4" style="max-width:100%;"> </div>
+
+                <!----need2code------>
+            </div>
+            <div style="max-width:1440px;margin: 0 auto;overflow:hidden;background:#000;">
+                <div style="color: #fff;background: #4c4c4c;">
+                    <div style="padding: 30px 0 35px;">
+
+                        <h2 class="hidden-xs"
+                            style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0 10px 5px;">
+                            TECHNOLOGY </h2>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0 10px;">
+                            TECHNOLOGY </p>
+
+                        <p style="margin-top:5px;" class="border-line"></p>
+                    </div> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/TECHNOLOGY.jpg?v=u8Xu80oDyHP6UHqz8OzH7w=="
+                        alt="TECHNOLOGY " style="width:100%;">
+                </div>
+            </div>
+
+
+
+
+            <!-- start here -->
+
+
+
+            <div style="max-width:1440px;margin: 0 auto;overflow:hidden;background:#fff;">
+                <div style="max-width:929px;margin:0px auto;">
+
+                    <p
+                        style="padding:25px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;text-align: center;letter-spacing: -0px;color: #000;">
+                        Luxury for your life delivered with <span style="white-space: nowrap;">forward-leaning</span>
+                        innovations. VISTIQ helps you fulfill daily demands with ease and an eye to the future.</p>
+
+
+                    <div class="row text-center" style="padding-top:0px;margin:0px;color: #000;">
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/SUPER_CRUISE.jpg?v=CyMGYlR1DIleEPK68A6+lA=="
+                                alt="SUPER CRUISE" style="max-width:100%;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;letter-spacing: -0px;font-weight:500;line-height:1.2;letter-spacing: -0px;font-weight:500;text-transform: none;">
+                                Super Cruise<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>*</h3>
+
+                            <p
+                                style="padding:10px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;letter-spacing: -0px;">
+                                Standard <span style="white-space: nowrap;">hands-free</span> driver assistance
+                                technology with <span style="white-space: nowrap;">3-year</span> OnStar<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>
+                                One plan*.</p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/NIGHT_VISION_.jpg?v=FR+oXPGCEs+9/ZJMxsbzYg=="
+                                alt="NIGHT VISION*" style="max-width:100%;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;letter-spacing: -0px;font-weight:500;line-height:1.2;letter-spacing: -0px;font-weight:500;">
+                                NIGHT VISION*</h3>
+
+                            <p
+                                style="padding:10px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;letter-spacing: -0px;">
+                                This available feature displays a thermal image to help you see beyond your headlamps,
+                                and can alert you to detected pedestrians or large animals directly ahead of you</p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/GOOGLE_BUILT-IN_.jpg?v=uoRyPdw4NfY+E9F28XiAMw=="
+                                alt="GOOGLE BUILT-IN" style="max-width:100%;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;letter-spacing: -0px;font-weight:500;line-height:1.2;letter-spacing: -0px;font-weight:500;text-transform: none;">
+                                Google<sup style="font-size: 19px;top: 0.1em;">™</sup> <span style="white-space: nowrap;">BUILT-IN*</span></h3>
+
+                            <p
+                                style="padding:10px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;letter-spacing: -0px;">
+                                Access live traffic, podcasts, apps and more, like smart home integration, all from a
+                                sweeping 33" <span style="white-space: nowrap;">Horizon Display</span><sup style="font-size: 19px;top: 0.1em;">™</sup></p>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="padding-top:8px;margin:0px;color: #000;padding-bottom: 0px;">
+                        <div class="col-sm-8" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/AUGMENTED_REALITY_HEAD-UP_DISPLAY.jpg?v=hFboIzRX34RTl51VLLRsLA=="
+                                alt="AUGMENTED REALITY HEAD-UP DISPLAY" style="max-width:100%;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;letter-spacing: -0px;font-weight:500;line-height:1.2;letter-spacing: -0px;font-weight:500;">
+                                AUGMENTED REALITY <span style="white-space: nowrap;">HEAD-UP</span> DISPLAY</h3>
+
+                            <p
+                                style="padding:10px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;letter-spacing: -0px;">
+                                This available feature <span style="white-space: nowrap;">uses real-time
+                                    projection</span> to display information on two viewing planes to provide
+                                information to the driver where it’s most helpful and intuitive, such as navigational
+                                and directional cues, speed, and Driver Assist information.</p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/DUAL-FRONT_WIRELESS_PHONE_CHARGING_.jpg?v=i4mHEMkXt3tRgXbQ/HFZjA=="
+                                alt="DUAL-FRONT WIRELESS PHONE CHARGING" style="max-width:100%;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;letter-spacing: -0px;font-weight:500;line-height:1.2;letter-spacing: -0px;font-weight:500;">
+                                <span style="white-space: nowrap;">DUAL-FRONT</span> WIRELESS PHONE CHARGING*
+                            </h3>
+
+                            <p
+                                style="padding:10px 10px 7px;font-size:14px;letter-spacing: -0px;line-height:1.2;letter-spacing: -0px;">
+                                Both driver and front passenger can charge their phones wirelessly</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div bis_skin_checked="1" id="viewinventory" style="padding:10px 0 30px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_GAQ_.gif?v=zso0fM/UXnivacBmnOs8DQ=="
+                            alt="geta quote" style="max-width:100%;"> </a>
+                </div>
+
+                <div style="padding:0px 0 30px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-5.jpg?v=wY0z/+kKdp+QHUtP4Ixe2g=="
+                        alt="image5" style="max-width:100%;"> </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- content add here -->
+
+
+
+
+
+            <div style="color: #fff;background: #4c4c4c;">
+                <div style="padding: 30px 0 35px;">
+
+                    <h2 class="hidden-xs"
+                        style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0 10px 0px;">
+                        EXTERIOR </h2>
+
+                    <p class="hidden-sm hidden-md hidden-lg"
+                        style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0 10px;">EXTERIOR
+                </p>
+
+                    <p style="margin-top:5px;" class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/EXTERIOR.jpg?v=g/yOVXY3p9l5fScWPi2kvg=="
+                    alt="EXTERIOR" style="width:100%;">
+            </div>
+
+
+
+
+            <div style="background-color:#fff;color:#000;">
+                <div style="max-width:929px;margin:0px auto;">
+                    <div class="col-sm-12">
+
+                        <p class="sh-vw hidden-xs"
+                            style="padding:26px 0px 13px;font-size:14px;line-height:1.2;text-align: center;">Don’t just
+                            catch the light—create it. VISTIQ exudes power, coupling a clean, minimalist aesthetic with
+                            a commanding stance.
+                        </p>
+
+                        <p class="sh-vw hidden-sm hidden-md hidden-lg"
+                            style="padding:26px 0px 0px;font-size:14px;line-height:1.2;text-align: center;">Don’t just
+                            catch the light—create it. VISTIQ exudes power, coupling a clean, minimalist aesthetic with
+                            a commanding stance.
+                        </p>
+                    </div>
+                    <div class="row text-center" style="padding-top:25px;margin:0px;">
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/CHOREOGRAPHED_EXTERIOR_LED_LIGHTING.jpg?v=9gdKTEX2Dp6PdgyLtGoiug=="
+                                alt="CHOREOGRAPHED EXTERIOR LED LIGHTING" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                CHOREOGRAPHED EXTERIOR LED LIGHTING</h3>
+
+                            <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">A choreographed dance of
+                                light begins at the grille and headlamps, then moves completely around your vehicle each
+                                time you approach or walk away</p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/DUAL-PANE_POWER_SKYGLASS_ROOF_WITH_THIRD-ROW_FIXED_GLASS.jpg?v=cZcmpsolTRg6kzaKQN4TlA=="
+                                alt="DUAL-PANE POWER SKYGLASS ROOF WITH THIRD-ROW FIXED GLASS" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;text-transform: none;">
+                                <span style="white-space: nowrap;">DUAL-PANE</span> POWER SkyGlass<sup style="font-size: 19px;top: 0.1em;">™</sup>
+                                ROOF WITH <span style="white-space: nowrap;">THIRD-ROW</span> FIXED GLASS
+                            </h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Enjoy an expansive view from
+                                every seat, and control your experience with the standard power shade (for <span
+                                    style="white-space: nowrap;">the first- and</span> <span
+                                    style="white-space: nowrap;">second- row)</span> and sunshade (for the third row)
+                            </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/PLATINUM_DETAILS_TRANSCEND.jpg?v=0ikugXYvbKszvVEoFByQ4w=="
+                                alt="PLATINUM DETAILS TRANSCEND" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                PLATINUM DETAILS TRANSCEND</h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">This stunning available
+                                model includes exclusive body accents, standout styling elements, an exclusive interior
+                                color and front Brembo<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> brakes</p>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="padding-top:0px;margin:0px;padding-bottom: 5px;">
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/23__WHEELS.jpg?v=sbJRHJBdrdFHVBI8rpGBxA=="
+                                alt="23 WHEELS" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                23" WHEELS</h3>
+
+                            <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">Premium Luxury and Platinum
+                                models offer available 23" wheels for stunning street style
+                            </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/BLACK_ROOF.jpg?v=HOt1rSiFYA9k9nZJSOGJtA=="
+                                alt="BLACK ROOF" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                BLACK ROOF</h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">This distinct styling choice
+                                adds a striking contrast to your exterior paint color and adds focus to the body lines.
+                                Standard on Platinum and available on all other models. </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;"> <img
+                                src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/SPORT_ACCENTS.jpg?v=a13QSix7l9qv1qugk/5Slg=="
+                                alt=" SPORT ACCENTS" style="max-width:100%;display:inline;">
+
+                            <h3
+                                style="padding:25px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                                SPORT ACCENTS</h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">Featuring bold exterior
+                                details like Obsidian Chrome and Gloss Black accents, unique color choices, black roof
+                                rails, and 21" Diamond Cut wheels with Medium Android<sup style="font-size: 19px;top: 0.1em;">™</sup> finish and Carbon Flash Metallic
+                                inserts that add an especially modern attitude </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div bis_skin_checked="1" id="get a quote" style="padding-top:0px;">
+                <a href="https://www.colonialcadillacwoburn.com/searchnew.aspx?ModelAndTrim=VISTIQ&yearrange=2027-2027"
+                    style="display:block;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_VI_.gif?v=XI015VqEi1zearbP08FWFw=="
+                        alt="view inventory" style="max-width:100%;"> </a>
+            </div>
+
+            <div style="padding-top:30px;"> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-6.jpg?v=wNL2U1zkk3GAhetP0Oiu8g=="
+                    alt="image6" style="max-width:100%;"> </div>
+
+
+
+            <div style="color: #fff;background: #4e4e4e;">
+                <div style="padding: 30px 0 35px;margin-top: 30px;">
+
+                    <h2 class="hidden-xs"
+                        style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0px 0px 5px;">
+                        SAFETY AND DRIVER ASSISTANCE
+                </h2>
+
+                    <p class="hidden-sm hidden-md hidden-lg"
+                        style="text-align: center;font-size: 34px;margin: 0;line-height:1.1;padding:0 10px;">
+                        SAFETY AND DRIVER ASSISTANCE </p>
+
+                    <p style="margin-top:5px;" class="border-line"></p>
+                </div> <img
+                    src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/SAFETY.jpg?v=yUoE1KozgwJ/QCqSh5ciTA=="
+                    alt="SAFETY AND DRIVER ASSISTANCE" style="width:100%;">
+            </div>
+
+
+
+
+            <div style="max-width:929px;margin:0px auto;">
+                <div class="row text-center" style="padding-top:12px;margin:0px;padding-bottom: 15px;">
+                    <div class="col-sm-12" style="padding:5px;">
+
+                        <p style="padding:10px 15px 8px;font-size:14px;line-height:1.2;margin-bottom: 0px;"><span
+                                style="white-space: nowrap;">This available 7-seater</span> electric SUV offers an
+                            extensive collection of safety and driver assistance features* to help inspire confidence,
+                            for you and your passengers, on every drive.
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <h3 class="hidden-xs"
+                            style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD</br>HD SURROUND VISION
+                        </h3>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD</br>HD SURROUND VISION
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <h3 class="hidden-xs"
+                            style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD</br>INTERSECTION AUTOMATIC EMERGENCY BRAKING
+                        </h3>
+
+                        <p class="hidden-sm hidden-md hidden-lg"
+                            style="padding:25px 0 25px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD</br>INTERSECTION AUTOMATIC EMERGENCY BRAKING
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="padding:5px;">
+
+                        <h3 style="padding:15px 0 7px;margin-bottom:0;font-size:16px;line-height:1.2;font-weight:500;">
+                            STANDARD</br>FORWARD COLLISION ALERT
+                        </h3>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div style="max-width: 1440px;background-color: #4c4c4c;margin: 0 auto;">
+                <div style="max-width:929px;margin:0px auto;color: #fff;">
+                    <div class="row text-center" style="padding-top:0px;margin:0px;padding-bottom: 10px;">
+
+                        <h3 style="padding:30px 0 12px;margin-bottom:0;font-size:18px;line-height:1.2;margin-bottom: 0px;">SAFETY AND DRIVER
+                            ASSISTANCE FEATURES
+                        </h3>
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3 style="padding:10px 5px 7px;font-size:18px;line-height:1.2;">DRIVER ASSISTANCE</h3>
+
+                            <p style="padding:10px 5px 7px;font-size:14px;line-height:1.2;">
+                                • Super Cruise<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>* <span style="white-space: nowrap;">hands-free</span>
+                                driver assistance technology with <span style="white-space: nowrap;">3-year</span>
+                                OnStar<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> One plan*</br>• Blind Zone Steering Assist</br>• Adaptive Cruise
+                                Control</br>• Driver Attention Assist*</br>• Available Night Vision</br>• Traffic Sign
+                                Recognition*
+                            </p>
+                        </div>
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3 style="padding:10px 2px 7px;font-size:18px;line-height:1.2;margin-bottom: 0px;">EMERGENCY BRAKING
+
+                            </h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">• Enhanced Automatic
+                                Emergency Braking</br>• Intersection Automatic Emergency Braking</br>• Rear Cross
+                                Traffic Braking</br>• Front Pedestrian and Bicyclist Braking</br>• Reverse Automatic
+                                Braking
+
+                            </p>
+
+                            <p style="padding:10px 2px 7px;font-size:18px;line-height:1.2;margin-bottom: 0px;">ALERTS
+
+                            </p>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">• Forward Collision
+                                Alert</br>• Rear Pedestrian Alert</br>• Side Bicyclist Alert</br>• Safety Alert Seat
+
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4" style="padding:5px;">
+
+                            <h3 style="padding:10px 2px 7px;font-size:18px;line-height:1.2;margin-bottom: 0px;">MONITORING
+
+                            </h3>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">• Teen Driver
+
+                            </p>
+
+                            <p style="padding:10px 2px 7px;font-size:18px;line-height:1.2;margin-bottom: 0px;">VISION ASSISTANCE
+
+                            </p>
+
+                            <p style="padding:10px 2px 7px;font-size:14px;line-height:1.2;">• HD Surround Vision</br>•
+                                Rear Camera Mirror with Camera Washer</br>• IntelliBeam<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> Auto <span
+                                    style="white-space: nowrap;">High-Beam</span> Assist</br>• Hitch Guidance with Hitch
+                                View</br>• Vision Enhanced Automatic Parking Assist
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div style="max-width:1440px;margin: 0px auto 0px; color: #000; background-color:#fff;">
+
+                <div bis_skin_checked="1" id="viewinventory" style="padding:30px 0 0px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/Colonial_Cadillac_Vistiq_2027_MOVGIF_GAQ_.gif?v=zso0fM/UXnivacBmnOs8DQ=="
+                            alt="geta quote" style="max-width:100%;"> </a>
+                </div>
+
+                <div style="padding:30px 0 30px;"> <img
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-7.jpg?v=DSlygk9I7A+EvuYn1M79jA=="
+                        alt="image7" style="max-width:100%;"> </div>
+            </div>
+
+
+
+            <div style="max-width: 1440px; margin: 0 auto ; background-color: #1e1e1e; color: #fff;">
+                <div style="margin:0px auto;">
+                    <div style="padding: 20px 0 15px;">
+
+                        <h2
+                            style="text-align: center;font-size: 34px;margin: 0;padding-bottom: 0px;text-transform: uppercase;">
+                            specs</h2>
+                    </div>
+                    <div style="padding-top:1px; padding-bottom: 5px;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/IMAGE-8.jpg?v=ELpzYVvvJIeMk4U7mRgT9Q=="
+                            alt="specs" style="max-width:100%;">
+                    </div>
+                </div>
+                <div class="row text-center" style="max-width: 750px; margin: 0 auto; padding-bottom: 15px;">
+
+                    <h3 style="padding:25px 0 7px;margin-bottom:0;font-size:15px;line-height:1.2;">DUAL MOTOR AWD
+                    </h3>
+                    <div class="col-sm-6" style="padding:5px;">
+
+                        <h3 style="padding:10px 5px 7px;font-size:14px;line-height:1.3;text-transform: none;">RANGE: 305 MILES*</br>(with
+                            standard 11.5 kW <span style="white-space: nowrap;">charging)</br>EPA-estimated</span>
+                        </h3>
+
+                        <p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;">POWERTRAIN: 615 <span
+                                style="white-space: nowrap;">HP</br>Cadillac-estimated</span> in Velocity Max</p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">TORQUE: 650 <span
+                                style="white-space: nowrap;">LB.-FT.</br>Cadillac-estimated</span> in Velocity Max</p>
+                    </div>
+                    <div class="col-sm-6" style="padding:5px;">
+
+                        <h3 style="padding:10px 5px 7px;font-size:14px;line-height:1.3;text-transform: none;">RANGE: 300 MILES*</br>(with
+                            available 19.2 kW <span style="white-space: nowrap;">charging)</br>EPA-estimated</span>
+                        </h3>
+
+                        <p style="padding:1px 5px 0px;font-size:14px;line-height:1.3;"><span
+                                style="white-space: nowrap;">0-60</span> MPH ACCELERATION* IN 3.7 <span
+                                style="white-space: nowrap;">SEC.</br>Cadillac-estimated</span> in Velocity Max</p>
+
+                        <p style="padding:10px 5px 7px;font-size:14px;line-height:1.3;">TOWING*: 5,000 LBS.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <div style="max-width:929px;margin:0px auto;padding-top:5px;">
+            <div class="row text-center" id="fourbuttons" style="margin: 20px auto 5px;">
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/get_a_quote_blue.gif"
+                            alt="get a quote" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/financeprequalform" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/get_pre_approved_blue.gif"
+                            alt="Get-Pre-Approved" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/contactus.aspx" style="display:block;"> <img
+                            src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/request_more_info_blue.gif"
+                            alt="request more info" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+                <div class="col-sm-3" style="padding:2px;padding-bottom:5px;">
+                    <a href="https://www.colonialcadillacwoburn.com/trade-appraisal.html" style="display:block;">
+                        <img src="https://cdn.dlron.us/static/dealer-27085/Escalade_2025/value_your_trade_blue.gif"
+                            alt="Value-Your-trade" style="max-width: 100%;margin: 0 auto;display: block;"> </a>
+                </div>
+            </div>
+        </div>
+        <div bis_skin_checked="1"
+            style="text-align:center;font-size:38px;padding-top: 12px;margin-bottom: 0px;text-transform: uppercase;">
+            TRIM LEVELS
+        </div>
+
+
+        <div style="max-width:929px;margin:0px auto 30px;" bis_skin_checked="1">
+            <div class="row text-center" style="padding-top:0px;margin:0px;" bis_skin_checked="1">
+                <div class="col-sm-4" style="padding:23px !important;padding-top: 13px;" bis_skin_checked="1"> <img
+                        style="padding-bottom: 20px;display: inline;"
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/LUXURY.jpg?v=e3zyankT4yYRpJRwnU4RUw=="
+                        alt="LUXURY">
+                    <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;" bis_skin_checked="1">
+                        <h3
+                            style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                            LUXURY
+                        </h3>
+                    </div>
+                    <div class="arrow" bis_skin_checked="1"></div>
+                    <div style="background-color:#f7f7f7;margin-top: -18px;" bis_skin_checked="1">
+                        <p
+                            style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                        </p>
+                        <p
+                            style="color:#6e6e6e; padding: 10px 15px 30px 15px;text-align: left;font-size:11px;line-height:1.2; margin-left: 5px;">
+                            Key standard features:
+                            <br>
+                            <br>• Dual Motor <span style="white-space: nowrap;">All-Wheel</span> Drive with <span
+                                style="white-space: nowrap;">EPA-estimated</span> 305 miles of range*</br>• 11.5 kW AC
+                            onboard charging module with standard NACS charging port</br>• <span
+                                style="white-space: nowrap;">Super Cruise<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>* hands-free</span> driver assistance
+                            technology with <span style="white-space: nowrap;">3-year</span> OnStar<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> One
+                            plan*</br>• HD Surround Vision*</br>• Heated, ventilated and massaging front seats</br>•
+                            Heated <span style="white-space: nowrap;">second-row</span> outboard seats</br>• <span
+                                style="white-space: nowrap;">Dual-pane Power SkyGlass<sup style="font-size: 16px;top: 0.1em;">™</sup></span> roof with
+                            power sunshade and <span style="white-space: nowrap;">third-row fixed</span> glass
+                            roof</br>• Curved 33" Horizon Display<sup style="font-size: 16px;top: 0.1em;">™</sup>* with Google<sup style="font-size: 16px;top: 0.1em;">™</sup> <span
+                                style="white-space: nowrap;">built-in*</br>•</span> <span
+                                style="white-space: nowrap;">23-speaker</span> AKG<sup style="font-size: 16px;top: 0.1em;">™</sup>* Studio Audio system with available
+                            Dolby Atmos<sup style="font-size: 20px;top: 0.1em;">&reg;</sup>*</br>• 21" Bright Silver finish wheels with High Gloss Black inserts
+                        </p>
+                    </div>
+                    <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;"
+                        bis_skin_checked="1">
+                        <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+                        <h3 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                            $77,500*</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="padding:23px !important;padding-top: 13px;" bis_skin_checked="1"> <img
+                        style="padding-bottom: 20px;display: inline;"
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/SPORT.jpg?v=TFGFBjEM9C1KxsiGMa822Q=="
+                        alt="sport">
+                    <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;" bis_skin_checked="1">
+                        <h3
+                            style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                            SPORT</h3>
+                    </div>
+                    <div class="arrow" bis_skin_checked="1"></div>
+                    <div style="background-color:#f7f7f7;margin-top: -18px;" bis_skin_checked="1">
+                        <p
+                            style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                        </p>
+                        <p
+                            style="color:#6e6e6e; padding: 10px 10px 149px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                            Includes all Luxury standard features, plus:
+                            <br>
+                            <br>• Unique Sport grille design</br>• Gloss Black Roof Rails</br>• Gloss Black moldings and
+                            window surround</br>• Gloss Black and Obsidian Chrome exterior accents</br>• Body color door
+                            handles</br>• 21" Diamond Cut wheels with Medium Android<sup style="font-size: 16px;top: 0.1em;">™</sup> finish and Carbon Flash Metallic
+                            inserts
+                        </p>
+                    </div>
+                    <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;"
+                        bis_skin_checked="1">
+                        <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+                        <h3 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                            $78,000*</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="padding:23px !important;padding-top: 13px;" bis_skin_checked="1"> <img
+                        style="padding-bottom: 20px;display: inline;"
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/PREMIUM_LUXURY.jpg?v=zuJY1EPD1sEWWkR6aRcFAQ=="
+                        alt="premium luxury">
+                    <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;" bis_skin_checked="1">
+                        <h3
+                            style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                            PREMIUM LUXURY
+                        </h3>
+                    </div>
+                    <div class="arrow" bis_skin_checked="1"></div>
+                    <div style="background-color:#f7f7f7;margin-top: -18px;" bis_skin_checked="1">
+                        <p
+                            style="color:#7c7c7c;padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                        </p>
+                        <p class="hidden-xs"
+                            style="color:#6e6e6e;padding: 10px 25px 43px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                            Includes all Luxury standard features, plus:
+                            <br>
+                            <br>• Air Ride Adaptive Suspension with Continuous Damping Control</br>• Active Rear
+                            Steering</br>• <span style="white-space: nowrap;">Second-row</span> captain’s chairs <span
+                                style="white-space: nowrap;">(six-passenger</span> seating)</br>• Exclusive Black
+                            Nouveauluxe Seats with custom quilting and contrasting white stitching, open pore tan wood
+                            trim and ambient backlit door accents</br>• Sueded microfiber headliner and trim</br>•
+                            Augmented Reality <span style="white-space: nowrap;">Head-Up</span> Display</br>Night
+                            Vision*</br>• 22" Diamond Cut wheels with Polish and High Gloss Black finish spokes</br>•
+                            19.2 kW AC onboard charging module with standard NACS charging port
+                        </p>
+                        <p class="hidden-sm hidden-lg hidden-md"
+                            style="color:#6e6e6e; padding: 0px 25px 50px 30px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                            Includes all Luxury standard features, plus:
+                            <br>
+                            <br>• Air Ride Adaptive Suspension with Continuous Damping Control</br>• Active Rear
+                            Steering</br>• <span style="white-space: nowrap;">Second-row</span> captain’s chairs <span
+                                style="white-space: nowrap;">(six-passenger</span> seating)</br>• Exclusive Black
+                            Nouveauluxe Seats with custom quilting and contrasting white stitching, open pore tan wood
+                            trim and ambient backlit door accents</br>• Sueded microfiber headliner and trim</br>•
+                            Augmented Reality <span style="white-space: nowrap;">Head-Up</span> Display</br>Night
+                            Vision*</br>• 22" Diamond Cut wheels with Polish and High Gloss Black finish spokes</br>•
+                            19.2 kW AC onboard charging module with standard NACS charging port
+                        </p>
+                    </div>
+                    <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;"
+                        bis_skin_checked="1">
+                        <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+                        <h3 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                            $92,000*</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center" style="padding-top:0px;margin:0px; position: relative; top: -20px;"
+                bis_skin_checked="1">
+
+                <div class="col-sm-4" style="padding:23px !important;" bis_skin_checked="1"></div>
+
+                <div class="col-sm-4" style="padding:23px !important;" bis_skin_checked="1"> <img
+                        style="padding-bottom: 20px;display: inline;"
+                        src="https://cdn.dlron.us/static/dealer-27085/2027_vistiq/PLATINUM.jpg?v=BtueEaExRUuKzSyBbsBcng=="
+                        alt="PLATINUM">
+                    <div style="background-color:#4c4c4c;margin-bottom: -15px;margin-top: 10px;" bis_skin_checked="1">
+                        <h3
+                            style="color:#ffffff;padding:20px 20px 40px;font-size:16px;letter-spacing: 0; font-weight: 100;">
+                            PLATINUM
+                        </h3>
+                    </div>
+                    <div class="arrow" bis_skin_checked="1"></div>
+                    <div style="background-color:#f7f7f7;margin-top: -18px;" bis_skin_checked="1">
+                        <p
+                            style="color:#7c7c7c; padding: 3px 15px 0px 20px;text-align: left;font-size:11px;line-height:1.2;">
+                        </p>
+                        <p
+                            style="color:#6e6e6e; padding: 10px 10px 30px 15px;text-align: left;font-size:11px;line-height:1.2;margin-left: 5px;">
+                            Includes all Sport and Premium Luxury standard features, plus:
+                            <br>
+                            <br>•Unique Platinum grille design</br>• Unique Platinum front and rear lower fascia</br>•
+                            Body color wheel surround and rocker moldings</br>• Brembo<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> front brakes with
+                            Black calipers and Cadillac script</br>• Black Nouveauluxe or exclusive Kona Brown seats
+                            with custom quilting, open pore Black Ash trim and ambient backlit door accents</br>• Black
+                            roof</br>• 22" Reverse Rim wheels with Polish and Dark Android<sup style="font-size: 16px;top: 0.1em;">™</sup> finish spokes</br>• Deluxe
+                            carpeted floor mats
+                        </p>
+                    </div>
+                    <div style="background-color:#b5a46b;margin-top: -18px;text-align: left;color:#ffffff;"
+                        bis_skin_checked="1">
+                        <p style="padding: 7px 20px 0px;font-size:12px;margin:0;"> Starting at </p>
+                        <h3 style="padding: 2px 20px 25px;font-size: 17px;letter-spacing: 0px;margin-top: 0;">
+                            $96,600*</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="padding:23px !important; " bis_skin_checked="1">
+                </div>
+            </div>
+        </div>
+
+
+
+    
+
+
+
+    <div style="max-width:1329px;margin:0px auto;">
+        <div
+            style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:14px;letter-spacing: -0px;letter-spacing: -0px;line-height: -1.2em;">
+
+            <h3><b style="font-weight: 700 !important;font-size:14px; text-transform: none;">2027 Cadillac VISTIQ</b></h3>
+
+            <p style="font-size:14px; text-transform: none;"><b style="font-weight: 700 !important;">Get to Know the 2027 Cadillac VISTIQ
+                    Boston, MA, from Colonial Cadillac
+                </b></p>
+
+            <p style="font-size:14px;">An electric SUV can be practical without feeling ordinary, and the 2027 Cadillac
+                VISTIQ Boston, MA, proves it. With three rows, striking Cadillac design, serious electric power, and a
+                cabin loaded with comfort features, the Cadillac VISTIQ gives you plenty to appreciate before you even
+                leave the driveway. At Colonial Cadillac, we invite you to compare the Luxury, Sport, Premium Luxury,
+                and Platinum trims and find the combination that feels right for you.
+            </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">Which Cadillac dealers have the 2027
+                    Cadillac VISTIQ near Boston, MA, in stock? </b></h3>
+
+            <p style="font-size:14px;">We do! Slip behind the wheel of the 2027 Cadillac VISTIQ Boston, MA, and you have
+                an estimated 615 horsepower and 650 <span style="white-space: nowrap;">lb-ft</span> of torque at your
+                command. Dual electric motors and a Propulsion Battery Pack work with standard <span
+                    style="white-space: nowrap;">all-wheel</span> drive, giving you confident power for everything from
+                crowded <span style="white-space: nowrap;">Boston-area</span> commutes to longer highway trips.
+                Available performance upgrades include Air Ride Adaptive Suspension, Active Rear Steering,
+                Brembo<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> front brakes, and a 19.2 <span style="white-space: nowrap;">kW-capable</span>
+                onboard charging module.
+            </p>
+
+            <p style="font-size:14px;">The interior is where the 2027 Cadillac VISTIQ Boston, MA, really starts to feel
+                special. Standard seating accommodates seven, while available <span
+                    style="white-space: nowrap;">second-row</span> captain’s chairs create a <span
+                    style="white-space: nowrap;">six-passenger</span> configuration. Heated and ventilated front seats
+                come standard, along with <span style="white-space: nowrap;">18-way</span> power adjustment, <span
+                    style="white-space: nowrap;">4-way</span> power lumbar support, and massage functions. You also get
+                an automatic heated steering wheel, a power tilt and telescoping steering column, and Intelligent
+                ClimateSense<sup style="font-size: 19px;top: 0.1em;">™</sup> <span style="white-space: nowrap;">five-zone</span> climate control.
+                Radiance Lighting<sup style="font-size: 19px;top: 0.1em;">™</sup> lets you customize the atmosphere with <span
+                    style="white-space: nowrap;">tri-zone,</span> <span style="white-space: nowrap;">126-color</span>
+                ambient lighting. Available Nouveauluxe seating with custom quilted perforated inserts and piping adds
+                an even more distinctive finish, while heated <span style="white-space: nowrap;">second-row</span> seats
+                bring extra comfort to passengers.
+            </p>
+
+            <p style="font-size:14px;">Technology feels integrated rather than added on. A sweeping <span
+                    style="white-space: nowrap;">33-inch</span> Horizon Display<sup style="font-size: 19px;top: 0.1em;">™</sup> gives the cabin a dramatic digital
+                centerpiece with Google<sup style="font-size: 19px;top: 0.1em;">™</sup> <span style="white-space: nowrap;">built-in</span> compatibility. The 2027
+                Cadillac VISTIQ Boston, MA, also comes with a wireless charger, seven USB ports, <span
+                    style="white-space: nowrap;">Wi-Fi<sup style="font-size: 20px;top: 0.1em;">&reg;</sup></span> Hotspot capability, 3 Years OnStar<sup style="font-size: 20px;top: 0.1em">&reg;</sup> One,
+                and an AKG<sup style="font-size: 19px;top: 0.1em;">™</sup> Studio <span style="white-space: nowrap;">23-speaker</span> audio system
+                with available Dolby Atmos<sup style="font-size: 20px;top: 0.1em">&reg;</sup>. You can take the digital experience further with an
+                available Augmented Reality <span style="white-space: nowrap;">Head-Up</span> Display and Night Vision.
+            </p>
+
+            <p style="font-size:14px;">The exterior carries the same attention to detail. Standard <span
+                    style="white-space: nowrap;">21-inch</span> Bright Silver <span
+                    style="white-space: nowrap;">alloy-finish</span> wheels pair with an illuminating front grille and
+                emblem, LED headlamps, illuminating door handles, and bright roof rails. A Power SkyGlass<sup style="font-size: 19px;top: 0.1em;">™</sup> roof opens the
+                cabin to natural light, while Rainsense<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> automatic windshield wipers, a Windshield Wiper
+                Deicer, heated <span style="white-space: nowrap;">power-folding</span> mirrors, and an
+                AutoSense<sup style="font-size: 20px;top: 0.1em;">&reg;</sup> power liftgate add practical convenience. Available <span
+                    style="white-space: nowrap;">23-inch</span> Reverse Rim alloy wheels with a High Gloss Black finish
+                create an even more dramatic profile, while optional dark window surrounds and Cadillac Crest puddle
+                lamps add subtle personality.
+            </p>
+
+
+            <p style="font-size:14px;">Confidence comes from a long list of standard safety technologies, including
+                Enhanced Automatic Emergency Braking, Intersection Automatic Emergency Braking, Rear Cross Traffic
+                Braking, Reverse Automatic Braking, Forward Collision Alert, Traffic Sign Recognition, HD Surround
+                Vision, and Blind Zone Steering Assist. </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">Where can I test drive a 2027 Cadillac
+                    VISTIQ Boston, MA? </b></h3>
+
+            <p style="font-size:14px;">Come see us at Colonial Cadillac and experience the 2027 Cadillac VISTIQ Boston,
+                MA, from the driver’s seat. We can help you compare all four trims, explore charging and technology
+                features, and review current financing, leasing, and new vehicle incentives.
+            </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">FAQs About the 2027 Cadillac VISTIQ </b>
+            </h3>
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">How many passengers can the 2027 Cadillac
+                    VISTIQ seat? </b></h3>
+            <p style="font-size:14px;">You can seat seven passengers with the standard configuration. Available <span
+                    style="white-space: nowrap;">second-row</span> captain’s chairs change the layout to six seats.</p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">How powerful is the 2027 Cadillac VISTIQ
+                    Boston, MA? </b></h3>
+            <p style="font-size:14px;">The <span style="white-space: nowrap;">dual-motor</span> electric powertrain is
+                estimated to produce 615 horsepower and 650 <span style="white-space: nowrap;">lb-ft</span> of torque,
+                with <span style="white-space: nowrap;">all-wheel</span> drive standard. </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">What comfort features come standard in
+                    the Cadillac VISTIQ? </b></h3>
+            <p style="font-size:14px;">You get heated, ventilated, and massaging front seats, <span
+                    style="white-space: nowrap;">18-way</span> power front seating, a heated steering wheel, <span
+                    style="white-space: nowrap;">five-zone</span> climate control, and Radiance
+                Lighting<sup style="font-size: 19px;top: 0.1em;">™</sup> with 126 ambient color choices. </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">What premium technology is available?
+                </b></h3>
+            <p style="font-size:14px;">You can add features such as an Augmented Reality <span
+                    style="white-space: nowrap;">Head-Up</span> Display and Night Vision. Standard technology already
+                includes the <span style="white-space: nowrap;">33-inch</span> Horizon Display<sup style="font-size: 19px;top: 0.1em;">™</sup>, Google<sup style="font-size: 19px;top: 0.1em;">™</sup> <span
+                    style="white-space: nowrap;">built-in</span> compatibility, and a <span
+                    style="white-space: nowrap;">23-speaker</span> AKG<sup style="font-size: 19px;top: 0.1em;">™</sup> Studio audio system. </p>
+
+            <h3 style="font-size:14px;text-transform: none;"><b style="font-weight: 700 !important;">What exterior colors are available for
+                    the 2027 Cadillac VISTIQ Boston, MA? </b></h3>
+            <p style="font-size:14px;">Cadillac exterior choices for the 2027 VISTIQ include Argent Silver Metallic and
+                Stellar Black Metallic, with additional colors and available contrasting Black Roof combinations
+                depending on trim and configuration.</p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div style="padding-top:300px;padding-left:15px;padding-right:15px;font-size:11px;">
+
+            <p>*MSRP: The Manufacturer’s Suggested Retail Price excludes destination freight charge, tax, title,
+                license, dealer fees and optional equipment. Dealer sets final price. To see all Cadillac vehicles’ destination freight charges, visit https://www.cadillac.com/destination-freight-charges</p>
+            <p>INTERIOR</p>
+            <p>*AKG<sup style="font-size: 16px;top: 0.1em;">™</sup> is a trademark of AKG<sup style="font-size: 16px;top: 0.1em;">™</sup> Acoustics GmbH, registered in the United States and/or other countries.</p>
+            <p>PERFORMANCE</br>*On a closed course only. Based on Initial Vehicle Movement (IVM).</br>*Feature may be
+                limited when the battery temperatures are extremely cold or hot or when battery is near full charge.
+                See Owner’s Manual for details.</br>*Feature may be limited when the battery temperatures are extremely
+                cold or hot or when battery is near full charge. Always use the brake pedal when you need to stop
+                immediately. See Owner’s Manual for details.</p>
+            <p>CHARGING AND RANGE</br>*When equipped with 11.5 kW onboard charging module. On a full charge. Actual
+                range may vary based on several factors, including ambient temperature, terrain, battery age and
+                condition, loading, and how you use and maintain your vehicle.</br>*Available on select Apple<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> and
+                Android<sup style="font-size: 16px;top: 0.1em;">™</sup> devices. Service availability, features and functionality vary by vehicle, device and the plan
+                you are enrolled in. Terms apply. Device data connection required.</br>*Tesla and Supercharger are
+                trademarks of Tesla, Inc.</br>*Based on 190 kW DC Charge Power. Actual charge times will vary based on
+                battery starting state of charge, battery condition, output of charger, vehicle settings and battery
+                temperature. See the Owner’s Manuals for your vehicle and charger for additional details &
+                limitations.</br>*Requires available vehicle onboard 19.2kW AC Charging module.</br>Requires
+                professionally installed 100A dedicated charge station, sold separately. Actual times will vary based on
+                battery condition, output of charger, vehicle settings and battery temperature. See the Owner’s Manuals
+                for your vehicle and charger for additional details & limitations.</br>*Actual production will vary. The
+                GM Energy PowerShift Charger and GM Energy V2H Enablement Kit shown requires an adequately charged <span
+                    style="white-space: nowrap;">V2H-capable</span> GM EV, a properly equipped home, and proper grid
+                interconnection. Weather conditions, life of the battery, vehicle variation and usage, and other
+                external factors may impact the capability and duration of power supply. Power supply may be
+                interrupted.</br>A GM CCS DC adapter is required for the NACS native VISTIQ to discharge power from the
+                GM Energy PowerShift to your properly equipped home.</br>It is not recommended that the following
+                devices be powered with the GM Energy PowerShift Charger and V2H Enablement Kit: Medical
+                Devices.</br>*Available on select Apple<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> and Android<sup style="font-size: 16px;top: 0.1em;">™</sup> devices. Service availability, features and
+                functionality vary by vehicle, device and the plan you are enrolled in. User terms apply. Device data
+                connection required.</br></br>*Available on select Cadillac EVs. Requires the myCadillac vehicle mobile
+                app, an Energy Pass account, saved payment method and a compatible public charging station. Feature
+                timing and availability vary by model, trim, software update and charging network. Compatible GM adapter
+                may be required.</p>
+            <p>TECHNOLOGY</br>*Always pay attention while driving and when using Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup>. Always use Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup>
+                in accordance with local laws. Do not use a <span style="white-space: nowrap;">hand-held</span> device.
+                Requires active Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan or trial. Terms apply. Visit cadillac.com/supercruise for compatible
+                roads and full details.</br>*Safety or driver assistance features are no substitute for the driver's
+                responsibility to operate the vehicle in a safe manner. The driver should remain attentive to traffic,
+                surroundings and road conditions at all times. Visibility, weather, and road conditions may affect
+                feature performance. Read the vehicle Owner's Manual for more important feature limitations and
+                information.</br>*Google<sup style="font-size: 16px;top: 0.1em;">™</sup> <span style="white-space: nowrap;">built-in</span> services are subject to
+                limitations and availability may vary by vehicle, infotainment system, and location. Select service plan
+                required. Certain Google<sup style="font-size: 16px;top: 0.1em;">™</sup> Actions and functionality may require account linking. User terms and privacy
+                statements apply. Google<sup style="font-size: 16px;top: 0.1em;">™</sup>, <span style="white-space: nowrap;">Android Auto</span><sup style="font-size: 16px;top: 0.1em;">™</sup>, Google Play<sup style="font-size: 16px;top: 0.1em;">™</sup> and Google Maps<sup style="font-size: 16px;top: 0.1em;">™</sup> are trademarks of Google<sup style="font-size: 16px;top: 0.1em;">™</sup>
+                LLC.</br>*Measured diagonally.</p>
+            <p>SAFETY AND DRIVER ASSISTANCE</br>*Safety or driver assistance features are no substitute for the driver’s
+                responsibility to operate the vehicle in a safe manner. Read the vehicle Owner’s Manual for important
+                feature limitations and information.</br>*Always pay attention while driving and when using Super
+                Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup>. Always use Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> in accordance with local laws. Do not use a <span
+                    style="white-space: nowrap;">hand-held</span> device. Requires active Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan or trial.
+                Terms apply. Visit cadillac.com/supercruise for compatible roads and full
+                details.</br>*OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan, working electrical system, cell reception and GPS signal
+                required. OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> links to emergency services. Not all vehicles may transmit all crash data. Service
+                coverage varies with conditions and location. Service availability, features and functionality vary by
+                device and software version. Subject to user terms. See onstar.com for details and
+                limitations.</br>*Driver Attention Assist may not always detect the driver’s drowsiness status
+                accurately. Driver Attention Assist is an assistance service and the driver should always pay attention
+                to the road. The driver should take rest breaks when they’re tired or drowsy. Since Driver Attention
+                Assist is a <span style="white-space: nowrap;">camera-based</span> system, keep hands off the camera and
+                infrared LED banks to ensure the camera can see/detect/monitor the driver’s face and function
+                properly.</br>*For full functionality, Traffic Sign Recognition requires an active
+                OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan.</br>*Safety or driver assistance features are no substitute for the
+                driver’s responsibility to operate the vehicle in a safe manner. The driver should remain attentive to
+                traffic, surroundings and road conditions at all times. Visibility, weather and road conditions may
+                affect feature performance. Read the vehicle Owner’s Manual for more important feature limitations and
+                information.</p>
+            <p>MODELS</br>*On a full charge. Actual range may vary based on several factors, including ambient
+                temperature, terrain, battery age and condition, loading, and how you use and maintain your
+                vehicle.</br>*Always pay attention while driving and when using Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup>. Always use Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> in
+                accordance with local laws. Do not use a <span style="white-space: nowrap;">hand-held</span> device.
+                Requires active Super Cruise<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan or trial. Terms apply. Visit cadillac.com/supercruise for compatible
+                roads and full details.</br>*OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> plan, working electrical system, cell reception and
+                GPS signal required. OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup> links to emergency services. Not all vehicles may transmit all crash data.
+                Service coverage varies with conditions and location. Service availability, features and functionality
+                vary by device and software version. Subject to user terms. See onstar.com for details and
+                limitations.</br>*Safety or driver assistance features are no substitute for the driver’s responsibility
+                to operate the vehicle in a safe manner. Read the vehicle Owner’s Manual for more important feature
+                limitations and information.</br>*Measured diagonally.</br>*Google<sup style="font-size: 16px;top: 0.1em;">™</sup> <span
+                    style="white-space: nowrap;">built-in</span> services are subject to limitations and availability
+                may vary by vehicle, infotainment system, and location. Select service plan required. Certain Google<sup style="font-size: 16px;top: 0.1em;">™</sup>
+                Actions and functionality may require account linking. User terms and privacy statements apply. Google<sup style="font-size: 16px;top: 0.1em;">™</sup>,
+                <span style="white-space: nowrap;">Android Auto</span><sup style="font-size: 16px;top: 0.1em;">™</sup>, Google Play<sup style="font-size: 16px;top: 0.1em;">™</sup> and Google Maps<sup style="font-size: 16px;top: 0.1em;">™</sup> are trademarks of Google<sup style="font-size: 16px;top: 0.1em;">™</sup> LLC.</br>*Requires active OnStar<sup style="font-size: 17px;top: 0.1em;">&reg;</sup>
+                service and compatible active streaming service.</br>*Safety or driver assistance features are no
+                substitute for the driver’s responsibility to operate the vehicle in a safe manner. Read the vehicle
+                Owner’s Manual for important feature limitations and information.</p>
+        </div>
+    </div>
+
+</div>
+    <p class="text-center" style="padding-top:30px;padding-bottom: 30px;">Powered By <a
+            href="http://automotiveadvertisinggroup.com/" rel="noreferrer noopener" style="text-decoration:none;"
+            target="_blank">Automotive Advertising Group</a></p>
+
+
+
